@@ -1,0 +1,70 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MyDesign
+Version: T-2022.03-SP4
+Date   : Sat Nov 23 14:54:44 2024
+****************************************
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10_slow_nldm
+Wire Load Model Mode: top
+
+  Startpoint: tb__dut__sram_result_read_data[19]
+              (input port clocked by clk)
+  Endpoint: dut__tb__sram_result_write_data[31]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  input external delay                                  0.6580     0.6580 r
+  tb__dut__sram_result_read_data[19] (in)               0.2016     0.8596 r
+  U2871/Z (CLKBUF_X3)                                   0.3754     1.2351 r
+  U2872/Z (XOR2_X1)                                     0.4947     1.7298 r
+  U1632/ZN (NAND2_X2)                                   0.1894     1.9192 f
+  U2988/ZN (OAI22_X1)                                   0.3390     2.2582 r
+  U3013/S (FA_X1)                                       0.8518     3.1100 f
+  U3018/CO (FA_X1)                                      0.6477     3.7578 f
+  U4124/CO (FA_X1)                                      0.5172     4.2750 f
+  U4143/S (FA_X1)                                       0.6886     4.9636 f
+  U4147/S (FA_X1)                                       0.8976     5.8612 r
+  U4157/S (FA_X1)                                       0.7095     6.5707 f
+  U4159/ZN (NOR2_X1)                                    0.2486     6.8193 r
+  U4163/ZN (OAI21_X1)                                   0.1172     6.9365 f
+  U4164/ZN (AOI21_X1)                                   0.3714     7.3079 r
+  U4165/ZN (OAI21_X1)                                   0.1809     7.4888 f
+  U4169/ZN (NAND2_X1)                                   0.1533     7.6420 r
+  U1537/ZN (NAND3_X2)                                   0.1129     7.7550 f
+  U1507/ZN (INV_X1)                                     0.0857     7.8407 r
+  U1509/ZN (OAI21_X1)                                   0.0934     7.9341 f
+  U1722/ZN (AOI21_X2)                                   0.2019     8.1359 r
+  U4689/ZN (OR2_X1)                                     0.1849     8.3209 r
+  U4691/ZN (NAND2_X1)                                   0.0758     8.3967 f
+  U4695/ZN (NAND2_X1)                                   0.1070     8.5037 r
+  U4697/ZN (NAND2_X1)                                   0.0880     8.5917 f
+  U4698/Z (XOR2_X1)                                     0.3982     8.9899 f
+  U4699/ZN (AOI222_X4)                                  0.7438     9.7337 r
+  U4700/ZN (INV_X8)                                     0.1350     9.8688 f
+  dut__tb__sram_result_write_data[31] (out)             0.0000     9.8688 f
+  data arrival time                                                9.8688
+
+  clock clk (rise edge)                                10.5000    10.5000
+  clock network delay (ideal)                           0.0000    10.5000
+  clock uncertainty                                    -0.0500    10.4500
+  output external delay                                -0.5660     9.8840
+  data required time                                               9.8840
+  --------------------------------------------------------------------------
+  data required time                                               9.8840
+  data arrival time                                               -9.8688
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0152
+
+
+1

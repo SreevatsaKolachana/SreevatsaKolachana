@@ -1,0 +1,373 @@
+#------------------------------------------------------------
+#
+# Basic Synthesis Script (TCL format)
+#                                  
+# Revision History                
+#   1/15/03  : Author Shane T. Gehring - from class example
+#   2/09/07  : Author Zhengtao Yu      - from class example
+#   12/14/07 : Author Ravi Jenkal      - updated to 180 nm & tcl
+#
+#------------------------------------------------------------
+#---------------------------------------------------------
+# Read in Verilog file and map (synthesize) onto a generic
+# library.
+# MAKE SURE THAT YOU CORRECT ALL WARNINGS THAT APPEAR
+# during the execution of the read command are fixed 
+# or understood to have no impact.
+# ALSO CHECK your latch/flip-flop list for unintended 
+# latches                                            
+#---------------------------------------------------------
+read_verilog -rtl $::env(RTL_FILES)
+Error: Required argument 'file_list' was not found (CMD-007)
+read_sverilog -rtl $::env(RTL_SV_FILES)
+Loading db file '/mnt/coe/workspace/ece/ece720-common/tech/nangate/NangateOpenCellLibrary_PDKv1_2_v2008_10/liberty/520/NangateOpenCellLibrary_PDKv1_2_v2008_10_slow_nldm.db'
+Loading db file '/mnt/apps/public/COE/synopsys_apps/syn/T-2022.03-SP4/libraries/syn/dw_foundation.sldb'
+Loading db file '/mnt/apps/public/COE/synopsys_apps/syn/T-2022.03-SP4/libraries/syn/gtech.db'
+Loading db file '/mnt/apps/public/COE/synopsys_apps/syn/T-2022.03-SP4/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary_PDKv1_2_v2008_10_slow_nldm'
+  Loading link library 'gtech'
+Loading sverilog file '/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'
+Running PRESTO HDLC
+Compiling source file /mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv
+Opening include file /mnt/ncsudrive/s/svkolach/hw2/Project/rtl/common.vh
+Warning: Could not open default SVF file /mnt/ncsudrive/s/svkolach/hw2/Project/synthesis/svf/default.svf for writing.
+
+Statistics for case statements in always block at line 134 in file
+	'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           136            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 254 in file
+	'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           258            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine MyDesign line 134 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 175 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| starting_score_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 198 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  starting_attn_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 227 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    select_op_reg    | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 236 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| score_attn_change_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+=================================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 245 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  addr_scratch_reg   | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 254 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    complete_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 268 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| dut_ready_ctrl_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 283 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+| S_start_addr_result_reg | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|    K_start_addr_reg     | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|    V_start_addr_reg     | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+===================================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 296 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+====================================================================================
+|      Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+====================================================================================
+| V_start_addr_scratch_reg | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   addr_result_read_reg   | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|  addr_scratch_read_reg   | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+====================================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 365 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  Srows_counter_reg  | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 378 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  Qrows_counter_reg  | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 392 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     addr_W_reg      | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|     addr_I_reg      | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 419 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     counter_reg     | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 436 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    Kcounter_reg     | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 455 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    Vcounter_reg     | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 470 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      Wcols_reg      | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|      Irows_reg      | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|      Wrows_reg      | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 482 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  Irows_counter_reg  | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 513 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  enable_write_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 524 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+====================================================================================
+|      Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+====================================================================================
+| enable_write_scratch_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+====================================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 536 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  Wrows_counter_reg  | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 551 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  Krows_counter_reg  | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 565 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  Vrows_counter_reg  | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 578 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  Vtotal_count_reg   | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 594 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  Ktotal_count_reg   | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 611 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  Wtotal_count_reg   | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 626 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   addr_result_reg   | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 637 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   accum_flag_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|  accum_result_reg   | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 660 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+| accum_result_score_reg | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+==================================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 672 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| accum_result_attn_reg | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+=================================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 683 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    reset_mac_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 694 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| reset_mac_score_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 715 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| accum_flag_score_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+================================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 724 in file
+		'/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| accum_flag_attn_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Warning:  /mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv:162: Netlist for always block is empty. (ELAB-985)
+Warning:  /mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv:186: Netlist for always block is empty. (ELAB-985)
+Warning:  /mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv:207: Netlist for always block is empty. (ELAB-985)
+Warning:  /mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv:217: Netlist for always block is empty. (ELAB-985)
+Warning:  /mnt/ncsudrive/s/svkolach/hw2/Project/rtl/dut.sv:503: Netlist for always block is empty. (ELAB-985)
+Presto compilation completed successfully.
+Current design is now '/mnt/ncsudrive/s/svkolach/hw2/Project/rtl/MyDesign.db:MyDesign'
+Loaded 1 design.
+Current design is 'MyDesign'.
+MyDesign
