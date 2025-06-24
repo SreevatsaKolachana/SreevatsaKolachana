@@ -32,6 +32,9 @@ I'm passionate about building efficient and scalable hardware systems — from R
 
 - [**Branch Predictor Simulator**](projects/branch-predictor/)  
   Designed dynamic prediction strategies (bimodal, gshare, hybrid) and evaluated misprediction rates using real benchmarks.
+
+- [**Out of Order Processor**](projects/)
+  Designed an out of order processor with 7 pipeline stages, Instruction Level Parallelism and register renaming.  
   
 
 ---
