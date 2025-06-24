@@ -1,0 +1,68 @@
+*  Generated for: PrimeSim
+*  Design library name: group8
+*  Design cell name: precharge_logic_tb
+*  Design view name: schematic
+.option search='/mnt/designkits/ncsu/FreePDK3/hspice/models'
+
+
+.option PARHIER = LOCAL
+.option PORT_VOLTAGE_SCALE_TO_2X = 1
+.option S_ELEM_CACHE_DIR = "/mnt/ncsudrive/s/svkolach/.synopsys_custom/sparam_dir"
+.option PVA_OUTPUT_DIR = "/mnt/ncsudrive/s/svkolach/.synopsys_custom/pva_dir"
+
+.option WDF=1
+.temp 25
+.lib 'fet.mod' nfet_typ
+.lib 'fet.mod' pfet_typ
+
+*PrimeWave Design Environment Based on Custom Infrastructure
+*Version W-2024.09-SP1-2
+*Sun Apr  6 16:54:07 2025
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : group8
+* Cell             : precharge_logic
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt precharge_logic bl bl_bar clk
+m5 bl_bar clk vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m4 vdd! clk bl pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m3 bl clk bl_bar pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+.ends precharge_logic
+
+********************************************************************************
+* Library          : group8
+* Cell             : precharge_logic_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi10 net14 net16 net6 precharge_logic
+v2 net6 gnd! dc=0 pulse ( 0 0.8 10p 5p 5p 45p 100p )
+v5 vdd! gnd! dc=0.8
+
+
+
+
+
+
+
+
+
+.tran 0.1p 300p start=0
+.option opfile=1 split_dp=1
+.option probe=1
+.probe tran v(*) level=1
+.probe tran v(xi10.clk) v(net14) v(net16)
+
+
+
+
+
+
+
+
+.end

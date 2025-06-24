@@ -1,0 +1,180 @@
+1743103905.460648: 2972675-7fa86b8a5540: cdpl_log.c:337: in cdpl_log_open(): info: @@start_of_log@@
+1743103905.460754: 2972675-7fa86b8a5540: cdpl_log.c:1058: in cdpl_log_dump_sysinfo(): info: time: 2025/03/27 15:31:45 EDT -0400
+1743103905.460766: 2972675-7fa86b8a5540: cdpl_log.c:1060: in cdpl_log_dump_sysinfo(): info: version: W-2024.09-SP1-2 
+1743103905.460772: 2972675-7fa86b8a5540: cdpl_log.c:1062: in cdpl_log_dump_sysinfo(): info: system: Linux 4.18.0-553.45.1.el8_10.x86_64 #1 SMP Fri Mar 7 16:18:59 EST 2025
+1743103905.460777: 2972675-7fa86b8a5540: cdpl_log.c:1067: in cdpl_log_dump_sysinfo(): info: processor: x86_64 64-bits
+1743103905.460782: 2972675-7fa86b8a5540: cdpl_log.c:1071: in cdpl_log_dump_sysinfo(): info: hostname: grendel41.ece.ncsu.edu
+1743103905.460787: 2972675-7fa86b8a5540: cdpl_log.c:1073: in cdpl_log_dump_sysinfo(): info: program name: custom_shell
+1743103905.460799: 2972675-7fa86b8a5540: cdpl_log.c:340: in cdpl_log_open(): debug: path: /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/pwdp_jobs/saeSession0_default.SimulationSimulation_cdpl.0.2972675/logs/master.grendel41.ece.ncsu.edu.2972675.log
+1743103905.460805: 2972675-7fa86b8a5540: cdpl_log.c:341: in cdpl_log_open(): debug: dir: /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/pwdp_jobs/saeSession0_default.SimulationSimulation_cdpl.0.2972675/logs
+1743103905.460928: 2972675-7fa86b8a5540: cdpl_server.c:536: in cdpl_sv_init(): info: new server S1933413467
+1743103905.460964: 2972675-7fa86b8a5540: cdpl_ipc.c:3475: in cdpl_ipc_init(): info: requesting IPv4 protocol
+1743103905.465349: 2972675-7fa86b8a5540: cdpl_ipc.c:837: in _selectaddrfamily(): info: selected IPv4 protocol
+1743103905.465466: 2972675-7fa86b8a5540: cdpl_ipc.c:1139: in _set_keepalive(): info: TCP keep alive interval: 300
+1743103905.468497: 2972675-7fa86b8a5540: cdpl_monitor.c:1117: in cdpl_mn_new_server(): info: creating server monitor instance
+1743103905.468573: 2972675-7fa86b8a5540: cdpl_server.c:650: in cdpl_sv_new_master(): info: new master M1
+1743103905.468615: 2972675-7fa86b8a5540: cdpl_server.c:6533: in cdpl_sv_ctl_master(): info: Setting worker heartbeat to 120 seconds
+1743103905.468622: 2972675-7fa86b8a5540: cdpl_server.c:6542: in cdpl_sv_ctl_master(): info: Setting worker heartbeat timeout to 3 heartbeats
+1743103905.468631: 2972675-7fa86b8a5540: cdpl_compat_master.c:2090: in _parse_hostfile(): info: reading hostfile `/mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/pwdp_jobs/saeSession0_default.SimulationSimulation_cdpl.0.2972675/host_file'
+1743103905.478817: 2972675-7fa86b8a5540: cdpl_compat_master.c:1900: in _hostfile_parser(): debug: parsing "1     |localhost|   -1  | /tmp | SH | sh"
+1743103905.478901: 2972675-7fa86b8a5540: cdpl_farm.c:2578: in cdpl_farm_new_sh(): info: creating SH farm on localhost
+1743103905.478931: 2972675-7fa86b8a5540: cdpl_compat_master.c:206: in _set_farm_env(): info: exporting CDPL_LOGDIR as `/mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/pwdp_jobs/saeSession0_default.SimulationSimulation_cdpl.0.2972675/logs'
+1743103905.478939: 2972675-7fa86b8a5540: cdpl_compat_master.c:212: in _set_farm_env(): info: exporting CDPL_TMPDIR as `/tmp'
+1743103905.478946: 2972675-7fa86b8a5540: cdpl_compat_master.c:219: in _set_farm_env(): info: exporting CDPL_HOME as `/mnt/apps/public/COE/synopsys_apps/hspice/W-2024.09-SP1/hspice/cdpl'
+1743103905.478954: 2972675-7fa86b8a5540: cdpl_compat_master.c:235: in _set_farm_env(): info: exporting SNPSLMD_LICENSE_FILE as `27000@ece-lic-35.ece.ncsu.edu'
+1743103905.478962: 2972675-7fa86b8a5540: cdpl_compat_master.c:259: in _set_farm_env(): info: exporting CDPL_OPTIONS as `[nowlogs]'
+1743103905.478968: 2972675-7fa86b8a5540: cdpl_compat_master.c:266: in _set_farm_env(): info: exporting DISPLAY as `unix:23776'
+1743103905.478973: 2972675-7fa86b8a5540: cdpl_compat_master.c:274: in _set_farm_env(): info: exporting CDPL_HEARTBEAT as `120'
+1743103905.479037: 2972675-7fa86b8a5540: cdpl_farm.c:3149: in cdpl_farm_add_withdir(): debug: added `localhost' (capacity: unlimited)
+1743103905.479065: 2972675-7fa86b8a5540: cdpl_compat_parse.c:147: in parsefile(): debug: read `/mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/pwdp_jobs/saeSession0_default.SimulationSimulation_cdpl.0.2972675/host_file', 2 lines
+1743103905.479073: 2972675-7fa86b8a5540: cdpl_compat_master.c:2931: in cdplInitMaster(): info: bcast dir is `/mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/pwdp_jobs/saeSession0_default.SimulationSimulation_cdpl.0.2972675/logs'
+1743103905.486428: 2972675-7fa86b8a5540: cdpl_server.c:6433: in cdpl_sv_ctl_master(): info: farm worker timeout set to 300
+1743103905.486445: 2972675-7fa86b8a5540: cdpl_server.c:6486: in cdpl_sv_ctl_master(): info: maximum number of task execution attempts set to 1
+1743103905.486516: 2972675-7fa86b8a5540: cdpl_server.c:3195: in cdpl_sv_start(): debug: starting server
+1743103905.486534: 2972675-7fa86b8a5540: cdpl_ipc.c:3632: in cdpl_ipc_start(): debug: starting IPC server 152.14.98.56:33199
+1743103905.487472: 2972675-7fa82ffff700: cdpl_server_ipc.c:1182: in _sv_ipc_thread(): debug: ready
+1743103905.487776: 2972675-7fa82f7fe700: cdpl_monitor.c:426: in cdpl_mn_init_client(): info: creating client monitor instance
+1743103905.487829: 2972675-7fa82f7fe700: cdpl_ipc.c:3475: in cdpl_ipc_init(): info: requesting IPv4 protocol
+1743103905.491791: 2972675-7fa82f7fe700: cdpl_ipc.c:837: in _selectaddrfamily(): info: selected IPv4 protocol
+1743103905.491872: 2972675-7fa82f7fe700: cdpl_ipc.c:1139: in _set_keepalive(): info: TCP keep alive interval: 300
+1743103905.495352: 2972675-7fa82f7fe700: cdpl_ipc.c:3632: in cdpl_ipc_start(): debug: starting IPC server 152.14.98.56:40193
+1743103905.495865: 2972675-7fa82f7fe700: cdpl_monitor.c:471: in cdpl_mn_init_client(): debug: incoming messages in /tmp/cdpl-monitor-Hkskqa
+1743103905.496153: 2972675-7fa82f7fe700: cdpl_monitor.c:533: in cdpl_mn_connect(): debug: connecting to 152.14.98.56:33199
+1743103905.496174: 2972675-7fa82f7fe700: cdpl_ipc.c:3789: in cdpl_ipc_connect(): info: connecting to 152.14.98.56:33199
+1743103905.496499: 2972675-7fa82f7fe700: cdpl_ipc.c:3860: in cdpl_ipc_connect(): info: connected as `152.14.98.56:59800'
+1743103905.496539: 2972675-7fa82f7fe700: cdpl_ipc.c:2503: in cdpl_ipc_host_accept(): debug: accepted host `152.14.98.56:33199'
+1743103905.496623: 2972675-7fa82f7fe700: cdpl_monitor.c:579: in cdpl_mn_connect(): debug: ok
+1743103905.496684: 2972675-7fa840c52700: cdpl_ipc.c:1862: in _epoll_accept(): debug: new connection from `152.14.98.56:59800'
+1743103905.496735: 2972675-7fa86b8a5540: cdpl_server.c:731: in cdpl_sv_new_job(): info: new job J1 in M1
+1743103905.496873: 2972675-7fa86b8a5540: cdpl_compat_master.c:1581: in _add_worker(): info: new worker type 10, min:1, max:3, cmd:`/mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/pwdp_jobs/saeSession0_default.SimulationSimulation_cdpl.0.2972675/START_WORKER pw_worker -i /mnt/coe/workspace/ece/ece546-spr25/group8/group8_
+1743103905.496926: 2972675-7fa82ffff700: cdpl_server_ipc.c:1225: in _sv_ipc_thread(): debug: received ACCEPT notification
+1743103905.496971: 2972675-7fa86b8a5540: cdpl_server.c:908: in cdpl_sv_new_bin_withfarm(): info: new bin B1 in J1
+1743103905.496983: 2972675-7fa82ffff700: cdpl_ipc.c:2503: in cdpl_ipc_host_accept(): debug: accepted host `152.14.98.56:59800'
+1743103905.497040: 2972675-7fa82ffff700: cdpl_server_ipc.c:1256: in _sv_ipc_thread(): debug: received MONITOR message
+1743103905.497648: 2972675-7fa82ffff700: cdpl_monitor.c:1207: in cdpl_mn_accept(): debug: accepted monitor `152.14.98.56:59800'
+1743103905.497681: 2972675-7fa82ffff700: cdpl_server_ipc_mon.c:120: in _globalLOCK(): debug: ENTERTING GLOBAL LOCK
+1743103905.497688: 2972675-7fa82ffff700: cdpl_server_ipc_mon.c:164: in _globalLOCK(): debug: global lock acquired
+1743103905.497761: 2972675-7fa82d7fa700: cdpl_monitor.c:910: in mn_systat(): debug: started
+1743103905.499328: 2972675-7fa82d7fa700: cdpl_monitor.c:937: in mn_systat(): debug: monitor server flush rate: 5
+1743103907.290397: 2972675-7fa82ffff700: cdpl_server_ipc_mon.c:210: in _globalUNLOCK(): debug: LEAVING GLOBAL LOCK
+1743103907.290529: 2972675-7fa86b8a5540: cdpl_server.c:3249: in cdpl_sv_start_job(): info: starting job J1
+1743103907.290578: 2972675-7fa86b8a5540: cdpl_server.c:62: in _sv_start_bin(): debug: starting bin B1 (min: 0, max: 3)
+1743103907.290888: 2972675-7fa81f7fe700: cdpl_server_sched.c:2482: in _sv_scheduler_thread(): debug: scheduler for bin B1 started
+1743103907.291002: 2972675-7fa86b8a5540: cdpl_server.c:1893: in _sv_gen_task(): info: new task T0 in B1 (prio 0)
+1743103907.291094: 2972675-7fa86b8a5540: cdpl_server.c:2698: in cdpl_sv_label_task_va(): info: setting task T0 label to "HSPICE_1|HSPICE"
+1743103907.291211: 2972675-7fa81f7fe700: cdpl_server_sched.c:2443: in _scheduler_run(): debug: will start a new worker
+1743103907.291339: 2972675-7fa81f7fe700: cdpl_farm.c:3977: in cdpl_farm_submit(): debug: 1 running processes
+1743103907.291347: 2972675-7fa81f7fe700: cdpl_farm.c:3985: in cdpl_farm_submit(): debug: new command C1 in bin B1 assigned to host `localhost'
+1743103907.291574: 2972675-7fa81f7fe700: cdpl_server_sched.c:705: in _sv_launch_worker(): info: started worker W1 (as C1) in bin B1
+1743103907.291620: 2972675-7fa81effd700: cdpl_farm.c:2139: in _schedule(): debug: started
+1743103907.291647: 2972675-7fa81effd700: cdpl_farm.c:2303: in _schedule(): debug: submitting command C1 in bin B1
+1743103907.291691: 2972675-7fa81effd700: cdpl_sh.c:49: in _sh_detached_submit(): info: SH : /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/pwdp_jobs/saeSession0_default.SimulationSimulation_cdpl.0.2972675/START_WORKER pw_worker -i /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/pwdp_jobs/saeSession0_default.SimulationSimulation_cdpl.0.2972675 -t 10000
+1743103907.301500: 2972675-7fa81effd700: cdpl_farm.c:2343: in _schedule(): debug: C1 in bin B1 running on slot 0
+1743103907.301525: 2972675-7fa81effd700: cdpl_farm.c:2167: in _schedule(): debug: idle
+1743103907.601651: 2972675-7fa81effd700: cdpl_farm.c:1193: in _onexit(): debug: C1 in bin B1 exited normally on slot 0
+1743103908.947762: 2972675-7fa82cff9700: cdpl_compat_master.c:5948: in cdplMasterLogInfo(): info: [non-CDPL log entry] PWDP - no-workers started ok check start!
+1743103910.333484: 2972675-7fa86b8a5540: cdpl_compat_master.c:5948: in cdplMasterLogInfo(): info: [non-CDPL log entry] PWDP3: reset pilot cache succeeded, pilot_key=saeSession0,1,default|&/mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/simulation/group8,nor_row_3by8_tb,schematic/history_1/simulation/default/PrimeSimHSPICE/nominal/results
+1743103911.704248: 2972675-7fa840c52700: cdpl_ipc.c:1862: in _epoll_accept(): debug: new connection from `152.14.98.56:50718'
+1743103911.704353: 2972675-7fa82ffff700: cdpl_server_ipc.c:1225: in _sv_ipc_thread(): debug: received ACCEPT notification
+1743103911.704402: 2972675-7fa82ffff700: cdpl_ipc.c:2503: in cdpl_ipc_host_accept(): debug: accepted host `152.14.98.56:50718'
+1743103911.704745: 2972675-7fa82ffff700: cdpl_server_ipc.c:1246: in _sv_ipc_thread(): debug: received HELLO message
+1743103911.704778: 2972675-7fa82ffff700: cdpl_server_ipc.c:430: in _sv_on_hello(): debug: looking up W1
+1743103911.704787: 2972675-7fa82ffff700: cdpl_server_ipc.c:540: in _sv_on_hello(): info: W1 is `152.14.98.56:50718'
+1743103911.704794: 2972675-7fa82ffff700: cdpl_server_ipc.c:541: in _sv_on_hello(): debug: hello W1 (B1)
+1743103911.704799: 2972675-7fa82ffff700: cdpl_server_ipc.c:542: in _sv_on_hello(): info: W1 log file is /dev/null
+1743103911.704915: 2972675-7fa82ffff700: cdpl_server_ipc.c:602: in _sv_on_hello(): info: up to 1 alive workers in B1
+1743103911.704944: 2972675-7fa82ffff700: cdpl_farm.c:878: in _release_cmd(): debug: freeing command C1 in bin B1
+1743103911.705060: 2972675-7fa81f7fe700: cdpl_server_sched.c:960: in _assign(): info: assigning task T0 to worker W1
+1743103912.705304: 2972675-7fa82ffff700: cdpl_server_ipc.c:312: in _sv_on_heartbeat(): debug: received HEARTBEAT from worker W1 at 152.14.98.56:50718
+1743103915.430665: 2972675-7fa82ffff700: cdpl_server_ipc.c:1268: in _sv_ipc_thread(): debug: received RELAY message
+1743103915.430735: 2972675-7fa82ffff700: cdpl_server_ipc.c:713: in _sv_on_relay(): debug: RELAY message from W1, size = 60
+1743103915.430745: 2972675-7fa82ffff700: cdpl_server_ipc.c:715: in _sv_on_relay(): debug: RELAY message from W1, content = 0$2973332 grendel41.ece.ncsu.edu 2973349 RUNNING 1743103914
+1743103915.568513: 2972675-7fa82f7fe700: cdpl_monitor.c:533: in cdpl_mn_connect(): debug: connecting to 152.14.98.56:46623
+1743103915.568540: 2972675-7fa82f7fe700: cdpl_ipc.c:3789: in cdpl_ipc_connect(): info: connecting to 152.14.98.56:46623
+1743103915.568908: 2972675-7fa82f7fe700: cdpl_ipc.c:3860: in cdpl_ipc_connect(): info: connected as `152.14.98.56:58764'
+1743103915.568931: 2972675-7fa82f7fe700: cdpl_ipc.c:2503: in cdpl_ipc_host_accept(): debug: accepted host `152.14.98.56:46623'
+1743103915.568944: 2972675-7fa82f7fe700: cdpl_monitor.c:579: in cdpl_mn_connect(): debug: ok
+1743103936.699733: 2972675-7fa82ffff700: cdpl_server_ipc.c:1268: in _sv_ipc_thread(): debug: received RELAY message
+1743103936.703091: 2972675-7fa82ffff700: cdpl_server_ipc.c:713: in _sv_on_relay(): debug: RELAY message from W1, size = 48
+1743103936.703111: 2972675-7fa82ffff700: cdpl_server_ipc.c:715: in _sv_on_relay(): debug: RELAY message from W1, content = WORKERDU|1275,dc2isi00nfs.oit.ncsu.edu:/coe_nfs
+1743103936.703139: 2972675-7fa82ffff700: cdpl_server_ipc.c:1268: in _sv_ipc_thread(): debug: received RELAY message
+1743103936.703146: 2972675-7fa82ffff700: cdpl_server_ipc.c:713: in _sv_on_relay(): debug: RELAY message from W1, size = 197
+1743103936.703152: 2972675-7fa82ffff700: cdpl_server_ipc.c:715: in _sv_on_relay(): debug: RELAY message from W1, content = REQPILOT|saeSession0,1,default|&/mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/simulation/group8,nor_row_3by8_tb,schematic/history_1/simulation/default/PrimeSimHSPICE/nominal/results|&0
+1743103936.703714: 2972675-7fa82dffb700: cdpl_compat_master.c:5948: in cdplMasterLogInfo(): info: [non-CDPL log entry] PWDP send back 'DOPILOT' to worker id:1 key: saeSession0,1,default|&/mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/simulation/group8,nor_row_3by8_tb,schematic/history_1/simulation/default/PrimeSimHSPICE/nominal/results
+1743103936.714946: 2972675-7fa82dffb700: cdpl_compat_master.c:5948: in cdplMasterLogInfo(): info: [non-CDPL log entry] PWDP: set pilot doing!
+1743103936.735645: 2972675-7fa82ffff700: cdpl_server_ipc.c:1268: in _sv_ipc_thread(): debug: received RELAY message
+1743103936.735683: 2972675-7fa82ffff700: cdpl_server_ipc.c:713: in _sv_on_relay(): debug: RELAY message from W1, size = 193
+1743103936.735694: 2972675-7fa82ffff700: cdpl_server_ipc.c:715: in _sv_on_relay(): debug: RELAY message from W1, content = PILOTOK|saeSession0,1,default|&/mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/simulation/group8,nor_row_3by8_tb,schematic/history_1/simulation/default/PrimeSimHSPICE/nominal/results
+1743103936.735742: 2972675-7fa82dffb700: cdpl_compat_master.c:5948: in cdplMasterLogInfo(): info: [non-CDPL log entry] PWDP: set pilot done!
+1743103936.736576: 2972675-7fa82ffff700: cdpl_server_ipc.c:1268: in _sv_ipc_thread(): debug: received RELAY message
+1743103936.736610: 2972675-7fa82ffff700: cdpl_server_ipc.c:713: in _sv_on_relay(): debug: RELAY message from W1, size = 18
+1743103936.736618: 2972675-7fa82ffff700: cdpl_server_ipc.c:715: in _sv_on_relay(): debug: RELAY message from W1, content = 0$- - - MEASDOING
+1743103943.201364: 2972675-7fa82ffff700: cdpl_server_ipc.c:1268: in _sv_ipc_thread(): debug: received RELAY message
+1743103943.204703: 2972675-7fa82ffff700: cdpl_server_ipc.c:713: in _sv_on_relay(): debug: RELAY message from W1, size = 72
+1743103943.204723: 2972675-7fa82ffff700: cdpl_server_ipc.c:715: in _sv_on_relay(): debug: RELAY message from W1, content = 0$2973332 grendel41.ece.ncsu.edu 2973349 FINISHED 1743103914|1743103943
+1743103943.244451: 2972675-7fa82ffff700: cdpl_server_ipc.c:1268: in _sv_ipc_thread(): debug: received RELAY message
+1743103943.244485: 2972675-7fa82ffff700: cdpl_server_ipc.c:713: in _sv_on_relay(): debug: RELAY message from W1, size = 195
+1743103943.244510: 2972675-7fa82ffff700: cdpl_server_ipc.c:715: in _sv_on_relay(): debug: RELAY message from W1, content = PILOTDONE|saeSession0,1,default|&/mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/simulation/group8,nor_row_3by8_tb,schematic/history_1/simulation/default/PrimeSimHSPICE/nominal/results
+1743103943.244659: 2972675-7fa82dffb700: cdpl_compat_master.c:5948: in cdplMasterLogInfo(): info: [non-CDPL log entry] saeSession0,1,default|&/mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/simulation/group8,nor_row_3by8_tb,schematic/history_1/simulation/default/PrimeSimHSPICE/nominal/results PILOTDONE!
+1743103943.278622: 2972675-7fa82ffff700: cdpl_server_ipc.c:1251: in _sv_ipc_thread(): debug: received FINISH message
+1743103943.278655: 2972675-7fa82ffff700: cdpl_server_ipc.c:983: in _sv_on_finish(): info: worker W1 completed task T0
+1743103943.278663: 2972675-7fa82ffff700: cdpl_server_ipc.c:988: in _sv_on_finish(): debug: stat T0: utime=11557 stime=4783
+1743103943.278670: 2972675-7fa82ffff700: cdpl_server_ipc.c:993: in _sv_on_finish(): debug: statm T0: vsize=2866664 rss=1056672 shared=519108 text=474784 data=731928
+1743103943.328060: 2972675-7fa82ffff700: cdpl_server_ipc.c:1268: in _sv_ipc_thread(): debug: received RELAY message
+1743103943.328095: 2972675-7fa82ffff700: cdpl_server_ipc.c:713: in _sv_on_relay(): debug: RELAY message from W1, size = 47
+1743103943.328103: 2972675-7fa82ffff700: cdpl_server_ipc.c:715: in _sv_on_relay(): debug: RELAY message from W1, content = WORKERDU|108,dc2isi00nfs.oit.ncsu.edu:/coe_nfs
+1743103951.055385: 2972675-7fa86b8a5540: cdpl_server.c:3008: in cdpl_sv_halt_job_errno(): info: killing job J1
+1743103951.058712: 2972675-7fa86b8a5540: cdpl_server.c:3044: in cdpl_sv_halt_job_errno(): debug: signal bin B1 scheduler to stop
+1743103951.058785: 2972675-7fa81f7fe700: cdpl_server_sched.c:2484: in _sv_scheduler_thread(): debug: scheduler for bin B1 stopped
+1743103951.058873: 2972675-7fa81f7fe700: cdpl_ipc.c:1657: in _host_drop__UNSAFE(): debug: dropping host `152.14.98.56:50718'
+1743103951.059040: 2972675-7fa81f7fe700: cdpl_server_sched.c:2830: in _sv_drop_worker(): info: down to 0 alive workers in B1
+1743103951.059061: 2972675-7fa81f7fe700: cdpl_farm.c:4152: in cdpl_farm_dismiss(): debug: down to 0 running processes
+1743103951.059089: 2972675-7fa81f7fe700: cdpl_server_sched.c:121: in _free_worker_2(): debug: freeing worker W1
+1743103951.059122: 2972675-7fa81f7fe700: cdpl_ipc.c:2513: in cdpl_ipc_host_release(): debug: releasing host `152.14.98.56:50718'
+1743103951.059193: 2972675-7fa86b8a5540: cdpl_server.c:294: in _sv_free_job(): info: freeing job J1
+1743103951.059227: 2972675-7fa86b8a5540: cdpl_server.c:92: in _sv_free_bin(): debug: freeing bin B1
+1743103951.059245: 2972675-7fa86b8a5540: cdpl_server.c:184: in _sv_free_task(): debug: freeing task T0
+1743103951.059336: 2972675-7fa82ffff700: cdpl_server_ipc.c:1236: in _sv_ipc_thread(): debug: received DROP notification
+1743103951.059394: 2972675-7fa86b8a5540: cdpl_monitor.c:515: in cdpl_mn_kill(): info: killing monitor
+1743103951.059427: 2972675-7fa86b8a5540: cdpl_ipc.c:3677: in cdpl_ipc_kill(): debug: stopping event server
+1743103951.059467: 2972675-7fa82effd700: cdpl_ipc.c:2460: in _epoll_main(): debug: server going down...
+1743103951.059684: 2972675-7fa840c52700: cdpl_ipc.c:775: in _readv(): warning: read(): EOF
+1743103951.059803: 2972675-7fa840c52700: cdpl_ipc.c:2100: in _epoll_recv(): debug: _readv(): Broken pipe
+1743103951.059814: 2972675-7fa840c52700: cdpl_ipc.c:2424: in _epoll_main(): debug: _epoll_recv(): Broken pipe
+1743103951.059827: 2972675-7fa840c52700: cdpl_ipc.c:1657: in _host_drop__UNSAFE(): debug: dropping host `152.14.98.56:59800'
+1743103951.059966: 2972675-7fa840c52700: cdpl_ipc.c:1582: in _host_free__UNSAFE(): debug: freeing host `152.14.98.56:50718'
+1743103951.059975: 2972675-7fa840c52700: cdpl_ipc.c:1621: in _host_free__UNSAFE(): debug: [0 outq, 0 spR, 0 spW]
+1743103951.060020: 2972675-7fa82ffff700: cdpl_server_ipc.c:1236: in _sv_ipc_thread(): debug: received DROP notification
+1743103951.060079: 2972675-7fa82f7fe700: cdpl_ipc.c:3728: in cdpl_ipc_free(): debug: releasing IPC handle
+1743103951.060110: 2972675-7fa82f7fe700: cdpl_ipc.c:1582: in _host_free__UNSAFE(): debug: freeing host `152.14.98.56:46623'
+1743103951.060117: 2972675-7fa82ffff700: cdpl_monitor.c:1269: in cdpl_mn_drop(): debug: detaching from monitor `152.14.98.56:59800'
+1743103951.060137: 2972675-7fa82ffff700: cdpl_monitor.c:1101: in mn_systat_stop(): debug: joining systat thread
+1743103951.060149: 2972675-7fa82f7fe700: cdpl_ipc.c:1621: in _host_free__UNSAFE(): debug: [0 outq, 0 spR, 0 spW]
+1743103951.060190: 2972675-7fa82f7fe700: cdpl_ipc.c:1582: in _host_free__UNSAFE(): debug: freeing host `152.14.98.56:33199'
+1743103951.060195: 2972675-7fa82f7fe700: cdpl_ipc.c:1621: in _host_free__UNSAFE(): debug: [0 outq, 0 spR, 0 spW]
+1743103951.060213: 2972675-7fa82f7fe700: cdpl_ipc.c:3756: in cdpl_ipc_free(): warning: 2 host(s) were not released
+1743103951.060247: 2972675-7fa82f7fe700: cdpl_ipc.c:3767: in cdpl_ipc_free(): debug: done
+1743103951.060253: 2972675-7fa82f7fe700: cdpl_monitor.c:1390: in cdpl_mn_free(): debug: freeing monitor client
+1743103951.060312: 2972675-7fa82d7fa700: cdpl_monitor.c:1079: in mn_systat(): debug: exiting
+1743103951.060415: 2972675-7fa82ffff700: cdpl_monitor.c:1103: in mn_systat_stop(): debug: systat thread done
+1743103951.060457: 2972675-7fa82ffff700: cdpl_ipc.c:2513: in cdpl_ipc_host_release(): debug: releasing host `152.14.98.56:59800'
+1743103951.060672: 2972675-7fa86b8a5540: cdpl_farm.c:2740: in cdpl_farm_free(): info: freeing farm
+1743103951.060734: 2972675-7fa81effd700: cdpl_farm.c:2231: in _schedule(): debug: end of idling
+1743103951.060750: 2972675-7fa81effd700: cdpl_farm.c:2235: in _schedule(): debug: dying
+1743103951.060986: 2972675-7fa86b8a5540: cdpl_farm.c:913: in _killall(): debug: killing all remaining commands
+1743103951.061086: 2972675-7fa86b8a5540: cdpl_server.c:3144: in cdpl_sv_free(): info: freeing server S1933413467
+1743103951.061136: 2972675-7fa86b8a5540: cdpl_server.c:3109: in cdpl_sv_kill_errno(): info: killing server
+1743103951.061143: 2972675-7fa86b8a5540: cdpl_ipc.c:3677: in cdpl_ipc_kill(): debug: stopping event server
+1743103951.061270: 2972675-7fa840c52700: cdpl_ipc.c:2460: in _epoll_main(): debug: server going down...
+1743103951.061317: 2972675-7fa82ffff700: cdpl_server_ipc.c:1200: in _sv_ipc_thread(): debug: leaving now
+1743103951.061471: 2972675-7fa86b8a5540: cdpl_server.c:334: in _sv_free_master(): info: freeing master M1
+1743103951.061528: 2972675-7fa86b8a5540: cdpl_hash.c:68: in cdpl_h_destroy(): debug: put operations: 1
+1743103951.061536: 2972675-7fa86b8a5540: cdpl_hash.c:69: in cdpl_h_destroy(): debug: put collisions: 0
+1743103951.061541: 2972675-7fa86b8a5540: cdpl_hash.c:70: in cdpl_h_destroy(): debug: get operations: 1
+1743103951.061546: 2972675-7fa86b8a5540: cdpl_hash.c:71: in cdpl_h_destroy(): debug: get iterations: 1
+1743103951.061570: 2972675-7fa86b8a5540: cdpl_monitor.c:1390: in cdpl_mn_free(): debug: freeing monitor server
+1743103951.061591: 2972675-7fa86b8a5540: cdpl_ipc.c:3728: in cdpl_ipc_free(): debug: releasing IPC handle
+1743103951.061597: 2972675-7fa86b8a5540: cdpl_ipc.c:1582: in _host_free__UNSAFE(): debug: freeing host `152.14.98.56:59800'
+1743103951.061608: 2972675-7fa86b8a5540: cdpl_ipc.c:1621: in _host_free__UNSAFE(): debug: [0 outq, 0 spR, 0 spW]
+1743103951.061661: 2972675-7fa86b8a5540: cdpl_ipc.c:3767: in cdpl_ipc_free(): debug: done
+1743103951.061682: 2972675-7fa86b8a5540: cdpl_log.c:481: in cdpl_log_close(): info: @@end_of_log@@

@@ -1,0 +1,127 @@
+[20:38:23.74] /o 
+              /c                                 Custom Compiler™ 
+              /c 
+              /c               Version W-2024.09-SP1-2 for linux64 - Jan 16, 2025 
+              /c 
+              /c                     Copyright (c) 2004 - 2025 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 11256978 compiled on Thu Jan 16 10:52:27 2025 for AlmaLinux 8.4
+              /c Invocation: /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Tue Apr 15 20:38:16 2025
+              /c Host: grendel42.ece.ncsu.edu
+              /c Working directory: /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project
+              /c 
+[20:38:34.97] /m Information: Registering ICV PERC package...
+[20:38:36.61] /r giShowFrameTabs true
+[20:38:36.61] /r giWindowId 1
+[20:38:36.61] /r giWindowGeometry 1040x800
+[20:38:37.41] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x822+247+54
+[20:38:49.98] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[20:38:50.22] /i db::setAttr geometry -of [gi::getFrames 1] -value 1536x770+0+46
+[20:38:55.96] /i gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[20:38:56.26] /r giWindowId 2
+[20:38:56.27] /r giWindowGeometry 660x600+50+50
+[20:38:56.41] /i gi::setCurrentIndex {libs} -index {snpsDefTechLib} -in [gi::getWindows 2]
+[20:38:56.47] /i gi::setItemSelection {libs} -index {snpsDefTechLib} -in [gi::getWindows 2]
+[20:39:01.49] /i gi::setCurrentIndex {libs} -index {group8} -in [gi::getWindows 2]
+[20:39:01.55] /i gi::setItemSelection {libs} -index {group8} -in [gi::getWindows 2]
+[20:39:04.57] /i gi::setCurrentIndex {cells} -index {memory_array_8by16} -in [gi::getWindows 2]
+[20:39:04.78] /i gi::setItemSelection {cells} -index {memory_array_8by16} -in [gi::getWindows 2]
+[20:39:23.43] /i gi::setCurrentIndex {cells} -index {tb2025_1} -in [gi::getWindows 2]
+[20:39:23.69] /i gi::setItemSelection {cells} -index {tb2025_1} -in [gi::getWindows 2]
+[20:39:25.08] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 2]
+[20:39:25.17] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 2]
+[20:39:25.34] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[20:39:25.53] /o Loading: Callback files...
+[20:39:25.55] /o Loading: scripts/callbacks/callbacks.tcl
+[20:39:25.55] /o 
+              /c [INFO] : Loading display.drf from /mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3
+              /c 
+              /c  if you wish to Load other display.drf, please set shell environment valiable "iPDK_load_display_NCSU_TechLib_FreePDK3" to value = 0
+[20:39:25.55] /o 
+[20:39:25.66] /w Warning: Preference 'xtStarTcadGrdFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[20:39:25.67] /w Warning: Preference 'xtStarOALayerMappingFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[20:39:25.67] /o 	#######################################
+[20:39:25.67] /o 	CC-PDK Library Name	: FreePDK3
+[20:39:25.67] /o 	#######################################
+[20:39:25.67] /o 
+[20:39:25.74] /m Information: Feature 'CustomInfrastructure' checked out. (LICENSE-003)
+[20:39:25.76] /m Information: Feature 'SynopsysCustomLayout' checked out. (LICENSE-003)
+[20:39:25.80] /m Information: Lock file /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/group8/tb2025_1/schematic/sch.oa.cdslck: Unable to connect to OA Lock File Daemon(oaFSLockD) on host 'greenlantern.ece.ncsu.edu'. Check if oaFSLockD is running on the host. If the host is invalid, remove the .cdslck lock file. (oaDMFileSys)
+[20:39:25.80] /m Information: Feature 'CustomInfrastructure' checked in. (LICENSE-004)
+[20:39:25.80] /m Information: Feature 'SynopsysCustomLayout' checked in. (LICENSE-004)
+[20:39:25.99] /r giDialog gi::setActiveDialog [gi::getDialogs {deOpenFailed} -parent [gi::getWindows 2]]
+[20:39:26.28] /r giDialog db::setAttr geometry -of [gi::getDialogs {deOpenFailed} -parent [gi::getWindows 2]] -value 434x83+541+338
+[20:39:27.87] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deOpenFailed} -parent [gi::getWindows 2]]
+[20:39:28.42] /r giWindowId 3
+[20:39:28.42] /r giWindowGeometry 1305x777
+[20:39:31.03] /# gi::executeAction {deSelectActive} -in [gi::getWindows 3]
+[20:39:31.03] /i de::deselectAll [db::getNext [de::getContexts -window 3]]
+[20:39:31.03] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {3.50625 3.68125} -index 0 -intent none]
+[20:39:31.03] /o oa:0x3cdd46a0
+[20:39:31.39] /i ::se::internal::descendInst 3 [de::getActiveFigure [gi::getWindows 3] -point {3.50625 3.68125} -index 0 -intent none] auto
+[20:39:31.55] /# ide::descend 3 -inPlace false -readOnly auto
+[20:39:31.66] /# Navigating to group8/memory_array_static_column_decoder/schematic (I35)
+[20:39:32.32] /r giWindowGeometry 1305x777
+[20:39:36.99] /# gi::executeAction {deSelectActive} -in [gi::getWindows 3]
+[20:39:36.99] /i de::deselectAll [db::getNext [de::getContexts -window 3]]
+[20:39:36.99] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {31.8625 9.5} -index 0 -intent none]
+[20:39:36.99] /o oa:0x3d8cfa80
+[20:39:37.26] /i ::se::internal::descendInst 3 [de::getActiveFigure [gi::getWindows 3] -point {31.8625 9.5} -index 0 -intent none] auto
+[20:39:37.38] /# ide::descend 3 -inPlace false -readOnly auto
+[20:39:37.50] /# Navigating to group8/columnDecoderstatic/schematic (I246)
+[20:39:37.62] /r giWindowGeometry 1305x777
+[20:39:40.17] /# gi::executeAction {deSelectActive} -in [gi::getWindows 3]
+[20:39:40.17] /i de::deselectAll [db::getNext [de::getContexts -window 3]]
+[20:39:40.17] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {342.69375 192.39375} -index 0 -intent none]
+[20:39:40.17] /o oa:0x3d7d7800
+[20:39:40.41] /i ::se::internal::descendInst 3 [de::getActiveFigure [gi::getWindows 3] -point {342.69375 192.39375} -index 0 -intent none] auto
+[20:39:40.53] /# ide::descend 3 -inPlace false -readOnly auto
+[20:39:40.67] /# Navigating to group8/2to4_decoder_static/schematic (I7)
+[20:39:40.76] /r giWindowGeometry 1305x777
+[20:40:12.38] /i gi::setActiveWindow 2
+[20:40:12.38] /i gi::setActiveWindow 2 -raise true
+[20:40:16.79] /i gi::setActiveWindow 3
+[20:40:16.79] /i gi::setActiveWindow 3 -raise true
+[20:40:18.67] /# gi::executeAction {deReturn} -in [gi::getWindows 3]
+[20:40:18.67] /i de::return [db::getNext [de::getContexts -window 3]] -errorOnFail false
+[20:40:18.77] /# Navigating to group8/columnDecoderstatic/schematic (I246)
+[20:40:18.79] /r giWindowGeometry 1305x777
+[20:40:20.64] /# gi::executeAction {deReturn} -in [gi::getWindows 3]
+[20:40:20.64] /i de::return [db::getNext [de::getContexts -window 3]] -errorOnFail false
+[20:40:20.69] /# Navigating to group8/memory_array_static_column_decoder/schematic (I35)
+[20:40:20.70] /r giWindowGeometry 1305x777
+[20:40:22.69] /# gi::executeAction {deCanvasPanWest} -in [gi::getWindows 3]
+[20:40:22.69] /i de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[20:40:24.95] /# gi::executeAction {deSelectActive} -in [gi::getWindows 3]
+[20:40:24.95] /i de::deselectAll [db::getNext [de::getContexts -window 3]]
+[20:40:24.95] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {14.81875 10.14375} -index 0 -intent none]
+[20:40:24.95] /o oa:0x3dee0e70
+[20:40:25.18] /i ::se::internal::descendInst 3 [de::getActiveFigure [gi::getWindows 3] -point {14.81875 10.14375} -index 0 -intent none] auto
+[20:40:25.30] /# ide::descend 3 -inPlace false -readOnly auto
+[20:40:25.43] /# Navigating to group8/agen_unit/schematic (I217)
+[20:40:25.55] /r giWindowGeometry 1305x777
+[20:40:46.64] /r giDialog gi::setActiveDialog [gi::getDialogs {giCloseFrame}]
+[20:40:46.90] /r giDialog db::setAttr geometry -of [gi::getDialogs {giCloseFrame}] -value 299x110+609+324
+[20:40:48.22] /r giDialog gi::pressButton {giCloseTabsButton} -in [gi::getDialogs {giCloseFrame}]
+[20:40:48.31] /i exit
+[20:40:48.38] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog} -parent [gi::getWindows 3]]
+[20:40:48.62] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 3]] -value 419x212+549+273
+[20:40:49.78] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog} -parent [gi::getWindows 3]]
+[20:40:52.44] /o Shutdown time: Tue Apr 15 20:40:52 2025
+[20:40:52.44] /o Elapsed session real time: 2.55 minutes
+[20:40:52.44] /o Session terminated. Log is at /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/logs/ccompiler.hrajesh.2025_4_15_203816_3475567.log

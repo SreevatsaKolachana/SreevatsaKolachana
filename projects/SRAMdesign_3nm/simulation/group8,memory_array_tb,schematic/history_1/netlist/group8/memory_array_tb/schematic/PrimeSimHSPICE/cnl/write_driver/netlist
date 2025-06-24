@@ -1,0 +1,33 @@
+********************************************************************************
+* Library          : group8
+* Cell             : Write_Driver
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt write_driver din wbdata wdata
+m18 net33 din vdd! pfet nfin=8 adeo=2.268e-15 aseo=2.268e-15 pdeo=4.68e-07 pseo=4.68e-07
+m13 net26 din vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m12 net25 net26 vdd! pfet nfin=8 adeo=2.268e-15 aseo=2.268e-15 pdeo=4.68e-07
++ pseo=4.68e-07
+m17 net32 net33 vdd! pfet nfin=16 adeo=4.536e-15 aseo=4.536e-15 pdeo=9.36e-07
++ pseo=9.36e-07
+m16 wbdata net32 vdd! pfet nfin=20 adeo=5.67e-15 aseo=5.67e-15 pdeo=1.17e-06
++ pseo=1.17e-06
+m1 wdata net35 vdd! pfet nfin=20 adeo=5.67e-15 aseo=5.67e-15 pdeo=1.17e-06 pseo=1.17e-06
+m0 net35 net25 vdd! pfet nfin=16 adeo=4.536e-15 aseo=4.536e-15 pdeo=9.36e-07
++ pseo=9.36e-07
+m21 net33 din gnd! nfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m20 net32 net33 gnd! nfet nfin=8 adeo=2.268e-15 aseo=2.268e-15 pdeo=4.68e-07
++ pseo=4.68e-07
+m19 wbdata net32 gnd! nfet nfin=10 adeo=2.835e-15 aseo=2.835e-15 pdeo=5.85e-07
++ pseo=5.85e-07
+m15 net26 din gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m14 net25 net26 gnd! nfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07
++ pseo=2.34e-07
+m5 wdata net35 gnd! nfet nfin=10 adeo=2.835e-15 aseo=2.835e-15 pdeo=5.85e-07
++ pseo=5.85e-07
+m4 net35 net25 gnd! nfet nfin=8 adeo=2.268e-15 aseo=2.268e-15 pdeo=4.68e-07
++ pseo=4.68e-07
+.ends write_driver
+

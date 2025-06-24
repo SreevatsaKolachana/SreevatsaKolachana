@@ -1,0 +1,11 @@
+********************************************************************************
+* Library          : group8
+* Cell             : tspc_neg_ff_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 d qbar phi tspc_neg_ff
+v2 vdd! gnd! dc='VDD_VAL'
+v7 phi gnd! dc=0 pulse ( 'VDD_VAL' 0 0 '20ps' '20ps' 30p 80p )
+v6 d gnd! dc=0 pulse ( 'VDD_VAL' 0 0 5p 5p 45p 95p )

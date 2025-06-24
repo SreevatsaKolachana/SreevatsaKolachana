@@ -1,0 +1,68 @@
+*PrimeWave Design Environment Based on Custom Infrastructure
+*Version W-2024.09-SP1-2
+*Sat Apr  5 16:31:41 2025
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : group8
+* Cell             : nand
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt nand a b y
+m1 net4 b gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m0 y a net4 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m3 y b vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m2 y a vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+.ends nand
+
+********************************************************************************
+* Library          : group8
+* Cell             : inv
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt inv in out
+m0 out in vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m1 out in gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+.ends inv
+
+********************************************************************************
+* Library          : group8
+* Cell             : invx4
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt invx4 in out
+m0 out in vdd! pfet nfin=8 adeo=2.268e-15 aseo=2.268e-15 pdeo=4.68e-07 pseo=4.68e-07
+m1 out in gnd! nfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+.ends invx4
+
+********************************************************************************
+* Library          : group8
+* Cell             : read_circuit
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt read_circuit bl blbar out
+xi0 bl net6 net2 nand
+xi1 net2 out inv
+xi2 blbar net6 invx4
+.ends read_circuit
+
+********************************************************************************
+* Library          : group8
+* Cell             : read_circuit_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 bl blb out read_circuit
+v3 bl gnd! dc=0 pulse ( 0.8 0 0 5p 5p 45p 100p )
+v2 blb gnd! dc=0 pulse ( 0.8 0 0 5p 5p 20p 50p )
+v5 vdd! gnd! dc=0.8
+

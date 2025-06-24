@@ -1,0 +1,141 @@
+* Description of frequently used terms in hierarchy_analysis files*
+M indicates that the value of that column is in millions
+Hier Plc Count(Hierarchical Placement Count) : Number of unique instances of the cell in another cell (Parent)
+Flat Plc Count(Flat Placement Count)         : Total number of instances of the cell in the layout
+
+Example : 
+                               A                     
+                              / \                   Cell  Hier Plc Count Flat Plc Count 
+                             /   \                     A               1              1 
+                            B     B                    B               2              2 
+                           / \  /  \                   C               2              4 
+                          C   C C   C                
+------------------------------------------------------------------------------------------------------ 
+
+
+* Cells with flat area > 0.01 of top cell *
+Reports cells with flat area > 0.01 of top cell
+
+Flat A(Flat Area) : Total area covered by this cell in the layout(cell area * flat placement count)
+Cell A(Cell Area) : Area of this cell
+Percent of top    : Percentage of area of this cell w.r.t area of top cell
+This table contains 7 entries
+Original table contains 7 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Flat Plc Count, Hier Plc Count, Percent of top
+-----------------------------------------------
+ static_row_decoder_3by8                       |         0.000,         0.000,              1,              1,       100.00 %
+ sram_filler                                   |         0.000,         0.000,             92,             92,        80.71 %
+ invx4                                         |         0.000,         0.000,             18,              4,        33.71 %
+ buffer_highdrive                              |         0.000,         0.000,              8,              8,        28.26 %
+ nand                                          |         0.000,         0.000,             16,             16,        24.66 %
+ nor                                           |         0.000,         0.000,              8,              8,        12.33 %
+ inv                                           |         0.000,         0.000,              3,              3,         3.63 %
+===============================================
+
+* Large-Area cells and child area ratio *
+This table reports cells with large areas and ratio of its area with total area covered by its children
+
+Num Inst(Number of instances) : Total Number of instances of the cell
+Child A(Child Area)           : Total area covered by all the children of the cell
+Pct of parent(Percent of area): Percentage of total area covered by its childern w.r.t area of this cell
+This table contains 7 entries
+Original table contains 7 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Num Inst (M), Child A (mm^2), Pct of parent
+-----------------------------------------------
+ static_row_decoder_3by8                       |         0.000,         0.000,        0.000,         0.000,      153.33 %
+ sram_filler                                   |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ invx4                                         |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ buffer_highdrive                              |         0.000,         0.000,        0.000,         0.000,      106.04 %
+ nand                                          |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ nor                                           |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ inv                                           |         0.000,         0.000,        0.000,         0.000,        0.00 %
+===============================================
+
+* Exploded Cell Information *
+Displays information of exploded cells
+
+Parent cell           : Name of the parent cell the cell has exploded into
+Exploded Inst Count   : Total number of instances of the cell that has expldoed to the parent cell
+Parent Flat Plc Count : Parent cell flat placement count
+Parent Hier Plc Count : Parent cell hierarchical placement count
+This table contains 33 entries
+Original table contains 33 entries
+
+ Exploded Cell                                 | Parent Cell                                   | Exploded Inst Count, Parent Flat Plc Count, Parent Hier Plc Count
+----------------------------------------------- -----------------------------------------------
+ M1_M2                                         | static_row_decoder_3by8                       |                  62,                     1,                     1
+ M2_M3                                         | static_row_decoder_3by8                       |                  36,                     1,                     1
+ M0B_M1                                        | static_row_decoder_3by8                       |                  30,                     1,                     1
+ M3_M4                                         | static_row_decoder_3by8                       |                  22,                     1,                     1
+ M0A_M0B                                       | static_row_decoder_3by8                       |                  19,                     1,                     1
+ BPR_M0A                                       | invx4                                         |                   6,                    18,                     4
+ M0B_M1                                        | invx4                                         |                   6,                    18,                     4
+ GATE_M0B                                      | invx4                                         |                   4,                    18,                     4
+ nmos                                          | invx4                                         |                   4,                    18,                     4
+ pmos                                          | invx4                                         |                   4,                    18,                     4
+ M0B_M1                                        | nand                                          |                   4,                    16,                    16
+ M0A_M0B                                       | nor                                           |                   4,                     8,                     8
+ BPR_M0A                                       | inv                                           |                   3,                     3,                     3
+ M0B_M1                                        | inv                                           |                   3,                     3,                     3
+ BPR_M0A                                       | nand                                          |                   3,                    16,                    16
+ pmos                                          | nand                                          |                   3,                    16,                    16
+ BPR_M0A                                       | nor                                           |                   3,                     8,                     8
+ M0B_M1                                        | nor                                           |                   3,                     8,                     8
+ nmos                                          | nor                                           |                   3,                     8,                     8
+ pmos                                          | nor                                           |                   3,                     8,                     8
+ GATE_M0B                                      | inv                                           |                   2,                     3,                     3
+ nmos                                          | inv                                           |                   2,                     3,                     3
+ pmos                                          | inv                                           |                   2,                     3,                     3
+ M0A_M0B                                       | invx4                                         |                   2,                    18,                     4
+ GATE_M0B                                      | nand                                          |                   2,                    16,                    16
+ M0A_M0B                                       | nand                                          |                   2,                    16,                    16
+ nmos                                          | nand                                          |                   2,                    16,                    16
+ GATE_M0B                                      | nor                                           |                   2,                     8,                     8
+ BPR_M0A                                       | sram_filler                                   |                   2,                    92,                    92
+ M0A_M0B                                       | inv                                           |                   1,                     3,                     3
+ nmos                                          | sram_filler                                   |                   1,                    92,                    92
+ pmos                                          | sram_filler                                   |                   1,                    92,                    92
+ buffer_highdrive_vertical                     | static_row_decoder_3by8                       |                   1,                     1,                     1
+=============================================== ===============================================
+
+* Layer Report with Estimated Data *
+Reports information of layers present in the layout
+
+Trap        : Number of hierarchical trapezoids in the layer
+Poly        : Number of hierarchical polygons in the layer
+Text        : Number of hierarchical text primitives in the layer
+Flat Trap   : Number of flat trapezoids 
+Flat Poly   : Number of flat polygons
+Flat Text   : Number of flat text primitives 
+Trap F/H    : Ratio of flat and hierarchical placements of the trapezoids
+Base, Metal, Via, Fill, Colored : Indicates layer intent
+This table contains 21 entries
+Original table contains 21 entries
+
+ Name                                          | Trap (M), Poly (M), Text (M), Flat Trap (M), Flat Poly (M), Flat Text (M), Trap F/H, Base, Metal, Via, Fill, Colored
+-----------------------------------------------
+ aM1                                           |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,     3.03,    0,     0,   0,    0,       0
+ aM2                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.00,    0,     0,   0,    0,       0
+ aGATE                                         |    0.000,    0.000,    0.000,         0.002,         0.002,         0.000,    18.92,    0,     0,   0,    0,       0
+ aM0A                                          |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,    14.93,    0,     0,   0,    0,       0
+ aM0B                                          |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,     6.10,    0,     0,   0,    0,       0
+ aM3                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.00,    0,     0,   0,    0,       0
+ aV1                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.00,    0,     0,   0,    0,       0
+ aV0B                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     5.11,    0,     0,   0,    0,       0
+ aBPR                                          |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,    22.58,    0,     0,   0,    0,       0
+ aV2                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.00,    0,     0,   0,    0,       0
+ aM4                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.00,    0,     0,   0,    0,       0
+ aV0A                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     4.36,    0,     0,   0,    0,       0
+ aACT                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,    18.72,    0,     0,   0,    0,       0
+ aV3                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.00,    0,     0,   0,    0,       0
+ aDUMMY                                        |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,    22.74,    0,     0,   0,    0,       0
+ aNW                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,    21.06,    0,     0,   0,    0,       0
+ aVBPR                                         |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,    21.94,    0,     0,   0,    0,       0
+ tM1                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+ tBPR                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+ tM4                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+ tM0A                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+===============================================
+

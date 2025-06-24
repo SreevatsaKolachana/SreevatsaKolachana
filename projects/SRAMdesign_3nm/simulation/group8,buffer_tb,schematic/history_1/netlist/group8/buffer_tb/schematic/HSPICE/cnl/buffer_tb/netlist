@@ -1,0 +1,22 @@
+********************************************************************************
+* Library          : group8
+* Cell             : buffer_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi22 net53 net52 buffer
+xi21 net50 net53 buffer
+xi19 net39 net45 buffer
+xi20 net41 net39 buffer
+xi14 net45 net29 buffer
+xi8 net29 net50 buffer
+xi0 clk net41 buffer
+v1 clk gnd! dc=0 pulse ( 0 00.8 0 5p 5p 45p 100p )
+c17 wl_ref gnd! c=0.2f
+c2 i2_pc gnd! c=0.2f
+v3 vdd! gnd! dc=0.8
+xi13 net52 clk net21 nor
+xi10 net21 i2_pc inv
+xi16 net36 wl_ref inv
+xi15 clk net50 net36 nand

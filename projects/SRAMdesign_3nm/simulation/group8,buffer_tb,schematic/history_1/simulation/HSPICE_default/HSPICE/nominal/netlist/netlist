@@ -1,0 +1,80 @@
+*PrimeWave Design Environment Based on Custom Infrastructure
+*Version W-2024.09-SP1-2
+*Thu Apr  3 16:42:58 2025
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : group8
+* Cell             : inv
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt inv in out
+m0 out in vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m1 out in gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+.ends inv
+
+********************************************************************************
+* Library          : group8
+* Cell             : buffer
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt buffer in out
+xi1 net4 out inv
+xi0 in net4 inv
+.ends buffer
+
+********************************************************************************
+* Library          : group8
+* Cell             : nor
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt nor a b y
+m1 y b gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m0 y a gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m3 net11 a vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m2 y b net11 pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+.ends nor
+
+********************************************************************************
+* Library          : group8
+* Cell             : nand
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt nand a b y
+m1 net4 b gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m0 y a net4 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m3 y b vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m2 y a vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+.ends nand
+
+********************************************************************************
+* Library          : group8
+* Cell             : buffer_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi22 net53 net52 buffer
+xi21 net50 net53 buffer
+xi19 net39 net45 buffer
+xi20 net41 net39 buffer
+xi14 net45 net29 buffer
+xi8 net29 net50 buffer
+xi0 clk net41 buffer
+v1 clk gnd! dc=0 pulse ( 0 00.8 0 5p 5p 45p 100p )
+c17 wl_ref gnd! c=0.2f
+c2 i2_pc gnd! c=0.2f
+v3 vdd! gnd! dc=0.8
+xi13 net52 clk net21 nor
+xi10 net21 i2_pc inv
+xi16 net36 wl_ref inv
+xi15 clk net50 net36 nand
+

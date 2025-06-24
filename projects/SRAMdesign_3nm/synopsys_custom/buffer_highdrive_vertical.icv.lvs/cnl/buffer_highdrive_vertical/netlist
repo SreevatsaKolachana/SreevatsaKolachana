@@ -1,0 +1,13 @@
+********************************************************************************
+* Library          : group8
+* Cell             : buffer_highdrive_vertical
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt buffer_highdrive_vertical in out
+*.PININFO in:I out:O
+XI17 net24 out invx4
+XI16 in net24 invx4
+.ends buffer_highdrive_vertical
+

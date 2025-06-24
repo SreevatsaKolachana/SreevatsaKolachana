@@ -1,0 +1,181 @@
+********************************************************************************
+* Library          : group8
+* Cell             : memory_array_static_column_decoder_test
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt memory_array_static_column_decoder_test a<0> a<1> a<2> a<3> a<4> clk
++ d<0> d<1> d<2> d<3> q<0> q<1> q<2> q<3> wenb
+xi182 bl0bar bl0 pc precharge_logic
+xi147 bl15bar bl15 pc precharge_logic
+xi146 bl14bar bl14 pc precharge_logic
+xi145 bl13bar bl13 pc precharge_logic
+xi144 bl12bar bl12 pc precharge_logic
+xi143 bl11bar bl11 pc precharge_logic
+xi142 bl10bar bl10 pc precharge_logic
+xi141 bl9bar bl9 pc precharge_logic
+xi140 bl8bar bl8 pc precharge_logic
+xi139 bl7bar bl7 pc precharge_logic
+xi138 bl6bar bl6 pc precharge_logic
+xi137 bl5bar bl5 pc precharge_logic
+xi136 bl4bar bl4 pc precharge_logic
+xi135 bl3bar bl3 pc precharge_logic
+xi134 bl2bar bl2 pc precharge_logic
+xi133 bl1bar bl1 pc precharge_logic
+xi199 bl0 bl0bar wl<1> sram_6t
+xi55 bl6 bl6bar wl<1> sram_6t
+xi54 bl5 bl5bar wl<1> sram_6t
+xi53 bl4 bl4bar wl<1> sram_6t
+xi52 bl3 bl3bar wl<1> sram_6t
+xi47 bl7 bl7bar wl<2> sram_6t
+xi51 bl2 bl2bar wl<1> sram_6t
+xi50 bl1 bl1bar wl<1> sram_6t
+xi64 bl8 bl8bar wl<7> sram_6t
+xi65 bl9 bl9bar wl<7> sram_6t
+xi66 bl10 bl10bar wl<7> sram_6t
+xi67 bl11 bl11bar wl<7> sram_6t
+xi68 bl12 bl12bar wl<7> sram_6t
+xi69 bl13 bl13bar wl<7> sram_6t
+xi70 bl14 bl14bar wl<7> sram_6t
+xi71 bl15 bl15bar wl<7> sram_6t
+xi72 bl8 bl8bar wl<5> sram_6t
+xi73 bl8 bl8bar wl<6> sram_6t
+xi74 bl9 bl9bar wl<6> sram_6t
+xi75 bl10 bl10bar wl<6> sram_6t
+xi76 bl11 bl11bar wl<6> sram_6t
+xi77 bl12 bl12bar wl<6> sram_6t
+xi104 bl15 bl15bar wl<3> sram_6t
+xi103 bl14 bl14bar wl<3> sram_6t
+xi102 bl13 bl13bar wl<3> sram_6t
+xi101 bl12 bl12bar wl<3> sram_6t
+xi100 bl11 bl11bar wl<3> sram_6t
+xi99 bl10 bl10bar wl<3> sram_6t
+xi98 bl9 bl9bar wl<3> sram_6t
+xi97 bl8 bl8bar wl<3> sram_6t
+xi95 bl15 bl15bar wl<4> sram_6t
+xi94 bl14 bl14bar wl<4> sram_6t
+xi93 bl13 bl13bar wl<4> sram_6t
+xi92 bl12 bl12bar wl<4> sram_6t
+xi91 bl11 bl11bar wl<4> sram_6t
+xi90 bl10 bl10bar wl<4> sram_6t
+xi89 bl9 bl9bar wl<4> sram_6t
+xi88 bl8 bl8bar wl<4> sram_6t
+xi87 bl15 bl15bar wl<5> sram_6t
+xi86 bl14 bl14bar wl<5> sram_6t
+xi85 bl13 bl13bar wl<5> sram_6t
+xi84 bl12 bl12bar wl<5> sram_6t
+xi83 bl11 bl11bar wl<5> sram_6t
+xi82 bl10 bl10bar wl<5> sram_6t
+xi81 bl9 bl9bar wl<5> sram_6t
+xi80 bl15 bl15bar wl<6> sram_6t
+xi79 bl14 bl14bar wl<6> sram_6t
+xi78 bl13 bl13bar wl<6> sram_6t
+xi117 bl12 bl12bar wl<1> sram_6t
+xi116 bl11 bl11bar wl<1> sram_6t
+xi115 bl10 bl10bar wl<1> sram_6t
+xi114 bl9 bl9bar wl<1> sram_6t
+xi113 bl8 bl8bar wl<1> sram_6t
+xi112 bl8 bl8bar wl<0> sram_6t
+xi111 bl15 bl15bar wl<2> sram_6t
+xi110 bl14 bl14bar wl<2> sram_6t
+xi109 bl13 bl13bar wl<2> sram_6t
+xi108 bl12 bl12bar wl<2> sram_6t
+xi107 bl11 bl11bar wl<2> sram_6t
+xi106 bl10 bl10bar wl<2> sram_6t
+xi105 bl9 bl9bar wl<2> sram_6t
+xi96 bl8 bl8bar wl<2> sram_6t
+xi63 bl7 bl7bar wl<0> sram_6t
+xi62 bl6 bl6bar wl<0> sram_6t
+xi61 bl5 bl5bar wl<0> sram_6t
+xi60 bl4 bl4bar wl<0> sram_6t
+xi59 bl3 bl3bar wl<0> sram_6t
+xi58 bl2 bl2bar wl<0> sram_6t
+xi57 bl1 bl1bar wl<0> sram_6t
+xi56 bl7 bl7bar wl<1> sram_6t
+xi13 bl4 bl4bar wl<6> sram_6t
+xi197 bl0 bl0bar wl<3> sram_6t
+xi192 bl0 bl0bar wl<4> sram_6t
+xi191 bl0 bl0bar wl<6> sram_6t
+xi190 bl0 bl0bar wl<5> sram_6t
+xi189 bl0 bl0bar wl<7> sram_6t
+xi40 bl7 bl7bar wl<3> sram_6t
+xi39 bl6 bl6bar wl<3> sram_6t
+xi38 bl5 bl5bar wl<3> sram_6t
+xi37 bl4 bl4bar wl<3> sram_6t
+xi36 bl3 bl3bar wl<3> sram_6t
+xi35 bl2 bl2bar wl<3> sram_6t
+xi34 bl1 bl1bar wl<3> sram_6t
+xi31 bl7 bl7bar wl<4> sram_6t
+xi30 bl6 bl6bar wl<4> sram_6t
+xi29 bl5 bl5bar wl<4> sram_6t
+xi28 bl4 bl4bar wl<4> sram_6t
+xi27 bl3 bl3bar wl<4> sram_6t
+xi26 bl2 bl2bar wl<4> sram_6t
+xi25 bl1 bl1bar wl<4> sram_6t
+xi23 bl7 bl7bar wl<5> sram_6t
+xi22 bl6 bl6bar wl<5> sram_6t
+xi21 bl5 bl5bar wl<5> sram_6t
+xi20 bl4 bl4bar wl<5> sram_6t
+xi19 bl3 bl3bar wl<5> sram_6t
+xi18 bl2 bl2bar wl<5> sram_6t
+xi17 bl1 bl1bar wl<5> sram_6t
+xi16 bl7 bl7bar wl<6> sram_6t
+xi15 bl6 bl6bar wl<6> sram_6t
+xi14 bl5 bl5bar wl<6> sram_6t
+xi12 bl3 bl3bar wl<6> sram_6t
+xi11 bl2 bl2bar wl<6> sram_6t
+xi118 bl13 bl13bar wl<1> sram_6t
+xi10 bl1 bl1bar wl<6> sram_6t
+xi119 bl14 bl14bar wl<1> sram_6t
+xi120 bl15 bl15bar wl<1> sram_6t
+xi121 bl9 bl9bar wl<0> sram_6t
+xi122 bl10 bl10bar wl<0> sram_6t
+xi123 bl11 bl11bar wl<0> sram_6t
+xi7 bl7 bl7bar wl<7> sram_6t
+xi124 bl12 bl12bar wl<0> sram_6t
+xi125 bl13 bl13bar wl<0> sram_6t
+xi126 bl14 bl14bar wl<0> sram_6t
+xi127 bl15 bl15bar wl<0> sram_6t
+xi6 bl6 bl6bar wl<7> sram_6t
+xi5 bl5 bl5bar wl<7> sram_6t
+xi4 bl4 bl4bar wl<7> sram_6t
+xi193 bl0 bl0bar wl<2> sram_6t
+xi3 bl3 bl3bar wl<7> sram_6t
+xi2 bl2 bl2bar wl<7> sram_6t
+xi1 bl1 bl1bar wl<7> sram_6t
+xi41 bl1 bl1bar wl<2> sram_6t
+xi42 bl2 bl2bar wl<2> sram_6t
+xi43 bl3 bl3bar wl<2> sram_6t
+xi44 bl4 bl4bar wl<2> sram_6t
+xi45 bl5 bl5bar wl<2> sram_6t
+xi46 bl6 bl6bar wl<2> sram_6t
+xi198 bl0 bl0bar wl<0> sram_6t
+xi202 a<4> a<3> a<2> wlref wl<0> wl<1> wl<2> wl<3> wl<4> wl<5> wl<6> wl<7>
++ static_row_decoder_3by8
+xi246 bl0 bl0bar bl1 bl1bar bl2 bl2bar bl3 bl3bar bl4 bl4bar bl5 bl5bar bl6
++ bl6bar bl7 bl7bar bl8 bl8bar bl9 bl9bar bl10 bl10bar bl11 bl11bar bl12 bl12bar
++ bl13 bl13bar bl14 bl14bar bl15 bl15bar net706 net746 net703 net747 net748
++ net745 net698 net697 bl blbar net493 net693 net691 net749 net499 net687 rs0
++ rs0bar rs1 rs1bar net791 net792 net793 net794 columndecoderstatic
+xi206 d<1> net747 net703 write_driver
+xi208 d<3> net697 net698 write_driver
+xi205 d<0> net746 net706 write_driver
+xi207 d<2> net745 net748 write_driver
+xi211 net691 net749 read_dff2 read_circuit
+xi212 net499 net687 read_dff3 read_circuit
+xi209 bl blbar read_dff0 read_circuit
+xi210 net493 net693 read_dff1 read_circuit
+xi215 read_dff3 q<3> clki tspc_pos_ff
+xi213 read_dff1 q<1> clki tspc_pos_ff
+xi214 read_dff2 q<2> clki tspc_pos_ff
+xi216 read_dff0 q<0> clki tspc_pos_ff
+xi217 a<0> a<1> net810 net809 net807 net808 wenb net806 net625 net628 net634
++ agen_unit
+xi218 clk pc rsnew wlref net770 wlref_pc
+xi247 net770 wenb net759 nand
+xi249 rs0 net809 rs0bar rs1 net808 rs1bar net810 net807 rsnew wlref net791
++ net625 net792 net793 net634 net794 net806 net628 between_blocks
+xi248 net759 clki inv
+.ends memory_array_static_column_decoder_test
+

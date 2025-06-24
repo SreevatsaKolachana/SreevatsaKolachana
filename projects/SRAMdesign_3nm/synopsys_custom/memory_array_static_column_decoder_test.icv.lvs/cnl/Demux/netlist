@@ -1,0 +1,16 @@
+********************************************************************************
+* Library          : group8
+* Cell             : Demux
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt Demux A Sel y0 y1
+*.PININFO A:I Sel:I y0:O y1:O
+XI1 A Sel net12 nand
+XI0 A net19 net10 nand
+XI4 net12 y1 inv
+XI3 net10 y0 inv
+XI2 Sel net19 inv
+.ends Demux
+

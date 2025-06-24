@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 2to4decodermux_tb schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping src="V8" dst="v8"/>
+            <mapping src="V1" dst="v1"/>
+            <mapping src="V2" dst="v2"/>
+            <mapping src="I0" dst="xi0"/>
+        </forward>
+        <reverse>
+            <mapping src="v8" dst="V8"/>
+            <mapping src="v1" dst="V1"/>
+            <mapping src="v2" dst="V2"/>
+            <mapping src="xi0" dst="I0"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward/>
+        <reverse/>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping src="&lt;unmappedTermOrder&gt;" dst=""/>
+            <mapping src="&lt;termOrder&gt;" dst=""/>
+        </forward>
+        <reverse>
+            <mapping src="" dst="&lt;unmappedTermOrder&gt;"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="_2to4decodermux">
+            <instance name="I0"/>
+        </instance_header>
+        <instance_header master="vdc">
+            <instance name="V8"/>
+        </instance_header>
+        <instance_header master="vpulse">
+            <instance name="V1"/>
+            <instance name="V2"/>
+        </instance_header>
+    </master_instances>
+</module>

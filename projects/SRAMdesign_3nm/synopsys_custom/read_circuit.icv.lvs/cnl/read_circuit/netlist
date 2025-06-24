@@ -1,0 +1,14 @@
+********************************************************************************
+* Library          : group8
+* Cell             : read_circuit
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt read_circuit BL BLBar out
+*.PININFO BL:I BLBar:I out:O
+XI4 BL net6 net8 nand
+XI5 net8 out inv
+XI2 BLBar net6 invx4
+.ends read_circuit
+

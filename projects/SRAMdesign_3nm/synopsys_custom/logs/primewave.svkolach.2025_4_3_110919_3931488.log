@@ -1,0 +1,130 @@
+[11:09:23.53] /o 
+              /c                          PrimeWave Design Environment 
+              /c 
+              /c                Version W-2024.09-SP1-2 for linux64 - Jan 15, 2025
+              /c              Based on Custom Infrastructure
+              /c Version W-2024.09-SP1-2
+              /c 
+              /c                     Copyright (c) 2004 - 2025 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 11252589 compiled on Wed Jan 15 11:01:36 2025 for AlmaLinux 8.4
+              /c Invocation: /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/linux64/platform/bin/custom_shell -application primewave -gui 0 -uniqueString 424077b79e1069eec9c0fa9fcb9fea2f9b5804bf5a3160b21ca54e530ed02967593a79a989d41fc9ffa48ac0ef29988c -python 0 -command "source /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.svkolach/stb.group8.inv_highdrive.schematic.session0/sim_server_init.tcl" -log /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/primewave_session0_sim_server_job1 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs
+              /c Execution time: Thu Apr  3 11:09:19 2025
+              /c Host: grendel32.ece.ncsu.edu
+              /c Working directory: /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project
+              /c 
+[11:09:30.44] /m Information: Registering ICV PERC package...
+[11:09:31.06] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[11:09:31.28] /o 
+[11:09:31.29] /i source /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.svkolach/stb.group8.inv_highdrive.schematic.session0/sim_server_init.tcl
+[11:09:31.71] /o SimServer socket started on grendel32.ece.ncsu.edu:43387
+[11:09:31.95] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.svkolach/stb.group8.inv_highdrive.schematic.session0/logs &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_vuNRru -unique_string 424077b79e1069ee2e6a9672f23748089b5804bf5a3160b21ca54e530ed0296714d50a043ab99cd08da1527dc9398cca3dcb983d6a13034d -lic_type 2   -parent_cc_pid 3931488  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.svkolach/stb.group8.inv_highdrive.schematic.session0/logs/viewer.log 2>&1"
+[11:09:32.13] /o ==== Received Msg ====
+              /c len=35 sourceSoc=sock448251b0 msgIndex=0 rawMsg=evalCmd ::wf::updateViewerLicense 2
+[11:09:32.13] /o 
+[11:09:32.15] /o ==== Received Msg ====
+              /c len=35 sourceSoc=sock448251b0 msgIndex=1 rawMsg=evalCmd ::wf::updateViewerLicense 2
+[11:09:32.15] /o 
+[11:09:57.87] /o ==== Received Msg ====
+              /c len=212 sourceSoc=sock44427980 msgIndex=0 rawMsg=AppendTask /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.svkolach/stb.group8.inv_highdrive.schematic.session0/task0/sim_script0.tcl 0 saeSession0 1 overwrite
+[11:09:57.87] /o 
+[11:09:59.63] /m Information: "Starting incremental netlisting for design "group8/inv_highdrive/schematic"..." (NETLISTING-010)
+[11:09:59.69] /o Loading: Callback files...
+[11:09:59.70] /o Loading: scripts/callbacks/callbacks.tcl
+[11:09:59.70] /o 
+              /c [INFO] : Loading display.drf from /mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3
+              /c 
+              /c  if you wish to Load other display.drf, please set shell environment valiable "iPDK_load_display_NCSU_TechLib_FreePDK3" to value = 0
+[11:09:59.70] /o 
+[11:09:59.74] /w Warning: Could not set the value of preference xtDRCTool because it does not exist. (PREFERENCE-016)
+[11:09:59.74] /w Warning: Could not set the value of preference xtDRCICVRunsetFile because it does not exist. (PREFERENCE-016)
+[11:09:59.74] /w Warning: Could not set the value of preference xtDRCICVIncludePaths because it does not exist. (PREFERENCE-016)
+[11:09:59.74] /w Warning: Could not set the value of preference xtDRCLayDBFormat because it does not exist. (PREFERENCE-016)
+[11:09:59.74] /w Warning: Could not set the value of preference xtLVSTool because it does not exist. (PREFERENCE-016)
+[11:09:59.74] /w Warning: Could not set the value of preference xtLVSICVRunsetFile because it does not exist. (PREFERENCE-016)
+[11:09:59.74] /w Warning: Could not set the value of preference xtLVSICVIncludePaths because it does not exist. (PREFERENCE-016)
+[11:09:59.74] /w Warning: Could not set the value of preference xtLVSLayDBFormat because it does not exist. (PREFERENCE-016)
+[11:09:59.74] /w Warning: Could not set the value of preference xtLPELVSTool because it does not exist. (PREFERENCE-016)
+[11:09:59.74] /w Warning: Could not set the value of preference xtLPETool because it does not exist. (PREFERENCE-016)
+[11:09:59.74] /w Warning: Could not set the value of preference xtLPEOpenParasiticView because it does not exist. (PREFERENCE-016)
+[11:09:59.74] /w Warning: Could not set the value of preference xtStarTcadGrdFile because it does not exist. (PREFERENCE-016)
+[11:09:59.74] /w Warning: Could not set the value of preference xtLPEStarOADeviceMappingFile because it does not exist. (PREFERENCE-016)
+[11:09:59.74] /w Warning: Could not set the value of preference xtStarOALayerMappingFile because it does not exist. (PREFERENCE-016)
+[11:09:59.74] /o 	#######################################
+[11:09:59.74] /o 	CC-PDK Library Name	: FreePDK3
+[11:09:59.74] /o 	#######################################
+[11:09:59.74] /o 
+[11:09:59.78] /o Netlisting
+[11:09:59.78] /o Creating output directories
+[11:10:00.08] /o No Design Integrity rule violations found in "group8/inv_highdrive/schematic"
+[11:10:00.08] /o Scanning: group8/inv_highdrive/schematic
+[11:10:00.19] /o Computing terminal lists
+[11:10:00.19] /o Processing terminals of module group8/inv_highdrive/schematic
+[11:10:00.20] /o Starting netlisting
+[11:10:00.34] /o Formatting group8/inv_highdrive/schematic
+[11:10:00.35] /e Error: "Parameter tr is not set on instance V8 of group8/inv_highdrive/schematic" (NETLISTING-001)
+[11:10:00.35] /e Error: "Parameter tf is not set on instance V8 of group8/inv_highdrive/schematic" (NETLISTING-001)
+[11:10:00.35] /m Information: "According to HSPICE documentation the parameter-order for vpulse, ipulse and ppulse is
+              /c               '[(]v1 v2 [td [tr [tf [pw [per]]]]] [)] [RMSJITTER=val PERJITTER=val [SEED=val]]' e.g. if 'per' is defined at the
+              /c               property-editor(not empty), then 'td, tr, tf, pw' must not be empty too despite the fact that those are optional." (NETLISTING-002)
+[11:10:00.36] /m Information: "group8 inv_highdrive schematic" renetlisted. (NETLISTING-056)
+[11:10:00.40] /e Error: Fatal error occured, netlisting will be terminated. (NETLISTING-001)
+[11:10:00.40] /m Information: "Netlisting design "group8/inv_highdrive/schematic" didn't finish." (NETLISTING-013)
+[11:10:00.54] /m Information: 1 of 1 testbench(es) done. (PW_GUI-714)
+[11:11:46.18] /o ==== Received Msg ====
+              /c len=212 sourceSoc=sock3dcd0010 msgIndex=1 rawMsg=AppendTask /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.svkolach/stb.group8.inv_highdrive.schematic.session0/task1/sim_script1.tcl 1 saeSession0 1 overwrite
+[11:11:46.18] /o 
+[11:11:46.29] /m Information: Feature 'SynopsysCustomSAE' checked in. (LICENSE-004)
+[11:11:46.31] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[11:11:48.10] /m Information: "Starting incremental netlisting for design "group8/inv_highdrive/schematic"..." (NETLISTING-010)
+[11:11:48.16] /o Netlisting
+[11:11:48.16] /o Creating output directories
+[11:11:48.30] /o No Design Integrity rule violations found in "group8/inv_highdrive/schematic"
+[11:11:48.30] /o Scanning: group8/inv_highdrive/schematic
+[11:11:48.39] /o Computing terminal lists
+[11:11:48.39] /o Processing terminals of module group8/inv_highdrive/schematic
+[11:11:48.40] /o Starting netlisting
+[11:11:48.52] /o Formatting group8/inv_highdrive/schematic
+[11:11:48.53] /m Information: "group8 inv_highdrive schematic" renetlisted. (NETLISTING-056)
+[11:11:48.61] /m Information: "Netlisting design "group8/inv_highdrive/schematic" finished successfully." (NETLISTING-012)
+[11:11:48.68] /# Composing simulator input file for design "group8/inv_highdrive/schematic"...
+[11:11:49.30] /# Simulator input file composed successfully for design "group8/inv_highdrive/schematic"
+[11:11:49.43] /m Information: Save ouputs to /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/simulation/group8,inv_highdrive,schematic/history_1/simulation/default/PrimeSimHSPICE/nominal/results/outputs.tcl for AVA evaluation.
+[11:11:50.36] /o 
+[11:11:51.29] /o                                          Composing Nominal                                         
+[11:11:51.64] /o                             Launching jobs for testbench default started                            
+[11:11:51.65] /# Starting PrimeSimHSPICE simulation for design: group8/inv_highdrive/schematic
+[11:11:51.71] /o                             Creating jobs for testbench default (0 / 1)                            
+[11:11:51.77] /o                                Launching 1 jobs for testbench default                               
+[11:11:52.13] /o                            Launching jobs for testbench default finished                           
+[11:11:52.14] /o 
+[11:11:52.37] /m Information: 1 of 2 testbench(es) done. (PW_GUI-714)
+[11:11:55.40] /m Information: Job distribution master (saeSession0,default.Simulation_Simulation session:session1 testbench:default) : up to 1 job running workers.
+[11:12:22.17] /# Simulation completed successfully for design: group8/inv_highdrive/schematic  (PW-651)
+[11:12:22.25] /# Netlisting and simulation completed for testbench: default in 35s
+[11:12:22.26] /# Evaluating and plotting outputs...
+[11:12:25.29] /m Information: Jobs distribution master quit! (PW_GUI-822)
+[11:12:25.78] /# Evaluating and plotting completed for testbench: default in 3s
+[11:12:25.85] /m Information: 2 of 2 testbench(es) done. (PW_GUI-714)
+[11:14:47.28] /o ==== Received Msg ====
+              /c len=8 sourceSoc=sock3dcd0010 msgIndex=2 rawMsg=idleExit
+[11:14:47.28] /o 
+[11:14:47.31] /m Information: Exiting simulation server process. (PW_GUI-984)
+[11:14:49.84] /o Shutdown time: Thu Apr  3 11:14:49 2025
+[11:14:49.84] /o Elapsed session real time: 5.48 minutes
+[11:14:49.84] /o Session terminated. Log is at /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/logs/primewave.svkolach.2025_4_3_110919_3931488.log
+[11:14:49.86] /e Error: {}

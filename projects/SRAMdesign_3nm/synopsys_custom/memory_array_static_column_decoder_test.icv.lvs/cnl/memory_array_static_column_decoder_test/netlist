@@ -1,0 +1,183 @@
+********************************************************************************
+* Library          : group8
+* Cell             : memory_array_static_column_decoder_test
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt memory_array_static_column_decoder_test A<0> A<1> A<2> A<3> A<4> Clk
++ D<0> D<1> D<2> D<3> Q<0> Q<1> Q<2> Q<3> WENB
+*.PININFO A<0>:I A<1>:I A<2>:I A<3>:I A<4>:I Clk:I D<0>:I D<1>:I D<2>:I D<3>:I
+*.PININFO Q<0>:O Q<1>:O Q<2>:O Q<3>:O WENB:I
+XI182 BL0Bar BL0 PC precharge_logic
+XI147 BL15Bar BL15 PC precharge_logic
+XI146 BL14Bar BL14 PC precharge_logic
+XI145 BL13Bar BL13 PC precharge_logic
+XI144 BL12Bar BL12 PC precharge_logic
+XI143 BL11Bar BL11 PC precharge_logic
+XI142 BL10Bar BL10 PC precharge_logic
+XI141 BL9Bar BL9 PC precharge_logic
+XI140 BL8Bar BL8 PC precharge_logic
+XI139 BL7Bar BL7 PC precharge_logic
+XI138 BL6Bar BL6 PC precharge_logic
+XI137 BL5Bar BL5 PC precharge_logic
+XI136 BL4Bar BL4 PC precharge_logic
+XI135 BL3Bar BL3 PC precharge_logic
+XI134 BL2Bar BL2 PC precharge_logic
+XI133 BL1Bar BL1 PC precharge_logic
+XI199 BL0 BL0Bar WL<1> sram_6t
+XI55 BL6 BL6Bar WL<1> sram_6t
+XI54 BL5 BL5Bar WL<1> sram_6t
+XI53 BL4 BL4Bar WL<1> sram_6t
+XI52 BL3 BL3Bar WL<1> sram_6t
+XI47 BL7 BL7Bar WL<2> sram_6t
+XI51 BL2 BL2Bar WL<1> sram_6t
+XI50 BL1 BL1Bar WL<1> sram_6t
+XI64 BL8 BL8Bar WL<7> sram_6t
+XI65 BL9 BL9Bar WL<7> sram_6t
+XI66 BL10 BL10Bar WL<7> sram_6t
+XI67 BL11 BL11Bar WL<7> sram_6t
+XI68 BL12 BL12Bar WL<7> sram_6t
+XI69 BL13 BL13Bar WL<7> sram_6t
+XI70 BL14 BL14Bar WL<7> sram_6t
+XI71 BL15 BL15Bar WL<7> sram_6t
+XI72 BL8 BL8Bar WL<5> sram_6t
+XI73 BL8 BL8Bar WL<6> sram_6t
+XI74 BL9 BL9Bar WL<6> sram_6t
+XI75 BL10 BL10Bar WL<6> sram_6t
+XI76 BL11 BL11Bar WL<6> sram_6t
+XI77 BL12 BL12Bar WL<6> sram_6t
+XI104 BL15 BL15Bar WL<3> sram_6t
+XI103 BL14 BL14Bar WL<3> sram_6t
+XI102 BL13 BL13Bar WL<3> sram_6t
+XI101 BL12 BL12Bar WL<3> sram_6t
+XI100 BL11 BL11Bar WL<3> sram_6t
+XI99 BL10 BL10Bar WL<3> sram_6t
+XI98 BL9 BL9Bar WL<3> sram_6t
+XI97 BL8 BL8Bar WL<3> sram_6t
+XI95 BL15 BL15Bar WL<4> sram_6t
+XI94 BL14 BL14Bar WL<4> sram_6t
+XI93 BL13 BL13Bar WL<4> sram_6t
+XI92 BL12 BL12Bar WL<4> sram_6t
+XI91 BL11 BL11Bar WL<4> sram_6t
+XI90 BL10 BL10Bar WL<4> sram_6t
+XI89 BL9 BL9Bar WL<4> sram_6t
+XI88 BL8 BL8Bar WL<4> sram_6t
+XI87 BL15 BL15Bar WL<5> sram_6t
+XI86 BL14 BL14Bar WL<5> sram_6t
+XI85 BL13 BL13Bar WL<5> sram_6t
+XI84 BL12 BL12Bar WL<5> sram_6t
+XI83 BL11 BL11Bar WL<5> sram_6t
+XI82 BL10 BL10Bar WL<5> sram_6t
+XI81 BL9 BL9Bar WL<5> sram_6t
+XI80 BL15 BL15Bar WL<6> sram_6t
+XI79 BL14 BL14Bar WL<6> sram_6t
+XI78 BL13 BL13Bar WL<6> sram_6t
+XI117 BL12 BL12Bar WL<1> sram_6t
+XI116 BL11 BL11Bar WL<1> sram_6t
+XI115 BL10 BL10Bar WL<1> sram_6t
+XI114 BL9 BL9Bar WL<1> sram_6t
+XI113 BL8 BL8Bar WL<1> sram_6t
+XI112 BL8 BL8Bar WL<0> sram_6t
+XI111 BL15 BL15Bar WL<2> sram_6t
+XI110 BL14 BL14Bar WL<2> sram_6t
+XI109 BL13 BL13Bar WL<2> sram_6t
+XI108 BL12 BL12Bar WL<2> sram_6t
+XI107 BL11 BL11Bar WL<2> sram_6t
+XI106 BL10 BL10Bar WL<2> sram_6t
+XI105 BL9 BL9Bar WL<2> sram_6t
+XI96 BL8 BL8Bar WL<2> sram_6t
+XI63 BL7 BL7Bar WL<0> sram_6t
+XI62 BL6 BL6Bar WL<0> sram_6t
+XI61 BL5 BL5Bar WL<0> sram_6t
+XI60 BL4 BL4Bar WL<0> sram_6t
+XI59 BL3 BL3Bar WL<0> sram_6t
+XI58 BL2 BL2Bar WL<0> sram_6t
+XI57 BL1 BL1Bar WL<0> sram_6t
+XI56 BL7 BL7Bar WL<1> sram_6t
+XI13 BL4 BL4Bar WL<6> sram_6t
+XI197 BL0 BL0Bar WL<3> sram_6t
+XI192 BL0 BL0Bar WL<4> sram_6t
+XI191 BL0 BL0Bar WL<6> sram_6t
+XI190 BL0 BL0Bar WL<5> sram_6t
+XI189 BL0 BL0Bar WL<7> sram_6t
+XI40 BL7 BL7Bar WL<3> sram_6t
+XI39 BL6 BL6Bar WL<3> sram_6t
+XI38 BL5 BL5Bar WL<3> sram_6t
+XI37 BL4 BL4Bar WL<3> sram_6t
+XI36 BL3 BL3Bar WL<3> sram_6t
+XI35 BL2 BL2Bar WL<3> sram_6t
+XI34 BL1 BL1Bar WL<3> sram_6t
+XI31 BL7 BL7Bar WL<4> sram_6t
+XI30 BL6 BL6Bar WL<4> sram_6t
+XI29 BL5 BL5Bar WL<4> sram_6t
+XI28 BL4 BL4Bar WL<4> sram_6t
+XI27 BL3 BL3Bar WL<4> sram_6t
+XI26 BL2 BL2Bar WL<4> sram_6t
+XI25 BL1 BL1Bar WL<4> sram_6t
+XI23 BL7 BL7Bar WL<5> sram_6t
+XI22 BL6 BL6Bar WL<5> sram_6t
+XI21 BL5 BL5Bar WL<5> sram_6t
+XI20 BL4 BL4Bar WL<5> sram_6t
+XI19 BL3 BL3Bar WL<5> sram_6t
+XI18 BL2 BL2Bar WL<5> sram_6t
+XI17 BL1 BL1Bar WL<5> sram_6t
+XI16 BL7 BL7Bar WL<6> sram_6t
+XI15 BL6 BL6Bar WL<6> sram_6t
+XI14 BL5 BL5Bar WL<6> sram_6t
+XI12 BL3 BL3Bar WL<6> sram_6t
+XI11 BL2 BL2Bar WL<6> sram_6t
+XI118 BL13 BL13Bar WL<1> sram_6t
+XI10 BL1 BL1Bar WL<6> sram_6t
+XI119 BL14 BL14Bar WL<1> sram_6t
+XI120 BL15 BL15Bar WL<1> sram_6t
+XI121 BL9 BL9Bar WL<0> sram_6t
+XI122 BL10 BL10Bar WL<0> sram_6t
+XI123 BL11 BL11Bar WL<0> sram_6t
+XI7 BL7 BL7Bar WL<7> sram_6t
+XI124 BL12 BL12Bar WL<0> sram_6t
+XI125 BL13 BL13Bar WL<0> sram_6t
+XI126 BL14 BL14Bar WL<0> sram_6t
+XI127 BL15 BL15Bar WL<0> sram_6t
+XI6 BL6 BL6Bar WL<7> sram_6t
+XI5 BL5 BL5Bar WL<7> sram_6t
+XI4 BL4 BL4Bar WL<7> sram_6t
+XI193 BL0 BL0Bar WL<2> sram_6t
+XI3 BL3 BL3Bar WL<7> sram_6t
+XI2 BL2 BL2Bar WL<7> sram_6t
+XI1 BL1 BL1Bar WL<7> sram_6t
+XI41 BL1 BL1Bar WL<2> sram_6t
+XI42 BL2 BL2Bar WL<2> sram_6t
+XI43 BL3 BL3Bar WL<2> sram_6t
+XI44 BL4 BL4Bar WL<2> sram_6t
+XI45 BL5 BL5Bar WL<2> sram_6t
+XI46 BL6 BL6Bar WL<2> sram_6t
+XI198 BL0 BL0Bar WL<0> sram_6t
+XI202 A<4> A<3> A<2> WLref WL<0> WL<1> WL<2> WL<3> WL<4> WL<5> WL<6> WL<7>
++ static_row_decoder_3by8
+XI246 BL0 BL0Bar BL1 BL1Bar BL2 BL2Bar BL3 BL3Bar BL4 BL4Bar BL5 BL5Bar BL6
++ BL6Bar BL7 BL7Bar BL8 BL8Bar BL9 BL9Bar BL10 BL10Bar BL11 BL11Bar BL12 BL12Bar
++ BL13 BL13Bar BL14 BL14Bar BL15 BL15Bar net706 net746 net703 net747 net748
++ net745 net698 net697 BL BLbar net493 net693 net691 net749 net499 net687 RS0
++ RS0bar RS1 RS1bar net791 net792 net793 net794 columnDecoderstatic
+XI206 D<1> net747 net703 Write_Driver
+XI208 D<3> net697 net698 Write_Driver
+XI205 D<0> net746 net706 Write_Driver
+XI207 D<2> net745 net748 Write_Driver
+XI211 net691 net749 Read_Dff2 read_circuit
+XI212 net499 net687 Read_Dff3 read_circuit
+XI209 BL BLbar Read_Dff0 read_circuit
+XI210 net493 net693 Read_Dff1 read_circuit
+XI215 Read_Dff3 Q<3> CLKi tspc_pos_ff
+XI213 Read_Dff1 Q<1> CLKi tspc_pos_ff
+XI214 Read_Dff2 Q<2> CLKi tspc_pos_ff
+XI216 Read_Dff0 Q<0> CLKi tspc_pos_ff
+XI217 A<0> A<1> net810 net809 net807 net808 WENB net806 net625 net628 net634
++ agen_unit
+XI218 Clk PC RSNew WLref net770 WLRef_PC
+XI247 net770 WENB net759 nand
+XI249 RS0 net809 RS0bar RS1 net808 RS1bar net810 net807 RSNew WLref net791
++ net625 net792 net793 net634 net794 net806 net628 between_blocks
+XI248 net759 CLKi inv
+.ends memory_array_static_column_decoder_test
+

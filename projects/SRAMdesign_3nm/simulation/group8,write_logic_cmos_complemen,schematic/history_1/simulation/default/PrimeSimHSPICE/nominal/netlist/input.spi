@@ -1,0 +1,73 @@
+*  Generated for: PrimeSim
+*  Design library name: group8
+*  Design cell name: write_logic_cmos_complemen
+*  Design view name: schematic
+.option search='/mnt/designkits/ncsu/FreePDK3/hspice/models'
+
+
+.option PARHIER = LOCAL
+.option PORT_VOLTAGE_SCALE_TO_2X = 1
+.option S_ELEM_CACHE_DIR = "/mnt/ncsudrive/h/hrajesh/.synopsys_custom/sparam_dir"
+.option PVA_OUTPUT_DIR = "/mnt/ncsudrive/h/hrajesh/.synopsys_custom/pva_dir"
+
+.option WDF=1
+.temp 25
+.lib 'fet.mod' nfet_typ
+.lib 'fet.mod' pfet_typ
+
+*PrimeWave Design Environment Based on Custom Infrastructure
+*Version W-2024.09-SP1-2
+*Mon Mar 31 17:39:49 2025
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : group8
+* Cell             : inv
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt inv in out
+m0 out in vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m1 out in gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+.ends inv
+
+********************************************************************************
+* Library          : group8
+* Cell             : write_logic_cmos_complemen
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+m1 net10 net3 blbar pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07
++ pseo=2.34e-07
+m0 net7 net3 bl pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m3 net10 net12 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m2 net7 net9 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+v7 net3 gnd! dc=0 pulse ( 00.8 0 0 5p 5p 100p 200p )
+v5 net12 gnd! dc=0 pulse ( 0.80 0 0 5p 5p 25p 50p )
+xi8 net12 net9 inv
+v9 vdd! gnd! dc=0.8
+
+
+.ic  v(bl)=0.8  v(blbar)=0.8
+
+
+
+
+
+
+.tran 0.1p 200p start=0
+.option opfile=1 split_dp=1
+.option probe=1
+.probe tran v(*) level=1
+.probe tran v(bl) v(blbar) v(net12) v(net3) v(net9)
+
+
+
+
+
+
+
+
+.end

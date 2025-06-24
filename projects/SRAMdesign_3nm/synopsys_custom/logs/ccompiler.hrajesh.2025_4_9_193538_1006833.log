@@ -1,0 +1,1015 @@
+[19:35:51.56] /o 
+              /c                                 Custom Compiler™ 
+              /c 
+              /c               Version W-2024.09-SP1-2 for linux64 - Jan 16, 2025 
+              /c 
+              /c                     Copyright (c) 2004 - 2025 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 11256978 compiled on Thu Jan 16 10:52:27 2025 for AlmaLinux 8.4
+              /c Invocation: /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Wed Apr  9 19:35:38 2025
+              /c Host: hydra11.ece.ncsu.edu
+              /c Working directory: /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project
+              /c 
+[19:36:04.46] /m Information: Registering ICV PERC package...
+[19:36:06.18] /r giShowFrameTabs true
+[19:36:06.18] /r giWindowId 1
+[19:36:06.19] /r giWindowGeometry 1040x800
+[19:36:07.04] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x822+247+54
+[19:36:14.93] /i db::setAttr iconified -of [gi::getFrames 1] -value true
+[19:36:15.13] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x822+0+23
+[19:36:38.82] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x822+247+54
+[19:36:38.82] /i db::setAttr iconified -of [gi::getFrames 1] -value false
+[19:36:40.92] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[19:36:41.22] /i db::setAttr geometry -of [gi::getFrames 1] -value 1536x770+0+46
+[19:36:47.93] /i gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[19:36:48.23] /r giWindowId 2
+[19:36:48.24] /r giWindowGeometry 660x600+50+50
+[19:36:58.10] /i gi::setCurrentIndex {libs} -index {group8} -in [gi::getWindows 2]
+[19:36:59.02] /i gi::setItemSelection {libs} -index {group8} -in [gi::getWindows 2]
+[19:37:04.91] /i gi::setCurrentIndex {cells} -index {tb2025_1} -in [gi::getWindows 2]
+[19:37:05.10] /i gi::setItemSelection {cells} -index {tb2025_1} -in [gi::getWindows 2]
+[19:37:08.08] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 2]
+[19:37:08.16] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 2]
+[19:37:08.36] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[19:37:08.57] /o Loading: Callback files...
+[19:37:08.60] /o Loading: scripts/callbacks/callbacks.tcl
+[19:37:08.60] /o 
+              /c [INFO] : Loading display.drf from /mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3
+              /c 
+              /c  if you wish to Load other display.drf, please set shell environment valiable "iPDK_load_display_NCSU_TechLib_FreePDK3" to value = 0
+[19:37:08.60] /o 
+[19:37:08.75] /w Warning: Preference 'xtStarTcadGrdFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[19:37:08.76] /w Warning: Preference 'xtStarOALayerMappingFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[19:37:08.76] /o 	#######################################
+[19:37:08.76] /o 	CC-PDK Library Name	: FreePDK3
+[19:37:08.76] /o 	#######################################
+[19:37:08.76] /o 
+[19:37:08.87] /m Information: Feature 'CustomInfrastructure' checked out. (LICENSE-003)
+[19:37:08.89] /m Information: Feature 'SynopsysCustomLayout' checked out. (LICENSE-003)
+[19:37:09.41] /r giWindowId 3
+[19:37:09.41] /r giWindowGeometry 1305x777
+[19:37:14.44] /i gi::setActiveWindow 2
+[19:37:14.44] /i gi::setActiveWindow 2 -raise true
+[19:37:17.95] /i gi::setCurrentIndex {views} -index {HSPICE_default} -in [gi::getWindows 2]
+[19:37:18.07] /i gi::setItemSelection {views} -index {HSPICE_default} -in [gi::getWindows 2]
+[19:37:18.23] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[19:37:24.27] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[19:37:24.43] /m Information: Started sharing "WaveView ADV" license. (WAVEFORM-110)
+[19:37:24.43] /m Information: Started sharing "Primewave" license. (WAVEFORM-110)
+[19:37:25.44] /r giWindowId 4
+[19:37:25.45] /r giWindowGeometry 600x500
+[19:37:25.87] /r giWindowGeometry 600x500
+[19:37:27.26] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa70f4f4f790c9bf8ca5a5ed57a1308015 -python 0  -log pw_shell_session0_job1 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[19:37:27.64] /m Information: Launching Simulation Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && sh /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.hrajesh/stb.group8.tb2025_1.schematic.session0/runSimServer ". (PW_GUI-711)
+[19:37:27.94] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_m51AWJ -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa70f4f4f790c9bf8ca5a5ed57a1308015 -lic_type 2   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[19:37:28.23] /m Information: Launching Result Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -log rvcmd.log -ptype rv -k -cdesigner -parent_cc_pid 1006833 -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa70f4f4f790c9bf8c5a6bb3ad1446d99c -lic_type 2    > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/rviewer.log 2>&1"
+[19:37:46.60] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[19:37:46.60] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[19:37:48.22] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[19:37:48.22] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[19:37:48.36] /i gi::setActiveDialog [gi::getDialogs {saRunConfirmationDialog} -parent [gi::getWindows 4]]
+[19:37:48.53] /i db::setAttr geometry -of [gi::getDialogs {saRunConfirmationDialog} -parent [gi::getWindows 4]] -value 400x140+558+309
+[19:37:50.64] /i gi::pressButton {yes} -in [gi::getDialogs {saRunConfirmationDialog} -parent [gi::getWindows 4]]
+[19:37:52.18] /r giWindowId 5
+[19:37:52.21] /r giWindowGeometry 800x600
+[19:37:54.29] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job1" after 24 seconds. (PW_GUI-172)
+[19:37:54.57] /i gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]]
+[19:37:54.64] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[19:37:57.33] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[19:38:06.94] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 534x66+518+393
+[19:38:11.95] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 514x70+518+393
+[19:38:13.70] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 527x70+518+393
+[19:38:13.82] /r giWindowId 6
+[19:38:13.85] /r giWindowGeometry 1024x768
+[19:39:12.64] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[19:39:12.64] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[19:39:12.64] /i db::setAttr iconified -of [gi::getFrames 1] -value true
+[19:39:12.79] /i db::setAttr geometry -of [gi::getFrames 1] -value 1536x770+0+23
+[19:39:14.72] /i db::setAttr geometry -of [gi::getFrames 1] -value 1536x770+0+46
+[19:39:14.77] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[19:39:14.77] /i db::setAttr iconified -of [gi::getFrames 1] -value false
+[19:39:16.40] /i gi::setActiveWindow 4
+[19:39:16.40] /i gi::setActiveWindow 4 -raise true
+[19:39:20.24] /i gi::setActiveWindow 3
+[19:39:20.24] /i gi::setActiveWindow 3 -raise true
+[19:39:22.83] /# gi::executeAction {deFitEdit} -in [gi::getWindows 3]
+[19:39:22.83] /i de::fit -window 3 -fitEdit true
+[19:39:59.77] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[19:40:06.80] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 6s
+[19:40:11.71] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affad888a4375cebcb69a89b534243bfbe3c -python 0  -log pw_shell_session0_job2 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[19:40:11.87] /r giWindowId 7
+[19:40:11.90] /r giWindowGeometry 1024x768
+[19:40:13.35] /i db::setAttr geometry -of [gi::getFrames 2] -value 1024x792+34+64
+[19:40:34.53] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job2" after 23 seconds. (PW_GUI-172)
+[19:41:00.15] /i db::setAttr maximized -of [gi::getFrames 2] -value true
+[19:41:00.43] /i db::setAttr geometry -of [gi::getFrames 2] -value 1536x770+0+46
+[19:41:23.73] /i gi::setActiveWindow 3
+[19:41:23.73] /i gi::setActiveWindow 3 -raise true
+[19:41:27.01] /# gi::executeAction {giPostContextMenu} -in [gi::getWindows 3]
+[19:41:27.01] /i de::setCursor [gi::getWindows 3] -point {2.675 3.16875}
+[19:41:27.03] /i gi::executeAction {menuPreShow} -in [gi::getWindows 3]
+[19:41:27.03] /r giMenuAccess db::getNext [gi::getMenus seSchCanvasContextMenu]
+[19:41:30.84] /# gi::executeAction {deCanvasPanWest} -in [gi::getWindows 3]
+[19:41:30.84] /i de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[19:41:30.90] /# gi::executeAction {deCanvasPanWest} -in [gi::getWindows 3]
+[19:41:30.90] /i de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[19:41:30.96] /# gi::executeAction {deCanvasPanWest} -in [gi::getWindows 3]
+[19:41:30.96] /i de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[19:41:31.02] /# gi::executeAction {deCanvasPanWest} -in [gi::getWindows 3]
+[19:41:31.02] /i de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[19:41:32.86] /# gi::executeAction {deFitEdit} -in [gi::getWindows 3]
+[19:41:32.86] /i de::fit -window 3 -fitEdit true
+[19:41:34.97] /# gi::executeAction {deSelectActive} -in [gi::getWindows 3]
+[19:41:34.97] /i de::deselectAll [db::getNext [de::getContexts -window 3]]
+[19:41:34.97] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {3.65625 3.88125} -index 0 -intent none]
+[19:41:34.97] /o oa:0x395fe100
+[19:41:35.48] /i ::se::internal::descendInst 3 [de::getActiveFigure [gi::getWindows 3] -point {3.65625 3.88125} -index 0 -intent none] auto
+[19:41:35.61] /# ide::descend 3 -inPlace false -readOnly auto
+[19:41:35.89] /# Navigating to group8/memory_array_static_column_decoder/schematic (I35)
+[19:41:36.35] /r giWindowGeometry 1305x777
+[19:41:43.98] /# gi::executeAction {deCanvasPanWest} -in [gi::getWindows 3]
+[19:41:43.98] /i de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[19:41:44.42] /# gi::executeAction {deCanvasPanWest} -in [gi::getWindows 3]
+[19:41:44.42] /i de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[19:41:44.43] /# gi::executeAction {deCanvasPanWest} -in [gi::getWindows 3]
+[19:41:44.43] /i de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[19:41:44.43] /# gi::executeAction {deCanvasPanWest} -in [gi::getWindows 3]
+[19:41:44.43] /i de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[19:41:45.38] /# gi::executeAction {deFitEdit} -in [gi::getWindows 3]
+[19:41:45.38] /i de::fit -window 3 -fitEdit true
+[19:41:48.49] /# gi::executeAction {deZoomIn} -in [gi::getWindows 3]
+[19:41:48.49] /i de::zoom -window 3 -factor 2.0
+[19:41:49.55] /# gi::executeAction {deZoomIn} -in [gi::getWindows 3]
+[19:41:49.55] /i de::zoom -window 3 -factor 2.0
+[19:41:50.46] /# gi::executeAction {deZoomIn} -in [gi::getWindows 3]
+[19:41:50.46] /i de::zoom -window 3 -factor 2.0
+[19:41:52.25] /# gi::executeAction {dePan} -in [gi::getWindows 3]
+[19:41:52.25] /i ide::pan [db::getNext [de::getContexts -window 3]]
+[19:41:56.92] /# gi::executeAction {deStartDrag} -in [gi::getWindows 3]
+[19:41:56.92] /i de::startDrag {23.1 14.25625} -context [db::getNext [de::getContexts -window 3]]
+[19:41:56.92] /# gi::executeAction {deEndDrag} -in [gi::getWindows 3]
+[19:41:56.92] /i de::endDrag {24.4375 15.46875} -context [db::getNext [de::getContexts -window 3]]
+[19:41:56.92] /r dePanToPoint {23.86875 12.68125}
+[19:41:56.93] /# gi::executeAction {deStartDrag} -in [gi::getWindows 3]
+[19:41:56.93] /i de::startDrag {20.275 12.16875} -context [db::getNext [de::getContexts -window 3]]
+[19:41:56.93] /# gi::executeAction {deEndDrag} -in [gi::getWindows 3]
+[19:41:56.93] /i de::endDrag {21.04375 12.775} -context [db::getNext [de::getContexts -window 3]]
+[19:41:56.93] /r dePanToPoint {22.33125 11.46875}
+[19:41:58.72] /# gi::executeAction {deStartDrag} -in [gi::getWindows 3]
+[19:41:58.72] /i de::startDrag {19.21875 11.41875} -context [db::getNext [de::getContexts -window 3]]
+[19:42:02.27] /# gi::executeAction {deEndDrag} -in [gi::getWindows 3]
+[19:42:02.27] /i de::endDrag {19.23125 11.4125} -context [db::getNext [de::getContexts -window 3]]
+[19:42:02.27] /r dePanToPoint {17.49375 9.1}
+[19:42:03.72] /# gi::executeAction {deStartDrag} -in [gi::getWindows 3]
+[19:42:03.72] /i de::startDrag {14.41875 9.0125} -context [db::getNext [de::getContexts -window 3]]
+[19:42:05.90] /# gi::executeAction {deEndDrag} -in [gi::getWindows 3]
+[19:42:05.90] /i de::endDrag {14.425 9.0125} -context [db::getNext [de::getContexts -window 3]]
+[19:42:05.90] /r dePanToPoint {16.30625 11.7}
+[19:42:06.96] /# gi::executeAction {deStartDrag} -in [gi::getWindows 3]
+[19:42:06.96] /i de::startDrag {14.4 11.6125} -context [db::getNext [de::getContexts -window 3]]
+[19:42:07.69] /# gi::executeAction {deEndDrag} -in [gi::getWindows 3]
+[19:42:07.69] /i de::endDrag {14.39375 11.6125} -context [db::getNext [de::getContexts -window 3]]
+[19:42:07.69] /r dePanToPoint {16.6625 14.3}
+[19:42:08.68] /# gi::executeAction {deStartDrag} -in [gi::getWindows 3]
+[19:42:08.68] /i de::startDrag {14.1125 13.38125} -context [db::getNext [de::getContexts -window 3]]
+[19:42:09.35] /# gi::executeAction {deEndDrag} -in [gi::getWindows 3]
+[19:42:09.35] /i de::endDrag {14.11875 13.38125} -context [db::getNext [de::getContexts -window 3]]
+[19:42:09.35] /r dePanToPoint {16.7125 16.06875}
+[19:42:11.01] /# gi::executeAction {deAddPoint} -in [gi::getWindows 3]
+[19:42:11.01] /i de::addPoint {13.46875 16.075} -context [db::getNext [de::getContexts -window 3]]
+[19:42:12.45] /# gi::executeAction {deStartDrag} -in [gi::getWindows 3]
+[19:42:12.45] /i de::startDrag {11.63125 16.75625} -context [db::getNext [de::getContexts -window 3]]
+[19:42:13.36] /# gi::executeAction {deEndDrag} -in [gi::getWindows 3]
+[19:42:13.36] /i de::endDrag {11.6375 16.75625} -context [db::getNext [de::getContexts -window 3]]
+[19:42:13.36] /r dePanToPoint {13.175 19.44375}
+[19:42:14.54] /# gi::executeAction {deAddPoint} -in [gi::getWindows 3]
+[19:42:14.54] /i de::addPoint {12.16875 19.0625} -context [db::getNext [de::getContexts -window 3]]
+[19:42:15.77] /# gi::executeAction {deStartDrag} -in [gi::getWindows 3]
+[19:42:15.77] /i de::startDrag {11.81875 19.81875} -context [db::getNext [de::getContexts -window 3]]
+[19:42:16.57] /# gi::executeAction {deEndDrag} -in [gi::getWindows 3]
+[19:42:16.57] /i de::endDrag {11.81875 19.825} -context [db::getNext [de::getContexts -window 3]]
+[19:42:16.57] /r dePanToPoint {12.375 22.48125}
+[19:42:17.46] /# gi::executeAction {deStartDrag} -in [gi::getWindows 3]
+[19:42:17.46] /i de::startDrag {11.79375 21.8875} -context [db::getNext [de::getContexts -window 3]]
+[19:42:17.86] /# gi::executeAction {deEndDrag} -in [gi::getWindows 3]
+[19:42:17.86] /i de::endDrag {11.79375 21.8875} -context [db::getNext [de::getContexts -window 3]]
+[19:42:17.86] /r dePanToPoint {12.29375 24.15625}
+[19:42:18.86] /# gi::executeAction {deStartDrag} -in [gi::getWindows 3]
+[19:42:18.86] /i de::startDrag {11.84375 24.5875} -context [db::getNext [de::getContexts -window 3]]
+[19:42:19.32] /# gi::executeAction {deEndDrag} -in [gi::getWindows 3]
+[19:42:19.32] /i de::endDrag {11.8375 24.58125} -context [db::getNext [de::getContexts -window 3]]
+[19:42:19.32] /r dePanToPoint {12.25 26.125}
+[19:42:20.27] /# gi::executeAction {deStartDrag} -in [gi::getWindows 3]
+[19:42:20.27] /i de::startDrag {12.05 26.64375} -context [db::getNext [de::getContexts -window 3]]
+[19:42:21.15] /# gi::executeAction {deEndDrag} -in [gi::getWindows 3]
+[19:42:21.15] /i de::endDrag {12.04375 26.64375} -context [db::getNext [de::getContexts -window 3]]
+[19:42:21.15] /r dePanToPoint {12.30625 27.7625}
+[19:42:26.31] /# gi::executeAction {deStartDrag} -in [gi::getWindows 3]
+[19:42:26.31] /i de::startDrag {11.0125 26.90625} -context [db::getNext [de::getContexts -window 3]]
+[19:42:27.12] /m Information: Feature 'SynopsysCustomSAE' checked in. (LICENSE-004)
+[19:42:27.13] /m Information: Stopped sharing "Primewave" license. (WAVEFORM-111)
+[19:42:27.13] /m Information: Stopped sharing "WaveView ADV" license. (WAVEFORM-111)
+[19:42:27.21] /m Information: Send exit command to simulation server process stb.group8.tb2025_1.schematic.session0. (PW_GUI-979)
+[19:42:27.74] /m Information: Stopping query due to no running simulation server process. (PW_GUI-710)
+[19:42:28.81] /# gi::executeAction {deEndDrag} -in [gi::getWindows 3]
+[19:42:28.81] /i de::endDrag {11.0125 26.89375} -context [db::getNext [de::getContexts -window 3]]
+[19:42:28.81] /r dePanToPoint {11.64375 28.21875}
+[19:42:30.26] /# gi::executeAction {deAddPoint} -in [gi::getWindows 3]
+[19:42:30.26] /i de::addPoint {12.7625 28.775} -context [db::getNext [de::getContexts -window 3]]
+[19:42:30.49] /# gi::executeAction {deCompleteShape} -in [gi::getWindows 3]
+[19:42:30.49] /i de::completeShape -context [db::getNext [de::getContexts -window 3]]
+[19:42:34.33] /# gi::executeAction {deAddPoint} -in [gi::getWindows 3]
+[19:42:34.33] /i de::addPoint {12.475 29.025} -context [db::getNext [de::getContexts -window 3]]
+[19:42:34.78] /# gi::executeAction {deAddPoint} -in [gi::getWindows 3]
+[19:42:34.78] /i de::addPoint {12.1875 29.275} -context [db::getNext [de::getContexts -window 3]]
+[19:42:36.40] /# gi::executeAction {deAddPoint} -in [gi::getWindows 3]
+[19:42:36.41] /i de::addPoint {12.8 29.6125} -context [db::getNext [de::getContexts -window 3]]
+[19:42:36.63] /# gi::executeAction {deCompleteShape} -in [gi::getWindows 3]
+[19:42:36.63] /i de::completeShape -context [db::getNext [de::getContexts -window 3]]
+[19:42:38.64] /# gi::executeAction {deAddPoint} -in [gi::getWindows 3]
+[19:42:38.64] /i de::addPoint {12.65 28.53125} -context [db::getNext [de::getContexts -window 3]]
+[19:42:38.86] /# gi::executeAction {deAddPoint} -in [gi::getWindows 3]
+[19:42:38.86] /i de::addPoint {12.5 27.45} -context [db::getNext [de::getContexts -window 3]]
+[19:42:41.36] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 3]
+[19:42:41.36] /i de::abortCommand -context [db::getNext [de::getContexts -window 3]]
+[19:42:43.64] /# gi::executeAction {deSelectActive} -in [gi::getWindows 3]
+[19:42:43.64] /i de::deselectAll [db::getNext [de::getContexts -window 3]]
+[19:42:43.64] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {12.73125 28.725} -index 0 -intent none]
+[19:42:43.64] /o oa:0x4666fa70
+[19:42:43.65] /i ::se::internal::descendInst 3 [de::getActiveFigure [gi::getWindows 3] -point {12.73125 28.725} -index 0 -intent none] auto
+[19:42:43.71] /# ide::descend 3 -inPlace false -readOnly auto
+[19:42:44.03] /# Navigating to group8/static_row_decoder_3by8/schematic (I202)
+[19:42:44.12] /r giWindowGeometry 1305x777
+[19:43:06.35] /# gi::executeAction {deFitEdit} -in [gi::getWindows 3]
+[19:43:06.35] /i de::fit -window 3 -fitEdit true
+[19:43:07.36] /# gi::executeAction {deFitEdit} -in [gi::getWindows 3]
+[19:43:07.36] /i de::fit -window 3 -fitEdit true
+[19:43:08.52] /# gi::executeAction {deReturn} -in [gi::getWindows 3]
+[19:43:08.52] /i de::return [db::getNext [de::getContexts -window 3]] -errorOnFail false
+[19:43:08.81] /# Navigating to group8/memory_array_static_column_decoder/schematic (I35)
+[19:43:08.83] /r giWindowGeometry 1305x777
+[19:43:12.69] /# gi::executeAction {deSelectActive} -in [gi::getWindows 3]
+[19:43:12.69] /i de::cycleActiveFigure [gi::getWindows 3] -direction next
+[19:43:12.69] /o oa:0x4390f230
+[19:43:12.69] /# gi::executeAction {deReturn} -in [gi::getWindows 3]
+[19:43:12.69] /i de::return [db::getNext [de::getContexts -window 3]] -errorOnFail false
+[19:43:12.90] /# Navigating to group8/tb2025_1/schematic
+[19:43:12.91] /r giWindowGeometry 1305x777
+[19:46:43.47] /i gi::executeAction giCloseWindow -in [gi::getWindows 7]
+[19:46:44.32] /m Information: Waveform viewer exited normally.
+[19:46:44.41] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[19:46:44.75] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_UU71am -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affad888a4375cebcb695c1dcca3d448f507 -lic_type 0   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[19:46:46.31] /i gi::setActiveWindow 4
+[19:46:46.31] /i gi::setActiveWindow 4 -raise true
+[19:46:49.03] /i gi::setCurrentIndex {variablesTable} -index {1,1} -in [gi::getWindows 4]
+[19:46:49.03] /i gi::setItemSelection {variablesTable} -index {1,1} -in [gi::getWindows 4]
+[19:46:58.24] /i gi::setField {variablesTable} -index {1,1} -value {50p} -in [gi::getWindows 4]
+[19:46:58.40] /i gi::setItemSelection {variablesTable} -index {} -in [gi::getWindows 4]
+[19:47:02.18] /i gi::setCurrentIndex {analysisPane} -index {0,3} -in [gi::getWindows 4]
+[19:47:02.18] /i gi::setItemSelection {analysisPane} -index {0,3} -in [gi::getWindows 4]
+[19:47:06.46] /# gi::executeAction {saShowEditAnalyses} -in [gi::getWindows 4]
+[19:47:06.46] /i sa::showEditAnalyses -parent 4 -analysisName "" 
+[19:47:06.54] /m Information: Started sharing "WaveView ADV" license. (WAVEFORM-110)
+[19:47:06.54] /m Information: Started sharing "Primewave" license. (WAVEFORM-110)
+[19:47:07.14] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]]
+[19:47:07.92] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]] -value 680x800+600+50
+[19:47:19.38] /i gi::setField {/analysesGroups/tabGeneral/anaPane/stop} -value {2n} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]]
+[19:47:19.38] /i gi::pressButton {/ok} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]]
+[19:47:21.85] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[19:47:21.85] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[19:47:24.40] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[19:47:24.40] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[19:47:24.51] /i gi::setActiveDialog [gi::getDialogs {saRunConfirmationDialog} -parent [gi::getWindows 4]]
+[19:47:24.72] /i db::setAttr geometry -of [gi::getDialogs {saRunConfirmationDialog} -parent [gi::getWindows 4]] -value 400x140+558+309
+[19:47:26.93] /i gi::setField {showAgain} -value {true} -in [gi::getDialogs {saRunConfirmationDialog} -parent [gi::getWindows 4]]
+[19:47:28.04] /i gi::pressButton {yes} -in [gi::getDialogs {saRunConfirmationDialog} -parent [gi::getWindows 4]]
+[19:47:29.66] /m Information: Launching Simulation Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && sh /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.hrajesh/stb.group8.tb2025_1.schematic.session0/runSimServer ". (PW_GUI-711)
+[19:47:31.72] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[19:47:57.34] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 535x66+518+393
+[19:47:57.70] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[19:48:04.82] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 534x66+518+393
+[19:48:10.03] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 514x70+518+393
+[19:48:11.56] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 527x70+518+393
+[19:49:29.32] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[19:49:36.07] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 6s
+[19:49:38.58] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affad888a4375cebcb69060ec66ef40618dc -python 0  -log pw_shell_session0_job3 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[19:49:38.69] /r giWindowId 8
+[19:49:38.72] /r giWindowGeometry 1024x768
+[19:49:39.43] /i db::setAttr geometry -of [gi::getFrames 3] -value 1024x792+190+64
+[19:50:00.92] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job3" after 22 seconds. (PW_GUI-172)
+[19:50:01.89] /i db::setAttr maximized -of [gi::getFrames 3] -value true
+[19:50:02.21] /i db::setAttr geometry -of [gi::getFrames 3] -value 1536x770+0+46
+[19:50:55.35] /i gi::executeAction giCloseWindow -in [gi::getWindows 8]
+[19:50:56.12] /m Information: Waveform viewer exited normally.
+[19:50:56.45] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_YrGfKv -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa3938da684b9955e87eacadbb5baf23c1 -lic_type 2   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[19:50:56.62] /i gi::setActiveWindow 5
+[19:50:56.62] /i gi::setActiveWindow 5 -raise true
+[19:50:58.26] /i gi::setActiveWindow 4
+[19:50:58.26] /i gi::setActiveWindow 4 -raise true
+[19:51:00.43] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[19:51:00.43] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[19:51:02.19] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[19:51:02.19] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[19:51:05.77] /i gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]]
+[19:51:05.91] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[19:51:09.08] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 535x66+518+393
+[19:51:15.23] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[19:51:18.62] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 480x66+518+393
+[19:51:19.62] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 514x70+518+393
+[19:52:10.12] /m Information: Feature 'SynopsysCustomSAE' checked in. (LICENSE-004)
+[19:52:10.13] /m Information: Stopped sharing "Primewave" license. (WAVEFORM-111)
+[19:52:10.13] /m Information: Stopped sharing "WaveView ADV" license. (WAVEFORM-111)
+[19:52:10.20] /m Information: Send exit command to simulation server process stb.group8.tb2025_1.schematic.session0. (PW_GUI-979)
+[19:52:37.59] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[19:52:38.68] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[19:52:45.26] /m Information: Stopping query due to no running simulation server process. (PW_GUI-710)
+[19:52:49.48] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa3938da684b9955e8d539de2bd4a54a1e -python 0  -log pw_shell_session0_job4 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[19:52:49.58] /r giWindowId 9
+[19:52:49.60] /r giWindowGeometry 1024x768
+[19:52:50.50] /i db::setAttr geometry -of [gi::getFrames 4] -value 1024x792+34+64
+[19:53:09.00] /i gi::executeAction giCloseWindow -in [gi::getWindows 9]
+[19:53:09.63] /m Information: Waveform viewer exited normally.
+[19:53:09.90] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_lVauXA -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa3938da684b9955e871670fdd86d26706 -lic_type 0   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[19:53:13.52] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job4" after 24 seconds. (PW_GUI-172)
+[19:53:53.74] /i gi::setActiveWindow 5
+[19:53:53.74] /i gi::setActiveWindow 5 -raise true
+[19:53:55.26] /i gi::setActiveWindow 4
+[19:53:55.26] /i gi::setActiveWindow 4 -raise true
+[19:53:59.97] /i gi::setCurrentIndex {variablesTable} -index {1,1} -in [gi::getWindows 4]
+[19:53:59.97] /i gi::setItemSelection {variablesTable} -index {1,1} -in [gi::getWindows 4]
+[19:53:59.97] /i gi::setItemSelection {analysisPane} -index {} -in [gi::getWindows 4]
+[19:54:05.26] /i gi::setField {variablesTable} -index {1,1} -value {100p} -in [gi::getWindows 4]
+[19:54:05.26] /i gi::setField {variablesTable} -index {1,1} -value {100p} -in [gi::getWindows 4]
+[19:54:40.97] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[19:54:40.97] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[19:54:41.09] /m Information: Started sharing "WaveView ADV" license. (WAVEFORM-110)
+[19:54:41.09] /m Information: Started sharing "Primewave" license. (WAVEFORM-110)
+[19:54:42.97] /m Information: Launching Simulation Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && sh /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.hrajesh/stb.group8.tb2025_1.schematic.session0/runSimServer ". (PW_GUI-711)
+[19:54:45.49] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[19:55:09.40] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[19:55:14.83] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[19:55:18.73] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 534x66+518+393
+[19:55:19.64] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 528x70+518+393
+[19:55:20.02] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 527x70+518+393
+[19:56:26.86] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[19:56:34.50] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 8s
+[19:56:37.21] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa3938da684b9955e8f41cef29294e7b19 -python 0  -log pw_shell_session0_job5 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[19:56:37.33] /r giWindowId 10
+[19:56:37.36] /r giWindowGeometry 1024x768
+[19:56:38.03] /i db::setAttr geometry -of [gi::getFrames 5] -value 1024x792+60+64
+[19:56:59.42] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job5" after 22 seconds. (PW_GUI-172)
+[19:57:00.36] /i db::setAttr maximized -of [gi::getFrames 5] -value true
+[19:57:00.42] /i db::setAttr geometry -of [gi::getFrames 5] -value 1536x770+0+46
+[19:57:21.12] /i gi::executeAction giCloseWindow -in [gi::getWindows 10]
+[19:57:21.25] /i gi::setActiveWindow 5
+[19:57:21.25] /i gi::setActiveWindow 5 -raise true
+[19:57:21.82] /m Information: Waveform viewer exited normally.
+[19:57:22.11] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_TVPSCB -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa3938da684b9955e8d369c9b185189db6 -lic_type 2   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[19:57:24.88] /i gi::setActiveWindow 4
+[19:57:24.88] /i gi::setActiveWindow 4 -raise true
+[19:57:27.74] /i gi::setItemSelection {analysisPane} -index {0,3} -in [gi::getWindows 4]
+[19:57:27.74] /i gi::setItemSelection {variablesTable} -index {} -in [gi::getWindows 4]
+[19:57:28.66] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]]
+[19:57:28.93] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]] -value 680x800+600+50
+[19:57:53.91] /i gi::setField {/analysesGroups/tabGeneral/anaPane/stop} -value {5n} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]]
+[19:57:53.91] /i gi::pressButton {/ok} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]]
+[19:57:58.88] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[19:57:58.88] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[19:58:00.24] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[19:58:00.24] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[19:58:03.22] /i gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]]
+[19:58:03.37] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[19:58:05.82] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[19:58:10.66] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[19:58:13.01] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 480x66+518+393
+[19:58:13.33] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 513x70+518+393
+[19:59:20.88] /i gi::setCurrentIndex {jobMonitorTable} -index {0,0} -in [gi::getWindows 5]
+[19:59:46.12] /m Information: Feature 'SynopsysCustomSAE' checked in. (LICENSE-004)
+[19:59:46.13] /m Information: Stopped sharing "Primewave" license. (WAVEFORM-111)
+[19:59:46.13] /m Information: Stopped sharing "WaveView ADV" license. (WAVEFORM-111)
+[19:59:46.20] /m Information: Send exit command to simulation server process stb.group8.tb2025_1.schematic.session0. (PW_GUI-979)
+[20:00:15.58] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[20:00:16.19] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[20:00:20.80] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 5s
+[20:00:21.31] /m Information: Stopping query due to no running simulation server process. (PW_GUI-710)
+[20:00:23.49] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affabe23254c1a85513231afaa275efa1448 -python 0  -log pw_shell_session0_job6 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[20:00:23.58] /r giWindowId 11
+[20:00:23.61] /r giWindowGeometry 1024x768
+[20:00:24.45] /i db::setAttr geometry -of [gi::getFrames 6] -value 1024x792+86+64
+[20:00:33.90] /i db::setAttr maximized -of [gi::getFrames 6] -value true
+[20:00:34.22] /i db::setAttr geometry -of [gi::getFrames 6] -value 1536x770+0+46
+[20:00:46.12] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job6" after 23 seconds. (PW_GUI-172)
+[20:05:51.83] /i gi::executeAction giCloseWindow -in [gi::getWindows 11]
+[20:05:52.62] /m Information: Waveform viewer exited normally.
+[20:05:52.91] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_oE0OnR -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affabe23254c1a855132f42a8bdc33bd09fb -lic_type 0   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[20:05:52.98] /i gi::setActiveWindow 5
+[20:05:52.99] /i gi::setActiveWindow 5 -raise true
+[20:05:54.31] /i gi::setActiveWindow 4
+[20:05:54.31] /i gi::setActiveWindow 4 -raise true
+[20:05:55.88] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[20:05:55.88] /r giMenuAccess db::getNext [gi::getMenus saConsoleOutputsMenu -from [gi::getWindows 4]]
+[20:05:57.16] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[20:05:57.16] /r giMenuAccess db::getNext [gi::getMenus saVariablesMenu -from [gi::getWindows 4]]
+[20:05:57.35] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[20:05:57.35] /r giMenuAccess db::getNext [gi::getMenus saConsoleOutputsMenu -from [gi::getWindows 4]]
+[20:05:57.44] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[20:05:57.44] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[20:05:59.50] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[20:05:59.50] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[20:05:59.60] /m Information: Started sharing "WaveView ADV" license. (WAVEFORM-110)
+[20:05:59.60] /m Information: Started sharing "Primewave" license. (WAVEFORM-110)
+[20:06:01.09] /m Information: Launching Simulation Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && sh /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.hrajesh/stb.group8.tb2025_1.schematic.session0/runSimServer ". (PW_GUI-711)
+[20:06:02.84] /# gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]]
+[20:06:03.18] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[20:06:28.11] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[20:06:33.92] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 534x66+518+393
+[20:06:36.20] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 480x66+518+393
+[20:06:37.02] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 514x70+518+393
+[20:08:36.33] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[20:08:41.89] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 5s
+[20:08:44.21] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affabe23254c1a855132d25a01c770e46a38 -python 0  -log pw_shell_session0_job7 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[20:08:44.33] /r giWindowId 12
+[20:08:44.35] /r giWindowGeometry 1024x768
+[20:08:45.10] /i db::setAttr geometry -of [gi::getFrames 7] -value 1024x792+112+64
+[20:08:56.81] /i db::setAttr maximized -of [gi::getFrames 7] -value true
+[20:08:57.24] /i db::setAttr geometry -of [gi::getFrames 7] -value 1536x770+0+46
+[20:09:06.42] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job7" after 22 seconds. (PW_GUI-172)
+[20:10:00.75] /i gi::executeAction giCloseWindow -in [gi::getWindows 12]
+[20:10:01.52] /m Information: Waveform viewer exited normally.
+[20:10:01.81] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_DXyMgb -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa28d1e884c2965692322ded66521c1b72 -lic_type 2   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[20:10:02.20] /i gi::setActiveWindow 5
+[20:10:02.20] /i gi::setActiveWindow 5 -raise true
+[20:10:05.30] /i gi::setActiveWindow 4
+[20:10:05.30] /i gi::setActiveWindow 4 -raise true
+[20:10:07.32] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[20:10:07.32] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[20:10:08.83] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[20:10:08.83] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[20:10:11.89] /i gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]]
+[20:10:12.04] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[20:10:14.74] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[20:10:19.60] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 534x66+518+393
+[20:11:04.12] /m Information: Feature 'SynopsysCustomSAE' checked in. (LICENSE-004)
+[20:11:04.13] /m Information: Stopped sharing "Primewave" license. (WAVEFORM-111)
+[20:11:04.13] /m Information: Stopped sharing "WaveView ADV" license. (WAVEFORM-111)
+[20:11:04.20] /m Information: Send exit command to simulation server process stb.group8.tb2025_1.schematic.session0. (PW_GUI-979)
+[20:12:23.19] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[20:12:23.50] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[20:12:30.05] /m Information: Stopping query due to no running simulation server process. (PW_GUI-710)
+[20:12:33.05] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa28d1e884c2965692bc12f715691054fb -python 0  -log pw_shell_session0_job8 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[20:12:33.19] /r giWindowId 13
+[20:12:33.22] /r giWindowGeometry 1024x768
+[20:12:33.94] /i db::setAttr geometry -of [gi::getFrames 8] -value 1024x792+138+64
+[20:12:55.52] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job8" after 22 seconds. (PW_GUI-172)
+[20:13:18.29] /i gi::executeAction giCloseWindow -in [gi::getWindows 13]
+[20:13:19.02] /m Information: Waveform viewer exited normally.
+[20:13:19.32] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_mV9Pra -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa28d1e884c296569207ee5a4fe078a006 -lic_type 0   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[20:13:19.88] /i gi::setActiveWindow 5
+[20:13:19.88] /i gi::setActiveWindow 5 -raise true
+[20:13:21.77] /i gi::setActiveWindow 4
+[20:13:21.77] /i gi::setActiveWindow 4 -raise true
+[20:13:48.66] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[20:13:48.66] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[20:13:50.01] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[20:13:50.01] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[20:13:50.11] /m Information: Started sharing "WaveView ADV" license. (WAVEFORM-110)
+[20:13:50.11] /m Information: Started sharing "Primewave" license. (WAVEFORM-110)
+[20:13:51.54] /m Information: Launching Simulation Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && sh /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.hrajesh/stb.group8.tb2025_1.schematic.session0/runSimServer ". (PW_GUI-711)
+[20:13:53.33] /# gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]]
+[20:13:53.72] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[20:14:18.32] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[20:14:23.52] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 534x66+518+393
+[20:16:27.90] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[20:16:32.76] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 5s
+[20:16:36.11] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa28d1e884c29656927b6174acfc9f0e6c -python 0  -log pw_shell_session0_job9 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[20:16:36.28] /r giWindowId 14
+[20:16:36.31] /r giWindowGeometry 1024x768
+[20:16:36.99] /i db::setAttr geometry -of [gi::getFrames 9] -value 1024x792+164+64
+[20:16:42.26] /i gi::setActiveWindow 5
+[20:16:42.26] /i gi::setActiveWindow 5 -raise true
+[20:16:42.28] /i db::setAttr iconified -of [gi::getFrames 9] -value true
+[20:16:42.54] /i db::setAttr geometry -of [gi::getFrames 9] -value 1024x792+0+23
+[20:16:59.46] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job9" after 23 seconds. (PW_GUI-172)
+[20:17:33.50] /i gi::executeAction giCloseWindow -in [gi::getWindows 14]
+[20:17:34.12] /m Information: Waveform viewer exited normally.
+[20:17:34.41] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_70GXCD -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa28d1e884c2965692c44d2b56bc072d50 -lic_type 2   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[20:17:38.81] /i gi::setActiveWindow 4
+[20:17:38.81] /i gi::setActiveWindow 4 -raise true
+[20:17:39.84] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[20:17:39.84] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[20:17:41.00] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[20:17:41.00] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[20:17:44.14] /i gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]]
+[20:17:44.41] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[20:17:46.80] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[20:17:51.53] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[20:17:54.43] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 480x66+518+393
+[20:17:54.72] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 514x70+518+393
+[20:18:54.12] /m Information: Feature 'SynopsysCustomSAE' checked in. (LICENSE-004)
+[20:18:54.12] /m Information: Stopped sharing "Primewave" license. (WAVEFORM-111)
+[20:18:54.13] /m Information: Stopped sharing "WaveView ADV" license. (WAVEFORM-111)
+[20:18:54.19] /m Information: Send exit command to simulation server process stb.group8.tb2025_1.schematic.session0. (PW_GUI-979)
+[20:19:56.24] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[20:19:56.87] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[20:20:01.82] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 5s
+[20:20:02.38] /m Information: Stopping query due to no running simulation server process. (PW_GUI-710)
+[20:20:05.16] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa3d5e27aade4076aed17d6cc95070d644 -python 0  -log pw_shell_session0_job10 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[20:20:05.25] /r giWindowId 15
+[20:20:05.28] /r giWindowGeometry 1024x768
+[20:20:06.12] /i db::setAttr geometry -of [gi::getFrames 10] -value 1024x792+190+64
+[20:20:26.74] /i gi::setActiveWindow 5
+[20:20:26.74] /i gi::setActiveWindow 5 -raise true
+[20:20:27.62] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job10" after 22 seconds. (PW_GUI-172)
+[20:21:20.20] /i gi::executeAction giCloseWindow -in [gi::getWindows 15]
+[20:21:21.02] /m Information: Waveform viewer exited normally.
+[20:21:21.31] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_Azr96O -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa3d5e27aade4076ae75471e60a4db3de9 -lic_type 0   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[20:21:22.42] /i gi::setActiveWindow 4
+[20:21:22.42] /i gi::setActiveWindow 4 -raise true
+[20:21:23.85] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[20:21:23.85] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[20:21:23.95] /m Information: Started sharing "WaveView ADV" license. (WAVEFORM-110)
+[20:21:23.95] /m Information: Started sharing "Primewave" license. (WAVEFORM-110)
+[20:21:25.40] /m Information: Launching Simulation Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && sh /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.hrajesh/stb.group8.tb2025_1.schematic.session0/runSimServer ". (PW_GUI-711)
+[20:21:27.26] /# gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]]
+[20:21:27.71] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[20:21:28.03] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 524x66+518+393
+[20:21:51.83] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[20:21:57.02] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 534x66+518+393
+[20:24:00.49] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[20:24:07.11] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 6s
+[20:24:09.66] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa3d5e27aade4076aeb5228f0d5f847306 -python 0  -log pw_shell_session0_job11 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[20:24:09.78] /r giWindowId 16
+[20:24:09.81] /r giWindowGeometry 1024x768
+[20:24:10.50] /i db::setAttr geometry -of [gi::getFrames 11] -value 1024x792+34+64
+[20:24:31.76] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job11" after 22 seconds. (PW_GUI-172)
+[20:25:28.29] /i gi::executeAction giCloseWindow -in [gi::getWindows 16]
+[20:25:28.93] /m Information: Waveform viewer exited normally.
+[20:25:29.22] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_CXJh02 -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa3d5e27aade4076ae5a79d189f2981c60 -lic_type 2   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[20:25:31.36] /i gi::setActiveWindow 5
+[20:25:31.36] /i gi::setActiveWindow 5 -raise true
+[20:25:34.70] /i gi::setActiveWindow 4
+[20:25:34.70] /i gi::setActiveWindow 4 -raise true
+[20:25:36.78] /i gi::setCurrentIndex {variablesTable} -index {1,1} -in [gi::getWindows 4]
+[20:25:36.78] /i gi::setItemSelection {variablesTable} -index {1,1} -in [gi::getWindows 4]
+[20:25:36.78] /i gi::setItemSelection {analysisPane} -index {} -in [gi::getWindows 4]
+[20:25:41.71] /i gi::setField {variablesTable} -index {1,1} -value {70p} -in [gi::getWindows 4]
+[20:25:41.71] /i gi::setField {variablesTable} -index {1,1} -value {70p} -in [gi::getWindows 4]
+[20:26:09.94] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[20:26:09.94] /r giMenuAccess db::getNext [gi::getMenus saConsoleOutputsMenu -from [gi::getWindows 4]]
+[20:26:10.71] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[20:26:10.71] /r giMenuAccess db::getNext [gi::getMenus saVariablesMenu -from [gi::getWindows 4]]
+[20:26:11.00] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[20:26:11.00] /r giMenuAccess db::getNext [gi::getMenus saConsoleOutputsMenu -from [gi::getWindows 4]]
+[20:26:11.58] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[20:26:11.58] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[20:26:13.02] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[20:26:13.02] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[20:26:16.08] /i gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]]
+[20:26:16.21] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[20:26:18.62] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[20:26:23.44] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 534x66+518+393
+[20:26:26.12] /m Information: Feature 'SynopsysCustomSAE' checked in. (LICENSE-004)
+[20:26:26.13] /m Information: Stopped sharing "Primewave" license. (WAVEFORM-111)
+[20:26:26.13] /m Information: Stopped sharing "WaveView ADV" license. (WAVEFORM-111)
+[20:26:26.19] /m Information: Send exit command to simulation server process stb.group8.tb2025_1.schematic.session0. (PW_GUI-979)
+[20:26:26.20] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 513x70+518+393
+[20:26:26.72] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 514x70+518+393
+[20:28:46.29] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[20:28:46.93] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[20:28:52.26] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 5s
+[20:28:52.76] /m Information: Stopping query due to no running simulation server process. (PW_GUI-710)
+[20:28:55.35] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa3d5e27aade4076aeea440a3c8d5d84b7 -python 0  -log pw_shell_session0_job12 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[20:28:55.44] /r giWindowId 17
+[20:28:55.47] /r giWindowGeometry 1024x768
+[20:28:56.44] /i db::setAttr geometry -of [gi::getFrames 12] -value 1024x792+60+64
+[20:29:01.58] /i db::setAttr maximized -of [gi::getFrames 12] -value true
+[20:29:01.92] /i db::setAttr geometry -of [gi::getFrames 12] -value 1536x770+0+46
+[20:29:15.47] /i gi::executeAction giCloseWindow -in [gi::getWindows 17]
+[20:29:15.61] /i gi::setActiveWindow 5
+[20:29:15.61] /i gi::setActiveWindow 5 -raise true
+[20:29:16.22] /m Information: Waveform viewer exited normally.
+[20:29:16.47] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_MGPOAL -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa3d5e27aade4076ae94dd7dc73d300e10 -lic_type 0   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[20:29:17.87] /i gi::setActiveWindow 4
+[20:29:17.87] /i gi::setActiveWindow 4 -raise true
+[20:29:18.92] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job12" after 23 seconds. (PW_GUI-172)
+[20:29:24.74] /i gi::setField {variablesTable} -index {1,1} -value {80p} -in [gi::getWindows 4]
+[20:29:24.75] /i gi::setField {variablesTable} -index {1,1} -value {80p} -in [gi::getWindows 4]
+[20:29:50.92] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[20:29:50.92] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[20:29:51.84] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[20:29:51.84] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[20:29:51.94] /m Information: Started sharing "WaveView ADV" license. (WAVEFORM-110)
+[20:29:51.94] /m Information: Started sharing "Primewave" license. (WAVEFORM-110)
+[20:29:53.41] /m Information: Launching Simulation Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && sh /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.hrajesh/stb.group8.tb2025_1.schematic.session0/runSimServer ". (PW_GUI-711)
+[20:29:55.21] /# gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]]
+[20:29:55.53] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[20:30:20.79] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[20:30:26.32] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 534x66+518+393
+[20:32:30.10] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[20:32:30.10] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[20:32:30.10] /i db::setAttr iconified -of [gi::getFrames 1] -value true
+[20:32:30.35] /i db::setAttr geometry -of [gi::getFrames 1] -value 1536x770+0+23
+[20:32:43.44] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[20:32:43.44] /i db::setAttr iconified -of [gi::getFrames 1] -value false
+[20:32:43.61] /i db::setAttr geometry -of [gi::getFrames 1] -value 1536x770+0+46
+[20:32:46.66] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[20:32:53.94] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 7s
+[20:32:56.88] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa4d84257d8908a7b39aa05fb56ef308d1 -python 0  -log pw_shell_session0_job13 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[20:32:57.00] /r giWindowId 18
+[20:32:57.03] /r giWindowGeometry 1024x768
+[20:32:57.73] /i db::setAttr geometry -of [gi::getFrames 13] -value 1024x792+86+64
+[20:33:03.17] /i db::setAttr maximized -of [gi::getFrames 13] -value true
+[20:33:03.49] /i db::setAttr geometry -of [gi::getFrames 13] -value 1536x770+0+46
+[20:33:18.92] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job13" after 22 seconds. (PW_GUI-172)
+[20:34:18.00] /i gi::executeAction giCloseWindow -in [gi::getWindows 18]
+[20:34:18.72] /m Information: Waveform viewer exited normally.
+[20:34:19.01] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_wawwxq -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa4d84257d8908a7b3a289cd3e2150ec4a -lic_type 2   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[20:34:19.44] /i gi::setActiveWindow 5
+[20:34:19.44] /i gi::setActiveWindow 5 -raise true
+[20:34:21.29] /i gi::setActiveWindow 4
+[20:34:21.29] /i gi::setActiveWindow 4 -raise true
+[20:34:22.96] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[20:34:22.96] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[20:34:24.17] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[20:34:24.17] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[20:34:27.26] /i gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]]
+[20:34:27.63] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[20:34:30.02] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[20:34:34.53] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[20:34:37.22] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 528x70+518+393
+[20:34:54.32] /m Information: Feature 'SynopsysCustomSAE' checked in. (LICENSE-004)
+[20:34:54.33] /m Information: Stopped sharing "Primewave" license. (WAVEFORM-111)
+[20:34:54.33] /m Information: Stopped sharing "WaveView ADV" license. (WAVEFORM-111)
+[20:34:54.53] /m Information: Send exit command to simulation server process stb.group8.tb2025_1.schematic.session0. (PW_GUI-979)
+[20:36:58.36] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[20:36:59.00] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[20:37:04.31] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 5s
+[20:37:04.82] /m Information: Stopping query due to no running simulation server process. (PW_GUI-710)
+[20:37:07.39] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa4d84257d8908a7b3b510df8d61a63401 -python 0  -log pw_shell_session0_job14 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[20:37:07.47] /r giWindowId 19
+[20:37:07.50] /r giWindowGeometry 1024x768
+[20:37:08.25] /i db::setAttr geometry -of [gi::getFrames 14] -value 1024x792+112+64
+[20:37:17.73] /i db::setAttr maximized -of [gi::getFrames 14] -value true
+[20:37:18.00] /i db::setAttr geometry -of [gi::getFrames 14] -value 1536x770+0+46
+[20:37:30.22] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job14" after 23 seconds. (PW_GUI-172)
+[20:38:00.00] /i gi::executeAction giCloseWindow -in [gi::getWindows 19]
+[20:38:00.82] /m Information: Waveform viewer exited normally.
+[20:38:01.14] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_gzDvxv -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa4d84257d8908a7b392f80ade0863530e -lic_type 0   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[20:38:01.21] /i gi::setActiveWindow 5
+[20:38:01.21] /i gi::setActiveWindow 5 -raise true
+[20:38:02.59] /i gi::setActiveWindow 4
+[20:38:02.59] /i gi::setActiveWindow 4 -raise true
+[20:38:03.95] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[20:38:03.95] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[20:38:07.20] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[20:38:07.20] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[20:38:07.31] /m Information: Started sharing "WaveView ADV" license. (WAVEFORM-110)
+[20:38:07.31] /m Information: Started sharing "Primewave" license. (WAVEFORM-110)
+[20:38:08.74] /m Information: Launching Simulation Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && sh /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.hrajesh/stb.group8.tb2025_1.schematic.session0/runSimServer ". (PW_GUI-711)
+[20:38:10.52] /# gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]]
+[20:38:10.84] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[20:38:35.49] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 535x66+518+393
+[20:38:40.94] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[20:38:43.82] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 513x70+518+393
+[20:38:44.72] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 527x70+518+393
+[20:41:00.28] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[20:41:07.56] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 7s
+[20:41:10.73] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa2f1a569d2137d06c21512573302db8d1 -python 0  -log pw_shell_session0_job15 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[20:41:10.85] /r giWindowId 20
+[20:41:10.88] /r giWindowGeometry 1024x768
+[20:41:11.81] /i db::setAttr geometry -of [gi::getFrames 15] -value 1024x792+164+64
+[20:41:34.12] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job15" after 24 seconds. (PW_GUI-172)
+[20:41:56.33] /i gi::executeAction giCloseWindow -in [gi::getWindows 20]
+[20:41:57.12] /m Information: Waveform viewer exited normally.
+[20:41:57.41] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_7cyqOf -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa2f1a569d2137d06c941a2c5d4c95a238 -lic_type 2   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[20:41:57.51] /i gi::setActiveWindow 5
+[20:41:57.51] /i gi::setActiveWindow 5 -raise true
+[20:41:58.80] /i gi::setActiveWindow 4
+[20:41:58.80] /i gi::setActiveWindow 4 -raise true
+[20:42:00.44] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[20:42:00.44] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[20:42:01.86] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[20:42:01.86] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[20:42:04.90] /i gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]]
+[20:42:05.25] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[20:42:07.63] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[20:42:12.49] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[20:42:14.82] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 480x66+518+393
+[20:43:10.12] /m Information: Feature 'SynopsysCustomSAE' checked in. (LICENSE-004)
+[20:43:10.12] /m Information: Stopped sharing "Primewave" license. (WAVEFORM-111)
+[20:43:10.13] /m Information: Stopped sharing "WaveView ADV" license. (WAVEFORM-111)
+[20:43:10.20] /m Information: Send exit command to simulation server process stb.group8.tb2025_1.schematic.session0. (PW_GUI-979)
+[20:44:31.93] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[20:44:32.58] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[20:44:36.52] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 4s
+[20:44:37.02] /m Information: Stopping query due to no running simulation server process. (PW_GUI-710)
+[20:44:39.58] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa2f1a569d2137d06c897a757acfe40859 -python 0  -log pw_shell_session0_job16 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[20:44:39.66] /r giWindowId 21
+[20:44:39.69] /r giWindowGeometry 1024x768
+[20:44:40.81] /i db::setAttr geometry -of [gi::getFrames 16] -value 1024x792+190+64
+[20:45:02.02] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job16" after 23 seconds. (PW_GUI-172)
+[20:45:22.64] /i gi::executeAction giCloseWindow -in [gi::getWindows 21]
+[20:45:23.50] /i gi::setActiveWindow 5
+[20:45:23.50] /i gi::setActiveWindow 5 -raise true
+[20:45:23.52] /m Information: Waveform viewer exited normally.
+[20:45:23.80] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_pELcAm -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa2f1a569d2137d06c574ad4bd592004f6 -lic_type 0   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[20:45:25.07] /i gi::setActiveWindow 4
+[20:45:25.07] /i gi::setActiveWindow 4 -raise true
+[20:45:26.60] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[20:45:26.61] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[20:45:28.04] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[20:45:28.04] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[20:45:28.14] /m Information: Started sharing "WaveView ADV" license. (WAVEFORM-110)
+[20:45:28.14] /m Information: Started sharing "Primewave" license. (WAVEFORM-110)
+[20:45:29.47] /m Information: Launching Simulation Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && sh /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.hrajesh/stb.group8.tb2025_1.schematic.session0/runSimServer ". (PW_GUI-711)
+[20:45:31.71] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[20:45:56.24] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[20:46:01.50] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 534x66+518+393
+[20:46:04.03] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 480x66+518+393
+[20:46:04.35] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 513x70+518+393
+[20:46:05.22] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 527x70+518+393
+[20:48:21.77] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[20:48:29.04] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 7s
+[20:48:32.02] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa2f1a569d2137d06c2da4a983fe33f641 -python 0  -log pw_shell_session0_job17 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[20:48:32.14] /r giWindowId 22
+[20:48:32.17] /r giWindowGeometry 1024x768
+[20:48:32.88] /i db::setAttr geometry -of [gi::getFrames 17] -value 1024x792+34+64
+[20:48:54.82] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job17" after 22 seconds. (PW_GUI-172)
+[20:49:08.13] /i gi::executeAction giCloseWindow -in [gi::getWindows 22]
+[20:49:09.02] /i gi::setActiveWindow 5
+[20:49:09.02] /i gi::setActiveWindow 5 -raise true
+[20:49:09.07] /m Information: Waveform viewer exited normally.
+[20:49:09.35] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_Mjfub8 -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa2f1a569d2137d06c1481c97f1e3f9008 -lic_type 2   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[20:49:10.39] /i gi::setActiveWindow 4
+[20:49:10.40] /i gi::setActiveWindow 4 -raise true
+[20:49:11.64] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[20:49:11.64] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[20:49:12.61] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[20:49:12.61] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[20:49:15.68] /i gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]]
+[20:49:16.01] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[20:49:18.39] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[20:49:22.83] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[20:49:25.52] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 480x66+518+393
+[20:50:30.12] /m Information: Feature 'SynopsysCustomSAE' checked in. (LICENSE-004)
+[20:50:30.13] /m Information: Stopped sharing "Primewave" license. (WAVEFORM-111)
+[20:50:30.13] /m Information: Stopped sharing "WaveView ADV" license. (WAVEFORM-111)
+[20:50:30.21] /m Information: Send exit command to simulation server process stb.group8.tb2025_1.schematic.session0. (PW_GUI-979)
+[20:51:43.22] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[20:51:43.86] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[20:51:48.48] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 5s
+[20:51:48.95] /m Information: Stopping query due to no running simulation server process. (PW_GUI-710)
+[20:51:50.86] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa386e110f53a849550df859f34523cb0f -python 0  -log pw_shell_session0_job18 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[20:51:50.94] /r giWindowId 23
+[20:51:50.97] /r giWindowGeometry 1024x768
+[20:51:51.81] /i db::setAttr geometry -of [gi::getFrames 18] -value 1024x792+86+64
+[20:52:13.42] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job18" after 23 seconds. (PW_GUI-172)
+[20:52:26.80] /i gi::executeAction giCloseWindow -in [gi::getWindows 23]
+[20:52:27.62] /m Information: Waveform viewer exited normally.
+[20:52:27.93] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_SqCxoo -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa386e110f53a849556fa812188e301a40 -lic_type 0   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[20:52:28.03] /i gi::setActiveWindow 5
+[20:52:28.03] /i gi::setActiveWindow 5 -raise true
+[20:52:29.38] /i gi::setActiveWindow 4
+[20:52:29.38] /i gi::setActiveWindow 4 -raise true
+[20:52:30.80] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[20:52:30.80] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[20:52:32.39] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[20:52:32.39] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[20:52:32.49] /m Information: Started sharing "WaveView ADV" license. (WAVEFORM-110)
+[20:52:32.49] /m Information: Started sharing "Primewave" license. (WAVEFORM-110)
+[20:52:33.83] /m Information: Launching Simulation Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && sh /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.hrajesh/stb.group8.tb2025_1.schematic.session0/runSimServer ". (PW_GUI-711)
+[20:52:36.06] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[20:53:00.22] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[20:53:05.74] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 534x66+518+393
+[20:53:08.33] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 534x66+518+393
+[20:55:23.96] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[20:55:31.21] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 7s
+[20:55:34.33] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa386e110f53a849559bef6c545ea08f01 -python 0  -log pw_shell_session0_job19 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[20:55:34.44] /r giWindowId 24
+[20:55:34.47] /r giWindowGeometry 1024x768
+[20:55:35.24] /i db::setAttr geometry -of [gi::getFrames 19] -value 1024x792+112+64
+[20:55:57.62] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job19" after 23 seconds. (PW_GUI-172)
+[20:56:00.25] /i gi::executeAction giCloseWindow -in [gi::getWindows 24]
+[20:56:01.15] /i gi::setActiveWindow 5
+[20:56:01.15] /i gi::setActiveWindow 5 -raise true
+[20:56:01.17] /m Information: Waveform viewer exited normally.
+[20:56:01.45] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_mVA82N -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa386e110f53a849556b06bcc923563fc4 -lic_type 2   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[20:56:03.77] /i gi::setActiveWindow 4
+[20:56:03.77] /i gi::setActiveWindow 4 -raise true
+[20:56:05.15] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[20:56:05.15] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[20:56:06.70] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[20:56:06.70] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[20:56:09.68] /i gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]]
+[20:56:09.80] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[20:56:12.22] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 535x66+518+393
+[20:56:12.59] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[20:56:17.02] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 534x66+518+393
+[20:56:19.73] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 528x70+518+393
+[20:57:34.12] /m Information: Feature 'SynopsysCustomSAE' checked in. (LICENSE-004)
+[20:57:34.13] /m Information: Stopped sharing "Primewave" license. (WAVEFORM-111)
+[20:57:34.13] /m Information: Stopped sharing "WaveView ADV" license. (WAVEFORM-111)
+[20:57:34.20] /m Information: Send exit command to simulation server process stb.group8.tb2025_1.schematic.session0. (PW_GUI-979)
+[20:58:37.55] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[20:58:38.19] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[20:58:43.49] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 6s
+[20:58:43.94] /m Information: Stopping query due to no running simulation server process. (PW_GUI-710)
+[20:58:46.34] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa386e110f53a84955daf88de70c321f2d -python 0  -log pw_shell_session0_job20 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[20:58:46.43] /r giWindowId 25
+[20:58:46.46] /r giWindowGeometry 1024x768
+[20:58:47.17] /i db::setAttr geometry -of [gi::getFrames 20] -value 1024x792+164+64
+[20:59:09.12] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job20" after 23 seconds. (PW_GUI-172)
+[20:59:19.32] /i gi::executeAction giCloseWindow -in [gi::getWindows 25]
+[20:59:20.14] /i gi::setActiveWindow 5
+[20:59:20.14] /i gi::setActiveWindow 5 -raise true
+[20:59:20.16] /m Information: Waveform viewer exited normally.
+[20:59:20.44] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_vsr85G -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affa386e110f53a84955326bd65f0cf7a1c6 -lic_type 0   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[20:59:21.24] /i gi::setActiveWindow 4
+[20:59:21.24] /i gi::setActiveWindow 4 -raise true
+[20:59:22.41] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[20:59:22.41] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[20:59:23.40] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[20:59:23.40] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[20:59:23.50] /m Information: Started sharing "WaveView ADV" license. (WAVEFORM-110)
+[20:59:23.50] /m Information: Started sharing "Primewave" license. (WAVEFORM-110)
+[20:59:24.95] /m Information: Launching Simulation Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && sh /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.hrajesh/stb.group8.tb2025_1.schematic.session0/runSimServer ". (PW_GUI-711)
+[20:59:26.82] /# gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]]
+[20:59:27.27] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[20:59:51.13] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[20:59:56.69] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 534x66+518+393
+[20:59:58.92] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 480x66+518+393
+[20:59:59.22] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 528x70+518+393
+[21:00:00.14] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 527x70+518+393
+[21:02:21.80] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[21:02:28.38] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 7s
+[21:02:31.88] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affaa3dc368f4c2d60fe498a880e88eb4c5d -python 0  -log pw_shell_session0_job21 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[21:02:31.99] /r giWindowId 26
+[21:02:32.03] /r giWindowGeometry 1024x768
+[21:02:32.53] /i gi::setActiveWindow 5
+[21:02:32.53] /i gi::setActiveWindow 5 -raise true
+[21:02:32.53] /i gi::setActiveWindow 26
+[21:02:32.53] /i gi::setActiveWindow 26 -raise true
+[21:02:32.83] /i db::setAttr geometry -of [gi::getFrames 21] -value 1024x792+190+64
+[21:02:54.32] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job21" after 23 seconds. (PW_GUI-172)
+[21:03:15.36] /i gi::executeAction giCloseWindow -in [gi::getWindows 26]
+[21:03:16.18] /i gi::setActiveWindow 5
+[21:03:16.18] /i gi::setActiveWindow 5 -raise true
+[21:03:16.22] /m Information: Waveform viewer exited normally.
+[21:03:16.51] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_lQ5Dno -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affaa3dc368f4c2d60fe82a11b2a426e1154 -lic_type 2   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[21:03:17.71] /i gi::setActiveWindow 4
+[21:03:17.71] /i gi::setActiveWindow 4 -raise true
+[21:03:18.99] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[21:03:18.99] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[21:03:20.12] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[21:03:20.12] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[21:03:23.29] /i gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]]
+[21:03:23.59] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[21:03:26.01] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[21:03:30.50] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 534x66+518+393
+[21:03:33.15] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 528x70+518+393
+[21:03:33.74] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 514x70+518+393
+[21:04:25.12] /m Information: Feature 'SynopsysCustomSAE' checked in. (LICENSE-004)
+[21:04:25.13] /m Information: Stopped sharing "Primewave" license. (WAVEFORM-111)
+[21:04:25.13] /m Information: Stopped sharing "WaveView ADV" license. (WAVEFORM-111)
+[21:04:25.20] /m Information: Send exit command to simulation server process stb.group8.tb2025_1.schematic.session0. (PW_GUI-979)
+[21:05:50.07] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[21:05:50.71] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[21:05:57.03] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 6s
+[21:05:57.52] /m Information: Stopping query due to no running simulation server process. (PW_GUI-710)
+[21:05:59.93] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affaa3dc368f4c2d60fedef24c5920c5b59a -python 0  -log pw_shell_session0_job22 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[21:06:00.02] /r giWindowId 27
+[21:06:00.05] /r giWindowGeometry 1024x768
+[21:06:01.00] /i db::setAttr geometry -of [gi::getFrames 22] -value 1024x792+34+64
+[21:06:22.82] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job22" after 23 seconds. (PW_GUI-172)
+[21:06:26.03] /i gi::executeAction giCloseWindow -in [gi::getWindows 27]
+[21:06:26.71] /m Information: Waveform viewer exited normally.
+[21:06:27.01] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_huQ6ru -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affaa3dc368f4c2d60fedbb26900b7b92c2d -lic_type 0   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[21:06:27.09] /i gi::setActiveWindow 5
+[21:06:27.09] /i gi::setActiveWindow 5 -raise true
+[21:06:28.99] /i gi::setActiveWindow 4
+[21:06:28.99] /i gi::setActiveWindow 4 -raise true
+[21:06:30.35] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[21:06:30.35] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[21:06:31.83] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[21:06:31.83] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[21:06:31.94] /m Information: Started sharing "WaveView ADV" license. (WAVEFORM-110)
+[21:06:31.94] /m Information: Started sharing "Primewave" license. (WAVEFORM-110)
+[21:06:33.48] /m Information: Launching Simulation Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && sh /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.hrajesh/stb.group8.tb2025_1.schematic.session0/runSimServer ". (PW_GUI-711)
+[21:06:35.27] /# gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]]
+[21:06:35.72] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[21:07:00.83] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[21:07:05.92] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 534x66+518+393
+[21:07:09.43] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 514x70+518+393
+[21:09:26.43] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[21:09:31.66] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 5s
+[21:09:34.73] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affaa3dc368f4c2d60fe691593cb03c2ac7e -python 0  -log pw_shell_session0_job23 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[21:09:34.85] /r giWindowId 28
+[21:09:34.88] /r giWindowGeometry 1024x768
+[21:09:35.58] /i db::setAttr geometry -of [gi::getFrames 23] -value 1024x792+60+64
+[21:09:56.76] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job23" after 22 seconds. (PW_GUI-172)
+[21:10:28.10] /i gi::executeAction giCloseWindow -in [gi::getWindows 28]
+[21:10:28.85] /i gi::setActiveWindow 5
+[21:10:28.85] /i gi::setActiveWindow 5 -raise true
+[21:10:28.87] /m Information: Waveform viewer exited normally.
+[21:10:29.15] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_0sXfTY -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affaec1715d9632760361f2f44e977c4e1a0 -lic_type 2   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[21:10:30.13] /i gi::setActiveWindow 4
+[21:10:30.13] /i gi::setActiveWindow 4 -raise true
+[21:10:35.03] /i gi::setField {variablesTable} -index {1,1} -value {90p} -in [gi::getWindows 4]
+[21:10:35.03] /i gi::setField {variablesTable} -index {1,1} -value {90p} -in [gi::getWindows 4]
+[21:10:39.81] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[21:10:39.81] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[21:10:41.60] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 4]
+[21:10:41.60] /i ::sa::_testSuite::isShowRunConfirmation 4 "isa::netlistAndRun" [sa::_utils::findRunMode 4]
+[21:10:44.72] /i gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]]
+[21:10:44.90] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 532x66+518+393
+[21:10:47.31] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[21:10:52.03] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 549x66+518+393
+[21:10:54.82] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 480x66+518+393
+[21:10:55.14] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 513x70+518+393
+[21:10:55.72] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 4]] -value 514x70+518+393
+[21:11:34.12] /m Information: Feature 'SynopsysCustomSAE' checked in. (LICENSE-004)
+[21:11:34.12] /m Information: Stopped sharing "Primewave" license. (WAVEFORM-111)
+[21:11:34.13] /m Information: Stopped sharing "WaveView ADV" license. (WAVEFORM-111)
+[21:11:34.19] /m Information: Send exit command to simulation server process stb.group8.tb2025_1.schematic.session0. (PW_GUI-979)
+[21:13:01.90] /m Information: Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[21:13:02.51] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[21:13:06.79] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 5s
+[21:13:07.29] /m Information: Stopping query due to no running simulation server process. (PW_GUI-710)
+[21:13:09.64] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affaec1715d96327603671670fdd86d26706 -python 0  -log pw_shell_session0_job24 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[21:13:09.73] /r giWindowId 29
+[21:13:09.76] /r giWindowGeometry 1024x768
+[21:13:10.62] /i db::setAttr geometry -of [gi::getFrames 24] -value 1024x792+86+64
+[21:13:32.92] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job24" after 23 seconds. (PW_GUI-172)
+[23:21:52.67] /i gi::executeAction giCloseWindow -in [gi::getWindows 29]
+[23:21:52.93] /i gi::setActiveWindow 5
+[23:21:52.93] /i gi::setActiveWindow 5 -raise true
+[23:21:53.52] /m Information: Waveform viewer exited normally.
+[23:21:53.80] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_gSFEcf -unique_string 424077b79e1069eea23cf3be4e8d4a3ab352b129e5a3670e3b3a965d3326affafa090c6791ce670b4a00c064af662387 -lic_type 0   -parent_cc_pid 1006833  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[23:24:08.68] /i gi::executeAction giCloseWindow -in [gi::getWindows 5]
+[23:24:13.31] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[23:24:15.86] /i gi::executeAction giCloseWindow -in [gi::getWindows 6]
+[23:24:18.20] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[23:24:18.30] /r giDialog gi::setActiveDialog [gi::getDialogs {giPrompt} -parent [gi::getWindows 4]]
+[23:24:18.54] /r giDialog db::setAttr geometry -of [gi::getDialogs {giPrompt} -parent [gi::getWindows 4]] -value 292x83+612+338
+[23:24:20.79] /r giDialog gi::pressButton {save} -in [gi::getDialogs {giPrompt} -parent [gi::getWindows 4]]
+[23:24:21.19] /m Information: Started sharing "WaveView ADV" license. (WAVEFORM-110)
+[23:24:21.19] /m Information: Started sharing "Primewave" license. (WAVEFORM-110)
+[23:24:21.53] /r giDialog gi::setActiveDialog [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 4]]
+[23:24:21.92] /r giDialog db::setAttr geometry -of [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 4]] -value 552x756+508+145
+[23:24:22.86] /r giDialog gi::pressButton {/ok} -in [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 4]]
+[23:24:23.23] /m Information: Sent exit command to CalculateEngine.
+[23:24:23.23] /m Information: Sent exit command to WaveView.
+[23:24:23.23] /m Information: Sent exit command to ResultsViewer.
+[23:24:23.57] /m Information: Stopped sharing "Primewave" license. (WAVEFORM-111)
+[23:24:23.57] /m Information: Stopped sharing "WaveView ADV" license. (WAVEFORM-111)
+[23:24:23.62] /m Information: Feature 'SynopsysCustomSAE' checked in. (LICENSE-004)
+[23:24:24.15] /m Information: ResultsView exited normally.
+[23:24:24.15] /m Information: Waveform viewer exited normally.
+[23:24:34.74] /i gi::setCurrentIndex {cells} -index {sram_6t} -in [gi::getWindows 2]
+[23:24:35.05] /i gi::setItemSelection {cells} -index {sram_6t} -in [gi::getWindows 2]
+[23:24:37.43] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 2]
+[23:24:37.48] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 2]
+[23:24:37.69] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[23:24:37.74] /m Information: Lock file /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/group8/sram_6t/layout/layout.oa.cdslck: Unable to connect to OA Lock File Daemon(oaFSLockD) on host 'hydra13.ece.ncsu.edu'. Check if oaFSLockD is running on the host. If the host is invalid, remove the .cdslck lock file. (oaDMFileSys)
+[23:24:37.81] /r giDialog gi::setActiveDialog [gi::getDialogs {deOpenFailed} -parent [gi::getWindows 2]]
+[23:24:38.05] /r giDialog db::setAttr geometry -of [gi::getDialogs {deOpenFailed} -parent [gi::getWindows 2]] -value 399x83+559+338
+[23:24:39.88] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deOpenFailed} -parent [gi::getWindows 2]]
+[23:24:40.12] /r giWindowId 30
+[23:24:40.13] /r giWindowGeometry 1305x777
+[23:24:43.04] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 30]
+[23:24:43.04] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 30]]
+[23:26:27.54] /i gi::setActiveWindow 2
+[23:26:27.54] /i gi::setActiveWindow 2 -raise true
+[23:26:29.97] /i gi::setCurrentIndex {cells} -index {tb2025_1} -in [gi::getWindows 2]
+[23:26:30.17] /i gi::setItemSelection {cells} -index {tb2025_1} -in [gi::getWindows 2]
+[23:26:32.47] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 2]
+[23:26:32.51] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 2]
+[23:26:33.24] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[23:26:33.34] /r giWindowId 31
+[23:26:33.36] /r giWindowGeometry 1305x777
+[23:26:37.51] /# gi::executeAction {deSelectActive} -in [gi::getWindows 31]
+[23:26:37.51] /i de::deselectAll [db::getNext [de::getContexts -window 31]]
+[23:26:37.51] /i de::select [de::getActiveFigure [gi::getWindows 31] -point {3.65625 3.86875} -index 0 -intent none]
+[23:26:37.51] /o oa:0x4d29c200
+[23:26:37.95] /i ::se::internal::descendInst 31 [de::getActiveFigure [gi::getWindows 31] -point {3.65625 3.86875} -index 0 -intent none] auto
+[23:26:38.00] /# ide::descend 31 -inPlace false -readOnly auto
+[23:26:38.20] /# Navigating to group8/memory_array_static_column_decoder/schematic (I35)
+[23:26:38.28] /r giWindowGeometry 1305x777
+[23:34:59.33] /o Error: X connection is broken. Error code: (APPLICATION_GUI-002)1
+[23:34:59.34] /e Error: The application was unexpectedly terminated.
+              /c See the session log file for recovery details. (SHUT_DOWN-001)

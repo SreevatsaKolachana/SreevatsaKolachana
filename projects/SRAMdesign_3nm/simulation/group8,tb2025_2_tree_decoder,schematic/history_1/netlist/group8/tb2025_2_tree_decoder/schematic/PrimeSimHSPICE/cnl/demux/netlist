@@ -1,0 +1,15 @@
+********************************************************************************
+* Library          : group8
+* Cell             : Demux
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt demux a sel y0 y1
+xi1 sel a net12 nand
+xi0 net7 a net10 nand
+xi4 net12 y1 inv
+xi3 net10 y0 inv
+xi2 sel net7 inv
+.ends demux
+

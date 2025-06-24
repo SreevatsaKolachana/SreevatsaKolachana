@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: FreePDK3_examples inverter schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping dst="m8" src="M8"/>
+            <mapping dst="m9" src="M9"/>
+        </forward>
+        <reverse>
+            <mapping dst="M8" src="m8"/>
+            <mapping dst="M9" src="m9"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward>
+            <mapping dst="out" src="Out"/>
+            <mapping dst="a" src="A"/>
+        </forward>
+        <reverse>
+            <mapping dst="Out" src="out"/>
+            <mapping dst="A" src="a"/>
+        </reverse>
+    </scope>
+    <scope name="Terminal">
+        <forward>
+            <mapping dst="out" src="Out"/>
+            <mapping dst="a" src="A"/>
+        </forward>
+        <reverse>
+            <mapping dst="Out" src="out"/>
+            <mapping dst="A" src="a"/>
+        </reverse>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping dst="A Out" src="&lt;unmappedTermOrder&gt;"/>
+            <mapping dst="a out" src="&lt;termOrder&gt;"/>
+        </forward>
+        <reverse>
+            <mapping dst="&lt;unmappedTermOrder&gt;" src="A Out"/>
+            <mapping dst="&lt;termOrder&gt;" src="a out"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="nmos">
+            <instance name="M8"/>
+        </instance_header>
+        <instance_header master="pmos">
+            <instance name="M9"/>
+        </instance_header>
+    </master_instances>
+</module>

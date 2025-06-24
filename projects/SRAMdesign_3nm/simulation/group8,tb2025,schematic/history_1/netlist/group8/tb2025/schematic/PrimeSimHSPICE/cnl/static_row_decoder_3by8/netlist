@@ -1,0 +1,37 @@
+********************************************************************************
+* Library          : group8
+* Cell             : static_row_decoder_3by8
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt static_row_decoder_3by8 a0 a1 a2 y0 y1 y2 y3 y4 y5 y6 y7
+xi52 a2 net66 net67 net61 nand_i3
+xi53 a2 net66 a0 net62 nand_i3
+xi54 a2 a1 net67 net63 nand_i3
+xi55 a2 a1 a0 net64 nand_i3
+xi39 net80 a1 a0 net68 nand_i3
+xi38 a1 a1 net67 net60 nand_i3
+xi37 net80 net66 a0 net59 nand_i3
+xi36 net80 net66 net67 net58 nand_i3
+xi44 net58 net95 inv
+xi45 net59 net113 inv
+xi46 net60 net97 inv
+xi51 net64 net104 inv
+xi50 net63 net101 inv
+xi49 net62 net100 inv
+xi48 net61 net99 inv
+xi47 net68 net98 inv
+xi82 net95 y0 buffer_highdrive
+xi80 net113 y1 buffer_highdrive
+xi79 net97 y2 buffer_highdrive
+xi78 net98 y3 buffer_highdrive
+xi77 net99 y4 buffer_highdrive
+xi76 net100 y5 buffer_highdrive
+xi75 net101 y6 buffer_highdrive
+xi74 net104 y7 buffer_highdrive
+xi18 a0 net67 invx4
+xi17 a1 net66 invx4
+xi16 a2 net80 invx4
+.ends static_row_decoder_3by8
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 2to4decodermux_tb schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping dst="v18" src="V18"/>
+            <mapping dst="v8" src="V8"/>
+            <mapping dst="v19" src="V19"/>
+            <mapping dst="v1" src="V1"/>
+            <mapping dst="v2" src="V2"/>
+            <mapping dst="v11" src="V11"/>
+            <mapping dst="v17" src="V17"/>
+            <mapping dst="v13" src="V13"/>
+            <mapping dst="v16" src="V16"/>
+            <mapping dst="xi0" src="I0"/>
+        </forward>
+        <reverse>
+            <mapping dst="V8" src="v8"/>
+            <mapping dst="V17" src="v17"/>
+            <mapping dst="V19" src="v19"/>
+            <mapping dst="V1" src="v1"/>
+            <mapping dst="V18" src="v18"/>
+            <mapping dst="V2" src="v2"/>
+            <mapping dst="V16" src="v16"/>
+            <mapping dst="V11" src="v11"/>
+            <mapping dst="V13" src="v13"/>
+            <mapping dst="I0" src="xi0"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward>
+            <mapping dst="a1" src="A1"/>
+            <mapping dst="a0" src="A0"/>
+        </forward>
+        <reverse>
+            <mapping dst="A1" src="a1"/>
+            <mapping dst="A0" src="a0"/>
+        </reverse>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping dst="" src="&lt;unmappedTermOrder&gt;"/>
+            <mapping dst="" src="&lt;termOrder&gt;"/>
+        </forward>
+        <reverse>
+            <mapping dst="&lt;unmappedTermOrder&gt;" src=""/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="_2to4decodermux">
+            <instance name="I0"/>
+        </instance_header>
+        <instance_header master="vdc">
+            <instance name="V16"/>
+            <instance name="V17"/>
+            <instance name="V18"/>
+            <instance name="V19"/>
+            <instance name="V8"/>
+        </instance_header>
+        <instance_header master="vpulse">
+            <instance name="V1"/>
+            <instance name="V11"/>
+            <instance name="V13"/>
+            <instance name="V2"/>
+        </instance_header>
+    </master_instances>
+</module>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 tspc_neg_ff_tb schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping src="I8" dst="xi8"/>
+            <mapping src="V6" dst="v6"/>
+            <mapping src="V7" dst="v7"/>
+            <mapping src="V2" dst="v2"/>
+            <mapping src="I0" dst="xi0"/>
+        </forward>
+        <reverse>
+            <mapping src="v6" dst="V6"/>
+            <mapping src="xi8" dst="I8"/>
+            <mapping src="v7" dst="V7"/>
+            <mapping src="v2" dst="V2"/>
+            <mapping src="xi0" dst="I0"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward>
+            <mapping src="D" dst="d"/>
+            <mapping src="Qbar" dst="qbar"/>
+            <mapping src="Q" dst="q"/>
+        </forward>
+        <reverse>
+            <mapping src="d" dst="D"/>
+            <mapping src="qbar" dst="Qbar"/>
+            <mapping src="q" dst="Q"/>
+        </reverse>
+    </scope>
+    <scope name="Terminal">
+        <forward>
+            <mapping src="Qbar" dst="qbar"/>
+            <mapping src="Q" dst="q"/>
+        </forward>
+        <reverse>
+            <mapping src="qbar" dst="Qbar"/>
+            <mapping src="q" dst="Q"/>
+        </reverse>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping src="&lt;unmappedTermOrder&gt;" dst="Q Qbar"/>
+            <mapping src="&lt;termOrder&gt;" dst="q qbar"/>
+        </forward>
+        <reverse>
+            <mapping src="Q Qbar" dst="&lt;unmappedTermOrder&gt;"/>
+            <mapping src="q qbar" dst="&lt;termOrder&gt;"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="inverter">
+            <instance name="I8"/>
+        </instance_header>
+        <instance_header master="tspc_neg_ff">
+            <instance name="I0"/>
+        </instance_header>
+        <instance_header master="vdc">
+            <instance name="V2"/>
+        </instance_header>
+        <instance_header master="vpulse">
+            <instance name="V6"/>
+            <instance name="V7"/>
+        </instance_header>
+    </master_instances>
+</module>

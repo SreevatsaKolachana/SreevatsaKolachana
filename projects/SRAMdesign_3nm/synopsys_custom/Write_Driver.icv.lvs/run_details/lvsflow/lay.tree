@@ -1,0 +1,31 @@
+WRITE_DRIVER Level=0 Count=1
+   BUFFER Level=1 Count=2
+      INV Level=2 Count=4
+   BUFFER_HIGHDRIVE Level=1 Count=1
+
++--------------------------------------------------------------------------+
+|                             CELL STATISTICS                              |
++--------------------------------------------------------------------------+
+
+
+CELL = WRITE_DRIVER
+	Flat Placements      =	1
+
+CELL = BUFFER
+	Flat Placements      =	2
+
+CELL = INV
+	Flat Placements      =	4
+
+CELL = BUFFER_HIGHDRIVE
+	Flat Placements      =	1
+
+TOP CELL = WRITE_DRIVER
+	Ports                =	7
+
++--------------------------------------------------------------------------+
+|                            DEVICE STATISTICS                             |
++--------------------------------------------------------------------------+
+
+	NMOS[NMOS] = 10
+	PMOS[PMOS] = 20

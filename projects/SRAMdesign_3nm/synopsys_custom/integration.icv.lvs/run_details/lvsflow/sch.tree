@@ -1,0 +1,118 @@
+memory_array_static_column_decoder_test Level=0 Count=1
+   sram_6t Level=1 Count=128
+   columnDecoderstatic Level=1 Count=1
+      2to4_decoder_static Level=2 Count=4
+         inv Level=3 Count=32
+         nand Level=3 Count=16
+         nor Level=3 Count=16
+   read_circuit Level=1 Count=4
+      inv Level=2 Count=4
+      nand Level=2 Count=4
+      invx4 Level=2 Count=4
+   agen_unit Level=1 Count=1
+      inv Level=2 Count=5
+      nand Level=2 Count=4
+      Demux Level=2 Count=2
+         inv Level=3 Count=6
+         nand Level=3 Count=4
+      invx4 Level=2 Count=8
+      nor Level=2 Count=4
+   inv Level=1 Count=1
+   WLRef_PC Level=1 Count=1
+      inv Level=2 Count=1
+      nand Level=2 Count=1
+      buffer Level=2 Count=22
+         inv Level=3 Count=44
+      invx4 Level=2 Count=3
+      nor Level=2 Count=2
+   Write_Driver Level=1 Count=4
+      buffer Level=2 Count=8
+         inv Level=3 Count=16
+      invx4 Level=2 Count=4
+      buffer_highdrive Level=2 Count=4
+         invx4 Level=3 Count=8
+   nand Level=1 Count=1
+   between_blocks Level=1 Count=1
+      inv Level=2 Count=8
+      nand Level=2 Count=4
+      nor Level=2 Count=4
+   tspc_pos_ff Level=1 Count=4
+   static_row_decoder_3by8 Level=1 Count=1
+      inv Level=2 Count=3
+      nand Level=2 Count=16
+      nor Level=2 Count=8
+      buffer_highdrive Level=2 Count=9
+         invx4 Level=3 Count=18
+   precharge_logic Level=1 Count=16
+
++--------------------------------------------------------------------------+
+|                             CELL STATISTICS                              |
++--------------------------------------------------------------------------+
+
+
+CELL = memory_array_static_column_decoder_test
+	Flat Placements      =	1
+
+CELL = columnDecoderstatic
+	Flat Placements      =	1
+
+CELL = Write_Driver
+	Flat Placements      =	4
+
+CELL = WLRef_PC
+	Flat Placements      =	1
+
+CELL = agen_unit
+	Flat Placements      =	1
+
+CELL = static_row_decoder_3by8
+	Flat Placements      =	1
+
+CELL = 2to4_decoder_static
+	Flat Placements      =	4
+
+CELL = buffer
+	Flat Placements      =	30
+
+CELL = between_blocks
+	Flat Placements      =	1
+
+CELL = Demux
+	Flat Placements      =	2
+
+CELL = read_circuit
+	Flat Placements      =	4
+
+CELL = buffer_highdrive
+	Flat Placements      =	13
+
+CELL = inv
+	Flat Placements      =	120
+
+CELL = tspc_pos_ff
+	Flat Placements      =	4
+
+CELL = nand
+	Flat Placements      =	50
+
+CELL = nor
+	Flat Placements      =	34
+
+CELL = sram_6t
+	Flat Placements      =	128
+
+CELL = invx4
+	Flat Placements      =	45
+
+CELL = precharge_logic
+	Flat Placements      =	16
+
+TOP CELL = memory_array_static_column_decoder_test
+	Ports                =	15
+
++--------------------------------------------------------------------------+
+|                            DEVICE STATISTICS                             |
++--------------------------------------------------------------------------+
+
+	NMOS[nmos] = 901
+	PMOS[pmos] = 689

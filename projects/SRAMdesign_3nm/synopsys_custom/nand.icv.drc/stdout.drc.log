@@ -1,0 +1,111 @@
+
+                                 IC Validator 
+
+          Version W-2024.09-SP2 for linux64 - Dec 03, 2024 cl#11100136
+
+                    Copyright (c) 1996 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Time Started: 2025-04-15 18:56:30
+Running on: hydra13.ece.ncsu.edu 4.18.0-553.47.1.el8_10.x86_64
+
+-------------
+
+Called as: icv -f gdsii -i /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/nand.icv.drc/nand.custom_compiler.gds -c nand -I /mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3/../../icv -oa_dm6 -vue /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.drc.rs
+
+-------------
+
+Command Line Summary:
+icv
+-c nand
+-f gdsii
+-i /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/nand.icv.drc/nand.custom_compiler.gds
+-oa_dm6
+-vue
+-I /mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3/../../icv
+/mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.drc.rs
+
+-------------
+Using user-specified ICV_INCLUDES setting as:
+"/mnt/apps/public/COE/synopsys_apps/icvalidator/W-2024.09-SP2/include"
+
+Parsing runset "/mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.drc.rs"
+
+/mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.drc.rs:16: warning: The error_limit_per_check in error_options is set to unlimited.  The user setting of unlimited will be honored but could result in very large error files and increased amount of time to process if the number of errors in a check is very large.
+warning: There was 1 evaluation warning
+Runset Processing Time=0:00:06 User=2.48 Sys=0.23 Mem=0.378 GB
+
+Parsing finished
+Host startup begins.
+Host startup done: 2 successes, 0 failures.
+	hydra13.ece.ncsu.edu: 2 total CPUs, maximum 2 commands in parallel.
+Selecting "hydra13.ece.ncsu.edu" as Primary host
+
+System Startup Time=0.490908 User=0.0464259
+
+Command execution begins.  Details recorded in the summary file and log db: 
+	"/mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/nand.icv.drc/run_details/nand.sum"
+	"/mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/nand.icv.drc/run_details/dp.eventdb"
+
+Running ...
+  [0:00:00][0%]   Added 2 CPUs on host hydra13.ece.ncsu.edu (Total: 2 CPUs on 1 hosts)
+  [0:00:03][1%]   Rules: 0/317, Rules with Violations: 0, Total Violations: 0
+  [0:00:03][2%]   Rules: 1/317, Rules with Violations: 0, Total Violations: 0
+  [0:00:03][3%]   Rules: 13/317, Rules with Violations: 0, Total Violations: 0
+  [0:00:03][4%]   Rules: 15/317, Rules with Violations: 0, Total Violations: 0
+  [0:00:03][5%]   Rules: 21/317, Rules with Violations: 0, Total Violations: 0
+  [0:00:03][10%]  Rules: 29/317, Rules with Violations: 0, Total Violations: 0
+  [0:00:03][15%]  
+  [0:00:08][20%]  
+  [0:00:09][25%]  
+  [0:00:09][30%]  
+  [0:00:09][35%]  Rules: 34/317, Rules with Violations: 0, Total Violations: 0
+  [0:00:09][40%]  Rules: 40/317, Rules with Violations: 0, Total Violations: 0
+  [0:00:09][45%]  Rules: 47/317, Rules with Violations: 0, Total Violations: 0
+  [0:00:09][50%]  Rules: 71/317, Rules with Violations: 0, Total Violations: 0
+  [0:00:09][55%]  Rules: 76/317, Rules with Violations: 0, Total Violations: 0
+  [0:00:09][60%]  Rules: 196/317, Rules with Violations: 0, Total Violations: 0
+  [0:00:09][65%]  Rules: 200/317, Rules with Violations: 0, Total Violations: 0
+  [0:00:09][70%]  Rules: 213/317, Rules with Violations: 0, Total Violations: 0
+  [0:00:09][75%]  Rules: 238/317, Rules with Violations: 0, Total Violations: 0
+  [0:00:09][80%]  Rules: 259/317, Rules with Violations: 0, Total Violations: 0
+  [0:00:09][85%]  Rules: 277/317, Rules with Violations: 0, Total Violations: 0
+  [0:00:10][90%]  Rules: 305/317, Rules with Violations: 0, Total Violations: 0
+  [0:00:10][95%]  Rules: 312/317, Rules with Violations: 0, Total Violations: 0
+  [0:00:10][100%] Rules: 317/317, Rules with Violations: 0, Total Violations: 0
+Engine Runtime=10.4586 User=0.187522
+Error storage stats...
+  User=0.04 Sys=0.09 Mem=0.003 GB
+
+Generating nand.LAYOUT_ERRORS...
+  Generation Time=0:00:00  User=0.01 Sys=0.00 Mem=0.001 GB
+
+Overall engine Time=0:00:19 Highest command Mem=0.044 GB
+
+-------------
+
+IC Validator Machine Memory Report
+hydra13.ece.ncsu.edu : Average = 0.485 GB, Peak = 0.580 GB
+
+Overall Disk Usage Disk=0.003 GB
+Group File Disk Usage Peak=0.000 GB
+
+Overall Manager Mem=0.378 GB
+
+
+Time Ended: 2025-04-15 18:56:52
+
+IC Validator is done.

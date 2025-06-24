@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 WLRef_PC schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping src="I16" dst="xi16"/>
+            <mapping src="I15" dst="xi15"/>
+            <mapping src="I13" dst="xi13"/>
+            <mapping src="I10" dst="xi10"/>
+            <mapping src="I8" dst="xi8"/>
+            <mapping src="I14" dst="xi14"/>
+            <mapping src="I0" dst="xi0"/>
+            <mapping src="I20" dst="xi20"/>
+            <mapping src="I19" dst="xi19"/>
+            <mapping src="I21" dst="xi21"/>
+        </forward>
+        <reverse>
+            <mapping src="xi15" dst="I15"/>
+            <mapping src="xi13" dst="I13"/>
+            <mapping src="xi10" dst="I10"/>
+            <mapping src="xi8" dst="I8"/>
+            <mapping src="xi16" dst="I16"/>
+            <mapping src="xi14" dst="I14"/>
+            <mapping src="xi20" dst="I20"/>
+            <mapping src="xi19" dst="I19"/>
+            <mapping src="xi0" dst="I0"/>
+            <mapping src="xi21" dst="I21"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward>
+            <mapping src="wl_ref" dst="wlref"/>
+            <mapping src="PC" dst="pc"/>
+        </forward>
+        <reverse>
+            <mapping src="wlref" dst="wl_ref"/>
+            <mapping src="pc" dst="PC"/>
+        </reverse>
+    </scope>
+    <scope name="Terminal">
+        <forward>
+            <mapping src="WLRef" dst="wlref"/>
+            <mapping src="PC" dst="pc"/>
+            <mapping src="CLK" dst="clk"/>
+        </forward>
+        <reverse>
+            <mapping src="wlref" dst="WLRef"/>
+            <mapping src="pc" dst="PC"/>
+            <mapping src="clk" dst="CLK"/>
+        </reverse>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping src="&lt;unmappedTermOrder&gt;" dst="CLK PC WLRef clk_dff"/>
+            <mapping src="&lt;termOrder&gt;" dst="clk pc wlref clk_dff"/>
+        </forward>
+        <reverse>
+            <mapping src="CLK PC WLRef clk_dff" dst="&lt;unmappedTermOrder&gt;"/>
+            <mapping src="clk pc wlref clk_dff" dst="&lt;termOrder&gt;"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="buffer">
+            <instance name="I0"/>
+            <instance name="I14"/>
+            <instance name="I19"/>
+            <instance name="I20"/>
+            <instance name="I21"/>
+            <instance name="I8"/>
+        </instance_header>
+        <instance_header master="invx4">
+            <instance name="I10"/>
+            <instance name="I16"/>
+        </instance_header>
+        <instance_header master="nand">
+            <instance name="I15"/>
+        </instance_header>
+        <instance_header master="nor">
+            <instance name="I13"/>
+        </instance_header>
+    </master_instances>
+</module>

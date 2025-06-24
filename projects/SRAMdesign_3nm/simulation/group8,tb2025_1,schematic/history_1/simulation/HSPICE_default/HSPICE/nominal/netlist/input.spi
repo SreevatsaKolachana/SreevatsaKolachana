@@ -1,0 +1,662 @@
+*  Generated for: PrimeSim
+*  Design library name: group8
+*  Design cell name: tb2025_1
+*  Design view name: schematic
+.option search='/mnt/designkits/ncsu/FreePDK3/hspice/models'
+
+.param clkperiod=90p clkrise=5p vdd=0.8
+.option PARHIER = LOCAL
+.option PORT_VOLTAGE_SCALE_TO_2X = 1
+.option S_ELEM_CACHE_DIR = "/mnt/ncsudrive/h/hrajesh/.synopsys_custom/sparam_dir"
+.option PVA_OUTPUT_DIR = "/mnt/ncsudrive/h/hrajesh/.synopsys_custom/pva_dir"
+
+.option WDF=1
+.temp 25
+.lib 'fet.mod' nfet_typ
+.lib 'fet.mod' pfet_typ
+.vec '/mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/invec.dat'
+
+.vec '/mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/outvec.dat'
+
+
+*PrimeWave Design Environment Based on Custom Infrastructure
+*Version W-2024.09-SP1-2
+*Thu Apr 17 23:39:07 2025
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : proj_common
+* Cell             : inputbuf
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt inputbuf out in
+m9 out net7 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m8 net7 in gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m12 net7 in vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m13 out net7 vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+.ends inputbuf
+
+********************************************************************************
+* Library          : group8
+* Cell             : precharge_logic
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt precharge_logic bl bl_bar clk
+m5 bl_bar clk vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m4 vdd! clk bl pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m3 bl clk bl_bar pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+.ends precharge_logic
+
+********************************************************************************
+* Library          : group8
+* Cell             : sram_6t
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt sram_6t bl bl_bar wl
+m1 qbar q vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+m0 q qbar vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+m5 bl wl q nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+m6 qbar wl bl_bar nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+m3 qbar q gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+m2 q qbar gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+.ends sram_6t
+
+********************************************************************************
+* Library          : group8
+* Cell             : nand
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt nand a b y
+m1 net4 b gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m0 y a net4 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m3 y b vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+m2 y a vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+.ends nand
+
+********************************************************************************
+* Library          : group8
+* Cell             : inv
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt inv in out
+m0 out in vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m1 out in gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+.ends inv
+
+********************************************************************************
+* Library          : group8
+* Cell             : invx4
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt invx4 in out
+m0 out in vdd! pfet nfin=8 adeo=2.268e-15 aseo=2.268e-15 pdeo=4.68e-07 pseo=4.68e-07
+m1 out in gnd! nfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+.ends invx4
+
+********************************************************************************
+* Library          : group8
+* Cell             : buffer_highdrive
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt buffer_highdrive in out
+xi17 net24 out invx4
+xi16 in net24 invx4
+.ends buffer_highdrive
+
+********************************************************************************
+* Library          : group8
+* Cell             : nor
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt nor a b y
+m1 y b gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m0 y a gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m3 net11 a vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+m2 y b net11 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+.ends nor
+
+********************************************************************************
+* Library          : group8
+* Cell             : static_row_decoder_3by8
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt static_row_decoder_3by8 a0 a1 a2 wlref y0 y1 y2 y3 y4 y5 y6 y7
+xi107 a2 a1 net216 nand
+xi106 a0 net195 net217 nand
+xi104 net201 a1 net219 nand
+xi103 a2 net195 net218 nand
+xi101 a2 net203 net214 nand
+xi100 a0 net195 net215 nand
+xi98 net201 net203 net212 nand
+xi97 a2 net195 net213 nand
+xi95 a0 a1 net210 nand
+xi94 net196 net195 net211 nand
+xi86 net196 net195 net205 nand
+xi85 net201 net203 net204 nand
+xi89 a0 net203 net206 nand
+xi91 net196 net195 net209 nand
+xi92 net201 a1 net208 nand
+xi88 net196 net195 net207 nand
+xi111 a0 net201 inv
+xi110 a1 net203 inv
+xi83 a2 net196 inv
+xi82 net130 y0 buffer_highdrive
+xi80 net133 y1 buffer_highdrive
+xi79 net140 y2 buffer_highdrive
+xi78 net147 y3 buffer_highdrive
+xi77 net154 y4 buffer_highdrive
+xi76 net161 y5 buffer_highdrive
+xi75 net168 y6 buffer_highdrive
+xi74 net175 y7 buffer_highdrive
+xi109 wlref net195 buffer_highdrive
+xi108 net217 net216 net175 nor
+xi105 net218 net219 net168 nor
+xi102 net215 net214 net161 nor
+xi99 net213 net212 net154 nor
+xi96 net211 net210 net147 nor
+xi87 net205 net204 net130 nor
+xi90 net207 net206 net133 nor
+xi93 net209 net208 net140 nor
+.ends static_row_decoder_3by8
+
+********************************************************************************
+* Library          : group8
+* Cell             : 2to4_decoder_static
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt _2to4_decoder_static bl0 bl0_bar bl1 bl1_bar bl2 bl2_bar bl3 bl3_bar in0
++  in0bar op0 op0bar rs0 rs0bar rs1 rs1bar ws0 ws0bar ws1 ws1bar
+m70 bl0_bar w0 in0bar nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m71 bl0 w0 in0 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m72 bl1_bar w1 in0bar nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m73 bl1 w1 in0 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m74 bl2_bar w2 in0bar nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m75 bl2 w2 in0 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m76 bl3_bar w3 in0bar nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m77 bl3 w3 in0 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+xi65 net192 w3 inv
+xi64 net189 w2 inv
+xi67 net267 r2 inv
+xi68 net268 r1 inv
+xi63 net186 w1 inv
+xi62 net183 w0 inv
+xi69 net269 r0 inv
+xi66 net266 r3 inv
+xi57 ws1 ws0 net192 nand
+xi56 ws0bar ws1 net189 nand
+xi55 ws1bar ws0 net186 nand
+xi54 ws0bar ws1bar net183 nand
+xi61 rs0bar rs1bar net269 nor
+xi60 rs0 rs1bar net268 nor
+xi59 rs0bar rs1 net267 nor
+xi58 rs0 rs1 net266 nor
+m85 op0bar r0 bl0_bar pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m84 op0 r0 bl0 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m83 op0bar r1 bl1_bar pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m82 op0 r1 bl1 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m78 op0 r3 bl3 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m79 op0bar r3 bl3_bar pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m80 op0 r2 bl2 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m81 op0bar r2 bl2_bar pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+.ends _2to4_decoder_static
+
+********************************************************************************
+* Library          : group8
+* Cell             : columnDecoderstatic
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt columndecoderstatic bl0 bl0bar bl1 bl1bar bl2 bl2bar bl3 bl3bar bl4
++ bl4bar bl5 bl5bar bl6 bl6bar bl7 bl7bar bl8 bl8bar bl9 bl9bar bl10 bl10bar
++ bl11 bl11bar bl12 bl12bar bl13 bl13bar bl14 bl14bar bl15 bl15bar i0 i0bar i1
++ i1bar i2 i2bar i3 i3bar q0 q0bar q1 q1bar q2 q2bar q3 q3bar rs0 rs0bar rs1
++ rs1bar ws0 ws0bar ws1 ws1bar
+xi6 bl0 bl0bar bl1 bl1bar bl2 bl2bar bl3 bl3bar i0 i0bar q0 q0bar rs0 rs0bar rs1
++ rs1bar ws0 ws0bar ws1 ws1bar _2to4_decoder_static
+xi7 bl4 bl4bar bl5 bl5bar bl6 bl6bar bl7 bl7bar i1 i1bar q1 q1bar rs0 rs0bar rs1
++ rs1bar ws0 ws0bar ws1 ws1bar _2to4_decoder_static
+xi8 bl8 bl8bar bl9 bl9bar bl10 bl10bar bl11 bl11bar i2 i2bar q2 q2bar rs0 rs0bar
++ rs1 rs1bar ws0 ws0bar ws1 ws1bar _2to4_decoder_static
+xi9 bl12 bl12bar bl13 bl13bar bl14 bl14bar bl15 bl15bar i3 i3bar q3 q3bar rs0
++ rs0bar rs1 rs1bar ws0 ws0bar ws1 ws1bar _2to4_decoder_static
+.ends columndecoderstatic
+
+********************************************************************************
+* Library          : group8
+* Cell             : buffer
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt buffer in out
+xi1 net4 out inv
+xi0 in net4 inv
+.ends buffer
+
+********************************************************************************
+* Library          : group8
+* Cell             : Write_Driver
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt write_driver din wbdata wdata
+xi33 din net47 buffer
+xi32 din net44 buffer
+xi27 net44 wbdata invx4
+xi34 net47 wdata buffer_highdrive
+.ends write_driver
+
+********************************************************************************
+* Library          : group8
+* Cell             : read_circuit
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt read_circuit bl blbar out
+xi4 bl net6 net8 nand
+xi5 net8 out inv
+xi2 blbar net6 invx4
+.ends read_circuit
+
+********************************************************************************
+* Library          : group8
+* Cell             : tspc_pos_ff
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt tspc_pos_ff d q phi
+m16 q net26 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m4 net26 phi net14 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m3 net27 net17 net11 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m2 net14 net27 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m1 net11 phi gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m0 net17 d gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m15 q net26 vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+m8 net26 net27 vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m7 net27 phi vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m6 net20 d vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m5 net17 phi net20 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+.ends tspc_pos_ff
+
+********************************************************************************
+* Library          : group8
+* Cell             : Demux
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt demux a sel y0 y1
+xi1 a sel net12 nand
+xi0 a net19 net10 nand
+xi4 net12 y1 inv
+xi3 net10 y0 inv
+xi2 sel net19 inv
+.ends demux
+
+********************************************************************************
+* Library          : group8
+* Cell             : agen_unit
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt agen_unit a0 a1 rs0 rs0bar rs1 rs1bar wen ws0 ws0bar ws1 ws1bar
+xi1 a1 wen net82 net88 demux
+xi0 a0 wen net77 net86 demux
+xi34 wen net75 inv
+xi17 net88 net87 inv
+xi16 net82 net81 inv
+xi14 net77 net79 inv
+xi15 net86 net85 inv
+xi18 net86 net75 net43 nor
+xi19 net85 net75 net46 nor
+xi20 net88 net75 net49 nor
+xi21 net87 net75 net52 nor
+xi25 net82 net75 net64 nand
+xi24 net81 net75 net61 nand
+xi22 net79 net75 net55 nand
+xi23 net77 net75 net58 nand
+xi33 net52 rs1 invx4
+xi32 net49 rs1bar invx4
+xi31 net64 ws1 invx4
+xi30 net61 ws1bar invx4
+xi29 net46 rs0 invx4
+xi28 net43 rs0bar invx4
+xi27 net58 ws0 invx4
+xi26 net55 ws0bar invx4
+.ends agen_unit
+
+********************************************************************************
+* Library          : group8
+* Cell             : WLRef_PC
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt wlref_pc clk pc rsnew wlref clk_dff
+xi55 net123 clk_dff buffer
+xi54 net122 net123 buffer
+xi53 net121 net122 buffer
+xi52 net118 net121 buffer
+xi51 net116 net118 buffer
+xi50 net115 net116 buffer
+xi49 net114 net115 buffer
+xi46 net59 net110 buffer
+xi48 net111 net114 buffer
+xi47 net110 net111 buffer
+xi67 net137 net139 buffer
+xi68 net139 net141 buffer
+xi69 net141 net143 buffer
+xi70 net143 net144 buffer
+xi71 net144 clk_inverted_delayed buffer
+xi21 net154 net59 buffer
+xi19 net39 net62 buffer
+xi20 net61 net39 buffer
+xi14 net62 net60 buffer
+xi8 net60 net154 buffer
+xi66 clk_inverted net137 buffer
+xi0 clk net61 buffer
+xi29 net76 rsnew invx4
+xi10 net21 pc invx4
+xi16 net36 wlref invx4
+xi23 clk clk_inverted inv
+xi28 clk_inverted_delayed clk_inverted net76 nor
+xi13 net59 net61 net21 nor
+xi15 net61 net60 net36 nand
+.ends wlref_pc
+
+********************************************************************************
+* Library          : group8
+* Cell             : between_blocks
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt between_blocks rs0 rs0_bar rs0bar rs1 rs1_bar rs1bar rs_0 rs_1 rsnew
++ wlref ws0 ws0_bar ws0bar ws1 ws1_bar ws1bar ws_0 ws_1
+xi237 net6 rs0 inv
+xi238 net3 rs0bar inv
+xi239 net5 rs1 inv
+xi240 net4 rs1bar inv
+xi241 net7 ws0 inv
+xi242 net1 ws0bar inv
+xi243 net8 ws1 inv
+xi244 net2 ws1bar inv
+xi232 wlref ws_0 net7 nand
+xi233 wlref ws0_bar net1 nand
+xi234 wlref ws_1 net8 nand
+xi236 wlref ws1_bar net2 nand
+xi229 rsnew rs0_bar net3 nor
+xi230 rsnew rs_1 net5 nor
+xi231 rsnew rs1_bar net4 nor
+xi235 rsnew rs_0 net6 nor
+.ends between_blocks
+
+********************************************************************************
+* Library          : group8
+* Cell             : memory_array_static_column_decoder_test
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt memory_array_static_column_decoder_test a<0> a<1> a<2> a<3> a<4> clk
++ d<0> d<1> d<2> d<3> q<0> q<1> q<2> q<3> wenb
+xi182 bl0bar bl0 pc precharge_logic
+xi147 bl15bar bl15 pc precharge_logic
+xi146 bl14bar bl14 pc precharge_logic
+xi145 bl13bar bl13 pc precharge_logic
+xi144 bl12bar bl12 pc precharge_logic
+xi143 bl11bar bl11 pc precharge_logic
+xi142 bl10bar bl10 pc precharge_logic
+xi141 bl9bar bl9 pc precharge_logic
+xi140 bl8bar bl8 pc precharge_logic
+xi139 bl7bar bl7 pc precharge_logic
+xi138 bl6bar bl6 pc precharge_logic
+xi137 bl5bar bl5 pc precharge_logic
+xi136 bl4bar bl4 pc precharge_logic
+xi135 bl3bar bl3 pc precharge_logic
+xi134 bl2bar bl2 pc precharge_logic
+xi133 bl1bar bl1 pc precharge_logic
+xi199 bl0 bl0bar wl<1> sram_6t
+xi55 bl6 bl6bar wl<1> sram_6t
+xi54 bl5 bl5bar wl<1> sram_6t
+xi53 bl4 bl4bar wl<1> sram_6t
+xi52 bl3 bl3bar wl<1> sram_6t
+xi47 bl7 bl7bar wl<2> sram_6t
+xi51 bl2 bl2bar wl<1> sram_6t
+xi50 bl1 bl1bar wl<1> sram_6t
+xi64 bl8 bl8bar wl<7> sram_6t
+xi65 bl9 bl9bar wl<7> sram_6t
+xi66 bl10 bl10bar wl<7> sram_6t
+xi67 bl11 bl11bar wl<7> sram_6t
+xi68 bl12 bl12bar wl<7> sram_6t
+xi69 bl13 bl13bar wl<7> sram_6t
+xi70 bl14 bl14bar wl<7> sram_6t
+xi71 bl15 bl15bar wl<7> sram_6t
+xi72 bl8 bl8bar wl<5> sram_6t
+xi73 bl8 bl8bar wl<6> sram_6t
+xi74 bl9 bl9bar wl<6> sram_6t
+xi75 bl10 bl10bar wl<6> sram_6t
+xi76 bl11 bl11bar wl<6> sram_6t
+xi77 bl12 bl12bar wl<6> sram_6t
+xi104 bl15 bl15bar wl<3> sram_6t
+xi103 bl14 bl14bar wl<3> sram_6t
+xi102 bl13 bl13bar wl<3> sram_6t
+xi101 bl12 bl12bar wl<3> sram_6t
+xi100 bl11 bl11bar wl<3> sram_6t
+xi99 bl10 bl10bar wl<3> sram_6t
+xi98 bl9 bl9bar wl<3> sram_6t
+xi97 bl8 bl8bar wl<3> sram_6t
+xi95 bl15 bl15bar wl<4> sram_6t
+xi94 bl14 bl14bar wl<4> sram_6t
+xi93 bl13 bl13bar wl<4> sram_6t
+xi92 bl12 bl12bar wl<4> sram_6t
+xi91 bl11 bl11bar wl<4> sram_6t
+xi90 bl10 bl10bar wl<4> sram_6t
+xi89 bl9 bl9bar wl<4> sram_6t
+xi88 bl8 bl8bar wl<4> sram_6t
+xi87 bl15 bl15bar wl<5> sram_6t
+xi86 bl14 bl14bar wl<5> sram_6t
+xi85 bl13 bl13bar wl<5> sram_6t
+xi84 bl12 bl12bar wl<5> sram_6t
+xi83 bl11 bl11bar wl<5> sram_6t
+xi82 bl10 bl10bar wl<5> sram_6t
+xi81 bl9 bl9bar wl<5> sram_6t
+xi80 bl15 bl15bar wl<6> sram_6t
+xi79 bl14 bl14bar wl<6> sram_6t
+xi78 bl13 bl13bar wl<6> sram_6t
+xi117 bl12 bl12bar wl<1> sram_6t
+xi116 bl11 bl11bar wl<1> sram_6t
+xi115 bl10 bl10bar wl<1> sram_6t
+xi114 bl9 bl9bar wl<1> sram_6t
+xi113 bl8 bl8bar wl<1> sram_6t
+xi112 bl8 bl8bar wl<0> sram_6t
+xi111 bl15 bl15bar wl<2> sram_6t
+xi110 bl14 bl14bar wl<2> sram_6t
+xi109 bl13 bl13bar wl<2> sram_6t
+xi108 bl12 bl12bar wl<2> sram_6t
+xi107 bl11 bl11bar wl<2> sram_6t
+xi106 bl10 bl10bar wl<2> sram_6t
+xi105 bl9 bl9bar wl<2> sram_6t
+xi96 bl8 bl8bar wl<2> sram_6t
+xi63 bl7 bl7bar wl<0> sram_6t
+xi62 bl6 bl6bar wl<0> sram_6t
+xi61 bl5 bl5bar wl<0> sram_6t
+xi60 bl4 bl4bar wl<0> sram_6t
+xi59 bl3 bl3bar wl<0> sram_6t
+xi58 bl2 bl2bar wl<0> sram_6t
+xi57 bl1 bl1bar wl<0> sram_6t
+xi56 bl7 bl7bar wl<1> sram_6t
+xi13 bl4 bl4bar wl<6> sram_6t
+xi197 bl0 bl0bar wl<3> sram_6t
+xi192 bl0 bl0bar wl<4> sram_6t
+xi191 bl0 bl0bar wl<6> sram_6t
+xi190 bl0 bl0bar wl<5> sram_6t
+xi189 bl0 bl0bar wl<7> sram_6t
+xi40 bl7 bl7bar wl<3> sram_6t
+xi39 bl6 bl6bar wl<3> sram_6t
+xi38 bl5 bl5bar wl<3> sram_6t
+xi37 bl4 bl4bar wl<3> sram_6t
+xi36 bl3 bl3bar wl<3> sram_6t
+xi35 bl2 bl2bar wl<3> sram_6t
+xi34 bl1 bl1bar wl<3> sram_6t
+xi31 bl7 bl7bar wl<4> sram_6t
+xi30 bl6 bl6bar wl<4> sram_6t
+xi29 bl5 bl5bar wl<4> sram_6t
+xi28 bl4 bl4bar wl<4> sram_6t
+xi27 bl3 bl3bar wl<4> sram_6t
+xi26 bl2 bl2bar wl<4> sram_6t
+xi25 bl1 bl1bar wl<4> sram_6t
+xi23 bl7 bl7bar wl<5> sram_6t
+xi22 bl6 bl6bar wl<5> sram_6t
+xi21 bl5 bl5bar wl<5> sram_6t
+xi20 bl4 bl4bar wl<5> sram_6t
+xi19 bl3 bl3bar wl<5> sram_6t
+xi18 bl2 bl2bar wl<5> sram_6t
+xi17 bl1 bl1bar wl<5> sram_6t
+xi16 bl7 bl7bar wl<6> sram_6t
+xi15 bl6 bl6bar wl<6> sram_6t
+xi14 bl5 bl5bar wl<6> sram_6t
+xi12 bl3 bl3bar wl<6> sram_6t
+xi11 bl2 bl2bar wl<6> sram_6t
+xi118 bl13 bl13bar wl<1> sram_6t
+xi10 bl1 bl1bar wl<6> sram_6t
+xi119 bl14 bl14bar wl<1> sram_6t
+xi120 bl15 bl15bar wl<1> sram_6t
+xi121 bl9 bl9bar wl<0> sram_6t
+xi122 bl10 bl10bar wl<0> sram_6t
+xi123 bl11 bl11bar wl<0> sram_6t
+xi7 bl7 bl7bar wl<7> sram_6t
+xi124 bl12 bl12bar wl<0> sram_6t
+xi125 bl13 bl13bar wl<0> sram_6t
+xi126 bl14 bl14bar wl<0> sram_6t
+xi127 bl15 bl15bar wl<0> sram_6t
+xi6 bl6 bl6bar wl<7> sram_6t
+xi5 bl5 bl5bar wl<7> sram_6t
+xi4 bl4 bl4bar wl<7> sram_6t
+xi193 bl0 bl0bar wl<2> sram_6t
+xi3 bl3 bl3bar wl<7> sram_6t
+xi2 bl2 bl2bar wl<7> sram_6t
+xi1 bl1 bl1bar wl<7> sram_6t
+xi41 bl1 bl1bar wl<2> sram_6t
+xi42 bl2 bl2bar wl<2> sram_6t
+xi43 bl3 bl3bar wl<2> sram_6t
+xi44 bl4 bl4bar wl<2> sram_6t
+xi45 bl5 bl5bar wl<2> sram_6t
+xi46 bl6 bl6bar wl<2> sram_6t
+xi198 bl0 bl0bar wl<0> sram_6t
+xi202 a<4> a<3> a<2> wlref wl<0> wl<1> wl<2> wl<3> wl<4> wl<5> wl<6> wl<7>
++ static_row_decoder_3by8
+xi246 bl0 bl0bar bl1 bl1bar bl2 bl2bar bl3 bl3bar bl4 bl4bar bl5 bl5bar bl6
++ bl6bar bl7 bl7bar bl8 bl8bar bl9 bl9bar bl10 bl10bar bl11 bl11bar bl12 bl12bar
++ bl13 bl13bar bl14 bl14bar bl15 bl15bar net706 net746 net703 net747 net748
++ net745 net698 net697 bl blbar net493 net693 net691 net749 net499 net687 rs0
++ rs0bar rs1 rs1bar net791 net792 net793 net794 columndecoderstatic
+xi206 d<1> net747 net703 write_driver
+xi208 d<3> net697 net698 write_driver
+xi205 d<0> net746 net706 write_driver
+xi207 d<2> net745 net748 write_driver
+xi211 net691 net749 read_dff2 read_circuit
+xi212 net499 net687 read_dff3 read_circuit
+xi209 bl blbar read_dff0 read_circuit
+xi210 net493 net693 read_dff1 read_circuit
+xi215 read_dff3 q<3> clki tspc_pos_ff
+xi213 read_dff1 q<1> clki tspc_pos_ff
+xi214 read_dff2 q<2> clki tspc_pos_ff
+xi216 read_dff0 q<0> clki tspc_pos_ff
+xi217 a<0> a<1> net810 net809 net807 net808 wenb net806 net625 net628 net634
++ agen_unit
+xi218 clk pc rsnew wlref net770 wlref_pc
+xi247 net770 wenb net759 nand
+xi249 rs0 net809 rs0bar rs1 net808 rs1bar net810 net807 rsnew wlref net791
++ net625 net792 net793 net634 net794 net806 net628 between_blocks
+xi248 net759 clki inv
+.ends memory_array_static_column_decoder_test
+
+********************************************************************************
+* Library          : group8
+* Cell             : tb2025_1
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+c1 q<1> gnd! c=1f
+c3 q<3> gnd! c=1f
+c2 q<2> gnd! c=1f
+c0 q<0> gnd! c=1f
+r33 i_a<4> gnd! r=1meg
+rdwenb i_wenb gnd! r=1meg
+rdar1 i_a<3> gnd! r=1meg
+rdar0 i_a<2> gnd! r=1meg
+rdaw1 i_a<1> gnd! r=1meg
+rdaw0 i_a<0> gnd! r=1meg
+rddw3 i_d<3> gnd! r=1meg
+rddw2 i_d<2> gnd! r=1meg
+rddw1 i_d<1> gnd! r=1meg
+rddw0 i_d<0> gnd! r=1meg
+xi34 a<4> i_a<4> inputbuf
+xi25 clk net35 inputbuf
+xbwenb wenb i_wenb inputbuf
+xbar1 a<3> i_a<3> inputbuf
+xbar0 a<2> i_a<2> inputbuf
+xbaw1 a<1> i_a<1> inputbuf
+xbaw0 a<0> i_a<0> inputbuf
+xbdw3 d<3> i_d<3> inputbuf
+xbdw2 d<2> i_d<2> inputbuf
+xbdw1 d<1> i_d<1> inputbuf
+xbdw0 d<0> i_d<0> inputbuf
+vclk net35 gnd! dc=0 pulse ( 0 'vdd' 0 'clkrise' 'clkrise' '(clkperiod/2)-clkrise' 'clkperiod'
++  )
+vdd vdd! gnd! dc='vdd'
+xi36 a<0> a<1> a<2> a<3> a<4> clk d<0> d<1> d<2> d<3> q<0> q<1> q<2> q<3> wenb
++ memory_array_static_column_decoder_test
+
+
+
+
+
+
+
+
+
+.tran 0.1p 5n start=0
+.measure tran Qtot INTEG 'i(vdd)' FROM='0' TO='31*clkperiod'
+.measure tran Etot PARAM='-Qtot*vdd'
+.option opfile=1 split_dp=1
+.option probe=1
+.probe tran v(*) level=1
+.probe tran v(a<0>) v(a<1>) v(a<2>) v(a<3>) v(a<4>) v(clk) v(d<0>) v(d<1>)
++ v(d<2>) v(d<3>) v(q<0>) v(q<1>) v(q<2>) v(q<3>) v(wenb)
+
+
+
+
+
+
+
+
+.end

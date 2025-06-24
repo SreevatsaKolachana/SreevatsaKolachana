@@ -1,0 +1,132 @@
+db::setAttr geometry -of [gi::getFrames 1] -value 1040x822+247+54
+db::setAttr geometry -of [gi::getFrames 1] -value 1040x761+247+54
+db::setAttr maximized -of [gi::getFrames 1] -value true
+db::setAttr geometry -of [gi::getFrames 1] -value 1536x770+0+46
+gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+gi::setCurrentIndex {libs} -index {group8} -in [gi::getWindows 2]
+gi::setItemSelection {libs} -index {group8} -in [gi::getWindows 2]
+gi::setCurrentIndex {cells} -index {tb2025} -in [gi::getWindows 2]
+gi::setItemSelection {cells} -index {tb2025} -in [gi::getWindows 2]
+gi::sortItems {views} -column {Views} -order {descending} -in [gi::getWindows 2]
+gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 2]
+gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 2]
+gi::setCurrentIndex {cells} -index {sram_6t_tb} -in [gi::getWindows 2]
+gi::setItemSelection {cells} -index {sram_6t_tb} -in [gi::getWindows 2]
+gi::setCurrentIndex {cells} -index {tb2025} -in [gi::getWindows 2]
+gi::setItemSelection {cells} -index {tb2025} -in [gi::getWindows 2]
+gi::setCurrentIndex {libs} -index {proj_common} -in [gi::getWindows 2]
+gi::setItemSelection {libs} -index {proj_common} -in [gi::getWindows 2]
+gi::setCurrentIndex {views} -index {HSPICE_default} -in [gi::getWindows 2]
+gi::setItemSelection {views} -index {HSPICE_default} -in [gi::getWindows 2]
+dm::showCopyCellView -parent 2
+gi::setActiveDialog [gi::getDialogs {dmCopyCellView} -parent [gi::getWindows 2]]
+db::setAttr geometry -of [gi::getDialogs {dmCopyCellView} -parent [gi::getWindows 2]] -value 615x778+451+31
+gi::pressButton {ok} -in [gi::getDialogs {dmCopyCellView} -parent [gi::getWindows 2]]
+gi::setCurrentIndex {libs} -index {group8} -in [gi::getWindows 2]
+gi::setItemSelection {libs} -index {group8} -in [gi::getWindows 2]
+gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 2]
+gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 2]
+gi::executeAction {dmOpen} -in [gi::getWindows 2]
+de::deselectAllLogic -context [de::getContexts -filter {%editDesign==[db::getAttr editDesign -of [db::getNext [de::getContexts -window 3]]]}]
+de::deselectAllLogic -context [de::getContexts -filter {%editDesign==[db::getAttr editDesign -of [db::getNext [de::getContexts -window 3]]]}]
+de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+de::fit -window 3 -fitEdit true
+de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+de::fit -window 3 -fitEdit true
+gi::executeAction {deCanvasDragSelect} -in [gi::getWindows 3]
+gi::executeAction deCanvasDragEnd -in [gi::getWindows 3]
+de::deselectAll [db::getNext [de::getContexts -window 3]]
+de::deselectAllLogic -context [de::getContexts -filter {%editDesign==[db::getAttr editDesign -of [db::getNext [de::getContexts -window 3]]]}]
+gi::setActiveWindow 2
+gi::setActiveWindow 2 -raise true
+gi::setCurrentIndex {views} -index {HSPICE_default} -in [gi::getWindows 2]
+gi::setItemSelection {views} -index {HSPICE_default} -in [gi::getWindows 2]
+gi::executeAction {dmOpen} -in [gi::getWindows 2]
+gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+isa::stop -testbench [sa::findActiveTestbench -window 4]
+gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 4]]
+gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+isa::stop -testbench [sa::findActiveTestbench -window 4]
+gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+isa::stop -testbench [sa::findActiveTestbench -window 4]
+gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+isa::stop -testbench [sa::findActiveTestbench -window 4]
+stop
+exit
+gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+isa::stop -testbench [sa::findActiveTestbench -window 4]
+stop simulation
+gi::setActiveWindow 2
+gi::setActiveWindow 2 -raise true
+gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 2]
+gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 2]
+gi::setCurrentIndex {cells} -index {memory_array_complete} -in [gi::getWindows 2]
+gi::setItemSelection {cells} -index {memory_array_complete} -in [gi::getWindows 2]
+gi::setCurrentIndex {cells} -index {memory_array} -in [gi::getWindows 2]
+gi::setItemSelection {cells} -index {memory_array} -in [gi::getWindows 2]
+gi::setCurrentIndex {cells} -index {memory_array_static_column_decoder} -in [gi::getWindows 2]
+gi::setItemSelection {cells} -index {memory_array_static_column_decoder} -in [gi::getWindows 2]
+gi::setCurrentIndex {cells} -index {memory_array_tb} -in [gi::getWindows 2]
+gi::setItemSelection {cells} -index {memory_array_tb} -in [gi::getWindows 2]
+gi::setCurrentIndex {views} -index {HSPICE_default_working_Makes_Sense} -in [gi::getWindows 2]
+gi::setItemSelection {views} -index {HSPICE_default_working_Makes_Sense} -in [gi::getWindows 2]
+gi::setCurrentIndex {views} -index {HSPICE_default} -in [gi::getWindows 2]
+gi::setItemSelection {views} -index {HSPICE_default} -in [gi::getWindows 2]
+gi::setCurrentIndex {views} -index {HSPICE_default_working_Makes_Sense} -in [gi::getWindows 2]
+gi::setItemSelection {views} -index {HSPICE_default_working_Makes_Sense} -in [gi::getWindows 2]
+gi::setCurrentIndex {cells} -index {memory_array_write_test} -in [gi::getWindows 2]
+gi::setItemSelection {cells} -index {memory_array_write_test} -in [gi::getWindows 2]
+gi::setCurrentIndex {views} -index {HSPICE_default} -in [gi::getWindows 2]
+gi::setItemSelection {views} -index {HSPICE_default} -in [gi::getWindows 2]
+gi::executeAction {dmOpen} -in [gi::getWindows 2]
+gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 2]]
+gi::executeAction {dmOpen} -in [gi::getWindows 2]
+gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 2]
+gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 2]
+gi::executeAction {dmOpen} -in [gi::getWindows 2]
+gi::executeAction giCloseWindow -in [gi::getWindows 5]
+gi::setCurrentIndex {cells} -index {memory_array_complete} -in [gi::getWindows 2]
+gi::setItemSelection {cells} -index {memory_array_complete} -in [gi::getWindows 2]
+gi::setCurrentIndex {cells} -index {memory_array} -in [gi::getWindows 2]
+gi::setItemSelection {cells} -index {memory_array} -in [gi::getWindows 2]
+gi::setCurrentIndex {cells} -index {memory_array_static_column_decoder} -in [gi::getWindows 2]
+gi::setItemSelection {cells} -index {memory_array_static_column_decoder} -in [gi::getWindows 2]
+gi::setCurrentIndex {cells} -index {memory_array_tb} -in [gi::getWindows 2]
+gi::setItemSelection {cells} -index {memory_array_tb} -in [gi::getWindows 2]
+gi::setCurrentIndex {views} -index {HSPICE_default_working_Makes_Sense} -in [gi::getWindows 2]
+gi::setItemSelection {views} -index {HSPICE_default_working_Makes_Sense} -in [gi::getWindows 2]
+gi::executeAction {dmOpen} -in [gi::getWindows 2]
+gi::setCurrentIndex {views} -index {HSPICE_default} -in [gi::getWindows 2]
+gi::setItemSelection {views} -index {HSPICE_default} -in [gi::getWindows 2]
+gi::executeAction {dmOpen} -in [gi::getWindows 2]
+gi::executeAction {dmOpen} -in [gi::getWindows 2]
+gi::setActiveWindow 1
+gi::setActiveWindow 1 -raise true
+de::showCloseDesigns
+gi::setActiveDialog [gi::getDialogs {deCloseData} -parent [gi::getWindows 1]]
+gi::setCurrentIndex {target} -index {0,0} -in [gi::getDialogs {deCloseData} -parent [gi::getWindows 1]]
+db::setAttr geometry -of [gi::getDialogs {deCloseData} -parent [gi::getWindows 1]] -value 438x281+539+239
+gi::pressButton {close} -in [gi::getDialogs {deCloseData} -parent [gi::getWindows 1]]
+de::showRefreshDesigns
+de::showCloseDesigns
+de::showCloseDesigns
+gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 1]]
+gi::setActiveWindow 2
+gi::setActiveWindow 2 -raise true
+gi::setCurrentIndex {views} -index {HSPICE_default_working_Makes_Sense} -in [gi::getWindows 2]
+gi::setItemSelection {views} -index {HSPICE_default_working_Makes_Sense} -in [gi::getWindows 2]
+gi::executeAction {dmOpen} -in [gi::getWindows 2]
+gi::setCurrentIndex {cells} -index {tspc_neg_ff} -in [gi::getWindows 2]
+gi::setItemSelection {cells} -index {tspc_neg_ff} -in [gi::getWindows 2]
+gi::setCurrentIndex {cells} -index {tb2025} -in [gi::getWindows 2]
+gi::setItemSelection {cells} -index {tb2025} -in [gi::getWindows 2]
+gi::setCurrentIndex {views} -index {HSPICE_default} -in [gi::getWindows 2]
+gi::setItemSelection {views} -index {HSPICE_default} -in [gi::getWindows 2]
+gi::executeAction {dmOpen} -in [gi::getWindows 2]
+exit

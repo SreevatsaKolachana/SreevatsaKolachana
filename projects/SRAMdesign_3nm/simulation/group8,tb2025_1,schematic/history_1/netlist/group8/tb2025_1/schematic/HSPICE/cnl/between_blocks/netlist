@@ -1,0 +1,27 @@
+********************************************************************************
+* Library          : group8
+* Cell             : between_blocks
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt between_blocks rs0 rs0_bar rs0bar rs1 rs1_bar rs1bar rs_0 rs_1 rsnew
++ wlref ws0 ws0_bar ws0bar ws1 ws1_bar ws1bar ws_0 ws_1
+xi237 net6 rs0 inv
+xi238 net3 rs0bar inv
+xi239 net5 rs1 inv
+xi240 net4 rs1bar inv
+xi241 net7 ws0 inv
+xi242 net1 ws0bar inv
+xi243 net8 ws1 inv
+xi244 net2 ws1bar inv
+xi232 wlref ws_0 net7 nand
+xi233 wlref ws0_bar net1 nand
+xi234 wlref ws_1 net8 nand
+xi236 wlref ws1_bar net2 nand
+xi229 rsnew rs0_bar net3 nor
+xi230 rsnew rs_1 net5 nor
+xi231 rsnew rs1_bar net4 nor
+xi235 rsnew rs_0 net6 nor
+.ends between_blocks
+

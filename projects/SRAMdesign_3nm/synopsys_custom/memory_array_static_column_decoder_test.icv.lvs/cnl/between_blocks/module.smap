@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 between_blocks schematic vl: auCdl schematic symbol">
+    <scope name="Instance">
+        <forward>
+            <mapping dst="XI235" src="I235"/>
+            <mapping dst="XI234" src="I234"/>
+            <mapping dst="XI231" src="I231"/>
+            <mapping dst="XI233" src="I233"/>
+            <mapping dst="XI244" src="I244"/>
+            <mapping dst="XI230" src="I230"/>
+            <mapping dst="XI243" src="I243"/>
+            <mapping dst="XI242" src="I242"/>
+            <mapping dst="XI241" src="I241"/>
+            <mapping dst="XI240" src="I240"/>
+            <mapping dst="XI232" src="I232"/>
+            <mapping dst="XI239" src="I239"/>
+            <mapping dst="XI236" src="I236"/>
+            <mapping dst="XI238" src="I238"/>
+            <mapping dst="XI229" src="I229"/>
+            <mapping dst="XI237" src="I237"/>
+        </forward>
+        <reverse>
+            <mapping dst="I235" src="XI235"/>
+            <mapping dst="I231" src="XI231"/>
+            <mapping dst="I230" src="XI230"/>
+            <mapping dst="I234" src="XI234"/>
+            <mapping dst="I232" src="XI232"/>
+            <mapping dst="I236" src="XI236"/>
+            <mapping dst="I244" src="XI244"/>
+            <mapping dst="I243" src="XI243"/>
+            <mapping dst="I242" src="XI242"/>
+            <mapping dst="I240" src="XI240"/>
+            <mapping dst="I233" src="XI233"/>
+            <mapping dst="I239" src="XI239"/>
+            <mapping dst="I241" src="XI241"/>
+            <mapping dst="I238" src="XI238"/>
+            <mapping dst="I229" src="XI229"/>
+            <mapping dst="I237" src="XI237"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward/>
+        <reverse/>
+    </scope>
+    <scope name="Terminal">
+        <forward/>
+        <reverse/>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping dst="RS0 RS0_Bar RS0bar RS1 RS1_Bar RS1bar RS_0 RS_1 RSnew WLRef WS0 WS0_Bar WS0bar WS1 WS1_Bar WS1bar WS_0 WS_1" src="&lt;unmappedTermOrder&gt;"/>
+            <mapping dst="RS0 RS0_Bar RS0bar RS1 RS1_Bar RS1bar RS_0 RS_1 RSnew WLRef WS0 WS0_Bar WS0bar WS1 WS1_Bar WS1bar WS_0 WS_1" src="&lt;termOrder&gt;"/>
+        </forward>
+        <reverse>
+            <mapping dst="&lt;unmappedTermOrder&gt;" src="RS0 RS0_Bar RS0bar RS1 RS1_Bar RS1bar RS_0 RS_1 RSnew WLRef WS0 WS0_Bar WS0bar WS1 WS1_Bar WS1bar WS_0 WS_1"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="inv">
+            <instance name="I237"/>
+            <instance name="I238"/>
+            <instance name="I239"/>
+            <instance name="I240"/>
+            <instance name="I241"/>
+            <instance name="I242"/>
+            <instance name="I243"/>
+            <instance name="I244"/>
+        </instance_header>
+        <instance_header master="nand">
+            <instance name="I232"/>
+            <instance name="I233"/>
+            <instance name="I234"/>
+            <instance name="I236"/>
+        </instance_header>
+        <instance_header master="nor">
+            <instance name="I229"/>
+            <instance name="I230"/>
+            <instance name="I231"/>
+            <instance name="I235"/>
+        </instance_header>
+    </master_instances>
+</module>

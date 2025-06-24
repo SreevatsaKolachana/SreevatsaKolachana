@@ -1,0 +1,44 @@
+********************************************************************************
+* Library          : group8
+* Cell             : 2to4_decoder
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt _2to4_decoder bl0 bl0_bar bl1 bl1_bar bl2 bl2_bar bl3 bl3_bar in0 in0bar
++  op0 op0bar rs0 rs0bar rs1 rs1bar ws0 ws0bar ws1 ws1bar
+m53 op0 rs1 rd23 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m52 op0bar rs1 rdb23 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m51 op0 rs1bar rd01 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m50 op0bar rs1bar rdb01 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m49 rdb01 rs0bar bl0_bar pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m48 rd23 rs0 bl3 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m47 rdb23 rs0 bl3_bar pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m46 rd23 rs0bar bl2 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m45 rdb23 rs0bar bl2_bar pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m44 rd01 rs0 bl1 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m43 rdb01 rs0 bl1_bar pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m42 rd01 rs0bar bl0 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m31 bl0 ws0bar wd01 nfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07
++ pseo=2.34e-07
+m30 bl0_bar ws0bar wdb01 nfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07
++  pseo=2.34e-07
+m41 wd23 ws1 in0 nfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m40 wdb23 ws1 in0bar nfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07
++ pseo=2.34e-07
+m39 wd01 ws1bar in0 nfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07
++ pseo=2.34e-07
+m38 wdb01 ws1bar in0bar nfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07
++ pseo=2.34e-07
+m37 bl3 ws0 wd23 nfet nfin=6 adeo=1.701e-15 aseo=1.701e-15 pdeo=3.51e-07 pseo=3.51e-07
+m36 bl3_bar ws0 wdb23 nfet nfin=6 adeo=1.701e-15 aseo=1.701e-15 pdeo=3.51e-07
++ pseo=3.51e-07
+m35 bl2 ws0bar wd23 nfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07
++ pseo=2.34e-07
+m34 bl2_bar ws0bar wdb23 nfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07
++  pseo=2.34e-07
+m33 bl1 ws0 wd01 nfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m32 bl1_bar ws0 wdb01 nfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07
++ pseo=2.34e-07
+.ends _2to4_decoder
+

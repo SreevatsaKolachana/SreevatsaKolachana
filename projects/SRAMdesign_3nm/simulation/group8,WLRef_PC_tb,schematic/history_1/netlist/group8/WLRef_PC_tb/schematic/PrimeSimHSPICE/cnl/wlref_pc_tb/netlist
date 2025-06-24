@@ -1,0 +1,10 @@
+********************************************************************************
+* Library          : group8
+* Cell             : WLRef_PC_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+v34 vdd! gnd! dc=0.8
+v31 clk gnd! dc=0 pulse ( 0 0.8 5p 5p 5p 140p 300p )
+xi30 clk pc rsnew wlref clk_dff wlref_pc

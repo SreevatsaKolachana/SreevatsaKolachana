@@ -1,0 +1,13 @@
+********************************************************************************
+* Library          : group8
+* Cell             : read_circuit
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt read_circuit bl blbar out
+xi4 bl net6 net8 nand
+xi5 net8 out inv
+xi2 blbar net6 invx4
+.ends read_circuit
+

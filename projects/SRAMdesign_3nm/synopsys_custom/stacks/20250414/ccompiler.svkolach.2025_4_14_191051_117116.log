@@ -1,0 +1,200 @@
+[19:10:58.31] /o 
+              /c                                 Custom Compiler™ 
+              /c 
+              /c               Version W-2024.09-SP1-2 for linux64 - Jan 16, 2025 
+              /c 
+              /c                     Copyright (c) 2004 - 2025 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 11256978 compiled on Thu Jan 16 10:52:27 2025 for AlmaLinux 8.4
+              /c Invocation: /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Mon Apr 14 19:10:51 2025
+              /c Host: hydra13.ece.ncsu.edu
+              /c Working directory: /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project
+              /c 
+[19:11:06.88] /m Information: Registering ICV PERC package...
+[19:11:08.16] /r giShowFrameTabs true
+[19:11:08.16] /r giWindowId 1
+[19:11:08.16] /r giWindowGeometry 1040x800
+[19:11:22.39] /i gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[19:11:22.72] /r giWindowId 2
+[19:11:22.72] /r giWindowGeometry 660x600+50+50
+[19:11:24.13] /i gi::setCurrentIndex {libs} -index {group8} -in [gi::getWindows 2]
+[19:11:24.42] /i gi::setItemSelection {libs} -index {group8} -in [gi::getWindows 2]
+[19:11:26.15] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[19:11:26.43] /i db::setAttr dockSize -of [gi::getAssistants giConsole -from [gi::getWindows 2]] -value 1920x242
+[19:11:26.44] /i db::setAttr geometry -of [gi::getFrames 1] -value 1920x986+0+46
+[19:11:30.44] /i gi::setCurrentIndex {cells} -index {Demux} -in [gi::getWindows 2]
+[19:11:30.85] /i gi::setItemSelection {cells} -index {Demux} -in [gi::getWindows 2]
+[19:11:31.95] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 2]
+[19:11:32.03] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 2]
+[19:11:32.17] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[19:11:32.26] /m Information: Feature 'CustomInfrastructure' checked out. (LICENSE-003)
+[19:11:32.28] /m Information: Feature 'SynopsysCustomLayout' checked out. (LICENSE-003)
+[19:11:32.50] /o Loading: Callback files...
+[19:11:32.52] /o Loading: scripts/callbacks/callbacks.tcl
+[19:11:32.52] /o 
+              /c [INFO] : Loading display.drf from /mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3
+              /c 
+              /c  if you wish to Load other display.drf, please set shell environment valiable "iPDK_load_display_NCSU_TechLib_FreePDK3" to value = 0
+[19:11:32.52] /o 
+[19:11:32.67] /w Warning: Preference 'xtStarTcadGrdFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[19:11:32.68] /w Warning: Preference 'xtStarOALayerMappingFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[19:11:32.68] /o 	#######################################
+[19:11:32.68] /o 	CC-PDK Library Name	: FreePDK3
+[19:11:32.68] /o 	#######################################
+[19:11:32.68] /o 
+[19:11:32.90] /r giWindowId 3
+[19:11:32.90] /r giWindowGeometry 1632x972
+[19:11:34.28] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 3]] -value 290x180
+[19:11:36.13] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 3]
+[19:11:36.13] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 3]]
+[19:11:40.93] /# gi::executeAction {xtDRCSetup} -in [gi::getWindows 3]
+[19:11:40.93] /i xt::showDRCSetup -job drc -window 3
+[19:11:41.81] /m Information: No Control Variables file found in pdk.xml, nor Control Variables preference has been set, switching to New Control Variables table format.
+[19:11:42.80] /i db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 3]] -value 665x600+876+367
+[19:11:45.65] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 3]]
+[19:11:45.75] /m Information: Feature 'SynopsysCustomLayoutAdvanced' checked out. (LICENSE-003)
+[19:11:46.23] /# xt::physicalVerification::executePve drc 3 xtDRCExecutePve
+[19:11:47.27] /m Information: Starting 'Stream Export of OA cell 'group8/Demux/layout''...
+[19:11:51.14] /m Information: "PVE Stream Export finished successfully with 0 error, 1 warning." (DATA_IO_COMMANDS-002)
+[19:11:51.14] /m Information: Starting IC Validator 'DRC' verification job on Stream cell: Demux
+[19:11:51.93] /r giWindowId 4
+[19:11:51.95] /r giWindowGeometry 800x600
+[19:12:08.64] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_213
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[19:12:09.05] /m Information: IC Validator VUE Server initialized successfully at port 9189.
+[19:12:24.13] /m Information: Connection closed with 'IC Validator VUE' running on 'hydra13.ece.ncsu.edu'.
+[19:12:25.41] /i gi::setActiveWindow 3
+[19:12:25.41] /i gi::setActiveWindow 3 -raise true
+[19:12:31.24] /# gi::executeAction {xtLVSSetup} -in [gi::getWindows 3]
+[19:12:31.24] /i xt::showLVSSetup -job lvs -window 3
+[19:12:32.46] /m Information: No Control Variables file found in pdk.xml, nor Control Variables preference has been set, switching to New Control Variables table format.
+[19:12:33.44] /i db::setAttr geometry -of [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]] -value 824x486+799+347
+[19:12:34.53] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]]
+[19:12:35.72] /# xt::physicalVerification::executePve lvs 3 xtLVSExecutePve
+[19:12:36.70] /m Information: Starting 'Stream Export of OA cell 'group8/Demux/layout''...
+[19:12:36.83] /m Information: "Starting netlisting for design "group8/Demux/schematic"..." (NETLISTING-010)
+[19:12:37.06] /m Information: 
+[19:12:37.06] /o Checking "group8/Demux/schematic"
+[19:12:37.06] /o No rule violations found in "group8/Demux/schematic"
+[19:12:37.06] /o No Design Integrity rule violations found in "group8/Demux/schematic"
+[19:12:38.36] /m Information: "Netlisting design "group8/Demux/schematic" finished successfully." (NETLISTING-012)
+[19:12:40.44] /m Information: "PVE Stream Export finished successfully with 0 error, 1 warning." (DATA_IO_COMMANDS-002)
+[19:12:40.44] /m Information: Starting IC Validator 'LVS' verification job on Stream cell: Demux
+[19:12:41.23] /r giWindowId 5
+[19:12:41.25] /r giWindowGeometry 800x600
+[19:13:19.35] /m Information: 
+              /c =============================
+              /c JobID: icv_lvs_30
+              /c --- ERROR SUMMARY -----------
+              /c LVS Device Extraction Error Summary
+              /c 1 total rule was run.
+              /c 0 rules NOT EXECUTED.
+              /c 1 rule has violations.
+              /c There are 2 total violations.
+              /c Refer to Demux.LAYOUT_ERRORS
+              /c =============================
+              /c 
+[19:13:25.24] /r giWindowId 6
+[19:13:25.26] /r giWindowGeometry 1632x972
+[19:14:36.03] /m Information: Connection closed with 'IC Validator VUE' running on 'hydra13.ece.ncsu.edu'.
+[19:14:41.94] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 3]
+[19:14:42.31] /# gi::executeAction {deFitView} -in [gi::getWindows 3]
+[19:14:42.31] /i de::fit -window 3 -fitView true
+[19:14:45.69] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 3]
+[19:14:45.69] /i de::zoom -window [gi::getWindows 3] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.238 0.352}
+[19:14:45.74] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 3]
+[19:14:45.74] /i de::zoom -window [gi::getWindows 3] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.238 0.352}
+[19:14:45.86] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 3]
+[19:14:45.86] /i de::zoom -window [gi::getWindows 3] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.238 0.352}
+[19:14:47.44] /# gi::executeAction {deFitView} -in [gi::getWindows 3]
+[19:14:47.44] /i de::fit -window 3 -fitView true
+[19:14:48.16] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 3]
+[19:14:48.39] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 3]
+[19:14:48.58] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 3]
+[19:14:48.81] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 3]
+[19:14:51.50] /i gi::setActiveWindow 5
+[19:14:51.50] /i gi::setActiveWindow 5 -raise true
+[19:14:52.72] /i gi::executeAction {giCloseWindow} -in [gi::getWindows 5]
+[19:14:53.94] /i gi::setActiveWindow 6
+[19:14:53.94] /i gi::setActiveWindow 6 -raise true
+[19:14:56.94] /i gi::executeAction {giCloseWindow} -in [gi::getWindows 6]
+[19:14:58.69] /i gi::setActiveWindow 4
+[19:14:58.69] /i gi::setActiveWindow 4 -raise true
+[19:14:59.28] /i gi::executeAction {giCloseWindow} -in [gi::getWindows 4]
+[19:15:02.90] /i gi::executeAction {giCloseWindow} -in [gi::getWindows 3]
+[19:15:06.35] /i gi::setCurrentIndex {cells} -index {read_circuit} -in [gi::getWindows 2]
+[19:15:06.89] /i gi::setItemSelection {cells} -index {read_circuit} -in [gi::getWindows 2]
+[19:15:08.20] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 2]
+[19:15:08.27] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[19:15:08.53] /r giWindowId 7
+[19:15:08.54] /r giWindowGeometry 1632x972
+[19:15:09.83] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 7]] -value 290x180
+[19:15:11.37] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 7]
+[19:15:11.37] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 7]]
+[19:15:25.30] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 7]
+[19:15:25.30] /i de::zoom -window [gi::getWindows 7] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.268 0.0745}
+[19:15:25.38] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 7]
+[19:15:25.38] /i de::zoom -window [gi::getWindows 7] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.268 0.0745}
+[19:15:29.68] /# gi::executeAction {deFitView} -in [gi::getWindows 7]
+[19:15:29.68] /i de::fit -window 7 -fitView true
+[19:15:33.30] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 7]
+[19:15:33.30] /i de::zoom -window [gi::getWindows 7] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.454 0.048}
+[19:15:33.35] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 7]
+[19:15:33.35] /i de::zoom -window [gi::getWindows 7] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.454 0.048}
+[19:15:33.47] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 7]
+[19:15:33.47] /i de::zoom -window [gi::getWindows 7] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.454 0.048}
+[19:15:34.10] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 7]
+[19:15:34.10] /i de::zoom -window [gi::getWindows 7] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.454 0.048}
+[19:15:34.17] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 7]
+[19:15:34.17] /i de::zoom -window [gi::getWindows 7] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.454 0.048}
+[19:15:35.91] /# gi::executeAction {deFitView} -in [gi::getWindows 7]
+[19:15:35.91] /i de::fit -window 7 -fitView true
+[19:15:47.04] /i gi::executeAction {giCloseWindow} -in [gi::getWindows 7]
+[19:15:57.02] /i gi::setCurrentIndex {cells} -index {Write_Driver} -in [gi::getWindows 2]
+[19:15:57.57] /i gi::setItemSelection {cells} -index {Write_Driver} -in [gi::getWindows 2]
+[19:15:59.29] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 2]
+[19:15:59.40] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[19:15:59.75] /r giWindowId 8
+[19:15:59.76] /r giWindowGeometry 1632x972
+[19:16:00.85] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 8]] -value 290x180
+[19:16:01.52] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 8]
+[19:16:01.52] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 8]]
+[19:16:06.19] /# gi::executeAction {leDisplayTopLevel} -in [gi::getWindows 8]
+[19:16:06.19] /i db::setPrefValue leStopLevel -value 0 -scope [db::getNext [de::getContexts -window 8]]; db::setPrefValue leStartLevel -value 0 -scope [db::getNext [de::getContexts -window 8]]; de::redraw -window 8
+[19:16:12.25] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 8]
+[19:16:12.25] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 8]]
+[19:16:18.44] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 8]
+[19:16:18.44] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 8]]
+[19:16:20.20] /# gi::executeAction {leDisplayTopLevel} -in [gi::getWindows 8]
+[19:16:20.20] /i db::setPrefValue leStopLevel -value 0 -scope [db::getNext [de::getContexts -window 8]]; db::setPrefValue leStartLevel -value 0 -scope [db::getNext [de::getContexts -window 8]]; de::redraw -window 8
+[19:16:24.68] /i gi::executeAction {giCloseWindow} -in [gi::getWindows 8]
+[19:16:27.55] /i gi::executeAction {giCloseWindow} -in [gi::getWindows 2]
+[19:16:30.57] /i gi::executeAction {giQuit} -in [gi::getWindows 1]
+[19:16:30.65] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]]
+[19:16:30.92] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]] -value 402x202+749+386
+[19:16:31.92] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]]
+[19:16:36.55] /o Shutdown time: Mon Apr 14 19:16:36 2025
+[19:16:36.55] /o Elapsed session real time: 5.71 minutes
+[19:16:36.55] /o Session terminated. Log is at /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/logs/ccompiler.svkolach.2025_4_14_191051_117116.log
+[19:16:36.55] /o Error: X connection is broken. Error code: (APPLICATION_GUI-002)1
+[19:16:36.57] /e Error: The application was unexpectedly terminated.
+              /c See the session log file for recovery details. (SHUT_DOWN-001)

@@ -1,0 +1,142 @@
+
+                                 IC Validator 
+
+          Version W-2024.09-SP2 for linux64 - Dec 03, 2024 cl#11100136
+
+                    Copyright (c) 1996 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Time Started: 2025-04-17 00:09:55
+Running on: hydra12.ece.ncsu.edu 4.18.0-553.47.1.el8_10.x86_64
+
+-------------
+
+Called as: icv -f gdsii -i /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/tspc_pos_ff.icv.lvs/tspc_pos_ff.custom_compiler.gds -c tspc_pos_ff -I /mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3/../../icv -s /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/tspc_pos_ff.icv.lvs/tspc_pos_ff.icv.sp -sf SPICE -stc tspc_pos_ff -oa_dm6 -vue /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs
+
+-------------
+
+Command Line Summary:
+icv
+-c tspc_pos_ff
+-f gdsii
+-i /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/tspc_pos_ff.icv.lvs/tspc_pos_ff.custom_compiler.gds
+-oa_dm6
+-s /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/tspc_pos_ff.icv.lvs/tspc_pos_ff.icv.sp
+-sf SPICE
+-stc tspc_pos_ff
+-vue
+-I /mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3/../../icv
+/mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs
+
+-------------
+Using user-specified ICV_INCLUDES setting as:
+"/mnt/apps/public/COE/synopsys_apps/icvalidator/W-2024.09-SP2/include"
+
+Parsing runset "/mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs"
+
+/mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:1: warning: Converted [CR+LF] to [LF]
+    // 3nm FreePDK(TM) ICV LVS Rules
+
+
+/mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3/../../icv/FreePDK3_main.lvs.rs.user_functions:1: warning: Converted [CR+LF] to [LF]
+    // 3nm FreePDK(TM) ICV LVS Functions
+
+
+/mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:451: warning: ICV LVS device settings currently use append mode. Use command line option '-D ICV_REVERT_DEVICE_SETTING_APPEND_MODE' or runset instruction '#define ICV_REVERT_DEVICE_SETTING_APPEND_MODE' to revert LVS device setting back to overwrite mode in this release.
+/mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:451: warning: No equiv pair is provided. This can lead to non-optimal LVS performance.
+warning: There were 2 evaluation warnings
+Runset Processing Time=0:00:07 User=4.28 Sys=0.31 Mem=0.420 GB
+
+Parsing finished
+Host startup begins.
+Host startup done: 2 successes, 0 failures.
+	hydra12.ece.ncsu.edu: 2 total CPUs, maximum 2 commands in parallel.
+Selecting "hydra12.ece.ncsu.edu" as Primary host
+
+System Startup Time=0.437469 User=0.0523070
+
+Command execution begins.  Details recorded in the summary file and log db: 
+	"/mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/tspc_pos_ff.icv.lvs/run_details/tspc_pos_ff.sum"
+	"/mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/tspc_pos_ff.icv.lvs/run_details/dp.eventdb"
+
+Running ...
+  [0:00:00][0%]   Added 2 CPUs on host hydra12.ece.ncsu.edu (Total: 2 CPUs on 1 hosts)
+  [0:00:01][1%]   Rules: 0/1, Rules with Violations: 0, Total Violations: 0
+  [0:00:01][2%]   
+  [0:00:01][3%]   
+  [0:00:01][4%]   
+  [0:00:01][5%]   
+  [0:00:01][10%]  
+  [0:00:02][15%]  
+  [0:00:02][20%]  
+  [0:00:02][25%]  
+  [0:00:02][30%]  
+  [0:00:02][35%]  
+  [0:00:02][40%]  
+  [0:00:02][45%]  
+  [0:00:02][50%]  
+  [0:00:02][55%]  Rules: 1/1, Rules with Violations: 0, Total Violations: 0
+  [0:00:02][60%]  
+  [0:00:02][65%]  
+  [0:00:03][70%]  
+  [0:00:03][75%]  
+  [0:00:04][80%]  
+  [0:00:05][85%]  
+  [0:00:07][90%]  
+ compare() at FreePDK3_main.lvs.rs:451
+Comparing schematic and layout netlists.
+LVS compare start time    : 2025-04-17 00:10:19
+/mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs.user_functions:1: warning: Converted [CR+LF] to [LF]
+    // 3nm FreePDK(TM) ICV LVS Functions
+
+  ICV_Compare [0:00:02][0%]
+  ICV_Compare [0:00:02][5%]
+  ICV_Compare [0:00:02][10%]
+  ICV_Compare [0:00:02][15%]
+  ICV_Compare [0:00:02][20%]
+  ICV_Compare [0:00:02][25%]
+  ICV_Compare [0:00:02][30%]
+  ICV_Compare [0:00:02][100%]
+LVS compare end time      : 2025-04-17 00:10:21
+Total runtime for LVS compare Time=0:00:02  User=0.04 Sys=0.05 Mem=0.018 GB
+   Check Time=0:00:02  User=0.01 Sys=0.00 Mem=0.030 GB
+
+
+  [0:00:15][95%]  
+  [0:00:15][100%] Rules: 1/1, Rules with Violations: 0, Total Violations: 0
+Engine Runtime=15.4214 User=0.227838
+Error storage stats...
+  User=0.00 Sys=0.01 Mem=0.000 GB
+
+Generating tspc_pos_ff.LAYOUT_ERRORS...
+  Generation Time=0:00:00  User=0.00 Sys=0.00 Mem=0.001 GB
+
+Overall engine Time=0:00:25 Highest command Mem=0.041 GB
+
+-------------
+
+IC Validator Machine Memory Report
+hydra12.ece.ncsu.edu : Average = 0.531 GB, Peak = 0.626 GB
+
+Overall Disk Usage Disk=0.035 GB
+Group File Disk Usage Peak=0.001 GB
+
+Overall Manager Mem=0.420 GB
+
+
+Time Ended: 2025-04-17 00:10:23
+
+IC Validator is done.

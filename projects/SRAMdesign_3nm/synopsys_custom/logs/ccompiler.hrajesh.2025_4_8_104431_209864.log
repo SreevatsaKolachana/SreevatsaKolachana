@@ -1,0 +1,257 @@
+[10:44:38.91] /o 
+              /c                                 Custom Compiler™ 
+              /c 
+              /c               Version W-2024.09-SP1-2 for linux64 - Jan 16, 2025 
+              /c 
+              /c                     Copyright (c) 2004 - 2025 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 11256978 compiled on Thu Jan 16 10:52:27 2025 for AlmaLinux 8.4
+              /c Invocation: /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Tue Apr  8 10:44:31 2025
+              /c Host: hydra11.ece.ncsu.edu
+              /c Working directory: /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project
+              /c 
+[10:44:51.53] /m Information: Registering ICV PERC package...
+[10:44:52.66] /r giShowFrameTabs true
+[10:44:52.66] /r giWindowId 1
+[10:44:52.66] /r giWindowGeometry 1040x800
+[10:44:53.43] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x822+247+54
+[10:44:56.61] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x761+247+54
+[10:45:07.95] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[10:45:08.21] /i db::setAttr geometry -of [gi::getFrames 1] -value 1536x770+0+46
+[10:45:09.93] /i gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[10:45:10.24] /r giWindowId 2
+[10:45:10.24] /r giWindowGeometry 660x600+50+50
+[10:45:18.40] /i gi::setCurrentIndex {libs} -index {group8} -in [gi::getWindows 2]
+[10:45:19.31] /i gi::setItemSelection {libs} -index {group8} -in [gi::getWindows 2]
+[10:45:35.03] /i gi::setCurrentIndex {cells} -index {tb2025} -in [gi::getWindows 2]
+[10:45:35.10] /i gi::setItemSelection {cells} -index {tb2025} -in [gi::getWindows 2]
+[10:45:37.13] /i gi::sortItems {views} -column {Views} -order {descending} -in [gi::getWindows 2]
+[10:45:39.13] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 2]
+[10:45:39.18] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 2]
+[10:45:40.96] /i gi::setCurrentIndex {cells} -index {sram_6t_tb} -in [gi::getWindows 2]
+[10:45:41.22] /i gi::setItemSelection {cells} -index {sram_6t_tb} -in [gi::getWindows 2]
+[10:45:46.75] /i gi::setCurrentIndex {cells} -index {tb2025} -in [gi::getWindows 2]
+[10:45:46.88] /i gi::setItemSelection {cells} -index {tb2025} -in [gi::getWindows 2]
+[10:45:59.41] /i gi::setCurrentIndex {libs} -index {proj_common} -in [gi::getWindows 2]
+[10:45:59.64] /i gi::setItemSelection {libs} -index {proj_common} -in [gi::getWindows 2]
+[10:46:01.69] /i gi::setCurrentIndex {views} -index {HSPICE_default} -in [gi::getWindows 2]
+[10:46:01.72] /i gi::setItemSelection {views} -index {HSPICE_default} -in [gi::getWindows 2]
+[10:46:04.07] /# gi::executeAction {dmShowCopyCellView} -in [gi::getWindows 2]
+[10:46:04.07] /i dm::showCopyCellView -parent 2
+[10:46:04.39] /i gi::setActiveDialog [gi::getDialogs {dmCopyCellView} -parent [gi::getWindows 2]]
+[10:46:04.64] /i db::setAttr geometry -of [gi::getDialogs {dmCopyCellView} -parent [gi::getWindows 2]] -value 615x778+451+31
+[10:46:10.15] /i gi::pressButton {ok} -in [gi::getDialogs {dmCopyCellView} -parent [gi::getWindows 2]]
+[10:46:10.19] /# dm::copyCellViews [db::createCollection [list [dm::findCellView HSPICE\_default -cellName tb2025 -libName proj\_common] ] ] -libDestName group8 -cellDestName tb2025 -viewDestName HSPICE\_default -update true
+[10:46:14.63] /i gi::setCurrentIndex {libs} -index {group8} -in [gi::getWindows 2]
+[10:46:14.89] /i gi::setItemSelection {libs} -index {group8} -in [gi::getWindows 2]
+[10:46:19.39] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 2]
+[10:46:19.43] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 2]
+[10:46:19.63] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[10:46:19.81] /o Loading: Callback files...
+[10:46:19.84] /o Loading: scripts/callbacks/callbacks.tcl
+[10:46:19.84] /o 
+              /c [INFO] : Loading display.drf from /mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3
+              /c 
+              /c  if you wish to Load other display.drf, please set shell environment valiable "iPDK_load_display_NCSU_TechLib_FreePDK3" to value = 0
+[10:46:19.84] /o 
+[10:46:19.98] /w Warning: Preference 'xtStarTcadGrdFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[10:46:19.99] /w Warning: Preference 'xtStarOALayerMappingFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[10:46:19.99] /o 	#######################################
+[10:46:19.99] /o 	CC-PDK Library Name	: FreePDK3
+[10:46:19.99] /o 	#######################################
+[10:46:19.99] /o 
+[10:46:20.07] /m Information: Feature 'CustomInfrastructure' checked out. (LICENSE-003)
+[10:46:20.09] /m Information: Feature 'SynopsysCustomLayout' checked out. (LICENSE-003)
+[10:46:20.55] /r giWindowId 3
+[10:46:20.55] /r giWindowGeometry 1305x777
+[10:46:21.90] /# gi::executeAction {deSelectActive} -in [gi::getWindows 3]
+[10:46:21.90] /i de::deselectAllLogic -context [de::getContexts -filter {%editDesign==[db::getAttr editDesign -of [db::getNext [de::getContexts -window 3]]]}]
+[10:46:21.90] /# gi::executeAction {deSelectActive} -in [gi::getWindows 3]
+[10:46:21.90] /i de::deselectAllLogic -context [de::getContexts -filter {%editDesign==[db::getAttr editDesign -of [db::getNext [de::getContexts -window 3]]]}]
+[10:46:25.68] /# gi::executeAction {deCanvasPanWest} -in [gi::getWindows 3]
+[10:46:25.69] /i de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[10:46:25.86] /# gi::executeAction {deCanvasPanWest} -in [gi::getWindows 3]
+[10:46:25.86] /i de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[10:46:25.94] /# gi::executeAction {deCanvasPanWest} -in [gi::getWindows 3]
+[10:46:25.94] /i de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[10:46:26.98] /# gi::executeAction {deFitEdit} -in [gi::getWindows 3]
+[10:46:26.98] /i de::fit -window 3 -fitEdit true
+[10:46:31.09] /# gi::executeAction {deCanvasPanWest} -in [gi::getWindows 3]
+[10:46:31.09] /i de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[10:46:31.17] /# gi::executeAction {deCanvasPanWest} -in [gi::getWindows 3]
+[10:46:31.17] /i de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[10:46:31.26] /# gi::executeAction {deCanvasPanWest} -in [gi::getWindows 3]
+[10:46:31.26] /i de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[10:46:31.33] /# gi::executeAction {deCanvasPanWest} -in [gi::getWindows 3]
+[10:46:31.33] /i de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[10:46:31.43] /# gi::executeAction {deCanvasPanWest} -in [gi::getWindows 3]
+[10:46:31.43] /i de::pan -window [gi::getWindows 3] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[10:46:32.37] /# gi::executeAction {deFitEdit} -in [gi::getWindows 3]
+[10:46:32.37] /i de::fit -window 3 -fitEdit true
+[10:46:34.23] /i gi::executeAction {deCanvasDragSelect} -in [gi::getWindows 3]
+[10:46:34.24] /r deCanvasDragStart 2.75625 5.15
+[10:46:34.63] /# gi::executeAction {deCanvasDragEnd} -in [gi::getWindows 3]
+[10:46:34.63] /i gi::executeAction deCanvasDragEnd -in [gi::getWindows 3]
+[10:46:34.63] /r deCanvasDragEnd 5.40625 2.15
+[10:46:36.38] /# gi::executeAction {deSelectActive} -in [gi::getWindows 3]
+[10:46:36.38] /i de::deselectAll [db::getNext [de::getContexts -window 3]]
+[10:46:36.38] /i de::deselectAllLogic -context [de::getContexts -filter {%editDesign==[db::getAttr editDesign -of [db::getNext [de::getContexts -window 3]]]}]
+[10:49:45.02] /i gi::setActiveWindow 2
+[10:49:45.02] /i gi::setActiveWindow 2 -raise true
+[10:49:46.94] /i gi::setCurrentIndex {views} -index {HSPICE_default} -in [gi::getWindows 2]
+[10:49:46.99] /i gi::setItemSelection {views} -index {HSPICE_default} -in [gi::getWindows 2]
+[10:49:49.04] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[10:49:56.34] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[10:49:56.49] /m Information: Started sharing "WaveView ADV" license. (WAVEFORM-110)
+[10:49:56.49] /m Information: Started sharing "Primewave" license. (WAVEFORM-110)
+[10:49:57.44] /r giWindowId 4
+[10:49:57.46] /r giWindowGeometry 600x500
+[10:49:57.78] /r giWindowGeometry 600x500
+[10:49:58.68] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eed270a163d8bbb139f03d3135d99f0755c1cb7792ad94754224ca8392588d8d7bc7a6c52d5f021c10 -python 0  -log pw_shell_session0_job1 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[10:49:59.37] /m Information: Launching Simulation Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && sh /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.hrajesh/stb.group8.tb2025.schematic.session0/runSimServer ". (PW_GUI-711)
+[10:49:59.65] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_zTZ7Sk -unique_string 424077b79e1069eed270a163d8bbb139f03d3135d99f0755c1cb7792ad94754224ca8392588d8d7b47cc89c934c62120 -lic_type 2   -parent_cc_pid 209864  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[10:49:59.92] /m Information: Launching Result Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -log rvcmd.log -ptype rv -k -cdesigner -parent_cc_pid 209864 -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -unique_string 424077b79e1069eed270a163d8bbb139f03d3135d99f0755c1cb7792ad94754224ca8392588d8d7b47cc89c934c62120 -lic_type 2    > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/rviewer.log 2>&1"
+[10:50:12.89] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[10:50:12.89] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[10:50:17.29] /# gi::executeAction {saStop} -in [gi::getWindows 4]
+[10:50:17.29] /i isa::stop -testbench [sa::findActiveTestbench -window 4]
+[10:50:21.08] /i gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 4]]
+[10:50:24.40] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[10:50:24.40] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[10:50:26.45] /# gi::executeAction {saStop} -in [gi::getWindows 4]
+[10:50:26.45] /i isa::stop -testbench [sa::findActiveTestbench -window 4]
+[10:50:36.43] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[10:50:36.43] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[10:50:38.97] /# gi::executeAction {saStop} -in [gi::getWindows 4]
+[10:50:38.97] /i isa::stop -testbench [sa::findActiveTestbench -window 4]
+[10:50:46.53] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[10:50:46.53] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[10:50:48.27] /# gi::executeAction {saStop} -in [gi::getWindows 4]
+[10:50:48.27] /i isa::stop -testbench [sa::findActiveTestbench -window 4]
+[10:50:54.16] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job1" after 56 seconds. (PW_GUI-172)
+[10:50:59.97] /i stop
+[10:50:59.97] /e Error: invalid command name "stop" (TCL)
+[10:51:04.12] /i exit
+[10:51:04.27] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog} -parent [gi::getWindows 4]]
+[10:51:04.52] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 4]] -value 419x212+549+273
+[10:51:07.77] /r giDialog gi::closeWindows [gi::getDialogs {deExitDialog} -parent [gi::getWindows 4]]
+[10:51:07.77] /o 0
+[10:51:11.42] /i gi::executeAction {menuPreShow} -in [gi::getWindows 4]
+[10:51:11.42] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[10:51:12.89] /# gi::executeAction {saStop} -in [gi::getWindows 4]
+[10:51:12.89] /i isa::stop -testbench [sa::findActiveTestbench -window 4]
+[10:51:19.69] /i stop simulation
+[10:51:19.70] /o invalid command name "stop"
+[10:51:26.06] /i gi::setActiveWindow 2
+[10:51:26.06] /i gi::setActiveWindow 2 -raise true
+[10:51:29.29] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 2]
+[10:51:29.35] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 2]
+[10:51:33.24] /i gi::setCurrentIndex {cells} -index {memory_array_complete} -in [gi::getWindows 2]
+[10:51:33.33] /i gi::setItemSelection {cells} -index {memory_array_complete} -in [gi::getWindows 2]
+[10:51:34.54] /i gi::setCurrentIndex {cells} -index {memory_array} -in [gi::getWindows 2]
+[10:51:34.67] /i gi::setItemSelection {cells} -index {memory_array} -in [gi::getWindows 2]
+[10:51:40.55] /i gi::setCurrentIndex {cells} -index {memory_array_static_column_decoder} -in [gi::getWindows 2]
+[10:51:40.74] /i gi::setItemSelection {cells} -index {memory_array_static_column_decoder} -in [gi::getWindows 2]
+[10:51:45.00] /i gi::setCurrentIndex {cells} -index {memory_array_tb} -in [gi::getWindows 2]
+[10:51:45.27] /i gi::setItemSelection {cells} -index {memory_array_tb} -in [gi::getWindows 2]
+[10:51:47.89] /i gi::setCurrentIndex {views} -index {HSPICE_default_working_Makes_Sense} -in [gi::getWindows 2]
+[10:51:47.93] /i gi::setItemSelection {views} -index {HSPICE_default_working_Makes_Sense} -in [gi::getWindows 2]
+[10:51:51.89] /i gi::setCurrentIndex {views} -index {HSPICE_default} -in [gi::getWindows 2]
+[10:51:51.94] /i gi::setItemSelection {views} -index {HSPICE_default} -in [gi::getWindows 2]
+[10:52:00.57] /i gi::setCurrentIndex {views} -index {HSPICE_default_working_Makes_Sense} -in [gi::getWindows 2]
+[10:52:00.62] /i gi::setItemSelection {views} -index {HSPICE_default_working_Makes_Sense} -in [gi::getWindows 2]
+[10:52:04.04] /i gi::setCurrentIndex {cells} -index {memory_array_write_test} -in [gi::getWindows 2]
+[10:52:04.38] /i gi::setItemSelection {cells} -index {memory_array_write_test} -in [gi::getWindows 2]
+[10:52:07.00] /i gi::setCurrentIndex {views} -index {HSPICE_default} -in [gi::getWindows 2]
+[10:52:07.04] /i gi::setItemSelection {views} -index {HSPICE_default} -in [gi::getWindows 2]
+[10:52:17.98] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[10:52:18.69] /e Error: Opening primewave session experienced an error: Error: Tcl object cannot be converted to boolean. (TCL_OBJECT-018). (PW_GUI-243)
+[10:52:21.06] /i gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 2]]
+[10:52:30.27] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[10:52:30.60] /e Error: Opening primewave session experienced an error: Error: Tcl object cannot be converted to boolean. (TCL_OBJECT-018). (PW_GUI-243)
+[10:52:38.98] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 2]
+[10:52:39.04] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 2]
+[10:52:39.72] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[10:52:39.98] /r giWindowId 5
+[10:52:40.01] /r giWindowGeometry 1305x777
+[10:52:43.96] /i gi::executeAction giCloseWindow -in [gi::getWindows 5]
+[10:52:47.83] /i gi::setCurrentIndex {cells} -index {memory_array_complete} -in [gi::getWindows 2]
+[10:52:47.91] /i gi::setItemSelection {cells} -index {memory_array_complete} -in [gi::getWindows 2]
+[10:52:48.73] /i gi::setCurrentIndex {cells} -index {memory_array} -in [gi::getWindows 2]
+[10:52:48.83] /i gi::setItemSelection {cells} -index {memory_array} -in [gi::getWindows 2]
+[10:52:53.19] /i gi::setCurrentIndex {cells} -index {memory_array_static_column_decoder} -in [gi::getWindows 2]
+[10:52:53.34] /i gi::setItemSelection {cells} -index {memory_array_static_column_decoder} -in [gi::getWindows 2]
+[10:52:54.35] /i gi::setCurrentIndex {cells} -index {memory_array_tb} -in [gi::getWindows 2]
+[10:52:54.57] /i gi::setItemSelection {cells} -index {memory_array_tb} -in [gi::getWindows 2]
+[10:52:56.23] /i gi::setCurrentIndex {views} -index {HSPICE_default_working_Makes_Sense} -in [gi::getWindows 2]
+[10:52:56.27] /i gi::setItemSelection {views} -index {HSPICE_default_working_Makes_Sense} -in [gi::getWindows 2]
+[10:53:02.66] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[10:53:02.97] /e Error: Opening primewave session experienced an error: Error: Tcl object cannot be converted to boolean. (TCL_OBJECT-018). (PW_GUI-243)
+[10:53:13.06] /i gi::setCurrentIndex {views} -index {HSPICE_default} -in [gi::getWindows 2]
+[10:53:13.10] /i gi::setItemSelection {views} -index {HSPICE_default} -in [gi::getWindows 2]
+[10:53:13.83] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[10:53:14.07] /e Error: Opening primewave session experienced an error: Error: Tcl object cannot be converted to boolean. (TCL_OBJECT-018). (PW_GUI-243)
+[10:53:15.10] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[10:53:15.23] /e Error: Opening primewave session experienced an error: Error: Tcl object cannot be converted to boolean. (TCL_OBJECT-018). (PW_GUI-243)
+[10:53:18.09] /i gi::setActiveWindow 1
+[10:53:18.09] /i gi::setActiveWindow 1 -raise true
+[10:53:20.40] /# gi::executeAction {deCloseDesigns} -in [gi::getWindows 1]
+[10:53:20.40] /i de::showCloseDesigns
+[10:53:20.49] /i gi::setActiveDialog [gi::getDialogs {deCloseData} -parent [gi::getWindows 1]]
+[10:53:20.49] /i gi::setCurrentIndex {target} -index {0,0} -in [gi::getDialogs {deCloseData} -parent [gi::getWindows 1]]
+[10:53:20.72] /i db::setAttr geometry -of [gi::getDialogs {deCloseData} -parent [gi::getWindows 1]] -value 438x281+539+239
+[10:53:24.11] /i gi::pressButton {close} -in [gi::getDialogs {deCloseData} -parent [gi::getWindows 1]]
+[10:53:28.02] /# gi::executeAction {deRefreshDesigns} -in [gi::getWindows 1]
+[10:53:28.02] /i de::showRefreshDesigns
+[10:53:28.08] /m Information: All open designs are up to date. (DESIGN_COMMANDS-100)
+[10:53:30.22] /# gi::executeAction {deCloseDesigns} -in [gi::getWindows 1]
+[10:53:30.22] /i de::showCloseDesigns
+[10:53:30.22] /m Information: No designs are open. (DESIGN_COMMANDS-101)
+[10:53:34.76] /# gi::executeAction {deCloseDesigns} -in [gi::getWindows 1]
+[10:53:34.76] /i de::showCloseDesigns
+[10:53:34.76] /m Information: No designs are open. (DESIGN_COMMANDS-101)
+[10:53:37.99] /i gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 1]]
+[10:53:44.12] /i gi::setActiveWindow 2
+[10:53:44.12] /i gi::setActiveWindow 2 -raise true
+[10:53:45.86] /i gi::setCurrentIndex {views} -index {HSPICE_default_working_Makes_Sense} -in [gi::getWindows 2]
+[10:53:45.91] /i gi::setItemSelection {views} -index {HSPICE_default_working_Makes_Sense} -in [gi::getWindows 2]
+[10:53:47.19] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[10:53:47.41] /e Error: Opening primewave session experienced an error: Error: Tcl object cannot be converted to boolean. (TCL_OBJECT-018). (PW_GUI-243)
+[10:53:56.31] /i gi::setCurrentIndex {cells} -index {tspc_neg_ff} -in [gi::getWindows 2]
+[10:53:56.46] /i gi::setItemSelection {cells} -index {tspc_neg_ff} -in [gi::getWindows 2]
+[10:53:57.13] /i gi::setCurrentIndex {cells} -index {tb2025} -in [gi::getWindows 2]
+[10:53:57.26] /i gi::setItemSelection {cells} -index {tb2025} -in [gi::getWindows 2]
+[10:53:59.01] /i gi::setCurrentIndex {views} -index {HSPICE_default} -in [gi::getWindows 2]
+[10:53:59.04] /i gi::setItemSelection {views} -index {HSPICE_default} -in [gi::getWindows 2]
+[10:53:59.22] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[10:53:59.41] /e Error: Opening primewave session experienced an error: Error: Tcl object cannot be converted to boolean. (TCL_OBJECT-018). (PW_GUI-243)
+[10:55:51.15] /r giDialog gi::setActiveDialog [gi::getDialogs {giCloseFrame}]
+[10:55:51.42] /r giDialog db::setAttr geometry -of [gi::getDialogs {giCloseFrame}] -value 299x110+609+324
+[10:55:52.68] /r giDialog gi::pressButton {giCloseTabsButton} -in [gi::getDialogs {giCloseFrame}]
+[10:55:52.73] /i exit
+[10:55:52.94] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog} -parent [gi::getWindows 2]]
+[10:55:53.21] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 2]] -value 419x212+549+273
+[10:55:59.09] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog} -parent [gi::getWindows 2]]
+[10:55:59.57] /m Information: Sent exit command to CalculateEngine.
+[10:55:59.57] /m Information: Sent exit command to WaveView.
+[10:55:59.57] /m Information: Sent exit command to ResultsViewer.
+[10:55:59.74] /m Information: Send exit command to simulation server process stb.group8.tb2025.schematic.session0. (PW_GUI-979)
+[10:56:06.36] /o Shutdown time: Tue Apr  8 10:56:06 2025
+[10:56:06.36] /o Elapsed session real time: 11.53 minutes
+[10:56:06.36] /o Session terminated. Log is at /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/logs/ccompiler.hrajesh.2025_4_8_104431_209864.log
+[10:56:06.52] /w Warning: Failed to read job with : Error: "xt::readJob error: The remote host closed the connection" (JOB_COMMANDS-002)

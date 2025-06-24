@@ -1,0 +1,1436 @@
+Tue Apr 15 19:47:25 2025
+
+                                  ICV_Engine 
+
+          Version W-2024.09-SP2 for linux64 - Dec 03, 2024 cl#11100136
+
+                    Copyright (c) 1996 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Called as: /mnt/apps/public/COE/synopsys_apps/icvalidator/W-2024.09-SP2/bin/linux64/icv_engine stdin -pid 49643 -pydbhost greenarrow.ece.ncsu.edu -pydbport 52953 -host greenarrow.ece.ncsu.edu -port 36381 -rd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/buffer_highdrive_vertical.icv.lvs/run_details -g /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/buffer_highdrive_vertical.icv.lvs/run_details/group -lg /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/buffer_highdrive_vertical.icv.lvs/run_details/group/CACHE_DIR -dpid 0 -dpmid 0 -dpname greenarrow.ece.ncsu.edu -threads 0 -dpassign -oa_dm6 -zlib stdin
+
+
+Running Multi-Threaded code with 2 shared thread(s)
+
+Runset file ......................  stdin
+Current Directory ................  /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/buffer_highdrive_vertical.icv.lvs
+Hostname .........................  greenarrow.ece.ncsu.edu
+Platform type ....................  LINUX.64
+GDSII input file name ............  /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/buffer_highdrive_vertical.icv.lvs/buffer_highdrive_vertical.custom_compiler.gds
+GDSII block name .................  buffer_highdrive_vertical
+Run details ......................  /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/buffer_highdrive_vertical.icv.lvs/run_details
+Group file directory .............  /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/buffer_highdrive_vertical.icv.lvs/run_details/group
+Check reference structures .......  no
+
+library() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:155
+library("inlib", GDSII, "cell")
+
+schematic() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:161
+schematic_db = schematic({{"sch", SPICE}})
+
+run_options() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:165
+run_options(uppercase = run_options_uppercase, lvs_netlist_flow = SPICE, lvs_user_unit = METER)
+
+compatibility_options() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:171
+compatibility_options(drc = {{NONE}})
+
+error_options() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:175
+error_options(1000, report_empty_violations = true)
+
+gds_options() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:180
+gds_options(duplicate_cell = DROP)
+
+resolution_options() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:184
+resolution_options(0.0005, spacing_tolerance = 0.0, drc_length_precision = 0.0, drc_angle_precision = 0.0)
+
+layout_drawn_options() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:191
+layout_drawn_options(self_intersect_action = FILL)
+
+layout_grid_options() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:195
+layout_grid_options(check_45 = {}, check_90 = {})
+
+text_options() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:200
+text_options(replace_text_characters_regex = {{{{"[\s\*"={},]", "_"}}}}, colon_text = REGULAR_TEXT, semicolon_text = REGULAR_TEXT, layout_power = vLVS_POWER_NAMES, layout_ground = vLVS_GROUND_NAMES, allow_all_numeric = true)
+
+net_options() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:209
+net_options(vLVS_POWER_NAMES, vLVS_GROUND_NAMES)
+
+lvs_options() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:214
+lvs_options(spice_multiplier_names = {"M"})
+
+   Prescan Library Time=0:00:00  User=0.00 Sys=0.00 Mem=0.005 GB
+
+   Scan Hierarchy Time=0:00:00  User=0.00 Sys=0.00 Mem=0.005 GB
+
+   Read Library Time=0:00:00  User=0.00 Sys=0.00 Mem=0.005 GB
+
+   Read Library Time=0:00:00  User=0.00 Sys=0.00 Mem=0.019 GB
+
+assign_text() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:236
+tM0A = assign_text({{==9}})
+  Function: assign_text
+  Outputs: tM0A.textlayer.0007.TEXT
+No output written.
+Layer "tM0A.textlayer.0007.TEXT" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.006 GB
+
+assign_text() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:240
+tM0B = assign_text({{==12}})
+  Function: assign_text
+  Outputs: tM0B.textlayer.0007.TEXT
+No output written.
+Layer "tM0B.textlayer.0007.TEXT" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.006 GB
+
+assign_text() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:246
+tM2 = assign_text({{==16}})
+  Function: assign_text
+  Outputs: tM2.textlayer.0007.TEXT
+No output written.
+Layer "tM2.textlayer.0007.TEXT" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.006 GB
+
+assign_text() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:249
+tM3 = assign_text({{==18}})
+  Function: assign_text
+  Outputs: tM3.textlayer.0007.TEXT
+No output written.
+Layer "tM3.textlayer.0007.TEXT" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.006 GB
+
+assign_text() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:252
+tM4 = assign_text({{==20}})
+  Function: assign_text
+  Outputs: tM4.textlayer.0007.TEXT
+No output written.
+Layer "tM4.textlayer.0007.TEXT" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.006 GB
+
+assign_text() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:255
+tM5 = assign_text({{==22}})
+  Function: assign_text
+  Outputs: tM5.textlayer.0007.TEXT
+No output written.
+Layer "tM5.textlayer.0007.TEXT" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.006 GB
+
+assign_text() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:258
+tM6 = assign_text({{==24}})
+  Function: assign_text
+  Outputs: tM6.textlayer.0007.TEXT
+No output written.
+Layer "tM6.textlayer.0007.TEXT" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.006 GB
+
+assign_text() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:261
+tM7 = assign_text({{==26}})
+  Function: assign_text
+  Outputs: tM7.textlayer.0007.TEXT
+No output written.
+Layer "tM7.textlayer.0007.TEXT" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.006 GB
+
+assign_text() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:264
+tM8 = assign_text({{==28}})
+  Function: assign_text
+  Outputs: tM8.textlayer.0007.TEXT
+No output written.
+Layer "tM8.textlayer.0007.TEXT" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.006 GB
+
+assign_text() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:267
+tM9 = assign_text({{==30}})
+  Function: assign_text
+  Outputs: tM9.textlayer.0007.TEXT
+No output written.
+Layer "tM9.textlayer.0007.TEXT" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.006 GB
+
+assign_text() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:270
+tM10 = assign_text({{==32}})
+  Function: assign_text
+  Outputs: tM10.textlayer.0007.TEXT
+No output written.
+Layer "tM10.textlayer.0007.TEXT" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.006 GB
+
+assign_text() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:273
+tM11 = assign_text({{==34}})
+  Function: assign_text
+  Outputs: tM11.textlayer.0007.TEXT
+No output written.
+Layer "tM11.textlayer.0007.TEXT" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.006 GB
+
+assign_text() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:276
+tM12 = assign_text({{==36}})
+  Function: assign_text
+  Outputs: tM12.textlayer.0007.TEXT
+No output written.
+Layer "tM12.textlayer.0007.TEXT" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.006 GB
+
+assign_text() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:279
+tM13 = assign_text({{==38}})
+  Function: assign_text
+  Outputs: tM13.textlayer.0007.TEXT
+No output written.
+Layer "tM13.textlayer.0007.TEXT" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.006 GB
+
+assign_text() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:282
+tRDL = assign_text({{==40}})
+  Function: assign_text
+  Outputs: tRDL.textlayer.0007.TEXT
+No output written.
+Layer "tRDL.textlayer.0007.TEXT" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.006 GB
+
+ML for preprocessing is disabled for small designs.
+CHT: CR not used elsewhere. Will Skip if CLDP not using it.
+     Find Top Cell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.011 GB
+
+      Mods copy orig Refs Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     Mods record orig Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+      Mods prepare sort Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+      Mods do sort Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+Shared Recipe Hierarchical Explodes sort orig: ranges=17 refs=38
+     Mods sort orig Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+           There are 2 schematic cells.
+
+[HA] Hierarchy : Cell Area =        0.000 M : Cell Flat Area =        0.000 M : Child Area Factor =  1.27 x
+    Create hierarchy Tree Phase: 0 Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+
+0 Total errors found.
+  Set 2 schematic file cells to NO_EXPLODE
+Prototype Placement Pass 1
+verbose_is_necessary = NO_VERBOSE_TEXT
+     Proto small - perform creation Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     Proto small - fix cell setup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     Proto small - fix cell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+Preprocessing group files...
+Preprocess Step 1 : Exploding
+    Create hierarchy Tree Phase: 1 Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+template explode settings:
+  HAO_EXP_AMBIT_AREA_PLACEMENT_RATIO=0
+  HAO_EXP_AMBIT_CELL_AREA_RATIO=0
+  TEMPLATE_MAX_TEMPLATE_SIZE=200
+  TEMPLATE_SETUP_AMBIT=0.350000
+Find duplicate placements in cells
+     ARef Break - Perform Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+Total Explode Mega Cells found = 0
+       ARef Break - Perform Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+      Find Regular Dups Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+RDD Candidates: 0
+RDD Deep Dups: 0
+RDD Explodes: 0
+      Find Deep Dups Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     Remove Deep Duplicate Placements Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+    Create hierarchy Tree Phase: 1 Time=0:00:00  User=0.00 Sys=0.01 Mem=0.007 GB
+
+     ARef Break - Perform Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     ARef Break - Perform Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     Determine Layer Counts Max Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+ * max_layer_data_count   =  86
+ * likely_rows            =  1
+ * max_rows               =  1
+ * num_cols               =  1
+ * max_layer_data_count   =  86
+ * likely_rows            =  1
+ * max_rows               =  1
+ * num_cols               =  1
+      Determine Region Height Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+      Determine Big-Cells Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+      Prototype Big-Cells Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+      Determine shadow Big-Cells Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+ * Total regions          =  1
+ * Region grid            =  0.000500
+ * Region height          =  0.263500
+      Fracture A-Refs for Regions Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     Determine Region Rows Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     ARef Break - Perform Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+      Compress struct nums Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+      Init regions Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+      Highest text setup for instances Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+      write_verbose_text Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     Create Layer Setup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     Mods check top cells Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     Mods check for cycles Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     Mods check cur s-nums Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     Mods check ref order Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     Mods prune unreachable Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     Mods update existence Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     Mods comp descends Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     Mods update under flatten Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+      Mods merge setup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+      Mods merge run Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     Mods merge aref patterns Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+Shared Recipe Hierarchical Explodes times
+  orig= 0:00:00
+  orfn= 0:00:00
+  lvsf= 0:00:00
+  miss= 0:00:00
+  repl= 0:00:00
+  vcel= 0:00:00
+  cut = 0:00:00
+  ptss= 0:00:00
+  ptsc= 0:00:00
+  ptsf= 0:00:00
+  ptb = 0:00:00
+  dexf= 0:00:00
+  cdel= 0:00:00
+  sdel= 0:00:00
+  exp = 0:00:00
+  noex= 0:00:00
+  rprt= 0:00:00
+  fltu= 0:00:00
+  sref= 0:00:00
+  aref= 0:00:00
+  srch= 0:00:00
+  brk = 0:00:00
+  brkm= 0:00:00
+  brkb= 0:00:00
+  brku= 0:00:00
+  frct= 0:00:00
+  snum= 0:00:00
+  dscd= 0:00:00
+  cln = 0:00:00
+         Mods count setup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+         Mods count grids Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+         Mods count accum Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+         Mods break setup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+         Mods break bad Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+         Mods break res Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+         Mods setup for gather Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+         Mods gather record counts Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+         Mods merge gather results Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+         Mods write cells Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+         Mods write names Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+         Mods write s-num map Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+         Mods write a-ref grids Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+         Mods write child metadata & special refs Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+         Mods write desc locators Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+         Mods write compressed refs Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+Shared Recipe Hierarchical Explodes main file =   0.0 GB
+  Cells =   0.0 GB (         9 items)
+  Names =   0.0 GB (        86 items)
+  S-Nums=   0.0 GB (         9 items)
+  AGrids=   0.0 GB (         1 items)
+    Jump=   0.0 GB (        52 items)
+  GrpIdx=   0.0 GB (         0 items)
+  Childs=   0.0 GB (        11 items) (         2 ignored)
+  Descen=   0.0 GB (         0 items)
+Shared Recipe Hierarchical Explodes refs file =   0.0 GB
+  Pad=0
+  OrgEx=0 srefs 0 arefs
+  DrvEx=0 srefs 0 nodes
+  UniEx=18 srefs 4 arefs
+  AtvWr=0 srefs 0 arefs
+  AtvUw=4 srefs 0 arefs
+  l=  0.0 GB          0
+  i=  0.0 GB          0
+  s=  0.0 GB          0
+  b=  0.0 GB         44
+  c64=  0.0 GB          0 p64=  0.0 GB          0
+  c32=  0.0 GB          0 p32=  0.0 GB          0
+  c16=  0.0 GB          0 p16=  0.0 GB          0
+   c8=  0.0 GB          0  p8=  0.0 GB         22
+ gi64=  0.0 GB          0
+ gi32=  0.0 GB          0
+ gi16=  0.0 GB          0
+  gi8=  0.0 GB          4
+Shared Recipe cmp mref files =   0.0 GB
+  0.0  0.0  0.0  
+        write Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+        commit refs Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+        commit main Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+       Shared Recipe Hierarchical Explodes Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+      placed cells Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+      removed cells Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+      shadow cells Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+      index file Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+Shared recipe file sizes: 
+Cell      file size =         0  GB
+Placement file size =         0  GB
+X-region  file size =         0  GB
+      close files Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+     CHT Write shared recipe Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+CHT: CR not needed. Writing skipped.
+Writing cellperlayer fname: /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/buffer_highdrive_vertical.icv.lvs/run_details/group/cell_per_layer_data_cnt.hrchy1.0001.blob
+    Create hierarchy Tree Phase: 2 Time=0:00:00  User=0.01 Sys=0.00 Mem=0.009 GB
+
+mref files deleted.
+   Create Hierarchy Tree Time=0:00:00  User=0.01 Sys=0.01 Mem=0.013 GB
+
+     Read error hierarchy Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+      Preconsider Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+      Accounting Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     Scanning Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     Pairing Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     Write binned hierarchy Time=0:00:00  User=0.00 Sys=0.00 Mem=0.008 GB
+
+     Read error hierarchy Time=0:00:00  User=0.00 Sys=0.00 Mem=0.008 GB
+
+Preprocess Step 10 : Post-VCell Explodes
+       Recnt plc Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+       Calc dep Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+       Sum plc Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+       Group dep Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+       Sum lyr Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+       Determine Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+       Replace Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+       Cleanup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+      Prototype Shallow Cells Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     Post VCell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+    Optimize hierarchy Tree Phase: 10 Time=0:00:00  User=0.00 Sys=0.00 Mem=0.008 GB
+
+[HA] Hierarchy : Cell Area =        0.000 M : Cell Flat Area =        0.000 M : Child Area Factor =  0.76 x
+      Compress struct nums Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+      Init regions Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+      Highest text setup for instances Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+      Update inums Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+      Write Instance Name Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+      End uniquify verbose names Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+      write_verbose_text Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     Create Layer Setup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+      Write recipe & record mem in hdb Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+     Hierarchy Cleanup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.008 GB
+
+    Optimize hierarchy Tree Phase: 999 Time=0:00:00  User=0.00 Sys=0.00 Mem=0.008 GB
+
+   Optimize Hierarchy Tree Time=0:00:00  User=0.00 Sys=0.00 Mem=0.008 GB
+
+Reading error hierarchy _hrchy2_part0hrchy.0001 ...
+   Elapsed Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+Hierarchy Cleanup
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.006 GB
+
+Reading error hierarchy _hrchy2_part0hrchy.0001 ...
+   Elapsed Time=0:00:00  User=0.00 Sys=0.00 Mem=0.007 GB
+
+assign() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:225:Layer creation
+aBPR = assign({{==0}})
+  Function: assign
+  Inputs: aBPR.polygonlayer.0003, aBPR.polygonlayer.0003
+  Outputs: aBPR.polygonlayer.0004, 
+6 unique polygons written.
+0 Total errors found.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.014 GB
+
+assign_text() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:226:Layer creation
+tBPR = assign_text({{==0}})
+  Function: assign_text
+  Inputs: tBPR.textlayer.0003.TEXT, tBPR.textlayer.0003.TEXT
+  Outputs: tBPR.textlayer.0004.TEXT, 
+4 text strings written.
+0 Total errors found.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+
+assign() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:227:Layer creation
+aVBPR = assign({{==1}})
+  Function: assign
+  Inputs: aVBPR.polygonlayer.0003, aVBPR.polygonlayer.0003
+  Outputs: aVBPR.polygonlayer.0004, 
+8 unique polygons written.
+0 Total errors found.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.014 GB
+
+assign() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:228:Layer creation
+aNW = assign({{==2}})
+  Function: assign
+  Inputs: aNW.polygonlayer.0003, aNW.polygonlayer.0003
+  Outputs: aNW.polygonlayer.0004, 
+2 unique polygons written.
+0 Total errors found.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.014 GB
+
+assign() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:229:Layer creation
+aACT = assign({{==3}})
+  Function: assign
+  Inputs: aACT.polygonlayer.0003, aACT.polygonlayer.0003
+  Outputs: aACT.polygonlayer.0004, 
+4 unique polygons written.
+0 Total errors found.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.015 GB
+
+assign() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:230:Layer creation
+aGATE = assign({{==4}})
+  Function: assign
+  Inputs: aGATE.polygonlayer.0003, aGATE.polygonlayer.0003
+  Outputs: aGATE.polygonlayer.0004, 
+9 unique polygons written.
+0 Total errors found.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.015 GB
+
+assign() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:231:Layer creation
+aGCUT = assign({{==5}})
+  Function: assign
+  Inputs: aGCUT.polygonlayer.0003, aGCUT.polygonlayer.0003
+  Outputs: aGCUT.polygonlayer.0004, 
+4 unique polygons written.
+0 Total errors found.
+   Check Time=0:00:00  User=0.00 Sys=0.01 Mem=0.015 GB
+
+assign() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:232:Layer creation
+aDUMMY = assign({{==6}})
+  Function: assign
+  Inputs: aDUMMY.polygonlayer.0003, aDUMMY.polygonlayer.0003
+  Outputs: aDUMMY.polygonlayer.0004, 
+9 unique polygons written.
+0 Total errors found.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.015 GB
+
+assign() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:233:Layer creation
+aNIM = assign({{==7}})
+  Function: assign
+  Inputs: aNIM.polygonlayer.0003, aNIM.polygonlayer.0003
+  Outputs: aNIM.polygonlayer.0004, 
+2 unique polygons written.
+0 Total errors found.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.015 GB
+
+assign() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:234:Layer creation
+aPIM = assign({{==8}})
+  Function: assign
+  Inputs: aPIM.polygonlayer.0003, aPIM.polygonlayer.0003
+  Outputs: aPIM.polygonlayer.0004, 
+2 unique polygons written.
+0 Total errors found.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.015 GB
+
+assign() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:235:Layer creation
+aM0A = assign({{==9}})
+  Function: assign
+  Inputs: aM0A.polygonlayer.0003, aM0A.polygonlayer.0003
+  Outputs: aM0A.polygonlayer.0004, 
+14 unique polygons written.
+0 Total errors found.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.015 GB
+
+assign() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:237:Layer creation
+aV0A = assign({{==10}})
+  Function: assign
+  Inputs: aV0A.polygonlayer.0003, aV0A.polygonlayer.0003
+  Outputs: aV0A.polygonlayer.0004, 
+4 unique polygons written.
+0 Total errors found.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.016 GB
+
+assign() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:238:Layer creation
+aGCON = assign({{==11}})
+  Function: assign
+  Inputs: aGCON.polygonlayer.0003, aGCON.polygonlayer.0003
+  Outputs: aGCON.polygonlayer.0004, 
+4 unique polygons written.
+0 Total errors found.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.016 GB
+
+assign() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:239:Layer creation
+aM0B = assign({{==12}})
+  Function: assign
+  Inputs: aM0B.polygonlayer.0003, aM0B.polygonlayer.0003
+  Outputs: aM0B.polygonlayer.0004, 
+4 unique polygons written.
+0 Total errors found.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.016 GB
+
+assign() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:241:Layer creation
+aV0B = assign({{==13}})
+  Function: assign
+  Inputs: aV0B.polygonlayer.0003, aV0B.polygonlayer.0003
+  Outputs: aV0B.polygonlayer.0004, 
+8 unique polygons written.
+0 Total errors found.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.016 GB
+
+assign() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:242:Layer creation
+aM1 = assign({{==14}})
+  Function: assign
+  Inputs: aM1.polygonlayer.0003, aM1.polygonlayer.0003
+  Outputs: aM1.polygonlayer.0004, 
+6 unique polygons written.
+0 Total errors found.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.016 GB
+
+assign_text() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:243:Layer creation
+tM1 = assign_text({{==14}})
+  Function: assign_text
+  Inputs: tM1.textlayer.0003.TEXT, tM1.textlayer.0003.TEXT
+  Outputs: tM1.textlayer.0004.TEXT, 
+4 text strings written.
+0 Total errors found.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.016 GB
+
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.010 GB
+
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.010 GB
+
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.010 GB
+
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.010 GB
+
+Reading error hierarchy error._hier.0001 ...
+   Elapsed Time=0:00:00  User=0.00 Sys=0.00 Mem=0.009 GB
+
+assign() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:225
+aBPR = assign({{==0}})
+Inserted Relations count : 0 
+Stored Relations count   : 0 
+A total of 0 relations are recorded
+    pushdown and insert new relation Time=0:00:00  User=0.00 Sys=0.00 Mem=0.010 GB
+
+ref_ref_file error._hier.0001.refref
+PlacementsCountToRelationsCount Ratio : inf
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.010 GB
+
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.010 GB
+
+6 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+
+not() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:344
+gPOLY = not((not(((aGATE)), aGCUT)), aDUMMY)
+  Function: not
+  Inputs: aGATE.polygonlayer.0004, __chain.polygonlayer.0001, aGATE.polygonlayer.0004, __chain.polygonlayer.0001, 
+  Outputs: gPOLY.polygonlayer.0002
+    Setup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+    Small Cell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+    Large Cell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.014 GB
+10 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.014 GB
+
+not() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:344
+gPOLY = not((not(((aGATE)), aGCUT)), aDUMMY)
+  Function: not
+  Inputs: gPOLY.polygonlayer.0002, aGATE.polygonlayer.0004
+  Outputs: gPOLY.polygonlayer.0003
+Performing device layer pulldown ...
+    Pulldown Reduce Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+    Pulldown Cleanup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.011 GB
+Pulled 0 polygons
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+
+    Setup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+    Small Cell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+    Large Cell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+No output written.
+Layer "CONNECT_DB.polygonlayer.0008" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+
+8 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.010 GB
+
+8 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.010 GB
+
+    Setup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+    Small Cell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+    Large Cell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+No output written.
+Layer "CONNECT_DB.polygonlayer.0015" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+
+4 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.010 GB
+
+    Setup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+    Small Cell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+    Large Cell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+4 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+
+No output written.
+Layer "CONNECT_DB.polygonlayer.0214" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.010 GB
+
+8 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.010 GB
+
+8 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.010 GB
+
+    Setup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+    Small Cell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+    Large Cell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+No output written.
+Layer "CONNECT_DB.polygonlayer.0113" is empty.
+   Check Time=0:00:00  User=0.01 Sys=0.00 Mem=0.013 GB
+
+    Setup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+    Small Cell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+    Large Cell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+4 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+
+4 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.010 GB
+
+text_net() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:350
+CONNECT_DB = text_net(CONNECT_DB, text_net_items, use_text = TOP, attach_text = ALL, opens = MERGE_CONNECTED_AND_TOP, merge_open_net_names = merge_open_net_names_items, rename_open_nets = KEEP_ONE)
+  Function: text_net
+  Inputs: aM0A.polygonlayer.0004, tM0A.textlayer.0007.TEXT
+  Outputs: tM0A.polygonlayer.0001, tM0A.textlayer.0005.TEXT
+ Text file "tM0A.textlayer.0007.TEXT" doesn't exist.
+No output written.
+Layer "tM0A.polygonlayer.0001" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.010 GB
+
+text_net() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:350
+CONNECT_DB = text_net(CONNECT_DB, text_net_items, use_text = TOP, attach_text = ALL, opens = MERGE_CONNECTED_AND_TOP, merge_open_net_names = merge_open_net_names_items, rename_open_nets = KEEP_ONE)
+  Function: text_net
+  Inputs: aM0B.polygonlayer.0004, tM0B.textlayer.0007.TEXT
+  Outputs: tM0B.polygonlayer.0001, tM0B.textlayer.0005.TEXT
+ Text file "tM0B.textlayer.0007.TEXT" doesn't exist.
+No output written.
+Layer "tM0B.polygonlayer.0001" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.010 GB
+
+Generating associated layer CONNECT_DB.associated.0004
+  Source: empty_layer.polygonlayer.0001 Text: tM1.textlayer.0004.TEXT
+  Target: { aM1.polygonlayer.0004 }
+  Options: avalue=-1.0000 svalue=-1.0000 rropt=1 qiopt=1 source_of_q=ALL
+Input layer "empty_layer.polygonlayer.0001" is empty.
+    Hierarchy & Small Cell Staging Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+    Compute Mask Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+    Cell Flags Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+    Paint Mask Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+     TEXT Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+    Cycle Out Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+    Push Down Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+2 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+
+text_net() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:350
+CONNECT_DB = text_net(CONNECT_DB, text_net_items, use_text = TOP, attach_text = ALL, opens = MERGE_CONNECTED_AND_TOP, merge_open_net_names = merge_open_net_names_items, rename_open_nets = KEEP_ONE)
+  Function: text_net
+  Inputs: aM1.polygonlayer.0004, tM1.textlayer.0004.TEXT
+  Outputs: tM1.polygonlayer.0001, tM1.textlayer.0005.TEXT
+WARNING - 2 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+
+text_net() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:350
+CONNECT_DB = text_net(CONNECT_DB, text_net_items, use_text = TOP, attach_text = ALL, opens = MERGE_CONNECTED_AND_TOP, merge_open_net_names = merge_open_net_names_items, rename_open_nets = KEEP_ONE)
+  Function: text_net
+  Inputs: aM10.polygonlayer.0003, tM10.textlayer.0007.TEXT
+  Outputs: tM10.polygonlayer.0001, tM10.textlayer.0005.TEXT
+Input layer "aM10.polygonlayer.0003" is empty.
+No output written.
+Layer "tM10.polygonlayer.0001" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.010 GB
+
+text_net() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:350
+CONNECT_DB = text_net(CONNECT_DB, text_net_items, use_text = TOP, attach_text = ALL, opens = MERGE_CONNECTED_AND_TOP, merge_open_net_names = merge_open_net_names_items, rename_open_nets = KEEP_ONE)
+  Function: text_net
+  Inputs: aM11.polygonlayer.0003, tM11.textlayer.0007.TEXT
+  Outputs: tM11.polygonlayer.0001, tM11.textlayer.0005.TEXT
+Input layer "aM11.polygonlayer.0003" is empty.
+No output written.
+Layer "tM11.polygonlayer.0001" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.010 GB
+
+text_net() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:350
+CONNECT_DB = text_net(CONNECT_DB, text_net_items, use_text = TOP, attach_text = ALL, opens = MERGE_CONNECTED_AND_TOP, merge_open_net_names = merge_open_net_names_items, rename_open_nets = KEEP_ONE)
+  Function: text_net
+  Inputs: aM12.polygonlayer.0003, tM12.textlayer.0007.TEXT
+  Outputs: tM12.polygonlayer.0001, tM12.textlayer.0005.TEXT
+Input layer "aM12.polygonlayer.0003" is empty.
+No output written.
+Layer "tM12.polygonlayer.0001" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.010 GB
+
+text_net() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:350
+CONNECT_DB = text_net(CONNECT_DB, text_net_items, use_text = TOP, attach_text = ALL, opens = MERGE_CONNECTED_AND_TOP, merge_open_net_names = merge_open_net_names_items, rename_open_nets = KEEP_ONE)
+  Function: text_net
+  Inputs: aM13.polygonlayer.0003, tM13.textlayer.0007.TEXT
+  Outputs: tM13.polygonlayer.0001, tM13.textlayer.0005.TEXT
+Input layer "aM13.polygonlayer.0003" is empty.
+No output written.
+Layer "tM13.polygonlayer.0001" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.010 GB
+
+incremental_connect() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:346
+CONNECT_DB = incremental_connect(CONNECT_DB, {{{gPOLY, aM0B}, aGCON, NONE, SHIELDED_OVERLAP}})
+  Function: incremental_connect
+  Outputs: CONNECT_DB.connect_database.0001
+#max block size is set as 8388608, prev_max_block_size is = 1048576
+Layer "CONNECT_DB.polygonlayer.0190" is empty.
+Layer "aM2.polygonlayer.0003" is empty.
+Layer "aV1.polygonlayer.0003" is empty.
+Layer "CONNECT_DB.polygonlayer.0195" is empty.
+Layer "aM3.polygonlayer.0003" is empty.
+Layer "aV2.polygonlayer.0003" is empty.
+Layer "CONNECT_DB.polygonlayer.0196" is empty.
+Layer "aM4.polygonlayer.0003" is empty.
+Layer "aV3.polygonlayer.0003" is empty.
+Layer "CONNECT_DB.polygonlayer.0197" is empty.
+Layer "aM5.polygonlayer.0003" is empty.
+Layer "aV4.polygonlayer.0003" is empty.
+Layer "CONNECT_DB.polygonlayer.0198" is empty.
+Layer "aM6.polygonlayer.0003" is empty.
+Layer "aV5.polygonlayer.0003" is empty.
+Layer "CONNECT_DB.polygonlayer.0199" is empty.
+Layer "aM7.polygonlayer.0003" is empty.
+Layer "aV6.polygonlayer.0003" is empty.
+Layer "CONNECT_DB.polygonlayer.0200" is empty.
+Layer "aM8.polygonlayer.0003" is empty.
+Layer "aV7.polygonlayer.0003" is empty.
+Layer "CONNECT_DB.polygonlayer.0201" is empty.
+Layer "aM9.polygonlayer.0003" is empty.
+Layer "aV8.polygonlayer.0003" is empty.
+Layer "CONNECT_DB.polygonlayer.0202" is empty.
+Layer "aM10.polygonlayer.0003" is empty.
+Layer "aV9.polygonlayer.0003" is empty.
+Layer "CONNECT_DB.polygonlayer.0203" is empty.
+Layer "aM11.polygonlayer.0003" is empty.
+Layer "aV10.polygonlayer.0003" is empty.
+Layer "CONNECT_DB.polygonlayer.0204" is empty.
+Layer "aM12.polygonlayer.0003" is empty.
+Layer "aV11.polygonlayer.0003" is empty.
+Layer "CONNECT_DB.polygonlayer.0205" is empty.
+Layer "aM13.polygonlayer.0003" is empty.
+Layer "aV12.polygonlayer.0003" is empty.
+Layer "CONNECT_DB.polygonlayer.0206" is empty.
+Layer "aRDL.polygonlayer.0003" is empty.
+Layer "aVRDL.polygonlayer.0003" is empty.
+    Setup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.028 GB
+    Small Cell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.032 GB
+    Large Cell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.035 GB
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.046 GB
+
+text_net() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:350
+CONNECT_DB = text_net(CONNECT_DB, text_net_items, use_text = TOP, attach_text = ALL, opens = MERGE_CONNECTED_AND_TOP, merge_open_net_names = merge_open_net_names_items, rename_open_nets = KEEP_ONE)
+  Reassign Short Comment: "Violation"
+  Short Comment: "Violation"
+  Unused Comment: "Violation"
+  Function: text_net
+  Inputs: CONNECT_DB.connect_database.0001
+  Outputs: CONNECT_DB.connect_database.0002
+  Inputs: tBPR.polygonlayer.0001, tM0A.polygonlayer.0001, tM0B.polygonlayer.0001, tM1.polygonlayer.0001, tM10.polygonlayer.0001, tM11.polygonlayer.0001, tM12.polygonlayer.0001, tM13.polygonlayer.0001, tM2.polygonlayer.0001, tM3.polygonlayer.0001, tM4.polygonlayer.0001, tM5.polygonlayer.0001, tM6.polygonlayer.0001, tM7.polygonlayer.0001, tM8.polygonlayer.0001, tM9.polygonlayer.0001, tRDL.polygonlayer.0001, tBPR.textlayer.0005.TEXT, tM0A.textlayer.0005.TEXT, tM0B.textlayer.0005.TEXT, tM1.textlayer.0005.TEXT, tM10.textlayer.0005.TEXT, tM11.textlayer.0005.TEXT, tM12.textlayer.0005.TEXT, tM13.textlayer.0005.TEXT, tM2.textlayer.0005.TEXT, tM3.textlayer.0005.TEXT, tM4.textlayer.0005.TEXT, tM5.textlayer.0005.TEXT, tM6.textlayer.0005.TEXT, tM7.textlayer.0005.TEXT, tM8.textlayer.0005.TEXT, tM9.textlayer.0005.TEXT, tRDL.textlayer.0005.TEXT
+    connect_by_name = MERGE_CONNECTED_AND_TOP 
+     Delta tagmap flow! 
+     By layer threading on! 
+  Connect DB: Cached
+  ## Texting 17 pairs, skipping 0 pair, doing opens.
+Input layer "tM0A.polygonlayer.0001" is empty.
+Input layer "tM0B.polygonlayer.0001" is empty.
+Input layer "aM10.polygonlayer.0003" is empty.
+Input layer "aM11.polygonlayer.0003" is empty.
+Input layer "aM12.polygonlayer.0003" is empty.
+Input layer "aM13.polygonlayer.0003" is empty.
+Input layer "aM2.polygonlayer.0003" is empty.
+Input layer "aM3.polygonlayer.0003" is empty.
+Input layer "aM4.polygonlayer.0003" is empty.
+Input layer "aM5.polygonlayer.0003" is empty.
+Input layer "aM6.polygonlayer.0003" is empty.
+Input layer "aM7.polygonlayer.0003" is empty.
+Input layer "aM8.polygonlayer.0003" is empty.
+Input layer "aM9.polygonlayer.0003" is empty.
+Input layer "aRDL.polygonlayer.0003" is empty.
+     process all text_pairs Time=0:00:00  User=0.00 Sys=0.00 Mem=0.022 GB
+
+   Check Time=0:00:00  User=0.00 Sys=0.01 Mem=0.036 GB
+
+text_net() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:350
+CONNECT_DB = text_net(CONNECT_DB, text_net_items, use_text = TOP, attach_text = ALL, opens = MERGE_CONNECTED_AND_TOP, merge_open_net_names = merge_open_net_names_items, rename_open_nets = KEEP_ONE)
+  Text Open Merge Comment: "Violation"
+  Text Open Rename Comment: "Violation"
+  Text Open Merge Short Comment: "Violation"
+  Text Open Merge Reassign Short Comment: "Violation"
+  Function: text_net
+  Inputs: CONNECT_DB.connect_database.0002
+  Outputs: CONNECT_DB.connect_database.0003
+    connect_by_name = MERGE_CONNECTED_AND_TOP 
+  Connect DB: Cached
+Completed opens check. Now merging/renaming nets based on text.
+    0 merged net.
+    0 net is renamed.
+    Process all opens Time=0:00:00  User=0.00 Sys=0.00 Mem=0.020 GB
+
+  Do connect database alias except text_info
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.035 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage FILTER_RECOG for nmos nmos ...
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+
+soft_connect() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:400
+CONNECT_DB = soft_connect(CONNECT_DB, soft_connect_layers, conflict_resolution = TRAPEZOID_COUNT)
+  Function: soft_connect
+  Inputs: CONNECT_DB.connect_database.0003
+  Outputs: CONNECT_DB.connect_database.0004
+  Inputs: CONNECT_DB.polygonlayer.0225, CONNECT_DB.polygonlayer.0181, CONNECT_DB.polygonlayer.0223
+#max block size is set as 8388608, prev_max_block_size is = 1048576
+  Connect DB: Loaded
+Layer "CONNECT_DB.polygonlayer.0223" is empty.
+Layer "CONNECT_DB.polygonlayer.0225" is empty.
+Layer "gVNW.polygonlayer.0001" is empty.
+Layer "CONNECT_DB.polygonlayer.0224" is empty.
+    Setup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.028 GB
+    Small Cell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.028 GB
+    Large Cell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.028 GB
+   Check Time=0:00:00  User=0.01 Sys=0.00 Mem=0.034 GB
+
+soft_connect() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:400
+CONNECT_DB = soft_connect(CONNECT_DB, soft_connect_layers, conflict_resolution = TRAPEZOID_COUNT)
+  Comment: "Violation"
+  Function: soft_connect
+  Inputs: CONNECT_DB.polygonlayer.0147, CONNECT_DB.polygonlayer.0134, gVPW.polygonlayer.0001, CONNECT_DB.polygonlayer.0180, CONNECT_DB.polygonlayer.0220
+  Outputs: CONNECT_DB.polygonlayer.0157, CONNECT_DB.polygonlayer.0156, CONNECT_DB.polygonlayer.0158
+Input layer "CONNECT_DB.polygonlayer.0134" is empty.
+Input layer "gVPW.polygonlayer.0001" is empty.
+Input layer "CONNECT_DB.polygonlayer.0220" is empty.
+No output written.
+Layer "CONNECT_DB.polygonlayer.0156" is empty.
+No output written.
+Layer "CONNECT_DB.polygonlayer.0158" is empty.
+No output written.
+Layer "CONNECT_DB.polygonlayer.0157" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+
+soft_connect() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:400
+CONNECT_DB = soft_connect(CONNECT_DB, soft_connect_layers, conflict_resolution = TRAPEZOID_COUNT)
+  Function: soft_connect
+  Inputs: CONNECT_DB.connect_database.0003
+  Outputs: CONNECT_DB.connect_database.0007
+  Inputs: CONNECT_DB.polygonlayer.0123, CONNECT_DB.polygonlayer.0120
+#max block size is set as 8388608, prev_max_block_size is = 1048576
+  Connect DB: Loaded
+    Setup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.030 GB
+    Small Cell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.031 GB
+    Large Cell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.030 GB
+   Check Time=0:00:00  User=0.00 Sys=0.01 Mem=0.036 GB
+
+soft_connect() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:400
+CONNECT_DB = soft_connect(CONNECT_DB, soft_connect_layers, conflict_resolution = TRAPEZOID_COUNT)
+  Comment: "Violation"
+  Function: soft_connect
+  Inputs: CONNECT_DB.polygonlayer.0149, CONNECT_DB.polygonlayer.0127, aM0A.polygonlayer.0004, CONNECT_DB.polygonlayer.0179, .handle.0002
+  Outputs: CONNECT_DB.polygonlayer.0161, CONNECT_DB.polygonlayer.0160, CONNECT_DB.polygonlayer.0162
+  Connect DB: Loaded
+8 unique polygons written.
+No output written.
+Layer "CONNECT_DB.polygonlayer.0162" is empty.
+No output written.
+Layer "CONNECT_DB.polygonlayer.0161" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.036 GB
+
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.028 GB
+
+soft_connect() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:400
+CONNECT_DB = soft_connect(CONNECT_DB, soft_connect_layers, conflict_resolution = TRAPEZOID_COUNT)
+  Function: soft_connect
+  Inputs: CONNECT_DB.polygonlayer.0164, aM0A.polygonlayer.0004
+  Outputs: CONNECT_DB.polygonlayer.0167
+    Pulldown Reduce Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+7 unique polygons written.
+    Pulldown Cleanup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+Pulled 0 polygons
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage PULLDOWN_RECOG for nmos nmos ...
+2 unique polygons written.
+    Pulldown Reduce Time=0:00:00  User=0.00 Sys=0.00 Mem=0.015 GB
+    Pulldown Cleanup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.014 GB
+Pulled 0 polygons
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.015 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage LEVEL_RECOG for nmos nmos ...
+2 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.014 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage LEVEL_BODY_TO_REF for nmos nmos ...
+10 unique polygons written.
+Input layer "device_db.polygonlayer.0001" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage LEVEL_BODY for nmos nmos ...
+10 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.014 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage PULLDOWN_TERMINAL for nmos nmos ...
+7 unique polygons written.
+    Pulldown Reduce Time=0:00:00  User=0.00 Sys=0.00 Mem=0.014 GB
+    Pulldown Cleanup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.014 GB
+Pulled 0 polygons
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.014 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage LEVEL_TERMINAL for nmos nmos ...
+7 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage PULLDOWN_DFM for nmos nmos ...
+    Pulldown Reduce Time=0:00:00  User=0.00 Sys=0.00 Mem=0.014 GB
+    Pulldown Cleanup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.013 GB
+Pulled 0 polygons
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.014 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage SELECT_DFM_WINDOW for nmos nmos ...
+2 unique polygons written.
+9 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+9 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.016 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage SELECT_DFM for nmos nmos ...
+Copy attachments from the original one ...
+9 unique polygons written.
+9 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.012 GB
+
+soft_connect() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:400
+CONNECT_DB = soft_connect(CONNECT_DB, soft_connect_layers, conflict_resolution = TRAPEZOID_COUNT)
+  Function: soft_connect
+  Inputs: CONNECT_DB.connect_database.0008
+  Outputs: CONNECT_DB.connect_database.0009
+#max block size is set as 8388608, prev_max_block_size is = 1048576
+  Connect DB: Loaded
+Layer "CONNECT_DB.polygonlayer.0155" is empty.
+Layer "CONNECT_DB.polygonlayer.0159" is empty.
+    Setup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.039 GB
+    Small Cell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.042 GB
+    Large Cell Time=0:00:00  User=0.00 Sys=0.00 Mem=0.041 GB
+   Check Time=0:00:00  User=0.00 Sys=0.01 Mem=0.053 GB
+
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.031 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage OPTIMIZE_BULKS for pmos pmos ...
+10 unique polygons written.
+7 unique polygons written.
+Input layer "gPFINS.polygonlayer.0004" is empty.
+No output written.
+Layer "gPFINS.polygonlayer.0006_temp" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.015 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+No output written.
+Layer "gPFINS.polygonlayer.0021" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.015 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage PULLDOWN_BODY for pmos pmos ...
+10 unique polygons written.
+Input layer "device_db.polygonlayer.0003" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.015 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage FILTER_RECOG for pmos pmos ...
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.015 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage PULLDOWN_RECOG for pmos pmos ...
+4 unique polygons written.
+    Pulldown Reduce Time=0:00:00  User=0.00 Sys=0.00 Mem=0.017 GB
+    Pulldown Cleanup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.016 GB
+Pulled 0 polygons
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.017 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage LEVEL_RECOG for pmos pmos ...
+4 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.016 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage LEVEL_BODY_TO_REF for pmos pmos ...
+10 unique polygons written.
+Input layer "device_db.polygonlayer.0003" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.015 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage LEVEL_BODY for pmos pmos ...
+10 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.016 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage PULLDOWN_TERMINAL for pmos pmos ...
+7 unique polygons written.
+    Pulldown Reduce Time=0:00:00  User=0.00 Sys=0.00 Mem=0.017 GB
+    Pulldown Cleanup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.016 GB
+Pulled 0 polygons
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.017 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage LEVEL_TERMINAL for pmos pmos ...
+7 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.015 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage PULLDOWN_DFM for pmos pmos ...
+    Pulldown Reduce Time=0:00:00  User=0.00 Sys=0.00 Mem=0.016 GB
+    Pulldown Cleanup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.015 GB
+Pulled 0 polygons
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.016 GB
+
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.015 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage LEVEL_BODY_TO_TERMINALS for pmos pmos ...
+4 unique polygons written.
+Input layer "gPFINS.polygonlayer.0021" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.016 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Merging device layers ...
+6 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.015 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Selecting preprocessed polygons ...
+6 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.024 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage LEVEL_BODY_TO_RECOG for pmos pmos ...
+8 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.016 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Preprocessing stage REPLACE_BULKS_WITH_BODY for pmos pmos ...
+8 unique polygons written.
+5 unique polygons written.
+Input layer "gPFINS.polygonlayer.0022" is empty.
+No output written.
+Layer "gPFINS.polygonlayer.0016_temp" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.015 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Merging device layers ...
+12 unique polygons written.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.016 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Selecting preprocessed polygons ...
+No output written.
+Layer "gPFINS.polygonlayer.0018" is empty.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.024 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+Creating netlisting connect database ...
+  Connect DB: Loaded
+   Check Time=0:00:00  User=0.01 Sys=0.00 Mem=0.047 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+  Function: extract_devices
+Extracting stage for nmos nmos gPOLY.polygonlayer.0010 ...
+  Function: nmos
+  Inputs: gPOLY.polygonlayer.0020, gNFINS.polygonlayer.0019, gNFINS.polygonlayer.0019, temp.polygonlayer.0010, gPOLY.polygonlayer.0010, aDUMMY.polygonlayer.0009
+nmos(dev_matrix, "nmos", gNFINS, gPOLY, gNFINS, recognition_layer = (interacting(gNGATE1, gPWELL)), processing_layer_hash = {"DUMMY"=>{aDUMMY, 0.050}}, properties = {{"W"}, {"L"}, {"NFIN"}, {"ADEO"}, {"ASEO"}, {"PDEO"}, {"PSEO"}}, property_function = dev_func_MY_FET_PROPERTIES, bulk_relationship = INTERACT, simulation_model_name = "nmos")
+  Connect DB: Loaded
+body trap count = 4
+  dfm 0 trap count = 2
+Extracted 4 unique 3-terminal "nmos" devices.
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.040 GB
+
+Inializing VUE info.
+Input layer "aM4.polygonlayer.0003" is empty.
+Input layer "aM10.polygonlayer.0003" is empty.
+Input layer "gVPW.polygonlayer.0001" is empty.
+Input layer "CONNECT_DB.polygonlayer.0198" is empty.
+Input layer "aRDL.polygonlayer.0003" is empty.
+Input layer "CONNECT_DB.polygonlayer.0206" is empty.
+Input layer "aV12.polygonlayer.0003" is empty.
+Input layer "aM13.polygonlayer.0003" is empty.
+Input layer "aV3.polygonlayer.0003" is empty.
+Input layer "CONNECT_DB.polygonlayer.0159" is empty.
+Input layer "CONNECT_DB.polygonlayer.0195" is empty.
+Input layer "aVRDL.polygonlayer.0003" is empty.
+Input layer "CONNECT_DB.polygonlayer.0203" is empty.
+Input layer "aV2.polygonlayer.0003" is empty.
+Input layer "aV4.polygonlayer.0003" is empty.
+Input layer "aM6.polygonlayer.0003" is empty.
+Input layer "gVNW.polygonlayer.0001" is empty.
+Input layer "aM3.polygonlayer.0003" is empty.
+Input layer "aV6.polygonlayer.0003" is empty.
+Input layer "CONNECT_DB.polygonlayer.0196" is empty.
+Input layer "aV5.polygonlayer.0003" is empty.
+Input layer "aM8.polygonlayer.0003" is empty.
+Input layer "CONNECT_DB.polygonlayer.0200" is empty.
+Input layer "aM7.polygonlayer.0003" is empty.
+Input layer "CONNECT_DB.polygonlayer.0155" is empty.
+Input layer "aM2.polygonlayer.0003" is empty.
+Input layer "aV11.polygonlayer.0003" is empty.
+Input layer "aM11.polygonlayer.0003" is empty.
+Input layer "CONNECT_DB.polygonlayer.0221" is empty.
+Input layer "CONNECT_DB.polygonlayer.0199" is empty.
+Input layer "CONNECT_DB.polygonlayer.0224" is empty.
+Input layer "aM5.polygonlayer.0003" is empty.
+Input layer "CONNECT_DB.polygonlayer.0190" is empty.
+Input layer "aV7.polygonlayer.0003" is empty.
+Input layer "gPFINS.polygonlayer.0018" is empty.
+Input layer "CONNECT_DB.polygonlayer.0201" is empty.
+Input layer "CONNECT_DB.polygonlayer.0197" is empty.
+Input layer "aM9.polygonlayer.0003" is empty.
+Input layer "aV8.polygonlayer.0003" is empty.
+Input layer "CONNECT_DB.polygonlayer.0202" is empty.
+Input layer "aV10.polygonlayer.0003" is empty.
+Input layer "aV1.polygonlayer.0003" is empty.
+Input layer "CONNECT_DB.polygonlayer.0204" is empty.
+Input layer "aM12.polygonlayer.0003" is empty.
+Input layer "aV9.polygonlayer.0003" is empty.
+Input layer "CONNECT_DB.polygonlayer.0205" is empty.
+Running with dp_host_count = 1 --> 1
+worker_id=0, layerno=26, dtype=0, fsize=562, poly_count=14, trap_count=14
+worker_id=0, layerno=1, dtype=0, fsize=519, poly_count=14, trap_count=14
+worker_id=0, layerno=4, dtype=0, fsize=520, poly_count=13, trap_count=13
+worker_id=0, layerno=7, dtype=0, fsize=493, poly_count=7, trap_count=7
+worker_id=0, layerno=8, dtype=0, fsize=493, poly_count=7, trap_count=7
+worker_id=0, layerno=24, dtype=0, fsize=487, poly_count=6, trap_count=6
+worker_id=0, layerno=5, dtype=0, fsize=484, poly_count=7, trap_count=7
+worker_id=0, layerno=49, dtype=0, fsize=480, poly_count=7, trap_count=7
+worker_id=0, layerno=38, dtype=0, fsize=473, poly_count=10, trap_count=10
+worker_id=0, layerno=37, dtype=0, fsize=475, poly_count=6, trap_count=8
+worker_id=0, layerno=27, dtype=0, fsize=460, poly_count=8, trap_count=8
+worker_id=0, layerno=25, dtype=0, fsize=460, poly_count=8, trap_count=8
+worker_id=0, layerno=39, dtype=0, fsize=467, poly_count=4, trap_count=4
+worker_id=0, layerno=6, dtype=0, fsize=457, poly_count=7, trap_count=7
+worker_id=0, layerno=2, dtype=0, fsize=455, poly_count=8, trap_count=8
+worker_id=0, layerno=33, dtype=0, fsize=455, poly_count=8, trap_count=8
+worker_id=0, layerno=41, dtype=0, fsize=455, poly_count=8, trap_count=8
+worker_id=0, layerno=70, dtype=0, fsize=453, poly_count=4, trap_count=4
+worker_id=0, layerno=43, dtype=0, fsize=445, poly_count=4, trap_count=4
+worker_id=0, layerno=17, dtype=0, fsize=437, poly_count=4, trap_count=4
+worker_id=0, layerno=68, dtype=0, fsize=440, poly_count=2, trap_count=2
+worker_id=0, layerno=31, dtype=0, fsize=431, poly_count=4, trap_count=4
+worker_id=0, layerno=3, dtype=0, fsize=404, poly_count=6, trap_count=6
+worker_id=0, layerno=62, dtype=0, fsize=391, poly_count=4, trap_count=4
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.015 GB
+
+extract_devices() at /mnt/designkits/ncsu/FreePDK3/icv/FreePDK3_main.lvs.rs:422
+device_db = extract_devices(dev_matrix)
+Input layer "aM4.polygonlayer.0003" is empty.
+Input layer "aM10.polygonlayer.0003" is empty.
+Input layer "gVPW.polygonlayer.0001" is empty.
+Input layer "CONNECT_DB.polygonlayer.0198" is empty.
+Input layer "aRDL.polygonlayer.0003" is empty.
+Input layer "CONNECT_DB.polygonlayer.0206" is empty.
+Input layer "aV12.polygonlayer.0003" is empty.
+Input layer "aM13.polygonlayer.0003" is empty.
+Input layer "aV3.polygonlayer.0003" is empty.
+Input layer "CONNECT_DB.polygonlayer.0159" is empty.
+Input layer "CONNECT_DB.polygonlayer.0195" is empty.
+Input layer "aVRDL.polygonlayer.0003" is empty.
+Input layer "CONNECT_DB.polygonlayer.0203" is empty.
+Input layer "aV2.polygonlayer.0003" is empty.
+Input layer "aV4.polygonlayer.0003" is empty.
+Input layer "aM6.polygonlayer.0003" is empty.
+Input layer "gVNW.polygonlayer.0001" is empty.
+Input layer "aM3.polygonlayer.0003" is empty.
+Input layer "aV6.polygonlayer.0003" is empty.
+Input layer "CONNECT_DB.polygonlayer.0196" is empty.
+Input layer "aV5.polygonlayer.0003" is empty.
+Input layer "aM8.polygonlayer.0003" is empty.
+Input layer "CONNECT_DB.polygonlayer.0200" is empty.
+Input layer "aM7.polygonlayer.0003" is empty.
+Input layer "CONNECT_DB.polygonlayer.0155" is empty.
+Input layer "aM2.polygonlayer.0003" is empty.
+Input layer "aV11.polygonlayer.0003" is empty.
+Input layer "aM11.polygonlayer.0003" is empty.
+Input layer "CONNECT_DB.polygonlayer.0221" is empty.
+Input layer "CONNECT_DB.polygonlayer.0199" is empty.
+Input layer "CONNECT_DB.polygonlayer.0224" is empty.
+Input layer "aM5.polygonlayer.0003" is empty.
+Input layer "CONNECT_DB.polygonlayer.0190" is empty.
+Input layer "aV7.polygonlayer.0003" is empty.
+Input layer "gPFINS.polygonlayer.0018" is empty.
+Input layer "CONNECT_DB.polygonlayer.0201" is empty.
+Input layer "CONNECT_DB.polygonlayer.0197" is empty.
+Input layer "aM9.polygonlayer.0003" is empty.
+Input layer "aV8.polygonlayer.0003" is empty.
+Input layer "CONNECT_DB.polygonlayer.0202" is empty.
+Input layer "aV10.polygonlayer.0003" is empty.
+Input layer "aV1.polygonlayer.0003" is empty.
+Input layer "CONNECT_DB.polygonlayer.0204" is empty.
+Input layer "aM12.polygonlayer.0003" is empty.
+Input layer "aV9.polygonlayer.0003" is empty.
+Input layer "CONNECT_DB.polygonlayer.0205" is empty.
+Writing VUE info. (greenarrow.ece.ncsu.edu: 0 --> 0)
+  Connect DB: Loaded
+Normal flow: Use inlib resolution as output resolution. working resolution =0.000250, inlib_resolution = 0.000500
+.Creating VUE info directory.
+Running with cell_thread_count = 8, region_thread_count = 8
+   Check Time=0:00:12  User=0.01 Sys=0.23 Mem=0.040 GB
+
+   Check Time=0:00:00  User=0.00 Sys=0.00 Mem=0.032 GB
+
+Reading error hierarchy error._hier.0001 ...
+ Elapsed Time=0:00:00  User=0.00 Sys=0.00 Mem=0.015 GB
+
+  File Cleanup Time=0:00:00  User=0.00 Sys=0.00 Mem=0.015 GB
+

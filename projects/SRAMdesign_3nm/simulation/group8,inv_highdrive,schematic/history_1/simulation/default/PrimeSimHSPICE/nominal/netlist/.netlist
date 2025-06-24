@@ -1,0 +1,18 @@
+*PrimeWave Design Environment Based on Custom Infrastructure
+*Version W-2024.09-SP1-2
+*Thu Apr  3 11:42:39 2025
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : group8
+* Cell             : inv_highdrive
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+m4 net9 in vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m0 out net9 vdd! pfet nfin=16 adeo=4.536e-15 aseo=4.536e-15 pdeo=9.36e-07 pseo=9.36e-07
+m5 net9 in gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+m1 out net9 gnd! nfet nfin=8 adeo=2.268e-15 aseo=2.268e-15 pdeo=4.68e-07 pseo=4.68e-07
+v8 in gnd! dc=0 pulse ( 0.8 0 10p 5p 5p 45p 100p )
+

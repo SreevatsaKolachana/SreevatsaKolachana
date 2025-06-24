@@ -1,0 +1,103 @@
+*  Generated for: PrimeSim
+*  Design library name: group8
+*  Design cell name: static_row_decoder_3by8
+*  Design view name: schematic
+.option search='/mnt/designkits/ncsu/FreePDK3/hspice/models'
+
+.param VDD_VAL=0.8
+.option PARHIER = LOCAL
+.option PORT_VOLTAGE_SCALE_TO_2X = 1
+.option S_ELEM_CACHE_DIR = "/mnt/ncsudrive/s/svkolach/.synopsys_custom/sparam_dir"
+.option PVA_OUTPUT_DIR = "/mnt/ncsudrive/s/svkolach/.synopsys_custom/pva_dir"
+
+.option WDF=1
+.temp 25
+.lib 'fet.mod' nfet_typ
+.lib 'fet.mod' pfet_typ
+
+*PrimeWave Design Environment Based on Custom Infrastructure
+*Version W-2024.09-SP1-2
+*Thu Mar 27 18:51:42 2025
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : group8
+* Cell             : nand_i3
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt nand_i3 a b c out
+m4 out a net8 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+m3 net8 b net5 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m2 net5 c gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m7 out c vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m6 out b vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m5 out a vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+.ends nand_i3
+
+********************************************************************************
+* Library          : group8
+* Cell             : inv
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt inv in out
+m0 out in vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m1 out in gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+.ends inv
+
+********************************************************************************
+* Library          : group8
+* Cell             : static_row_decoder_3by8
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi52 a2 net66 net67 net61 nand_i3
+xi53 a2 net66 a0 net62 nand_i3
+xi54 a2 a1 net67 net63 nand_i3
+xi55 a2 a1 a0 net64 nand_i3
+xi39 net80 a1 a0 net68 nand_i3
+xi38 a1 a1 net67 net60 nand_i3
+xi37 net80 net66 a0 net59 nand_i3
+xi36 net80 net66 net67 net58 nand_i3
+xi18 a0 net67 inv
+xi17 a1 net66 inv
+xi16 a2 net80 inv
+xi44 net58 y0 inv
+xi45 net59 y1 inv
+xi46 net60 y2 inv
+xi51 net64 y7 inv
+xi50 net63 y6 inv
+xi49 net62 y5 inv
+xi48 net61 y4 inv
+xi47 net68 y3 inv
+v58 a0 gnd! dc=0 pulse ( 'VDD_VAL' 0 0 5p 5p 20p 50p )
+v57 a1 gnd! dc=0 pulse ( 'VDD_VAL' 0 0 5p 5p 45p 100p )
+v56 a2 gnd! dc=0 pulse ( 'VDD_VAL' 0 0 5p 5p 95p 200p )
+v63 vdd! gnd! dc='VDD_VAL'
+
+
+
+
+
+
+
+
+
+.tran 0.1p 200p start=0
+.option opfile=1 split_dp=1
+.option probe=1
+.probe tran v(*) level=1
+.probe tran v(a0) v(a1) v(a2) v(y0) v(y1) v(y2) v(y3) v(y4) v(y5) v(y6) v(y7)
+
+
+
+
+
+
+
+
+.end

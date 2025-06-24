@@ -1,0 +1,210 @@
+* Description of frequently used terms in hierarchy_analysis files*
+M indicates that the value of that column is in millions
+Hier Plc Count(Hierarchical Placement Count) : Number of unique instances of the cell in another cell (Parent)
+Flat Plc Count(Flat Placement Count)         : Total number of instances of the cell in the layout
+
+Example : 
+                               A                     
+                              / \                   Cell  Hier Plc Count Flat Plc Count 
+                             /   \                     A               1              1 
+                            B     B                    B               2              2 
+                           / \  /  \                   C               2              4 
+                          C   C C   C                
+------------------------------------------------------------------------------------------------------ 
+
+
+* Cells with flat area > 0.01 of top cell *
+Reports cells with flat area > 0.01 of top cell
+
+Flat A(Flat Area) : Total area covered by this cell in the layout(cell area * flat placement count)
+Cell A(Cell Area) : Area of this cell
+Percent of top    : Percentage of area of this cell w.r.t area of top cell
+This table contains 18 entries
+Original table contains 18 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Flat Plc Count, Hier Plc Count, Percent of top
+-----------------------------------------------
+ integration                                   |         0.000,         0.000,              1,              1,       100.00 %
+ sram_filler                                   |         0.000,         0.000,            434,            417,        40.29 %
+ sram_6t                                       |         0.000,         0.000,            128,            128,        29.15 %
+ Filler                                        |         0.000,         0.000,            174,            174,        16.15 %
+ inv                                           |         0.000,         0.000,            120,             32,        15.36 %
+ 2to4_decoder_static                           |         0.000,         0.000,              4,              4,        15.16 %
+ bitcell_precharge_filler                      |         0.000,         0.000,            128,            128,        13.72 %
+ invx4                                         |         0.000,         0.000,             45,             17,         8.92 %
+ nand                                          |         0.000,         0.000,             50,             33,         8.16 %
+ buffer                                        |         0.000,         0.000,             30,             24,         7.00 %
+ nor                                           |         0.000,         0.000,             34,             22,         5.55 %
+ Write_Driver                                  |         0.000,         0.000,              4,              4,         4.68 %
+ buffer_highdrive                              |         0.000,         0.000,             12,              9,         4.49 %
+ 2to4_decoder_static_filler_17                 |         0.000,         0.000,             32,             32,         2.96 %
+ precharge_logic                               |         0.000,         0.000,             16,             16,         2.60 %
+ tspc_pos_ff                                   |         0.000,         0.000,              4,              4,         2.16 %
+ read_circuit                                  |         0.000,         0.000,              4,              4,         1.78 %
+ Demux                                         |         0.000,         0.000,              2,              2,         1.34 %
+===============================================
+
+* Large-Area cells and child area ratio *
+This table reports cells with large areas and ratio of its area with total area covered by its children
+
+Num Inst(Number of instances) : Total Number of instances of the cell
+Child A(Child Area)           : Total area covered by all the children of the cell
+Pct of parent(Percent of area): Percentage of total area covered by its childern w.r.t area of this cell
+This table contains 18 entries
+Original table contains 18 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Num Inst (M), Child A (mm^2), Pct of parent
+-----------------------------------------------
+ integration                                   |         0.000,         0.000,        0.001,         0.000,      147.94 %
+ sram_filler                                   |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ sram_6t                                       |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ Filler                                        |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ inv                                           |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ 2to4_decoder_static                           |         0.000,         0.000,        0.000,         0.000,       61.45 %
+ bitcell_precharge_filler                      |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ invx4                                         |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ nand                                          |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ buffer                                        |         0.000,         0.000,        0.000,         0.000,      109.68 %
+ nor                                           |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ Write_Driver                                  |         0.000,         0.000,        0.000,         0.000,      128.47 %
+ buffer_highdrive                              |         0.000,         0.000,        0.000,         0.000,      106.04 %
+ 2to4_decoder_static_filler_17                 |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ precharge_logic                               |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ tspc_pos_ff                                   |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ read_circuit                                  |         0.000,         0.000,        0.000,         0.000,      110.17 %
+ Demux                                         |         0.000,         0.000,        0.000,         0.000,      134.12 %
+===============================================
+
+* Exploded Cell Information *
+Displays information of exploded cells
+
+Parent cell           : Name of the parent cell the cell has exploded into
+Exploded Inst Count   : Total number of instances of the cell that has expldoed to the parent cell
+Parent Flat Plc Count : Parent cell flat placement count
+Parent Hier Plc Count : Parent cell hierarchical placement count
+This table contains 78 entries
+Original table contains 78 entries
+
+ Exploded Cell                                 | Parent Cell                                   | Exploded Inst Count, Parent Flat Plc Count, Parent Hier Plc Count
+----------------------------------------------- -----------------------------------------------
+ M1_M2                                         | integration                                   |                 340,                     1,                     1
+ M2_M3                                         | integration                                   |                 273,                     1,                     1
+ M0B_M1                                        | integration                                   |                 235,                     1,                     1
+ M0A_M0B                                       | integration                                   |                 160,                     1,                     1
+ M3_M4                                         | integration                                   |                  70,                     1,                     1
+ M4_M5                                         | integration                                   |                  32,                     1,                     1
+ BPR_M0A                                       | integration                                   |                  32,                     1,                     1
+ pmos                                          | 2to4_decoder_static                           |                  32,                     4,                     4
+ nmos                                          | 2to4_decoder_static                           |                  32,                     4,                     4
+ M0A_M0B                                       | 2to4_decoder_static                           |                  20,                     4,                     4
+ GATE_M0B                                      | 2to4_decoder_static                           |                  16,                     4,                     4
+ M0B_M1                                        | 2to4_decoder_static                           |                  16,                     4,                     4
+ M1_M2                                         | 2to4_decoder_static                           |                  16,                     4,                     4
+ M0B_M1                                        | tspc_pos_ff                                   |                  11,                     4,                     4
+ GATE_M0B                                      | tspc_pos_ff                                   |                   9,                     4,                     4
+ pmos                                          | tspc_pos_ff                                   |                   8,                     4,                     4
+ nmos                                          | tspc_pos_ff                                   |                   8,                     4,                     4
+ M0A_M0B                                       | tspc_pos_ff                                   |                   8,                     4,                     4
+ M0B_M1                                        | sram_6t                                       |                   8,                   128,                   128
+ BPR_M0A                                       | invx4                                         |                   6,                    45,                    17
+ M0B_M1                                        | invx4                                         |                   6,                    45,                    17
+ BPR_M0A                                       | tspc_pos_ff                                   |                   5,                     4,                     4
+ M0B_M1                                        | nand                                          |                   4,                    50,                    33
+ nmos                                          | sram_6t                                       |                   4,                   128,                   128
+ pmos                                          | sram_6t                                       |                   4,                   128,                   128
+ GATE_M0B                                      | sram_6t                                       |                   4,                   128,                   128
+ M0A_M0B                                       | sram_6t                                       |                   4,                   128,                   128
+ BPR_M0A                                       | sram_6t                                       |                   4,                   128,                   128
+ M0A_M0B                                       | nor                                           |                   4,                    34,                    22
+ nmos                                          | invx4                                         |                   4,                    45,                    17
+ pmos                                          | invx4                                         |                   4,                    45,                    17
+ GATE_M0B                                      | invx4                                         |                   4,                    45,                    17
+ M1_M2                                         | Write_Driver                                  |                   3,                     4,                     4
+ pmos                                          | nand                                          |                   3,                    50,                    33
+ BPR_M0A                                       | nand                                          |                   3,                    50,                    33
+ BPR_M0A                                       | inv                                           |                   3,                   120,                    32
+ M0B_M1                                        | inv                                           |                   3,                   120,                    32
+ pmos                                          | precharge_logic                               |                   3,                    16,                    16
+ nmos                                          | precharge_logic                               |                   3,                    16,                    16
+ GATE_M0B                                      | precharge_logic                               |                   3,                    16,                    16
+ M1_M2                                         | sram_6t                                       |                   3,                   128,                   128
+ nmos                                          | nor                                           |                   3,                    34,                    22
+ pmos                                          | nor                                           |                   3,                    34,                    22
+ BPR_M0A                                       | nor                                           |                   3,                    34,                    22
+ M0B_M1                                        | nor                                           |                   3,                    34,                    22
+ BPR_M0A                                       | sram_filler                                   |                   2,                   434,                   417
+ M1_M2                                         | tspc_pos_ff                                   |                   2,                     4,                     4
+ M2_M3                                         | tspc_pos_ff                                   |                   2,                     4,                     4
+ nmos                                          | nand                                          |                   2,                    50,                    33
+ M0A_M0B                                       | nand                                          |                   2,                    50,                    33
+ GATE_M0B                                      | nand                                          |                   2,                    50,                    33
+ nmos                                          | inv                                           |                   2,                   120,                    32
+ pmos                                          | inv                                           |                   2,                   120,                    32
+ GATE_M0B                                      | inv                                           |                   2,                   120,                    32
+ BPR_M0A                                       | 2to4_decoder_static_filler_17                 |                   2,                    32,                    32
+ BPR_M0A                                       | precharge_logic                               |                   2,                    16,                    16
+ M0A_M0B                                       | precharge_logic                               |                   2,                    16,                    16
+ M0B_M1                                        | precharge_logic                               |                   2,                    16,                    16
+ M1_M2                                         | precharge_logic                               |                   2,                    16,                    16
+ M2_M3                                         | precharge_logic                               |                   2,                    16,                    16
+ M2_M3                                         | sram_6t                                       |                   2,                   128,                   128
+ GATE_M0B                                      | nor                                           |                   2,                    34,                    22
+ M0A_M0B                                       | invx4                                         |                   2,                    45,                    17
+ M1_M2                                         | Demux                                         |                   2,                     2,                     2
+ M2_M3                                         | Demux                                         |                   2,                     2,                     2
+ memory_array_with_precharge                   | integration                                   |                   1,                     1,                     1
+ static_row_decoder_3by8                       | integration                                   |                   1,                     1,                     1
+ buffer_highdrive_vertical                     | integration                                   |                   1,                     1,                     1
+ WLRef_PC                                      | integration                                   |                   1,                     1,                     1
+ agen_unit                                     | integration                                   |                   1,                     1,                     1
+ between_blocks                                | integration                                   |                   1,                     1,                     1
+ nmos                                          | sram_filler                                   |                   1,                   434,                   417
+ pmos                                          | sram_filler                                   |                   1,                   434,                   417
+ M0A_M0B                                       | inv                                           |                   1,                   120,                    32
+ pmos                                          | 2to4_decoder_static_filler_17                 |                   1,                    32,                    32
+ nmos                                          | 2to4_decoder_static_filler_17                 |                   1,                    32,                    32
+ nmos                                          | Filler                                        |                   1,                   174,                   174
+ pmos                                          | Filler                                        |                   1,                   174,                   174
+=============================================== ===============================================
+
+* Layer Report with Estimated Data *
+Reports information of layers present in the layout
+
+Trap        : Number of hierarchical trapezoids in the layer
+Poly        : Number of hierarchical polygons in the layer
+Text        : Number of hierarchical text primitives in the layer
+Flat Trap   : Number of flat trapezoids 
+Flat Poly   : Number of flat polygons
+Flat Text   : Number of flat text primitives 
+Trap F/H    : Ratio of flat and hierarchical placements of the trapezoids
+Base, Metal, Via, Fill, Colored : Indicates layer intent
+This table contains 23 entries
+Original table contains 23 entries
+
+ Name                                          | Trap (M), Poly (M), Text (M), Flat Trap (M), Flat Poly (M), Flat Text (M), Trap F/H, Base, Metal, Via, Fill, Colored
+-----------------------------------------------
+ aM1                                           |    0.001,    0.001,    0.000,         0.005,         0.005,         0.000,     4.82,    0,     0,   0,    0,       0
+ aM2                                           |    0.001,    0.001,    0.000,         0.002,         0.002,         0.000,     2.20,    0,     0,   0,    0,       0
+ aM0A                                          |    0.001,    0.001,    0.000,         0.013,         0.013,         0.000,    17.08,    0,     0,   0,    0,       0
+ aM0B                                          |    0.001,    0.001,    0.000,         0.006,         0.006,         0.000,    10.07,    0,     0,   0,    0,       0
+ aGATE                                         |    0.001,    0.001,    0.000,         0.018,         0.018,         0.000,    32.55,    0,     0,   0,    0,       0
+ aM3                                           |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,     2.78,    0,     0,   0,    0,       0
+ aV1                                           |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,     2.29,    0,     0,   0,    0,       0
+ aV0B                                          |    0.000,    0.000,    0.000,         0.002,         0.002,         0.000,     8.09,    0,     0,   0,    0,       0
+ aV2                                           |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,     2.04,    0,     0,   0,    0,       0
+ aV0A                                          |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,     6.22,    0,     0,   0,    0,       0
+ aDUMMY                                        |    0.000,    0.000,    0.000,         0.004,         0.004,         0.000,    24.28,    0,     0,   0,    0,       0
+ aACT                                          |    0.000,    0.000,    0.000,         0.005,         0.005,         0.000,    31.71,    0,     0,   0,    0,       0
+ aBPR                                          |    0.000,    0.000,    0.000,         0.007,         0.007,         0.000,    54.69,    0,     0,   0,    0,       0
+ aM4                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.00,    0,     0,   0,    0,       0
+ aNIM                                          |    0.000,    0.000,    0.000,         0.003,         0.003,         0.000,    43.33,    0,     0,   0,    0,       0
+ aNW                                           |    0.000,    0.000,    0.000,         0.003,         0.003,         0.000,    41.24,    0,     0,   0,    0,       0
+ aV3                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.00,    0,     0,   0,    0,       0
+ aVBPR                                         |    0.000,    0.000,    0.000,         0.002,         0.002,         0.000,    38.87,    0,     0,   0,    0,       0
+ aM5                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.00,    0,     0,   0,    0,       0
+ aGCON                                         |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,    29.71,    0,     0,   0,    0,       0
+ aGCUT                                         |    0.000,    0.000,    0.000,         0.003,         0.003,         0.000,    79.45,    0,     0,   0,    0,       0
+ aV4                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.00,    0,     0,   0,    0,       0
+ aM1_color1                                    |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+===============================================
+

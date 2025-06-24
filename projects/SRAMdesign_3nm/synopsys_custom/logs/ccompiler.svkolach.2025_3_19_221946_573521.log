@@ -1,0 +1,94 @@
+[22:20:18.87] /o 
+              /c                                 Custom Compiler™ 
+              /c 
+              /c               Version W-2024.09-SP1-2 for linux64 - Jan 16, 2025 
+              /c 
+              /c                     Copyright (c) 2004 - 2025 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 11256978 compiled on Thu Jan 16 10:52:27 2025 for AlmaLinux 8.4
+              /c Invocation: /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Wed Mar 19 22:19:46 2025
+              /c Host: grendel43.ece.ncsu.edu
+              /c Working directory: /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project
+              /c 
+[22:20:31.26] /m Information: Registering ICV PERC package...
+[22:20:32.61] /r giShowFrameTabs true
+[22:20:32.61] /r giWindowId 1
+[22:20:32.61] /r giWindowGeometry 1040x800
+[22:20:44.35] /i db::setAttr iconified -of [gi::getFrames 1] -value true
+[22:20:44.56] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x824+0+23
+[22:20:45.92] /i db::setAttr iconified -of [gi::getFrames 1] -value false
+[22:20:45.93] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x824+439+115
+[22:20:46.68] /i gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[22:20:46.99] /r giWindowId 2
+[22:20:46.99] /r giWindowGeometry 660x600+50+50
+[22:20:48.99] /i gi::setCurrentIndex {libs} -index {group8} -in [gi::getWindows 2]
+[22:20:49.05] /i gi::setItemSelection {libs} -index {group8} -in [gi::getWindows 2]
+[22:20:50.16] /i gi::setCurrentIndex {cells} -index {sram_6t} -in [gi::getWindows 2]
+[22:20:50.25] /i gi::setItemSelection {cells} -index {sram_6t} -in [gi::getWindows 2]
+[22:20:55.81] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 2]
+[22:20:55.88] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 2]
+[22:20:56.00] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[22:20:56.15] /o Loading: Callback files...
+[22:20:56.17] /o Loading: scripts/callbacks/callbacks.tcl
+[22:20:56.17] /o 
+              /c [INFO] : Loading display.drf from /mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3
+              /c 
+              /c  if you wish to Load other display.drf, please set shell environment valiable "iPDK_load_display_NCSU_TechLib_FreePDK3" to value = 0
+[22:20:56.17] /o 
+[22:20:56.27] /w Warning: Preference 'xtStarTcadGrdFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[22:20:56.28] /w Warning: Preference 'xtStarOALayerMappingFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[22:20:56.28] /o 	#######################################
+[22:20:56.28] /o 	CC-PDK Library Name	: FreePDK3
+[22:20:56.28] /o 	#######################################
+[22:20:56.28] /o 
+[22:20:56.36] /m Information: Feature 'CustomInfrastructure' checked out. (LICENSE-003)
+[22:20:56.39] /m Information: Feature 'SynopsysCustomLayout' checked out. (LICENSE-003)
+[22:20:56.42] /m Information: Lock file /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/group8/sram_6t/schematic/sch.oa.cdslck: Unable to connect to OA Lock File Daemon(oaFSLockD) on host 'hydra11.ece.ncsu.edu'. Check if oaFSLockD is running on the host. If the host is invalid, remove the .cdslck lock file. (oaDMFileSys)
+[22:20:56.43] /m Information: Feature 'CustomInfrastructure' checked in. (LICENSE-004)
+[22:20:56.43] /m Information: Feature 'SynopsysCustomLayout' checked in. (LICENSE-004)
+[22:20:56.63] /r giDialog gi::setActiveDialog [gi::getDialogs {deOpenFailed} -parent [gi::getWindows 2]]
+[22:20:56.79] /r giDialog db::setAttr geometry -of [gi::getDialogs {deOpenFailed} -parent [gi::getWindows 2]] -value 425x83+737+434
+[22:20:58.62] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deOpenFailed} -parent [gi::getWindows 2]]
+[22:20:58.90] /r giWindowId 3
+[22:20:58.91] /r giWindowGeometry 1632x972
+[22:21:03.42] /# gi::executeAction {deSelectActive} -in [gi::getWindows 3]
+[22:21:03.42] /i de::deselectAll [db::getNext [de::getContexts -window 3]]
+[22:21:03.42] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {2.1 1.66875} -index 0 -intent none]
+[22:21:03.42] /o oa:0x3cf9eb20
+[22:21:09.20] /# gi::executeAction {giPostContextMenu} -in [gi::getWindows 3]
+[22:21:09.20] /i de::setCursor [gi::getWindows 3] -point {2.90625 1.74375}
+[22:21:09.24] /i gi::executeAction {menuPreShow} -in [gi::getWindows 3]
+[22:21:09.24] /r giMenuAccess db::getNext [gi::getMenus seSchCanvasContextMenu]
+[22:21:13.56] /# gi::executeAction {deSelectActive} -in [gi::getWindows 3]
+[22:21:13.56] /i de::cycleActiveFigure [gi::getWindows 3] -direction next
+[22:21:13.56] /o oa:0x3bfd7120
+[22:21:18.57] /e Error: Cannot execute 'Delete' binding because the design is in read-only mode. (WINDOW-356)
+[22:21:18.57] /# gi::executeAction {deSelectActive} -in [gi::getWindows 3]
+[22:21:18.57] /i de::deselectAll [db::getNext [de::getContexts -window 3]]
+[22:21:18.57] /i de::deselectAllLogic -context [de::getContexts -filter {%editDesign==[db::getAttr editDesign -of [db::getNext [de::getContexts -window 3]]]}]
+[22:22:26.01] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[22:22:28.63] /i gi::executeAction {menuPreShow} -in [gi::getWindows 2]
+[22:22:28.63] /r giMenuAccess db::getNext [gi::getMenus dmEditMenu -from [gi::getWindows 2]]
+[22:22:31.23] /i gi::executeAction {giCloseWindow} -in [gi::getWindows 2]
+[22:22:46.68] /i exit
+[22:22:47.03] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]]
+[22:22:47.07] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]] -value 419x212+740+369
+[22:22:48.87] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]]
+[22:22:51.34] /o Shutdown time: Wed Mar 19 22:22:51 2025
+[22:22:51.34] /o Elapsed session real time: 2.91 minutes
+[22:22:51.34] /o Session terminated. Log is at /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/logs/ccompiler.svkolach.2025_3_19_221946_573521.log

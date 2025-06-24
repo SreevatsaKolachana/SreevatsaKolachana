@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 tspc_neg_ff schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping src="M4" dst="m4"/>
+            <mapping src="M6" dst="m6"/>
+            <mapping src="M5" dst="m5"/>
+            <mapping src="M7" dst="m7"/>
+            <mapping src="M8" dst="m8"/>
+            <mapping src="M0" dst="m0"/>
+            <mapping src="M1" dst="m1"/>
+            <mapping src="M2" dst="m2"/>
+            <mapping src="M3" dst="m3"/>
+        </forward>
+        <reverse>
+            <mapping src="m4" dst="M4"/>
+            <mapping src="m8" dst="M8"/>
+            <mapping src="m3" dst="M3"/>
+            <mapping src="m5" dst="M5"/>
+            <mapping src="m6" dst="M6"/>
+            <mapping src="m7" dst="M7"/>
+            <mapping src="m0" dst="M0"/>
+            <mapping src="m1" dst="M1"/>
+            <mapping src="m2" dst="M2"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward>
+            <mapping src="X" dst="x"/>
+            <mapping src="Y" dst="y"/>
+            <mapping src="Qbar" dst="qbar"/>
+            <mapping src="D" dst="d"/>
+        </forward>
+        <reverse>
+            <mapping src="x" dst="X"/>
+            <mapping src="y" dst="Y"/>
+            <mapping src="qbar" dst="Qbar"/>
+            <mapping src="d" dst="D"/>
+        </reverse>
+    </scope>
+    <scope name="Terminal">
+        <forward>
+            <mapping src="Qbar" dst="qbar"/>
+            <mapping src="D" dst="d"/>
+        </forward>
+        <reverse>
+            <mapping src="qbar" dst="Qbar"/>
+            <mapping src="d" dst="D"/>
+        </reverse>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping src="&lt;unmappedTermOrder&gt;" dst="D Qbar phi"/>
+            <mapping src="&lt;termOrder&gt;" dst="d qbar phi"/>
+        </forward>
+        <reverse>
+            <mapping src="D Qbar phi" dst="&lt;unmappedTermOrder&gt;"/>
+            <mapping src="d qbar phi" dst="&lt;termOrder&gt;"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="nmos">
+            <instance name="M0"/>
+            <instance name="M1"/>
+            <instance name="M2"/>
+            <instance name="M3"/>
+        </instance_header>
+        <instance_header master="pmos">
+            <instance name="M4"/>
+            <instance name="M5"/>
+            <instance name="M6"/>
+            <instance name="M7"/>
+            <instance name="M8"/>
+        </instance_header>
+    </master_instances>
+</module>

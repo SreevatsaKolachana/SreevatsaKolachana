@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 WLRef_PC_tb schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping src="I30" dst="xi30"/>
+            <mapping src="V31" dst="v31"/>
+            <mapping src="V34" dst="v34"/>
+        </forward>
+        <reverse>
+            <mapping src="xi30" dst="I30"/>
+            <mapping src="v31" dst="V31"/>
+            <mapping src="v34" dst="V34"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward>
+            <mapping src="WLRef" dst="wlref"/>
+            <mapping src="RSNew" dst="rsnew"/>
+            <mapping src="PC" dst="pc"/>
+            <mapping src="CLK" dst="clk"/>
+        </forward>
+        <reverse>
+            <mapping src="wlref" dst="WLRef"/>
+            <mapping src="rsnew" dst="RSNew"/>
+            <mapping src="pc" dst="PC"/>
+            <mapping src="clk" dst="CLK"/>
+        </reverse>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping src="&lt;unmappedTermOrder&gt;" dst=""/>
+            <mapping src="&lt;termOrder&gt;" dst=""/>
+        </forward>
+        <reverse>
+            <mapping src="" dst="&lt;unmappedTermOrder&gt;"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="vdc">
+            <instance name="V34"/>
+        </instance_header>
+        <instance_header master="vpulse">
+            <instance name="V31"/>
+        </instance_header>
+        <instance_header master="wlref_pc">
+            <instance name="I30"/>
+        </instance_header>
+    </master_instances>
+</module>

@@ -1,0 +1,9 @@
+.option opfile=1 split_dp=1
+.option probe=1
+.probe tran v(*) level=1
+.probe tran v(clk) v(I0/BL0) v(I0/BL0BAR) v(I0/BL1) v(I0/BL1BAR) v(I0/BL2)
++ v(I0/BL2BAR) v(I0/BL3) v(I0/I204/I3/BL3) v(I0/I204/I3/RD23) v(I0/I204/I3/RS0)
++ v(I0/I204/I3/RS0Bar) v(I0/I204/I3/RS1) v(I0/I204/I3/RS1Bar) v(I0/I212/BL)
++ v(I0/I212/BLbar) v(I0/I212/net2) v(I0/I212/net6) v(I0/I71/Q) v(I0/I71/Qbar)
++ v(I0/PC) v(I0/Read_Dff0) v(I0/Read_Dff1) v(I0/Read_Dff2) v(I0/Read_Dff3)
++ v(I0/WL) v(I0/WLref) v(I0/net499) v(wenb)

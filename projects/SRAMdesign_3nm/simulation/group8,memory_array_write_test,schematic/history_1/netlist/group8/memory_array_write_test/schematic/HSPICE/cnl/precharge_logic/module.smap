@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 precharge_logic schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping dst="m3" src="M3"/>
+            <mapping dst="m4" src="M4"/>
+            <mapping dst="m5" src="M5"/>
+        </forward>
+        <reverse>
+            <mapping dst="M3" src="m3"/>
+            <mapping dst="M5" src="m5"/>
+            <mapping dst="M4" src="m4"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward>
+            <mapping dst="bl_bar" src="BL_bar"/>
+            <mapping dst="bl" src="BL"/>
+        </forward>
+        <reverse>
+            <mapping dst="BL_bar" src="bl_bar"/>
+            <mapping dst="BL" src="bl"/>
+        </reverse>
+    </scope>
+    <scope name="Terminal">
+        <forward>
+            <mapping dst="bl_bar" src="BL_bar"/>
+            <mapping dst="bl" src="BL"/>
+        </forward>
+        <reverse>
+            <mapping dst="BL_bar" src="bl_bar"/>
+            <mapping dst="BL" src="bl"/>
+        </reverse>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping dst="BL BL_bar clk" src="&lt;unmappedTermOrder&gt;"/>
+            <mapping dst="bl bl_bar clk" src="&lt;termOrder&gt;"/>
+        </forward>
+        <reverse>
+            <mapping dst="&lt;unmappedTermOrder&gt;" src="BL BL_bar clk"/>
+            <mapping dst="&lt;termOrder&gt;" src="bl bl_bar clk"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="pmos">
+            <instance name="M3"/>
+            <instance name="M4"/>
+            <instance name="M5"/>
+        </instance_header>
+    </master_instances>
+</module>

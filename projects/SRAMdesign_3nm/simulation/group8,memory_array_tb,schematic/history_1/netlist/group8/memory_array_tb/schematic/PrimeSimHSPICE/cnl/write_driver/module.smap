@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 Write_Driver schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping src="M5" dst="m5"/>
+            <mapping src="M19" dst="m19"/>
+            <mapping src="M17" dst="m17"/>
+            <mapping src="M14" dst="m14"/>
+            <mapping src="M15" dst="m15"/>
+            <mapping src="M16" dst="m16"/>
+            <mapping src="M20" dst="m20"/>
+            <mapping src="M0" dst="m0"/>
+            <mapping src="M12" dst="m12"/>
+            <mapping src="M4" dst="m4"/>
+            <mapping src="M13" dst="m13"/>
+            <mapping src="M21" dst="m21"/>
+            <mapping src="M1" dst="m1"/>
+            <mapping src="M18" dst="m18"/>
+        </forward>
+        <reverse>
+            <mapping src="m5" dst="M5"/>
+            <mapping src="m15" dst="M15"/>
+            <mapping src="m14" dst="M14"/>
+            <mapping src="m19" dst="M19"/>
+            <mapping src="m21" dst="M21"/>
+            <mapping src="m0" dst="M0"/>
+            <mapping src="m1" dst="M1"/>
+            <mapping src="m20" dst="M20"/>
+            <mapping src="m16" dst="M16"/>
+            <mapping src="m4" dst="M4"/>
+            <mapping src="m17" dst="M17"/>
+            <mapping src="m12" dst="M12"/>
+            <mapping src="m13" dst="M13"/>
+            <mapping src="m18" dst="M18"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward>
+            <mapping src="WData" dst="wdata"/>
+            <mapping src="Din" dst="din"/>
+            <mapping src="WBData" dst="wbdata"/>
+        </forward>
+        <reverse>
+            <mapping src="wdata" dst="WData"/>
+            <mapping src="wbdata" dst="WBData"/>
+            <mapping src="din" dst="Din"/>
+        </reverse>
+    </scope>
+    <scope name="Terminal">
+        <forward>
+            <mapping src="WData" dst="wdata"/>
+            <mapping src="Din" dst="din"/>
+            <mapping src="WBData" dst="wbdata"/>
+        </forward>
+        <reverse>
+            <mapping src="wdata" dst="WData"/>
+            <mapping src="wbdata" dst="WBData"/>
+            <mapping src="din" dst="Din"/>
+        </reverse>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping src="&lt;unmappedTermOrder&gt;" dst="Din WBData WData"/>
+            <mapping src="&lt;termOrder&gt;" dst="din wbdata wdata"/>
+        </forward>
+        <reverse>
+            <mapping src="Din WBData WData" dst="&lt;unmappedTermOrder&gt;"/>
+            <mapping src="din wbdata wdata" dst="&lt;termOrder&gt;"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="nmos">
+            <instance name="M14"/>
+            <instance name="M15"/>
+            <instance name="M19"/>
+            <instance name="M20"/>
+            <instance name="M21"/>
+            <instance name="M4"/>
+            <instance name="M5"/>
+        </instance_header>
+        <instance_header master="pmos">
+            <instance name="M0"/>
+            <instance name="M1"/>
+            <instance name="M12"/>
+            <instance name="M13"/>
+            <instance name="M16"/>
+            <instance name="M17"/>
+            <instance name="M18"/>
+        </instance_header>
+    </master_instances>
+</module>

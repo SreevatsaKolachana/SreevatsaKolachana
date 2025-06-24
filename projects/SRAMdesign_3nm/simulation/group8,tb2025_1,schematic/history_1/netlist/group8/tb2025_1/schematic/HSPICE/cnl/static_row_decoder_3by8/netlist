@@ -1,0 +1,46 @@
+********************************************************************************
+* Library          : group8
+* Cell             : static_row_decoder_3by8
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt static_row_decoder_3by8 a0 a1 a2 wlref y0 y1 y2 y3 y4 y5 y6 y7
+xi107 a2 a1 net216 nand
+xi106 a0 net195 net217 nand
+xi104 net201 a1 net219 nand
+xi103 a2 net195 net218 nand
+xi101 a2 net203 net214 nand
+xi100 a0 net195 net215 nand
+xi98 net201 net203 net212 nand
+xi97 a2 net195 net213 nand
+xi95 a0 a1 net210 nand
+xi94 net196 net195 net211 nand
+xi86 net196 net195 net205 nand
+xi85 net201 net203 net204 nand
+xi89 a0 net203 net206 nand
+xi91 net196 net195 net209 nand
+xi92 net201 a1 net208 nand
+xi88 net196 net195 net207 nand
+xi111 a0 net201 inv
+xi110 a1 net203 inv
+xi83 a2 net196 inv
+xi82 net130 y0 buffer_highdrive
+xi80 net133 y1 buffer_highdrive
+xi79 net140 y2 buffer_highdrive
+xi78 net147 y3 buffer_highdrive
+xi77 net154 y4 buffer_highdrive
+xi76 net161 y5 buffer_highdrive
+xi75 net168 y6 buffer_highdrive
+xi74 net175 y7 buffer_highdrive
+xi109 wlref net195 buffer_highdrive
+xi108 net217 net216 net175 nor
+xi105 net218 net219 net168 nor
+xi102 net215 net214 net161 nor
+xi99 net213 net212 net154 nor
+xi96 net211 net210 net147 nor
+xi87 net205 net204 net130 nor
+xi90 net207 net206 net133 nor
+xi93 net209 net208 net140 nor
+.ends static_row_decoder_3by8
+

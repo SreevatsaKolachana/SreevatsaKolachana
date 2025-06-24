@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: proj_common inputbuf schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping src="M13" dst="m13"/>
+            <mapping src="M9" dst="m9"/>
+            <mapping src="M12" dst="m12"/>
+            <mapping src="M8" dst="m8"/>
+        </forward>
+        <reverse>
+            <mapping src="m13" dst="M13"/>
+            <mapping src="m12" dst="M12"/>
+            <mapping src="m8" dst="M8"/>
+            <mapping src="m9" dst="M9"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward/>
+        <reverse/>
+    </scope>
+    <scope name="Terminal">
+        <forward/>
+        <reverse/>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping src="&lt;unmappedTermOrder&gt;" dst="out in"/>
+            <mapping src="&lt;termOrder&gt;" dst="out in"/>
+        </forward>
+        <reverse>
+            <mapping src="out in" dst="&lt;unmappedTermOrder&gt;"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="nmos">
+            <instance name="M8"/>
+            <instance name="M9"/>
+        </instance_header>
+        <instance_header master="pmos">
+            <instance name="M12"/>
+            <instance name="M13"/>
+        </instance_header>
+    </master_instances>
+</module>

@@ -1,0 +1,104 @@
+*****************************************************************************
+Tool:		exportStream        W-2024.09-SP1-2
+*****************************************************************************
+Running: exportStream -logFile agen_unit.exportStream.log -lib group8 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs -cell "agen_unit" -view "layout" -referenceMap /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/agen_unit.icv.lvs/agen_unit.custom_compiler.xml -keepPcells -keepVias -keepAbuts -useTechLayerMap -useTechObjectMap -textHeight matchOABBox -newMaxVerticesFunction -gds /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/agen_unit.icv.lvs/agen_unit.custom_compiler.gds -colorMapping honor
+Started: Wed Apr 16 22:21:28 2025 (Hostname: hydra12.ece.ncsu.edu)
+Reading layer map /mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3/NCSU_TechLib_FreePDK3.layermap
+
+INFO: (EXPORT_STREAM-80033): Translating design NCSU_TechLib_FreePDK3/nmos/layout as "nmos".
+INFO: (EXPORT_STREAM-80033): Translating design NCSU_TechLib_FreePDK3/pmos/layout as "pmos".
+INFO: (EXPORT_STREAM-80033): Translating design NCSU_TechLib_FreePDK3/BPR_M0A/layout as "BPR_M0A".
+INFO: (EXPORT_STREAM-80033): Translating design NCSU_TechLib_FreePDK3/M0A_M0B/layout as "M0A_M0B".
+INFO: (EXPORT_STREAM-80033): Translating design NCSU_TechLib_FreePDK3/GATE_M0B/layout as "GATE_M0B".
+INFO: (EXPORT_STREAM-80033): Translating design NCSU_TechLib_FreePDK3/M0B_M1/layout as "M0B_M1".
+INFO: (EXPORT_STREAM-80033): Translating design group8/inv/layout as "inv".
+INFO: (EXPORT_STREAM-80033): Translating design group8/nand/layout as "nand".
+INFO: (EXPORT_STREAM-80033): Translating design group8/sram_filler/layout as "sram_filler".
+INFO: (EXPORT_STREAM-80033): Translating design NCSU_TechLib_FreePDK3/M1_M2/layout as "M1_M2".
+INFO: (EXPORT_STREAM-80033): Translating design NCSU_TechLib_FreePDK3/M2_M3/layout as "M2_M3".
+INFO: (EXPORT_STREAM-80033): Translating design group8/Demux/layout as "Demux".
+INFO: (EXPORT_STREAM-80033): Translating design group8/nor/layout as "nor".
+WARNING: (EXPORT_STREAM-12064): Shape isn't mapped to any layer/purpose, layer:"annotate" purpose:"drawing".
+INFO: (EXPORT_STREAM-80033): Translating design group8/invx4/layout as "invx4".
+INFO: (EXPORT_STREAM-80033): Translating design group8/agen_unit/layout as "agen_unit".
+
+Primary Cell(s):
+	1.agen_unit
+
+Cell Statistics:
+	CellName     Rectangles  Polygons    Paths       PathSegs    Labels      Instances   Arrays      Nodes       
+	BPR_M0A      3           0           0           0           0           0           0           0           
+	Demux        12          0           0           0           4           11          0           0           
+	GATE_M0B     3           0           0           0           0           0           0           0           
+	M0A_M0B      3           0           0           0           0           0           0           0           
+	M0B_M1       3           0           0           0           0           0           0           0           
+	M1_M2        3           0           0           0           0           0           0           0           
+	M2_M3        3           0           0           0           0           0           0           0           
+	agen_unit    105         0           0           0           13          122         0           0           
+	inv          20          0           0           0           4           13          0           0           
+	invx4        27          0           0           0           4           26          0           0           
+	nand         29          0           0           0           5           16          0           0           
+	nmos         7           0           0           0           0           0           0           0           
+	nor          23          0           0           0           5           18          0           0           
+	pmos         8           0           0           0           0           0           0           0           
+	sram_filler  15          0           0           0           0           4           0           0           
+
+Layer Statistics:
+	Layer       Purpose  StreamLayer     StreamDataType  Rectangles  Polygons    Paths       PathSegs    Labels      Nodes       
+	V2          drawing  17              0               1           0           0           0           0           0
+	M3          drawing  18              0               15          0           0           0           3           0
+	V1          drawing  15              0               1           0           0           0           0           0
+	GCUT        drawing  5               0               10          0           0           0           0           0
+	M2          drawing  16              0               22          0           0           0           1           0
+	V0B         drawing  13              0               1           0           0           0           0           0
+	GCON        drawing  11              0               1           0           0           0           0           0
+	BPR         drawing  0               0               25          0           0           0           10          0
+	M0B         drawing  12              0               10          0           0           0           0           0
+	NW          drawing  2               0               7           0           0           0           0           0
+	V0A         drawing  10              0               1           0           0           0           0           0
+	PIM         drawing  8               0               7           0           0           0           0           0
+	NIM         drawing  7               0               7           0           0           0           0           0
+	ACT         drawing  3               0               2           0           0           0           0           0
+	M1          drawing  14              0               85          0           0           0           21          0
+	M0A         drawing  9               0               10          0           0           0           0           0
+	VBPR        drawing  1               0               1           0           0           0           0           0
+	DUMMY       drawing  6               0               27          0           0           0           0           0
+	GATE        drawing  4               0               31          0           0           0           0           0
+
+Summary of Objects:
+	Scalar Instances:             210
+	Array Instances:              0
+	Vector Instances:             0
+	Vector Instance Bits:         0
+	Polygons:                     0
+	Paths:                        0
+	Rectangles:                   264
+	Lines:                        0
+	Arcs:                         0
+	Donuts:                       0
+	Dots:                         0
+	Ellipses:                     0
+	Blockages:                    0
+	Boundaries:                   0
+	Routes:                       0
+	Text:                         28
+	Text Displays:                
+	  PropDisplay:                0
+	  AttrDisplay:                7
+	  TextOverride:               0
+	PathSeg:                      0
+	StdVia:                       0
+	CustomVia:                    0
+	Cells:                        15
+
+
+Layers not streamed out:
+	Layer     Purpose   
+	annotate  drawing   
+
+Finished:     exportStream
+Time Elapsed: 1.08 seconds
+CPU Time:     0.336846 seconds
+System Time:  0.107271 seconds
+Peak VM:      10842112 bytes
+Messages:     0 error, 1 warning

@@ -1,0 +1,36 @@
+*PrimeWave Design Environment Based on Custom Infrastructure
+*Version W-2024.09-SP1-2
+*Mon Mar 24 00:45:04 2025
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : group8
+* Cell             : tspc_neg_ff
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt tspc_neg_ff d qbar phi
+m3 qbar y gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m2 y phi gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m1 net4 d gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m0 x phi net4 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m8 net26 y vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m7 qbar phi net26 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m6 y x net19 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m5 net19 phi vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m4 x d vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+.ends tspc_neg_ff
+
+********************************************************************************
+* Library          : group8
+* Cell             : tspc_neg_ff_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 d qbar phi tspc_neg_ff
+v2 vdd! gnd! dc='VDD_VAL'
+v7 phi gnd! dc=0 pulse ( 'VDD_VAL' 0 0 '20ps' '20ps' 30p 80p )
+v6 d gnd! dc=0 pulse ( 'VDD_VAL' 0 0 5p 5p 45p 95p )
+

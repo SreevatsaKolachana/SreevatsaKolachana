@@ -1,0 +1,5 @@
+gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+gi::setCurrentIndex {libs} -index {group8} -in [gi::getWindows 2]
+gi::setItemSelection {libs} -index {group8} -in [gi::getWindows 2]
+gi::executeAction {giCloseWindow} -in [gi::getWindows 2]
+gi::executeAction {giQuit} -in [gi::getWindows 1]

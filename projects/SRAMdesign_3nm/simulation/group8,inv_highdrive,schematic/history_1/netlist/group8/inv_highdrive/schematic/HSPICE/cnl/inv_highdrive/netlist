@@ -1,0 +1,13 @@
+********************************************************************************
+* Library          : group8
+* Cell             : inv_highdrive
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+m4 net9 in vdd! pfet nfin=20 adeo=5.67e-15 aseo=5.67e-15 pdeo=1.17e-06 pseo=1.17e-06
+m0 out net9 vdd! pfet nfin=20 adeo=5.67e-15 aseo=5.67e-15 pdeo=1.17e-06 pseo=1.17e-06
+m5 net9 in gnd! nfet nfin=20 adeo=5.67e-15 aseo=5.67e-15 pdeo=1.17e-06 pseo=1.17e-06
+m1 out net9 gnd! nfet nfin=20 adeo=5.67e-15 aseo=5.67e-15 pdeo=1.17e-06 pseo=1.17e-06
+v8 in gnd! dc=0 pulse ( 0.8 0 10p 5p 5p 45p 100p )
+v17 vdd! gnd! dc=0.8

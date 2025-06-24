@@ -1,0 +1,15 @@
+********************************************************************************
+* Library          : group8
+* Cell             : Write_Driver
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt Write_Driver Din WBData WData
+*.PININFO Din:I WBData:O WData:O
+XI33 Din net47 buffer
+XI32 Din net44 buffer
+XI27 net44 WBData invx4
+XI34 net47 WData buffer_highdrive
+.ends Write_Driver
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 Write_Driver schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping dst="xi34" src="I34"/>
+            <mapping dst="xi33" src="I33"/>
+            <mapping dst="xi27" src="I27"/>
+            <mapping dst="xi32" src="I32"/>
+        </forward>
+        <reverse>
+            <mapping dst="I34" src="xi34"/>
+            <mapping dst="I27" src="xi27"/>
+            <mapping dst="I32" src="xi32"/>
+            <mapping dst="I33" src="xi33"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward>
+            <mapping dst="wdata" src="WData"/>
+            <mapping dst="din" src="Din"/>
+            <mapping dst="wbdata" src="WBData"/>
+        </forward>
+        <reverse>
+            <mapping dst="WData" src="wdata"/>
+            <mapping dst="WBData" src="wbdata"/>
+            <mapping dst="Din" src="din"/>
+        </reverse>
+    </scope>
+    <scope name="Terminal">
+        <forward>
+            <mapping dst="wdata" src="WData"/>
+            <mapping dst="din" src="Din"/>
+            <mapping dst="wbdata" src="WBData"/>
+        </forward>
+        <reverse>
+            <mapping dst="WData" src="wdata"/>
+            <mapping dst="WBData" src="wbdata"/>
+            <mapping dst="Din" src="din"/>
+        </reverse>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping dst="Din WBData WData" src="&lt;unmappedTermOrder&gt;"/>
+            <mapping dst="din wbdata wdata" src="&lt;termOrder&gt;"/>
+        </forward>
+        <reverse>
+            <mapping dst="&lt;unmappedTermOrder&gt;" src="Din WBData WData"/>
+            <mapping dst="&lt;termOrder&gt;" src="din wbdata wdata"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="buffer">
+            <instance name="I32"/>
+            <instance name="I33"/>
+        </instance_header>
+        <instance_header master="buffer_highdrive">
+            <instance name="I34"/>
+        </instance_header>
+        <instance_header master="invx4">
+            <instance name="I27"/>
+        </instance_header>
+    </master_instances>
+</module>

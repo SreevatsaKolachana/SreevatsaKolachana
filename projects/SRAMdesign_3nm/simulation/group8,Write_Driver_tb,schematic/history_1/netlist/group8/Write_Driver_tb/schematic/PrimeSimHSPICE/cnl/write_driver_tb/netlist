@@ -1,0 +1,10 @@
+********************************************************************************
+* Library          : group8
+* Cell             : Write_Driver_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 net3 datab data write_driver
+v2 vdd! gnd! dc=0.8
+v4 net3 gnd! dc=0 pulse ( 0.8 0 0 5p 5p 45p 100p )

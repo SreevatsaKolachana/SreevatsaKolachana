@@ -1,0 +1,92 @@
+*PrimeWave Design Environment Based on Custom Infrastructure
+*Version W-2024.09-SP1-2
+*Tue Apr  1 16:13:29 2025
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : group8
+* Cell             : inv
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt inv in out
+m0 out in vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m1 out in gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+.ends inv
+
+********************************************************************************
+* Library          : group8
+* Cell             : 2to4decodermux
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt _2to4decodermux a0 a1 bl0 bl0bar bl1 bl1bar bl2 bl2bar bl3 bl3bar bl4
++ bl4bar bl5 bl5bar bl6 bl6bar bl7 bl7bar bl8 bl8bar bl9 bl10 bl10bar bl11
++ bl11bar bl12 bl12bar bl13 bl13bar bl14 bl14bar bl15 bl15bar blbar p0 p1 p2 p3
+m39 net234 a0 p3 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m38 net233 net152 p3 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m37 net230 a0 p2 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m36 net228 net152 p2 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m35 net226 a0 p1 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m34 net224 net152 p1 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m33 net222 a0 p0 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m32 net220 net152 p0 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m31 bl3 a1 net222 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m30 bl5 a1 net224 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m29 bl7 a1 net226 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m28 bl9 a1 net228 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m27 bl11 a1 net230 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m26 bl13 a1 net233 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m25 bl15 a1 net234 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m24 bl1bar a1 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m23 bl3bar a1 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m22 bl5bar a1 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m21 bl7bar a1 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m20 blbar a1 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m19 bl11bar a1 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m18 bl13bar a1 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m17 bl15bar a1 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m16 bl1 a1 net220 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m15 bl14bar net198 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m14 bl14 net198 net234 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m13 bl12bar net198 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m12 bl12 net198 net233 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m11 bl10bar net198 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m10 bl10 net198 net230 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m9 bl8bar net198 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m8 bl8 net198 net228 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m7 bl6bar net198 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m6 bl6 net198 net226 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m5 bl4bar net198 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m4 bl4 net198 net224 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m3 bl2bar net198 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m2 bl2 net198 net222 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m1 bl0bar net198 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m0 bl0 net198 net220 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+xi41 a1 net198 inv
+xi40 a0 net152 inv
+.ends _2to4decodermux
+
+********************************************************************************
+* Library          : group8
+* Cell             : 2to4decodermux_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 a0 a1 net77 net76 net92 net74 net73 net72 net71 net70 net69 net68 net67
++ net66 net65 net64 net63 net62 net61 net60 net59 net58 net57 net56 net55 net91
++ net53 net52 net51 net50 net49 net48 net47 net46 net85 net83 net87 net89
++ _2to4decodermux
+v13 net54 gnd! dc=0 pulse ( 0 0 0 0 0 100p 100p )
+v11 net75 gnd! dc=0 pulse ( 0.8 0.8 0 0 0 40p 100p )
+v2 a1 gnd! dc=0 pulse ( 0 0.8 10p 5p 5p 90p 200p )
+v1 a0 gnd! dc=0 pulse ( 0 0.8 10p 5p 5p 40p 100p )
+v19 net89 gnd! dc=0.8
+v16 net85 gnd! dc=0.8
+v17 net83 gnd! dc=0
+v8 vdd! gnd! dc=0.8
+v18 net87 gnd! dc=0.8
+

@@ -1,0 +1,12 @@
+********************************************************************************
+* Library          : group8
+* Cell             : inv_highdrive
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt inv_highdrive in out
+m4 out in vdd! pfet nfin=20 adeo=5.67e-15 aseo=5.67e-15 pdeo=1.17e-06 pseo=1.17e-06
+m5 out in gnd! nfet nfin=20 adeo=5.67e-15 aseo=5.67e-15 pdeo=1.17e-06 pseo=1.17e-06
+.ends inv_highdrive
+

@@ -1,0 +1,60 @@
+********************************************************************************
+* Library          : group8
+* Cell             : SRAM_8x4_array
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi31 net94 net96 wl sram_6t
+xi30 net91 net93 wl sram_6t
+xi29 net88 net90 wl sram_6t
+xi28 bl blbar wl sram_6t
+xi27 net94 net96 net103 sram_6t
+xi26 net91 net93 net103 sram_6t
+xi25 net88 net90 net103 sram_6t
+xi24 bl blbar net103 sram_6t
+xi23 net94 net96 net102 sram_6t
+xi22 net91 net93 net102 sram_6t
+xi21 net88 net90 net102 sram_6t
+xi20 bl blbar net102 sram_6t
+xi19 net94 net96 net97 sram_6t
+xi18 net91 net93 net97 sram_6t
+xi17 net88 net90 net97 sram_6t
+xi16 bl blbar net97 sram_6t
+xi15 net94 net96 net98 sram_6t
+xi14 net91 net93 net98 sram_6t
+xi13 net88 net90 net98 sram_6t
+xi12 bl blbar net98 sram_6t
+xi11 net94 net96 net99 sram_6t
+xi10 net91 net93 net99 sram_6t
+xi9 net88 net90 net99 sram_6t
+xi8 bl blbar net99 sram_6t
+xi7 net94 net96 net100 sram_6t
+xi6 net91 net93 net100 sram_6t
+xi5 net88 net90 net100 sram_6t
+xi4 bl blbar net100 sram_6t
+xi3 bl blbar net101 sram_6t
+xi2 net88 net90 net101 sram_6t
+xi1 net91 net93 net101 sram_6t
+xi0 net94 net96 net101 sram_6t
+xi34 a0 a1 a2 net152 net103 net102 net101 net100 net99 net98 net97
++ static_row_decoder_3by8
+xi33 net94 net96 net91 net93 net88 net90 bl blbar net120 net118 net116 net113
++ net170 net170 net170 net170 net169 gnd! net167 gnd! _2to4_decoder
+xi38 bl blbar net140 precharge_logic
+xi37 net88 net90 net140 precharge_logic
+xi36 net91 net93 net140 precharge_logic
+xi35 net94 net96 net140 precharge_logic
+v50 wlref gnd! dc=0 pwl ( 20p 0.0 25p 0.8 80p 0.8 85p 0.0 td=10p )
+v39 net140 gnd! dc=0.8 pwl ( 0p 0 5p 0 10p 0.8 )
+v54 net170 gnd! dc=0.8
+v51 vdd! gnd! dc=0.8
+v46 net169 gnd! dc=0.8
+v45 net167 gnd! dc=0.8
+v43 a2 gnd! dc=0
+v42 a1 gnd! dc=0
+v41 a0 gnd! dc=0
+xi48 wlref net152 net157 nand
+xi49 net157 wl inv
+v57 net118 gnd! dc=0 pulse ( 0 0 0 5p 5p 45p 100p )
+v56 net120 gnd! dc=0 pulse ( 0.8 00.8 0 5p 5p 45p 100p )

@@ -1,0 +1,13 @@
+********************************************************************************
+* Library          : group8
+* Cell             : precharge_logic
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt precharge_logic bl bl_bar clk
+m5 bl_bar clk vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m4 vdd! clk bl pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m3 bl clk bl_bar pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+.ends precharge_logic
+

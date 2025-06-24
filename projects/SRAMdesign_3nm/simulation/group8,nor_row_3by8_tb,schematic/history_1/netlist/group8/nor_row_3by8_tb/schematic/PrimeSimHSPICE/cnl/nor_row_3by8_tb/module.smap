@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 nor_row_3by8_tb schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping dst="c14" src="C14"/>
+            <mapping dst="c20" src="C20"/>
+            <mapping dst="c12" src="C12"/>
+            <mapping dst="c17" src="C17"/>
+            <mapping dst="c18" src="C18"/>
+            <mapping dst="c22" src="C22"/>
+            <mapping dst="v8" src="V8"/>
+            <mapping dst="c23" src="C23"/>
+            <mapping dst="c19" src="C19"/>
+            <mapping dst="v9" src="V9"/>
+            <mapping dst="v2" src="V2"/>
+            <mapping dst="v10" src="V10"/>
+            <mapping dst="xi0" src="I0"/>
+        </forward>
+        <reverse>
+            <mapping dst="C14" src="c14"/>
+            <mapping dst="C17" src="c17"/>
+            <mapping dst="C22" src="c22"/>
+            <mapping dst="C12" src="c12"/>
+            <mapping dst="C20" src="c20"/>
+            <mapping dst="V8" src="v8"/>
+            <mapping dst="C19" src="c19"/>
+            <mapping dst="C18" src="c18"/>
+            <mapping dst="V10" src="v10"/>
+            <mapping dst="V2" src="v2"/>
+            <mapping dst="C23" src="c23"/>
+            <mapping dst="V9" src="v9"/>
+            <mapping dst="I0" src="xi0"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward>
+            <mapping dst="a2" src="A2"/>
+            <mapping dst="wl6" src="WL6"/>
+            <mapping dst="wl7" src="WL7"/>
+            <mapping dst="wl5" src="WL5"/>
+            <mapping dst="a1" src="A1"/>
+            <mapping dst="wl4" src="WL4"/>
+            <mapping dst="wl3" src="WL3"/>
+            <mapping dst="a0" src="A0"/>
+            <mapping dst="wl2" src="WL2"/>
+            <mapping dst="wl1" src="WL1"/>
+            <mapping dst="wl0" src="WL0"/>
+        </forward>
+        <reverse>
+            <mapping dst="A1" src="a1"/>
+            <mapping dst="WL6" src="wl6"/>
+            <mapping dst="WL5" src="wl5"/>
+            <mapping dst="WL2" src="wl2"/>
+            <mapping dst="WL7" src="wl7"/>
+            <mapping dst="A0" src="a0"/>
+            <mapping dst="WL4" src="wl4"/>
+            <mapping dst="WL1" src="wl1"/>
+            <mapping dst="A2" src="a2"/>
+            <mapping dst="WL3" src="wl3"/>
+            <mapping dst="WL0" src="wl0"/>
+        </reverse>
+    </scope>
+    <scope name="Terminal">
+        <forward>
+            <mapping dst="wl7" src="WL7"/>
+            <mapping dst="wl6" src="WL6"/>
+            <mapping dst="wl2" src="WL2"/>
+            <mapping dst="wl5" src="WL5"/>
+            <mapping dst="wl1" src="WL1"/>
+            <mapping dst="wl0" src="WL0"/>
+            <mapping dst="wl4" src="WL4"/>
+            <mapping dst="wl3" src="WL3"/>
+        </forward>
+        <reverse>
+            <mapping dst="WL6" src="wl6"/>
+            <mapping dst="WL3" src="wl3"/>
+            <mapping dst="WL0" src="wl0"/>
+            <mapping dst="WL5" src="wl5"/>
+            <mapping dst="WL7" src="wl7"/>
+            <mapping dst="WL2" src="wl2"/>
+            <mapping dst="WL4" src="wl4"/>
+            <mapping dst="WL1" src="wl1"/>
+        </reverse>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping dst="WL0 WL1 WL2 WL3 WL4 WL5 WL6 WL7" src="&lt;unmappedTermOrder&gt;"/>
+            <mapping dst="wl0 wl1 wl2 wl3 wl4 wl5 wl6 wl7" src="&lt;termOrder&gt;"/>
+        </forward>
+        <reverse>
+            <mapping dst="&lt;unmappedTermOrder&gt;" src="WL0 WL1 WL2 WL3 WL4 WL5 WL6 WL7"/>
+            <mapping dst="&lt;termOrder&gt;" src="wl0 wl1 wl2 wl3 wl4 wl5 wl6 wl7"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="cap">
+            <instance name="C12"/>
+            <instance name="C14"/>
+            <instance name="C17"/>
+            <instance name="C18"/>
+            <instance name="C19"/>
+            <instance name="C20"/>
+            <instance name="C22"/>
+            <instance name="C23"/>
+        </instance_header>
+        <instance_header master="nor_row_3by8">
+            <instance name="I0"/>
+        </instance_header>
+        <instance_header master="vdc">
+            <instance name="V2"/>
+        </instance_header>
+        <instance_header master="vpulse">
+            <instance name="V10"/>
+            <instance name="V8"/>
+            <instance name="V9"/>
+        </instance_header>
+    </master_instances>
+</module>

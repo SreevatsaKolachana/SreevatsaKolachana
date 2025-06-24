@@ -1,0 +1,33 @@
+********************************************************************************
+* Library          : group8
+* Cell             : agen_unit
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt agen_unit a0 a1 rs0 rs0bar rs1 rs1bar wen ws0 ws0bar ws1 ws1bar
+xi1 a1 wen net82 net88 demux
+xi0 a0 wen net77 net86 demux
+xi34 wen net75 inv
+xi33 net52 rs1 inv
+xi32 net49 rs1bar inv
+xi31 net64 ws1 inv
+xi30 net61 ws1bar inv
+xi29 net46 rs0 inv
+xi28 net43 rs0bar inv
+xi27 net58 ws0 inv
+xi26 net55 ws0bar inv
+xi17 net88 net87 inv
+xi16 net82 net81 inv
+xi14 net77 net79 inv
+xi15 net86 net85 inv
+xi18 net86 net75 net43 nor
+xi19 net85 net75 net46 nor
+xi20 net88 net75 net49 nor
+xi21 net87 net75 net52 nor
+xi25 net82 net75 net64 nand
+xi24 net81 net75 net61 nand
+xi22 net79 net75 net55 nand
+xi23 net77 net75 net58 nand
+.ends agen_unit
+

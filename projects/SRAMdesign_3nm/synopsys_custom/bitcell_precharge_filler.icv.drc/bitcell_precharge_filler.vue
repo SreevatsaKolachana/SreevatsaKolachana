@@ -1,0 +1,15 @@
+ICV_HOME_DIR      = /mnt/apps/public/COE/synopsys_apps/icvalidator/W-2024.09-SP2
+ICV_COORDS_BIT    = 32
+WORKING_DIR       = .
+INLIB             = /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/bitcell_precharge_filler.icv.drc/bitcell_precharge_filler.custom_compiler.gds
+INLIB_PATH        = 
+BLOCK             = bitcell_precharge_filler
+CREATE_VUE_OUTPUT = TRUE
+PYDB_PATH         = run_details/pydb
+RUN_DETAILS_DIR   = run_details
+NDB_PATH          = run_details/.ndb
+REPORT_LAYOUT_ERRORS = HIERARCHICAL
+FORMAT            = GDSII
+SCHEMATIC_FORMAT  = ICV
+GROUP_PATH        = run_details/group
+RUNSET_FILE_NAME  = FreePDK3_main.drc.rs

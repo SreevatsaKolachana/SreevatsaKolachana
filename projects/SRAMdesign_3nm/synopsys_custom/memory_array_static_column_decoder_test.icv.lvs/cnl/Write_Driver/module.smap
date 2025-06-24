@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 Write_Driver schematic vl: auCdl schematic symbol">
+    <scope name="Instance">
+        <forward>
+            <mapping dst="XI34" src="I34"/>
+            <mapping dst="XI27" src="I27"/>
+            <mapping dst="XI32" src="I32"/>
+            <mapping dst="XI33" src="I33"/>
+        </forward>
+        <reverse>
+            <mapping dst="I34" src="XI34"/>
+            <mapping dst="I27" src="XI27"/>
+            <mapping dst="I32" src="XI32"/>
+            <mapping dst="I33" src="XI33"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward/>
+        <reverse/>
+    </scope>
+    <scope name="Terminal">
+        <forward/>
+        <reverse/>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping dst="Din WBData WData" src="&lt;unmappedTermOrder&gt;"/>
+            <mapping dst="Din WBData WData" src="&lt;termOrder&gt;"/>
+        </forward>
+        <reverse>
+            <mapping dst="&lt;unmappedTermOrder&gt;" src="Din WBData WData"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="buffer">
+            <instance name="I32"/>
+            <instance name="I33"/>
+        </instance_header>
+        <instance_header master="buffer_highdrive">
+            <instance name="I34"/>
+        </instance_header>
+        <instance_header master="invx4">
+            <instance name="I27"/>
+        </instance_header>
+    </master_instances>
+</module>

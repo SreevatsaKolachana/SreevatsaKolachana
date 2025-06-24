@@ -1,0 +1,750 @@
++------------------------------------------------------------------------+
+|                        IC Validator LVS Report                         |
+|                                                                        |
+|                          TOP equivalence point                         |
+|                      Schematic cell name = Cmux2                       |
+|                      Layout cell name    = Cmux2                       |
++------------------------------------------------------------------------+
+
+COMPARE (R) Hierarchical Layout Vs. Schematic
+        Version RHEL64 W-2024.09-SP2.11100136 2024/12/03
+Copyright (C) Synopsys, Inc. All rights reserved.
+
+
++------------------------------------------------------------------------+
+|                           Comparison Result                            |
++------------------------------------------------------------------------+
+
+
+                       ######   ##   ##### #
+                       #       #  #    #   #
+                       #####  ######   #   #
+                       #      #    #   #   #
+                       #      #    # ##### #####
+
+                             [Cmux2 != Cmux2]
+
+Error summary:
+
+           8 Unmatched schematic instances
+           4 Unmatched schematic nets
+           8 Unmatched layout instances
+           6 Unmatched layout nets
+
+          24 Matched instances
+          34 Matched nets
+
+Port summary:
+
+           0 Unmatched schematic port
+           6 Unmatched layout ports
+          22 Matched ports
+
+
+Post-compare summary (* = unmatched devices, nets or ports):
+
+        Matched      Unmatched    Unmatched        Instance types
+                     schematic    layout           [schematic, layout]
+        ---------    ---------    ---------        --------------------
+                4            0            0        GATE[_NAND2(nmos/pmos), _NAND2(NMOS/PMOS)]
+                8            0            0        NMOS[nmos, NMOS]
+                4            4            0      * GATE[_INV(nmos/pmos), _INV(NMOS/PMOS)]
+                0            4            0      * GATE[_NOR2(nmos/pmos), _NOR2(NMOS/PMOS)]
+                0            0            4      * GATE[_S_PMOS2_(pmos), _S_PMOS2_(PMOS)]
+                8            0            4      * PMOS[pmos, PMOS]
+        ---------    ---------    ---------        --------------------
+               24            8            8      * Total instances
+
+               34            4            6      * Total nets
+
+               22            0            6      * Total ports
+
+
+
+Diagnostic summary:
+
+    6 extra layout nets
+    4 missing layout nets
+    4 unmatched device groups
+
+
+DIAGNOSTIC: 6 extra layout nets
+
+    The following layout nets are extra compared to the schematic netlist.
+
+        Schematic net                                 Layout net : connections
+        ---------------------------                   ------------------------
+      * Missing net                                   16 : 2
+      * Missing net                                   32 : 1
+      * Missing net                                   31 : 2
+      * Missing net                                   34 : 1
+      * Missing net                                   12 : 2
+      * Missing net                                   14 : 2
+
+
+DIAGNOSTIC: 4 missing layout nets
+
+    The following schematic nets are missing in the layout netlist.
+
+        Schematic net : connections                   Layout net
+        ---------------------------                   ------------------------
+        net2 : 2                                    * Missing net
+        net3 : 2                                    * Missing net
+        net4 : 2                                    * Missing net
+        net1 : 2                                    * Missing net
+
+
+DIAGNOSTIC: 4 unmatched device groups
+
+    Unmatched schematic and layout devices are grouped for cross probing.
+
+    Group 1 of 4:
+
+        Schematic device (type)       Layout device (type) (x, y)
+        ----------------------        ----------------------
+        _INV#2 (GATE[_INV(nmos        Parallel#1 (PMOS[PMOS])
+          /pmos)])                      
+
+
+
+    Group 2 of 4:
+
+        Schematic device (type)       Layout device (type) (x, y)
+        ----------------------        ----------------------
+        _INV#0 (GATE[_INV(nmos        Parallel#4 (PMOS[PMOS])
+          /pmos)])                      
+        _INV#5 (GATE[_INV(nmos        Parallel#5 (PMOS[PMOS])
+          /pmos)])                      
+
+
+
+    Group 3 of 4:
+
+        Schematic device (type)       Layout device (type) (x, y)
+        ----------------------        ----------------------
+        _NOR#1 (GATE[_NOR2(nmo        _S_PMOS#0 (GATE[_S_PMOS2_(PMOS)])
+          s/pmos)])                     
+        _NOR#0 (GATE[_NOR2(nmo        _S_PMOS#3 (GATE[_S_PMOS2_(PMOS)])
+          s/pmos)])                     
+        _NOR#2 (GATE[_NOR2(nmo        _S_PMOS#1 (GATE[_S_PMOS2_(PMOS)])
+          s/pmos)])                     
+        _NOR#3 (GATE[_NOR2(nmo        _S_PMOS#2 (GATE[_S_PMOS2_(PMOS)])
+          s/pmos)])                     
+
+
+
+    Group 4 of 4:
+
+        Schematic device (type)       Layout device (type) (x, y)
+        ----------------------        ----------------------
+        _INV#1 (GATE[_INV(nmos        Parallel#7 (PMOS[PMOS])
+          /pmos)])                      
+
+
++------------------------------------------------------------------------+
+|                            Unmatched Ports                             |
++------------------------------------------------------------------------+
+
+Unmatched layout ports are listed as follows:
+
+    Port name : connections
+    ----------------------------------------
+    16 : 2
+    31 : 2
+    14 : 2
+    12 : 2
+    34 : 1
+    32 : 1
+
+
++------------------------------------------------------------------------+
+|                            Unmatched Nodes                             |
++------------------------------------------------------------------------+
+
+Unmatched schematic nets are listed as follows:
+
+    Net name : connections
+    ----------------------------------------
+    net3 : 2
+    net4 : 2
+    net2 : 2
+    net1 : 2
+
+
+Unmatched layout nets are listed as follows:
+
+    Net name : connections
+    ----------------------------------------
+    16 : 2
+    31 : 2
+    14 : 2
+    12 : 2
+    34 : 1
+    32 : 1
+
+
+Unmatched schematic instances are listed as follows:
+
+    Instance type GATE[_NOR2(nmos/pmos)]:
+
+        Composite devices:
+
+            Composite device    Member device (type) (x, y)
+            ----------------    ---------------------------
+            _NOR#1              _SP_NMOS#1 (GATE[_SP_NMOS_2_(nmos)]) 
+                                _S_PMOS#2 (GATE[_S_PMOS2_(pmos)]) 
+            Composite device    Member device (type) (x, y)
+            ----------------    ---------------------------
+            _NOR#0              _SP_NMOS#2 (GATE[_SP_NMOS_2_(nmos)]) 
+                                _S_PMOS#0 (GATE[_S_PMOS2_(pmos)]) 
+            Composite device    Member device (type) (x, y)
+            ----------------    ---------------------------
+            _NOR#2              _SP_NMOS#3 (GATE[_SP_NMOS_2_(nmos)]) 
+                                _S_PMOS#3 (GATE[_S_PMOS2_(pmos)]) 
+            Composite device    Member device (type) (x, y)
+            ----------------    ---------------------------
+            _NOR#3              _SP_NMOS#0 (GATE[_SP_NMOS_2_(nmos)]) 
+                                _S_PMOS#1 (GATE[_S_PMOS2_(pmos)]) 
+
+    Instance type GATE[_INV(nmos/pmos)]:
+
+        Composite devices:
+
+            Composite device    Member device (type) (x, y)
+            ----------------    ---------------------------
+            _INV#0              XI69/MM1 (NMOS[inv/nmos]) 
+                                XI69/MM0 (PMOS[inv/pmos]) 
+            Composite device    Member device (type) (x, y)
+            ----------------    ---------------------------
+            _INV#1              XI67/MM1 (NMOS[inv/nmos]) 
+                                XI67/MM0 (PMOS[inv/pmos]) 
+            Composite device    Member device (type) (x, y)
+            ----------------    ---------------------------
+            _INV#2              XI66/MM1 (NMOS[inv/nmos]) 
+                                XI66/MM0 (PMOS[inv/pmos]) 
+            Composite device    Member device (type) (x, y)
+            ----------------    ---------------------------
+            _INV#5              XI68/MM1 (NMOS[inv/nmos]) 
+                                XI68/MM0 (PMOS[inv/pmos]) 
+
+
+
+Unmatched layout instances are listed as follows:
+
+    Instance type GATE[_S_PMOS2_(PMOS)]:
+
+        Composite devices:
+
+            Composite device    Member device (type) (x, y)
+            ----------------    ---------------------------
+            _S_PMOS#2           M35 (PMOS[pmos]) (0.3915, 0.3045)
+                                M31 (PMOS[pmos]) (0.4335, 0.2993)
+            Composite device    Member device (type) (x, y)
+            ----------------    ---------------------------
+            _S_PMOS#0           M51 (PMOS[pmos]) (0.0555, 0.3045)
+                                M47 (PMOS[pmos]) (0.0975, 0.2993)
+            Composite device    Member device (type) (x, y)
+            ----------------    ---------------------------
+            _S_PMOS#3           M27 (PMOS[pmos]) (0.5595, 0.3045)
+                                M23 (PMOS[pmos]) (0.6015, 0.2993)
+            Composite device    Member device (type) (x, y)
+            ----------------    ---------------------------
+            _S_PMOS#1           M43 (PMOS[pmos]) (0.2235, 0.3045)
+                                M39 (PMOS[pmos]) (0.2655, 0.2993)
+
+    Instance type PMOS[PMOS]:
+
+        Composite devices:
+
+            Composite device    Member device (type) (x, y)
+            ----------------    ---------------------------
+            Parallel#1          M22 (PMOS[pmos]) (0.6015, 0.4453)
+                                M26 (PMOS[pmos]) (0.5595, 0.4200)
+            Composite device    Member device (type) (x, y)
+            ----------------    ---------------------------
+            Parallel#4          M46 (PMOS[pmos]) (0.0975, 0.4453)
+                                M50 (PMOS[pmos]) (0.0555, 0.4200)
+            Composite device    Member device (type) (x, y)
+            ----------------    ---------------------------
+            Parallel#5          M38 (PMOS[pmos]) (0.2655, 0.4453)
+                                M42 (PMOS[pmos]) (0.2235, 0.4200)
+            Composite device    Member device (type) (x, y)
+            ----------------    ---------------------------
+            Parallel#7          M30 (PMOS[pmos]) (0.4335, 0.4453)
+                                M34 (PMOS[pmos]) (0.3915, 0.4200)
+
+
+
+
+
++------------------------------------------------------------------------+
+|                          Detailed Information                          |
++------------------------------------------------------------------------+
+
++------------------------------------------------------------+
+|                   Comparison Information                   |
++------------------------------------------------------------+
+
+Some devices and nets remain after matching unique elements (17.00%)
+
+                    Schematic    Layout
+                    ---------    ------
+    Total devices           8         8
+    Total nets              4         6
+
+
+Matches were assumed based on symmetry.
+
+
++------------------------------------------------------------+
+|                  Merged Node Information                   |
++------------------------------------------------------------+
+
+Schematic merged devices previously referenced:
+
+    Composite device    Member device (type)
+    ----------------    --------------------
+    _NOR#3              XI60/MM1 (NMOS[nor/nmos]) 
+                        XI60/MM0 (NMOS[nor/nmos]) 
+                        XI60/MM3 (PMOS[nor/pmos]) 
+                        XI60/MM2 (PMOS[nor/pmos]) 
+
+
+    Composite device    Member device (type)
+    ----------------    --------------------
+    _NOR#2              XI58/MM1 (NMOS[nor/nmos]) 
+                        XI58/MM0 (NMOS[nor/nmos]) 
+                        XI58/MM3 (PMOS[nor/pmos]) 
+                        XI58/MM2 (PMOS[nor/pmos]) 
+
+
+    Composite device    Member device (type)
+    ----------------    --------------------
+    _INV#5              XI68/MM1 (NMOS[inv/nmos]) 
+                        XI68/MM0 (PMOS[inv/pmos]) 
+
+
+    Composite device    Member device (type)
+    ----------------    --------------------
+    _INV#2              XI66/MM1 (NMOS[inv/nmos]) 
+                        XI66/MM0 (PMOS[inv/pmos]) 
+
+
+    Composite device    Member device (type)
+    ----------------    --------------------
+    _INV#1              XI67/MM1 (NMOS[inv/nmos]) 
+                        XI67/MM0 (PMOS[inv/pmos]) 
+
+
+    Composite device    Member device (type)
+    ----------------    --------------------
+    _INV#0              XI69/MM1 (NMOS[inv/nmos]) 
+                        XI69/MM0 (PMOS[inv/pmos]) 
+
+
+    Composite device    Member device (type)
+    ----------------    --------------------
+    _NOR#1              XI59/MM1 (NMOS[nor/nmos]) 
+                        XI59/MM0 (NMOS[nor/nmos]) 
+                        XI59/MM3 (PMOS[nor/pmos]) 
+                        XI59/MM2 (PMOS[nor/pmos]) 
+
+
+    Composite device    Member device (type)
+    ----------------    --------------------
+    _NOR#0              XI61/MM1 (NMOS[nor/nmos]) 
+                        XI61/MM0 (NMOS[nor/nmos]) 
+                        XI61/MM3 (PMOS[nor/pmos]) 
+                        XI61/MM2 (PMOS[nor/pmos]) 
+
+
+Layout merged devices previously referenced:
+
+    Composite device    Member device (type) (x, y)
+    ----------------    ---------------------------
+    _S_PMOS#3           M27 (PMOS[pmos]) (0.5595, 0.3045)
+                        M23 (PMOS[pmos]) (0.6015, 0.2993)
+
+
+    Composite device    Member device (type) (x, y)
+    ----------------    ---------------------------
+    _S_PMOS#2           M35 (PMOS[pmos]) (0.3915, 0.3045)
+                        M31 (PMOS[pmos]) (0.4335, 0.2993)
+
+
+    Composite device    Member device (type) (x, y)
+    ----------------    ---------------------------
+    _S_PMOS#1           M43 (PMOS[pmos]) (0.2235, 0.3045)
+                        M39 (PMOS[pmos]) (0.2655, 0.2993)
+
+
+    Composite device    Member device (type) (x, y)
+    ----------------    ---------------------------
+    _S_PMOS#0           M51 (PMOS[pmos]) (0.0555, 0.3045)
+                        M47 (PMOS[pmos]) (0.0975, 0.2993)
+
+
+    Composite device    Member device (type) (x, y)
+    ----------------    ---------------------------
+    Parallel#7          M30 (PMOS[pmos]) (0.4335, 0.4453)
+                        M34 (PMOS[pmos]) (0.3915, 0.4200)
+
+
+    Composite device    Member device (type) (x, y)
+    ----------------    ---------------------------
+    Parallel#5          M38 (PMOS[pmos]) (0.2655, 0.4453)
+                        M42 (PMOS[pmos]) (0.2235, 0.4200)
+
+
+    Composite device    Member device (type) (x, y)
+    ----------------    ---------------------------
+    Parallel#4          M46 (PMOS[pmos]) (0.0975, 0.4453)
+                        M50 (PMOS[pmos]) (0.0555, 0.4200)
+
+
+    Composite device    Member device (type) (x, y)
+    ----------------    ---------------------------
+    Parallel#1          M22 (PMOS[pmos]) (0.6015, 0.4453)
+                        M26 (PMOS[pmos]) (0.5595, 0.4200)
+
+
++------------------------------------------------------------+
+|               Cross-Referencing Information                |
++------------------------------------------------------------+
+
+Port cross-reference table:
+    S: Schematic generated port (12 generated)
+    L: Layout generated port (0 generated)
+
+    Generated
+       port       Port class    Schematic port          Layout port
+    ----------    ----------    --------------------    --------------------
+                  1             RS1Bar                  RS1BAR
+                  2             BL3_Bar                 BL3_BAR
+                  3             BL1                     BL1
+                  4             RS1                     RS1
+                  5             Op0bar                  OP0BAR
+                  6             WS1                     WS1
+                  7             BL2_Bar                 BL2_BAR
+                  8             BL1_Bar                 BL1_BAR
+                  9             In0                     IN0
+                  10            vdd!                    VDD!
+                  11            RS0Bar                  RS0BAR
+                  12            RS0                     RS0
+                  13            WS0                     WS0
+                  14            WS0Bar                  WS0BAR
+                  15            BL3                     BL3
+                  16            Op0                     OP0
+                  17            WS1Bar                  WS1BAR
+                  18            BL2                     BL2
+                  19            BL0                     BL0
+                  20            BL0_Bar                 BL0_BAR
+                  21            In0bar                  IN0BAR
+    S             22            W3                      24
+    S             23            W2                      23
+    S             24            net8                    35
+    S             25            W0                      19
+    S             26            net5                    27
+    S             27            W1                      21
+    S             28            net6                    30
+    S             29            net7                    33
+    S             30            R0                      20
+                  31            gnd!                    GND!
+    S             32            R3                      37
+    S             33            R1                      22
+    S             34            R2                      36
+
+
+--------------------------------------------------------------
+
+Equated nets:
+
+    The following nets are matched because each net name in the
+    schematic netlist matches the same net name in the layout netlist:
+
+    WS1Bar
+    BL2_Bar
+    Op0
+    RS1
+    BL0
+    RS0
+    WS0
+    BL1
+    BL3_Bar
+    Op0bar
+    WS1
+    In0bar
+    BL2
+    In0
+    RS1Bar
+    vdd!
+    BL3
+    BL0_Bar
+    RS0Bar
+    WS0Bar
+    BL1_Bar
+
+
++------------------------------------------------------------------------+
+|                           Statistics Report                            |
++------------------------------------------------------------------------+
+
+Schematic netlist statistics after filtering and merging
+
+    Initial  PushDown  Filter  Parallel  Path/Ser  RecogGate  Final    Device type
+    -------  --------  ------  --------  --------  ---------  -------  ----------------
+          0         0       0         0         0          8        8  GATE[_INV(nmos/pmos)]
+          0         0       0         0         0          4        4  GATE[_NAND2(nmos/pmos)]
+          0         0       0         0         0          4        4  GATE[_NOR2(nmos/pmos)]
+         32         0       0         0        -8        -16        8  NMOS[nmos]
+         32         0       0         0        -8        -16        8  PMOS[pmos]
+    -------  --------  ------  --------  --------  ---------  -------  ----------------
+         64         0       0         0       -16        -16       32  Total devices
+
+    Initial  PushDown  Dangle  0 Connect Path/Ser  RecogGate  Shorted  Total nets
+    -------  --------  ------  --------  --------  ---------  -------  ----------------
+         46         0       0         0         0         -8        0       38
+
+    Initial  PushDown  Dangle  0 Connect                               Total ports
+    -------  --------  ------  --------                                ----------------
+         22         0       0         0                                     22
+
+
+Layout netlist statistics after filtering and merging
+
+    Initial  PushDown  Filter  Parallel  Path/Ser  RecogGate  Final    Device type
+    -------  --------  ------  --------  --------  ---------  -------  ----------------
+         20         0       0         0        -8         -4        8  NMOS[NMOS]
+         40         0       0        -8        -8        -12       12  PMOS[PMOS]
+          0         0       0         0         0          4        4  GATE[_INV(NMOS/PMOS)]
+          0         0       0         0         0          4        4  GATE[_NAND2(NMOS/PMOS)]
+          0         0       0         0         0          4        4  GATE[_S_PMOS2_(PMOS)]
+    -------  --------  ------  --------  --------  ---------  -------  ----------------
+         60         0       0        -8       -16         -4       32  Total devices
+
+    Initial  PushDown  Dangle  0 Connect Path/Ser  RecogGate  Shorted  Total nets
+    -------  --------  ------  --------  --------  ---------  -------  ----------------
+         48         0       0         0         0         -8        0       40
+
+    Initial  PushDown  Dangle  0 Connect                               Total ports
+    -------  --------  ------  --------                                ----------------
+         40         0       0         0                                     40
+
+
+Post merge netlist statistics: (* = different count)
+
+    Schematic       Layout          Device type [schematic, layout]
+    ---------       ---------       -------------------------------
+            8               4     * GATE[_INV(nmos/pmos), _INV(NMOS/PMOS)]
+            4               4       GATE[_NAND2(nmos/pmos), _NAND2(NMOS/PMOS)]
+            4               0     * GATE[_NOR2(nmos/pmos), _NOR2(NMOS/PMOS)]
+            0               4     * GATE[_S_PMOS2_(pmos), _S_PMOS2_(PMOS)]
+            8               8       NMOS[nmos, NMOS]
+            8              12     * PMOS[pmos, PMOS]
+    ---------       ---------       -------------------------------
+           32              32       Total devices
+
+           38              40     * Total nets
+
+           22              40     * Total ports
+
+
+Device Settings Table
+=====================
+Device       Parallel  Series  Merge      Multiple  Short       Series    Check     Filter
+Type         Merge     Merge   Connected  Paths     Equivalent  Parallel  Property
+                               Gates                Nodes       Stack
+=======================================================================================
+PMOS[PMOS]   +         -       -          -         SAME NAME   -         -         -
+NMOS[NMOS]   +         -       -          -         SAME NAME   -         -         -
+
+Specific Device Settings
+========================
+PMOS[PMOS]
+====================
+Property   Parallel            Parallel     Series              Series       Check               Schematic
+           Exclude             Merge        Exclude             Merge        Property            Optional
+           Tolerance           Property     Tolerance           Property     Tolerance
+                               Function                         Function
+================================================================================================================================
+Length     -                   -            -                   -            -                   -
+Width      -                   -            -                   -            -                   -
+PD         -                   -            -                   -            -                   -
+PS         -                   -            -                   -            -                   -
+AD         -                   -            -                   -            -                   -
+AS         -                   -            -                   -            -                   -
+
+Parallel Merge Property Function : default_par_mos_props 
+
+NMOS[NMOS]
+====================
+Property   Parallel            Parallel     Series              Series       Check               Schematic
+           Exclude             Merge        Exclude             Merge        Property            Optional
+           Tolerance           Property     Tolerance           Property     Tolerance
+                               Function                         Function
+================================================================================================================================
+Length     -                   -            -                   -            -                   -
+Width      -                   -            -                   -            -                   -
+PD         -                   -            -                   -            -                   -
+PS         -                   -            -                   -            -                   -
+AD         -                   -            -                   -            -                   -
+AS         -                   -            -                   -            -                   -
+
+Parallel Merge Property Function : default_par_mos_props 
+
+
++------------------------------------------------------------------------+
+|                            Compare Options                             |
+|                                                                        |
+|       * = Different from IC Validator default setting                  |
+|       @ = Different setting between runset and equivalence point       |
++------------------------------------------------------------------------+
+
+    == Global Settings ==                     
+*   schematic global_nets                     = {gnd! vdd!}
+    power nets                                
+*       schematic                             = {vdd VDD vdd! VDD!}
+*       layout                                = {VDD VDD!}
+    ground nets                               
+*       schematic                             = {vss gnd! VSS GND!}
+*       layout                                = {VSS GND!}
+    join nets                                 
+        schematic                             = {}
+        layout                                = {}
+    == Merge & Filter ==                      
+    filter                                    = 0 device_name
+*   merge_parallel                            = 2 device_names
+        exclude_functions                     = 0 device_name
+*       property_functions                    = 2 device_names
+        xref_parallel_map                     = 0 device_name
+    merge_series                              = 0 device_name
+        exclude_functions                     = 0 device_name
+        property_functions                    = 0 device_name
+        multiple_paths                        = 0 device_name
+        merge_connected_gates                 = 0 device_name
+*   short_equivalent_nodes                    = 2 device_names
+        series_parallel_stack                 = 0 device_name
+    short_equivalent_stack_nodes              = 0 device_name
+        exclude_tolerances                    = 0 device_name
+*   recognize_gate                            = 2 device_names
+        exclude_tolerances                    = 0 device_name
+    == Property ==                            
+    check_property                            = 0 device_name
+        check_function                        = 0 device_name
+    check_property_for_failed_equiv           = false
+    lvs_property_epsilon                      = E6
+    multiply_width                            = true
+    recalculate_property                      = 0 device_name
+    == Hierarchy ==                           
+    memory_array_compare                      = true
+    push_down_devices                         = false
+    push_down_pins                            = true
+    remove_dangling_net                       = LAYOUT_UNTEXTED
+    define_global_nets_as_top_ports           = true
+    == Netlist Definition ==                  
+    delete cells                              
+        schematic                             = {}
+        layout                                = {}
+    pin configuration                         
+*       swappable_pins                        = 2 device_names
+        ignore pins                           = 0 device_name
+    top_cell_ports_static                     = NAME_MATCHED
+    define_empty_cell_as_device               = NONE
+    == Report ==                              
+    print_messages                            
+        equated_nets_list                     = true
+        equivalent_cell_list                  = true
+        invalid_user_equivs                   = true
+        matched_devices_unmatched_nets        = true
+        merged_nets_referenced                = true
+        netlist_stats                         = true
+        nets_promoted_to_pwr_gnd              = true
+        non_equivalent_cell_list              = true
+        port_xref_table                       = true
+        post_compare_stats                    = true
+        referenced_merged_devices             = true
+        swapped_pin_analysis                  = true
+        symmetrical_nodes_found               = true
+        uncompared_cell_list                  = true
+        all_merged_device_list                = false
+        instance_xref_table                   = false
+        filtered_device_list                  = false
+        series_device_list                    = false
+        net_xref_table                        = false
+        parallel_device_list                  = false
+        pre_merge_stats                       = false
+        black_box_signoff                     = true
+        complete_device_setting_table         = false
+    wrap_print_message_text                   = true
+    print_devices_per_net_max                 = 10
+    error_limit_per_check                     = 1000
+    write_equiv_netlists                      = FAILED_REDUCED
+    print_detail                              
+        property                              = COORDINATES_AND_DEVICE_TYPES
+        xref_pin                              = NONE
+        device_pin                            = ALL
+    black_box_file                            = NONE
+    ignore_equiv_file                         = NONE
+    open_net_names_checking                   = USE_ICV_RENAMED
+    == Equiv Control ==                       
+    generate_user_equivs                      = NONE
+    generate_system_equivs                    = false
+*   spice_flow                                = true
+*   user_unit_meter                           = true
+    ignore_equivs_with_devices_leveled_out    = false
+    equivs management                         
+        action_on_error                       = NO_EXPLODE
+        no_explode_condition                  = NONE
+        resolve_duplicate_equivs              = false
+        explode_imbalanced_equivs             = true
+    matching                                  
+        detect_permutable_ports               = false
+        match_by_net_name                     = false
+        texted_zero_connection_ports          = IGNORE
+        black_box_static_ports                = NONE
+        pin_connected_and_dangling_suppress_layers= {}
+    match_condition                           
+        black_box_duplicates_equiv            = WARNING
+        property_mismatch                     = ERROR
+        missing_required_property             = ERROR
+        illegal_multiplier                    = ERROR
+        equate_by_net_name_fails              = WARNING
+        equate_nets_fails                     = WARNING
+        filtered_schematic_devices            = WARNING
+        generate_global_nets                  = WARNING
+        matches_must_be_assumed               = WARNING
+        merging_without_pwr_gnd               = WARNING
+        missing_black_box_cell                = WARNING
+        missing_black_box_port                = WARNING
+        missing_pin_connection                = WARNING
+        new_cell_created                      = WARNING
+        no_global_nets_found                  = WARNING
+        undefined_property_for_merged_device  = WARNING
+        zero_value_property                   = WARNING
+        empty_cell_not_defined_as_device      = NONE
+        layout_ports_without_name             = NONE
+        top_layout_ports_without_name         = NONE
+        nets_matched_with_different_name      = NONE
+        ports_matched_with_different_name     = NONE
+        properties_contradict_connections     = NONE
+        port_net_match_non_port_net           = NONE
+        top_schematic_port_net_match_non_port_net= NONE
+        top_layout_port_net_match_non_port_net= NONE
+        top_ports_matched_with_different_name = NONE
+        top_schematic_ports_matched_with_different_or_missing_name= NONE
+        one_connection_non_port_net           = NONE
+        zero_connection_net                   = NONE
+        child_equiv_unmatched_ports           = NONE
+        pin_connected_and_dangling            = NONE
+        layout_net_without_matching_name      = NONE
+    report_black_box_errors                   
+        extra_layout_ports                    = ERROR_NO_ABORT
+        untexted_layout_ports                 = NONE
+        extra_schematic_ports                 = ERROR_NO_ABORT
+    == Case Sensitivity ==                    
+    netlist case sensitivity                  
+        schematic uppercase                   = false
+*       layout uppercase                      = true
+    LVS case_sensitive                        = {PROPERTY NET_PORT DEVICE_NAME}
+
+

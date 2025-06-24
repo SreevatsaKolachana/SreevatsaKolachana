@@ -1,0 +1,32 @@
+Stack Dump: VERSION W-2024.09-SP1-2 CONFIG 11256978 DATE Wed Apr 16 19:36:28 2025
+Frame 0. /lib64/libpthread.so.0 ::0x91e48990 + 0x50
+Frame 1. std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&) + 0x403
+Frame 2. 0x12379c07 SNPSee_3fe057a17626001965ebec928d3286f4c790c2e1f4d5926bc8210b3472ddd292e6ba0429e40324f61b9af95ca6611c5bbff070ab99ca028552b4c90257f6826ec5b9d22f0d4b81d8a7649bcf4032c9e9bff7d4600eb5e0b3ffab67beb053515da00ccd8128466ea9 + 0x1d7
+Frame 3. 0x1624f8cd SNPSee_1f05ccc245127c05dfc6426534fdbd4884f2b7ef67379b3e83c69e23bc7972e8ccfa659d2d2ed404aad7b3f35fa88c5170a32725c105e96500215dea1e8261b8ba7070db175052cc + 0xbd
+Frame 4. 0x16250cc0 SNPSee_1f05ccc245127c05dfc6426534fdbd48d606ffc11a41850aabedb2bedfaa7090d11190e1fc51bf167f9c46c4160deea12ef2ea79b287cf9d20c1bcfecd1ff453cb6b0b05ef5dbdff9ea552b22a24ea73 + 0x90
+Frame 5. 0x1625497d SNPSee_1f05ccc245127c05dfc6426534fdbd48f240392aef683ff9345ea0dd2a4c84e829c9ef3bde7bc712fb15a4ccff4502edd592a118f18627d671dcb2241c9381a009d6ffc003a473f554b5b6166b6e432f1f3afa598b9f23c1 + 0x5d
+Frame 6. postman::postman::_notify(postman::base_event*) + 0x179
+Frame 7. 0x156c90b9 SNPSee_d8aee9b46b39f5b03772415152e24d22d379fcb940ef37519d4a9cb6a1cac5cb4e35a00fac1dbc62 + 0xe9
+Frame 8. 0x156ca1e2 SNPSee_d8aee9b46b39f5b03772415152e24d22e113921747eb3935 + 0x3b2
+Frame 9. 0x156ca519 SNPSee_d8aee9b46b39f5b03772415152e24d223e7b06fb45ea9609 + 0x139
+Frame 10. 0x156f53d6 SNPSee_d8aee9b46b39f5b0b58c7a10e64509d5ecf72fc2bf7b74c4d5de894b1ad612bff6b350778b0899cf3bd1ef0cfa9da7a031fbf12396da150ebe02569f46e7e81fd916a92114692105d543ac8e84cf8962c57f6b6cf93f019e31d327d8a81d7d00b2cef9286502bb715e897d334508496a393abb921cdcfaccf85cfcf55120d7ea + 0x236
+Frame 11. 0x104e6c03 SNPSee_363feb179ff8fd1785f32ea89accca583a82ebdc39a610d87267c01df67a128622d15af156492bbb + 0x123
+Frame 12. 0x104e96f0 SNPSee_c3269dc53fe6cbcd5a389060dd59f89ee348651c9213c181b9a7d14d1c6c7034881e20e714e963da58092379d11fa3fff37655cf627c3e7913a1f2b786c3f9a31a33bdfd4e357d0ae39b01864a202a1cb92253dc11a1385cdc4a920bf9b329bd + 0x30
+Frame 13. 0x13715641 SNPSee_e77e44f5b3b24d332e59e1c0c8ad452a85afa7e5e280ed9bf73aae3c885f3b4ad85433d8e93a399a + 0x61
+Frame 14. /lib64/libc.so.6 ::0x74933ccc + 0x13c
+Frame 15. libc.so.6: on_exit + 0x20
+Frame 16. /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/lib/libQt5XcbQpa.so.5 ::0x6817ceb0 + 0x5eb0
+Frame 17. /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/lib/libQt5XcbQpa.so.5 ::0x681b1fc3 + 0xd43
+Frame 18. libglib-2.0.so.0: g_main_context_dispatch + 0x15d
+Frame 19. /lib64/libglib-2.0.so.0 ::0x7896aea8 + 0x518
+Frame 20. libglib-2.0.so.0: g_main_context_iteration + 0x30
+Frame 21. QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) + 0x6a
+Frame 22. QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) + 0x11b
+Frame 23. QCoreApplication::exec() + 0x7c
+Frame 24. 0x4316bf6 SNPSee_002365a670bbd5d0a7c56191a475a3ee632fcc3a9fd6c1d60707b94db351293835df6d970cefab6fb6155797a49e5eb7 + 0x1056
+Frame 25. custom_compiler: main + 0x6b
+Frame 26. libc.so.6: __libc_start_main + 0xe5
+Frame 27. /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/platform/bin/custom_compiler ::0x42f9c54 + 0x29
+Stack Dump: VERSION W-2024.09-SP1-2 CONFIG 11256978 DATE Wed Apr 16 19:36:28 2025
+Error: The application was unexpectedly terminated.
+See the session log file for recovery details. (SHUT_DOWN-001)

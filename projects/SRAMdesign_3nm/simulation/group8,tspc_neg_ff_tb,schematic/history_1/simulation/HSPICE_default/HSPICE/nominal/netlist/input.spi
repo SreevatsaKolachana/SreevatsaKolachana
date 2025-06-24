@@ -1,0 +1,88 @@
+*  Generated for: PrimeSim
+*  Design library name: group8
+*  Design cell name: tspc_neg_ff_tb
+*  Design view name: schematic
+.option search='/mnt/designkits/ncsu/FreePDK3/hspice/models'
+
+.param VDD_VAL=0.8
+.option PARHIER = LOCAL
+.option PORT_VOLTAGE_SCALE_TO_2X = 1
+.option S_ELEM_CACHE_DIR = "/mnt/ncsudrive/s/svkolach/.synopsys_custom/sparam_dir"
+.option PVA_OUTPUT_DIR = "/mnt/ncsudrive/s/svkolach/.synopsys_custom/pva_dir"
+
+.option WDF=1
+.temp 25
+.lib 'fet.mod' nfet_typ
+.lib 'fet.mod' pfet_typ
+
+*PrimeWave Design Environment Based on Custom Infrastructure
+*Version W-2024.09-SP1-2
+*Fri Mar 28 18:04:55 2025
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : group8
+* Cell             : tspc_neg_ff
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt tspc_neg_ff d qbar phi
+m3 qbar y gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m2 y phi gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m1 net4 d gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m0 x phi net4 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m8 net26 y vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m7 qbar phi net26 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m6 y x net19 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m5 net19 phi vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m4 x d vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+.ends tspc_neg_ff
+
+********************************************************************************
+* Library          : FreePDK3_examples
+* Cell             : inverter
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt inverter a out
+m9 out a vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m8 out a gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+.ends inverter
+
+********************************************************************************
+* Library          : group8
+* Cell             : tspc_neg_ff_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 d qbar phi tspc_neg_ff
+v2 vdd! gnd! dc='VDD_VAL'
+v7 phi gnd! dc=0 pulse ( 'VDD_VAL' 0 0 2p 2p 8p 20p )
+v6 d gnd! dc=0 pulse ( 'VDD_VAL' 0 0 5p 5p 20p 50p )
+xi8 qbar q inverter
+
+
+
+
+
+
+
+
+
+.tran 0.1p 200p start=0
+.option opfile=1 split_dp=1
+.option probe=1
+.probe tran v(*) level=1
+.probe tran v(d) v(q) v(phi)
+
+
+
+
+
+
+
+
+.end

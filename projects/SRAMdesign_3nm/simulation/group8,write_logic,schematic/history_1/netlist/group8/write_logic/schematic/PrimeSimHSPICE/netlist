@@ -1,0 +1,33 @@
+*PrimeWave Design Environment Based on Custom Infrastructure
+*Version W-2024.09-SP1-2
+*Wed Mar 26 00:12:10 2025
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : group8
+* Cell             : inv
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt inv in out
+m0 out in vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m1 out in gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+.ends inv
+
+********************************************************************************
+* Library          : group8
+* Cell             : write_logic
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi13 write_data net4 inv
+xi14 net4 net3 inv
+m7 net3 write_enable bl_bar pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n
++ pseo=117n
+m6 net4 write_enable bl pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+v10 write_enable gnd! dc=0 pulse ( 0 0.8 0p 5p 5p 45p 100p )
+v8 write_data gnd! dc=0 pulse ( 0.8 0 0 5p 5p 45p 100p )
+v16 vdd! gnd! dc=0.8
+

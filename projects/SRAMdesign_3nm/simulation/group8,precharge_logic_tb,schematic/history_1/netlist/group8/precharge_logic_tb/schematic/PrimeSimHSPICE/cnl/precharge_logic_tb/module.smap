@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 precharge_logic_tb schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping dst="c7" src="C7"/>
+            <mapping dst="v5" src="V5"/>
+            <mapping dst="c8" src="C8"/>
+            <mapping dst="v2" src="V2"/>
+            <mapping dst="xi10" src="I10"/>
+        </forward>
+        <reverse>
+            <mapping dst="C7" src="c7"/>
+            <mapping dst="C8" src="c8"/>
+            <mapping dst="V5" src="v5"/>
+            <mapping dst="V2" src="v2"/>
+            <mapping dst="I10" src="xi10"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward/>
+        <reverse/>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping dst="" src="&lt;unmappedTermOrder&gt;"/>
+            <mapping dst="" src="&lt;termOrder&gt;"/>
+        </forward>
+        <reverse>
+            <mapping dst="&lt;unmappedTermOrder&gt;" src=""/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="cap">
+            <instance name="C7"/>
+            <instance name="C8"/>
+        </instance_header>
+        <instance_header master="precharge_logic">
+            <instance name="I10"/>
+        </instance_header>
+        <instance_header master="vdc">
+            <instance name="V5"/>
+        </instance_header>
+        <instance_header master="vpulse">
+            <instance name="V2"/>
+        </instance_header>
+    </master_instances>
+</module>

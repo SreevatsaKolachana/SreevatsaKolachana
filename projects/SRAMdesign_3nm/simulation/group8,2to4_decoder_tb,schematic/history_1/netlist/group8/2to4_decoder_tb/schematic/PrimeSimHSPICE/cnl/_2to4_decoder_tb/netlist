@@ -1,0 +1,17 @@
+********************************************************************************
+* Library          : group8
+* Cell             : 2to4_decoder_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 net54 net51 net49 net43 net56 net53 net1 net2 wdata net46 net7 net4 rs0 rs1
++ ws0 ws1 _2to4_decoder
+xi2 a1 wen ws1 rs1 demux
+xi1 a0 wen ws0 rs0 demux
+v19 wdata gnd! dc=0 pulse ( 0 0.8 0 0 0 50p 100p )
+v5 wen gnd! dc=0 pulse ( 0 0 0 0 0 100p 200p )
+v4 a1 gnd! dc=0 pulse ( 0 0.80 0 0 0 25p 50p )
+v3 a0 gnd! dc=0 pulse ( 0 00.8 0 0 0 12.5p 25p )
+v15 vdd! gnd! dc=0.8
+xi18 wdata net46 inv

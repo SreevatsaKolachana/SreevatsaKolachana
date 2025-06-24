@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 TSPC_DFF schematic vl: auCdl schematic symbol">
+    <scope name="Instance">
+        <forward>
+            <mapping dst="MM5" src="M5"/>
+            <mapping dst="MM6" src="M6"/>
+            <mapping dst="MM8" src="M8"/>
+            <mapping dst="MM10" src="M10"/>
+            <mapping dst="MM0" src="M0"/>
+            <mapping dst="MM1" src="M1"/>
+            <mapping dst="MM2" src="M2"/>
+            <mapping dst="MM4" src="M4"/>
+            <mapping dst="MM7" src="M7"/>
+            <mapping dst="MM3" src="M3"/>
+            <mapping dst="MM9" src="M9"/>
+        </forward>
+        <reverse>
+            <mapping dst="M1" src="MM1"/>
+            <mapping dst="M3" src="MM3"/>
+            <mapping dst="M6" src="MM6"/>
+            <mapping dst="M8" src="MM8"/>
+            <mapping dst="M10" src="MM10"/>
+            <mapping dst="M2" src="MM2"/>
+            <mapping dst="M5" src="MM5"/>
+            <mapping dst="M4" src="MM4"/>
+            <mapping dst="M0" src="MM0"/>
+            <mapping dst="M7" src="MM7"/>
+            <mapping dst="M9" src="MM9"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward/>
+        <reverse/>
+    </scope>
+    <scope name="Terminal">
+        <forward/>
+        <reverse/>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping dst="D Q phi" src="&lt;unmappedTermOrder&gt;"/>
+            <mapping dst="D Q phi" src="&lt;termOrder&gt;"/>
+        </forward>
+        <reverse>
+            <mapping dst="&lt;unmappedTermOrder&gt;" src="D Q phi"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="nmos">
+            <instance name="M1"/>
+            <instance name="M10"/>
+            <instance name="M3"/>
+            <instance name="M5"/>
+            <instance name="M6"/>
+            <instance name="M8"/>
+        </instance_header>
+        <instance_header master="pmos">
+            <instance name="M0"/>
+            <instance name="M2"/>
+            <instance name="M4"/>
+            <instance name="M7"/>
+            <instance name="M9"/>
+        </instance_header>
+    </master_instances>
+</module>

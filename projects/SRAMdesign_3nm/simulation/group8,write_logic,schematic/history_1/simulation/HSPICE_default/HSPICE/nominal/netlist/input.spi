@@ -1,0 +1,72 @@
+*  Generated for: PrimeSim
+*  Design library name: group8
+*  Design cell name: write_logic
+*  Design view name: schematic
+.option search='/mnt/designkits/ncsu/FreePDK3/hspice/models'
+
+
+.option PARHIER = LOCAL
+.option PORT_VOLTAGE_SCALE_TO_2X = 1
+.option S_ELEM_CACHE_DIR = "/mnt/ncsudrive/h/hrajesh/.synopsys_custom/sparam_dir"
+.option PVA_OUTPUT_DIR = "/mnt/ncsudrive/h/hrajesh/.synopsys_custom/pva_dir"
+
+.option WDF=1
+.temp 25
+.lib 'fet.mod' nfet_typ
+.lib 'fet.mod' pfet_typ
+
+*PrimeWave Design Environment Based on Custom Infrastructure
+*Version W-2024.09-SP1-2
+*Mon Mar 31 17:48:51 2025
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : group8
+* Cell             : inv
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt inv in out
+m0 out in vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m1 out in gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+.ends inv
+
+********************************************************************************
+* Library          : group8
+* Cell             : write_logic
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi13 write_data net4 inv
+xi14 net4 net3 inv
+m7 net3 write_enable bl_bar pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n
++ pseo=117n
+m6 net4 write_enable bl pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+v10 write_enable gnd! dc=0 pulse ( 0 0.8 0p 5p 5p 45p 100p )
+v8 write_data gnd! dc=0 pulse ( 0 00.8 0 5p 5p 45p 100p )
+v16 vdd! gnd! dc=0.8
+
+
+
+
+
+
+
+
+
+.tran 0.1p 300p start=0
+.option opfile=1 split_dp=1
+.option probe=1
+.probe tran v(*) level=1
+.probe tran v(bl) v(bl_bar) v(write_enable) v(net3) v(net4) v(write_data)
+
+
+
+
+
+
+
+
+.end

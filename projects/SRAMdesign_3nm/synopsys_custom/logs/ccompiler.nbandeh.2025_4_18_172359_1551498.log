@@ -1,0 +1,425 @@
+[17:24:12.74] /o 
+              /c                                 Custom Compiler™ 
+              /c 
+              /c               Version W-2024.09-SP1-2 for linux64 - Jan 16, 2025 
+              /c 
+              /c                     Copyright (c) 2004 - 2025 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 11256978 compiled on Thu Jan 16 10:52:27 2025 for AlmaLinux 8.4
+              /c Invocation: /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Fri Apr 18 17:23:59 2025
+              /c Host: hydra13.ece.ncsu.edu
+              /c Working directory: /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project
+              /c 
+[17:24:21.57] /m Information: Registering ICV PERC package...
+[17:24:22.70] /r giShowFrameTabs true
+[17:24:22.71] /r giWindowId 1
+[17:24:22.71] /r giWindowGeometry 1040x800
+[17:24:23.73] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x822+247+54
+[17:24:27.38] /i gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[17:24:27.68] /r giWindowId 2
+[17:24:27.68] /r giWindowGeometry 1910x1023+819+52
+[17:24:27.70] /# db::setAttr maximized -of [gi::getFrames 1] -value true
+[17:24:28.23] /i db::setAttr geometry -of [gi::getFrames 1] -value 1536x822+8+54
+[17:24:29.29] /i gi::setCurrentIndex {libs} -index {parasitics} -in [gi::getWindows 2]
+[17:24:29.34] /i gi::setItemSelection {libs} -index {parasitics} -in [gi::getWindows 2]
+[17:24:30.66] /i gi::setCurrentIndex {libs} -index {group8} -in [gi::getWindows 2]
+[17:24:30.73] /i gi::setItemSelection {libs} -index {group8} -in [gi::getWindows 2]
+[17:24:33.18] /i gi::setCurrentIndex {cells} -index {inv} -in [gi::getWindows 2]
+[17:24:33.45] /i gi::setItemSelection {cells} -index {inv} -in [gi::getWindows 2]
+[17:24:35.22] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 2]
+[17:24:35.31] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 2]
+[17:24:36.55] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[17:24:36.69] /o Loading: Callback files...
+[17:24:36.70] /o Loading: scripts/callbacks/callbacks.tcl
+[17:24:36.70] /o 
+              /c [INFO] : Loading display.drf from /mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3
+              /c 
+              /c  if you wish to Load other display.drf, please set shell environment valiable "iPDK_load_display_NCSU_TechLib_FreePDK3" to value = 0
+[17:24:36.70] /o 
+[17:24:36.83] /w Warning: Preference 'xtStarTcadGrdFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[17:24:36.84] /w Warning: Preference 'xtStarOALayerMappingFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[17:24:36.84] /o 	#######################################
+[17:24:36.84] /o 	CC-PDK Library Name	: FreePDK3
+[17:24:36.84] /o 	#######################################
+[17:24:36.84] /o 
+[17:24:36.91] /m Information: Feature 'CustomInfrastructure' checked out. (LICENSE-003)
+[17:24:36.92] /m Information: Feature 'SynopsysCustomLayout' checked out. (LICENSE-003)
+[17:24:37.13] /r giWindowId 3
+[17:24:37.14] /r giWindowGeometry 1910x1023+5+52
+[17:24:39.64] /# gi::executeAction {deSelectActive} -in [gi::getWindows 3]
+[17:24:39.64] /i de::deselectAll [db::getNext [de::getContexts -window 3]]
+[17:24:39.64] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {2.025 2.875} -index 0 -intent none]
+[17:24:39.64] /o oa:0x3cac0210
+[17:24:41.28] /i gi::executeAction {sePropertyEditorToggle} -in [gi::getWindows 3]
+[17:24:41.28] /# db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 3]] -value false
+[17:24:41.60] /i db::setAttr dockSize -of [gi::getAssistants deErrorViewer -from [gi::getWindows 3]] -value 403x694
+[17:24:44.92] /i db::setAttr shown -of [gi::getAssistants deErrorViewer -from [gi::getWindows 3]] -value false
+[17:24:46.60] /# gi::executeAction {deSelectActive} -in [gi::getWindows 3]
+[17:24:46.60] /i de::cycleActiveFigure [gi::getWindows 3] -direction next
+[17:24:46.60] /o oa:0x3433c6b0
+[17:24:47.12] /i gi::executeAction {sePropertyEditorToggle} -in [gi::getWindows 3]
+[17:24:47.12] /# db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 3]] -value true
+[17:24:54.91] /i gi::setActiveWindow 2
+[17:24:54.91] /i gi::setActiveWindow 2 -raise true
+[17:24:57.25] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 2]
+[17:24:57.34] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 2]
+[17:24:58.80] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[17:24:59.04] /r giWindowId 4
+[17:24:59.05] /r giWindowGeometry 1910x1023+819+52
+[17:25:00.01] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]] -value 290x186
+[17:25:04.18] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 4]
+[17:25:04.18] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 4]]
+[17:25:20.24] /# gi::setItemSelection {sets} -index {Design} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:20.24] /# gi::setCurrentIndex {sets} -index {Design} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:20.38] /# gi::executeAction {leOLPApplySet} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:20.38] /i db::setPrefValue leLPPSet -value "{Design}" -scope [de::getContexts -window 4]
+[17:25:20.39] /# gi::setItemSelection {sets} -index {Design} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:20.39] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:20.39] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:20.39] /o oa:0x3ce715d0
+[17:25:21.60] /# gi::setCurrentIndex {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:21.72] /# gi::setItemSelection {lpps} -index {BPR drawing - VBPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:21.76] /# gi::setItemSelection {lpps} -index {BPR drawing - NW drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:21.78] /# gi::setItemSelection {lpps} -index {BPR drawing - ACT drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:21.80] /# gi::setItemSelection {lpps} -index {BPR drawing - GATE drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:21.82] /# gi::setItemSelection {lpps} -index {BPR drawing - GCUT drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:21.85] /# gi::setItemSelection {lpps} -index {BPR drawing - DUMMY drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:21.87] /# gi::setItemSelection {lpps} -index {BPR drawing - NIM drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:21.92] /# gi::setItemSelection {lpps} -index {BPR drawing - PIM drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:21.98] /# gi::setItemSelection {lpps} -index {BPR drawing - M0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:22.08] /# gi::setItemSelection {lpps} -index {BPR drawing - V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:22.14] /# gi::setItemSelection {lpps} -index {BPR drawing - GCON drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:22.17] /# gi::setItemSelection {lpps} -index {BPR drawing - M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:22.24] /# gi::setItemSelection {lpps} -index {BPR drawing - V0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:22.57] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:22.57] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "BPR drawing" || %lpp == "VBPR drawing" || %lpp == "NW drawing" || %lpp == "ACT drawing" || %lpp == "GATE drawing" || %lpp == "GCUT drawing" || %lpp == "DUMMY drawing" || %lpp == "NIM drawing" || %lpp == "PIM drawing" || %lpp == "M0A drawing" || %lpp == "V0A drawing" || %lpp == "GCON drawing" || %lpp == "M0B drawing" || %lpp == "V0B drawing"} -from [de::getActiveContext] ] -value false
+[17:25:24.77] /# gi::setItemSelection {lpps} -index {M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:24.77] /# gi::setCurrentIndex {lpps} -index {M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:24.99] /# gi::setItemSelection {lpps} -index {V0B drawing - M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:25.01] /# gi::setItemSelection {lpps} -index {M0B drawing - M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:25.04] /# gi::setItemSelection {lpps} -index {GCON drawing - M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:25.06] /# gi::setItemSelection {lpps} -index {V0A drawing - M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:25.09] /# gi::setItemSelection {lpps} -index {M0A drawing - M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:25.12] /# gi::setItemSelection {lpps} -index {PIM drawing - M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:25.15] /# gi::setItemSelection {lpps} -index {NIM drawing - M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:25.17] /# gi::setItemSelection {lpps} -index {DUMMY drawing - M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:25.20] /# gi::setItemSelection {lpps} -index {GCUT drawing - M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:25.24] /# gi::setItemSelection {lpps} -index {GATE drawing - M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:25.36] /# gi::setItemSelection {lpps} -index {ACT drawing - M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:25.44] /# gi::setItemSelection {lpps} -index {NW drawing - M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:25.47] /# gi::setItemSelection {lpps} -index {VBPR drawing - M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:25.52] /# gi::setItemSelection {lpps} -index {BPR drawing - M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:27.02] /# gi::executeAction {deSelectActive} -in [gi::getWindows 4]
+[17:25:28.39] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:28.39] /# gi::setCurrentIndex {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:28.53] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:28.53] /i de::setActiveLPP [de::getLPPs {BPR drawing} -from [oa::DesignFind group8 inv layout]]
+[17:25:29.71] /# gi::setItemSelection {lpps} -index {VBPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:29.71] /# gi::setCurrentIndex {lpps} -index {VBPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:29.81] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:29.81] /i de::setActiveLPP [de::getLPPs {VBPR drawing} -from [oa::DesignFind group8 inv layout]]
+[17:25:31.18] /# gi::setItemSelection {lpps} -index {ACT drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:31.18] /# gi::setCurrentIndex {lpps} -index {ACT drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:31.33] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:31.33] /i de::setActiveLPP [de::getLPPs {ACT drawing} -from [oa::DesignFind group8 inv layout]]
+[17:25:32.99] /# gi::setItemSelection {lpps} -index {GATE drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:32.99] /# gi::setCurrentIndex {lpps} -index {GATE drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:33.12] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:33.12] /i de::setActiveLPP [de::getLPPs {GATE drawing} -from [oa::DesignFind group8 inv layout]]
+[17:25:33.79] /# gi::setItemSelection {lpps} -index {DUMMY drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:33.79] /# gi::setCurrentIndex {lpps} -index {DUMMY drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:33.92] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:33.92] /i de::setActiveLPP [de::getLPPs {DUMMY drawing} -from [oa::DesignFind group8 inv layout]]
+[17:25:35.25] /# gi::setItemSelection {lpps} -index {M0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:35.25] /# gi::setCurrentIndex {lpps} -index {M0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:35.34] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:35.34] /i de::setActiveLPP [de::getLPPs {M0A drawing} -from [oa::DesignFind group8 inv layout]]
+[17:25:36.26] /# gi::setItemSelection {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:36.26] /# gi::setCurrentIndex {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:36.35] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:36.35] /i de::setActiveLPP [de::getLPPs {V0A drawing} -from [oa::DesignFind group8 inv layout]]
+[17:25:36.86] /# gi::setItemSelection {lpps} -index {GCON drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:36.86] /# gi::setCurrentIndex {lpps} -index {GCON drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:36.96] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:36.96] /i de::setActiveLPP [de::getLPPs {GCON drawing} -from [oa::DesignFind group8 inv layout]]
+[17:25:37.50] /# gi::setItemSelection {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:37.50] /# gi::setCurrentIndex {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:37.62] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:37.62] /i de::setActiveLPP [de::getLPPs {M0B drawing} -from [oa::DesignFind group8 inv layout]]
+[17:25:38.44] /# gi::setItemSelection {lpps} -index {V0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:38.44] /# gi::setCurrentIndex {lpps} -index {V0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:38.57] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[17:25:38.57] /i de::setActiveLPP [de::getLPPs {V0B drawing} -from [oa::DesignFind group8 inv layout]]
+[17:25:46.70] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 4]
+[17:25:50.74] /# gi::executeAction {deSelectActive} -in [gi::getWindows 4]
+[17:25:50.74] /i de::deselectAll [db::getNext [de::getContexts -window 4]]
+[17:25:50.74] /i de::select [de::getActiveFigure [gi::getWindows 4] -point {0.1195 0.0925} -index 0 -intent none]
+[17:25:50.74] /o oa:0x33f72190
+[17:25:52.59] /# gi::executeAction {deSelectActive} -in [gi::getWindows 4]
+[17:25:52.59] /i de::deselectAll [db::getNext [de::getContexts -window 4]]
+[17:25:52.59] /i de::select [de::getActiveFigure [gi::getWindows 4] -point {0.0365 0.094} -index 0 -intent none]
+[17:25:52.59] /o oa:0x3cb9ef90
+[17:35:56.10] /i gi::setActiveWindow 2
+[17:35:56.10] /i gi::setActiveWindow 2 -raise true
+[17:36:04.51] /i gi::setCurrentIndex {cells} -index {sram_6t} -in [gi::getWindows 2]
+[17:36:05.43] /i gi::setItemSelection {cells} -index {sram_6t} -in [gi::getWindows 2]
+[17:36:08.46] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 2]
+[17:36:08.61] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[17:36:08.84] /r giWindowId 5
+[17:36:08.86] /r giWindowGeometry 1910x1023+819+52
+[17:36:09.70] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]] -value 290x186
+[17:36:11.75] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 5]
+[17:36:11.75] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 5]]
+[17:37:28.67] /# gi::setItemSelection {lpps} -index {NW drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:37:28.67] /# gi::setCurrentIndex {lpps} -index {NW drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:37:28.86] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:37:28.86] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "NW drawing"} -from [de::getActiveContext] ] -value false
+[17:37:31.76] /# gi::setItemSelection {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:37:31.76] /# gi::setCurrentIndex {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:37:31.94] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:37:31.94] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "V0A drawing"} -from [de::getActiveContext] ] -value false
+[17:37:33.58] /# gi::setItemSelection {lpps} -index {NIM drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:37:33.58] /# gi::setCurrentIndex {lpps} -index {NIM drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:37:33.77] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:37:33.77] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "NIM drawing"} -from [de::getActiveContext] ] -value false
+[17:37:34.53] /# gi::setItemSelection {lpps} -index {PIM drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:37:34.53] /# gi::setCurrentIndex {lpps} -index {PIM drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:37:34.70] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:37:34.70] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "PIM drawing"} -from [de::getActiveContext] ] -value false
+[17:37:37.46] /# gi::setItemSelection {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:37:37.46] /# gi::setCurrentIndex {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:37:37.67] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:37:37.67] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "V0A drawing"} -from [de::getActiveContext] ] -value true
+[17:39:50.79] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 5]
+[17:39:50.79] /i de::zoom -window [gi::getWindows 5] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.32 0.0235}
+[17:39:51.83] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 5]
+[17:39:51.83] /i de::zoom -window [gi::getWindows 5] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.1165 0.104}
+[17:39:52.07] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 5]
+[17:39:52.07] /i de::zoom -window [gi::getWindows 5] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.1165 0.104}
+[17:39:53.84] /# gi::executeAction {deFitView} -in [gi::getWindows 5]
+[17:39:53.84] /i de::fit -window 5 -fitView true
+[17:46:27.96] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:46:28.89] /# gi::executeAction {leDisplayTopLevel} -in [gi::getWindows 5]
+[17:46:28.89] /i db::setPrefValue leStopLevel -value 0 -scope [db::getNext [de::getContexts -window 5]]; db::setPrefValue leStartLevel -value 0 -scope [db::getNext [de::getContexts -window 5]]; de::redraw -window 5
+[17:46:32.32] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:46:32.32] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[17:46:32.32] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {0.147 0.2015} -index 0 -intent none]
+[17:46:32.32] /o oa:0x3cb0add0
+[17:46:34.44] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:46:34.44] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[17:46:34.44] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {0.1485 0.1605} -index 0 -intent none]
+[17:46:34.44] /o oa:0x3cb97560
+[17:46:36.35] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:46:36.35] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[17:46:36.35] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {-0.008 0.165} -index 0 -intent none]
+[17:46:36.35] /o oa:0x3da53200
+[17:46:38.04] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:46:38.04] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[17:46:38.04] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {-0.0035 0.2085} -index 0 -intent none]
+[17:46:38.04] /o oa:0x3cb6b2f0
+[17:46:40.92] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 5]
+[17:46:40.92] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 5]]
+[17:46:44.29] /# gi::setItemSelection {sets} -index {Design} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:46:44.29] /# gi::setCurrentIndex {sets} -index {Design} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:46:44.43] /# gi::executeAction {leOLPApplySet} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:46:44.43] /i db::setPrefValue leLPPSet -value "{Design}" -scope [de::getContexts -window 5]
+[17:46:44.44] /# gi::setItemSelection {sets} -index {Design} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:46:44.45] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:46:44.45] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:46:44.45] /o oa:0x3dfb6a80
+[17:46:46.27] /# gi::setItemSelection {lpps} -index {M3 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:46:46.27] /# gi::setCurrentIndex {lpps} -index {M3 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:46:46.43] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:46:46.43] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "M3 drawing"} -from [de::getActiveContext] ] -value false
+[17:47:32.25] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:47:32.25] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[17:47:32.25] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {0.121 0.177} -index 0 -intent none]
+[17:47:32.25] /o oa:0x3ead9780
+[17:47:35.15] /# gi::setItemSelection {lpps} -index {NIM drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:47:35.15] /# gi::setCurrentIndex {lpps} -index {NIM drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:47:35.29] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:47:35.29] /i de::setActiveLPP [de::getLPPs {NIM drawing} -from [oa::DesignFind group8 sram_6t layout]]
+[17:47:38.98] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:47:38.98] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[17:47:38.98] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {0.025 0.0835} -index 0 -intent none]
+[17:47:38.98] /o oa:0x3dc81f60
+[17:47:40.92] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:47:40.92] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[17:47:40.92] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {0.027 0.1005} -index 0 -intent none]
+[17:47:40.92] /o oa:0x3ec16d00
+[17:48:10.58] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 5]
+[17:48:10.58] /i de::zoom -window [gi::getWindows 5] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.0425 0.035}
+[17:48:11.00] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 5]
+[17:48:11.00] /i de::zoom -window [gi::getWindows 5] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.0425 0.035}
+[17:48:13.08] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 5]
+[17:48:13.08] /i de::zoom -window [gi::getWindows 5] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.048 0.0395}
+[17:48:14.37] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 5]
+[17:48:14.37] /i de::zoom -window [gi::getWindows 5] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.0485 0.04}
+[17:48:24.63] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 5]
+[17:48:24.63] /i de::zoom -window [gi::getWindows 5] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.071 0.1485}
+[17:48:26.65] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 5]
+[17:48:26.65] /i de::zoom -window [gi::getWindows 5] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.0695 0.1485}
+[17:48:31.33] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:48:31.33] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[17:48:31.33] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {0.1195 0.182} -index 0 -intent none]
+[17:48:31.34] /o oa:0x3dcb51a0
+[17:48:33.58] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:48:33.58] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[17:48:33.58] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {0.1235 0.165} -index 0 -intent none]
+[17:48:33.58] /o oa:0x3ec3ec70
+[17:48:36.37] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 5]
+[17:48:37.56] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:48:37.56] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[17:48:39.70] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:48:39.70] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[17:48:39.70] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {0.147 0.1475} -index 0 -intent none]
+[17:48:39.70] /o oa:0x3ec4aac0
+[17:48:58.95] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:48:58.95] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[17:48:58.95] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {0.0315 0.093} -index 0 -intent none]
+[17:48:58.95] /o oa:0x3e6111b0
+[17:49:22.42] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 5]
+[17:49:22.42] /i de::zoom -window [gi::getWindows 5] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.051 0.161}
+[17:49:25.94] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 5]
+[17:49:25.94] /i de::zoom -window [gi::getWindows 5] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.081 0.123}
+[17:49:30.69] /# gi::setItemSelection {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:49:30.69] /# gi::setCurrentIndex {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:49:30.85] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:49:30.85] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "M0B drawing"} -from [de::getActiveContext] ] -value false
+[17:49:33.00] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 5]
+[17:49:33.00] /i de::zoom -window [gi::getWindows 5] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.073 0.149}
+[17:49:37.21] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:49:37.21] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[17:49:37.21] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {0.075 0.1145} -index 0 -intent none]
+[17:49:37.21] /o oa:0x3d9bdbf0
+[17:49:40.22] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:49:40.22] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[17:49:40.22] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {0.075 0.1035} -index 0 -intent none]
+[17:49:40.22] /o oa:0x3e64af60
+[17:49:47.53] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:49:47.53] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "M0B drawing"} -from [de::getActiveContext] ] -value true
+[17:49:48.33] /# gi::setItemSelection {lpps} -index {M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:49:48.33] /# gi::setCurrentIndex {lpps} -index {M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:49:48.53] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:49:48.53] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "M1 drawing"} -from [de::getActiveContext] ] -value false
+[17:49:52.30] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:49:52.30] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[17:49:59.34] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 5]
+[17:49:59.34] /i de::zoom -window [gi::getWindows 5] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.083 0.14}
+[17:50:03.50] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:50:03.50] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[17:50:03.51] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {0.1365 0.127} -index 0 -intent none]
+[17:50:03.51] /o oa:0x3db67210
+[17:50:04.47] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:50:04.47] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[17:50:26.76] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:50:26.76] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "M1 drawing"} -from [de::getActiveContext] ] -value true
+[17:50:29.52] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 5]
+[17:50:29.52] /i de::zoom -window [gi::getWindows 5] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.072 0.124}
+[17:50:29.60] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 5]
+[17:50:29.60] /i de::zoom -window [gi::getWindows 5] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.072 0.124}
+[17:50:29.71] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 5]
+[17:50:29.71] /i de::zoom -window [gi::getWindows 5] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.072 0.124}
+[17:50:31.41] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:50:31.41] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[17:50:31.41] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {0.073 0.122} -index 0 -intent none]
+[17:50:31.41] /o oa:0x3e61e950
+[17:50:33.33] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 5]
+[17:50:33.33] /i de::zoom -window [gi::getWindows 5] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.073 0.122}
+[17:50:33.44] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 5]
+[17:50:33.44] /i de::zoom -window [gi::getWindows 5] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.0735 0.1225}
+[17:50:35.38] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 5]
+[17:50:35.38] /i de::zoom -window [gi::getWindows 5] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.073 0.1225}
+[17:51:12.04] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 5]
+[17:51:12.04] /i de::zoom -window [gi::getWindows 5] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.0645 0.1515}
+[17:51:13.74] /# gi::executeAction {deFitView} -in [gi::getWindows 5]
+[17:51:13.74] /i de::fit -window 5 -fitView true
+[17:51:21.26] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:51:21.26] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[17:51:21.26] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {0.074 0.093} -index 0 -intent none]
+[17:51:21.26] /o oa:0x3e628ab0
+[17:51:22.86] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 5]
+[17:51:22.86] /i de::zoom -window [gi::getWindows 5] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.0695 0.094}
+[17:51:30.90] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:51:30.90] /i de::setActiveLPP [de::getLPPs {M1 drawing} -from [oa::DesignFind group8 sram_6t layout]]
+[17:51:33.73] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:51:33.73] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[17:51:33.73] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {0.071 0.159} -index 0 -intent none]
+[17:51:33.73] /o oa:0x3dc90390
+[17:51:37.46] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:51:37.46] /i de::cycleActiveFigure [gi::getWindows 5] -direction next
+[17:51:37.47] /o oa:0x3dff5100
+[17:51:37.47] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[17:51:37.47] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {0.0755 0.089} -index 1 -intent none]
+[17:51:37.47] /o oa:0x3e6091f0
+[17:51:39.54] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 5]
+[17:51:39.54] /i de::zoom -window [gi::getWindows 5] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.1055 0.1015}
+[17:52:45.01] /# gi::setItemSelection {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:52:45.01] /# gi::setCurrentIndex {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:52:45.15] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[17:52:45.15] /i de::setActiveLPP [de::getLPPs {M0B drawing} -from [oa::DesignFind group8 sram_6t layout]]
+[17:53:05.72] /# gi::executeAction {deSelectActive} -in [gi::getWindows 5]
+[17:53:05.72] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[17:53:05.72] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {0.1185 0.1655} -index 0 -intent none]
+[17:53:05.72] /o oa:0x3dfd9c70
+[17:53:17.52] /# gi::executeAction {deSelectActiveAdd} -in [gi::getWindows 5]
+[17:53:17.52] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {0.025 0.0995} -index 0 -intent select]
+[17:53:17.52] /o oa:0x3c8835e0
+[17:54:27.49] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 5]
+[17:54:27.49] /i de::zoom -window [gi::getWindows 5] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.0725 0.102}
+[17:54:27.75] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 5]
+[17:54:27.75] /i de::zoom -window [gi::getWindows 5] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.0725 0.102}
+[17:54:30.33] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 5]
+[17:54:30.33] /i de::zoom -window [gi::getWindows 5] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.0755 0.0985}
+[17:54:34.29] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 5]
+[17:54:34.29] /i de::zoom -window [gi::getWindows 5] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.0755 0.0985}
+[17:54:43.00] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 5]
+[17:54:43.00] /i de::zoom -window [gi::getWindows 5] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.0705 0.1455}
+[17:54:43.11] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 5]
+[17:54:43.11] /i de::zoom -window [gi::getWindows 5] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.0705 0.1455}
+[17:54:55.04] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 5]
+[17:54:55.04] /i de::zoom -window [gi::getWindows 5] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.0645 0.1555}
+[17:54:55.17] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 5]
+[17:54:55.17] /i de::zoom -window [gi::getWindows 5] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.0645 0.1555}
+[17:55:01.11] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 5]
+[17:55:01.11] /i de::zoom -window [gi::getWindows 5] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.082 0.1525}
+[17:55:01.48] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 5]
+[17:55:01.48] /i de::zoom -window [gi::getWindows 5] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.082 0.1525}
+[17:55:05.09] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 5]
+[17:55:05.09] /i de::zoom -window [gi::getWindows 5] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.0745 0.157}
+[17:55:05.75] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 5]
+[17:55:05.75] /i de::zoom -window [gi::getWindows 5] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.0745 0.157}
+[17:55:22.92] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[17:55:24.36] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[17:55:25.25] /i db::setAttr geometry -of [gi::getFrames 1] -value 1536x822+9+55
+[17:55:27.28] /i gi::executeAction giCloseWindow -in [gi::getWindows 5]
+[17:55:33.58] /i gi::executeAction {dmRefreshLibs} -in [gi::getWindows 2]
+[17:55:33.58] /# dm::refreshLibs
+[17:55:35.07] /i gi::setItemSelection {libs} -index {} -in [gi::getWindows 2]
+[17:55:35.57] /i gi::executeAction {dmRefreshLibs} -in [gi::getWindows 2]
+[17:55:35.57] /# dm::refreshLibs
+[17:55:36.91] /i gi::setCurrentIndex {libs} -index {group8} -in [gi::getWindows 2]
+[17:55:37.89] /i gi::setItemSelection {libs} -index {group8} -in [gi::getWindows 2]
+[17:55:42.61] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
+[17:55:44.76] /i exit
+[17:55:44.85] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]]
+[17:55:45.11] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]] -value 402x202+566+313
+[17:55:46.55] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]]
+[17:55:50.14] /o Shutdown time: Fri Apr 18 17:55:50 2025
+[17:55:50.14] /o Elapsed session real time: 31.76 minutes
+[17:55:50.14] /o Session terminated. Log is at /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/logs/ccompiler.nbandeh.2025_4_18_172359_1551498.log

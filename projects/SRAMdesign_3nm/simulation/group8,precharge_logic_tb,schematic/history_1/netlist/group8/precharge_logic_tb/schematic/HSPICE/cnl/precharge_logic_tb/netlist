@@ -1,0 +1,10 @@
+********************************************************************************
+* Library          : group8
+* Cell             : precharge_logic_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi10 net14 net16 net6 precharge_logic
+v2 net6 gnd! dc=0 pulse ( 0 0.8 10p 5p 5p 45p 100p )
+v5 vdd! gnd! dc=0.8

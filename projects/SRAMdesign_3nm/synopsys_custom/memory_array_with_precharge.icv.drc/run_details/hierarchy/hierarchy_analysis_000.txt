@@ -1,0 +1,95 @@
+* Description of frequently used terms in hierarchy_analysis files*
+M indicates that the value of that column is in millions
+Hier Plc Count(Hierarchical Placement Count) : Number of unique instances of the cell in another cell (Parent)
+Flat Plc Count(Flat Placement Count)         : Total number of instances of the cell in the layout
+
+Example : 
+                               A                     
+                              / \                   Cell  Hier Plc Count Flat Plc Count 
+                             /   \                     A               1              1 
+                            B     B                    B               2              2 
+                           / \  /  \                   C               2              4 
+                          C   C C   C                
+------------------------------------------------------------------------------------------------------ 
+
+
+* Cells with flat area > 0.01 of top cell *
+Reports cells with flat area > 0.01 of top cell
+
+Flat A(Flat Area) : Total area covered by this cell in the layout(cell area * flat placement count)
+Cell A(Cell Area) : Area of this cell
+Percent of top    : Percentage of area of this cell w.r.t area of top cell
+This table contains 12 entries
+Original table contains 12 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Flat Plc Count, Hier Plc Count, Percent of top
+-----------------------------------------------
+ memory_array_with_precharge                   |         0.000,         0.000,              1,              1,       100.00 %
+ sram_6t                                       |         0.000,         0.000,            128,            128,        84.44 %
+ pmos                                          |         0.000,         0.000,            628,              8,        73.28 %
+ bitcell_precharge_filler                      |         0.000,         0.000,            128,            128,        39.74 %
+ BPR_M0A                                       |         0.000,         0.000,            680,              8,        19.94 %
+ sram_filler                                   |         0.000,         0.000,             68,             68,        18.29 %
+ precharge_logic                               |         0.000,         0.000,             16,             16,         7.53 %
+ M0B_M1                                        |         0.000,         0.000,           1184,            138,         6.42 %
+ GATE_M0B                                      |         0.000,         0.000,            560,              7,         4.65 %
+ M0A_M0B                                       |         0.000,         0.000,            672,            134,         3.59 %
+ M1_M2                                         |         0.000,         0.000,            544,            133,         3.57 %
+ M2_M3                                         |         0.000,         0.000,            416,            132,         2.73 %
+===============================================
+
+* Large-Area cells and child area ratio *
+This table reports cells with large areas and ratio of its area with total area covered by its children
+
+Num Inst(Number of instances) : Total Number of instances of the cell
+Child A(Child Area)           : Total area covered by all the children of the cell
+Pct of parent(Percent of area): Percentage of total area covered by its childern w.r.t area of this cell
+This table contains 12 entries
+Original table contains 12 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Num Inst (M), Child A (mm^2), Pct of parent
+-----------------------------------------------
+ memory_array_with_precharge                   |         0.000,         0.000,        0.001,         0.000,      153.05 %
+ sram_6t                                       |         0.000,         0.000,        0.000,         0.000,      179.11 %
+ pmos                                          |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ bitcell_precharge_filler                      |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ BPR_M0A                                       |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ sram_filler                                   |         0.000,         0.000,        0.000,         0.000,      108.58 %
+ precharge_logic                               |         0.000,         0.000,        0.000,         0.000,      176.60 %
+ M0B_M1                                        |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ GATE_M0B                                      |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ M0A_M0B                                       |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ M1_M2                                         |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ M2_M3                                         |         0.000,         0.000,        0.000,         0.000,        0.00 %
+===============================================
+
+* Layer Report with Estimated Data *
+Reports information of layers present in the layout
+
+Trap        : Number of hierarchical trapezoids in the layer
+Poly        : Number of hierarchical polygons in the layer
+Text        : Number of hierarchical text primitives in the layer
+Flat Trap   : Number of flat trapezoids 
+Flat Poly   : Number of flat polygons
+Flat Text   : Number of flat text primitives 
+Trap F/H    : Ratio of flat and hierarchical placements of the trapezoids
+Base, Metal, Via, Fill, Colored : Indicates layer intent
+This table contains 12 entries
+Original table contains 12 entries
+
+ Name                                          | Trap (M), Poly (M), Text (M), Flat Trap (M), Flat Poly (M), Flat Text (M), Trap F/H, Base, Metal, Via, Fill, Colored
+-----------------------------------------------
+ aM0A                                          |    0.000,    0.000,    0.000,         0.004,         0.004,         0.000,    30.59,    0,     0,   0,    0,       0
+ aM3                                           |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,    20.64,    0,     0,   0,    0,       0
+ aGATE                                         |    0.000,    0.000,    0.000,         0.005,         0.005,         0.000,   210.00,    0,     0,   0,    0,       0
+ aBPR                                          |    0.000,    0.000,    0.000,         0.003,         0.003,         0.000,   126.80,    0,     0,   0,    0,       0
+ aM2                                           |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,    58.11,    0,     0,   0,    0,       0
+ aDUMMY                                        |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,    75.14,    0,     0,   0,    0,       0
+ aGCUT                                         |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,    93.60,    0,     0,   0,    0,       0
+ aNIM                                          |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,   174.86,    0,     0,   0,    0,       0
+ aACT                                          |    0.000,    0.000,    0.000,         0.002,         0.002,         0.000,   294.67,    0,     0,   0,    0,       0
+ aNW                                           |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,   193.60,    0,     0,   0,    0,       0
+ aVBPR                                         |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,   680.00,    0,     0,   0,    0,       0
+ aM1_color1                                    |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+===============================================
+

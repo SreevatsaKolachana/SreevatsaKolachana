@@ -1,0 +1,74 @@
+*****************************************************************************
+Tool:		exportStream        W-2024.09-SP1-2
+*****************************************************************************
+Running: exportStream -logFile invx4.exportStream.log -lib group8 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs -cell "invx4" -view "layout" -referenceMap /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/invx4.icv.lvs/invx4.custom_compiler.xml -keepPcells -keepVias -keepAbuts -useTechLayerMap -useTechObjectMap -textHeight matchOABBox -newMaxVerticesFunction -gds /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/invx4.icv.lvs/invx4.custom_compiler.gds -colorMapping honor
+Started: Sat Apr 12 19:00:15 2025 (Hostname: hydra11.ece.ncsu.edu)
+Reading layer map /mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3/NCSU_TechLib_FreePDK3.layermap
+
+INFO: (EXPORT_STREAM-80033): Translating design NCSU_TechLib_FreePDK3/BPR_M0A/layout as "BPR_M0A".
+INFO: (EXPORT_STREAM-80033): Translating design NCSU_TechLib_FreePDK3/GATE_M0B/layout as "GATE_M0B".
+INFO: (EXPORT_STREAM-80033): Translating design NCSU_TechLib_FreePDK3/M0A_M0B/layout as "M0A_M0B".
+INFO: (EXPORT_STREAM-80033): Translating design NCSU_TechLib_FreePDK3/nmos/layout as "nmos".
+INFO: (EXPORT_STREAM-80033): Translating design NCSU_TechLib_FreePDK3/pmos/layout as "pmos".
+INFO: (EXPORT_STREAM-80033): Translating design group8/invx4/layout as "invx4".
+
+Primary Cell(s):
+	1.invx4
+
+Cell Statistics:
+	CellName  Rectangles  Polygons    Paths       PathSegs    Labels      Instances   Arrays      Nodes       
+	BPR_M0A   3           0           0           0           0           0           0           0           
+	GATE_M0B  3           0           0           0           0           0           0           0           
+	M0A_M0B   3           0           0           0           0           0           0           0           
+	invx4     19          0           0           0           4           20          0           0           
+	nmos      7           0           0           0           0           0           0           0           
+	pmos      8           0           0           0           0           0           0           0           
+
+Layer Statistics:
+	Layer       Purpose  StreamLayer     StreamDataType  Rectangles  Polygons    Paths       PathSegs    Labels      Nodes       
+	PIM         drawing  8               0               2           0           0           0           0           0
+	NIM         drawing  7               0               2           0           0           0           0           0
+	ACT         drawing  3               0               2           0           0           0           0           0
+	NW          drawing  2               0               2           0           0           0           0           0
+	V0A         drawing  10              0               1           0           0           0           0           0
+	GCON        drawing  11              0               1           0           0           0           0           0
+	DUMMY       drawing  6               0               4           0           0           0           0           0
+	GATE        drawing  4               0               9           0           0           0           0           0
+	VBPR        drawing  1               0               1           0           0           0           0           0
+	M0A         drawing  9               0               8           0           0           0           0           0
+	M0B         drawing  12              0               6           0           0           0           2           0
+	BPR         drawing  0               0               5           0           0           0           2           0
+
+Summary of Objects:
+	Scalar Instances:             20
+	Array Instances:              0
+	Vector Instances:             0
+	Vector Instance Bits:         0
+	Polygons:                     0
+	Paths:                        0
+	Rectangles:                   43
+	Lines:                        0
+	Arcs:                         0
+	Donuts:                       0
+	Dots:                         0
+	Ellipses:                     0
+	Blockages:                    0
+	Boundaries:                   0
+	Routes:                       0
+	Text:                         0
+	Text Displays:                
+	  PropDisplay:                0
+	  AttrDisplay:                4
+	  TextOverride:               0
+	PathSeg:                      0
+	StdVia:                       0
+	CustomVia:                    0
+	Cells:                        6
+
+
+Finished:     exportStream
+Time Elapsed: 1.31 seconds
+CPU Time:     0.333077 seconds
+System Time:  0.097976 seconds
+Peak VM:      10244096 bytes
+Messages:     0 error, 0 warning

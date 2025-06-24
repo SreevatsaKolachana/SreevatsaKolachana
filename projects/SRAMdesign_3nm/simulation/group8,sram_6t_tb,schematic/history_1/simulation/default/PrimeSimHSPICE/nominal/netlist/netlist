@@ -1,0 +1,35 @@
+*PrimeWave Design Environment Based on Custom Infrastructure
+*Version W-2024.09-SP1-2
+*Fri Mar 28 17:18:36 2025
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : group8
+* Cell             : sram_6t
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt sram_6t bl bl_bar gnd_1 vdd wl
+m1 vdd q ~q pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m0 q ~q vdd pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m5 bl wl q nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+m6 ~q wl bl_bar nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+m3 ~q q gnd_1 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+m2 q ~q gnd_1 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+.ends sram_6t
+
+********************************************************************************
+* Library          : group8
+* Cell             : sram_6t_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 bl blb gnd! vdd! wl sram_6t
+v12 vdd! gnd! dc='VDD_VAL'
+v15 wl gnd! dc=0 pulse ( 0 'VDD_VAL' 10p 5p 5p 45p 100p )
+v18 bl gnd! dc=0.8 pwl ( 0 0.8 5p 0 65p 0.0 70p 0.8 100p 0.8 105p 0.8 165p 0.8 170p 0
++  )
+v19 blb gnd! dc=0.8 pwl ( 0 0.8 95p 0.8 100p 0.0 )
+

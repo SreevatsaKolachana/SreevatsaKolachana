@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 buffer_tb schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping dst="xi15" src="I15"/>
+            <mapping dst="xi10" src="I10"/>
+            <mapping dst="xi13" src="I13"/>
+            <mapping dst="v3" src="V3"/>
+            <mapping dst="c17" src="C17"/>
+            <mapping dst="v1" src="V1"/>
+            <mapping dst="xi8" src="I8"/>
+            <mapping dst="xi14" src="I14"/>
+            <mapping dst="xi0" src="I0"/>
+            <mapping dst="xi20" src="I20"/>
+            <mapping dst="xi19" src="I19"/>
+            <mapping dst="c2" src="C2"/>
+            <mapping dst="xi21" src="I21"/>
+            <mapping dst="xi16" src="I16"/>
+            <mapping dst="xi22" src="I22"/>
+        </forward>
+        <reverse>
+            <mapping dst="I15" src="xi15"/>
+            <mapping dst="I13" src="xi13"/>
+            <mapping dst="V3" src="v3"/>
+            <mapping dst="C2" src="c2"/>
+            <mapping dst="V1" src="v1"/>
+            <mapping dst="I10" src="xi10"/>
+            <mapping dst="I8" src="xi8"/>
+            <mapping dst="I16" src="xi16"/>
+            <mapping dst="I14" src="xi14"/>
+            <mapping dst="I19" src="xi19"/>
+            <mapping dst="I0" src="xi0"/>
+            <mapping dst="I21" src="xi21"/>
+            <mapping dst="C17" src="c17"/>
+            <mapping dst="I20" src="xi20"/>
+            <mapping dst="I22" src="xi22"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward>
+            <mapping dst="i2_pc" src="i2_PC"/>
+        </forward>
+        <reverse>
+            <mapping dst="i2_PC" src="i2_pc"/>
+        </reverse>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping dst="" src="&lt;unmappedTermOrder&gt;"/>
+            <mapping dst="" src="&lt;termOrder&gt;"/>
+        </forward>
+        <reverse>
+            <mapping dst="&lt;unmappedTermOrder&gt;" src=""/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="buffer">
+            <instance name="I0"/>
+            <instance name="I14"/>
+            <instance name="I19"/>
+            <instance name="I20"/>
+            <instance name="I21"/>
+            <instance name="I22"/>
+            <instance name="I8"/>
+        </instance_header>
+        <instance_header master="cap">
+            <instance name="C17"/>
+            <instance name="C2"/>
+        </instance_header>
+        <instance_header master="inv">
+            <instance name="I10"/>
+            <instance name="I16"/>
+        </instance_header>
+        <instance_header master="nand">
+            <instance name="I15"/>
+        </instance_header>
+        <instance_header master="nor">
+            <instance name="I13"/>
+        </instance_header>
+        <instance_header master="vdc">
+            <instance name="V3"/>
+        </instance_header>
+        <instance_header master="vpulse">
+            <instance name="V1"/>
+        </instance_header>
+    </master_instances>
+</module>

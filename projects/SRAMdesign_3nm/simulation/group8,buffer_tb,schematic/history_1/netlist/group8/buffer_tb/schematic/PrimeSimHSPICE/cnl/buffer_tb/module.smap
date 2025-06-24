@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 buffer_tb schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping src="I16" dst="xi16"/>
+            <mapping src="I15" dst="xi15"/>
+            <mapping src="I10" dst="xi10"/>
+            <mapping src="I13" dst="xi13"/>
+            <mapping src="V3" dst="v3"/>
+            <mapping src="C2" dst="c2"/>
+            <mapping src="C17" dst="c17"/>
+            <mapping src="V1" dst="v1"/>
+            <mapping src="I0" dst="xi0"/>
+            <mapping src="I8" dst="xi8"/>
+            <mapping src="I14" dst="xi14"/>
+        </forward>
+        <reverse>
+            <mapping src="xi15" dst="I15"/>
+            <mapping src="xi13" dst="I13"/>
+            <mapping src="v3" dst="V3"/>
+            <mapping src="c2" dst="C2"/>
+            <mapping src="c17" dst="C17"/>
+            <mapping src="v1" dst="V1"/>
+            <mapping src="xi0" dst="I0"/>
+            <mapping src="xi10" dst="I10"/>
+            <mapping src="xi8" dst="I8"/>
+            <mapping src="xi16" dst="I16"/>
+            <mapping src="xi14" dst="I14"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward/>
+        <reverse/>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping src="&lt;unmappedTermOrder&gt;" dst=""/>
+            <mapping src="&lt;termOrder&gt;" dst=""/>
+        </forward>
+        <reverse>
+            <mapping src="" dst="&lt;unmappedTermOrder&gt;"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="buffer">
+            <instance name="I0"/>
+            <instance name="I14"/>
+            <instance name="I8"/>
+        </instance_header>
+        <instance_header master="cap">
+            <instance name="C17"/>
+            <instance name="C2"/>
+        </instance_header>
+        <instance_header master="inv">
+            <instance name="I10"/>
+            <instance name="I16"/>
+        </instance_header>
+        <instance_header master="nand">
+            <instance name="I15"/>
+        </instance_header>
+        <instance_header master="nor">
+            <instance name="I13"/>
+        </instance_header>
+        <instance_header master="vdc">
+            <instance name="V3"/>
+        </instance_header>
+        <instance_header master="vpulse">
+            <instance name="V1"/>
+        </instance_header>
+    </master_instances>
+</module>

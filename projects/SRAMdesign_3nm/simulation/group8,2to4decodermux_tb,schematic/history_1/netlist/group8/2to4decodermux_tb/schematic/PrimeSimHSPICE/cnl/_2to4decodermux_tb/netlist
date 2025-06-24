@@ -1,0 +1,13 @@
+********************************************************************************
+* Library          : group8
+* Cell             : 2to4decodermux_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 net39 net41 gnd! gnd! gnd! gnd! gnd! gnd! gnd! gnd! gnd! gnd! gnd! gnd! gnd!
++ gnd! gnd! gnd! gnd! gnd! gnd! gnd! gnd! gnd! gnd! gnd! gnd! gnd! gnd! gnd!
++ gnd! gnd! gnd! gnd! net22 net20 net18 net16 _2to4decodermux
+v2 net41 gnd! dc=0 pulse ( 0 0.8 10p 5p 5p 90p 200p )
+v1 net39 gnd! dc=0 pulse ( 0 0.8 10p 5p 5p 40p 100p )
+v8 vdd! gnd! dc=0.8

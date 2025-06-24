@@ -1,0 +1,194 @@
+[14:42:29.83] /o 
+              /c                          PrimeWave Design Environment 
+              /c 
+              /c                Version W-2024.09-SP1-2 for linux64 - Jan 15, 2025
+              /c              Based on Custom Infrastructure
+              /c Version W-2024.09-SP1-2
+              /c 
+              /c                     Copyright (c) 2004 - 2025 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 11252589 compiled on Wed Jan 15 11:01:36 2025 for AlmaLinux 8.4
+              /c Invocation: /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/linux64/platform/bin/custom_shell -application primewave -gui 0 -uniqueString 424077b79e1069ee0b73611fb0816457f03d3135d99f0755c1cb7792ad947542fb6d9ef9522819dd76f47198451c7978 -python 0 -command "source /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.hrajesh/stb.group8.precharge_logic_tb.schematic.session1/sim_server_init.tcl" -log /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/primewave_session1_sim_server_job1 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs
+              /c Execution time: Tue Mar 25 14:42:24 2025
+              /c Host: hydra11.ece.ncsu.edu
+              /c Working directory: /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project
+              /c 
+[14:42:37.95] /m Information: Registering ICV PERC package...
+[14:42:38.12] /w Warning: In file /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs: Unable to open library proj_common at path /mnt/coe/workspace/ece/ece546-common/proj_common : No access permission. (DATA_MANAGEMENT-014)
+[14:42:38.58] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[14:42:38.65] /o 
+[14:42:38.69] /i source /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.hrajesh/stb.group8.precharge_logic_tb.schematic.session1/sim_server_init.tcl
+[14:42:39.31] /o SimServer socket started on hydra11.ece.ncsu.edu:39507
+[14:42:39.72] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.hrajesh/stb.group8.precharge_logic_tb.schematic.session1/logs &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_tyxBQq -unique_string 424077b79e1069ee51d2360a0d4e5d55f03d3135d99f0755c1cb7792ad94754215911dea03ed9e14fc82ed456a1b800924be36c6935a7328 -lic_type 2   -parent_cc_pid 639418  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.hrajesh/stb.group8.precharge_logic_tb.schematic.session1/logs/viewer.log 2>&1"
+[14:42:39.77] /o ==== Received Msg ====
+              /c len=216 sourceSoc=sock45aac410 msgIndex=16 rawMsg=AppendTask /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.hrajesh/stb.group8.precharge_logic_tb.schematic.session1/task0/sim_script0.tcl 0 saeSession1 1 overwrite
+[14:42:39.77] /o 
+[14:42:40.95] /w Warning: In file /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs: Unable to open library proj_common at path /mnt/coe/workspace/ece/ece546-common/proj_common : No access permission. (DATA_MANAGEMENT-014)
+[14:42:42.01] /m Information: "Starting incremental netlisting for design "group8/precharge_logic_tb/schematic"..." (NETLISTING-010)
+[14:42:42.11] /o Loading: Callback files...
+[14:42:42.13] /o Loading: scripts/callbacks/callbacks.tcl
+[14:42:42.13] /o 
+              /c [INFO] : Loading display.drf from /mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3
+              /c 
+              /c  if you wish to Load other display.drf, please set shell environment valiable "iPDK_load_display_NCSU_TechLib_FreePDK3" to value = 0
+[14:42:42.13] /o 
+[14:42:42.19] /w Warning: Could not set the value of preference xtDRCTool because it does not exist. (PREFERENCE-016)
+[14:42:42.19] /w Warning: Could not set the value of preference xtDRCICVRunsetFile because it does not exist. (PREFERENCE-016)
+[14:42:42.19] /w Warning: Could not set the value of preference xtDRCICVIncludePaths because it does not exist. (PREFERENCE-016)
+[14:42:42.19] /w Warning: Could not set the value of preference xtDRCLayDBFormat because it does not exist. (PREFERENCE-016)
+[14:42:42.19] /w Warning: Could not set the value of preference xtLVSTool because it does not exist. (PREFERENCE-016)
+[14:42:42.19] /w Warning: Could not set the value of preference xtLVSICVRunsetFile because it does not exist. (PREFERENCE-016)
+[14:42:42.19] /w Warning: Could not set the value of preference xtLVSICVIncludePaths because it does not exist. (PREFERENCE-016)
+[14:42:42.19] /w Warning: Could not set the value of preference xtLVSLayDBFormat because it does not exist. (PREFERENCE-016)
+[14:42:42.19] /w Warning: Could not set the value of preference xtLPELVSTool because it does not exist. (PREFERENCE-016)
+[14:42:42.19] /w Warning: Could not set the value of preference xtLPETool because it does not exist. (PREFERENCE-016)
+[14:42:42.19] /w Warning: Could not set the value of preference xtLPEOpenParasiticView because it does not exist. (PREFERENCE-016)
+[14:42:42.19] /w Warning: Could not set the value of preference xtStarTcadGrdFile because it does not exist. (PREFERENCE-016)
+[14:42:42.19] /w Warning: Could not set the value of preference xtLPEStarOADeviceMappingFile because it does not exist. (PREFERENCE-016)
+[14:42:42.19] /w Warning: Could not set the value of preference xtStarOALayerMappingFile because it does not exist. (PREFERENCE-016)
+[14:42:42.19] /o 	#######################################
+[14:42:42.19] /o 	CC-PDK Library Name	: FreePDK3
+[14:42:42.19] /o 	#######################################
+[14:42:42.19] /o 
+[14:42:42.23] /o Netlisting
+[14:42:42.23] /o Creating output directories
+[14:42:42.42] /o No Design Integrity rule violations found in "group8/precharge_logic_tb/schematic"
+[14:42:42.42] /o Scanning: group8/precharge_logic_tb/schematic
+[14:42:42.57] /o Scanning: group8/precharge_logic/schematic
+[14:42:42.71] /o Computing terminal lists
+[14:42:42.71] /o Processing terminals of module group8/precharge_logic/schematic
+[14:42:42.72] /o Processing terminals of module group8/precharge_logic_tb/schematic
+[14:42:42.73] /o Starting netlisting
+[14:42:42.81] /o Formatting group8/precharge_logic/schematic
+[14:42:42.82] /m Information: "group8 precharge_logic schematic" renetlisted. (NETLISTING-056)
+[14:42:42.90] /o Formatting group8/precharge_logic_tb/schematic
+[14:42:42.93] /m Information: "group8 precharge_logic_tb schematic" renetlisted. (NETLISTING-056)
+[14:42:43.02] /m Information: "Netlisting design "group8/precharge_logic_tb/schematic" finished successfully." (NETLISTING-012)
+[14:42:43.09] /# Composing simulator input file for design "group8/precharge_logic_tb/schematic"...
+[14:42:43.80] /# Simulator input file composed successfully for design "group8/precharge_logic_tb/schematic"
+[14:42:43.93] /m Information: Save ouputs to /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/simulation/group8,precharge_logic_tb,schematic/history_1/simulation/default/PrimeSimHSPICE/nominal/results/outputs.tcl for AVA evaluation.
+[14:42:45.03] /o 
+[14:42:46.06] /o                                          Composing Nominal                                         
+[14:42:46.38] /o                             Launching jobs for testbench default started                            
+[14:42:46.40] /# Starting PrimeSimHSPICE simulation for design: group8/precharge_logic_tb/schematic
+[14:42:46.47] /o                             Creating jobs for testbench default (0 / 1)                            
+[14:42:46.52] /o                                Launching 1 jobs for testbench default                               
+[14:42:46.86] /o                            Launching jobs for testbench default finished                           
+[14:42:47.38] /m Information: 0 of 1 testbench(es) done. (PW_GUI-714)
+[14:42:52.03] /m Information: Job distribution master (saeSession1,default.Simulation_Simulation session:session0 testbench:default) : up to 1 job running workers.
+[14:43:19.14] /# Simulation completed successfully for design: group8/precharge_logic_tb/schematic  (PW-651)
+[14:43:19.23] /# Netlisting and simulation completed for testbench: default in 38s
+[14:43:19.24] /# Evaluating and plotting outputs...
+[14:43:23.30] /m Information: Jobs distribution master quit! (PW_GUI-822)
+[14:43:23.65] /# Evaluating and plotting completed for testbench: default in 4s
+[14:43:23.73] /m Information: 1 of 1 testbench(es) done. (PW_GUI-714)
+[14:43:52.74] /o ==== Received Msg ====
+              /c len=26 sourceSoc=sock45aac410 msgIndex=20 rawMsg=evalCmd ::wf::viewerExited
+[14:43:52.74] /o 
+[14:43:55.66] /o ==== Received Msg ====
+              /c len=35 sourceSoc=sock45aac410 msgIndex=21 rawMsg=evalCmd ::wf::updateViewerLicense 2
+[14:43:55.66] /o 
+[14:44:23.76] /o ==== Received Msg ====
+              /c len=216 sourceSoc=sock47b215b0 msgIndex=17 rawMsg=AppendTask /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.hrajesh/stb.group8.precharge_logic_tb.schematic.session1/task1/sim_script1.tcl 1 saeSession1 1 overwrite
+[14:44:23.76] /o 
+[14:44:23.90] /m Information: Feature 'SynopsysCustomSAE' checked in. (LICENSE-004)
+[14:44:23.92] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[14:44:24.90] /w Warning: In file /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs: Unable to open library proj_common at path /mnt/coe/workspace/ece/ece546-common/proj_common : No access permission. (DATA_MANAGEMENT-014)
+[14:44:26.08] /m Information: "Starting incremental netlisting for design "group8/precharge_logic_tb/schematic"..." (NETLISTING-010)
+[14:44:26.13] /o Netlisting
+[14:44:26.13] /o Creating output directories
+[14:44:26.27] /o No Design Integrity rule violations found in "group8/precharge_logic_tb/schematic"
+[14:44:26.27] /o Scanning: group8/precharge_logic_tb/schematic
+[14:44:26.35] /o Scanning: group8/precharge_logic/schematic
+[14:44:26.49] /o Computing terminal lists
+[14:44:26.49] /o Processing terminals of module group8/precharge_logic/schematic
+[14:44:26.50] /o Processing terminals of module group8/precharge_logic_tb/schematic
+[14:44:26.51] /o Starting netlisting
+[14:44:26.72] /m Information: "Netlisting design "group8/precharge_logic_tb/schematic" finished successfully." (NETLISTING-012)
+[14:44:26.78] /# Composing simulator input file for design "group8/precharge_logic_tb/schematic"...
+[14:44:27.44] /# Simulator input file composed successfully for design "group8/precharge_logic_tb/schematic"
+[14:44:27.58] /m Information: Save ouputs to /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/simulation/group8,precharge_logic_tb,schematic/history_1/simulation/default/PrimeSimHSPICE/nominal/results/outputs.tcl for AVA evaluation.
+[14:44:28.72] /o 
+[14:44:29.66] /o                                          Composing Nominal                                         
+[14:44:29.97] /o                             Launching jobs for testbench default started                            
+[14:44:29.98] /# Starting PrimeSimHSPICE simulation for design: group8/precharge_logic_tb/schematic
+[14:44:30.05] /o                             Creating jobs for testbench default (0 / 1)                            
+[14:44:30.10] /o                                Launching 1 jobs for testbench default                               
+[14:44:30.41] /o                            Launching jobs for testbench default finished                           
+[14:44:30.42] /o 
+[14:44:30.64] /m Information: 1 of 2 testbench(es) done. (PW_GUI-714)
+[14:44:33.03] /m Information: Job distribution master (saeSession1,default.Simulation_Simulation session:session1 testbench:default) : up to 1 job running workers.
+[14:45:02.84] /# Simulation completed successfully for design: group8/precharge_logic_tb/schematic  (PW-651)
+[14:45:02.92] /# Netlisting and simulation completed for testbench: default in 37s
+[14:45:02.93] /# Evaluating and plotting outputs...
+[14:45:06.61] /m Information: Jobs distribution master quit! (PW_GUI-822)
+[14:45:07.17] /# Evaluating and plotting completed for testbench: default in 5s
+[14:45:07.24] /m Information: 2 of 2 testbench(es) done. (PW_GUI-714)
+[14:45:42.65] /o ==== Received Msg ====
+              /c len=26 sourceSoc=sock47b215b0 msgIndex=22 rawMsg=evalCmd ::wf::viewerExited
+[14:45:42.65] /o 
+[14:45:45.87] /o ==== Received Msg ====
+              /c len=35 sourceSoc=sock47b215b0 msgIndex=23 rawMsg=evalCmd ::wf::updateViewerLicense 2
+[14:45:45.87] /o 
+[14:47:12.98] /o ==== Received Msg ====
+              /c len=216 sourceSoc=sock45b90520 msgIndex=18 rawMsg=AppendTask /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.hrajesh/stb.group8.precharge_logic_tb.schematic.session1/task2/sim_script2.tcl 2 saeSession1 1 overwrite
+[14:47:12.98] /o 
+[14:47:13.11] /m Information: Feature 'SynopsysCustomSAE' checked in. (LICENSE-004)
+[14:47:13.13] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[14:47:14.16] /w Warning: In file /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs: Unable to open library proj_common at path /mnt/coe/workspace/ece/ece546-common/proj_common : No access permission. (DATA_MANAGEMENT-014)
+[14:47:15.20] /m Information: "Starting incremental netlisting for design "group8/precharge_logic_tb/schematic"..." (NETLISTING-010)
+[14:47:15.26] /o Netlisting
+[14:47:15.26] /o Creating output directories
+[14:47:15.40] /o No Design Integrity rule violations found in "group8/precharge_logic_tb/schematic"
+[14:47:15.40] /o Scanning: group8/precharge_logic_tb/schematic
+[14:47:15.47] /o Scanning: group8/precharge_logic/schematic
+[14:47:15.61] /o Computing terminal lists
+[14:47:15.61] /o Processing terminals of module group8/precharge_logic/schematic
+[14:47:15.61] /o Processing terminals of module group8/precharge_logic_tb/schematic
+[14:47:15.62] /o Starting netlisting
+[14:47:15.70] /o Formatting group8/precharge_logic/schematic
+[14:47:15.71] /m Information: "group8 precharge_logic schematic" renetlisted. (NETLISTING-056)
+[14:47:15.79] /o Formatting group8/precharge_logic_tb/schematic
+[14:47:15.81] /m Information: "group8 precharge_logic_tb schematic" renetlisted. (NETLISTING-056)
+[14:47:15.91] /m Information: "Netlisting design "group8/precharge_logic_tb/schematic" finished successfully." (NETLISTING-012)
+[14:47:15.97] /# Composing simulator input file for design "group8/precharge_logic_tb/schematic"...
+[14:47:16.64] /# Simulator input file composed successfully for design "group8/precharge_logic_tb/schematic"
+[14:47:16.75] /m Information: Save ouputs to /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/simulation/group8,precharge_logic_tb,schematic/history_1/simulation/default/PrimeSimHSPICE/nominal/results/outputs.tcl for AVA evaluation.
+[14:47:17.91] /o 
+[14:47:18.90] /o                                          Composing Nominal                                         
+[14:47:19.22] /o                             Launching jobs for testbench default started                            
+[14:47:19.23] /# Starting PrimeSimHSPICE simulation for design: group8/precharge_logic_tb/schematic
+[14:47:19.29] /o                             Creating jobs for testbench default (0 / 1)                            
+[14:47:19.35] /o                                Launching 1 jobs for testbench default                               
+[14:47:19.68] /o                            Launching jobs for testbench default finished                           
+[14:47:19.69] /o 
+[14:47:19.93] /m Information: 2 of 3 testbench(es) done. (PW_GUI-714)
+[14:47:22.03] /m Information: Job distribution master (saeSession1,default.Simulation_Simulation session:session2 testbench:default) : up to 1 job running workers.
+[14:47:23.33] /o ==== Received Msg ====
+              /c len=8 sourceSoc=sock45b90520 msgIndex=24 rawMsg=idleExit
+[14:47:23.33] /o 
+[14:47:52.94] /# Simulation completed successfully for design: group8/precharge_logic_tb/schematic  (PW-651)
+[14:47:53.03] /# Netlisting and simulation completed for testbench: default in 39s
+[14:47:53.04] /# Evaluating and plotting outputs...
+[14:47:56.93] /m Information: Jobs distribution master quit! (PW_GUI-822)
+[14:47:57.54] /# Evaluating and plotting completed for testbench: default in 4s
+[14:47:57.59] /m Information: 3 of 3 testbench(es) done. (PW_GUI-714)
+[14:47:57.60] /m Information: Exiting simulation server process. (PW_GUI-984)
+[14:48:00.82] /o Shutdown time: Tue Mar 25 14:48:00 2025
+[14:48:00.82] /o Elapsed session real time: 5.58 minutes
+[14:48:00.82] /o Session terminated. Log is at /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/logs/primewave.hrajesh.2025_3_25_144224_639418.log
+[14:48:00.86] /e Error: {}

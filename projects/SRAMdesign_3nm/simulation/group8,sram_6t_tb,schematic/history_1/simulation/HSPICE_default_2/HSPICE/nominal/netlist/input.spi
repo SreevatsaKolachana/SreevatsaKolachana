@@ -1,0 +1,74 @@
+*  Generated for: PrimeSim
+*  Design library name: group8
+*  Design cell name: sram_6t_tb
+*  Design view name: schematic
+.option search='/mnt/designkits/ncsu/FreePDK3/hspice/models'
+
+.param VDD_VAL=0.8
+.option PARHIER = LOCAL
+.option PORT_VOLTAGE_SCALE_TO_2X = 1
+.option S_ELEM_CACHE_DIR = "/mnt/ncsudrive/s/svkolach/.synopsys_custom/sparam_dir"
+.option PVA_OUTPUT_DIR = "/mnt/ncsudrive/s/svkolach/.synopsys_custom/pva_dir"
+
+.option WDF=1
+.temp 25
+.lib 'fet.mod' nfet_typ
+.lib 'fet.mod' pfet_typ
+
+*PrimeWave Design Environment Based on Custom Infrastructure
+*Version W-2024.09-SP1-2
+*Thu Apr  3 16:00:40 2025
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : group8
+* Cell             : sram_6t
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt sram_6t bl bl_bar wl
+m1 qbar q vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m0 q qbar vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m5 bl wl q nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+m6 qbar wl bl_bar nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+m3 qbar q gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+m2 q qbar gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+.ends sram_6t
+
+********************************************************************************
+* Library          : group8
+* Cell             : sram_6t_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 bl blb wl sram_6t
+v12 vdd! gnd! dc='VDD_VAL'
+v15 wl gnd! dc=0 pulse ( 0 'VDD_VAL' 10p 5p 5p 45p 100p )
+v18 bl gnd! dc=0.8 pwl ( 0 0.8 5p 0 65p 0.0 70p 0.8 100p 0.8 105p 0.8 165p 0.8 170p 0
++  )
+v19 blb gnd! dc=0.8 pwl ( 0 0.8 95p 0.8 100p 0.0 )
+
+
+.ic  v(blb)=0.8  v(bl)=0.8  v(xi0.q)=0.8
+
+
+
+
+
+
+.tran 0.1p 200p start=0
+.option opfile=1 split_dp=1
+.option probe=1
+.probe tran v(*) level=1
+.probe tran v(bl) v(blb) v(xi0.q) v(xi0.~Q) v(wl)
+
+
+
+
+
+
+
+
+.end

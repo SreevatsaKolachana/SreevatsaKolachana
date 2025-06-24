@@ -1,0 +1,39 @@
+********************************************************************************
+* Library          : group8
+* Cell             : WLRef_PC
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt wlref_pc clk pc rsnew wlref clk_dff
+xi55 net123 clk_dff buffer
+xi54 net122 net123 buffer
+xi53 net121 net122 buffer
+xi52 net118 net121 buffer
+xi51 net116 net118 buffer
+xi50 net115 net116 buffer
+xi49 net114 net115 buffer
+xi46 net59 net110 buffer
+xi48 net111 net114 buffer
+xi47 net110 net111 buffer
+xi67 net137 net139 buffer
+xi68 net139 net141 buffer
+xi69 net141 net143 buffer
+xi70 net143 net144 buffer
+xi71 net144 clk_inverted_delayed buffer
+xi21 net154 net59 buffer
+xi19 net39 net62 buffer
+xi20 net61 net39 buffer
+xi14 net62 net60 buffer
+xi8 net60 net154 buffer
+xi66 clk_inverted net137 buffer
+xi0 clk net61 buffer
+xi29 net76 rsnew invx4
+xi10 net21 pc invx4
+xi16 net36 wlref invx4
+xi23 clk clk_inverted inv
+xi28 clk_inverted_delayed clk_inverted net76 nor
+xi13 net59 net61 net21 nor
+xi15 net61 net60 net36 nand
+.ends wlref_pc
+

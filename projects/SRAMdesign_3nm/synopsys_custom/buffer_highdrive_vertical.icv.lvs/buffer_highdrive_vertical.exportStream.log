@@ -1,0 +1,88 @@
+*****************************************************************************
+Tool:		exportStream        W-2024.09-SP1-2
+*****************************************************************************
+Running: exportStream -logFile buffer_highdrive_vertical.exportStream.log -lib group8 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs -cell "buffer_highdrive_vertical" -view "layout" -referenceMap /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/buffer_highdrive_vertical.icv.lvs/buffer_highdrive_vertical.custom_compiler.xml -keepPcells -keepVias -keepAbuts -useTechLayerMap -useTechObjectMap -textHeight matchOABBox -newMaxVerticesFunction -gds /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/buffer_highdrive_vertical.icv.lvs/buffer_highdrive_vertical.custom_compiler.gds -colorMapping honor
+Started: Tue Apr 15 19:47:16 2025 (Hostname: greenarrow.ece.ncsu.edu)
+Reading layer map /mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3/NCSU_TechLib_FreePDK3.layermap
+
+INFO: (EXPORT_STREAM-80033): Translating design NCSU_TechLib_FreePDK3/BPR_M0A/layout as "BPR_M0A".
+INFO: (EXPORT_STREAM-80033): Translating design NCSU_TechLib_FreePDK3/GATE_M0B/layout as "GATE_M0B".
+INFO: (EXPORT_STREAM-80033): Translating design NCSU_TechLib_FreePDK3/M0A_M0B/layout as "M0A_M0B".
+INFO: (EXPORT_STREAM-80033): Translating design NCSU_TechLib_FreePDK3/nmos/layout as "nmos".
+INFO: (EXPORT_STREAM-80033): Translating design NCSU_TechLib_FreePDK3/pmos/layout as "pmos".
+INFO: (EXPORT_STREAM-80033): Translating design NCSU_TechLib_FreePDK3/M0B_M1/layout as "M0B_M1".
+INFO: (EXPORT_STREAM-80033): Translating design group8/invx4/layout as "invx4".
+INFO: (EXPORT_STREAM-80033): Translating design group8/sram_filler/layout as "sram_filler".
+INFO: (EXPORT_STREAM-80033): Translating design group8/buffer_highdrive_vertical/layout as "buffer_highdrive_vertical".
+WARNING: (EXPORT_STREAM-12064): Shape isn't mapped to any layer/purpose, layer:"annotate" purpose:"drawing".
+
+Primary Cell(s):
+	1.buffer_highdrive_vertical
+
+Cell Statistics:
+	CellName                   Rectangles  Polygons    Paths       PathSegs    Labels      Instances   Arrays      Nodes       
+	BPR_M0A                    3           0           0           0           0           0           0           0           
+	GATE_M0B                   3           0           0           0           0           0           0           0           
+	M0A_M0B                    3           0           0           0           0           0           0           0           
+	M0B_M1                     3           0           0           0           0           0           0           0           
+	buffer_highdrive_vertical  10          0           0           0           4           8           0           0           
+	invx4                      27          0           0           0           4           26          0           0           
+	nmos                       7           0           0           0           0           0           0           0           
+	pmos                       8           0           0           0           0           0           0           0           
+	sram_filler                15          0           0           0           0           4           0           0           
+
+Layer Statistics:
+	Layer       Purpose  StreamLayer     StreamDataType  Rectangles  Polygons    Paths       PathSegs    Labels      Nodes       
+	GCUT        drawing  5               0               4           0           0           0           0           0
+	V0B         drawing  13              0               1           0           0           0           0           0
+	PIM         drawing  8               0               3           0           0           0           0           0
+	NIM         drawing  7               0               3           0           0           0           0           0
+	ACT         drawing  3               0               2           0           0           0           0           0
+	NW          drawing  2               0               3           0           0           0           0           0
+	V0A         drawing  10              0               1           0           0           0           0           0
+	GCON        drawing  11              0               1           0           0           0           0           0
+	DUMMY       drawing  6               0               9           0           0           0           0           0
+	GATE        drawing  4               0               16          0           0           0           0           0
+	M1          drawing  14              0               11          0           0           0           4           0
+	VBPR        drawing  1               0               1           0           0           0           0           0
+	M0A         drawing  9               0               8           0           0           0           0           0
+	M0B         drawing  12              0               5           0           0           0           0           0
+	BPR         drawing  0               0               11          0           0           0           4           0
+
+Summary of Objects:
+	Scalar Instances:             38
+	Array Instances:              0
+	Vector Instances:             0
+	Vector Instance Bits:         0
+	Polygons:                     0
+	Paths:                        0
+	Rectangles:                   79
+	Lines:                        0
+	Arcs:                         0
+	Donuts:                       0
+	Dots:                         0
+	Ellipses:                     0
+	Blockages:                    0
+	Boundaries:                   0
+	Routes:                       0
+	Text:                         2
+	Text Displays:                
+	  PropDisplay:                0
+	  AttrDisplay:                6
+	  TextOverride:               0
+	PathSeg:                      0
+	StdVia:                       0
+	CustomVia:                    0
+	Cells:                        9
+
+
+Layers not streamed out:
+	Layer     Purpose   
+	annotate  drawing   
+
+Finished:     exportStream
+Time Elapsed: 0.63 seconds
+CPU Time:     0.082135 seconds
+System Time:  0.031903 seconds
+Peak VM:      10477568 bytes
+Messages:     0 error, 1 warning

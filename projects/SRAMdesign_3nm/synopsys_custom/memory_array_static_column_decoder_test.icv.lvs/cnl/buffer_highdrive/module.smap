@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 buffer_highdrive schematic vl: auCdl schematic symbol">
+    <scope name="Instance">
+        <forward>
+            <mapping dst="XI16" src="I16"/>
+            <mapping dst="XI17" src="I17"/>
+        </forward>
+        <reverse>
+            <mapping dst="I16" src="XI16"/>
+            <mapping dst="I17" src="XI17"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward/>
+        <reverse/>
+    </scope>
+    <scope name="Terminal">
+        <forward/>
+        <reverse/>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping dst="in out" src="&lt;unmappedTermOrder&gt;"/>
+            <mapping dst="in out" src="&lt;termOrder&gt;"/>
+        </forward>
+        <reverse>
+            <mapping dst="&lt;unmappedTermOrder&gt;" src="in out"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="invx4">
+            <instance name="I16"/>
+            <instance name="I17"/>
+        </instance_header>
+    </master_instances>
+</module>

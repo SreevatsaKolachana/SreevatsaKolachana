@@ -1,0 +1,767 @@
+[09:00:55.28] /o 
+              /c                                 Custom Compiler™ 
+              /c 
+              /c               Version W-2024.09-SP1-2 for linux64 - Jan 16, 2025 
+              /c 
+              /c                     Copyright (c) 2004 - 2025 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 11256978 compiled on Thu Jan 16 10:52:27 2025 for AlmaLinux 8.4
+              /c Invocation: /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Tue Apr  1 09:00:42 2025
+              /c Host: hydra11.ece.ncsu.edu
+              /c Working directory: /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project
+              /c 
+[09:01:06.42] /m Information: Registering ICV PERC package...
+[09:01:07.78] /r giShowFrameTabs true
+[09:01:07.78] /r giWindowId 1
+[09:01:07.78] /r giWindowGeometry 1040x800
+[09:01:08.74] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x822+247+54
+[09:01:33.83] /i gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/deOpengroup82to4decodermuxtbschematic} -in [gi::getWindows 1]
+[09:01:34.35] /o Loading: Callback files...
+[09:01:34.38] /o Loading: scripts/callbacks/callbacks.tcl
+[09:01:34.38] /o 
+              /c [INFO] : Loading display.drf from /mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3
+              /c 
+              /c  if you wish to Load other display.drf, please set shell environment valiable "iPDK_load_display_NCSU_TechLib_FreePDK3" to value = 0
+[09:01:34.38] /o 
+[09:01:34.54] /w Warning: Preference 'xtStarTcadGrdFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[09:01:34.55] /w Warning: Preference 'xtStarOALayerMappingFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[09:01:34.55] /o 	#######################################
+[09:01:34.55] /o 	CC-PDK Library Name	: FreePDK3
+[09:01:34.55] /o 	#######################################
+[09:01:34.55] /o 
+[09:01:34.65] /m Information: Feature 'CustomInfrastructure' checked out. (LICENSE-003)
+[09:01:34.67] /m Information: Feature 'SynopsysCustomLayout' checked out. (LICENSE-003)
+[09:01:35.14] /r giWindowId 2
+[09:01:35.15] /r giWindowGeometry 1305x777
+[09:01:43.66] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[09:01:44.57] /i db::setAttr geometry -of [gi::getFrames 1] -value 1536x818+0+46
+[09:01:56.96] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[09:01:56.96] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[09:01:56.96] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {8.08125 5.8375} -index 0 -intent none]
+[09:01:56.96] /o oa:0x3c176280
+[09:01:58.80] /# gi::executeAction {seDelete} -in [gi::getWindows 2]
+[09:01:58.80] /i ise::delete
+[09:02:00.85] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[09:02:00.85] /i de::addPoint {8.08125 5.8375} -context [db::getNext [de::getContexts -window 2]]
+[09:02:04.71] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 2]
+[09:02:04.71] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[09:02:08.37] /i gi::executeAction {seShowConsoleForWindow} -in [gi::getWindows 2]
+[09:02:19.35] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[09:02:19.51] /m Information: Started sharing "WaveView ADV" license. (WAVEFORM-110)
+[09:02:19.51] /m Information: Started sharing "Primewave" license. (WAVEFORM-110)
+[09:02:20.34] /r giWindowId 3
+[09:02:20.35] /r giWindowGeometry 600x500
+[09:02:20.83] /r giWindowGeometry 600x500
+[09:02:22.06] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069ee2486bb905dc13f6cf03d3135d99f0755c1cb7792ad9475421435ea6e10f101493d7079393b2247fe -python 0  -log pw_shell_session0_job1 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[09:02:22.36] /m Information: Launching Simulation Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && sh /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.nbandeh/stb.group8.2to4decodermux_tb.schematic.session0/runSimServer ". (PW_GUI-711)
+[09:02:22.65] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_Sk70rB -unique_string 424077b79e1069ee2486bb905dc13f6cf03d3135d99f0755c1cb7792ad9475421435ea6e10f101493d7079393b2247fe -lic_type 2   -parent_cc_pid 311008  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[09:02:22.94] /m Information: Launching Result Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -log rvcmd.log -ptype rv -k -cdesigner -parent_cc_pid 311008 -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -unique_string 424077b79e1069ee2486bb905dc13f6cf03d3135d99f0755c1cb7792ad9475421435ea6e10f101493d7079393b2247fe -lic_type 2    > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/rviewer.log 2>&1"
+[09:02:23.09] /# gi::executeAction {deFitEdit} -in [gi::getWindows 2]
+[09:02:23.10] /i de::fit -window 2 -fitEdit true
+[09:02:38.55] /i gi::setActiveWindow 2
+[09:02:38.56] /i gi::setActiveWindow 2 -raise true
+[09:02:39.54] /# gi::executeAction {deFitEdit} -in [gi::getWindows 2]
+[09:02:39.54] /i de::fit -window 2 -fitEdit true
+[09:02:41.61] /i gi::setActiveWindow 3
+[09:02:41.61] /i gi::setActiveWindow 3 -raise true
+[09:02:43.40] /# gi::executeAction {saLoadState} -in [gi::getWindows 3]
+[09:02:43.40] /i sa::showLoadState -parent 3
+[09:02:44.46] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 3]] -value 603x784+560+270
+[09:02:44.84] /i gi::setActiveDialog [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 3]]
+[09:02:45.13] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 3]] -value 603x493+560+270
+[09:02:48.55] /i gi::pressButton {/ok} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 3]]
+[09:02:56.87] /i gi::executeAction {menuPreShow} -in [gi::getWindows 3]
+[09:02:56.87] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 3]]
+[09:02:58.97] /# gi::executeAction {saEditConvergenceAids} -in [gi::getWindows 3]
+[09:02:58.97] /i sa::showConvergenceAids -parent 3
+[09:02:59.48] /i gi::setActiveDialog [gi::getDialogs {saConvergenceAidsSetup} -parent [gi::getWindows 3]]
+[09:02:59.53] /i db::setAttr geometry -of [gi::getDialogs {saConvergenceAidsSetup} -parent [gi::getWindows 3]] -value 760x330+378+238
+[09:03:02.18] /i gi::setCurrentIndex {Model} -index {2,3} -in [gi::getDialogs {saConvergenceAidsSetup} -parent [gi::getWindows 3]]
+[09:03:02.18] /i gi::setItemSelection {Model} -index {2,3} -in [gi::getDialogs {saConvergenceAidsSetup} -parent [gi::getWindows 3]]
+[09:03:04.75] /i gi::setField {Model} -index {2,3} -value {0.8} -in [gi::getDialogs {saConvergenceAidsSetup} -parent [gi::getWindows 3]]
+[09:03:04.75] /i gi::setItemSelection {Model} -index {3,3} -in [gi::getDialogs {saConvergenceAidsSetup} -parent [gi::getWindows 3]]
+[09:03:04.75] /i gi::setCurrentIndex {Model} -index {3,3} -in [gi::getDialogs {saConvergenceAidsSetup} -parent [gi::getWindows 3]]
+[09:03:12.28] /i gi::setField {Model} -index {3,3} -value {0.8} -in [gi::getDialogs {saConvergenceAidsSetup} -parent [gi::getWindows 3]]
+[09:03:12.51] /i gi::pressButton {ok} -in [gi::getDialogs {saConvergenceAidsSetup} -parent [gi::getWindows 3]]
+[09:03:16.56] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 3]
+[09:03:16.56] /i ::sa::_testSuite::isShowRunConfirmation 3 "isa::netlistAndRun" [sa::_utils::findRunMode 3]
+[09:03:16.64] /i gi::setActiveDialog [gi::getDialogs {saRunConfirmationDialog} -parent [gi::getWindows 3]]
+[09:03:16.86] /i db::setAttr geometry -of [gi::getDialogs {saRunConfirmationDialog} -parent [gi::getWindows 3]] -value 400x140+558+333
+[09:03:17.22] /i gi::pressButton {yes} -in [gi::getDialogs {saRunConfirmationDialog} -parent [gi::getWindows 3]]
+[09:03:18.51] /r giDialog gi::setActiveDialog [gi::getDialogs {xtShowDesignsPrompt}]
+[09:03:18.51] /r giDialog gi::setCurrentIndex {target} -index {0,0} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[09:03:18.73] /r giDialog db::setAttr geometry -of [gi::getDialogs {xtShowDesignsPrompt}] -value 649x294+434+245
+[09:03:20.43] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[09:03:20.70] /m Information: 
+[09:03:20.70] /o Checking "group8/2to4decodermux_tb/schematic"
+[09:03:20.70] /o 	[warning] Floating I/O Instance Pins
+[09:03:20.70] /o 		I/O pin 'BL0' of instance 'I0' is floating
+[09:03:20.70] /o 		I/O pin 'BL0Bar' of instance 'I0' is floating
+[09:03:20.70] /o 		I/O pin 'BL1' of instance 'I0' is floating
+[09:03:20.70] /o 		I/O pin 'BL10' of instance 'I0' is floating
+[09:03:20.70] /o 		I/O pin 'BL10Bar' of instance 'I0' is floating
+[09:03:20.70] /o 		I/O pin 'BL11' of instance 'I0' is floating
+[09:03:20.70] /o 		I/O pin 'BL11Bar' of instance 'I0' is floating
+[09:03:20.70] /o 		I/O pin 'BL12' of instance 'I0' is floating
+[09:03:20.70] /o 		I/O pin 'BL12Bar' of instance 'I0' is floating
+[09:03:20.70] /o 		I/O pin 'BL13' of instance 'I0' is floating
+[09:03:20.70] /o 		I/O pin 'BL13Bar' of instance 'I0' is floating
+[09:03:20.70] /o 		I/O pin 'BL14' of instance 'I0' is floating
+[09:03:20.70] /o 		I/O pin 'BL14Bar' of instance 'I0' is floating
+[09:03:20.70] /o 		I/O pin 'BL15' of instance 'I0' is floating
+[09:03:20.70] /o 		I/O pin 'BL15Bar' of instance 'I0' is floating
+[09:03:20.70] /o 		I/O pin 'BL1Bar' of instance 'I0' is floating
+[09:03:20.70] /o 		I/O pin 'BL2' of instance 'I0' is floating
+[09:03:20.70] /o 		I/O pin 'BL2Bar' of instance 'I0' is floating
+[09:03:20.70] /o 		I/O pin 'BLBar' of instance 'I0' is floating
+[09:03:20.70] /o 		I/O pin 'P3' of instance 'I0' is floating
+[09:03:20.70] /o 		More than 20 violations encountered, suppressing remaining messages.
+[09:03:20.82] /o 0 Error(s),35 Warning(s),0 Message(s) found   in "group8/2to4decodermux_tb/schematic"
+[09:03:20.83] /o No Design Integrity rule violations found in "group8/2to4decodermux_tb/schematic"
+[09:03:20.83] /m Information: Checking process is completed: marking the design violations
+[09:03:20.84] /m Information: Marking of designs is completed
+[09:03:21.36] /r giWindowId 4
+[09:03:21.38] /r giWindowGeometry 800x600
+[09:03:23.57] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job1" after 56 seconds. (PW_GUI-172)
+[09:03:24.61] /i gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]]
+[09:03:24.70] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 532x66+518+417
+[09:03:26.33] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 532x66+518+417
+[09:03:33.96] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 549x66+518+417
+[09:03:37.96] /r giWindowId 5
+[09:03:37.99] /r giWindowGeometry 1024x768
+[09:03:55.26] /i gi::setActiveWindow 4
+[09:03:55.26] /i gi::setActiveWindow 4 -raise true
+[09:04:17.29] /m Information: Simulation completed successfully for design: group8/2to4decodermux_tb/schematic  (PW-651)
+[09:04:23.73] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069ee2486bb905dc13f6cf03d3135d99f0755c1cb7792ad9475424c2183b97de246bfef639028da715c8d -python 0  -log pw_shell_session0_job2 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[09:04:23.82] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 4s
+[09:04:23.84] /r giWindowId 6
+[09:04:23.87] /r giWindowGeometry 1024x768
+[09:04:24.74] /i db::setAttr geometry -of [gi::getFrames 2] -value 1024x792+86+64
+[09:04:40.38] /i db::setAttr maximized -of [gi::getFrames 2] -value true
+[09:04:40.90] /i db::setAttr geometry -of [gi::getFrames 2] -value 1536x818+0+46
+[09:04:45.47] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job2" after 22 seconds. (PW_GUI-172)
+[09:04:52.12] /i gi::createWindow -windowType [gi::getWindowTypes giHomePage]
+[09:04:52.12] /r giWindowId 7
+[09:04:52.15] /r giWindowGeometry 1040x800
+[09:04:54.42] /i gi::setActiveWindow 6
+[09:04:54.42] /i gi::setActiveWindow 6 -raise true
+[09:05:00.12] /r giWindowId 8
+[09:05:00.15] /r giWindowGeometry 1040x800
+[09:05:00.46] /i gi::addWindow 7 -to 2 -side top
+[09:05:00.46] /i gi::setActiveWindow 7
+[09:05:00.46] /i gi::setActiveWindow 7 -raise true
+[09:05:04.30] /i gi::setActiveWindow 6
+[09:05:04.30] /i gi::setActiveWindow 6 -raise true
+[09:05:06.83] /i gi::executeAction giCloseWindow -in [gi::getWindows 7]
+[09:05:49.58] /i gi::setActiveWindow 4
+[09:05:49.58] /i gi::setActiveWindow 4 -raise true
+[09:05:51.45] /i gi::setActiveWindow 3
+[09:05:51.45] /i gi::setActiveWindow 3 -raise true
+[09:05:53.59] /i gi::setActiveWindow 2
+[09:05:53.59] /i gi::setActiveWindow 2 -raise true
+[09:05:55.53] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[09:05:55.53] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[09:05:55.53] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {5.7375 3.8625} -index 0 -intent none]
+[09:05:55.53] /o oa:0x4bd00ce0
+[09:05:56.04] /i ::se::internal::descendInst 2 [de::getActiveFigure [gi::getWindows 2] -point {5.7375 3.8625} -index 0 -intent none] auto
+[09:05:56.10] /# ide::descend 2 -inPlace false -readOnly auto
+[09:05:56.35] /# Navigating to group8/2to4decodermux/schematic (I0)
+[09:05:56.75] /r giWindowGeometry 1305x777
+[09:07:45.13] /m Information: Feature 'SynopsysCustomSAE' checked in. (LICENSE-004)
+[09:07:45.14] /m Information: Stopped sharing "Primewave" license. (WAVEFORM-111)
+[09:07:45.14] /m Information: Stopped sharing "WaveView ADV" license. (WAVEFORM-111)
+[09:07:45.21] /m Information: Send exit command to simulation server process stb.group8.2to4decodermux_tb.schematic.session0. (PW_GUI-979)
+[09:07:45.83] /m Information: Stopping query due to no running simulation server process. (PW_GUI-710)
+[12:21:36.14] /i gi::executeAction {deCanvasDragSelect} -in [gi::getWindows 2]
+[12:21:36.19] /r deCanvasDragStart 1.8625 5.71875
+[12:21:42.95] /# gi::executeAction {deCanvasDragEnd} -in [gi::getWindows 2]
+[12:21:42.95] /i gi::executeAction deCanvasDragEnd -in [gi::getWindows 2]
+[12:21:42.95] /r deCanvasDragEnd 6.18125 -0.0125
+[12:21:58.01] /# gi::executeAction {dePan} -in [gi::getWindows 2]
+[12:21:58.01] /i ide::pan [db::getNext [de::getContexts -window 2]]
+[12:22:02.57] /# gi::executeAction {deZoomIn} -in [gi::getWindows 2]
+[12:22:02.58] /i de::zoom -window 2 -factor 2.0
+[12:22:06.84] /# gi::executeAction {dePan} -in [gi::getWindows 2]
+[12:22:06.84] /i ide::pan [db::getNext [de::getContexts -window 2]]
+[12:22:19.10] /# gi::executeAction {deStartDrag} -in [gi::getWindows 2]
+[12:22:19.10] /i de::startDrag {5.35 4.3875} -context [db::getNext [de::getContexts -window 2]]
+[12:22:23.31] /# gi::executeAction {deEndDrag} -in [gi::getWindows 2]
+[12:22:23.31] /i de::endDrag {5.34375 4.3875} -context [db::getNext [de::getContexts -window 2]]
+[12:22:23.31] /r dePanToPoint {5.63125 3.28125}
+[12:22:28.77] /# gi::executeAction {deStartDrag} -in [gi::getWindows 2]
+[12:22:28.77] /i de::startDrag {1.2 4.2875} -context [db::getNext [de::getContexts -window 2]]
+[12:22:29.22] /# gi::executeAction {deEndDrag} -in [gi::getWindows 2]
+[12:22:29.22] /i de::endDrag {1.20625 4.2875} -context [db::getNext [de::getContexts -window 2]]
+[12:22:29.22] /r dePanToPoint {4.58125 3.83125}
+[12:22:37.57] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:22:37.57] /i de::addPoint {4.30625 3.55625} -context [db::getNext [de::getContexts -window 2]]
+[12:22:38.56] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:22:38.56] /i de::addPoint {4.06875 3.24375} -context [db::getNext [de::getContexts -window 2]]
+[12:22:40.27] /# gi::executeAction {deStartDrag} -in [gi::getWindows 2]
+[12:22:40.27] /i de::startDrag {3.8 3.63125} -context [db::getNext [de::getContexts -window 2]]
+[12:22:40.91] /# gi::executeAction {deEndDrag} -in [gi::getWindows 2]
+[12:22:40.91] /i de::endDrag {3.8 3.63125} -context [db::getNext [de::getContexts -window 2]]
+[12:22:40.91] /r dePanToPoint {4.2875 3.53125}
+[12:22:41.16] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 2]
+[12:22:41.16] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[12:22:43.85] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[12:22:43.85] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[12:22:43.85] /i de::deselectAllLogic -context [de::getContexts -filter {%editDesign==[db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]}]
+[12:40:19.92] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[12:40:19.92] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {2.7125 3.66875}
+[12:40:21.49] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:40:21.49] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {2.7125 3.675}
+[12:40:41.97] /# gi::executeAction {deFitEdit} -in [gi::getWindows 2]
+[12:40:41.98] /i de::fit -window 2 -fitEdit true
+[12:40:57.65] /i gi::setActiveWindow 3
+[12:40:57.65] /i gi::setActiveWindow 3 -raise true
+[12:40:59.19] /i gi::setActiveWindow 2
+[12:40:59.19] /i gi::setActiveWindow 2 -raise true
+[12:41:00.53] /# gi::executeAction {deReturn} -in [gi::getWindows 2]
+[12:41:00.53] /i de::return [db::getNext [de::getContexts -window 2]] -errorOnFail false
+[12:41:00.84] /# Navigating to group8/2to4decodermux_tb/schematic
+[12:41:00.84] /r giWindowGeometry 3264x972
+[12:41:09.91] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:41:09.91] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.625 5.575}
+[12:41:20.00] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[12:41:20.00] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {4.38125 3.525}
+[12:41:22.12] /# gi::executeAction {deFitEdit} -in [gi::getWindows 2]
+[12:41:22.12] /i de::fit -window 2 -fitEdit true
+[12:41:32.49] /# gi::executeAction {seCreateInst} -in [gi::getWindows 2]
+[12:41:32.49] /i ise::createInst
+[12:41:32.57] /i gi::setField {parametersExpand} -value {false} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 2]]
+[12:41:32.57] /i gi::setField {parametersExpand} -value {true} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 2]]
+[12:41:33.22] /i db::setAttr geometry -of [gi::getDialogs {seCreateInst} -parent [gi::getWindows 2]] -value 474x610+0+0
+[12:41:33.23] /i gi::setActiveDialog [gi::getDialogs {seCreateInst} -parent [gi::getWindows 2]]
+[12:41:33.82] /i db::setAttr geometry -of [gi::getDialogs {seCreateInst} -parent [gi::getWindows 2]] -value 474x610+8+31
+[12:41:35.91] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 2]
+[12:41:35.91] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[12:41:50.41] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[12:41:50.41] /i de::cycleActiveFigure [gi::getWindows 2] -direction next
+[12:41:50.41] /o oa:0x43c5fb10
+[12:41:50.61] /i ::se::internal::descendInst 2 [de::getActiveFigure [gi::getWindows 2] -point {5.35 3.28125} -index 0 -intent none] auto
+[12:41:50.67] /# ide::descend 2 -inPlace false -readOnly auto
+[12:41:51.00] /# Navigating to group8/2to4decodermux/schematic (I0)
+[12:41:51.06] /r giWindowGeometry 3264x972
+[12:42:00.63] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:42:00.63] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {2.00625 3.31875}
+[12:42:14.94] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[12:42:14.94] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {3.1625 3.23125}
+[12:44:02.62] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:44:02.62] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {2.33125 3.7}
+[12:44:04.53] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:44:04.53] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {2.1875 3.90625}
+[12:44:05.12] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[12:44:05.12] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {2.20625 3.9375}
+[12:45:50.37] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[12:45:50.37] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {3.325 3.03125}
+[12:46:54.31] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:46:54.31] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {2.60625 3.84375}
+[12:46:54.71] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:46:54.71] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {2.60625 3.81875}
+[12:46:56.46] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[12:46:56.46] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[12:46:56.46] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {2.5875 3.80625} -index 0 -intent none]
+[12:46:56.46] /o oa:0x46812f10
+[12:47:09.78] /# gi::executeAction {seDelete} -in [gi::getWindows 2]
+[12:47:09.78] /i ise::delete
+[12:47:11.08] /# gi::executeAction {seDelete} -in [gi::getWindows 2]
+[12:47:11.08] /i ise::delete
+[12:47:15.38] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:47:15.38] /i de::addPoint {3.78125 3.83125} -context [db::getNext [de::getContexts -window 2]]
+[12:47:17.39] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:47:17.39] /i de::addPoint {4.8 3.8125} -context [db::getNext [de::getContexts -window 2]]
+[12:47:19.78] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:47:19.78] /i de::addPoint {5.775 3.8} -context [db::getNext [de::getContexts -window 2]]
+[12:47:24.51] /# gi::executeAction {deFitEdit} -in [gi::getWindows 2]
+[12:47:24.51] /i de::fit -window 2 -fitEdit true
+[12:47:27.31] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:47:27.31] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {6.8 3.90625}
+[12:47:27.50] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:47:27.50] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {6.8 3.9}
+[12:47:30.31] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:47:30.31] /i de::addPoint {6.9125 3.8125} -context [db::getNext [de::getContexts -window 2]]
+[12:47:32.33] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:47:32.33] /i de::addPoint {7.95 3.80625} -context [db::getNext [de::getContexts -window 2]]
+[12:47:33.69] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:47:33.69] /i de::addPoint {8.98125 3.8} -context [db::getNext [de::getContexts -window 2]]
+[12:47:35.57] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:47:35.57] /i de::addPoint {9.94375 3.80625} -context [db::getNext [de::getContexts -window 2]]
+[12:47:37.16] /# gi::executeAction {deFitEdit} -in [gi::getWindows 2]
+[12:47:37.16] /i de::fit -window 2 -fitEdit true
+[12:47:40.02] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:47:40.02] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {12.33125 3.66875}
+[12:47:43.61] /# gi::executeAction {deStartDrag} -in [gi::getWindows 2]
+[12:47:43.61] /i de::startDrag {11.0375 3.8125} -context [db::getNext [de::getContexts -window 2]]
+[12:47:43.62] /# gi::executeAction {deEndDrag} -in [gi::getWindows 2]
+[12:47:43.62] /i de::endDrag {11.0375 3.79375} -context [db::getNext [de::getContexts -window 2]]
+[12:47:45.38] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:47:45.38] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {10.975 3.85}
+[12:47:46.50] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:47:46.50] /i de::addPoint {10.99375 3.8375} -context [db::getNext [de::getContexts -window 2]]
+[12:47:48.15] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:47:48.15] /i de::addPoint {11.96875 3.81875} -context [db::getNext [de::getContexts -window 2]]
+[12:47:49.87] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:47:49.87] /i de::addPoint {12.85625 3.825} -context [db::getNext [de::getContexts -window 2]]
+[12:47:50.37] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[12:47:50.37] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {12.8625 3.8125}
+[12:47:52.46] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:47:52.46] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {13.825 3.76875}
+[12:47:52.65] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:47:52.65] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {13.825 3.76875}
+[12:47:53.80] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:47:53.80] /i de::addPoint {13.79375 3.81875} -context [db::getNext [de::getContexts -window 2]]
+[12:47:54.29] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[12:47:54.29] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {13.79375 3.80625}
+[12:47:54.34] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[12:47:54.34] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {13.7875 3.80625}
+[12:47:55.53] /# gi::executeAction {deFitEdit} -in [gi::getWindows 2]
+[12:47:55.53] /i de::fit -window 2 -fitEdit true
+[12:47:57.52] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:47:57.52] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {16.4125 3.7125}
+[12:47:57.69] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:47:57.69] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {16.4125 3.70625}
+[12:47:59.24] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:47:59.24] /i de::addPoint {15.93125 3.86875} -context [db::getNext [de::getContexts -window 2]]
+[12:48:00.58] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:48:00.58] /i de::addPoint {16.96875 3.86875} -context [db::getNext [de::getContexts -window 2]]
+[12:48:01.57] /# gi::executeAction {deFitEdit} -in [gi::getWindows 2]
+[12:48:01.57] /i de::fit -window 2 -fitEdit true
+[12:48:03.48] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:48:03.48] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {14.85625 3.78125}
+[12:48:03.72] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:48:03.72] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {14.85625 3.775}
+[12:48:04.99] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:48:04.99] /i de::addPoint {14.91875 3.80625} -context [db::getNext [de::getContexts -window 2]]
+[12:48:06.02] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[12:48:06.02] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {15.19375 3.80625}
+[12:48:06.81] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[12:48:06.81] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {15.95 3.8}
+[12:48:06.90] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[12:48:06.90] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {15.94375 3.8}
+[12:48:08.63] /# gi::executeAction {deFitEdit} -in [gi::getWindows 2]
+[12:48:08.63] /i de::fit -window 2 -fitEdit true
+[12:48:11.32] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:48:11.32] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {18.68125 3.8375}
+[12:48:11.48] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:48:11.48] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {18.6875 3.8375}
+[12:48:13.07] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:48:13.07] /i de::addPoint {18.19375 3.86875} -context [db::getNext [de::getContexts -window 2]]
+[12:48:13.58] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[12:48:13.58] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {18.2 3.84375}
+[12:48:13.65] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[12:48:13.65] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {18.19375 3.84375}
+[12:48:15.52] /# gi::executeAction {deFitEdit} -in [gi::getWindows 2]
+[12:48:15.52] /i de::fit -window 2 -fitEdit true
+[12:48:17.70] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 2]
+[12:48:17.70] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[12:48:18.64] /# gi::executeAction {seCreateInst} -in [gi::getWindows 2]
+[12:48:18.64] /i ise::createInst
+[12:48:18.69] /i gi::setField {parametersExpand} -value {false} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 2]]
+[12:48:18.69] /i gi::setField {parametersExpand} -value {true} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 2]]
+[12:48:19.29] /i db::setAttr geometry -of [gi::getDialogs {seCreateInst} -parent [gi::getWindows 2]] -value 474x610+8+31
+[12:48:19.29] /i gi::setActiveDialog [gi::getDialogs {seCreateInst} -parent [gi::getWindows 2]]
+[12:48:22.87] /i gi::setField {parametersExpand} -value {false} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 2]]
+[12:48:22.87] /i gi::setField {parametersExpand} -value {true} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 2]]
+[12:48:22.87] /i gi::setField {instMasterLib} -value {analogLib} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 2]]
+[12:48:28.63] /i gi::setField {parametersExpand} -value {false} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 2]]
+[12:48:28.63] /i gi::setField {parametersExpand} -value {true} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 2]]
+[12:48:28.64] /i gi::setField {instMasterCell} -value {gnd} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 2]]
+[12:48:31.52] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:48:31.52] /i de::addPoint {18.3875 2.575} -context [db::getNext [de::getContexts -window 2]]
+[12:48:33.58] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 2]
+[12:48:33.58] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[12:48:35.05] /# gi::executeAction {seSchCreateWire} -in [gi::getWindows 2]
+[12:48:35.05] /i ise::createWire
+[12:48:51.78] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:48:51.78] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {18.4 3.64375}
+[12:48:51.86] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:48:51.86] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {18.4 3.64375}
+[12:48:53.51] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:48:53.51] /i de::addPoint {18.30625 3.875} -context [db::getNext [de::getContexts -window 2]]
+[12:48:53.69] /i de::setCursor -point {18.3125 3.8125 }
+[12:48:56.09] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:48:56.09] /i de::addPoint {18.38125 2.5625} -context [db::getNext [de::getContexts -window 2]]
+[12:48:58.06] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:48:58.06] /i de::addPoint {17.075 3.86875} -context [db::getNext [de::getContexts -window 2]]
+[12:48:58.23] /i de::setCursor -point {17.125 3.8125 }
+[12:48:58.28] /i de::setCursor -point {17.125 3.75 }
+[12:48:58.30] /i de::setCursor -point {17.1875 3.75 }
+[12:48:58.31] /i de::setCursor -point {17.25 3.75 }
+[12:49:00.01] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:49:00.01] /i de::addPoint {18.39375 3.61875} -context [db::getNext [de::getContexts -window 2]]
+[12:49:02.66] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:49:02.66] /i de::addPoint {15.99375 3.88125} -context [db::getNext [de::getContexts -window 2]]
+[12:49:02.79] /i de::setCursor -point {16 3.8125 }
+[12:49:02.82] /i de::setCursor -point {16.0625 3.8125 }
+[12:49:02.83] /i de::setCursor -point {16.125 3.8125 }
+[12:49:04.38] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:49:04.38] /i de::addPoint {17.05625 3.625} -context [db::getNext [de::getContexts -window 2]]
+[12:49:06.89] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:49:06.89] /i de::addPoint {15.0125 3.80625} -context [db::getNext [de::getContexts -window 2]]
+[12:49:07.16] /i de::setCursor -point {15.0625 3.75 }
+[12:49:07.17] /i de::setCursor -point {15.125 3.75 }
+[12:49:09.46] /# gi::executeAction {deStartDrag} -in [gi::getWindows 2]
+[12:49:09.46] /i de::startDrag {16 3.6125} -context [db::getNext [de::getContexts -window 2]]
+[12:49:09.51] /# gi::executeAction {deEndDrag} -in [gi::getWindows 2]
+[12:49:09.51] /i de::endDrag {16 3.6125} -context [db::getNext [de::getContexts -window 2]]
+[12:49:20.42] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:49:20.42] /i de::addPoint {13.85 3.8} -context [db::getNext [de::getContexts -window 2]]
+[12:49:25.21] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:49:25.21] /i de::addPoint {13.875 3.5875} -context [db::getNext [de::getContexts -window 2]]
+[12:49:26.96] /# gi::executeAction {deFitEdit} -in [gi::getWindows 2]
+[12:49:26.96] /i de::fit -window 2 -fitEdit true
+[12:49:31.21] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:49:31.21] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {12.90625 3.65625}
+[12:49:32.70] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:49:32.70] /i de::addPoint {12.94375 3.80625} -context [db::getNext [de::getContexts -window 2]]
+[12:49:35.33] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:49:35.33] /i de::addPoint {12.925 3.55625} -context [db::getNext [de::getContexts -window 2]]
+[12:49:37.81] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:49:37.81] /i de::addPoint {12.075 3.8125} -context [db::getNext [de::getContexts -window 2]]
+[12:49:39.64] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:49:39.64] /i de::addPoint {12.0875 3.55625} -context [db::getNext [de::getContexts -window 2]]
+[12:49:39.75] /i de::setCursor -point {12.0625 3.5 }
+[12:49:39.76] /i de::setCursor -point {12 3.5 }
+[12:49:39.78] /i de::setCursor -point {11.9375 3.5 }
+[12:49:41.11] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:49:41.11] /i de::addPoint {11.14375 3.78125} -context [db::getNext [de::getContexts -window 2]]
+[12:49:42.65] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:49:42.65] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {11.10625 3.725}
+[12:49:43.07] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:49:43.07] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {11.10625 3.725}
+[12:49:43.18] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:49:43.18] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {11.10625 3.725}
+[12:49:43.40] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:49:43.40] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {11.10625 3.725}
+[12:49:44.12] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[12:49:44.12] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {11.10625 3.725}
+[12:49:44.25] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[12:49:44.25] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {11.10625 3.725}
+[12:49:44.44] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[12:49:44.44] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {11.10625 3.725}
+[12:49:46.28] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:49:46.28] /i de::addPoint {11.13125 3.56875} -context [db::getNext [de::getContexts -window 2]]
+[12:49:49.00] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:49:49.00] /i de::addPoint {9.99375 3.825} -context [db::getNext [de::getContexts -window 2]]
+[12:49:51.19] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:49:51.19] /i de::addPoint {10.0125 3.5625} -context [db::getNext [de::getContexts -window 2]]
+[12:49:53.19] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:49:53.19] /i de::addPoint {9.06875 3.825} -context [db::getNext [de::getContexts -window 2]]
+[12:49:55.06] /# gi::executeAction {deFitEdit} -in [gi::getWindows 2]
+[12:49:55.06] /i de::fit -window 2 -fitEdit true
+[12:49:58.82] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:49:58.82] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {9.09375 3.4625}
+[12:50:00.63] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:50:00.63] /i de::addPoint {9.06875 3.54375} -context [db::getNext [de::getContexts -window 2]]
+[12:50:00.72] /i de::setCursor -point {9 3.5 }
+[12:50:00.74] /i de::setCursor -point {8.9375 3.5 }
+[12:50:03.35] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:50:03.35] /i de::addPoint {8.11875 3.80625} -context [db::getNext [de::getContexts -window 2]]
+[12:50:05.18] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:50:05.18] /i de::addPoint {8.14375 3.54375} -context [db::getNext [de::getContexts -window 2]]
+[12:50:06.99] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:50:06.99] /i de::addPoint {7.0125 3.80625} -context [db::getNext [de::getContexts -window 2]]
+[12:50:09.00] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:50:09.00] /i de::addPoint {7.01875 3.55} -context [db::getNext [de::getContexts -window 2]]
+[12:50:12.00] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:50:12.00] /i de::addPoint {5.88125 3.80625} -context [db::getNext [de::getContexts -window 2]]
+[12:50:22.96] /# gi::executeAction {deStartDrag} -in [gi::getWindows 2]
+[12:50:22.96] /i de::startDrag {5.86875 3.5625} -context [db::getNext [de::getContexts -window 2]]
+[12:50:22.96] /# gi::executeAction {deEndDrag} -in [gi::getWindows 2]
+[12:50:22.96] /i de::endDrag {5.86875 3.55} -context [db::getNext [de::getContexts -window 2]]
+[12:50:23.07] /i de::setCursor -point {5.875 3.5 }
+[12:50:23.10] /i de::setCursor -point {5.8125 3.5 }
+[12:50:23.15] /i de::setCursor -point {5.75 3.5 }
+[12:50:25.09] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:50:25.09] /i de::addPoint {4.8875 3.81875} -context [db::getNext [de::getContexts -window 2]]
+[12:50:31.87] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:50:31.87] /i de::addPoint {4.88125 3.5375} -context [db::getNext [de::getContexts -window 2]]
+[12:50:32.14] /i de::setCursor -point {4.875 3.5 }
+[12:50:32.18] /i de::setCursor -point {4.8125 3.5 }
+[12:50:32.23] /i de::setCursor -point {4.75 3.5 }
+[12:50:34.36] /# gi::executeAction {deFitEdit} -in [gi::getWindows 2]
+[12:50:34.36] /i de::fit -window 2 -fitEdit true
+[12:50:37.98] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:50:37.98] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.825 3.6875}
+[12:50:38.24] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[12:50:38.24] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.825 3.6875}
+[12:50:41.69] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:50:41.69] /i de::addPoint {3.8875 3.8} -context [db::getNext [de::getContexts -window 2]]
+[12:50:43.44] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:50:43.44] /i de::addPoint {3.8875 3.54375} -context [db::getNext [de::getContexts -window 2]]
+[12:50:45.17] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[12:50:45.17] /i de::addPoint {2.68125 3.81875} -context [db::getNext [de::getContexts -window 2]]
+[12:50:54.04] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 2]
+[12:50:54.04] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[12:50:56.92] /# gi::executeAction {deFitEdit} -in [gi::getWindows 2]
+[12:50:56.92] /i de::fit -window 2 -fitEdit true
+[12:51:04.28] /# gi::executeAction {seSchCheckAndSave} -in [gi::getWindows 2]
+[12:51:04.28] /i  ::startup::_checkAndSave 
+[12:51:04.40] /m Information: 
+              /c Cross view checking for group8/2to4decodermux/symbol with group8/2to4decodermux/schematic
+              /c No violations found. (DE_EDIT-007)
+[12:51:04.40] /m Information: 
+[12:51:04.40] /o Checking "group8/2to4decodermux/schematic"
+[12:51:04.41] /o No rule violations found in "group8/2to4decodermux/schematic"
+[12:51:04.41] /m Information: Checking process is completed: marking the design violations
+[12:51:05.00] /m Information: Marking of designs is completed
+[12:51:16.61] /# gi::executeAction {deUpdateCellview} -in [gi::getWindows 2]
+[12:51:16.61] /i db::showUpdateCellView -parent 2
+[12:51:17.96] /i gi::setActiveDialog [gi::getDialogs {dbUpdateCellView} -parent [gi::getWindows 2]]
+[12:51:18.43] /i db::setAttr geometry -of [gi::getDialogs {dbUpdateCellView} -parent [gi::getWindows 2]] -value 576x323+588+342
+[12:51:19.74] /i gi::pressButton {/ok} -in [gi::getDialogs {dbUpdateCellView} -parent [gi::getWindows 2]]
+[12:51:20.10] /r giWindowId 9
+[12:51:20.13] /r giWindowGeometry 3264x972
+[12:51:51.53] /i gi::setActiveWindow 3
+[12:51:51.53] /i gi::setActiveWindow 3 -raise true
+[12:52:00.06] /i gi::executeAction giCloseWindow -in [gi::getWindows 6]
+[12:52:00.20] /i gi::executeAction giCloseWindow -in [gi::getWindows 8]
+[12:52:00.93] /m Information: Waveform viewer exited normally.
+[12:52:00.99] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[12:52:01.26] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_Jn5SQj -unique_string 424077b79e1069ee2486bb905dc13f6cf03d3135d99f0755c1cb7792ad9475428533229eb7d03e40d7bcbac861e565f3 -lic_type 0   -parent_cc_pid 311008  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[12:52:02.26] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 3]
+[12:52:02.26] /i ::sa::_testSuite::isShowRunConfirmation 3 "isa::netlistAndRun" [sa::_utils::findRunMode 3]
+[12:52:02.33] /i gi::setActiveDialog [gi::getDialogs {saRunConfirmationDialog} -parent [gi::getWindows 3]]
+[12:52:02.60] /i db::setAttr geometry -of [gi::getDialogs {saRunConfirmationDialog} -parent [gi::getWindows 3]] -value 400x140+558+333
+[12:52:04.47] /i gi::setField {showAgain} -value {true} -in [gi::getDialogs {saRunConfirmationDialog} -parent [gi::getWindows 3]]
+[12:52:05.44] /i gi::pressButton {yes} -in [gi::getDialogs {saRunConfirmationDialog} -parent [gi::getWindows 3]]
+[12:52:05.58] /m Information: Started sharing "WaveView ADV" license. (WAVEFORM-110)
+[12:52:05.58] /m Information: Started sharing "Primewave" license. (WAVEFORM-110)
+[12:52:06.87] /r giDialog gi::setActiveDialog [gi::getDialogs {xtShowDesignsPrompt}]
+[12:52:06.87] /r giDialog gi::setCurrentIndex {target} -index {0,0} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[12:52:07.60] /r giDialog db::setAttr geometry -of [gi::getDialogs {xtShowDesignsPrompt}] -value 649x294+34+57
+[12:52:08.85] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[12:52:09.03] /m Information: 
+[12:52:09.03] /o Checking "group8/2to4decodermux_tb/schematic"
+[12:52:09.03] /o 	[warning] Floating I/O Instance Pins
+[12:52:09.03] /o 		I/O pin 'BL0' of instance 'I0' is floating
+[12:52:09.03] /o 		I/O pin 'BL0Bar' of instance 'I0' is floating
+[12:52:09.03] /o 		I/O pin 'BL1' of instance 'I0' is floating
+[12:52:09.03] /o 		I/O pin 'BL10' of instance 'I0' is floating
+[12:52:09.03] /o 		I/O pin 'BL10Bar' of instance 'I0' is floating
+[12:52:09.03] /o 		I/O pin 'BL11' of instance 'I0' is floating
+[12:52:09.03] /o 		I/O pin 'BL11Bar' of instance 'I0' is floating
+[12:52:09.03] /o 		I/O pin 'BL12' of instance 'I0' is floating
+[12:52:09.03] /o 		I/O pin 'BL12Bar' of instance 'I0' is floating
+[12:52:09.03] /o 		I/O pin 'BL13' of instance 'I0' is floating
+[12:52:09.03] /o 		I/O pin 'BL13Bar' of instance 'I0' is floating
+[12:52:09.03] /o 		I/O pin 'BL14' of instance 'I0' is floating
+[12:52:09.03] /o 		I/O pin 'BL14Bar' of instance 'I0' is floating
+[12:52:09.03] /o 		I/O pin 'BL15' of instance 'I0' is floating
+[12:52:09.03] /o 		I/O pin 'BL15Bar' of instance 'I0' is floating
+[12:52:09.03] /o 		I/O pin 'BL1Bar' of instance 'I0' is floating
+[12:52:09.03] /o 		I/O pin 'BL2' of instance 'I0' is floating
+[12:52:09.03] /o 		I/O pin 'BL2Bar' of instance 'I0' is floating
+[12:52:09.03] /o 		I/O pin 'BLBar' of instance 'I0' is floating
+[12:52:09.03] /o 		I/O pin 'P3' of instance 'I0' is floating
+[12:52:09.03] /o 		More than 20 violations encountered, suppressing remaining messages.
+[12:52:09.04] /o 0 Error(s),35 Warning(s),0 Message(s) found   in "group8/2to4decodermux_tb/schematic"
+[12:52:09.06] /o No Design Integrity rule violations found in "group8/2to4decodermux_tb/schematic"
+[12:52:09.06] /m Information: Checking process is completed: marking the design violations
+[12:52:09.08] /m Information: Marking of designs is completed
+[12:52:09.45] /m Information: Launching Simulation Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && sh /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.nbandeh/stb.group8.2to4decodermux_tb.schematic.session0/runSimServer ". (PW_GUI-711)
+[12:52:11.28] /# gi::setActiveDialog [gi::getDialogs {saRunConfirmationDialog} -parent [gi::getWindows 3]]
+[12:52:11.69] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 532x66+518+417
+[12:52:36.53] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 549x66+518+417
+[12:52:44.03] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 534x66+518+417
+[12:52:47.43] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 514x70+518+417
+[12:53:27.47] /m Information: Simulation completed successfully for design: group8/2to4decodermux_tb/schematic  (PW-651)
+[12:53:35.55] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 7s
+[12:53:37.12] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069ee2486bb905dc13f6cf03d3135d99f0755c1cb7792ad947542b49e23c3fe210eef125a3480065fb17d -python 0  -log pw_shell_session0_job3 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[12:53:37.24] /r giWindowId 10
+[12:53:37.28] /r giWindowGeometry 1024x768
+[12:53:38.02] /i db::setAttr geometry -of [gi::getFrames 3] -value 1024x792+112+64
+[12:53:40.83] /i db::setAttr maximized -of [gi::getFrames 3] -value true
+[12:53:41.05] /i db::setAttr geometry -of [gi::getFrames 3] -value 1536x818+0+46
+[12:53:59.33] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job3" after 22 seconds. (PW_GUI-172)
+[12:54:20.29] /i gi::executeAction giCloseWindow -in [gi::getWindows 10]
+[12:54:20.58] /i gi::setActiveWindow 4
+[12:54:20.58] /i gi::setActiveWindow 4 -raise true
+[12:54:21.03] /m Information: Waveform viewer exited normally.
+[12:54:21.29] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_qnqb1v -unique_string 424077b79e1069ee2486bb905dc13f6cf03d3135d99f0755c1cb7792ad9475425a2555091af4279876f47198451c7978 -lic_type 2   -parent_cc_pid 311008  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[12:54:25.77] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[12:54:27.77] /i gi::executeAction giCloseWindow -in [gi::getWindows 5]
+[12:54:30.06] /i gi::setActiveWindow 9
+[12:54:30.06] /i gi::setActiveWindow 9 -raise true
+[12:54:32.79] /i gi::setActiveWindow 2
+[12:54:32.79] /i gi::setActiveWindow 2 -raise true
+[12:56:29.82] /i gi::setActiveWindow 1
+[12:56:29.82] /i gi::setActiveWindow 1 -raise true
+[12:56:31.82] /i gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[12:56:32.13] /r giWindowId 11
+[12:56:32.16] /r giWindowGeometry 660x600+50+50
+[12:56:34.71] /i gi::setCurrentIndex {libs} -index {group8} -in [gi::getWindows 11]
+[12:56:34.81] /i gi::setItemSelection {libs} -index {group8} -in [gi::getWindows 11]
+[12:56:49.04] /i gi::setCurrentIndex {cells} -index {write_logic} -in [gi::getWindows 11]
+[12:56:49.16] /i gi::setItemSelection {cells} -index {write_logic} -in [gi::getWindows 11]
+[12:56:51.82] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 11]
+[12:56:51.87] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 11]
+[12:56:52.05] /i gi::executeAction {dmOpen} -in [gi::getWindows 11]
+[12:56:52.26] /r giWindowId 12
+[12:56:52.29] /r giWindowGeometry 3264x972
+[12:57:10.13] /m Information: Feature 'SynopsysCustomSAE' checked in. (LICENSE-004)
+[12:57:10.14] /m Information: Stopped sharing "Primewave" license. (WAVEFORM-111)
+[12:57:10.14] /m Information: Stopped sharing "WaveView ADV" license. (WAVEFORM-111)
+[12:57:10.21] /m Information: Send exit command to simulation server process stb.group8.2to4decodermux_tb.schematic.session0. (PW_GUI-979)
+[12:57:10.53] /m Information: Stopping query due to no running simulation server process. (PW_GUI-710)
+[13:02:38.19] /i gi::executeAction giCloseWindow -in [gi::getWindows 12]
+[13:02:43.18] /i gi::executeAction giCloseWindow -in [gi::getWindows 11]
+[13:02:53.01] /i db::setAttr geometry -of [gi::getFrames 1] -value 1536x818+0+23
+[13:02:53.04] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[13:02:53.04] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[13:02:53.04] /i db::setAttr iconified -of [gi::getFrames 1] -value true
+[13:04:50.01] /o Error: X connection is broken. Error code: (APPLICATION_GUI-002)1
+[13:04:50.02] /e Error: The application was unexpectedly terminated.
+              /c See the session log file for recovery details. (SHUT_DOWN-001)
+[13:04:50.15] /e Error: Master CalculateEngine exited abnormally.
+[13:04:50.15] /e Error: ResultsView exited abnormally.
+[13:04:50.19] /o probe/probe.cpp : 43 : Diagnostic check failed: ASSERT_RETURN(b && "Problems with postman");
+              /c Stack Dump: VERSION W-2024.09-SP1-2 CONFIG 11256978 DATE Tue Apr  1 09:00:42 2025
+              /c Frame 0. 0x4c1bdc5 SNPSee_f572eb157d9cbd33339be535a2eb20a3198b7376ddcc1436c1dd64c8c1da2ae1bd2ade9a2a34ea8fa871a9eb4871043b066f9db6c1a57356b62e8443011310602ea2f5184482c619 + 0x965
+              /c Frame 1. 0x4c1bea2 SNPSee_f572eb157d9cbd33339be535a2eb20a3198b7376ddcc143612c597724eda0b3d0de61344e7ff62e294587086ced634218dc8abd4388bd0ed2419d00f71e657a3b664cd280a8c964e + 0x12
+              /c Frame 2. 0x15d2204b SNPSee_4b67e83acce6b981dc5bee9def41b4c5a8a713db11ee1ce2a45130298f19a1efea87366daf90fade890a69852003125cdb66aa4e63c308dc5b1731e3616058cf + 0x1b
+              /c Frame 3. command::procedure::execute(int, Tcl_Obj* const*) + 0x87
+              /c Frame 4. 0x15d064cd SNPSee_4b67e83acce6b98117cdb4104ddf90edc02116329c0fdf1ab035bcfc0eea8a4baf2fa700ec6b9d31745878437a4b7ee3861b44f0b9e0e0e1658edde5a4c420575393b01b525e3d06 + 0x14d
+              /c Frame 5. libtcl-O.so: TclNRRunCallbacks + 0x47
+              /c Frame 6. console::console::execute_by_objects(Tcl_Obj*, bool) + 0x73
+              /c Frame 7. 0xd4a6b59 SNPSee_286c92292998d55218e7fc08cd1c0e1fad0ff08eea321d3e0cf00971e54ae07906b51b19822cd88db75b9f3ae7be279b12d9d7fa0a1fbdc3ec6541f5a8cc6d7b128ce8e370334bf65eb2046f029a850812d2c1c3d8f369e16e985133c5e82759c7796ab858269b96fb5a691af0453366ffb8578985ed24e6f942db647cd33127ae612f121a1edadce90da9926f5e7655a94f62dbd85ab00bffb4d43627adce3dc41502d9b7411e7125b5059cdc58ff8a93e142b9976883ec3b284810c981f604 + 0xe9
+              /c Frame 8. 0xd4a6e4e SNPSee_286c92292998d55218e7fc08cd1c0e1fad0ff08eea321d3e0cf00971e54ae079ea09a83e44f6bd6e6d155d7df3a75fa23aab0696c0a836088f4580e25956ab722b155dfd8b211bc9e3719dc927b1f0bf + 0x1fe
+              /c Frame 9. 0x15d2204b SNPSee_4b67e83acce6b981dc5bee9def41b4c5a8a713db11ee1ce2a45130298f19a1efea87366daf90fade890a69852003125cdb66aa4e63c308dc5b1731e3616058cf + 0x1b
+              /c Frame 10. command::procedure::execute(int, Tcl_Obj* const*) + 0x87
+              /c Frame 11. 0x15d064cd SNPSee_4b67e83acce6b98117cdb4104ddf90edc02116329c0fdf1ab035bcfc0eea8a4baf2fa700ec6b9d31745878437a4b7ee3861b44f0b9e0e0e1658edde5a4c420575393b01b525e3d06 + 0x14d
+              /c Frame 12. libtcl-O.so: TclNRRunCallbacks + 0x47
+              /c Frame 13. console::console::execute_by_objects(Tcl_Obj*, bool) + 0x73
+              /c Frame 14. 0xd4a6b59 SNPSee_286c92292998d55218e7fc08cd1c0e1fad0ff08eea321d3e0cf00971e54ae07906b51b19822cd88db75b9f3ae7be279b12d9d7fa0a1fbdc3ec6541f5a8cc6d7b128ce8e370334bf65eb2046f029a850812d2c1c3d8f369e16e985133c5e82759c7796ab858269b96fb5a691af0453366ffb8578985ed24e6f942db647cd33127ae612f121a1edadce90da9926f5e7655a94f62dbd85ab00bffb4d43627adce3dc41502d9b7411e7125b5059cdc58ff8a93e142b9976883ec3b284810c981f604 + 0xe9
+              /c Frame 15. 0xd4a6e4e SNPSee_286c92292998d55218e7fc08cd1c0e1fad0ff08eea321d3e0cf00971e54ae079ea09a83e44f6bd6e6d155d7df3a75fa23aab0696c0a836088f4580e25956ab722b155dfd8b211bc9e3719dc927b1f0bf + 0x1fe
+              /c Frame 16. 0x15d2204b SNPSee_4b67e83acce6b981dc5bee9def41b4c5a8a713db11ee1ce2a45130298f19a1efea87366daf90fade890a69852003125cdb66aa4e63c308dc5b1731e3616058cf + 0x1b
+              /c Frame 17. command::procedure::execute(int, Tcl_Obj* const*) + 0x87
+              /c Frame 18. 0x15d064cd SNPSee_4b67e83acce6b98117cdb4104ddf90edc02116329c0fdf1ab035bcfc0eea8a4baf2fa700ec6b9d31745878437a4b7ee3861b44f0b9e0e0e1658edde5a4c420575393b01b525e3d06 + 0x14d
+              /c Frame 19. libtcl-O.so: TclNRRunCallbacks + 0x47
+              /c Frame 20. console::console::execute_by_objects(Tcl_Obj*, bool) + 0x73
+              /c Frame 21. 0x11a919b8 SNPSee_2be2a5995e1bb69eb98fefad70a7e706fb75c5e60e7171e6738ec18cf68b95a70842b81f2d2608350e4eb73e7057e677883b6b8a55320a3a972a2722795a1a7d19e196b0abfa9f41 + 0x168
+              /c Frame 22. 0x15d2204b SNPSee_4b67e83acce6b981dc5bee9def41b4c5a8a713db11ee1ce2a45130298f19a1efea87366daf90fade890a69852003125cdb66aa4e63c308dc5b1731e3616058cf + 0x1b
+              /c Frame 23. command::procedure::execute(int, Tcl_Obj* const*) + 0x87
+              /c Frame 24. 0x15d064cd SNPSee_4b67e83acce6b98117cdb4104ddf90edc02116329c0fdf1ab035bcfc0eea8a4baf2fa700ec6b9d31745878437a4b7ee3861b44f0b9e0e0e1658edde5a4c420575393b01b525e3d06 + 0x14d
+              /c Frame 25. libtcl-O.so: TclNRRunCallbacks + 0x47
+              /c Frame 26. console::console::execute_by_objects(Tcl_Obj*, bool) + 0x73
+              /c Frame 27. waveform::plot_queue_manager::clear_probes() const + 0x44
+              /c Frame 28. waveform::plot_queue_manager::job_status_changed_slot(snps_boost_1_79_0::shared_ptr<ipc::job>, ipc::job_status_info_t, bool) + 0x2af
+              /c Frame 29. snps_boost_1_79_0::detail::function::void_function_obj_invoker3<snps_boost_1_79_0::_bi::bind_t<void, snps_boost_1_79_0::_mfi::mf3<void, waveform::plot_queue_manager, snps_boost_1_79_0::shared_ptr<ipc::job>, ipc::job_status_info_t, bool>, snps_boost_1_79_0::_bi::list4<snps_boost_1_79_0::_bi::value<waveform::plot_queue_manager*>, snps_boost_1_79_0::arg<1>, snps_boost_1_79_0::arg<2>, snps_boost_1_79_0::arg<3> > >, void, snps_boost_1_79_0::shared_ptr<ipc::job>, ipc::job_status_info_t, bool>::invoke(snps_boost_1_79_0::detail::function::function_buffer&, snps_boost_1_79_0::shared_ptr<ipc::job>, ipc::job_status_info_t, bool) + 0x5e
+              /c Frame 30. 0x14db730f SNPSee_c3269dc53fe6cbcd5a389060dd59f89ee348651c9213c181aa2c83369abb78f05a18fb95d9318f76fff92c97fc3fd04715cf979884ce3b534bf1de195f8756f5f60cfc2bffbcdae0989ddf9bb882e8926a175c61a524441ea87b85f1f40cb52646f514bb9dca991213c2f16c1549c4e5138b7cc23ab72c198cfee4e21e65fb3ba0bcacea916df1c7371937ac6e02d37ba4a3c10ca6e8a1f9b4330a4aa5e1445111f9ec5487705ebd12ef6dc2755a17fc4180f877cef61bbcb7aaa2f2ce917e19b0d19e52488858c4633823d74ece6e302a837bf344a3edceb310954ac03a83849b432e6c0f91844097a5f7708e76b4506a71b06e14a7f3a3afe37497cb9224bb + 0x4f
+              /c Frame 31. 0x14db8599 SNPSee_baaa7cc784dddb6025aabcfc6e21c20c3997b18b1d0dc85c5501ff1f91a5f750e849eb8fccb5f76bcd7119635f85a0eb6a833d69636a89e1a7c16a9434fcc576987bc8e5c7a7275f1a9c1ed53ed329371802857a352ce5a0a1b9c2aa39103abdac8b38189e195aaf10b85b5df88bea0ae3335dc984027b88cb6818663affdddeb730fc5723cff43807593b6c050dbf1ebfaa963beaba4ab63f26541b64ef67b54e9cde9558ba6fbf + 0x7f9
+              /c Frame 32. ipc::job::set_status(ipc::status) + 0x9b
+              /c Frame 33. ipc::job::update_status() + 0x4b
+              /c Frame 34. 0x14e01220 SNPSee_648b6c406260d36cc793209230a973fdb751ae828600485c7d8aec45ae7f9918 + 0x1f0
+              /c Frame 35. 0x14e0ca3e SNPSee_648b6c406260d36cc793209230a973fdebafcdbaeae2ed688e112ee760ef968706ce9948a872f0cc + 0x2e
+              /c Frame 36. 0xc5153f1 SNPSee_98e6fae53a3bba60112f513ff13f450239ebfd90b60bc61820a7a1bb9396766ae1d5fdf02cbc792c2ac29f7b8a7b3d64f49a4fc1fea609bb + 0xc1
+              /c Frame 37. 0xc50b9db SNPSee_539e4ee952adf7d7b62dedc103ccc70f028780fa9202079b93106cec88e0785422195bcb17685f07bdf82f28693432f3664474fd7159d8a191ba342be7032142 + 0x9b
+              /c Frame 38. QObject::setProperty(char const*, QVariant const&) + 0x162a
+              /c Frame 39. QCoreApplication::platformInvalidated(int) + 0x31
+              /c Frame 40. QBasicTimer::operator=(QBasicTimer const&) + 0x5f3
+              /c Frame 41. QObjectPrivate::setParent_helper(QObject*) + 0x1f6
+              /c Frame 42. QObject::~QObject() + 0x357
+              /c Frame 43. QFileSystemWatcher::qt_metacall(QMetaObject::Call, int, void**) + 0x379f
+              /c Frame 44. QFileSystemWatcher::qt_metacall(QMetaObject::Call, int, void**) + 0x3839
+              /c Frame 45. QObjectPrivate::deleteChildren() + 0x6e
+              /c Frame 46. QObject::~QObject() + 0x323
+              /c Frame 47. /lib64/libc.so.6 ::0x7fccea42accc + 0x13c
+              /c Frame 48. libc.so.6: on_exit + 0x20
+              /c Frame 49. /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/lib/libQt5XcbQpa.so.5 ::0x7fccd3dddeb0 + 0x5eb0
+              /c Frame 50. /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/lib/libQt5XcbQpa.so.5 ::0x7fccd3e12fc3 + 0xd43
+              /c Frame 51. libglib-2.0.so.0: g_main_context_dispatch + 0x15d
+              /c Frame 52. /lib64/libglib-2.0.so.0 ::0x7fccee461ea8 + 0x518
+              /c Frame 53. libglib-2.0.so.0: g_main_context_iteration + 0x30
+              /c Frame 54. QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) + 0x6a
+              /c Frame 55. QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) + 0x11b
+              /c Frame 56. QCoreApplication::exec() + 0x7c
+              /c Frame 57. 0x4316bf6 SNPSee_002365a670bbd5d0a7c56191a475a3ee632fcc3a9fd6c1d60707b94db351293835df6d970cefab6fb6155797a49e5eb7 + 0x1056
+              /c Frame 58. custom_compiler: main + 0x6b
+              /c Frame 59. libc.so.6: __libc_start_main + 0xe5
+              /c Frame 60. /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/platform/bin/custom_compiler ::0x42f9c54 + 0x29
+              /c 
+[13:04:52.24] /o signal number = 11
+              /c Stack Dump: VERSION W-2024.09-SP1-2 CONFIG 11256978 DATE Tue Apr  1 09:00:42 2025
+              /c Frame 0. /lib64/libpthread.so.0 ::0x793f990 + 0x50
+              /c Frame 1. std::_Rb_tree<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int>, std::_Select1st<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, unsigned int> > >::find(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) + 0x15
+              /c Frame 2. postman::postman::register_callback(postman::callback*, bool) + 0x1da
+              /c Frame 3. working_set::notifier_postman_connector<base::safe_ptr<probe::probe> >::connect_to_postman() + 0x1cf
+              /c Frame 4. 0x4c1bdc5 SNPSee_f572eb157d9cbd33339be535a2eb20a3198b7376ddcc1436c1dd64c8c1da2ae1bd2ade9a2a34ea8fa871a9eb4871043b066f9db6c1a57356b62e8443011310602ea2f5184482c619 + 0x965
+              /c Frame 5. 0x4c1bea2 SNPSee_f572eb157d9cbd33339be535a2eb20a3198b7376ddcc143612c597724eda0b3d0de61344e7ff62e294587086ced634218dc8abd4388bd0ed2419d00f71e657a3b664cd280a8c964e + 0x12
+              /c Frame 6. 0x15d2204b SNPSee_4b67e83acce6b981dc5bee9def41b4c5a8a713db11ee1ce2a45130298f19a1efea87366daf90fade890a69852003125cdb66aa4e63c308dc5b1731e3616058cf + 0x1b
+              /c Frame 7. command::procedure::execute(int, Tcl_Obj* const*) + 0x87
+              /c Frame 8. 0x15d064cd SNPSee_4b67e83acce6b98117cdb4104ddf90edc02116329c0fdf1ab035bcfc0eea8a4baf2fa700ec6b9d31745878437a4b7ee3861b44f0b9e0e0e1658edde5a4c420575393b01b525e3d06 + 0x14d
+              /c Frame 9. libtcl-O.so: TclNRRunCallbacks + 0x47
+              /c Frame 10. console::console::execute_by_objects(Tcl_Obj*, bool) + 0x73
+              /c Frame 11. 0xd4a6b59 SNPSee_286c92292998d55218e7fc08cd1c0e1fad0ff08eea321d3e0cf00971e54ae07906b51b19822cd88db75b9f3ae7be279b12d9d7fa0a1fbdc3ec6541f5a8cc6d7b128ce8e370334bf65eb2046f029a850812d2c1c3d8f369e16e985133c5e82759c7796ab858269b96fb5a691af0453366ffb8578985ed24e6f942db647cd33127ae612f121a1edadce90da9926f5e7655a94f62dbd85ab00bffb4d43627adce3dc41502d9b7411e7125b5059cdc58ff8a93e142b9976883ec3b284810c981f604 + 0xe9
+              /c Frame 12. 0xd4a6e4e SNPSee_286c92292998d55218e7fc08cd1c0e1fad0ff08eea321d3e0cf00971e54ae079ea09a83e44f6bd6e6d155d7df3a75fa23aab0696c0a836088f4580e25956ab722b155dfd8b211bc9e3719dc927b1f0bf + 0x1fe
+              /c Frame 13. 0x15d2204b SNPSee_4b67e83acce6b981dc5bee9def41b4c5a8a713db11ee1ce2a45130298f19a1efea87366daf90fade890a69852003125cdb66aa4e63c308dc5b1731e3616058cf + 0x1b
+              /c Frame 14. command::procedure::execute(int, Tcl_Obj* const*) + 0x87
+              /c Frame 15. 0x15d064cd SNPSee_4b67e83acce6b98117cdb4104ddf90edc02116329c0fdf1ab035bcfc0eea8a4baf2fa700ec6b9d31745878437a4b7ee3861b44f0b9e0e0e1658edde5a4c420575393b01b525e3d06 + 0x14d
+              /c Frame 16. libtcl-O.so: TclNRRunCallbacks + 0x47
+              /c Frame 17. console::console::execute_by_objects(Tcl_Obj*, bool) + 0x73
+              /c Frame 18. 0xd4a6b59 SNPSee_286c92292998d55218e7fc08cd1c0e1fad0ff08eea321d3e0cf00971e54ae07906b51b19822cd88db75b9f3ae7be279b12d9d7fa0a1fbdc3ec6541f5a8cc6d7b128ce8e370334bf65eb2046f029a850812d2c1c3d8f369e16e985133c5e82759c7796ab858269b96fb5a691af0453366ffb8578985ed24e6f942db647cd33127ae612f121a1edadce90da9926f5e7655a94f62dbd85ab00bffb4d43627adce3dc41502d9b7411e7125b5059cdc58ff8a93e142b9976883ec3b284810c981f604 + 0xe9
+              /c Frame 19. 0xd4a6e4e SNPSee_286c92292998d55218e7fc08cd1c0e1fad0ff08eea321d3e0cf00971e54ae079ea09a83e44f6bd6e6d155d7df3a75fa23aab0696c0a836088f4580e25956ab722b155dfd8b211bc9e3719dc927b1f0bf + 0x1fe
+              /c Frame 20. 0x15d2204b SNPSee_4b67e83acce6b981dc5bee9def41b4c5a8a713db11ee1ce2a45130298f19a1efea87366daf90fade890a69852003125cdb66aa4e63c308dc5b1731e3616058cf + 0x1b
+              /c Frame 21. command::procedure::execute(int, Tcl_Obj* const*) + 0x87
+              /c Frame 22. 0x15d064cd SNPSee_4b67e83acce6b98117cdb4104ddf90edc02116329c0fdf1ab035bcfc0eea8a4baf2fa700ec6b9d31745878437a4b7ee3861b44f0b9e0e0e1658edde5a4c420575393b01b525e3d06 + 0x14d
+              /c Frame 23. libtcl-O.so: TclNRRunCallbacks + 0x47
+              /c Frame 24. console::console::execute_by_objects(Tcl_Obj*, bool) + 0x73
+              /c Frame 25. 0x11a919b8 SNPSee_2be2a5995e1bb69eb98fefad70a7e706fb75c5e60e7171e6738ec18cf68b95a70842b81f2d2608350e4eb73e7057e677883b6b8a55320a3a972a2722795a1a7d19e196b0abfa9f41 + 0x168
+              /c Frame 26. 0x15d2204b SNPSee_4b67e83acce6b981dc5bee9def41b4c5a8a713db11ee1ce2a45130298f19a1efea87366daf90fade890a69852003125cdb66aa4e63c308dc5b1731e3616058cf + 0x1b
+              /c Frame 27. command::procedure::execute(int, Tcl_Obj* const*) + 0x87
+              /c Frame 28. 0x15d064cd SNPSee_4b67e83acce6b98117cdb4104ddf90edc02116329c0fdf1ab035bcfc0eea8a4baf2fa700ec6b9d31745878437a4b7ee3861b44f0b9e0e0e1658edde5a4c420575393b01b525e3d06 + 0x14d
+              /c Frame 29. libtcl-O.so: TclNRRunCallbacks + 0x47
+              /c Frame 30. console::console::execute_by_objects(Tcl_Obj*, bool) + 0x73
+              /c Frame 31. waveform::plot_queue_manager::clear_probes() const + 0x44
+              /c Frame 32. waveform::plot_queue_manager::job_status_changed_slot(snps_boost_1_79_0::shared_ptr<ipc::job>, ipc::job_status_info_t, bool) + 0x2af
+              /c Frame 33. snps_boost_1_79_0::detail::function::void_function_obj_invoker3<snps_boost_1_79_0::_bi::bind_t<void, snps_boost_1_79_0::_mfi::mf3<void, waveform::plot_queue_manager, snps_boost_1_79_0::shared_ptr<ipc::job>, ipc::job_status_info_t, bool>, snps_boost_1_79_0::_bi::list4<snps_boost_1_79_0::_bi::value<waveform::plot_queue_manager*>, snps_boost_1_79_0::arg<1>, snps_boost_1_79_0::arg<2>, snps_boost_1_79_0::arg<3> > >, void, snps_boost_1_79_0::shared_ptr<ipc::job>, ipc::job_status_info_t, bool>::invoke(snps_boost_1_79_0::detail::function::function_buffer&, snps_boost_1_79_0::shared_ptr<ipc::job>, ipc::job_status_info_t, bool) + 0x5e
+              /c Frame 34. 0x14db730f SNPSee_c3269dc53fe6cbcd5a389060dd59f89ee348651c9213c181aa2c83369abb78f05a18fb95d9318f76fff92c97fc3fd04715cf979884ce3b534bf1de195f8756f5f60cfc2bffbcdae0989ddf9bb882e8926a175c61a524441ea87b85f1f40cb52646f514bb9dca991213c2f16c1549c4e5138b7cc23ab72c198cfee4e21e65fb3ba0bcacea916df1c7371937ac6e02d37ba4a3c10ca6e8a1f9b4330a4aa5e1445111f9ec5487705ebd12ef6dc2755a17fc4180f877cef61bbcb7aaa2f2ce917e19b0d19e52488858c4633823d74ece6e302a837bf344a3edceb310954ac03a83849b432e6c0f91844097a5f7708e76b4506a71b06e14a7f3a3afe37497cb9224bb + 0x4f
+              /c Frame 35. 0x14db8599 SNPSee_baaa7cc784dddb6025aabcfc6e21c20c3997b18b1d0dc85c5501ff1f91a5f750e849eb8fccb5f76bcd7119635f85a0eb6a833d69636a89e1a7c16a9434fcc576987bc8e5c7a7275f1a9c1ed53ed329371802857a352ce5a0a1b9c2aa39103abdac8b38189e195aaf10b85b5df88bea0ae3335dc984027b88cb6818663affdddeb730fc5723cff43807593b6c050dbf1ebfaa963beaba4ab63f26541b64ef67b54e9cde9558ba6fbf + 0x7f9
+              /c Frame 36. ipc::job::set_status(ipc::status) + 0x9b
+              /c Frame 37. ipc::job::update_status() + 0x4b
+              /c Frame 38. 0x14e01220 SNPSee_648b6c406260d36cc793209230a973fdb751ae828600485c7d8aec45ae7f9918 + 0x1f0
+              /c Frame 39. 0x14e0ca3e SNPSee_648b6c406260d36cc793209230a973fdebafcdbaeae2ed688e112ee760ef968706ce9948a872f0cc + 0x2e
+              /c Frame 40. 0xc5153f1 SNPSee_98e6fae53a3bba60112f513ff13f450239ebfd90b60bc61820a7a1bb9396766ae1d5fdf02cbc792c2ac29f7b8a7b3d64f49a4fc1fea609bb + 0xc1
+              /c Frame 41. 0xc50b9db SNPSee_539e4ee952adf7d7b62dedc103ccc70f028780fa9202079b93106cec88e0785422195bcb17685f07bdf82f28693432f3664474fd7159d8a191ba342be7032142 + 0x9b
+              /c Frame 42. QObject::setProperty(char const*, QVariant const&) + 0x162a
+              /c Frame 43. QCoreApplication::platformInvalidated(int) + 0x31
+              /c Frame 44. QBasicTimer::operator=(QBasicTimer const&) + 0x5f3
+              /c Frame 45. QObjectPrivate::setParent_helper(QObject*) + 0x1f6
+              /c Frame 46. QObject::~QObject() + 0x357
+              /c Frame 47. QFileSystemWatcher::qt_metacall(QMetaObject::Call, int, void**) + 0x379f
+              /c Frame 48. QFileSystemWatcher::qt_metacall(QMetaObject::Call, int, void**) + 0x3839
+              /c Frame 49. QObjectPrivate::deleteChildren() + 0x6e
+              /c Frame 50. QObject::~QObject() + 0x323
+              /c Frame 51. /lib64/libc.so.6 ::0xea42accc + 0x13c
+              /c Frame 52. libc.so.6: on_exit + 0x20
+              /c Frame 53. /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/lib/libQt5XcbQpa.so.5 ::0xd3dddeb0 + 0x5eb0
+              /c Frame 54. /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/lib/libQt5XcbQpa.so.5 ::0xd3e12fc3 + 0xd43
+              /c Frame 55. libglib-2.0.so.0: g_main_context_dispatch + 0x15d
+              /c Frame 56. /lib64/libglib-2.0.so.0 ::0xee461ea8 + 0x518
+              /c Frame 57. libglib-2.0.so.0: g_main_context_iteration + 0x30
+              /c Frame 58. QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) + 0x6a
+              /c Frame 59. QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) + 0x11b
+              /c Frame 60. QCoreApplication::exec() + 0x7c
+              /c Frame 61. 0x4316bf6 SNPSee_002365a670bbd5d0a7c56191a475a3ee632fcc3a9fd6c1d60707b94db351293835df6d970cefab6fb6155797a49e5eb7 + 0x1056
+              /c Frame 62. custom_compiler: main + 0x6b
+              /c Frame 63. libc.so.6: __libc_start_main + 0xe5
+              /c Frame 64. /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/platform/bin/custom_compiler ::0x42f9c54 + 0x29
+              /c Stack Dump: VERSION W-2024.09-SP1-2 CONFIG 11256978 DATE Tue Apr  1 09:00:42 2025
+[13:04:53.53] /e Error: The application was unexpectedly terminated.
+              /c See the session log file for recovery details. (SHUT_DOWN-001)

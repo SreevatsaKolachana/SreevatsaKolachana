@@ -1,0 +1,19 @@
+buffer_highdrive { invx4 }
+WLRef_PC { nor invx4 buffer nand inv }
+2to4_decoder_static { nor nand inv }
+static_row_decoder_3by8 { buffer_highdrive nor nand inv }
+Write_Driver { buffer_highdrive invx4 buffer }
+tspc_pos_ff { }
+nand { }
+columnDecoderstatic { 2to4_decoder_static }
+memory_array_static_column_decoder_test { precharge_logic static_row_decoder_3by8 tspc_pos_ff between_blocks nand Write_Driver WLRef_PC inv agen_unit read_circuit columnDecoderstatic sram_6t }
+agen_unit { nor invx4 Demux nand inv }
+nor { }
+invx4 { }
+between_blocks { nor nand inv }
+precharge_logic { }
+Demux { nand inv }
+buffer { inv }
+read_circuit { invx4 nand inv }
+inv { }
+sram_6t { }

@@ -1,0 +1,464 @@
+[15:57:35.47] /o 
+              /c                                 Custom Compiler™ 
+              /c 
+              /c               Version W-2024.09-SP1-2 for linux64 - Jan 16, 2025 
+              /c 
+              /c                     Copyright (c) 2004 - 2025 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 11256978 compiled on Thu Jan 16 10:52:27 2025 for AlmaLinux 8.4
+              /c Invocation: /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Tue Apr  1 15:57:25 2025
+              /c Host: warlock.ece.ncsu.edu
+              /c Working directory: /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project
+              /c 
+[15:57:57.21] /m Information: Registering ICV PERC package...
+[15:57:59.04] /r giShowFrameTabs true
+[15:57:59.04] /r giWindowId 1
+[15:57:59.04] /r giWindowGeometry 1040x800
+[15:58:22.61] /i gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/deOpengroup82to4decodermuxtbschematic} -in [gi::getWindows 1]
+[15:58:23.23] /o Loading: Callback files...
+[15:58:23.27] /o Loading: scripts/callbacks/callbacks.tcl
+[15:58:23.27] /o 
+              /c [INFO] : Loading display.drf from /mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3
+              /c 
+              /c  if you wish to Load other display.drf, please set shell environment valiable "iPDK_load_display_NCSU_TechLib_FreePDK3" to value = 0
+[15:58:23.27] /o 
+[15:58:23.33] /w Warning: Preference 'xtStarTcadGrdFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[15:58:23.33] /w Warning: Preference 'xtStarOALayerMappingFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[15:58:23.33] /o 	#######################################
+[15:58:23.33] /o 	CC-PDK Library Name	: FreePDK3
+[15:58:23.33] /o 	#######################################
+[15:58:23.33] /o 
+[15:58:23.43] /m Information: Feature 'CustomInfrastructure' checked out. (LICENSE-003)
+[15:58:23.46] /m Information: Feature 'SynopsysCustomLayout' checked out. (LICENSE-003)
+[15:58:23.76] /r giWindowId 2
+[15:58:23.76] /r giWindowGeometry 1632x972
+[15:58:28.93] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[15:58:29.24] /i db::setAttr geometry -of [gi::getFrames 1] -value 1910x1047+1925+28
+[15:58:36.66] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[15:58:36.66] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {1.11875 5.0625}
+[15:58:38.14] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[15:58:38.14] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {-7.875 6.55625}
+[15:58:39.47] /# gi::executeAction {deFitEdit} -in [gi::getWindows 2]
+[15:58:39.47] /i de::fit -window 2 -fitEdit true
+[15:58:56.13] /i gi::executeAction {sePropertyEditorToggle} -in [gi::getWindows 2]
+[15:58:56.13] /# db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value true
+[15:58:56.47] /i db::setAttr geometry -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value 395x856+618+27
+[15:58:58.58] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[15:58:58.58] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[15:58:58.58] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {2.18125 5.49375} -index 0 -intent none]
+[15:58:58.58] /o oa:0x3c48bfd0
+[15:59:02.66] /i db::setAttr geometry -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value 395x856+2136+129
+[15:59:03.48] /i db::setAttr geometry -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value 395x856+2649+79
+[15:59:05.00] /i gi::setItemSelection {parameters} -index {v2,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[15:59:05.00] /i gi::setCurrentIndex {parameters} -index {v2,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[15:59:07.37] /i gi::setField {parameters} -value {0.8} -index {v2,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[15:59:07.61] /i gi::executeAction dePropertyEditorApplyChanges -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[15:59:10.57] /i db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value false
+[15:59:15.40] /i gi::executeAction {seShowConsoleForWindow} -in [gi::getWindows 2]
+[15:59:19.44] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[15:59:19.60] /m Information: Started sharing "WaveView ADV" license. (WAVEFORM-110)
+[15:59:19.60] /m Information: Started sharing "Primewave" license. (WAVEFORM-110)
+[15:59:20.00] /r giWindowId 3
+[15:59:20.00] /r giWindowGeometry 600x500
+[15:59:20.15] /r giWindowGeometry 600x500
+[15:59:20.48] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eeff4bacd052326deef5f70016eafc506166f921a156078c1ac2e3f220062905190b7f5010ba4aacc9 -python 0  -log pw_shell_session0_job1 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[15:59:20.96] /m Information: Launching Simulation Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && sh /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.nbandeh/stb.group8.2to4decodermux_tb.schematic.session1/runSimServer ". (PW_GUI-711)
+[15:59:21.24] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_ZnC91B -unique_string 424077b79e1069eeff4bacd052326deef5f70016eafc506166f921a156078c1ac2e3f22006290519c0ec6d94df3f6df4 -lic_type 2   -parent_cc_pid 4607  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[15:59:21.66] /m Information: Launching Result Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -log rvcmd.log -ptype rv -k -cdesigner -parent_cc_pid 4607 -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -unique_string 424077b79e1069eeff4bacd052326deef5f70016eafc506166f921a156078c1ac2e3f22006290519c0ec6d94df3f6df4 -lic_type 2    > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/rviewer.log 2>&1"
+[15:59:21.89] /# gi::executeAction {saLoadState} -in [gi::getWindows 3]
+[15:59:21.89] /i sa::showLoadState -parent 3
+[15:59:22.30] /i gi::setActiveDialog [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 3]]
+[15:59:22.67] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 3]] -value 603x784+2672+296
+[15:59:22.76] /i gi::pressButton {/ok} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 3]]
+[15:59:37.11] /i gi::setCurrentIndex {outputsTable} -index {4,1} -in [gi::getWindows 3]
+[15:59:37.11] /i gi::setItemSelection {outputsTable} -index {4,1} -in [gi::getWindows 3]
+[15:59:39.94] /i gi::setCurrentIndex {outputsTable} -index {5,1} -in [gi::getWindows 3]
+[15:59:39.94] /i gi::setItemSelection {outputsTable} -index {4,1 5,1} -in [gi::getWindows 3]
+[15:59:40.29] /i gi::setCurrentIndex {outputsTable} -index {6,1} -in [gi::getWindows 3]
+[15:59:40.29] /i gi::setItemSelection {outputsTable} -index {4,1 5,1 6,1} -in [gi::getWindows 3]
+[15:59:40.62] /i gi::setCurrentIndex {outputsTable} -index {7,1} -in [gi::getWindows 3]
+[15:59:40.62] /i gi::setItemSelection {outputsTable} -index {4,1 5,1 6,1 7,1} -in [gi::getWindows 3]
+[15:59:44.54] /# gi::executeAction {saDelete} -in [gi::getWindows 3]
+[15:59:44.54] /i sa::deleteSelected -window 3
+[15:59:44.54] /i gi::setCurrentIndex {outputsTable} -index {3,0} -in [gi::getWindows 3]
+[15:59:44.54] /i gi::setItemSelection {outputsTable} -index {3,0-24} -in [gi::getWindows 3]
+[15:59:49.25] /i gi::executeAction {menuPreShow} -in [gi::getWindows 3]
+[15:59:49.25] /r giMenuAccess db::getNext [gi::getMenus saConsoleOutputsMenu -from [gi::getWindows 3]]
+[15:59:50.81] /# gi::executeAction {saSelectInDesign} -in [gi::getWindows 3]
+[15:59:50.81] /i sa::selectOutputs -window 3 -useCustomColors true 
+[15:59:53.63] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[15:59:53.63] /i de::addPoint {5.10625 2.2875} -context [db::getNext [de::getContexts -window 2]]
+[15:59:53.81] /# gi::executeAction {deCompleteShape} -in [gi::getWindows 2]
+[15:59:53.81] /i de::completeShape -context [db::getNext [de::getContexts -window 2]]
+[15:59:53.88] /# Navigating to group8/2to4decodermux/schematic (I0)
+[15:59:54.16] /r giWindowGeometry 1910x1023+1925+52
+[16:00:00.17] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[16:00:00.17] /i de::addPoint {2.30625 4.7125} -context [db::getNext [de::getContexts -window 2]]
+[16:00:03.28] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[16:00:03.28] /i de::addPoint {7.6875 4.98125} -context [db::getNext [de::getContexts -window 2]]
+[16:00:06.17] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job1" after 46 seconds. (PW_GUI-172)
+[16:00:08.71] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[16:00:08.71] /i de::addPoint {12.675 4.8} -context [db::getNext [de::getContexts -window 2]]
+[16:00:11.78] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[16:00:11.78] /i de::addPoint {17.83125 4.7} -context [db::getNext [de::getContexts -window 2]]
+[16:00:17.50] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[16:00:17.50] /i de::addPoint {14.69375 4.74375} -context [db::getNext [de::getContexts -window 2]]
+[16:00:21.52] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[16:00:21.52] /i de::addPoint {11.8375 4.9125} -context [db::getNext [de::getContexts -window 2]]
+[16:00:25.86] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[16:00:25.86] /i de::addPoint {8.83125 4.8875} -context [db::getNext [de::getContexts -window 2]]
+[16:00:28.13] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[16:00:28.13] /i de::addPoint {5.55625 4.8125} -context [db::getNext [de::getContexts -window 2]]
+[16:00:33.37] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 2]
+[16:00:33.37] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[16:00:37.36] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 3]
+[16:00:37.36] /i ::sa::_testSuite::isShowRunConfirmation 3 "isa::netlistAndRun" [sa::_utils::findRunMode 3]
+[16:00:37.39] /i gi::setActiveDialog [gi::getDialogs {saRunConfirmationDialog} -parent [gi::getWindows 3]]
+[16:00:37.67] /i db::setAttr geometry -of [gi::getDialogs {saRunConfirmationDialog} -parent [gi::getWindows 3]] -value 400x140+2670+430
+[16:00:39.01] /i gi::pressButton {yes} -in [gi::getDialogs {saRunConfirmationDialog} -parent [gi::getWindows 3]]
+[16:00:40.59] /r giDialog gi::setActiveDialog [gi::getDialogs {xtShowDesignsPrompt}]
+[16:00:40.59] /r giDialog gi::setCurrentIndex {target} -index {0,0} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[16:00:40.86] /r giDialog db::setAttr geometry -of [gi::getDialogs {xtShowDesignsPrompt}] -value 649x294+2546+353
+[16:00:42.18] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[16:00:42.32] /m Information: 
+[16:00:42.32] /o Checking "group8/2to4decodermux_tb/schematic"
+[16:00:42.32] /o 	[warning] Floating I/O Instance Pins
+[16:00:42.32] /o 		I/O pin 'BL0' of instance 'I0' is floating
+[16:00:42.32] /o 		I/O pin 'BL0Bar' of instance 'I0' is floating
+[16:00:42.32] /o 		I/O pin 'BL1' of instance 'I0' is floating
+[16:00:42.32] /o 		I/O pin 'BL10' of instance 'I0' is floating
+[16:00:42.32] /o 		I/O pin 'BL10Bar' of instance 'I0' is floating
+[16:00:42.32] /o 		I/O pin 'BL11' of instance 'I0' is floating
+[16:00:42.32] /o 		I/O pin 'BL11Bar' of instance 'I0' is floating
+[16:00:42.32] /o 		I/O pin 'BL12' of instance 'I0' is floating
+[16:00:42.32] /o 		I/O pin 'BL12Bar' of instance 'I0' is floating
+[16:00:42.32] /o 		I/O pin 'BL13' of instance 'I0' is floating
+[16:00:42.32] /o 		I/O pin 'BL13Bar' of instance 'I0' is floating
+[16:00:42.32] /o 		I/O pin 'BL14' of instance 'I0' is floating
+[16:00:42.32] /o 		I/O pin 'BL14Bar' of instance 'I0' is floating
+[16:00:42.32] /o 		I/O pin 'BL15' of instance 'I0' is floating
+[16:00:42.32] /o 		I/O pin 'BL15Bar' of instance 'I0' is floating
+[16:00:42.32] /o 		I/O pin 'BL1Bar' of instance 'I0' is floating
+[16:00:42.32] /o 		I/O pin 'BL9' of instance 'I0' is floating
+[16:00:42.32] /o 		I/O pin 'BLBar' of instance 'I0' is floating
+[16:00:42.32] /o 		I/O pin 'PLUS' of instance 'V11' is floating
+[16:00:42.32] /o 		I/O pin 'PLUS' of instance 'V13' is floating
+[16:00:42.32] /o 		More than 20 violations encountered, suppressing remaining messages.
+[16:00:42.32] /o 	[warning] Solder on Crossing Wires
+[16:00:42.32] /o 		Solder dot on crossing wires
+[16:00:42.33] /o 0 Error(s),35 Warning(s),0 Message(s) found   in "group8/2to4decodermux_tb/schematic"
+[16:00:42.37] /o No Design Integrity rule violations found in "group8/2to4decodermux_tb/schematic"
+[16:00:42.37] /m Information: Checking process is completed: marking the design violations
+[16:00:42.39] /m Information: Marking of designs is completed
+[16:00:42.58] /r giWindowId 4
+[16:00:42.59] /r giWindowGeometry 800x600
+[16:00:44.06] /i gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]]
+[16:00:44.28] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 532x66+2630+513
+[16:00:46.77] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 549x66+2630+513
+[16:00:58.78] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 534x66+2630+513
+[16:01:02.87] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 480x66+2630+513
+[16:01:03.48] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 513x70+2630+513
+[16:01:05.47] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 514x70+2630+513
+[16:01:11.05] /r giWindowId 5
+[16:01:11.06] /r giWindowGeometry 1024x768
+[16:01:13.42] /i gi::setActiveWindow 4
+[16:01:13.42] /i gi::setActiveWindow 4 -raise true
+[16:01:36.41] /m Information: Simulation completed successfully for design: group8/2to4decodermux_tb/schematic  (PW-651)
+[16:01:47.40] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 8s
+[16:01:48.77] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eeff4bacd052326deef5f70016eafc506166f921a156078c1aaff50d02f59ce0796649df0220ee50f7 -python 0  -log pw_shell_session0_job2 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[16:01:48.91] /r giWindowId 6
+[16:01:48.91] /r giWindowGeometry 1024x768
+[16:01:49.25] /i db::setAttr geometry -of [gi::getFrames 2] -value 1024x792+1975+78
+[16:01:54.05] /i db::setAttr geometry -of [gi::getFrames 2] -value 1024x792+278+55
+[16:01:54.16] /i db::setAttr maximized -of [gi::getFrames 2] -value true
+[16:01:54.47] /i db::setAttr geometry -of [gi::getFrames 2] -value 1910x1020+5+55
+[16:02:02.61] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job2" after 14 seconds. (PW_GUI-172)
+[16:04:27.47] /m Information: Feature 'SynopsysCustomSAE' checked in. (LICENSE-004)
+[16:04:27.48] /m Information: Stopped sharing "Primewave" license. (WAVEFORM-111)
+[16:04:27.48] /m Information: Stopped sharing "WaveView ADV" license. (WAVEFORM-111)
+[16:04:27.55] /m Information: Send exit command to simulation server process stb.group8.2to4decodermux_tb.schematic.session1. (PW_GUI-979)
+[16:04:28.64] /m Information: Stopping query due to no running simulation server process. (PW_GUI-710)
+[16:07:11.21] /i gi::setActiveWindow 4
+[16:07:11.21] /i gi::setActiveWindow 4 -raise true
+[16:07:12.22] /i gi::setActiveWindow 3
+[16:07:12.22] /i gi::setActiveWindow 3 -raise true
+[16:07:13.36] /i gi::setActiveWindow 2
+[16:07:13.36] /i gi::setActiveWindow 2 -raise true
+[16:07:15.27] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:07:15.27] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {12.18125 4.94375}
+[16:07:26.27] /e Error: Cannot execute 'w' binding because the design is in read-only mode. (WINDOW-356)
+[16:07:27.72] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[16:07:27.72] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[16:07:27.72] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {13.89375 3.55625} -index 0 -intent none]
+[16:07:27.72] /o oa:0x4ab47030
+[16:07:29.31] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[16:07:29.31] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[16:07:29.31] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {13.89375 3.6125} -index 0 -intent none]
+[16:07:29.31] /o oa:0x4ace1280
+[16:07:34.16] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[16:07:34.16] /i de::cycleActiveFigure [gi::getWindows 2] -direction next
+[16:07:34.16] /o oa:0x4acfbd40
+[16:07:34.16] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[16:07:34.16] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {13.89375 3.63125} -index 1 -intent none]
+[16:07:34.16] /o oa:0x43b0c950
+[16:07:36.15] /e Error: Cannot execute 'w' binding because the design is in read-only mode. (WINDOW-356)
+[16:08:25.37] /i gi::setActiveWindow 1
+[16:08:25.37] /i gi::setActiveWindow 1 -raise true
+[16:08:26.74] /i gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[16:08:27.04] /r giWindowId 7
+[16:08:27.05] /r giWindowGeometry 660x600+50+50
+[16:08:28.47] /i gi::setCurrentIndex {libs} -index {group8} -in [gi::getWindows 7]
+[16:08:28.61] /i gi::setItemSelection {libs} -index {group8} -in [gi::getWindows 7]
+[16:08:30.28] /i gi::setCurrentIndex {cells} -index {2to4decodermux_tb} -in [gi::getWindows 7]
+[16:08:30.50] /i gi::setItemSelection {cells} -index {2to4decodermux_tb} -in [gi::getWindows 7]
+[16:08:32.59] /i gi::setCurrentIndex {cells} -index {2to4decodermux} -in [gi::getWindows 7]
+[16:08:32.78] /i gi::setItemSelection {cells} -index {2to4decodermux} -in [gi::getWindows 7]
+[16:09:57.74] /i gi::setActiveWindow 6
+[16:09:57.74] /i gi::setActiveWindow 6 -raise true
+[16:10:08.87] /i gi::setActiveWindow 7
+[16:10:08.87] /i gi::setActiveWindow 7 -raise true
+[16:10:08.89] /i gi::setActiveWindow 2
+[16:10:08.89] /i gi::setActiveWindow 2 -raise true
+[16:10:11.77] /# gi::executeAction {deReturn} -in [gi::getWindows 2]
+[16:10:11.77] /i de::return [db::getNext [de::getContexts -window 2]] -errorOnFail false
+[16:10:11.83] /# Navigating to group8/2to4decodermux_tb/schematic
+[16:10:11.84] /r giWindowGeometry 1910x1023+1925+52
+[16:10:19.70] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[16:10:19.70] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[16:10:19.70] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {4.94375 4.225} -index 0 -intent none]
+[16:10:19.70] /o oa:0x4ac9c000
+[16:10:19.88] /i ::se::internal::descendInst 2 [de::getActiveFigure [gi::getWindows 2] -point {4.94375 4.225} -index 0 -intent none] auto
+[16:10:19.99] /# ide::descend 2 -inPlace false -readOnly auto
+[16:10:20.11] /# Navigating to group8/2to4decodermux/schematic (I0)
+[16:10:20.13] /r giWindowGeometry 1910x1023+1925+52
+[16:10:23.07] /# gi::executeAction {seSchCreateWire} -in [gi::getWindows 2]
+[16:10:23.07] /i ise::createWire
+[16:10:26.53] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[16:10:26.53] /i de::addPoint {13.89375 3.54375} -context [db::getNext [de::getContexts -window 2]]
+[16:10:27.73] /i de::setCursor -point {13.875 3.625 }
+[16:10:29.03] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[16:10:29.03] /i de::addPoint {13.89375 3.60625} -context [db::getNext [de::getContexts -window 2]]
+[16:10:48.09] /# gi::executeAction {seSchCheckAndSave} -in [gi::getWindows 2]
+[16:10:48.09] /i  ::startup::_checkAndSave 
+[16:10:48.22] /m Information: 
+              /c Cross view checking for group8/2to4decodermux/symbol with group8/2to4decodermux/schematic
+              /c No violations found. (DE_EDIT-007)
+[16:10:48.23] /m Information: 
+[16:10:48.23] /o Checking "group8/2to4decodermux/schematic"
+[16:10:48.23] /o No rule violations found in "group8/2to4decodermux/schematic"
+[16:10:48.23] /m Information: Checking process is completed: marking the design violations
+[16:10:48.46] /m Information: Marking of designs is completed
+[16:10:51.51] /i gi::setActiveWindow 3
+[16:10:51.51] /i gi::setActiveWindow 3 -raise true
+[16:10:53.26] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 3]
+[16:10:53.26] /i ::sa::_testSuite::isShowRunConfirmation 3 "isa::netlistAndRun" [sa::_utils::findRunMode 3]
+[16:10:53.29] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[16:10:53.30] /i gi::setActiveDialog [gi::getDialogs {saRunConfirmationDialog} -parent [gi::getWindows 3]]
+[16:10:53.58] /i db::setAttr geometry -of [gi::getDialogs {saRunConfirmationDialog} -parent [gi::getWindows 3]] -value 400x140+2670+430
+[16:10:54.80] /i gi::setField {showAgain} -value {true} -in [gi::getDialogs {saRunConfirmationDialog} -parent [gi::getWindows 3]]
+[16:10:55.28] /i gi::pressButton {yes} -in [gi::getDialogs {saRunConfirmationDialog} -parent [gi::getWindows 3]]
+[16:10:55.40] /m Information: Started sharing "WaveView ADV" license. (WAVEFORM-110)
+[16:10:55.40] /m Information: Started sharing "Primewave" license. (WAVEFORM-110)
+[16:10:57.10] /m Information: Launching Simulation Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && sh /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.nbandeh/stb.group8.2to4decodermux_tb.schematic.session1/runSimServer ". (PW_GUI-711)
+[16:10:58.50] /# gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]]
+[16:10:58.79] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 532x66+2630+513
+[16:11:04.23] /i gi::setActiveWindow 6
+[16:11:04.23] /i gi::setActiveWindow 6 -raise true
+[16:11:06.01] /i gi::executeAction giCloseWindow -in [gi::getWindows 6]
+[16:11:06.77] /m Information: Waveform viewer exited normally.
+[16:11:07.02] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_ToaLyP -unique_string 424077b79e1069eeff4bacd052326deef5f70016eafc506166f921a156078c1aaa8ebeb8868b2fdaf65b323265a0d56f -lic_type 2   -parent_cc_pid 4607  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[16:11:07.05] /i gi::setActiveWindow 4
+[16:11:07.05] /i gi::setActiveWindow 4 -raise true
+[16:11:15.09] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 549x66+2630+513
+[16:11:26.77] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 534x66+2630+513
+[16:11:30.90] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 480x66+2630+513
+[16:11:34.49] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 514x70+2630+513
+[16:12:03.52] /m Information: Simulation completed successfully for design: group8/2to4decodermux_tb/schematic  (PW-651)
+[16:12:15.36] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eeff4bacd052326deef5f70016eafc506166f921a156078c1a9389168fd2e0b9ede32182756ab0657d -python 0  -log pw_shell_session0_job3 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[16:12:15.50] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 8s
+[16:12:15.53] /r giWindowId 8
+[16:12:15.53] /r giWindowGeometry 1910x996+5+79
+[16:12:15.53] /i db::setAttr maximized -of [gi::getFrames 3] -value true
+[16:12:28.97] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job3" after 13 seconds. (PW_GUI-172)
+[16:13:02.38] /i gi::setActiveWindow 4
+[16:13:02.38] /i gi::setActiveWindow 4 -raise true
+[16:13:02.41] /i gi::setActiveWindow 2
+[16:13:02.41] /i gi::setActiveWindow 2 -raise true
+[16:13:05.48] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:13:05.48] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {12.8125 3.5625}
+[16:13:05.98] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:13:05.98] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {12.8625 3.5625}
+[16:13:06.74] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:13:06.74] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {12.9375 3.54375}
+[16:13:06.77] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:13:06.77] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {12.93125 3.54375}
+[16:13:10.26] /# gi::executeAction {deUpdateCellview} -in [gi::getWindows 2]
+[16:13:10.26] /i db::showUpdateCellView -parent 2
+[16:13:10.63] /i gi::setActiveDialog [gi::getDialogs {dbUpdateCellView} -parent [gi::getWindows 2]]
+[16:13:10.97] /i db::setAttr geometry -of [gi::getDialogs {dbUpdateCellView} -parent [gi::getWindows 2]] -value 576x323+2700+439
+[16:13:11.87] /i gi::pressButton {/ok} -in [gi::getDialogs {dbUpdateCellView} -parent [gi::getWindows 2]]
+[16:13:12.33] /r giWindowId 9
+[16:13:12.34] /r giWindowGeometry 1632x972
+[16:13:14.58] /i gi::executeAction {deSaveDesign} -in [gi::getWindows 9]
+[16:13:14.59] /m Information: Saving design 'group8 2to4decodermux symbol'. (DESIGN_WINDOW-004)
+[16:13:16.48] /i gi::executeAction giCloseWindow -in [gi::getWindows 9]
+[16:13:17.39] /i gi::setActiveWindow 3
+[16:13:17.39] /i gi::setActiveWindow 3 -raise true
+[16:13:19.15] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 3]
+[16:13:19.15] /i ::sa::_testSuite::isShowRunConfirmation 3 "isa::netlistAndRun" [sa::_utils::findRunMode 3]
+[16:13:20.67] /r giDialog gi::setActiveDialog [gi::getDialogs {xtShowDesignsPrompt}]
+[16:13:20.67] /r giDialog gi::setCurrentIndex {target} -index {0,0} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[16:13:20.89] /r giDialog db::setAttr geometry -of [gi::getDialogs {xtShowDesignsPrompt}] -value 649x294+2546+353
+[16:13:24.36] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[16:13:24.49] /m Information: 
+[16:13:24.49] /o Checking "group8/2to4decodermux_tb/schematic"
+[16:13:24.49] /o 	[warning] Floating I/O Instance Pins
+[16:13:24.49] /o 		I/O pin 'BL0' of instance 'I0' is floating
+[16:13:24.49] /o 		I/O pin 'BL0Bar' of instance 'I0' is floating
+[16:13:24.49] /o 		I/O pin 'BL1' of instance 'I0' is floating
+[16:13:24.49] /o 		I/O pin 'BL10' of instance 'I0' is floating
+[16:13:24.49] /o 		I/O pin 'BL10Bar' of instance 'I0' is floating
+[16:13:24.49] /o 		I/O pin 'BL11' of instance 'I0' is floating
+[16:13:24.49] /o 		I/O pin 'BL11Bar' of instance 'I0' is floating
+[16:13:24.49] /o 		I/O pin 'BL12' of instance 'I0' is floating
+[16:13:24.49] /o 		I/O pin 'BL12Bar' of instance 'I0' is floating
+[16:13:24.49] /o 		I/O pin 'BL13' of instance 'I0' is floating
+[16:13:24.49] /o 		I/O pin 'BL13Bar' of instance 'I0' is floating
+[16:13:24.49] /o 		I/O pin 'BL14' of instance 'I0' is floating
+[16:13:24.49] /o 		I/O pin 'BL14Bar' of instance 'I0' is floating
+[16:13:24.49] /o 		I/O pin 'BL15' of instance 'I0' is floating
+[16:13:24.49] /o 		I/O pin 'BL15Bar' of instance 'I0' is floating
+[16:13:24.49] /o 		I/O pin 'BL1Bar' of instance 'I0' is floating
+[16:13:24.49] /o 		I/O pin 'BL9' of instance 'I0' is floating
+[16:13:24.49] /o 		I/O pin 'BLBar' of instance 'I0' is floating
+[16:13:24.49] /o 		I/O pin 'PLUS' of instance 'V11' is floating
+[16:13:24.49] /o 		I/O pin 'PLUS' of instance 'V13' is floating
+[16:13:24.49] /o 		More than 20 violations encountered, suppressing remaining messages.
+[16:13:24.49] /o 	[warning] Solder on Crossing Wires
+[16:13:24.49] /o 		Solder dot on crossing wires
+[16:13:24.49] /o 0 Error(s),35 Warning(s),0 Message(s) found   in "group8/2to4decodermux_tb/schematic"
+[16:13:24.53] /o No Design Integrity rule violations found in "group8/2to4decodermux_tb/schematic"
+[16:13:24.53] /m Information: Checking process is completed: marking the design violations
+[16:13:24.56] /m Information: Marking of designs is completed
+[16:13:26.34] /i gi::setActiveDialog [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]]
+[16:13:26.57] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 532x66+2630+513
+[16:13:27.94] /i gi::setActiveWindow 8
+[16:13:27.94] /i gi::setActiveWindow 8 -raise true
+[16:13:28.10] /i gi::executeAction giCloseWindow -in [gi::getWindows 8]
+[16:13:28.78] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 549x66+2630+513
+[16:13:28.78] /m Information: Waveform viewer exited normally.
+[16:13:29.01] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_BEqZx1 -unique_string 424077b79e1069eeff4bacd052326deef5f70016eafc506166f921a156078c1a65b45c95fe611dec1e23af16026175d4 -lic_type 2   -parent_cc_pid 4607  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/viewer.log 2>&1"
+[16:13:40.09] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 534x66+2630+513
+[16:13:44.19] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 480x66+2630+513
+[16:13:47.42] /i db::setAttr geometry -of [gi::getDialogs {xtBgNRunProgress} -parent [gi::getWindows 3]] -value 527x70+2630+513
+[16:13:48.11] /i gi::setActiveWindow 4
+[16:13:48.11] /i gi::setActiveWindow 4 -raise true
+[16:14:16.22] /m Information: Simulation completed successfully for design: group8/2to4decodermux_tb/schematic  (PW-651)
+[16:14:29.57] /m Information: Launching Background pw_shell Server Process "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project && primewave -gui 0 -uniqueString 424077b79e1069eeff4bacd052326deef5f70016eafc506166f921a156078c1a488a6ebaebd9523e1e23af16026175d4 -python 0  -log pw_shell_session0_job4 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs". (PW_GUI-174)
+[16:14:29.69] /m Information: Evaluating and plotting completed for testbench: HSPICE_default in 9s
+[16:14:29.72] /r giWindowId 10
+[16:14:29.73] /r giWindowGeometry 1910x996+5+79
+[16:14:29.73] /i db::setAttr maximized -of [gi::getFrames 4] -value true
+[16:14:29.74] /i db::setAttr maximized -of [gi::getFrames 4] -value false
+[16:14:29.74] /i db::setAttr maximized -of [gi::getFrames 4] -value true
+[16:14:42.87] /m Information: Received ready-for-commands signal from background job "pw_shell_session0_job4" after 13 seconds. (PW_GUI-172)
+[16:15:24.45] /i gi::setActiveWindow 4
+[16:15:24.45] /i gi::setActiveWindow 4 -raise true
+[16:15:24.47] /i gi::setActiveWindow 2
+[16:15:24.47] /i gi::setActiveWindow 2 -raise true
+[16:15:37.21] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:15:37.21] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {12.5375 1.85625}
+[16:15:39.00] /# gi::executeAction {deFitEdit} -in [gi::getWindows 2]
+[16:15:39.00] /i de::fit -window 2 -fitEdit true
+[16:15:40.75] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:15:40.75] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {12.08125 0.1625}
+[16:15:40.95] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:15:40.95] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {12.08125 0.1625}
+[16:15:41.13] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:15:41.13] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {12.08125 0.1625}
+[16:15:41.51] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:15:41.51] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {12.08125 0.1625}
+[16:15:41.97] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:15:41.97] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {12.08125 0.1625}
+[16:15:44.11] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:15:44.11] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {12.35 1.8}
+[16:15:44.39] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:15:44.39] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {12.35 1.8}
+[16:15:46.10] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:15:46.10] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {12.29375 1.8125}
+[16:15:48.09] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:15:48.09] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {12.4375 1.76875}
+[16:15:48.68] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:15:48.68] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {12.78125 1.73125}
+[16:15:51.49] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:15:51.49] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {12.59375 1.70625}
+[16:15:54.81] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:15:54.81] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {12.88125 3.15625}
+[16:15:57.52] /# gi::executeAction {deFitEdit} -in [gi::getWindows 2]
+[16:15:57.52] /i de::fit -window 2 -fitEdit true
+[16:15:58.50] /m Information: Feature 'SynopsysCustomSAE' checked in. (LICENSE-004)
+[16:15:58.51] /m Information: Stopped sharing "Primewave" license. (WAVEFORM-111)
+[16:15:58.51] /m Information: Stopped sharing "WaveView ADV" license. (WAVEFORM-111)
+[16:15:58.59] /m Information: Send exit command to simulation server process stb.group8.2to4decodermux_tb.schematic.session1. (PW_GUI-979)
+[16:15:59.97] /m Information: Stopping query due to no running simulation server process. (PW_GUI-710)
+[16:16:23.19] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:16:23.19] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {12.31875 3.68125}
+[16:16:33.17] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:16:33.17] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {11.49375 3.675}
+[16:16:46.53] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:16:46.53] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {13.2625 3.81875}
+[16:18:17.20] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[16:18:17.20] /i de::addPoint {12.19375 4.7} -context [db::getNext [de::getContexts -window 2]]
+[16:18:17.93] /# gi::executeAction {deReturn} -in [gi::getWindows 2]
+[16:18:17.93] /i de::return [db::getNext [de::getContexts -window 2]] -errorOnFail false
+[16:18:17.96] /# Navigating to group8/2to4decodermux_tb/schematic
+[16:18:17.97] /r giWindowGeometry 1910x1023+1925+52
+[16:18:19.00] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:18:19.00] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {5.36875 5.64375}
+[16:18:19.05] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:18:19.05] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {5.3625 5.64375}
+[16:18:19.28] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:18:19.28] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {5.3625 5.64375}
+[16:18:20.01] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:18:20.01] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {5.54375 5.48125}
+[16:18:28.95] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[16:18:28.95] /i de::cycleActiveFigure [gi::getWindows 2] -direction next
+[16:18:28.95] /o oa:0x4401e3c0
+[16:18:29.16] /i ::se::internal::descendInst 2 [de::getActiveFigure [gi::getWindows 2] -point {5.71875 5.06875} -index 0 -intent none] auto
+[16:18:29.29] /# ide::descend 2 -inPlace false -readOnly auto
+[16:18:29.42] /# Navigating to group8/2to4decodermux/schematic (I0)
+[16:18:29.45] /r giWindowGeometry 1910x1023+1925+52
+[16:18:59.37] /# gi::executeAction {deFitEdit} -in [gi::getWindows 2]
+[16:18:59.37] /i de::fit -window 2 -fitEdit true
+[16:19:02.30] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:19:02.30] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.89375 5.3375}
+[16:19:02.35] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:19:02.35] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.89375 5.3375}
+[16:19:03.89] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:19:03.89] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.875 5.425}
+[16:19:04.77] /# gi::executeAction {deFitEdit} -in [gi::getWindows 2]
+[16:19:04.77] /i de::fit -window 2 -fitEdit true
+[07:05:01.41] /o Error: X connection is broken. Error code: (APPLICATION_GUI-002)1
+[07:05:01.53] /e Error: The application was unexpectedly terminated.
+              /c See the session log file for recovery details. (SHUT_DOWN-001)
+[07:05:01.61] /# Date and Time: Wed Apr  2 07:05:01 2025
+[07:05:01.61] /e Error: Master CalculateEngine exited abnormally.
+[07:05:01.61] /e Error: ResultsView exited abnormally.
+[07:05:01.61] /o Error: X connection is broken. Error code: (APPLICATION_GUI-002)1
+[07:05:01.63] /e Error: The application was unexpectedly terminated.
+              /c See the session log file for recovery details. (SHUT_DOWN-001)

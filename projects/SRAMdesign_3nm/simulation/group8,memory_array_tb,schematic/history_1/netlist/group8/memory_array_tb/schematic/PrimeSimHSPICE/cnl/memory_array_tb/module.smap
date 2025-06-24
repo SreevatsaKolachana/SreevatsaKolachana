@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 memory_array_tb schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping src="V4" dst="v4"/>
+            <mapping src="V2" dst="v2"/>
+            <mapping src="V8" dst="v8"/>
+            <mapping src="V5" dst="v5"/>
+            <mapping src="V10" dst="v10"/>
+            <mapping src="I12" dst="xi12"/>
+        </forward>
+        <reverse>
+            <mapping src="v2" dst="V2"/>
+            <mapping src="v5" dst="V5"/>
+            <mapping src="v4" dst="V4"/>
+            <mapping src="v8" dst="V8"/>
+            <mapping src="v10" dst="V10"/>
+            <mapping src="xi12" dst="I12"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward>
+            <mapping src="CLK" dst="clk"/>
+            <mapping src="Q&lt;3&gt;" dst="q&lt;3&gt;"/>
+            <mapping src="WENB" dst="wenb"/>
+            <mapping src="Q&lt;2&gt;" dst="q&lt;2&gt;"/>
+            <mapping src="Q&lt;1&gt;" dst="q&lt;1&gt;"/>
+            <mapping src="Q&lt;0&gt;" dst="q&lt;0&gt;"/>
+        </forward>
+        <reverse>
+            <mapping src="wenb" dst="WENB"/>
+            <mapping src="q&lt;0&gt;" dst="Q&lt;0&gt;"/>
+            <mapping src="q&lt;3&gt;" dst="Q&lt;3&gt;"/>
+            <mapping src="clk" dst="CLK"/>
+            <mapping src="q&lt;2&gt;" dst="Q&lt;2&gt;"/>
+            <mapping src="q&lt;1&gt;" dst="Q&lt;1&gt;"/>
+        </reverse>
+    </scope>
+    <scope name="Terminal">
+        <forward>
+            <mapping src="Q&lt;3&gt;" dst="q&lt;3&gt;"/>
+            <mapping src="Q&lt;2&gt;" dst="q&lt;2&gt;"/>
+            <mapping src="Q&lt;0&gt;" dst="q&lt;0&gt;"/>
+            <mapping src="Q&lt;1&gt;" dst="q&lt;1&gt;"/>
+            <mapping src="Q" dst="q"/>
+        </forward>
+        <reverse>
+            <mapping src="q&lt;3&gt;" dst="Q&lt;3&gt;"/>
+            <mapping src="q&lt;0&gt;" dst="Q&lt;0&gt;"/>
+            <mapping src="q&lt;1&gt;" dst="Q&lt;1&gt;"/>
+            <mapping src="q&lt;2&gt;" dst="Q&lt;2&gt;"/>
+            <mapping src="q" dst="Q"/>
+        </reverse>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping src="&lt;unmappedTermOrder&gt;" dst="Q&lt;0&gt; Q&lt;1&gt; Q&lt;2&gt; Q&lt;3&gt;"/>
+            <mapping src="&lt;termOrder&gt;" dst="q&lt;0&gt; q&lt;1&gt; q&lt;2&gt; q&lt;3&gt;"/>
+        </forward>
+        <reverse>
+            <mapping src="Q&lt;0&gt; Q&lt;1&gt; Q&lt;2&gt; Q&lt;3&gt;" dst="&lt;unmappedTermOrder&gt;"/>
+            <mapping src="q&lt;0&gt; q&lt;1&gt; q&lt;2&gt; q&lt;3&gt;" dst="&lt;termOrder&gt;"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="memory_array_static_column_decoder">
+            <instance name="I12"/>
+        </instance_header>
+        <instance_header master="vdc">
+            <instance name="V10"/>
+            <instance name="V5"/>
+        </instance_header>
+        <instance_header master="vpulse">
+            <instance name="V2"/>
+            <instance name="V4"/>
+            <instance name="V8"/>
+        </instance_header>
+    </master_instances>
+</module>

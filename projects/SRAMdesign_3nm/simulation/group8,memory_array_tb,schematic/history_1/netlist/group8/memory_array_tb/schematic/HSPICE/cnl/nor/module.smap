@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 nor schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping src="M3" dst="m3"/>
+            <mapping src="M0" dst="m0"/>
+            <mapping src="M2" dst="m2"/>
+            <mapping src="M1" dst="m1"/>
+        </forward>
+        <reverse>
+            <mapping src="m2" dst="M2"/>
+            <mapping src="m3" dst="M3"/>
+            <mapping src="m0" dst="M0"/>
+            <mapping src="m1" dst="M1"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward>
+            <mapping src="Y" dst="y"/>
+            <mapping src="B" dst="b"/>
+            <mapping src="A" dst="a"/>
+        </forward>
+        <reverse>
+            <mapping src="y" dst="Y"/>
+            <mapping src="b" dst="B"/>
+            <mapping src="a" dst="A"/>
+        </reverse>
+    </scope>
+    <scope name="Terminal">
+        <forward>
+            <mapping src="Y" dst="y"/>
+            <mapping src="B" dst="b"/>
+            <mapping src="A" dst="a"/>
+        </forward>
+        <reverse>
+            <mapping src="y" dst="Y"/>
+            <mapping src="b" dst="B"/>
+            <mapping src="a" dst="A"/>
+        </reverse>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping src="&lt;unmappedTermOrder&gt;" dst="A B Y"/>
+            <mapping src="&lt;termOrder&gt;" dst="a b y"/>
+        </forward>
+        <reverse>
+            <mapping src="A B Y" dst="&lt;unmappedTermOrder&gt;"/>
+            <mapping src="a b y" dst="&lt;termOrder&gt;"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="nmos">
+            <instance name="M0"/>
+            <instance name="M1"/>
+        </instance_header>
+        <instance_header master="pmos">
+            <instance name="M2"/>
+            <instance name="M3"/>
+        </instance_header>
+    </master_instances>
+</module>

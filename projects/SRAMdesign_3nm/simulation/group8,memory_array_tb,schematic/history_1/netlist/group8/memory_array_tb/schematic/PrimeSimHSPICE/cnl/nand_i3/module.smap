@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 nand_i3 schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping src="M5" dst="m5"/>
+            <mapping src="M7" dst="m7"/>
+            <mapping src="M6" dst="m6"/>
+            <mapping src="M2" dst="m2"/>
+            <mapping src="M3" dst="m3"/>
+            <mapping src="M4" dst="m4"/>
+        </forward>
+        <reverse>
+            <mapping src="m3" dst="M3"/>
+            <mapping src="m5" dst="M5"/>
+            <mapping src="m6" dst="M6"/>
+            <mapping src="m7" dst="M7"/>
+            <mapping src="m2" dst="M2"/>
+            <mapping src="m4" dst="M4"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward>
+            <mapping src="C" dst="c"/>
+            <mapping src="A" dst="a"/>
+            <mapping src="Out" dst="out"/>
+            <mapping src="B" dst="b"/>
+        </forward>
+        <reverse>
+            <mapping src="out" dst="Out"/>
+            <mapping src="c" dst="C"/>
+            <mapping src="b" dst="B"/>
+            <mapping src="a" dst="A"/>
+        </reverse>
+    </scope>
+    <scope name="Terminal">
+        <forward>
+            <mapping src="C" dst="c"/>
+            <mapping src="A" dst="a"/>
+            <mapping src="Out" dst="out"/>
+            <mapping src="B" dst="b"/>
+        </forward>
+        <reverse>
+            <mapping src="out" dst="Out"/>
+            <mapping src="c" dst="C"/>
+            <mapping src="b" dst="B"/>
+            <mapping src="a" dst="A"/>
+        </reverse>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping src="&lt;unmappedTermOrder&gt;" dst="A B C Out"/>
+            <mapping src="&lt;termOrder&gt;" dst="a b c out"/>
+        </forward>
+        <reverse>
+            <mapping src="A B C Out" dst="&lt;unmappedTermOrder&gt;"/>
+            <mapping src="a b c out" dst="&lt;termOrder&gt;"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="nmos">
+            <instance name="M2"/>
+            <instance name="M3"/>
+            <instance name="M4"/>
+        </instance_header>
+        <instance_header master="pmos">
+            <instance name="M5"/>
+            <instance name="M6"/>
+            <instance name="M7"/>
+        </instance_header>
+    </master_instances>
+</module>

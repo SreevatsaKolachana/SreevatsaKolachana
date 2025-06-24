@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 Write_Driver_tb schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping dst="v4" src="V4"/>
+            <mapping dst="v2" src="V2"/>
+            <mapping dst="xi0" src="I0"/>
+        </forward>
+        <reverse>
+            <mapping dst="V4" src="v4"/>
+            <mapping dst="V2" src="v2"/>
+            <mapping dst="I0" src="xi0"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward>
+            <mapping dst="datab" src="DataB"/>
+            <mapping dst="data" src="Data"/>
+        </forward>
+        <reverse>
+            <mapping dst="DataB" src="datab"/>
+            <mapping dst="Data" src="data"/>
+        </reverse>
+    </scope>
+    <scope name="Terminal">
+        <forward>
+            <mapping dst="datab" src="DataB"/>
+            <mapping dst="data" src="Data"/>
+        </forward>
+        <reverse>
+            <mapping dst="DataB" src="datab"/>
+            <mapping dst="Data" src="data"/>
+        </reverse>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping dst="Data DataB" src="&lt;unmappedTermOrder&gt;"/>
+            <mapping dst="data datab" src="&lt;termOrder&gt;"/>
+        </forward>
+        <reverse>
+            <mapping dst="&lt;unmappedTermOrder&gt;" src="Data DataB"/>
+            <mapping dst="&lt;termOrder&gt;" src="data datab"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="vdc">
+            <instance name="V2"/>
+        </instance_header>
+        <instance_header master="vpulse">
+            <instance name="V4"/>
+        </instance_header>
+        <instance_header master="write_driver">
+            <instance name="I0"/>
+        </instance_header>
+    </master_instances>
+</module>

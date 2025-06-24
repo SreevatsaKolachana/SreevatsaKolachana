@@ -1,0 +1,22 @@
+********************************************************************************
+* Library          : group8
+* Cell             : columnDecoder
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt columndecoder bl0 bl0bar bl1 bl1bar bl2 bl2bar bl3 bl3bar bl4 bl4bar bl5
++  bl5bar bl6 bl6bar bl7 bl7bar bl8 bl8bar bl9 bl9bar bl10 bl10bar bl11 bl11bar
++ bl12 bl12bar bl13 bl13bar bl14 bl14bar bl15 bl15bar i0 i0bar i1 i1bar i2 i2bar
++  i3 i3bar q0 q0baar q1 q1bar q2 q2bar q3 q3bar rs0 rs0bar rs1 rs1bar ws0
++ ws0bar ws1 ws1bar
+xi3 bl12 bl12bar bl13 bl13bar bl14 bl14bar bl15 bl15bar i3 i3bar q3 q3bar rs0
++ rs0bar rs1 rs1bar ws0 ws0bar ws1 ws1bar _2to4_decoder
+xi2 bl8 bl8bar bl9 bl9bar bl10 bl10bar bl11 bl11bar i2 i2bar q2 q2bar rs0 rs0bar
++ rs1 rs1bar ws0 ws0bar ws1 ws1bar _2to4_decoder
+xi1 bl4 bl4bar bl5 bl5bar bl6 bl6bar bl7 bl7bar i1 i1bar q1 q1bar rs0 rs0bar rs1
++ rs1bar ws0 ws0bar ws1 ws1bar _2to4_decoder
+xi0 bl0 bl0bar bl1 bl1bar bl2 bl2bar bl3bar bl3 i0 i0bar q0 q0baar rs0 rs0bar
++ rs1 rs1bar ws0 ws0bar ws1 ws1bar _2to4_decoder
+.ends columndecoder
+

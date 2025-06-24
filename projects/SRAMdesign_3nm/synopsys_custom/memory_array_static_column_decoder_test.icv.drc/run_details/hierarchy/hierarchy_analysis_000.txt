@@ -1,0 +1,137 @@
+* Description of frequently used terms in hierarchy_analysis files*
+M indicates that the value of that column is in millions
+Hier Plc Count(Hierarchical Placement Count) : Number of unique instances of the cell in another cell (Parent)
+Flat Plc Count(Flat Placement Count)         : Total number of instances of the cell in the layout
+
+Example : 
+                               A                     
+                              / \                   Cell  Hier Plc Count Flat Plc Count 
+                             /   \                     A               1              1 
+                            B     B                    B               2              2 
+                           / \  /  \                   C               2              4 
+                          C   C C   C                
+------------------------------------------------------------------------------------------------------ 
+
+
+* Cells with flat area > 0.01 of top cell *
+Reports cells with flat area > 0.01 of top cell
+
+Flat A(Flat Area) : Total area covered by this cell in the layout(cell area * flat placement count)
+Cell A(Cell Area) : Area of this cell
+Percent of top    : Percentage of area of this cell w.r.t area of top cell
+This table contains 31 entries
+Original table contains 31 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Flat Plc Count, Hier Plc Count, Percent of top
+-----------------------------------------------
+ memory_array_static_column_decoder_test       |         0.000,         0.000,              1,              1,       100.00 %
+ pmos                                          |         0.000,         0.000,           2032,             62,        81.86 %
+ nmos                                          |         0.000,         0.000,           1982,             61,        79.84 %
+ sram_filler                                   |         0.000,         0.000,            434,            417,        40.29 %
+ memory_array_with_precharge                   |         0.000,         0.000,              1,              1,        34.52 %
+ sram_6t                                       |         0.000,         0.000,            128,            128,        29.15 %
+ BPR_M0A                                       |         0.000,         0.000,           2410,             62,        24.39 %
+ Filler                                        |         0.000,         0.000,            174,            174,        16.15 %
+ inv                                           |         0.000,         0.000,            120,             32,        15.36 %
+ 2to4_decoder_static                           |         0.000,         0.000,              4,              4,        15.16 %
+ bitcell_precharge_filler                      |         0.000,         0.000,            128,            128,        13.72 %
+ static_row_decoder_3by8                       |         0.000,         0.000,              1,              1,         9.69 %
+ invx4                                         |         0.000,         0.000,             45,             17,         8.92 %
+ nand                                          |         0.000,         0.000,             50,             33,         8.16 %
+ buffer                                        |         0.000,         0.000,             30,             24,         7.00 %
+ agen_unit                                     |         0.000,         0.000,              1,              1,         5.84 %
+ WLRef_PC                                      |         0.000,         0.000,              1,              1,         5.81 %
+ nor                                           |         0.000,         0.000,             34,             22,         5.55 %
+ Write_Driver                                  |         0.000,         0.000,              4,              4,         4.68 %
+ buffer_highdrive                              |         0.000,         0.000,             12,              9,         4.49 %
+ M0B_M1                                        |         0.000,         0.000,           2335,            292,         4.37 %
+ GATE_M0B                                      |         0.000,         0.000,           1248,             42,         3.58 %
+ 2to4_decoder_static_filler_17                 |         0.000,         0.000,             32,             32,         2.96 %
+ precharge_logic                               |         0.000,         0.000,             16,             16,         2.60 %
+ M0A_M0B                                       |         0.000,         0.000,           1266,            207,         2.33 %
+ tspc_pos_ff                                   |         0.000,         0.000,              4,              4,         2.16 %
+ M1_M2                                         |         0.000,         0.000,            846,            370,         1.92 %
+ read_circuit                                  |         0.000,         0.000,              4,              4,         1.78 %
+ between_blocks                                |         0.000,         0.000,              1,              1,         1.74 %
+ Demux                                         |         0.000,         0.000,              2,              2,         1.34 %
+ M2_M3                                         |         0.000,         0.000,            579,            287,         1.31 %
+===============================================
+
+* Large-Area cells and child area ratio *
+This table reports cells with large areas and ratio of its area with total area covered by its children
+
+Num Inst(Number of instances) : Total Number of instances of the cell
+Child A(Child Area)           : Total area covered by all the children of the cell
+Pct of parent(Percent of area): Percentage of total area covered by its childern w.r.t area of this cell
+This table contains 31 entries
+Original table contains 31 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Num Inst (M), Child A (mm^2), Pct of parent
+-----------------------------------------------
+ memory_array_static_column_decoder_test       |         0.000,         0.000,        0.001,         0.000,      121.16 %
+ pmos                                          |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ nmos                                          |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ sram_filler                                   |         0.000,         0.000,        0.000,         0.000,      108.58 %
+ memory_array_with_precharge                   |         0.000,         0.000,        0.001,         0.000,      153.05 %
+ sram_6t                                       |         0.000,         0.000,        0.000,         0.000,      179.11 %
+ BPR_M0A                                       |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ Filler                                        |         0.000,         0.000,        0.000,         0.000,       86.78 %
+ inv                                           |         0.000,         0.000,        0.000,         0.000,      159.96 %
+ 2to4_decoder_static                           |         0.000,         0.000,        0.000,         0.000,      133.42 %
+ bitcell_precharge_filler                      |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ static_row_decoder_3by8                       |         0.000,         0.000,        0.000,         0.000,      154.43 %
+ invx4                                         |         0.000,         0.000,        0.000,         0.000,      206.53 %
+ nand                                          |         0.000,         0.000,        0.000,         0.000,      152.48 %
+ buffer                                        |         0.000,         0.000,        0.000,         0.000,      109.68 %
+ agen_unit                                     |         0.000,         0.000,        0.000,         0.000,      152.81 %
+ WLRef_PC                                      |         0.000,         0.000,        0.000,         0.000,      142.82 %
+ nor                                           |         0.000,         0.000,        0.000,         0.000,      178.29 %
+ Write_Driver                                  |         0.000,         0.000,        0.000,         0.000,      129.05 %
+ buffer_highdrive                              |         0.000,         0.000,        0.000,         0.000,      106.04 %
+ M0B_M1                                        |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ GATE_M0B                                      |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ 2to4_decoder_static_filler_17                 |         0.000,         0.000,        0.000,         0.000,      108.95 %
+ precharge_logic                               |         0.000,         0.000,        0.000,         0.000,      176.60 %
+ M0A_M0B                                       |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ tspc_pos_ff                                   |         0.000,         0.000,        0.000,         0.000,      141.65 %
+ M1_M2                                         |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ read_circuit                                  |         0.000,         0.000,        0.000,         0.000,      110.17 %
+ between_blocks                                |         0.000,         0.000,        0.000,         0.000,      134.48 %
+ Demux                                         |         0.000,         0.000,        0.000,         0.000,      135.48 %
+ M2_M3                                         |         0.000,         0.000,        0.000,         0.000,        0.00 %
+===============================================
+
+* Layer Report with Estimated Data *
+Reports information of layers present in the layout
+
+Trap        : Number of hierarchical trapezoids in the layer
+Poly        : Number of hierarchical polygons in the layer
+Text        : Number of hierarchical text primitives in the layer
+Flat Trap   : Number of flat trapezoids 
+Flat Poly   : Number of flat polygons
+Flat Text   : Number of flat text primitives 
+Trap F/H    : Ratio of flat and hierarchical placements of the trapezoids
+Base, Metal, Via, Fill, Colored : Indicates layer intent
+This table contains 16 entries
+Original table contains 16 entries
+
+ Name                                          | Trap (M), Poly (M), Text (M), Flat Trap (M), Flat Poly (M), Flat Text (M), Trap F/H, Base, Metal, Via, Fill, Colored
+-----------------------------------------------
+ aM1                                           |    0.000,    0.000,    0.000,         0.005,         0.005,         0.000,    12.46,    0,     0,   0,    0,       0
+ aM0A                                          |    0.000,    0.000,    0.000,         0.013,         0.013,         0.000,    55.47,    0,     0,   0,    0,       0
+ aDUMMY                                        |    0.000,    0.000,    0.000,         0.004,         0.004,         0.000,    24.28,    0,     0,   0,    0,       0
+ aM2                                           |    0.000,    0.000,    0.000,         0.002,         0.002,         0.000,    11.71,    0,     0,   0,    0,       0
+ aGATE                                         |    0.000,    0.000,    0.000,         0.018,         0.018,         0.000,   126.47,    0,     0,   0,    0,       0
+ aM3                                           |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,    11.45,    0,     0,   0,    0,       0
+ aM0B                                          |    0.000,    0.000,    0.000,         0.006,         0.006,         0.000,    62.48,    0,     0,   0,    0,       0
+ aBPR                                          |    0.000,    0.000,    0.000,         0.007,         0.007,         0.000,    98.58,    0,     0,   0,    0,       0
+ aGCUT                                         |    0.000,    0.000,    0.000,         0.003,         0.003,         0.000,    79.45,    0,     0,   0,    0,       0
+ aACT                                          |    0.000,    0.000,    0.000,         0.005,         0.005,         0.000,   191.58,    0,     0,   0,    0,       0
+ aM5                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     2.48,    0,     0,   0,    0,       0
+ aNIM                                          |    0.000,    0.000,    0.000,         0.003,         0.003,         0.000,   180.16,    0,     0,   0,    0,       0
+ aPIM                                          |    0.000,    0.000,    0.000,         0.003,         0.003,         0.000,   181.50,    0,     0,   0,    0,       0
+ aNW                                           |    0.000,    0.000,    0.000,         0.003,         0.003,         0.000,   189.24,    0,     0,   0,    0,       0
+ aVBPR                                         |    0.000,    0.000,    0.000,         0.002,         0.002,         0.000,  2410.00,    0,     0,   0,    0,       0
+ aM1_color1                                    |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+===============================================
+

@@ -1,0 +1,105 @@
+*PrimeWave Design Environment Based on Custom Infrastructure
+*Version W-2024.09-SP1-2
+*Sun Apr  6 17:12:59 2025
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : group8
+* Cell             : inv
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt inv in out
+m0 out in vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m1 out in gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+.ends inv
+
+********************************************************************************
+* Library          : group8
+* Cell             : nand
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt nand a b y
+m1 net4 b gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m0 y a net4 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m3 y b vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m2 y a vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+.ends nand
+
+********************************************************************************
+* Library          : group8
+* Cell             : nor
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt nor a b y
+m1 y b gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m0 y a gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m3 net11 a vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m2 y b net11 pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+.ends nor
+
+********************************************************************************
+* Library          : group8
+* Cell             : 2to4_decoder_static
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt _2to4_decoder_static bl0 bl0_bar bl1 bl1_bar bl2 bl2_bar bl3 bl3_bar in0
++  in0bar op0 op0bar rs0 rs0bar rs1 rs1bar ws0 ws0bar ws1 ws1bar
+m70 bl0_bar w0 in0bar nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m71 bl0 w0 in0 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m72 bl1_bar w1 in0bar nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m73 bl1 w1 in0 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m74 bl2_bar w2 in0bar nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m75 bl2 w2 in0 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m76 bl3_bar w3 in0bar nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m77 bl3 w3 in0 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+xi65 net192 w3 inv
+xi64 net189 w2 inv
+xi67 net200 r1 inv
+xi68 net203 r2 inv
+xi63 net186 w1 inv
+xi62 net183 w0 inv
+xi69 net241 r3 inv
+xi66 net197 r0 inv
+xi57 ws1 ws0 net192 nand
+xi56 ws0bar ws1 net189 nand
+xi55 ws1bar ws0 net186 nand
+xi54 ws0bar ws1bar net183 nand
+xi61 rs0bar rs1bar net241 nor
+xi60 rs1bar rs0 net203 nor
+xi59 rs0bar rs1 net200 nor
+xi58 rs1 rs0 net197 nor
+m85 op0bar r0 bl0_bar pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m84 op0 r0 bl0 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m83 op0bar r1 bl1_bar pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m82 op0 r1 bl1 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m78 op0 r3 bl3 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m79 op0bar r3 bl3_bar pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m80 op0 r2 bl2 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m81 op0bar r2 bl2_bar pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+.ends _2to4_decoder_static
+
+********************************************************************************
+* Library          : group8
+* Cell             : 2to4_decoder_static_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi87 net294 net286 inv
+xi88 net296 net288 inv
+xi100 net304 net303 inv
+v98 vdd! gnd! dc=0.8
+v91 net294 gnd! dc=0 pulse ( 0 0.8 0 5p 5p 40p 100p )
+v92 net296 gnd! dc=0 pulse ( 0 0.8 0 5p 5p 90p 200p )
+v101 net304 gnd! dc=0 pulse ( 0 0 )
+xi86 bl0 bl0b bl1 bl1b bl2 bl2b bl3 bl3b net304 net303 net275 net272 net283
++ net282 net285 net284 net294 net286 net296 net288 _2to4_decoder_static
+

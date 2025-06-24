@@ -1,0 +1,100 @@
+[09:36:58.29] /o 
+              /c                                 Custom Compiler™ 
+              /c 
+              /c               Version W-2024.09-SP1-2 for linux64 - Jan 16, 2025 
+              /c 
+              /c                     Copyright (c) 2004 - 2025 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 11256978 compiled on Thu Jan 16 10:52:27 2025 for AlmaLinux 8.4
+              /c Invocation: /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Thu Apr  3 09:36:30 2025
+              /c Host: grendel46.ece.ncsu.edu
+              /c Working directory: /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project
+              /c 
+[09:37:10.38] /m Information: Registering ICV PERC package...
+[09:37:11.61] /r giShowFrameTabs true
+[09:37:11.61] /r giWindowId 1
+[09:37:11.61] /r giWindowGeometry 1040x800
+[09:37:17.34] /i gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[09:37:17.70] /r giWindowId 2
+[09:37:17.70] /r giWindowGeometry 660x600+50+50
+[09:37:19.26] /i gi::setCurrentIndex {libs} -index {group8} -in [gi::getWindows 2]
+[09:37:19.33] /i gi::setItemSelection {libs} -index {group8} -in [gi::getWindows 2]
+[09:37:44.64] /i gi::setCurrentIndex {cells} -index {columnDecoder} -in [gi::getWindows 2]
+[09:37:44.77] /i gi::setItemSelection {cells} -index {columnDecoder} -in [gi::getWindows 2]
+[09:37:46.74] /i gi::setCurrentIndex {cells} -index {memory_array} -in [gi::getWindows 2]
+[09:37:46.80] /i gi::setItemSelection {cells} -index {memory_array} -in [gi::getWindows 2]
+[09:37:48.16] /i gi::setCurrentIndex {cells} -index {memory_array_write_test} -in [gi::getWindows 2]
+[09:37:48.29] /i gi::setItemSelection {cells} -index {memory_array_write_test} -in [gi::getWindows 2]
+[09:37:49.88] /i gi::setItemSelection {cells} -index {} -in [gi::getWindows 2]
+[09:38:06.09] /i gi::setItemSelection {cells} -index {memory_array_write_test} -in [gi::getWindows 2]
+[09:38:18.24] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 2]
+[09:38:18.31] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 2]
+[09:38:18.39] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[09:38:18.58] /o Loading: Callback files...
+[09:38:18.61] /o Loading: scripts/callbacks/callbacks.tcl
+[09:38:18.61] /o 
+              /c [INFO] : Loading display.drf from /mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3
+              /c 
+              /c  if you wish to Load other display.drf, please set shell environment valiable "iPDK_load_display_NCSU_TechLib_FreePDK3" to value = 0
+[09:38:18.61] /o 
+[09:38:18.71] /w Warning: Preference 'xtStarTcadGrdFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[09:38:18.72] /w Warning: Preference 'xtStarOALayerMappingFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[09:38:18.72] /o 	#######################################
+[09:38:18.72] /o 	CC-PDK Library Name	: FreePDK3
+[09:38:18.72] /o 	#######################################
+[09:38:18.72] /o 
+[09:38:18.83] /m Information: Feature 'CustomInfrastructure' checked out. (LICENSE-003)
+[09:38:18.88] /m Information: Feature 'SynopsysCustomLayout' checked out. (LICENSE-003)
+[09:38:18.92] /m Information: Lock file /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/group8/memory_array_write_test/schematic/sch.oa.cdslck: Unable to connect to OA Lock File Daemon(oaFSLockD) on host 'grendel42.ece.ncsu.edu'. Check if oaFSLockD is running on the host. If the host is invalid, remove the .cdslck lock file. (oaDMFileSys)
+[09:38:18.92] /m Information: Feature 'CustomInfrastructure' checked in. (LICENSE-004)
+[09:38:18.93] /m Information: Feature 'SynopsysCustomLayout' checked in. (LICENSE-004)
+[09:38:19.12] /r giDialog gi::setActiveDialog [gi::getDialogs {deOpenFailed} -parent [gi::getWindows 2]]
+[09:38:19.29] /r giDialog db::setAttr geometry -of [gi::getDialogs {deOpenFailed} -parent [gi::getWindows 2]] -value 529x83+685+434
+[09:38:20.63] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deOpenFailed} -parent [gi::getWindows 2]]
+[09:38:21.05] /r giWindowId 3
+[09:38:21.05] /r giWindowGeometry 1632x972
+[09:38:44.40] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 3]
+[09:38:44.40] /i de::zoom -window [gi::getWindows 3] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.10625 2.4625}
+[09:38:45.58] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 3]
+[09:38:45.58] /i de::zoom -window [gi::getWindows 3] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.075 2.475}
+[09:38:45.58] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 3]
+[09:38:45.58] /i de::zoom -window [gi::getWindows 3] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.075 2.475}
+[09:38:45.58] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 3]
+[09:38:45.58] /i de::zoom -window [gi::getWindows 3] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.075 2.475}
+[09:38:47.26] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 3]
+[09:38:47.26] /i de::zoom -window [gi::getWindows 3] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {3.025 2.475}
+[09:38:47.44] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 3]
+[09:38:47.44] /i de::zoom -window [gi::getWindows 3] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {3.025 2.475}
+[09:38:49.22] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 3]
+[09:38:49.22] /i de::zoom -window [gi::getWindows 3] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {2.975 2.4875}
+[09:38:55.14] /i gi::executeAction {giCloseWindow} -in [gi::getWindows 3]
+[09:38:57.38] /i gi::setItemSelection {cells} -index {} -in [gi::getWindows 2]
+[09:39:01.32] /i gi::setItemSelection {cells} -index {memory_array_write_test} -in [gi::getWindows 2]
+[09:39:04.63] /i gi::setItemSelection {cells} -index {} -in [gi::getWindows 2]
+[09:39:06.35] /i exit
+[09:39:06.76] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog} -parent [gi::getWindows 2]]
+[09:39:06.86] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 2]] -value 419x212+740+369
+[09:39:10.59] /r giDialog gi::closeWindows [gi::getDialogs {deExitDialog} -parent [gi::getWindows 2]]
+[09:40:33.47] /i gi::executeAction {giCloseWindow} -in [gi::getWindows 2]
+[09:40:37.68] /i gi::executeAction {giQuit} -in [gi::getWindows 1]
+[09:40:37.93] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]]
+[09:40:38.06] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]] -value 419x212+740+369
+[09:40:40.82] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]]
+[09:40:42.68] /o Shutdown time: Thu Apr  3 09:40:42 2025
+[09:40:42.68] /o Elapsed session real time: 4.08 minutes
+[09:40:42.68] /o Session terminated. Log is at /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/logs/ccompiler.svkolach.2025_4_3_093630_975768.log

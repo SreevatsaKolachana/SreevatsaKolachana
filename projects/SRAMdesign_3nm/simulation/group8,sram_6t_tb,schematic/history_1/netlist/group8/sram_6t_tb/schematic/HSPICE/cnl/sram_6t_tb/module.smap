@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 sram_6t_tb schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping src="V19" dst="v19"/>
+            <mapping src="V18" dst="v18"/>
+            <mapping src="V12" dst="v12"/>
+            <mapping src="V15" dst="v15"/>
+            <mapping src="I0" dst="xi0"/>
+        </forward>
+        <reverse>
+            <mapping src="v19" dst="V19"/>
+            <mapping src="v18" dst="V18"/>
+            <mapping src="v15" dst="V15"/>
+            <mapping src="v12" dst="V12"/>
+            <mapping src="xi0" dst="I0"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward>
+            <mapping src="WL" dst="wl"/>
+            <mapping src="BLB" dst="blb"/>
+            <mapping src="BL" dst="bl"/>
+        </forward>
+        <reverse>
+            <mapping src="wl" dst="WL"/>
+            <mapping src="blb" dst="BLB"/>
+            <mapping src="bl" dst="BL"/>
+        </reverse>
+    </scope>
+    <scope name="Terminal">
+        <forward>
+            <mapping src="BLB" dst="blb"/>
+            <mapping src="BL" dst="bl"/>
+        </forward>
+        <reverse>
+            <mapping src="blb" dst="BLB"/>
+            <mapping src="bl" dst="BL"/>
+        </reverse>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping src="&lt;unmappedTermOrder&gt;" dst="BL BLB"/>
+            <mapping src="&lt;termOrder&gt;" dst="bl blb"/>
+        </forward>
+        <reverse>
+            <mapping src="BL BLB" dst="&lt;unmappedTermOrder&gt;"/>
+            <mapping src="bl blb" dst="&lt;termOrder&gt;"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="sram_6t">
+            <instance name="I0"/>
+        </instance_header>
+        <instance_header master="vdc">
+            <instance name="V12"/>
+        </instance_header>
+        <instance_header master="vpulse">
+            <instance name="V15"/>
+        </instance_header>
+        <instance_header master="vpwl">
+            <instance name="V18"/>
+            <instance name="V19"/>
+        </instance_header>
+    </master_instances>
+</module>

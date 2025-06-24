@@ -1,0 +1,98 @@
+$VERSION 1
+
+$INFO_BLOCK memory_array_static_column_decoder_test
+
+$NMOS nmos 
+$PMOS pmos 
+$NPN  
+$PNP  
+
+$POWER vdd! 
+$GROUND gnd! 
+
+$INOUT_PORT
+$CELL _SP_PMOS_2_(pmos)
+$TYPE CELL
+$INPUT In2 In1 
+$OUTPUT Out1 Out2 
+$PINCLASS Out1 1 In2 81 Out2 1 In1 81 
+$BULKPINS 
+
+$CELL _NAND2(nmos/pmos)
+$TYPE CELL
+$INPUT In2 In1 
+$OUTPUT Out 
+$PINCLASS Gnd 25 Out 23 Pwr 24 In2 81 In1 81 
+$BULKPINS 
+
+$CELL nmos
+$TYPE MOS
+$INPUT GATE 
+$OUTPUT DRN SRC 
+$PINCLASS DRN 1 SRC 1 GATE 4 
+$BULKPINS 
+
+$CELL _S_PMOS2_(pmos)
+$TYPE CELL
+$INPUT In2 In1 
+$OUTPUT Out1 Out2 
+$PINCLASS Out1 1 In2 81 Out2 1 In1 81 
+$BULKPINS 
+
+$CELL _S_NMOS2_(nmos)
+$TYPE CELL
+$INPUT In2 In1 
+$OUTPUT Out1 Out2 
+$PINCLASS Out1 1 In2 81 Out2 1 In1 81 
+$BULKPINS 
+
+$CELL _NOR2(nmos/pmos)
+$TYPE CELL
+$INPUT In2 In1 
+$OUTPUT Out 
+$PINCLASS Gnd 25 Out 23 Pwr 24 In2 81 In1 81 
+$BULKPINS 
+
+$CELL pmos
+$TYPE MOS
+$INPUT GATE 
+$OUTPUT DRN SRC 
+$PINCLASS DRN 1 SRC 1 GATE 4 
+$BULKPINS 
+
+$CELL _SP_NMOS_2_(nmos)
+$TYPE CELL
+$INPUT In2 In1 
+$OUTPUT Out1 Out2 
+$PINCLASS Out1 1 In2 81 Out2 1 In1 81 
+$BULKPINS 
+
+$CELL _INV(nmos/pmos)
+$TYPE CELL
+$INPUT In 
+$OUTPUT Out 
+$PINCLASS Gnd 25 Out 23 Pwr 24 In 81 
+$BULKPINS 
+
+$CELL memory_array_static_column_decoder_test
+$TYPE CELL
+$INPUT D<0> WL<5> net770 D<1> WL<0> net794 WL<6> A<0> Clk 
+	net628 net793 RS1 net792 D<2> WL<1> RS0bar RS0 Read_Dff3 WL<7> 
+	A<1> net625 XI202/XI109/net24 WENB Read_Dff2 net810 D<3> WL<2> Read_Dff1 Read_Dff0 
+	A<2> RSNew net634 WL<3> A<3> net809 net808 WL<4> net807 A<4> 
+	RS1bar 
+$OUTPUT Q<2> WL<5> net748 net770 BL15Bar BL7Bar net747 BL10Bar BL2Bar 
+	Q<3> net746 WL<0> net794 WL<6> net745 net628 net793 BL9Bar RS1 
+	net792 BL4Bar BL12Bar WL<1> RS0bar RS0 Read_Dff3 WL<7> net625 XI202/XI109/net24 
+	Read_Dff2 net698 net706 net810 BL6Bar BL14Bar WL<2> net697 Read_Dff1 BL1Bar 
+	Read_Dff0 RSNew Q<0> net634 BL8Bar WL<3> BL3Bar BL11Bar net809 Q<1> 
+	net808 WL<4> net807 BL5Bar BL13Bar RS1bar BL0Bar 
+$PINCLASS D<0> 23 Q<2> 17 gnd! 0 WL<5> 15 net748 28 net770 27 BL15Bar 64 BL7Bar 65 net747 32 
+	BL10Bar 52 BL2Bar 53 vdd! 0 D<1> 25 Q<3> 18 net746 33 WL<0> 8 net794 51 WL<6> 14 net745 30 
+	A<0> 21 Clk 4 net628 39 net793 47 BL9Bar 63 RS1 49 net792 50 BL4Bar 58 BL12Bar 62 D<2> 22 
+	WL<1> 12 RS0bar 45 RS0 48 Read_Dff3 26 WL<7> 11 A<1> 20 net625 43 XI202/XI109/net24 3 WENB 2 Read_Dff2 36 
+	net698 34 net706 31 net810 42 BL6Bar 54 BL14Bar 57 D<3> 16 WL<2> 13 net697 29 Read_Dff1 37 BL1Bar 60 
+	Read_Dff0 35 A<2> 6 RSNew 1 Q<0> 24 net634 44 BL8Bar 55 WL<3> 9 BL3Bar 66 BL11Bar 67 A<3> 5 
+	net809 38 Q<1> 19 net808 40 WL<4> 10 net807 41 BL5Bar 56 BL13Bar 61 A<4> 7 RS1bar 46 BL0Bar 59 
+
+$TRIMMED_NET

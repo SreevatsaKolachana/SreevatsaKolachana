@@ -1,0 +1,54 @@
+********************************************************************************
+* Library          : group8
+* Cell             : WLRef_PC
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt wlref_pc clk pc rsnew wlref clk_dff
+xi60 net126 clk_dff buffer
+xi59 net127 net126 buffer
+xi58 net128 net127 buffer
+xi57 net129 net128 buffer
+xi56 net124 net129 buffer
+xi55 net123 net124 buffer
+xi54 net122 net123 buffer
+xi53 net121 net122 buffer
+xi52 net118 net121 buffer
+xi51 net116 net118 buffer
+xi50 net115 net116 buffer
+xi49 net114 net115 buffer
+xi46 net108 net110 buffer
+xi48 net111 net114 buffer
+xi47 net110 net111 buffer
+xi21 net108 net59 buffer
+xi19 net39 net62 buffer
+xi20 net61 net39 buffer
+xi14 net62 net60 buffer
+xi8 net60 net108 buffer
+xi0 clk net61 buffer
+xi29 net76 rsnew invx4
+xi10 net21 pc invx4
+xi16 net36 wlref invx4
+xi42 net103 net100 inv
+xi40 net104 net103 inv
+xi39 net100 net97 inv
+xi38 net101 net104 inv
+xi37 net97 net95 inv
+xi36 net96 net101 inv
+xi35 net89 net96 inv
+xi34 net72 net94 inv
+xi33 net94 net89 inv
+xi32 net85 net84 inv
+xi31 net84 net83 inv
+xi30 net83 net72 inv
+xi27 net95 clk_inverted_delayed inv
+xi26 net106 net85 inv
+xi25 net68 net106 inv
+xi23 clk clk_inverted inv
+xi24 clk_inverted net68 inv
+xi28 clk_inverted_delayed clk_inverted net76 nor
+xi13 net59 net61 net21 nor
+xi15 net61 net60 net36 nand
+.ends wlref_pc
+

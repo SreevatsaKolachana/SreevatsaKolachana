@@ -1,0 +1,20 @@
+********************************************************************************
+* Library          : group8
+* Cell             : nor_row_3by8_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 a0 a1 a2 wl0 wl1 wl2 wl3 wl4 wl5 wl6 wl7 nor_row_3by8
+v2 vdd! gnd! dc='VDD_VAL'
+v10 a2 gnd! dc=0 pulse ( 'VDD_VAL' 0 20p 5p 5p 20p 50p )
+v9 a1 gnd! dc=0 pulse ( 'VDD_VAL' 0 20p 5p 5p 95p 200p )
+v8 a0 gnd! dc=0 pulse ( 'VDD_VAL' 0 20p 5p 5p 45p 100p )
+c23 wl7 gnd! c=1f
+c22 wl6 gnd! c=1f
+c20 wl5 gnd! c=1f
+c19 wl4 gnd! c=1f
+c18 wl3 gnd! c=1f
+c17 wl2 gnd! c=1f
+c14 wl1 gnd! c=1f
+c12 wl0 gnd! c=1f

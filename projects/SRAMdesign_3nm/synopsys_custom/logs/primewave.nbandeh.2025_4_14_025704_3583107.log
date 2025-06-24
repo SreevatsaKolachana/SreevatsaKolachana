@@ -1,0 +1,168 @@
+[02:57:10.08] /o 
+              /c                          PrimeWave Design Environment 
+              /c 
+              /c                Version W-2024.09-SP1-2 for linux64 - Jan 15, 2025
+              /c              Based on Custom Infrastructure
+              /c Version W-2024.09-SP1-2
+              /c 
+              /c                     Copyright (c) 2004 - 2025 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 11252589 compiled on Wed Jan 15 11:01:36 2025 for AlmaLinux 8.4
+              /c Invocation: /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/linux64/platform/bin/custom_shell -application primewave -gui 0 -uniqueString 424077b79e1069ee359205e731444edb722e93b915232eb83b3a965d3326affa596ad6c64693af15feb935197395566a -python 0 -command "source /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.nbandeh/stb.group8.tb2025_1.schematic.session0/sim_server_init.tcl" -log /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/primewave_session0_sim_server_job1 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs
+              /c Execution time: Mon Apr 14 02:57:04 2025
+              /c Host: hydra13.ece.ncsu.edu
+              /c Working directory: /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project
+              /c 
+[02:57:28.94] /m Information: Registering ICV PERC package...
+[02:57:30.10] /m Information: Feature 'SynopsysCustomSAE' checked out. (LICENSE-003)
+[02:57:30.61] /o 
+[02:57:30.62] /i source /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.nbandeh/stb.group8.tb2025_1.schematic.session0/sim_server_init.tcl
+[02:57:31.45] /o SimServer socket started on hydra13.ece.ncsu.edu:39359
+[02:57:32.35] /m Information: Launching Waveform Viewer "cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.nbandeh/stb.group8.tb2025_1.schematic.session0/logs &&  /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/W-2024.09-SP1-2/auxx/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_S4qkwO -unique_string 424077b79e1069ee5bfca60bf849b529722e93b915232eb83b3a965d3326affa43ab9aba1263e4a501ea85018f1a94547e1a72be5a30c81a -lic_type 2   -parent_cc_pid 3583107  > /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.nbandeh/stb.group8.tb2025_1.schematic.session0/logs/viewer.log 2>&1"
+[02:57:32.41] /o ==== Received Msg ====
+              /c len=206 sourceSoc=sock453030b0 msgIndex=0 rawMsg=AppendTask /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.nbandeh/stb.group8.tb2025_1.schematic.session0/task0/sim_script0.tcl 0 saeSession0 1 overwrite
+[02:57:32.41] /o 
+[02:57:32.53] /o ==== Received Msg ====
+              /c len=35 sourceSoc=sock453030b0 msgIndex=0 rawMsg=evalCmd ::wf::updateViewerLicense 2
+[02:57:32.53] /o 
+[02:57:32.55] /o ==== Received Msg ====
+              /c len=35 sourceSoc=sock453030b0 msgIndex=1 rawMsg=evalCmd ::wf::updateViewerLicense 2
+[02:57:32.55] /o 
+[02:57:35.90] /m Information: "Starting incremental netlisting for design "group8/tb2025_1/schematic"..." (NETLISTING-010)
+[02:57:36.08] /o Loading: Callback files...
+[02:57:36.11] /o Loading: scripts/callbacks/callbacks.tcl
+[02:57:36.11] /o 
+              /c [INFO] : Loading display.drf from /mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3
+              /c 
+              /c  if you wish to Load other display.drf, please set shell environment valiable "iPDK_load_display_NCSU_TechLib_FreePDK3" to value = 0
+[02:57:36.11] /o 
+[02:57:36.16] /w Warning: Could not set the value of preference xtDRCTool because it does not exist. (PREFERENCE-016)
+[02:57:36.16] /w Warning: Could not set the value of preference xtDRCICVRunsetFile because it does not exist. (PREFERENCE-016)
+[02:57:36.16] /w Warning: Could not set the value of preference xtDRCICVIncludePaths because it does not exist. (PREFERENCE-016)
+[02:57:36.16] /w Warning: Could not set the value of preference xtDRCLayDBFormat because it does not exist. (PREFERENCE-016)
+[02:57:36.16] /w Warning: Could not set the value of preference xtLVSTool because it does not exist. (PREFERENCE-016)
+[02:57:36.16] /w Warning: Could not set the value of preference xtLVSICVRunsetFile because it does not exist. (PREFERENCE-016)
+[02:57:36.16] /w Warning: Could not set the value of preference xtLVSICVIncludePaths because it does not exist. (PREFERENCE-016)
+[02:57:36.16] /w Warning: Could not set the value of preference xtLVSLayDBFormat because it does not exist. (PREFERENCE-016)
+[02:57:36.16] /w Warning: Could not set the value of preference xtLPELVSTool because it does not exist. (PREFERENCE-016)
+[02:57:36.16] /w Warning: Could not set the value of preference xtLPETool because it does not exist. (PREFERENCE-016)
+[02:57:36.16] /w Warning: Could not set the value of preference xtLPEOpenParasiticView because it does not exist. (PREFERENCE-016)
+[02:57:36.16] /w Warning: Could not set the value of preference xtStarTcadGrdFile because it does not exist. (PREFERENCE-016)
+[02:57:36.16] /w Warning: Could not set the value of preference xtLPEStarOADeviceMappingFile because it does not exist. (PREFERENCE-016)
+[02:57:36.16] /w Warning: Could not set the value of preference xtStarOALayerMappingFile because it does not exist. (PREFERENCE-016)
+[02:57:36.16] /o 	#######################################
+[02:57:36.16] /o 	CC-PDK Library Name	: FreePDK3
+[02:57:36.16] /o 	#######################################
+[02:57:36.16] /o 
+[02:57:36.24] /o Netlisting
+[02:57:36.24] /o Creating output directories
+[02:57:36.99] /o No Design Integrity rule violations found in "group8/tb2025_1/schematic"
+[02:57:36.99] /o Scanning: group8/tb2025_1/schematic
+[02:57:37.33] /o Scanning: proj_common/inputbuf/schematic
+[02:57:38.34] /m Information: 
+[02:57:38.34] /o Checking "group8/memory_array_static_column_decoder/schematic"
+[02:57:38.34] /o No rule violations found in "group8/memory_array_static_column_decoder/schematic"
+[02:57:38.34] /o Scanning: group8/memory_array_static_column_decoder/schematic
+[02:57:38.43] /o Scanning: group8/precharge_logic/schematic
+[02:57:38.54] /o Scanning: group8/sram_6t/schematic
+[02:57:38.65] /o Scanning: group8/static_row_decoder_3by8/schematic
+[02:57:38.71] /o Scanning: group8/nand/schematic
+[02:57:38.78] /o Scanning: group8/inv/schematic
+[02:57:38.88] /o Scanning: group8/buffer_highdrive/schematic
+[02:57:38.95] /o Scanning: group8/invx4/schematic
+[02:57:39.03] /o Scanning: group8/nor/schematic
+[02:57:39.14] /o Scanning: group8/columnDecoderstatic/schematic
+[02:57:39.23] /m Information: 
+[02:57:39.23] /o Checking "group8/2to4_decoder_static/schematic"
+[02:57:39.23] /o No rule violations found in "group8/2to4_decoder_static/schematic"
+[02:57:39.23] /o Scanning: group8/2to4_decoder_static/schematic
+[02:57:39.35] /o Scanning: group8/Write_Driver/schematic
+[02:57:39.43] /m Information: 
+[02:57:39.43] /o Checking "group8/buffer/schematic"
+[02:57:39.43] /o No rule violations found in "group8/buffer/schematic"
+[02:57:39.43] /o Scanning: group8/buffer/schematic
+[02:57:39.49] /m Information: 
+[02:57:39.49] /o Checking "group8/read_circuit/schematic"
+[02:57:39.49] /o No rule violations found in "group8/read_circuit/schematic"
+[02:57:39.49] /o Scanning: group8/read_circuit/schematic
+[02:57:39.55] /o Scanning: group8/tspc_pos_ff/schematic
+[02:57:39.66] /m Information: 
+[02:57:39.66] /o Checking "group8/agen_unit/schematic"
+[02:57:39.66] /o No rule violations found in "group8/agen_unit/schematic"
+[02:57:39.66] /o Scanning: group8/agen_unit/schematic
+[02:57:39.73] /m Information: 
+[02:57:39.73] /o Checking "group8/Demux/schematic"
+[02:57:39.73] /o No rule violations found in "group8/Demux/schematic"
+[02:57:39.73] /o Scanning: group8/Demux/schematic
+[02:57:39.80] /o Scanning: group8/WLRef_PC/schematic
+[02:57:39.80] /o Computing terminal lists
+[02:57:39.80] /o Processing terminals of module proj_common/inputbuf/schematic
+[02:57:39.90] /o Processing terminals of module group8/precharge_logic/schematic
+[02:57:39.90] /o Processing terminals of module group8/sram_6t/schematic
+[02:57:39.91] /o Processing terminals of module group8/nand/schematic
+[02:57:39.91] /o Processing terminals of module group8/inv/schematic
+[02:57:39.91] /o Processing terminals of module group8/invx4/schematic
+[02:57:39.91] /o Processing terminals of module group8/buffer_highdrive/schematic
+[02:57:39.91] /o Processing terminals of module group8/nor/schematic
+[02:57:39.91] /o Processing terminals of module group8/static_row_decoder_3by8/schematic
+[02:57:39.92] /o Processing terminals of module group8/2to4_decoder_static/schematic
+[02:57:39.92] /o Processing terminals of module group8/columnDecoderstatic/schematic
+[02:57:39.92] /o Processing terminals of module group8/buffer/schematic
+[02:57:39.92] /o Processing terminals of module group8/Write_Driver/schematic
+[02:57:39.92] /o Processing terminals of module group8/read_circuit/schematic
+[02:57:39.92] /o Processing terminals of module group8/tspc_pos_ff/schematic
+[02:57:39.92] /o Processing terminals of module group8/Demux/schematic
+[02:57:39.92] /o Processing terminals of module group8/agen_unit/schematic
+[02:57:39.92] /o Processing terminals of module group8/WLRef_PC/schematic
+[02:57:39.93] /o Processing terminals of module group8/memory_array_static_column_decoder/schematic
+[02:57:39.93] /o Processing terminals of module group8/tb2025_1/schematic
+[02:57:39.94] /o Starting netlisting
+[02:57:41.08] /o Formatting group8/WLRef_PC/schematic
+[02:57:41.10] /m Information: "group8 WLRef_PC schematic" renetlisted. (NETLISTING-056)
+[02:57:42.25] /m Information: "Netlisting design "group8/tb2025_1/schematic" finished successfully." (NETLISTING-012)
+[02:57:42.42] /# Composing simulator input file for design "group8/tb2025_1/schematic"...
+[02:57:45.64] /# Simulator input file composed successfully for design "group8/tb2025_1/schematic"
+[02:57:45.88] /m Information: Save ouputs to /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/simulation/group8,tb2025_1,schematic/history_1/simulation/HSPICE_default/HSPICE/nominal/results/outputs.tcl for AVA evaluation.
+[02:57:48.24] /o 
+[02:57:50.28] /o                                          Composing Nominal                                         
+[02:57:50.90] /o                         Launching jobs for testbench HSPICE_default started                        
+[02:57:50.92] /# Starting PrimeSimHSPICE simulation for design: group8/tb2025_1/schematic
+[02:57:51.04] /o                          Creating jobs for testbench HSPICE_default (0 / 1)                         
+[02:57:51.15] /o                            Launching 1 jobs for testbench HSPICE_default                           
+[02:57:51.93] /o                         Launching jobs for testbench HSPICE_default finished                        
+[02:57:53.34] /m Information: 0 of 1 testbench(es) done. (PW_GUI-714)
+[02:57:57.07] /m Information: Job distribution master (saeSession0,HSPICE_default.Simulation_Simulation session:session0 testbench:HSPICE_default) : up to 1 job running workers.
+[03:00:09.07] /# Simulation completed successfully for design: group8/tb2025_1/schematic  (PW-651)
+[03:00:09.40] /# Netlisting and simulation completed for testbench: HSPICE_default in 155s
+[03:00:09.42] /# Evaluating and plotting outputs...
+[03:00:16.87] /m Information: Jobs distribution master quit! (PW_GUI-822)
+[03:00:17.72] /# Evaluating and plotting completed for testbench: HSPICE_default in 8s
+[03:00:17.88] /m Information: 1 of 1 testbench(es) done. (PW_GUI-714)
+[03:01:06.99] /o ==== Received Msg ====
+              /c len=26 sourceSoc=sock453030b0 msgIndex=2 rawMsg=evalCmd ::wf::viewerExited
+[03:01:06.99] /o 
+[03:01:13.17] /o ==== Received Msg ====
+              /c len=35 sourceSoc=sock453030b0 msgIndex=3 rawMsg=evalCmd ::wf::updateViewerLicense 2
+[03:01:13.17] /o 
+[03:01:59.10] /o ==== Received Msg ====
+              /c len=8 sourceSoc=sock453030b0 msgIndex=4 rawMsg=idleExit
+[03:01:59.10] /o 
+[03:01:59.15] /m Information: Exiting simulation server process. (PW_GUI-984)
+[03:02:02.55] /o Shutdown time: Mon Apr 14 03:02:02 2025
+[03:02:02.55] /o Elapsed session real time: 4.95 minutes
+[03:02:02.55] /o Session terminated. Log is at /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/logs/primewave.nbandeh.2025_4_14_025704_3583107.log
+[03:02:02.59] /e Error: {}

@@ -1,0 +1,22 @@
+* PEX netlist file	Mon Apr 14 01:16:26 2025	buffer
+* icv_netlist Version RHEL64 W-2024.09-SP2.11100136 2024/12/03
+*.UNIT=4000
+
+* Hierarchy Level 1
+.subckt inv 2 3 4 5 7 8 9
+*.floating_nets 6 10 11 12 13 14
+MM1 4 5 2 nmos  W=2.1e-08 L=1.5e-08 NFIN=2 ADEO=2.835e-16 ASEO=2.835e-16 PDEO=5.85e-08
++	 PSEO=5.85e-08 $X=222 $Y=294  $PIN_XY=252,210,222,294,192,210 $DEVICE_ID=1001
+MM2 3 5 4 pmos  W=2.1e-08 L=1.5e-08 NFIN=2 ADEO=2.835e-16 ASEO=5.67e-16 PDEO=5.85e-08
++	 PSEO=1.17e-07 $X=390 $Y=395  $PIN_XY=420,380,390,395,360,380 $DEVICE_ID=1003
+MM3 4 5 3 pmos  W=2.1e-08 L=1.5e-08 NFIN=2 ADEO=5.67e-16 ASEO=2.835e-16 PDEO=1.17e-07
++	 PSEO=5.85e-08 $X=222 $Y=294  $PIN_XY=252,380,222,294,192,380 $DEVICE_ID=1003
+.ends inv
+
+* Hierarchy Level 0
+
+* Top of hierarchy  cell=buffer
+.subckt buffer GND! VDD! 4 OUT
+XX6B45F8DA1 GND! VDD! OUT 4 6 7 8 inv $T=584 2 0 0 $X=584 $Y=2
+XX6B45F8DA2 GND! VDD! 4 _GENERATED_9 6 7 8 inv $T=80 2 0 0 $X=80 $Y=2
+.ends buffer

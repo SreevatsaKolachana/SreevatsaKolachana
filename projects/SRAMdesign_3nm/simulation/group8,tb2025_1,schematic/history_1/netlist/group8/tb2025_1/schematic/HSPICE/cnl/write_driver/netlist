@@ -1,0 +1,14 @@
+********************************************************************************
+* Library          : group8
+* Cell             : Write_Driver
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt write_driver din wbdata wdata
+xi33 din net47 buffer
+xi32 din net44 buffer
+xi27 net44 wbdata invx4
+xi34 net47 wdata buffer_highdrive
+.ends write_driver
+

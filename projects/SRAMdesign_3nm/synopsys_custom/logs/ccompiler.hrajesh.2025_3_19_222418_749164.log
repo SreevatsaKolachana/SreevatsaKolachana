@@ -1,0 +1,382 @@
+[22:24:30.02] /o 
+              /c                                 Custom Compiler™ 
+              /c 
+              /c               Version W-2024.09-SP1-2 for linux64 - Jan 16, 2025 
+              /c 
+              /c                     Copyright (c) 2004 - 2025 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 11256978 compiled on Thu Jan 16 10:52:27 2025 for AlmaLinux 8.4
+              /c Invocation: /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Wed Mar 19 22:24:18 2025
+              /c Host: hydra11.ece.ncsu.edu
+              /c Working directory: /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project
+              /c 
+[22:24:37.84] /m Information: Registering ICV PERC package...
+[22:24:38.69] /r giShowFrameTabs true
+[22:24:38.69] /r giWindowId 1
+[22:24:38.69] /r giWindowGeometry 1040x800
+[22:24:39.41] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x822+247+54
+[22:24:41.85] /i gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/deOpengroup8sram6tschematic} -in [gi::getWindows 1]
+[22:24:42.31] /o Loading: Callback files...
+[22:24:42.33] /o Loading: scripts/callbacks/callbacks.tcl
+[22:24:42.33] /o 
+              /c [INFO] : Loading display.drf from /mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3
+              /c 
+              /c  if you wish to Load other display.drf, please set shell environment valiable "iPDK_load_display_NCSU_TechLib_FreePDK3" to value = 0
+[22:24:42.33] /o 
+[22:24:42.46] /w Warning: Preference 'xtStarTcadGrdFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[22:24:42.47] /w Warning: Preference 'xtStarOALayerMappingFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[22:24:42.47] /o 	#######################################
+[22:24:42.47] /o 	CC-PDK Library Name	: FreePDK3
+[22:24:42.47] /o 	#######################################
+[22:24:42.47] /o 
+[22:24:42.53] /m Information: Feature 'CustomInfrastructure' checked out. (LICENSE-003)
+[22:24:42.56] /m Information: Feature 'SynopsysCustomLayout' checked out. (LICENSE-003)
+[22:24:42.70] /r giWindowId 2
+[22:24:42.70] /r giWindowGeometry 1305x777
+[22:24:45.18] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[22:24:45.25] /i db::setAttr geometry -of [gi::getFrames 1] -value 1536x770+0+46
+[22:25:22.43] /i gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 2]]
+[22:25:22.53] /i db::setAttr geometry -of [gi::getFrames 1] -value 1536x770+0+46
+[22:25:23.80] /# gi::executeAction {seViolationBrowserToggle} -in [gi::getWindows 2]
+[22:25:23.80] /i ::se::_impl::_toggleViolationBrowserProc 2
+[22:25:23.80] /i db::setAttr shown -of [gi::getAssistants deErrorViewer -from [gi::getWindows 2]] -value true
+[22:25:24.13] /i db::setAttr dockSize -of [gi::getAssistants giConsole -from [gi::getWindows 2]] -value 1092x242
+[22:25:27.31] /i db::setAttr shown -of [gi::getAssistants giConsole -from [gi::getWindows 2]] -value false
+[22:25:28.88] /i gi::expand {MarkerTree} -index {0,0} -in [gi::getAssistants deErrorViewer -from [gi::getWindows 2]]
+[22:25:31.46] /i gi::expand {MarkerTree} -index {0.0,0} -in [gi::getAssistants deErrorViewer -from [gi::getWindows 2]]
+[22:25:33.13] /i gi::expand {MarkerTree} -index {0.0.0,0} -in [gi::getAssistants deErrorViewer -from [gi::getWindows 2]]
+[22:25:35.10] /i gi::setCurrentIndex {MarkerTree} -index {0.0.0.0,0} -in [gi::getAssistants deErrorViewer -from [gi::getWindows 2]]
+[22:25:35.10] /i gi::setItemSelection {MarkerTree} -index {0.0.0.0,all} -in [gi::getAssistants deErrorViewer -from [gi::getWindows 2]]
+[22:25:37.66] /i gi::setCurrentIndex {MarkerTable} -index {0,0} -in [gi::getAssistants deErrorViewer -from [gi::getWindows 2]]
+[22:25:37.66] /i gi::setItemSelection {MarkerTable} -index {0,0} -in [gi::getAssistants deErrorViewer -from [gi::getWindows 2]]
+[22:25:51.41] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[22:25:51.41] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[22:25:51.41] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {1.45 1.6625} -index 0 -intent none]
+[22:25:51.41] /o oa:0x3d47f7c0
+[22:25:53.65] /# gi::executeAction {seButton1DragStart} -in [gi::getWindows 2]
+[22:25:53.65] /i ise::stretch -object [de::getActiveFigure [gi::getWindows 2] -point {1.91875 1.65625} -index 0 -intent none] -point {1.9375 1.6875}
+[22:25:54.33] /# gi::executeAction {deEndDrag} -in [gi::getWindows 2]
+[22:25:54.33] /i de::endDrag {1.91875 1.7875} -context [db::getNext [de::getContexts -window 2]]
+[22:25:56.18] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[22:25:56.18] /i de::cycleActiveFigure [gi::getWindows 2] -direction next
+[22:25:56.18] /o oa:0x3d4dd6f0
+[22:25:57.09] /# gi::executeAction {seDelete} -in [gi::getWindows 2]
+[22:25:57.09] /i ise::delete
+[22:25:59.37] /# gi::executeAction {seSchCreateWire} -in [gi::getWindows 2]
+[22:25:59.37] /i ise::createWire
+[22:26:01.61] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[22:26:01.61] /i de::addPoint {1.225 1.6625} -context [db::getNext [de::getContexts -window 2]]
+[22:26:01.86] /i de::setCursor -point {1.3125 1.6875 }
+[22:26:04.76] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[22:26:04.76] /i de::addPoint {1.94375 1.81875} -context [db::getNext [de::getContexts -window 2]]
+[22:26:09.18] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[22:26:09.18] /i de::addPoint {4.3 1.425} -context [db::getNext [de::getContexts -window 2]]
+[22:26:11.35] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 2]
+[22:26:11.35] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[22:26:13.30] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[22:26:13.30] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[22:26:13.30] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {4.15625 1.79375} -index 0 -intent none]
+[22:26:13.30] /o oa:0x3d5605e0
+[22:26:14.08] /# gi::executeAction {seDelete} -in [gi::getWindows 2]
+[22:26:14.08] /i ise::delete
+[22:26:16.24] /# gi::executeAction {seSchCreateWire} -in [gi::getWindows 2]
+[22:26:16.24] /i ise::createWire
+[22:26:19.64] /# gi::executeAction {seSchWireTypeAuto} -in [gi::getWindows 2]
+[22:26:19.64] /i db::setPrefValue seWiringType -value <auto> -scope [de::getActiveContext]
+[22:26:20.47] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[22:26:20.47] /i de::addPoint {4.58125 1.7875} -context [db::getNext [de::getContexts -window 2]]
+[22:26:20.86] /i de::setCursor -point {4.5625 1.75 }
+[22:26:20.98] /i de::setCursor -point {4.4375 1.6875 }
+[22:26:21.03] /i de::setCursor -point {4.375 1.6875 }
+[22:26:23.61] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[22:26:23.61] /i de::addPoint {3.85 1.66875} -context [db::getNext [de::getContexts -window 2]]
+[22:26:25.62] /# gi::executeAction {seSchCheckAndSave} -in [gi::getWindows 2]
+[22:26:25.62] /i  ::startup::_checkAndSave 
+[22:26:25.67] /m Information: 
+[22:26:25.67] /o Checking "group8/sram_6t/schematic"
+[22:26:25.68] /o No rule violations found in "group8/sram_6t/schematic"
+[22:26:25.68] /m Information: Checking process is completed: marking the design violations
+[22:26:25.83] /m Information: Marking of designs is completed
+[22:26:25.93] /i gi::setItemSelection {MarkerTable} -index {} -in [gi::getAssistants deErrorViewer -from [gi::getWindows 2]]
+[22:26:25.93] /i gi::setCurrentIndex {MarkerTable} -index {} -in [gi::getAssistants deErrorViewer -from [gi::getWindows 2]]
+[22:26:30.34] /i gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 2]]
+[22:26:33.96] /i db::setAttr shown -of [gi::getAssistants giConsole -from [gi::getWindows 2]] -value false
+[22:26:35.87] /i db::setAttr shown -of [gi::getAssistants deErrorViewer -from [gi::getWindows 2]] -value false
+[22:26:39.79] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[22:26:39.79] /i de::addPoint {5.43125 1.74375} -context [db::getNext [de::getContexts -window 2]]
+[22:26:41.08] /i de::setCursor -point {5.5625 1.625 }
+[22:26:41.12] /i de::setCursor -point {5.9375 1.3125 }
+[22:26:41.75] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[22:26:41.75] /i de::addPoint {6.35 1.0125} -context [db::getNext [de::getContexts -window 2]]
+[22:26:42.65] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 2]
+[22:26:42.65] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[22:26:44.31] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[22:26:44.31] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[22:26:44.31] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {6.15 1.73125} -index 0 -intent none]
+[22:26:44.31] /o oa:0x3d6a6b00
+[22:26:45.83] /# gi::executeAction {seDelete} -in [gi::getWindows 2]
+[22:26:45.83] /i ise::delete
+[22:26:48.62] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[22:26:48.62] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[22:26:48.62] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {6.3625 1.4375} -index 0 -intent none]
+[22:26:48.62] /o oa:0x33e466b0
+[22:26:49.24] /# gi::executeAction {seDelete} -in [gi::getWindows 2]
+[22:26:49.24] /i ise::delete
+[22:27:32.04] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[22:27:32.04] /i de::deselectAllLogic -context [de::getContexts -filter {%editDesign==[db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]}]
+[22:27:34.47] /# gi::executeAction {deSaveDesignAs} -in [gi::getWindows 2]
+[22:27:34.47] /i de::showSaveDesignAs -context [db::getNext [de::getContexts -window 2]]
+[22:27:34.75] /r giDialog gi::setActiveDialog [gi::getDialogs {deSaveDesignAs} -parent [gi::getWindows 2]]
+[22:27:34.84] /r giDialog db::setAttr geometry -of [gi::getDialogs {deSaveDesignAs} -parent [gi::getWindows 2]] -value 411x131+553+314
+[22:27:36.61] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deSaveDesignAs} -parent [gi::getWindows 2]]
+[22:27:36.62] /m Information: Saving design 'group8 sram_6t schematic'. (DESIGN_WINDOW-004)
+[00:01:49.47] /# Date and Time: Thu Mar 20 00:01:49 2025
+[00:01:49.47] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[00:01:49.47] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[00:01:49.47] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {0.4625 1.625} -index 0 -intent none]
+[00:01:49.47] /o oa:0x3d6d64d0
+[00:01:50.90] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[00:01:50.90] /i de::cycleActiveFigure [gi::getWindows 2] -direction next
+[00:01:50.90] /o oa:0x3d513370
+[00:01:50.90] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[00:01:50.90] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {0.4625 1.625} -index 1 -intent none]
+[00:01:50.90] /o oa:0x3d6ddd00
+[00:01:51.79] /i gi::executeAction {sePropertyEditorToggle} -in [gi::getWindows 2]
+[00:01:51.79] /# db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value true
+[00:01:54.22] /i gi::setItemSelection {attributes} -index {name,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:01:54.22] /i gi::setCurrentIndex {attributes} -index {name,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:02:01.97] /i gi::setField {attributes} -value {~BL} -index {name,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:02:04.57] /i gi::executeAction {dePropertyEditorApplyChanges} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:02:06.54] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[00:02:06.54] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[00:02:06.54] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {5.475 1.8125} -index 0 -intent none]
+[00:02:06.54] /o oa:0x3d7d1c50
+[00:02:08.02] /i gi::setItemSelection {attributes} -index {name,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:02:08.03] /i gi::setCurrentIndex {attributes} -index {name,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:02:10.99] /i gi::setField {attributes} -value {BL} -index {name,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:02:12.05] /i gi::executeAction {dePropertyEditorApplyChanges} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:02:13.40] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[00:02:13.40] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[00:02:13.40] /i de::deselectAllLogic -context [de::getContexts -filter {%editDesign==[db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]}]
+[00:02:16.15] /i db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value false
+[00:02:17.58] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[00:02:17.58] /i de::deselectAllLogic -context [de::getContexts -filter {%editDesign==[db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]}]
+[00:03:49.09] /# gi::executeAction {deFitEdit} -in [gi::getWindows 2]
+[00:03:49.09] /i de::fit -window 2 -fitEdit true
+[00:04:00.58] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[00:04:00.58] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[00:04:00.58] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {1.94375 1.725} -index 0 -intent none]
+[00:04:00.58] /o oa:0x3d7af660
+[00:04:02.25] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[00:04:02.25] /i de::cycleActiveFigure [gi::getWindows 2] -direction next
+[00:04:02.25] /o oa:0x3d3872d0
+[00:04:02.70] /i gi::executeAction {sePropertyEditorToggle} -in [gi::getWindows 2]
+[00:04:02.70] /# db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value true
+[00:04:04.28] /i gi::setItemSelection {attributes} -index {name,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:04:04.28] /i gi::setCurrentIndex {attributes} -index {name,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:04:34.66] /i gi::setField {attributes} -value {} -index {name,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:04:39.00] /i gi::setField {attributes} -value {~Q} -index {name,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:04:39.01] /i gi::executeAction dePropertyEditorApplyChanges -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:04:43.83] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[00:04:43.83] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[00:04:43.83] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {3.88125 1.73125} -index 0 -intent none]
+[00:04:43.83] /o oa:0x3d5c2590
+[00:04:48.08] /i gi::setItemSelection {attributes} -index {name,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:04:48.08] /i gi::setCurrentIndex {attributes} -index {name,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:04:51.02] /i gi::setField {attributes} -value {Q} -index {name,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:04:52.18] /i gi::executeAction {dePropertyEditorApplyChanges} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:04:53.63] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[00:04:53.63] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[00:04:53.63] /i de::deselectAllLogic -context [de::getContexts -filter {%editDesign==[db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]}]
+[00:04:56.59] /i db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value false
+[00:04:57.77] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[00:04:57.77] /i de::deselectAllLogic -context [de::getContexts -filter {%editDesign==[db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]}]
+[00:05:11.71] /# gi::executeAction {deSaveDesignAs} -in [gi::getWindows 2]
+[00:05:11.71] /i de::showSaveDesignAs -context [db::getNext [de::getContexts -window 2]]
+[00:05:11.96] /r giDialog gi::setActiveDialog [gi::getDialogs {deSaveDesignAs} -parent [gi::getWindows 2]]
+[00:05:12.13] /r giDialog db::setAttr geometry -of [gi::getDialogs {deSaveDesignAs} -parent [gi::getWindows 2]] -value 411x131+553+314
+[00:05:14.77] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deSaveDesignAs} -parent [gi::getWindows 2]]
+[00:05:14.78] /m Information: Saving design 'group8 sram_6t schematic'. (DESIGN_WINDOW-004)
+[00:05:17.00] /# gi::executeAction {seSchCheckAndSave} -in [gi::getWindows 2]
+[00:05:17.00] /i  ::startup::_checkAndSave 
+[00:05:17.06] /m Information: 
+[00:05:17.06] /o Checking "group8/sram_6t/schematic"
+[00:05:17.06] /o 	[warning] Shorted Terminals
+[00:05:17.06] /o 		Shorted terminals 'BL' '~BL' are not compatible (3 times)
+[00:05:17.06] /o 		Shorted terminals '~BL' 'BL' are not compatible
+[00:05:17.06] /o 0 Error(s),4 Warning(s),0 Message(s) found   in "group8/sram_6t/schematic"
+[00:05:17.06] /m Information: Checking process is completed: marking the design violations
+[00:05:17.20] /m Information: Marking of designs is completed
+[00:05:19.58] /i gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 2]]
+[00:05:34.07] /i db::setAttr shown -of [gi::getAssistants giConsole -from [gi::getWindows 2]] -value false
+[00:05:35.03] /# gi::executeAction {seViolationBrowserToggle} -in [gi::getWindows 2]
+[00:05:35.03] /i ::se::_impl::_toggleViolationBrowserProc 2
+[00:05:35.03] /i db::setAttr shown -of [gi::getAssistants deErrorViewer -from [gi::getWindows 2]] -value true
+[00:05:37.19] /i gi::expand {MarkerTree} -index {0,0} -in [gi::getAssistants deErrorViewer -from [gi::getWindows 2]]
+[00:05:38.62] /i gi::expand {MarkerTree} -index {0.0,0} -in [gi::getAssistants deErrorViewer -from [gi::getWindows 2]]
+[00:05:40.33] /i gi::expand {MarkerTree} -index {0.0.0,0} -in [gi::getAssistants deErrorViewer -from [gi::getWindows 2]]
+[00:05:41.75] /i gi::setCurrentIndex {MarkerTree} -index {0.0.0.0,0} -in [gi::getAssistants deErrorViewer -from [gi::getWindows 2]]
+[00:05:41.75] /i gi::setItemSelection {MarkerTree} -index {0.0.0.0,all} -in [gi::getAssistants deErrorViewer -from [gi::getWindows 2]]
+[00:05:43.22] /i gi::executeAction deErrorViewerTreeHighlightSelectedMarker -in [gi::getAssistants deErrorViewer -from [gi::getWindows 2]]
+[00:05:45.23] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[00:05:45.23] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[00:05:45.23] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {5.4125 1.84375} -index 0 -intent none]
+[00:05:45.23] /o oa:0x3d778430
+[00:05:47.98] /i db::setAttr shown -of [gi::getAssistants deErrorViewer -from [gi::getWindows 2]] -value false
+[00:05:49.65] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[00:05:49.65] /i de::cycleActiveFigure [gi::getWindows 2] -direction next
+[00:05:49.65] /o oa:0x3d61f050
+[00:05:49.65] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[00:05:49.65] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {5.4 1.79375} -index 1 -intent none]
+[00:05:49.65] /o oa:0x3d6cba70
+[00:05:50.68] /i gi::executeAction {sePropertyEditorToggle} -in [gi::getWindows 2]
+[00:05:50.68] /# db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value true
+[00:05:52.18] /i gi::setItemSelection {attributes} -index {name,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:05:52.18] /i gi::setCurrentIndex {attributes} -index {name,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:05:54.73] /i gi::setField {attributes} -value {BL} -index {name,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:05:55.88] /i gi::executeAction {dePropertyEditorApplyChanges} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:05:58.91] /# gi::executeAction {giPostContextMenu} -in [gi::getWindows 2]
+[00:05:58.91] /i de::setCursor [gi::getWindows 2] -point {5.48125 1.33125}
+[00:05:58.93] /i gi::executeAction {menuPreShow} -in [gi::getWindows 2]
+[00:05:58.93] /r giMenuAccess db::getNext [gi::getMenus seSchCanvasContextMenu]
+[00:06:01.39] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[00:06:01.39] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[00:06:01.39] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {5.40625 1.79375} -index 0 -intent none]
+[00:06:01.39] /o oa:0x3d87cd30
+[00:06:03.08] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[00:06:03.08] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[00:06:03.08] /i de::deselectAllLogic -context [de::getContexts -filter {%editDesign==[db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]}]
+[00:06:05.40] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[00:06:05.40] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[00:06:05.40] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {0.5375 1.61875} -index 0 -intent none]
+[00:06:05.40] /o oa:0x3d79c960
+[00:06:07.48] /i gi::setItemSelection {attributes} -index {name,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:06:07.48] /i gi::setCurrentIndex {attributes} -index {name,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:06:11.11] /i gi::setField {attributes} -value {~BL} -index {name,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:06:12.24] /i gi::executeAction {dePropertyEditorApplyChanges} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:06:14.67] /# gi::executeAction {seSchCheckAndSave} -in [gi::getWindows 2]
+[00:06:14.67] /i  ::startup::_checkAndSave 
+[00:06:14.74] /m Information: 
+[00:06:14.74] /o Checking "group8/sram_6t/schematic"
+[00:06:14.74] /o 	[warning] Shorted Terminals
+[00:06:14.74] /o 		Shorted terminals 'BL' '~BL' are not compatible (2 times)
+[00:06:14.74] /o 		Shorted terminals '~BL' 'BL' are not compatible (2 times)
+[00:06:14.74] /o 0 Error(s),4 Warning(s),0 Message(s) found   in "group8/sram_6t/schematic"
+[00:06:14.74] /m Information: Checking process is completed: marking the design violations
+[00:06:14.88] /m Information: Marking of designs is completed
+[00:06:20.91] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[00:06:20.91] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[00:06:20.91] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {5.39375 1.8375} -index 0 -intent none]
+[00:06:20.91] /o oa:0x3652c4d0
+[00:06:21.37] /# gi::executeAction {seDelete} -in [gi::getWindows 2]
+[00:06:21.37] /i ise::delete
+[00:06:23.88] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[00:06:23.88] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[00:06:23.88] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {0.41875 1.6125} -index 0 -intent none]
+[00:06:23.88] /o oa:0x3d4a3420
+[00:06:24.37] /# gi::executeAction {seDelete} -in [gi::getWindows 2]
+[00:06:24.37] /i ise::delete
+[00:06:25.27] /# gi::executeAction {seDelete} -in [gi::getWindows 2]
+[00:06:25.27] /i ise::delete
+[00:06:26.25] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[00:06:26.25] /i de::addPoint {0.41875 1.6125} -context [db::getNext [de::getContexts -window 2]]
+[00:06:27.34] /# gi::executeAction {seDelete} -in [gi::getWindows 2]
+[00:06:27.34] /i ise::delete
+[00:06:28.11] /# gi::executeAction {seDelete} -in [gi::getWindows 2]
+[00:06:28.11] /i ise::delete
+[00:06:28.42] /# gi::executeAction {seDelete} -in [gi::getWindows 2]
+[00:06:28.42] /i ise::delete
+[00:06:29.77] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[00:06:29.77] /i de::addPoint {0.55 1.4} -context [db::getNext [de::getContexts -window 2]]
+[00:06:31.08] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[00:06:31.08] /i de::addPoint {0.4375 1.6} -context [db::getNext [de::getContexts -window 2]]
+[00:06:33.65] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 2]
+[00:06:33.65] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[00:06:39.03] /# gi::executeAction {seSchCheckAndSave} -in [gi::getWindows 2]
+[00:06:39.03] /i  ::startup::_checkAndSave 
+[00:06:39.10] /m Information: 
+[00:06:39.10] /o Checking "group8/sram_6t/schematic"
+[00:06:39.10] /o 	[warning] Floating I/O Instance Pins
+[00:06:39.10] /o 		I/O pin 'D' of instance 'M5' is floating
+[00:06:39.10] /o 		I/O pin 'S' of instance 'M6' is floating
+[00:06:39.10] /o 0 Error(s),2 Warning(s),0 Message(s) found   in "group8/sram_6t/schematic"
+[00:06:39.10] /m Information: Checking process is completed: marking the design violations
+[00:06:39.25] /m Information: Marking of designs is completed
+[00:06:42.63] /# gi::executeAction {seSchCreateSchematicPin} -in [gi::getWindows 2]
+[00:06:42.63] /i ise::createSchematicPin
+[00:06:45.93] /# gi::executeAction {seOptionsRotate90} -in [gi::getWindows 2]
+[00:06:45.93] /i de::commandOption R90
+[00:06:46.27] /# gi::executeAction {seOptionsRotate90} -in [gi::getWindows 2]
+[00:06:46.27] /i de::commandOption R90
+[00:06:48.61] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[00:06:48.61] /i de::addPoint {5.375 1.8} -context [db::getNext [de::getContexts -window 2]]
+[00:06:51.90] /# gi::executeAction {seOptionsRotate90} -in [gi::getWindows 2]
+[00:06:51.90] /i de::commandOption R90
+[00:06:52.46] /# gi::executeAction {seOptionsRotate90} -in [gi::getWindows 2]
+[00:06:52.46] /i de::commandOption R90
+[00:06:55.05] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[00:06:55.05] /i de::addPoint {0.475 1.59375} -context [db::getNext [de::getContexts -window 2]]
+[00:06:56.17] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 2]
+[00:06:56.17] /i de::abortCommand -context [db::getNext [de::getContexts -window 2]]
+[00:06:58.02] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[00:06:58.02] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[00:06:58.02] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {5.50625 1.75625} -index 0 -intent none]
+[00:06:58.02] /o oa:0x3c87fd00
+[00:07:00.72] /i gi::setItemSelection {attributes} -index {accessDir,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:07:00.72] /i gi::setCurrentIndex {attributes} -index {accessDir,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:07:04.24] /i gi::setField {attributes} -value {inputOutput} -index {accessDir,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:07:05.82] /i gi::executeAction {dePropertyEditorApplyChanges} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:07:07.53] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[00:07:07.53] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[00:07:07.53] /i de::deselectAllLogic -context [de::getContexts -filter {%editDesign==[db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]}]
+[00:07:10.49] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[00:07:10.49] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[00:07:10.49] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {0.39375 1.6375} -index 0 -intent none]
+[00:07:10.49] /o oa:0x3d781be0
+[00:07:12.19] /i gi::setItemSelection {attributes} -index {accessDir,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:07:12.19] /i gi::setCurrentIndex {attributes} -index {accessDir,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:07:15.10] /i gi::setField {attributes} -value {inputOutput} -index {accessDir,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:07:16.03] /i gi::setItemSelection {attributes} -index {name,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:07:16.03] /i gi::setCurrentIndex {attributes} -index {name,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:07:26.58] /i gi::setField {attributes} -value {BL bar} -index {name,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:07:33.31] /i gi::setField {attributes} -value {BL_bar} -index {name,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:07:34.52] /i gi::executeAction {dePropertyEditorApplyChanges} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[00:07:35.96] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[00:07:35.96] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[00:07:35.96] /i de::deselectAllLogic -context [de::getContexts -filter {%editDesign==[db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]}]
+[00:07:37.92] /# gi::executeAction {seSchCheckAndSave} -in [gi::getWindows 2]
+[00:07:37.92] /i  ::startup::_checkAndSave 
+[00:07:37.99] /m Information: 
+[00:07:37.99] /o Checking "group8/sram_6t/schematic"
+[00:07:37.99] /o No rule violations found in "group8/sram_6t/schematic"
+[00:07:37.99] /m Information: Checking process is completed: marking the design violations
+[00:07:38.13] /m Information: Marking of designs is completed
+[00:07:44.97] /# gi::executeAction {seSchCheckAndSave} -in [gi::getWindows 2]
+[00:07:44.97] /i  ::startup::_checkAndSave 
+[00:07:45.03] /m Information: 
+[00:07:45.03] /o Checking "group8/sram_6t/schematic"
+[00:07:45.04] /o No rule violations found in "group8/sram_6t/schematic"
+[00:07:45.04] /m Information: Checking process is completed: marking the design violations
+[00:07:45.04] /m Information: Marking of designs is completed
+[00:07:46.73] /i exit
+[00:07:46.81] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog} -parent [gi::getWindows 2]]
+[00:07:47.05] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 2]] -value 419x212+549+273
+[00:07:48.80] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog} -parent [gi::getWindows 2]]
+[00:07:52.39] /o Shutdown time: Thu Mar 20 00:07:52 2025
+[00:07:52.39] /o Elapsed session real time: 1 hour 43.5 minutes
+[00:07:52.39] /o Session terminated. Log is at /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/logs/ccompiler.hrajesh.2025_3_19_222418_749164.log

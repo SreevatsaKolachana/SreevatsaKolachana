@@ -1,0 +1,92 @@
+* Description of frequently used terms in hierarchy_analysis files*
+M indicates that the value of that column is in millions
+Hier Plc Count(Hierarchical Placement Count) : Number of unique instances of the cell in another cell (Parent)
+Flat Plc Count(Flat Placement Count)         : Total number of instances of the cell in the layout
+
+Example : 
+                               A                     
+                              / \                   Cell  Hier Plc Count Flat Plc Count 
+                             /   \                     A               1              1 
+                            B     B                    B               2              2 
+                           / \  /  \                   C               2              4 
+                          C   C C   C                
+------------------------------------------------------------------------------------------------------ 
+
+
+* Cells with flat area > 0.01 of top cell *
+Reports cells with flat area > 0.01 of top cell
+
+Flat A(Flat Area) : Total area covered by this cell in the layout(cell area * flat placement count)
+Cell A(Cell Area) : Area of this cell
+Percent of top    : Percentage of area of this cell w.r.t area of top cell
+This table contains 10 entries
+Original table contains 10 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Flat Plc Count, Hier Plc Count, Percent of top
+-----------------------------------------------
+ sram_6t                                       |         0.000,         0.000,            128,            128,       119.18 %
+ memory_array_8by16                            |         0.000,         0.000,              1,              1,       100.00 %
+ nmos                                          |         0.000,         0.000,            560,              5,        92.23 %
+ BPR_M0A                                       |         0.000,         0.000,            608,              6,        25.16 %
+ sram_filler                                   |         0.000,         0.000,             48,             48,        18.22 %
+ M0B_M1                                        |         0.000,         0.000,           1120,            104,         8.57 %
+ GATE_M0B                                      |         0.000,         0.000,            512,              4,         6.01 %
+ M0A_M0B                                       |         0.000,         0.000,            656,            148,         4.94 %
+ M1_M2                                         |         0.000,         0.000,            480,             99,         4.45 %
+ M2_M3                                         |         0.000,         0.000,            352,             98,         3.26 %
+===============================================
+
+* Large-Area cells and child area ratio *
+This table reports cells with large areas and ratio of its area with total area covered by its children
+
+Num Inst(Number of instances) : Total Number of instances of the cell
+Child A(Child Area)           : Total area covered by all the children of the cell
+Pct of parent(Percent of area): Percentage of total area covered by its childern w.r.t area of this cell
+This table contains 10 entries
+Original table contains 10 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Num Inst (M), Child A (mm^2), Pct of parent
+-----------------------------------------------
+ sram_6t                                       |         0.000,         0.000,        0.000,         0.000,      179.11 %
+ memory_array_8by16                            |         0.000,         0.000,        0.001,         0.000,      141.00 %
+ nmos                                          |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ BPR_M0A                                       |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ sram_filler                                   |         0.000,         0.000,        0.000,         0.000,      108.58 %
+ M0B_M1                                        |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ GATE_M0B                                      |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ M0A_M0B                                       |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ M1_M2                                         |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ M2_M3                                         |         0.000,         0.000,        0.000,         0.000,        0.00 %
+===============================================
+
+* Layer Report with Estimated Data *
+Reports information of layers present in the layout
+
+Trap        : Number of hierarchical trapezoids in the layer
+Poly        : Number of hierarchical polygons in the layer
+Text        : Number of hierarchical text primitives in the layer
+Flat Trap   : Number of flat trapezoids 
+Flat Poly   : Number of flat polygons
+Flat Text   : Number of flat text primitives 
+Trap F/H    : Ratio of flat and hierarchical placements of the trapezoids
+Base, Metal, Via, Fill, Colored : Indicates layer intent
+This table contains 13 entries
+Original table contains 13 entries
+
+ Name                                          | Trap (M), Poly (M), Text (M), Flat Trap (M), Flat Poly (M), Flat Text (M), Trap F/H, Base, Metal, Via, Fill, Colored
+-----------------------------------------------
+ aM3                                           |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,    20.09,    0,     0,   0,    0,       0
+ aM2                                           |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,    28.34,    0,     0,   0,    0,       0
+ tM3                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+ aBPR                                          |    0.000,    0.000,    0.000,         0.002,         0.002,         0.000,   139.43,    0,     0,   0,    0,       0
+ aM0A                                          |    0.000,    0.000,    0.000,         0.004,         0.004,         0.000,   385.60,    0,     0,   0,    0,       0
+ tM2                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+ aDUMMY                                        |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,    93.71,    0,     0,   0,    0,       0
+ aGCUT                                         |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,    96.00,    0,     0,   0,    0,       0
+ aNIM                                          |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,   216.00,    0,     0,   0,    0,       0
+ aNW                                           |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,   245.33,    0,     0,   0,    0,       0
+ aACT                                          |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,   560.00,    0,     0,   0,    0,       0
+ aVBPR                                         |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,   608.00,    0,     0,   0,    0,       0
+ tBPR                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+===============================================
+

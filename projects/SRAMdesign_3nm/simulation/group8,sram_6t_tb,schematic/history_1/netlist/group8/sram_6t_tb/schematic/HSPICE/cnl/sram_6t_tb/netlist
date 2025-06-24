@@ -1,0 +1,13 @@
+********************************************************************************
+* Library          : group8
+* Cell             : sram_6t_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 bl blb wl sram_6t
+v12 vdd! gnd! dc='VDD_VAL'
+v15 wl gnd! dc=0 pulse ( 0 'VDD_VAL' 10p 5p 5p 45p 100p )
+v18 bl gnd! dc=0.8 pwl ( 0 0.8 5p 0 65p 0.0 70p 0.8 100p 0.8 105p 0.8 165p 0.8 170p 0
++  )
+v19 blb gnd! dc=0.8 pwl ( 0 0.8 95p 0.8 100p 0.0 )

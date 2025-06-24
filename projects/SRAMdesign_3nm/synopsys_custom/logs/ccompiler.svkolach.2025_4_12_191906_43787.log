@@ -1,0 +1,1241 @@
+[19:19:16.72] /o 
+              /c                                 Custom Compiler™ 
+              /c 
+              /c               Version W-2024.09-SP1-2 for linux64 - Jan 16, 2025 
+              /c 
+              /c                     Copyright (c) 2004 - 2025 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 11256978 compiled on Thu Jan 16 10:52:27 2025 for AlmaLinux 8.4
+              /c Invocation: /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Sat Apr 12 19:19:06 2025
+              /c Host: hydra12.ece.ncsu.edu
+              /c Working directory: /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project
+              /c 
+[19:19:38.30] /m Information: Registering ICV PERC package...
+[19:19:40.26] /r giShowFrameTabs true
+[19:19:40.26] /r giWindowId 1
+[19:19:40.26] /r giWindowGeometry 1040x800
+[19:19:44.65] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[19:19:44.93] /i db::setAttr geometry -of [gi::getFrames 1] -value 1920x986+0+46
+[19:19:47.58] /i gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[19:19:47.75] /i gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[19:19:47.88] /r giWindowId 2
+[19:19:47.88] /r giWindowGeometry 660x600+50+50
+[19:19:49.26] /i gi::setCurrentIndex {libs} -index {group8} -in [gi::getWindows 2]
+[19:19:49.34] /i gi::setItemSelection {libs} -index {group8} -in [gi::getWindows 2]
+[19:19:55.85] /i gi::setCurrentIndex {cells} -index {agen_unit} -in [gi::getWindows 2]
+[19:19:56.12] /i gi::setItemSelection {cells} -index {agen_unit} -in [gi::getWindows 2]
+[19:19:57.03] /i gi::setCurrentIndex {cells} -index {buffer} -in [gi::getWindows 2]
+[19:19:57.25] /i gi::setItemSelection {cells} -index {buffer} -in [gi::getWindows 2]
+[19:19:58.45] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 2]
+[19:19:58.58] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 2]
+[19:19:58.59] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[19:19:58.82] /o Loading: Callback files...
+[19:19:58.86] /o Loading: scripts/callbacks/callbacks.tcl
+[19:19:58.86] /o 
+              /c [INFO] : Loading display.drf from /mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3
+              /c 
+              /c  if you wish to Load other display.drf, please set shell environment valiable "iPDK_load_display_NCSU_TechLib_FreePDK3" to value = 0
+[19:19:58.86] /o 
+[19:19:59.02] /w Warning: Preference 'xtStarTcadGrdFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[19:19:59.03] /w Warning: Preference 'xtStarOALayerMappingFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[19:19:59.03] /o 	#######################################
+[19:19:59.03] /o 	CC-PDK Library Name	: FreePDK3
+[19:19:59.03] /o 	#######################################
+[19:19:59.03] /o 
+[19:19:59.14] /m Information: Feature 'CustomInfrastructure' checked out. (LICENSE-003)
+[19:19:59.17] /m Information: Feature 'SynopsysCustomLayout' checked out. (LICENSE-003)
+[19:19:59.53] /r giWindowId 3
+[19:19:59.54] /r giWindowGeometry 1632x972
+[19:20:04.05] /# gi::executeAction {deSelectActive} -in [gi::getWindows 3]
+[19:20:04.05] /i de::deselectAll [db::getNext [de::getContexts -window 3]]
+[19:20:04.05] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {2.85625 3.06875} -index 0 -intent none]
+[19:20:04.05] /o oa:0x3c3938d0
+[19:20:04.24] /i ::se::internal::descendInst 3 [de::getActiveFigure [gi::getWindows 3] -point {2.85625 3.06875} -index 0 -intent none] auto
+[19:20:04.51] /# ide::descend 3 -inPlace false -readOnly auto
+[19:20:04.71] /# Navigating to group8/inv/schematic (I0)
+[19:20:05.17] /r giWindowGeometry 1632x972
+[19:20:10.05] /# gi::executeAction {deSelectActive} -in [gi::getWindows 3]
+[19:20:10.05] /i de::deselectAll [db::getNext [de::getContexts -window 3]]
+[19:20:10.05] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {2.03125 2.9625} -index 0 -intent none]
+[19:20:10.05] /o oa:0x3caf8af0
+[19:20:11.34] /i gi::executeAction {sePropertyEditorToggle} -in [gi::getWindows 3]
+[19:20:11.35] /# db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 3]] -value false
+[19:20:12.79] /i gi::executeAction {sePropertyEditorToggle} -in [gi::getWindows 3]
+[19:20:12.79] /# db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 3]] -value true
+[19:20:16.03] /# gi::executeAction {deSelectActive} -in [gi::getWindows 3]
+[19:20:16.03] /i de::deselectAll [db::getNext [de::getContexts -window 3]]
+[19:20:16.03] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {2.01875 2.20625} -index 0 -intent none]
+[19:20:16.03] /o oa:0x3d2379d0
+[19:20:17.39] /# gi::executeAction {deSelectActive} -in [gi::getWindows 3]
+[19:20:17.39] /i de::cycleActiveFigure [gi::getWindows 3] -direction next
+[19:20:17.39] /o oa:0x3d4c7030
+[19:20:21.83] /# gi::executeAction {deReturn} -in [gi::getWindows 3]
+[19:20:21.83] /i de::return [db::getNext [de::getContexts -window 3]] -errorOnFail false
+[19:20:21.94] /# Navigating to group8/buffer/schematic
+[19:20:21.96] /r giWindowGeometry 1632x972
+[19:20:23.51] /# gi::executeAction {deSelectActive} -in [gi::getWindows 3]
+[19:20:23.52] /i de::deselectAll [db::getNext [de::getContexts -window 3]]
+[19:20:23.52] /i de::deselectAllLogic -context [de::getContexts -filter {%editDesign==[db::getAttr editDesign -of [db::getNext [de::getContexts -window 3]]]}]
+[19:20:30.46] /i gi::executeAction {giCloseWindow} -in [gi::getWindows 3]
+[19:20:38.52] /i gi::executeAction {dmShowNewCellView} -in [gi::getWindows 2]
+[19:20:38.87] /i gi::setActiveDialog [gi::getDialogs {dmNewCellView} -parent [gi::getWindows 2]]
+[19:20:39.04] /i db::setAttr geometry -of [gi::getDialogs {dmNewCellView} -parent [gi::getWindows 2]] -value 588x269+656+353
+[19:20:41.90] /i gi::setItemSelection {views} -index {} -in [gi::getDialogs {dmNewCellView} -parent [gi::getWindows 2]]
+[19:20:41.90] /i gi::setField {cellViewName} -value {layout} -in [gi::getDialogs {dmNewCellView} -parent [gi::getWindows 2]]
+[19:20:43.10] /i gi::pressButton {ok} -in [gi::getDialogs {dmNewCellView} -parent [gi::getWindows 2]]
+[19:20:43.13] /# db::getAttr viewType -of [dm::findCellView layout -cell [dm::findCell buffer -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] group8]]]]
+[19:20:43.14] /# dm::createCellView layout -cell [dm::findCell buffer -lib [ oa::LibFind [oa::ScalarName [oa::CdbaNS] group8]]] -viewType maskLayout
+[19:20:43.20] /# de::open [dm::findCellView layout -cell [dm::findCell buffer -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] group8]]]] -application leLayout
+[19:20:43.49] /r giWindowId 4
+[19:20:43.50] /r giWindowGeometry 1632x972
+[19:20:45.75] /# gi::executeAction {leInstance} -in [gi::getWindows 4]
+[19:20:45.75] /i ile::createInst
+[19:20:52.45] /i gi::setField {instLCVCell} -value {inv} -in [gi::getToolbars {deCommandOptions} -from [gi::getWindows 4]]
+[19:20:55.51] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 4]
+[19:20:55.51] /i de::zoom -window [gi::getWindows 4] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {-0.0035 -0.0065}
+[19:20:55.60] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 4]
+[19:20:55.60] /i de::zoom -window [gi::getWindows 4] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {-0.0035 -0.0065}
+[19:20:55.75] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 4]
+[19:20:55.75] /i de::zoom -window [gi::getWindows 4] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {-0.0035 -0.0065}
+[19:20:58.80] /# gi::executeAction {deAddPoint} -in [gi::getWindows 4]
+[19:20:58.80] /i de::addPoint {0 0.009} -context [db::getNext [de::getContexts -window 4]]
+[19:20:59.61] /# gi::executeAction {deFitView} -in [gi::getWindows 4]
+[19:20:59.61] /i de::fit -window 4 -fitView true
+[19:21:02.98] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 4]
+[19:21:02.98] /i de::zoom -window [gi::getWindows 4] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.1535 0.0085}
+[19:21:03.08] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 4]
+[19:21:03.08] /i de::zoom -window [gi::getWindows 4] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.1535 0.0085}
+[19:21:06.31] /# gi::executeAction {deFitView} -in [gi::getWindows 4]
+[19:21:06.31] /i de::fit -window 4 -fitView true
+[19:21:08.78] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 4]
+[19:21:08.78] /i de::zoom -window [gi::getWindows 4] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.154 0.009}
+[19:21:11.21] /# gi::executeAction {deAddPoint} -in [gi::getWindows 4]
+[19:21:11.21] /i de::addPoint {0.153 0.009} -context [db::getNext [de::getContexts -window 4]]
+[19:21:12.77] /# gi::executeAction {deFitView} -in [gi::getWindows 4]
+[19:21:12.77] /i de::fit -window 4 -fitView true
+[19:21:16.63] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 4]
+[19:21:16.63] /i de::abortCommand -context [db::getNext [de::getContexts -window 4]]
+[19:21:23.02] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 4]
+[19:21:23.02] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 4]]
+[19:21:27.59] /# gi::executeAction {leDisplayTopLevel} -in [gi::getWindows 4]
+[19:21:27.59] /i db::setPrefValue leStopLevel -value 0 -scope [db::getNext [de::getContexts -window 4]]; db::setPrefValue leStartLevel -value 0 -scope [db::getNext [de::getContexts -window 4]]; de::redraw -window 4
+[19:21:34.22] /# gi::executeAction {leDisplayTopLevel} -in [gi::getWindows 4]
+[19:21:34.22] /i db::setPrefValue leStopLevel -value 0 -scope [db::getNext [de::getContexts -window 4]]; db::setPrefValue leStartLevel -value 0 -scope [db::getNext [de::getContexts -window 4]]; de::redraw -window 4
+[19:21:35.08] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 4]
+[19:21:35.08] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 4]]
+[19:21:37.32] /# gi::executeAction {deSelectActive} -in [gi::getWindows 4]
+[19:21:37.32] /i de::deselectAll [db::getNext [de::getContexts -window 4]]
+[19:21:37.32] /i de::select [de::getActiveFigure [gi::getWindows 4] -point {0.186 0.15} -index 0 -intent none]
+[19:21:37.32] /o oa:0x3c5d5310
+[19:21:37.93] /# gi::executeAction {leStartStretchDrag} -in [gi::getWindows 4]
+[19:21:37.93] /i layout_editor::directStretch [de::getActiveFigure [gi::getWindows 4] -point {0.186 0.15} -index 0 -intent none] 4
+[19:21:37.93] /i ile::stretch -point {0.186 0.15}
+[19:21:41.47] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 4]
+[19:21:41.47] /i de::zoom -window [gi::getWindows 4] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.159 0.1455}
+[19:21:45.87] /# gi::executeAction {deEndDrag} -in [gi::getWindows 4]
+[19:21:45.87] /i de::endDrag {0.159 0.142} -context [db::getNext [de::getContexts -window 4]]
+[19:21:46.74] /# gi::executeAction {deFitView} -in [gi::getWindows 4]
+[19:21:46.74] /i de::fit -window 4 -fitView true
+[19:21:48.93] /# gi::executeAction {deSelectActive} -in [gi::getWindows 4]
+[19:21:48.93] /i de::deselectAll [db::getNext [de::getContexts -window 4]]
+[19:22:03.03] /# gi::executeAction {deSelectActive} -in [gi::getWindows 4]
+[19:23:04.37] /# gi::executeAction {leInstance} -in [gi::getWindows 4]
+[19:23:04.37] /i ile::createInst
+[19:23:09.04] /# gi::executeAction {leInstance} -in [gi::getWindows 4]
+[19:23:09.04] /i ile::createInst
+[19:23:12.17] /i gi::setField {instLCVLib} -value {NCSU_TechLib_FreePDK3} -in [gi::getToolbars {deCommandOptions} -from [gi::getWindows 4]]
+[19:23:16.95] /i gi::setField {instLCVCell} -value {M0B_M1} -in [gi::getToolbars {deCommandOptions} -from [gi::getWindows 4]]
+[19:23:18.22] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 4]
+[19:23:18.22] /i de::zoom -window [gi::getWindows 4] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.0745 0.0595}
+[19:23:18.46] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 4]
+[19:23:18.46] /i de::zoom -window [gi::getWindows 4] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.0745 0.0595}
+[19:23:24.82] /# gi::executeAction {deAddPoint} -in [gi::getWindows 4]
+[19:23:24.82] /i de::addPoint {0.0765 0.0645} -context [db::getNext [de::getContexts -window 4]]
+[19:23:26.04] /# gi::executeAction {deFitView} -in [gi::getWindows 4]
+[19:23:26.04] /i de::fit -window 4 -fitView true
+[19:23:30.96] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 4]
+[19:23:30.96] /i de::zoom -window [gi::getWindows 4] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.203 0.1165}
+[19:23:31.15] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 4]
+[19:23:31.15] /i de::zoom -window [gi::getWindows 4] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.203 0.1165}
+[19:23:42.41] /# gi::executeAction {deAddPoint} -in [gi::getWindows 4]
+[19:23:42.41] /i de::addPoint {0.1815 0.1165} -context [db::getNext [de::getContexts -window 4]]
+[19:23:43.45] /# gi::executeAction {deFitView} -in [gi::getWindows 4]
+[19:23:43.45] /i de::fit -window 4 -fitView true
+[19:23:46.65] /# gi::setItemSelection {lpps} -index {M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[19:23:46.65] /# gi::setCurrentIndex {lpps} -index {M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[19:23:46.74] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[19:23:46.74] /i de::setActiveLPP [de::getLPPs {M1 drawing} -from [oa::DesignFind group8 buffer layout]]
+[19:23:49.18] /# gi::executeAction {leRotate90} -in [gi::getWindows 4]
+[19:23:49.18] /i de::commandOption R90 -point {0.035 0.058}
+[19:23:51.70] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 4]
+[19:23:51.70] /i de::abortCommand -context [db::getNext [de::getContexts -window 4]]
+[19:23:53.82] /# gi::executeAction {leRectangle} -in [gi::getWindows 4]
+[19:23:55.76] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 4]
+[19:23:55.76] /i de::zoom -window [gi::getWindows 4] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.068 0.0695}
+[19:23:55.85] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 4]
+[19:23:55.85] /i de::zoom -window [gi::getWindows 4] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.068 0.0695}
+[19:23:55.97] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 4]
+[19:23:55.97] /i de::zoom -window [gi::getWindows 4] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.068 0.0695}
+[19:23:59.15] /# gi::executeAction {deAddPoint} -in [gi::getWindows 4]
+[19:24:00.93] /# gi::executeAction {deFitView} -in [gi::getWindows 4]
+[19:24:00.93] /i de::fit -window 4 -fitView true
+[19:24:13.95] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 4]
+[19:24:19.50] /# gi::setItemSelection {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[19:24:19.50] /# gi::setCurrentIndex {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[19:24:19.65] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[19:24:19.65] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "M0B drawing"} -from [de::getActiveContext] ] -value false
+[19:24:23.81] /# gi::setItemSelection {lpps} -index {M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[19:24:23.81] /# gi::setCurrentIndex {lpps} -index {M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[19:24:23.88] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[19:24:23.88] /i de::setActiveLPP [de::getLPPs {M1 drawing} -from [oa::DesignFind group8 buffer layout]]
+[19:24:24.52] /# gi::executeAction {leRectangle} -in [gi::getWindows 4]
+[19:24:28.74] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 4]
+[19:24:28.74] /i de::zoom -window [gi::getWindows 4] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.0685 0.0645}
+[19:24:28.81] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 4]
+[19:24:28.81] /i de::zoom -window [gi::getWindows 4] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.0685 0.0645}
+[19:24:30.21] /# gi::executeAction {deAddPoint} -in [gi::getWindows 4]
+[19:24:31.26] /# gi::executeAction {deFitView} -in [gi::getWindows 4]
+[19:24:31.27] /i de::fit -window 4 -fitView true
+[19:24:33.97] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 4]
+[19:24:33.97] /i de::zoom -window [gi::getWindows 4] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.1485 0.057}
+[19:24:41.45] /# gi::executeAction {deAddPoint} -in [gi::getWindows 4]
+[19:24:41.46] /i le::createRectangle {{0.0695 0.057} {0.147 0.072}} -design [ed] -lpp {M1 drawing} 
+[19:24:43.78] /# gi::executeAction {deAddPoint} -in [gi::getWindows 4]
+[19:24:44.95] /# gi::executeAction {deFitView} -in [gi::getWindows 4]
+[19:24:44.95] /i de::fit -window 4 -fitView true
+[19:24:49.78] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 4]
+[19:24:49.78] /i de::zoom -window [gi::getWindows 4] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.147 0.125}
+[19:24:53.52] /# gi::executeAction {deAddPoint} -in [gi::getWindows 4]
+[19:24:53.53] /i le::createRectangle {{0.132 0.057} {0.147 0.124}} -design [ed] -lpp {M1 drawing} 
+[19:24:55.71] /# gi::executeAction {deAddPoint} -in [gi::getWindows 4]
+[19:25:03.49] /# gi::executeAction {deAddPoint} -in [gi::getWindows 4]
+[19:25:03.49] /i le::createRectangle {{0.132 0.109} {0.1885 0.124}} -design [ed] -lpp {M1 drawing} 
+[19:25:04.56] /# gi::executeAction {deFitView} -in [gi::getWindows 4]
+[19:25:04.56] /i de::fit -window 4 -fitView true
+[19:25:10.68] /# gi::setItemSelection {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[19:25:10.68] /# gi::setCurrentIndex {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[19:25:10.82] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[19:25:10.82] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "M0B drawing"} -from [de::getActiveContext] ] -value true
+[19:25:11.86] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 4]
+[19:25:12.41] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 4]
+[19:25:12.69] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 4]
+[19:25:12.89] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 4]
+[19:25:13.12] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 4]
+[19:25:13.32] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 4]
+[19:25:13.50] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 4]
+[19:25:13.68] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 4]
+[19:25:13.85] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 4]
+[19:25:14.25] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 4]
+[19:25:14.47] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 4]
+[19:25:14.68] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 4]
+[19:25:14.86] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 4]
+[19:25:15.08] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 4]
+[19:25:15.27] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 4]
+[19:25:15.44] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 4]
+[19:25:15.61] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 4]
+[19:25:15.74] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 4]
+[19:25:15.93] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 4]
+[19:25:21.48] /# gi::executeAction {lePin} -in [gi::getWindows 4]
+[19:25:21.48] /i ile::createPin
+[19:25:24.19] /i gi::pressButton {eject} -in [gi::getToolbars {deCommandOptions} -from [gi::getWindows 4]]
+[19:25:24.51] /i gi::setActiveDialog [gi::getDialogs {leCreatePin} -parent [gi::getWindows 4]]
+[19:25:24.63] /i db::setAttr geometry -of [gi::getDialogs {leCreatePin} -parent [gi::getWindows 4]] -value 554x439+648+128
+[19:25:31.73] /i gi::setField {termName} -value {in\ out} -in [gi::getDialogs {leCreatePin} -parent [gi::getWindows 4]]
+[19:25:33.52] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]]
+[19:25:33.52] /i de::setActiveLPP [de::getLPPs {M0B drawing} -from [oa::DesignFind group8 buffer layout]]
+[19:25:35.50] /i gi::setField {pinLabel} -value {true} -in [gi::getDialogs {leCreatePin} -parent [gi::getWindows 4]]
+[19:25:36.56] /i gi::setField {lePinLabelTypeText} -value {true} -in [gi::getDialogs {leCreatePin} -parent [gi::getWindows 4]]
+[19:25:40.14] /i gi::setField {textHeight} -value {0.02} -in [gi::getDialogs {leCreatePin} -parent [gi::getWindows 4]]
+[19:25:45.50] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 4]
+[19:25:45.50] /i de::zoom -window [gi::getWindows 4] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.0725 0.119}
+[19:25:45.81] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 4]
+[19:25:45.81] /i de::zoom -window [gi::getWindows 4] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.0725 0.119}
+[19:25:48.82] /i db::setAttr geometry -of [gi::getDialogs {leCreatePin} -parent [gi::getWindows 4]] -value 554x439+954+148
+[19:25:50.75] /# gi::executeAction {deStartDrag} -in [gi::getWindows 4]
+[19:25:50.75] /i de::startDrag {0.07 0.1205} -context [db::getNext [de::getContexts -window 4]]
+[19:25:53.97] /# gi::executeAction {deEndDrag} -in [gi::getWindows 4]
+[19:25:53.97] /i de::endDrag {0.084 0.114} -context [db::getNext [de::getContexts -window 4]]
+[19:25:56.80] /# gi::executeAction {deUndo} -in [gi::getWindows 4]
+[19:25:56.80] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 4]]]
+[19:25:58.79] /i gi::setField {createOrientation} -value {R0} -in [gi::getDialogs {leCreatePin} -parent [gi::getWindows 4]]
+[19:26:00.47] /# gi::executeAction {deStartDrag} -in [gi::getWindows 4]
+[19:26:00.47] /i de::startDrag {0.07 0.1205} -context [db::getNext [de::getContexts -window 4]]
+[19:26:03.07] /# gi::executeAction {deEndDrag} -in [gi::getWindows 4]
+[19:26:03.07] /i de::endDrag {0.084 0.114} -context [db::getNext [de::getContexts -window 4]]
+[19:26:04.37] /# gi::executeAction {deFitView} -in [gi::getWindows 4]
+[19:26:04.37] /i de::fit -window 4 -fitView true
+[19:26:05.67] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 4]
+[19:26:05.67] /i de::zoom -window [gi::getWindows 4] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.209 0.0695}
+[19:26:05.86] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 4]
+[19:26:05.86] /i de::zoom -window [gi::getWindows 4] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.209 0.0695}
+[19:26:08.77] /# gi::executeAction {deStartDrag} -in [gi::getWindows 4]
+[19:26:08.77] /i de::startDrag {0.197 0.0695} -context [db::getNext [de::getContexts -window 4]]
+[19:26:11.72] /# gi::executeAction {deEndDrag} -in [gi::getWindows 4]
+[19:26:11.72] /i de::endDrag {0.2075 0.06} -context [db::getNext [de::getContexts -window 4]]
+[19:26:12.72] /# gi::executeAction {deFitView} -in [gi::getWindows 4]
+[19:26:12.72] /i de::fit -window 4 -fitView true
+[19:26:17.06] /i gi::pressButton {cancel} -in [gi::getDialogs {leCreatePin} -parent [gi::getWindows 4]]
+[19:26:18.25] /# gi::executeAction {deSelectActive} -in [gi::getWindows 4]
+[19:26:18.25] /i de::deselectAll [db::getNext [de::getContexts -window 4]]
+[19:26:18.25] /i de::select [de::getActiveFigure [gi::getWindows 4] -point {0.075 0.1175} -index 0 -intent none]
+[19:26:18.26] /o oa:0x3ccee3e0
+[19:26:18.84] /i gi::executeAction {dePropertyEditorToggleExtended} -in [gi::getWindows 4]
+[19:26:18.84] /# db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]] -value true
+[19:26:19.13] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]] -value 290x799
+[19:26:19.23] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]] -value 290x799
+[19:26:19.94] /i gi::setItemSelection {connectivity} -index {shapeTermName,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:26:19.94] /i gi::setCurrentIndex {connectivity} -index {shapeTermName,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:26:20.47] /i gi::setItemSelection {connectivity} -index {termType,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:26:20.47] /i gi::setCurrentIndex {connectivity} -index {termType,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:26:21.47] /i gi::setField {connectivity} -value {input} -index {termType,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:26:22.67] /# gi::executeAction {deSelectActive} -in [gi::getWindows 4]
+[19:26:22.67] /i de::deselectAll [db::getNext [de::getContexts -window 4]]
+[19:26:22.67] /i de::select [de::getActiveFigure [gi::getWindows 4] -point {0.203 0.0635} -index 0 -intent none]
+[19:26:22.67] /o oa:0x3dd3abf0
+[19:26:22.73] /r giDialog gi::setActiveDialog [gi::getDialogs {dbSelectionChange} -parent [gi::getWindows 4]]
+[19:26:23.01] /r giDialog db::setAttr geometry -of [gi::getDialogs {dbSelectionChange} -parent [gi::getWindows 4]] -value 384x81+758+447
+[19:26:24.56] /r giDialog gi::pressButton {apply} -in [gi::getDialogs {dbSelectionChange} -parent [gi::getWindows 4]]
+[19:26:25.50] /i gi::setItemSelection {connectivity} -index {termType,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:26:25.50] /i gi::setCurrentIndex {connectivity} -index {termType,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:26:27.07] /i gi::setField {connectivity} -value {output} -index {termType,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:26:29.32] /i gi::executeAction {dePropertyEditorApplyChanges} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:26:32.55] /i db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]] -value false
+[19:26:32.84] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]] -value 290x824
+[19:26:34.67] /# gi::executeAction {deFitView} -in [gi::getWindows 4]
+[19:26:34.67] /i de::fit -window 4 -fitView true
+[19:26:35.94] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 4]
+[19:26:36.49] /# gi::executeAction {deSelectActive} -in [gi::getWindows 4]
+[19:26:36.49] /i de::deselectAll [db::getNext [de::getContexts -window 4]]
+[19:26:40.77] /# gi::executeAction {xtDRCSetup} -in [gi::getWindows 4]
+[19:26:40.77] /i xt::showDRCSetup -job drc -window 4
+[19:26:41.62] /m Information: No Control Variables file found in pdk.xml, nor Control Variables preference has been set, switching to New Control Variables table format.
+[19:26:42.15] /# gi::setActiveDialog [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 4]]
+[19:26:42.74] /i db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 4]] -value 665x600+876+367
+[19:26:43.41] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 4]]
+[19:26:43.49] /m Information: Feature 'SynopsysCustomLayoutAdvanced' checked out. (LICENSE-003)
+[19:26:44.07] /r giDialog gi::setActiveDialog [gi::getDialogs {xtShowDesignsPrompt}]
+[19:26:44.08] /r giDialog gi::setCurrentIndex {target} -index {0,0} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[19:26:44.33] /r giDialog db::setAttr geometry -of [gi::getDialogs {xtShowDesignsPrompt}] -value 564x289+668+356
+[19:26:45.01] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[19:26:45.64] /# xt::physicalVerification::executePve drc 4 xtDRCExecutePve
+[19:26:49.19] /m Information: Starting 'Stream Export of OA cell 'group8/buffer/layout''...
+[19:26:55.35] /m Information: "PVE Stream Export finished successfully with 0 error, 0 warning." (DATA_IO_COMMANDS-002)
+[19:26:55.35] /m Information: Starting IC Validator 'DRC' verification job on Stream cell: buffer
+[19:26:56.63] /r giWindowId 5
+[19:26:56.64] /r giWindowGeometry 800x600
+[19:27:16.34] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_160
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[19:27:16.90] /m Information: IC Validator VUE Server initialized successfully at port 9189.
+[19:27:21.86] /i gi::setActiveWindow 4
+[19:27:21.86] /i gi::setActiveWindow 4 -raise true
+[19:27:29.69] /# gi::executeAction {xtLVSSetup} -in [gi::getWindows 4]
+[19:27:29.69] /i xt::showLVSSetup -job lvs -window 4
+[19:27:30.60] /m Information: No Control Variables file found in pdk.xml, nor Control Variables preference has been set, switching to New Control Variables table format.
+[19:27:31.22] /# gi::setActiveDialog [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 4]]
+[19:27:31.53] /i db::setAttr geometry -of [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 4]] -value 824x486+799+347
+[19:27:32.60] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 4]]
+[19:27:33.38] /# xt::physicalVerification::executePve lvs 4 xtLVSExecutePve
+[19:27:34.95] /m Information: Starting 'Stream Export of OA cell 'group8/buffer/layout''...
+[19:27:35.05] /m Information: "Starting netlisting for design "group8/buffer/schematic"..." (NETLISTING-010)
+[19:27:35.31] /m Information: 
+[19:27:35.31] /o Checking "group8/buffer/schematic"
+[19:27:35.31] /o No rule violations found in "group8/buffer/schematic"
+[19:27:35.31] /o No Design Integrity rule violations found in "group8/buffer/schematic"
+[19:27:36.14] /m Information: "Netlisting design "group8/buffer/schematic" finished successfully." (NETLISTING-012)
+[19:27:40.65] /m Information: "PVE Stream Export finished successfully with 0 error, 0 warning." (DATA_IO_COMMANDS-002)
+[19:27:40.65] /m Information: Starting IC Validator 'LVS' verification job on Stream cell: buffer
+[19:27:41.93] /r giWindowId 6
+[19:27:41.95] /r giWindowGeometry 800x600
+[19:28:18.66] /m Information: 
+              /c =============================
+              /c JobID: icv_lvs_14
+              /c --- ERROR SUMMARY -----------
+              /c LVS Device Extraction Error Summary
+              /c 1 total rule was run.
+              /c 0 rules NOT EXECUTED.
+              /c 0 rules have violations.
+              /c There are 0 total violations.
+              /c Refer to buffer.LAYOUT_ERRORS
+              /c =============================
+              /c 
+[19:28:26.82] /r giWindowId 7
+[19:28:26.85] /r giWindowGeometry 1632x972
+[19:28:31.14] /m Information: Connection closed with 'IC Validator VUE' running on 'hydra12.ece.ncsu.edu'.
+[19:28:33.34] /i gi::executeAction {deSaveDesign} -in [gi::getWindows 4]
+[19:28:33.41] /m Information: Saving design 'group8 buffer layout'. (DESIGN_WINDOW-004)
+[19:28:41.22] /i gi::executeAction {giCloseWindow} -in [gi::getWindows 4]
+[19:28:42.34] /i gi::setActiveWindow 6
+[19:28:42.34] /i gi::setActiveWindow 6 -raise true
+[19:28:44.29] /i gi::executeAction {giCloseWindow} -in [gi::getWindows 6]
+[19:28:48.84] /i gi::executeAction {giCloseWindow} -in [gi::getWindows 7]
+[19:28:49.81] /i gi::setActiveWindow 5
+[19:28:49.81] /i gi::setActiveWindow 5 -raise true
+[19:28:55.87] /i gi::executeAction {giCloseWindow} -in [gi::getWindows 5]
+[19:28:59.11] /i gi::setCurrentIndex {cells} -index {buffer_highdrive} -in [gi::getWindows 2]
+[19:28:59.86] /i gi::setItemSelection {cells} -index {buffer_highdrive} -in [gi::getWindows 2]
+[19:29:01.13] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 2]
+[19:29:01.17] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[19:29:01.32] /r giWindowId 8
+[19:29:01.32] /r giWindowGeometry 1632x972
+[19:29:03.84] /# gi::executeAction {deSelectActive} -in [gi::getWindows 8]
+[19:29:03.84] /i de::deselectAll [db::getNext [de::getContexts -window 8]]
+[19:29:03.84] /i de::select [de::getActiveFigure [gi::getWindows 8] -point {3.3625 3.19375} -index 0 -intent none]
+[19:29:03.84] /o oa:0x3f577c60
+[19:29:04.94] /i gi::executeAction {sePropertyEditorToggle} -in [gi::getWindows 8]
+[19:29:04.94] /# db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 8]] -value false
+[19:29:06.42] /i gi::executeAction {sePropertyEditorToggle} -in [gi::getWindows 8]
+[19:29:06.42] /# db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 8]] -value true
+[19:29:09.72] /# gi::executeAction {deSelectActive} -in [gi::getWindows 8]
+[19:29:09.72] /i de::deselectAll [db::getNext [de::getContexts -window 8]]
+[19:29:09.72] /i de::select [de::getActiveFigure [gi::getWindows 8] -point {4.31875 3.18125} -index 0 -intent none]
+[19:29:09.72] /o oa:0x40644880
+[19:29:11.95] /# gi::executeAction {deSelectActive} -in [gi::getWindows 8]
+[19:29:11.95] /i de::deselectAll [db::getNext [de::getContexts -window 8]]
+[19:29:11.95] /i de::select [de::getActiveFigure [gi::getWindows 8] -point {3.33125 2.45} -index 0 -intent none]
+[19:29:11.95] /o oa:0x3f821910
+[19:29:16.42] /# gi::executeAction {deSelectActive} -in [gi::getWindows 8]
+[19:29:16.42] /i de::deselectAll [db::getNext [de::getContexts -window 8]]
+[19:29:16.42] /i de::select [de::getActiveFigure [gi::getWindows 8] -point {4.44375 2.44375} -index 0 -intent none]
+[19:29:16.42] /o oa:0x3d955950
+[19:29:25.56] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 8]
+[19:29:28.27] /i db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 8]] -value false
+[19:29:29.30] /i gi::setActiveWindow 2
+[19:29:29.30] /i gi::setActiveWindow 2 -raise true
+[19:29:32.80] /i gi::setCurrentIndex {cells} -index {invx4} -in [gi::getWindows 2]
+[19:29:33.49] /i gi::setItemSelection {cells} -index {invx4} -in [gi::getWindows 2]
+[19:29:35.97] /i gi::setCurrentIndex {cells} -index {buffer} -in [gi::getWindows 2]
+[19:29:36.53] /i gi::setItemSelection {cells} -index {buffer} -in [gi::getWindows 2]
+[19:29:37.71] /i gi::setCurrentIndex {cells} -index {buffer_highdrive} -in [gi::getWindows 2]
+[19:29:38.31] /i gi::setItemSelection {cells} -index {buffer_highdrive} -in [gi::getWindows 2]
+[19:29:39.50] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 2]
+[19:29:39.51] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[19:29:39.53] /r giWindowId 9
+[19:29:39.55] /r giWindowGeometry 1632x972
+[19:29:41.81] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 9]
+[19:29:42.57] /i gi::executeAction {deCanvasDragSelect} -in [gi::getWindows 9]
+[19:29:42.57] /r deCanvasDragStart 2.825 3.95
+[19:29:43.89] /# gi::executeAction {deCanvasDragEnd} -in [gi::getWindows 9]
+[19:29:43.89] /i gi::executeAction deCanvasDragEnd -in [gi::getWindows 9]
+[19:29:43.89] /r deCanvasDragEnd 4.8 1.58125
+[19:29:45.94] /# gi::executeAction {seDelete} -in [gi::getWindows 9]
+[19:29:45.95] /i ise::delete
+[19:29:47.62] /# gi::executeAction {seCreateInst} -in [gi::getWindows 9]
+[19:29:47.62] /i ise::createInst
+[19:29:47.67] /i gi::setField {parametersExpand} -value {false} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 9]]
+[19:29:47.67] /i gi::setField {parametersExpand} -value {true} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 9]]
+[19:29:47.95] /i gi::setActiveDialog [gi::getDialogs {seCreateInst} -parent [gi::getWindows 9]]
+[19:29:48.35] /i db::setAttr geometry -of [gi::getDialogs {seCreateInst} -parent [gi::getWindows 9]] -value 465x610+8+31
+[19:29:50.44] /i gi::setField {parametersExpand} -value {false} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 9]]
+[19:29:50.44] /i gi::setField {parametersExpand} -value {true} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 9]]
+[19:29:50.44] /i gi::setField {instMasterLib} -value {group8} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 9]]
+[19:29:53.71] /i gi::setField {parametersExpand} -value {false} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 9]]
+[19:29:53.71] /i gi::setField {parametersExpand} -value {true} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 9]]
+[19:29:53.75] /i gi::setField {instMasterCell} -value {invx4} -in [gi::getDialogs {seCreateInst} -parent [gi::getWindows 9]]
+[19:29:56.23] /i db::setAttr geometry -of [gi::getDialogs {seCreateInst} -parent [gi::getWindows 9]] -value 465x610+1576+416
+[19:29:58.09] /# gi::executeAction {deAddPoint} -in [gi::getWindows 9]
+[19:29:58.09] /i de::addPoint {3.06875 2.79375} -context [db::getNext [de::getContexts -window 9]]
+[19:29:59.81] /# gi::executeAction {deAddPoint} -in [gi::getWindows 9]
+[19:29:59.81] /i de::addPoint {3.7125 2.80625} -context [db::getNext [de::getContexts -window 9]]
+[19:30:00.94] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 9]
+[19:30:00.94] /i de::abortCommand -context [db::getNext [de::getContexts -window 9]]
+[19:30:01.82] /# gi::executeAction {seSchCreateWire} -in [gi::getWindows 9]
+[19:30:01.82] /i ise::createWire
+[19:30:08.02] /# gi::executeAction {deAddPoint} -in [gi::getWindows 9]
+[19:30:08.02] /i de::addPoint {4.3125 2.80625} -context [db::getNext [de::getContexts -window 9]]
+[19:30:08.17] /i de::setCursor -point {4.375 2.8125 }
+[19:30:09.39] /# gi::executeAction {deAddPoint} -in [gi::getWindows 9]
+[19:30:09.39] /i de::addPoint {4.45 2.8125} -context [db::getNext [de::getContexts -window 9]]
+[19:30:11.19] /# gi::executeAction {seSchCheckAndSave} -in [gi::getWindows 9]
+[19:30:11.19] /i  ::startup::_checkAndSave 
+[19:30:11.77] /m Information: 
+              /c Cross view checking for group8/buffer_highdrive/symbol with group8/buffer_highdrive/schematic
+              /c No violations found. (DE_EDIT-007)
+[19:30:11.86] /m Information: 
+[19:30:11.86] /o Checking "group8/buffer_highdrive/schematic"
+[19:30:11.86] /o No rule violations found in "group8/buffer_highdrive/schematic"
+[19:30:11.86] /m Information: Checking process is completed: marking the design violations
+[19:30:12.51] /m Information: Marking of designs is completed
+[19:30:15.64] /i db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 9]] -value false
+[19:30:18.36] /# gi::executeAction {seSchCheckAndSave} -in [gi::getWindows 9]
+[19:30:18.36] /i  ::startup::_checkAndSave 
+[19:30:18.54] /m Information: 
+              /c Cross view checking for group8/buffer_highdrive/symbol with group8/buffer_highdrive/schematic
+              /c No violations found. (DE_EDIT-007)
+[19:30:18.58] /m Information: 
+[19:30:18.58] /o Checking "group8/buffer_highdrive/schematic"
+[19:30:18.58] /o No rule violations found in "group8/buffer_highdrive/schematic"
+[19:30:18.58] /m Information: Checking process is completed: marking the design violations
+[19:30:18.58] /m Information: Marking of designs is completed
+[19:30:20.68] /i gi::pressButton {ConsoleToggleButton} -in [db::getAttr statusbar -of [gi::getWindows 9]]
+[19:30:24.95] /i gi::executeAction {giCloseWindow} -in [gi::getWindows 9]
+[19:30:29.15] /i gi::setItemSelection {views} -index {} -in [gi::getWindows 2]
+[19:30:31.38] /i gi::setActiveWindow 8
+[19:30:31.38] /i gi::setActiveWindow 8 -raise true
+[19:30:38.79] /i gi::executeAction {giCloseWindow} -in [gi::getWindows 8]
+[19:30:40.98] /i gi::setCurrentIndex {cells} -index {buffer} -in [gi::getWindows 2]
+[19:30:41.31] /i gi::setItemSelection {cells} -index {buffer} -in [gi::getWindows 2]
+[19:30:42.75] /i gi::setCurrentIndex {cells} -index {buffer_highdrive} -in [gi::getWindows 2]
+[19:30:43.10] /i gi::setItemSelection {cells} -index {buffer_highdrive} -in [gi::getWindows 2]
+[19:30:50.07] /i gi::executeAction {dmShowNewCellView} -in [gi::getWindows 2]
+[19:30:50.43] /i gi::setActiveDialog [gi::getDialogs {dmNewCellView} -parent [gi::getWindows 2]]
+[19:30:50.60] /i db::setAttr geometry -of [gi::getDialogs {dmNewCellView} -parent [gi::getWindows 2]] -value 588x269+656+353
+[19:30:53.38] /i gi::setField {cellViewName} -value {layout} -in [gi::getDialogs {dmNewCellView} -parent [gi::getWindows 2]]
+[19:30:54.65] /i gi::pressButton {ok} -in [gi::getDialogs {dmNewCellView} -parent [gi::getWindows 2]]
+[19:30:54.69] /# db::getAttr viewType -of [dm::findCellView layout -cell [dm::findCell buffer\_highdrive -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] group8]]]]
+[19:30:54.70] /# dm::createCellView layout -cell [dm::findCell buffer\_highdrive -lib [ oa::LibFind [oa::ScalarName [oa::CdbaNS] group8]]] -viewType maskLayout
+[19:30:54.74] /# de::open [dm::findCellView layout -cell [dm::findCell buffer\_highdrive -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] group8]]]] -application leLayout
+[19:30:55.04] /r giWindowId 10
+[19:30:55.04] /r giWindowGeometry 1632x972
+[19:30:56.90] /# gi::executeAction {leInstance} -in [gi::getWindows 10]
+[19:30:56.90] /i ile::createInst
+[19:31:02.04] /i gi::setField {instLCVCell} -value {invx4} -in [gi::getToolbars {deCommandOptions} -from [gi::getWindows 10]]
+[19:31:04.65] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:31:04.65] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.0015 -0.004}
+[19:31:05.11] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:31:05.11] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.0015 -0.003}
+[19:31:08.10] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[19:31:08.10] /i de::addPoint {-0.006 0} -context [db::getNext [de::getContexts -window 10]]
+[19:31:08.84] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:31:08.84] /i de::fit -window 10 -fitView true
+[19:31:11.36] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:31:11.36] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2305 0.001}
+[19:31:13.14] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[19:31:13.14] /i de::addPoint {0.231 0} -context [db::getNext [de::getContexts -window 10]]
+[19:31:13.87] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:31:13.87] /i de::fit -window 10 -fitView true
+[19:31:14.53] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 10]
+[19:31:14.53] /i de::abortCommand -context [db::getNext [de::getContexts -window 10]]
+[19:31:15.43] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 10]
+[19:31:15.43] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 10]]
+[19:31:16.77] /# gi::executeAction {deSelectActive} -in [gi::getWindows 10]
+[19:31:16.77] /i de::deselectAll [db::getNext [de::getContexts -window 10]]
+[19:31:16.77] /i de::select [de::getActiveFigure [gi::getWindows 10] -point {0.3035 0.0985} -index 0 -intent none]
+[19:31:16.78] /o oa:0x3d6fcc10
+[19:31:17.87] /# gi::executeAction {leStartStretchDrag} -in [gi::getWindows 10]
+[19:31:17.87] /i layout_editor::directStretch [de::getActiveFigure [gi::getWindows 10] -point {0.3035 0.0985} -index 0 -intent none] 10
+[19:31:17.87] /i ile::stretch -point {0.3035 0.0985}
+[19:31:19.40] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:31:19.40] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2685 0.097}
+[19:31:27.12] /# gi::executeAction {deEndDrag} -in [gi::getWindows 10]
+[19:31:27.12] /i de::endDrag {0.2765 0.1005} -context [db::getNext [de::getContexts -window 10]]
+[19:31:28.02] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:31:28.02] /i de::fit -window 10 -fitView true
+[19:31:28.76] /# gi::executeAction {deSelectActive} -in [gi::getWindows 10]
+[19:31:28.76] /i de::deselectAll [db::getNext [de::getContexts -window 10]]
+[19:31:29.02] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:31:29.28] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:31:29.46] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:31:29.59] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:31:29.74] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:31:29.91] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:31:43.77] /# gi::executeAction {leInstance} -in [gi::getWindows 10]
+[19:31:43.77] /i ile::createInst
+[19:31:46.43] /i gi::setField {instLCVLib} -value {NCSU_TechLib_FreePDK3} -in [gi::getToolbars {deCommandOptions} -from [gi::getWindows 10]]
+[19:31:50.71] /i gi::setField {instLCVCell} -value {M0B_M1} -in [gi::getToolbars {deCommandOptions} -from [gi::getWindows 10]]
+[19:31:51.97] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:31:51.97] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.181 0.0975}
+[19:31:52.05] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:31:52.05] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.181 0.0975}
+[19:31:55.53] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:31:55.53] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.1815 0.098}
+[19:32:02.99] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[19:32:02.99] /i de::addPoint {0.1815 0.0985} -context [db::getNext [de::getContexts -window 10]]
+[19:32:03.92] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:32:03.92] /i de::fit -window 10 -fitView true
+[19:32:08.23] /# gi::executeAction {deUndo} -in [gi::getWindows 10]
+[19:32:08.23] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 10]]]
+[19:32:11.04] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:32:11.04] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.161 0.0705}
+[19:32:11.15] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:32:11.15] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.161 0.0705}
+[19:32:11.29] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:32:11.29] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.161 0.0705}
+[19:32:13.83] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[19:32:13.83] /i de::addPoint {0.1605 0.07} -context [db::getNext [de::getContexts -window 10]]
+[19:32:15.19] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:32:15.19] /i de::fit -window 10 -fitView true
+[19:32:17.80] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:32:17.80] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2645 0.101}
+[19:32:17.98] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:32:17.98] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2645 0.101}
+[19:32:18.16] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:32:18.16] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2645 0.101}
+[19:32:29.16] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[19:32:29.16] /i de::addPoint {0.2655 0.0985} -context [db::getNext [de::getContexts -window 10]]
+[19:32:30.54] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:32:30.54] /i de::fit -window 10 -fitView true
+[19:32:31.45] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 10]
+[19:32:31.45] /i de::abortCommand -context [db::getNext [de::getContexts -window 10]]
+[19:32:32.69] /# gi::setItemSelection {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:32:32.69] /# gi::setCurrentIndex {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:32:32.84] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:32:32.84] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "M0B drawing"} -from [de::getActiveContext] ] -value false
+[19:32:35.88] /# gi::setItemSelection {lpps} -index {M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:32:35.88] /# gi::setCurrentIndex {lpps} -index {M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:32:35.96] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:32:35.96] /i de::setActiveLPP [de::getLPPs {M1 drawing} -from [oa::DesignFind group8 buffer_highdrive layout]]
+[19:32:36.72] /# gi::executeAction {leRectangle} -in [gi::getWindows 10]
+[19:32:37.44] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:32:37.45] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.1575 0.072}
+[19:32:37.55] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:32:37.55] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.1575 0.072}
+[19:32:39.03] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[19:32:42.86] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:32:42.86] /i de::fit -window 10 -fitView true
+[19:32:45.33] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:32:45.33] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2285 0.058}
+[19:32:45.43] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:32:45.43] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2285 0.058}
+[19:32:46.45] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:32:46.45] /i de::fit -window 10 -fitView true
+[19:32:47.46] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:32:47.46] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2305 0.0635}
+[19:32:47.61] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:32:47.61] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2305 0.0635}
+[19:32:48.18] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 10]
+[19:32:48.18] /i de::zoom -window [gi::getWindows 10] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.2305 0.0635}
+[19:32:49.97] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:32:49.97] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2305 0.0625}
+[19:32:51.03] /# gi::executeAction {deCanvasPanWest} -in [gi::getWindows 10]
+[19:32:51.03] /i de::pan -window [gi::getWindows 10] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[19:32:54.34] /# gi::executeAction {deCanvasPanEast} -in [gi::getWindows 10]
+[19:32:54.34] /i de::pan -window [gi::getWindows 10] -direction E -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[19:32:58.71] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[19:32:58.71] /i le::createRectangle {{0.1535 0.063} {0.231 0.0775}} -design [ed] -lpp {M1 drawing} 
+[19:33:00.63] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[19:33:01.47] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:33:01.47] /i de::fit -window 10 -fitView true
+[19:33:02.82] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:33:02.82] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.232 0.117}
+[19:33:02.95] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:33:02.95] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.232 0.117}
+[19:33:04.51] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:33:04.51] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2325 0.1055}
+[19:33:09.13] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[19:33:09.13] /i le::createRectangle {{0.216 0.063} {0.231 0.106}} -design [ed] -lpp {M1 drawing} 
+[19:33:09.98] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:33:09.98] /i de::fit -window 10 -fitView true
+[19:33:10.99] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:33:10.99] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.262 0.099}
+[19:33:11.07] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:33:11.07] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.262 0.099}
+[19:33:13.65] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[19:33:17.90] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[19:33:17.90] /i le::createRectangle {{0.216 0.091} {0.2725 0.106}} -design [ed] -lpp {M1 drawing} 
+[19:33:19.15] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:33:19.15] /i de::fit -window 10 -fitView true
+[19:33:20.54] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 10]
+[19:33:22.46] /# gi::setItemSelection {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:33:22.46] /# gi::setCurrentIndex {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:33:22.61] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:33:22.61] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "M0B drawing"} -from [de::getActiveContext] ] -value true
+[19:33:27.49] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:33:27.49] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.067 0.107}
+[19:33:27.63] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:33:27.63] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.067 0.107}
+[19:33:27.83] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:33:27.83] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.067 0.107}
+[19:33:28.36] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 10]
+[19:33:28.36] /i de::zoom -window [gi::getWindows 10] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.067 0.107}
+[19:33:30.11] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:33:34.48] /# gi::executeAction {lePin} -in [gi::getWindows 10]
+[19:33:34.48] /i ile::createPin
+[19:33:34.87] /i gi::setActiveDialog [gi::getDialogs {leCreatePin} -parent [gi::getWindows 10]]
+[19:33:35.27] /i db::setAttr geometry -of [gi::getDialogs {leCreatePin} -parent [gi::getWindows 10]] -value 554x439+954+148
+[19:33:40.15] /i gi::setField {termName} -value {in\ out} -in [gi::getDialogs {leCreatePin} -parent [gi::getWindows 10]]
+[19:33:40.20] /i gi::setField {pinLabel} -value {true} -in [gi::getDialogs {leCreatePin} -parent [gi::getWindows 10]]
+[19:33:41.41] /i gi::setField {lePinLabelTypeText} -value {true} -in [gi::getDialogs {leCreatePin} -parent [gi::getWindows 10]]
+[19:33:45.91] /i gi::setField {textHeight} -value {0.02} -in [gi::getDialogs {leCreatePin} -parent [gi::getWindows 10]]
+[19:33:48.95] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:33:48.95] /i de::setActiveLPP [de::getLPPs {M0B drawing} -from [oa::DesignFind group8 buffer_highdrive layout]]
+[19:33:50.23] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:33:50.23] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.074 0.0995}
+[19:33:52.58] /# gi::executeAction {deStartDrag} -in [gi::getWindows 10]
+[19:33:52.58] /i de::startDrag {0.073 0.1015} -context [db::getNext [de::getContexts -window 10]]
+[19:33:55.10] /# gi::executeAction {deEndDrag} -in [gi::getWindows 10]
+[19:33:55.10] /i de::endDrag {0.0795 0.0965} -context [db::getNext [de::getContexts -window 10]]
+[19:33:56.24] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:33:56.24] /i de::fit -window 10 -fitView true
+[19:34:00.05] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:34:00.05] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2905 0.0745}
+[19:34:00.27] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:34:00.27] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2905 0.0745}
+[19:34:01.36] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:34:01.36] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2845 0.072}
+[19:34:03.57] /# gi::executeAction {deStartDrag} -in [gi::getWindows 10]
+[19:34:03.57] /i de::startDrag {0.2835 0.0725} -context [db::getNext [de::getContexts -window 10]]
+[19:34:07.56] /# gi::executeAction {deEndDrag} -in [gi::getWindows 10]
+[19:34:07.56] /i de::endDrag {0.2905 0.066} -context [db::getNext [de::getContexts -window 10]]
+[19:34:08.46] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:34:08.46] /i de::fit -window 10 -fitView true
+[19:34:09.39] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 10]
+[19:34:09.39] /i de::abortCommand -context [db::getNext [de::getContexts -window 10]]
+[19:34:10.90] /i gi::executeAction {deSaveDesign} -in [gi::getWindows 10]
+[19:34:10.98] /m Information: Saving design 'group8 buffer_highdrive layout'. (DESIGN_WINDOW-004)
+[19:34:14.46] /# gi::executeAction {xtDRCSetup} -in [gi::getWindows 10]
+[19:34:14.46] /i xt::showDRCSetup -job drc -window 10
+[19:34:15.21] /m Information: No Control Variables file found in pdk.xml, nor Control Variables preference has been set, switching to New Control Variables table format.
+[19:34:16.10] /i db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 10]] -value 665x600+876+367
+[19:34:16.51] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 10]]
+[19:34:16.97] /# xt::physicalVerification::executePve drc 10 xtDRCExecutePve
+[19:34:19.30] /m Information: Starting 'Stream Export of OA cell 'group8/buffer_highdrive/layout''...
+[19:34:24.34] /m Information: "PVE Stream Export finished successfully with 0 error, 0 warning." (DATA_IO_COMMANDS-002)
+[19:34:24.34] /m Information: Starting IC Validator 'DRC' verification job on Stream cell: buffer_highdrive
+[19:34:25.43] /r giWindowId 11
+[19:34:25.45] /r giWindowGeometry 800x600
+[19:34:34.51] /i gi::setActiveWindow 10
+[19:34:34.51] /i gi::setActiveWindow 10 -raise true
+[19:34:38.68] /i gi::setActiveWindow 11
+[19:34:38.68] /i gi::setActiveWindow 11 -raise true
+[19:34:41.64] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_161
+              /c --- ERROR SUMMARY -----------
+              /c Rule and DRC Error Summary
+              /c 317 total rules were run.
+              /c 3 rules NOT EXECUTED.
+              /c 1 rule has violations.
+              /c There is 1 total violation.
+              /c Refer to buffer_highdrive.LAYOUT_ERRORS
+              /c =============================
+              /c 
+[19:35:00.79] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:35:00.79] /i de::fit -window 10 -fitView true
+[19:35:04.70] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:35:04.70] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.155 0.065}
+[19:35:04.82] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:35:04.82] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.155 0.065}
+[19:35:05.23] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:35:05.23] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.155 0.065}
+[19:35:13.98] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:35:13.98] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.165 0.0675}
+[19:35:15.79] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 10]
+[19:35:15.79] /i de::zoom -window [gi::getWindows 10] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.165 0.0675}
+[19:35:27.20] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:35:27.20] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "M0B drawing"} -from [de::getActiveContext] ] -value false
+[19:35:32.73] /# gi::setItemSelection {lpps} -index {GCON drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:35:32.73] /# gi::setCurrentIndex {lpps} -index {GCON drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:35:32.87] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:35:32.87] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "GCON drawing"} -from [de::getActiveContext] ] -value false
+[19:35:33.30] /# gi::setItemSelection {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:35:33.30] /# gi::setCurrentIndex {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:35:33.44] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:35:33.44] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "V0A drawing"} -from [de::getActiveContext] ] -value false
+[19:35:37.03] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:35:38.94] /# gi::setItemSelection {lpps} -index {V0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:35:38.94] /# gi::setCurrentIndex {lpps} -index {V0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:35:39.01] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:35:39.01] /i de::setActiveLPP [de::getLPPs {V0B drawing} -from [oa::DesignFind group8 buffer_highdrive layout]]
+[19:35:42.85] /# gi::executeAction {leStartStretchDrag} -in [gi::getWindows 10]
+[19:35:42.85] /i layout_editor::directStretch [de::getActiveFigure [gi::getWindows 10] -point {0.1665 0.071} -index 0 -intent none] 10
+[19:35:42.86] /i db::setPrefValue deSelectMode -value Replace -scope [db::getScopes [db::getNext [de::getContexts -window 10]]]; ide::selectByRegion -region rectangle -point {0.1665 0.071} 
+[19:35:43.39] /# gi::executeAction {deEndDrag} -in [gi::getWindows 10]
+[19:35:43.39] /i de::endDrag {0.167 0.071} -context [db::getNext [de::getContexts -window 10]]
+[19:35:43.90] /# gi::executeAction {deSelectActive} -in [gi::getWindows 10]
+[19:35:43.90] /i de::deselectAll [db::getNext [de::getContexts -window 10]]
+[19:35:43.90] /i de::select [de::getActiveFigure [gi::getWindows 10] -point {0.165 0.0705} -index 0 -intent none]
+[19:35:43.90] /o oa:0x3ed791d0
+[19:35:44.51] /# gi::executeAction {leStartStretchDrag} -in [gi::getWindows 10]
+[19:35:44.51] /i layout_editor::directStretch [de::getActiveFigure [gi::getWindows 10] -point {0.165 0.0705} -index 0 -intent none] 10
+[19:35:44.51] /i ile::stretch -point {0.165 0.0705}
+[19:35:52.80] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:35:52.80] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.165 0.071}
+[19:35:54.23] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:35:54.23] /i de::fit -window 10 -fitView true
+[19:35:56.10] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:35:56.10] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.166 0.0685}
+[19:35:56.32] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:35:56.32] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.166 0.0685}
+[19:36:00.68] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:36:00.68] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.165 0.0705}
+[19:36:03.73] /# gi::executeAction {deEndDrag} -in [gi::getWindows 10]
+[19:36:03.73] /i de::endDrag {0.165 0.0705} -context [db::getNext [de::getContexts -window 10]]
+[19:36:07.69] /# gi::executeAction {deUndo} -in [gi::getWindows 10]
+[19:36:07.69] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 10]]]
+[19:36:09.33] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:36:09.33] /i de::fit -window 10 -fitView true
+[19:36:10.61] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:36:11.45] /# gi::executeAction {deSelectActive} -in [gi::getWindows 10]
+[19:36:11.45] /i de::deselectAll [db::getNext [de::getContexts -window 10]]
+[19:36:13.11] /# gi::setItemSelection {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:36:13.11] /# gi::setCurrentIndex {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:36:13.26] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:36:13.26] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "V0A drawing"} -from [de::getActiveContext] ] -value true
+[19:36:13.80] /# gi::setItemSelection {lpps} -index {GCON drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:36:13.80] /# gi::setCurrentIndex {lpps} -index {GCON drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:36:13.93] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:36:13.93] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "GCON drawing"} -from [de::getActiveContext] ] -value true
+[19:36:14.37] /# gi::setItemSelection {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:36:14.37] /# gi::setCurrentIndex {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:36:14.47] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:36:14.47] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "M0B drawing"} -from [de::getActiveContext] ] -value true
+[19:36:21.11] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:36:21.11] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.1585 0.0705}
+[19:36:21.36] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:36:21.36] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.1585 0.0705}
+[19:36:22.31] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:36:22.31] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.1585 0.0705}
+[19:36:31.12] /# gi::setItemSelection {lpps} -index {GCON drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:36:31.12] /# gi::setCurrentIndex {lpps} -index {GCON drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:36:31.19] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:36:31.19] /i de::setActiveLPP [de::getLPPs {GCON drawing} -from [oa::DesignFind group8 buffer_highdrive layout]]
+[19:36:31.59] /# gi::setItemSelection {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:36:31.59] /# gi::setCurrentIndex {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:36:31.67] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:36:31.67] /i de::setActiveLPP [de::getLPPs {V0A drawing} -from [oa::DesignFind group8 buffer_highdrive layout]]
+[19:36:32.73] /# gi::setItemSelection {lpps} -index {V0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:36:32.73] /# gi::setCurrentIndex {lpps} -index {V0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:36:32.81] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:36:32.81] /i de::setActiveLPP [de::getLPPs {V0B drawing} -from [oa::DesignFind group8 buffer_highdrive layout]]
+[19:36:34.77] /# gi::executeAction {deSelectActive} -in [gi::getWindows 10]
+[19:36:34.77] /i de::deselectAll [db::getNext [de::getContexts -window 10]]
+[19:36:34.77] /i de::select [de::getActiveFigure [gi::getWindows 10] -point {0.1665 0.07} -index 0 -intent none]
+[19:36:34.77] /o oa:0x3f68e6d0
+[19:36:35.45] /# gi::executeAction {leStartStretchDrag} -in [gi::getWindows 10]
+[19:36:35.45] /i layout_editor::directStretch [de::getActiveFigure [gi::getWindows 10] -point {0.1665 0.07} -index 0 -intent none] 10
+[19:36:35.45] /i ile::stretch -point {0.1665 0.07}
+[19:36:50.19] /# gi::executeAction {deEndDrag} -in [gi::getWindows 10]
+[19:36:50.19] /i de::endDrag {0.1665 0.07} -context [db::getNext [de::getContexts -window 10]]
+[19:36:54.38] /# gi::setItemSelection {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:36:54.38] /# gi::setCurrentIndex {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:36:54.44] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:36:54.44] /i de::setActiveLPP [de::getLPPs {V0A drawing} -from [oa::DesignFind group8 buffer_highdrive layout]]
+[19:36:58.17] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:36:59.13] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:36:59.13] /i de::fit -window 10 -fitView true
+[19:36:59.96] /# gi::executeAction {deSelectActive} -in [gi::getWindows 10]
+[19:36:59.96] /i de::deselectAll [db::getNext [de::getContexts -window 10]]
+[19:37:01.00] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:37:01.00] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.157 0.071}
+[19:37:01.14] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:37:01.14] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.157 0.071}
+[19:37:02.96] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:37:03.54] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:37:03.54] /i de::fit -window 10 -fitView true
+[19:37:05.48] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:37:05.48] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.1525 0.0705}
+[19:37:05.58] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:37:05.58] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.1525 0.0705}
+[19:37:05.71] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:37:05.71] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.1525 0.0705}
+[19:37:07.57] /# gi::executeAction {deSelectActive} -in [gi::getWindows 10]
+[19:37:07.57] /i de::deselectAll [db::getNext [de::getContexts -window 10]]
+[19:37:07.57] /i de::select [de::getActiveFigure [gi::getWindows 10] -point {0.16 0.064} -index 0 -intent none]
+[19:37:07.57] /o oa:0x3c89a1a0
+[19:37:09.13] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:37:09.13] /i de::fit -window 10 -fitView true
+[19:37:10.03] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:37:10.54] /# gi::executeAction {deSelectActive} -in [gi::getWindows 10]
+[19:37:10.54] /i de::deselectAll [db::getNext [de::getContexts -window 10]]
+[19:37:16.66] /# gi::setItemSelection {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:37:16.66] /# gi::setCurrentIndex {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:37:16.83] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:37:16.83] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "M0B drawing"} -from [de::getActiveContext] ] -value false
+[19:37:18.66] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:37:18.66] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.155 0.0715}
+[19:37:18.74] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:37:18.74] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.155 0.0715}
+[19:37:18.90] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:37:18.90] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.155 0.0715}
+[19:37:23.39] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:37:23.39] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.166 0.0655}
+[19:37:23.98] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:37:23.98] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.166 0.066}
+[19:37:24.10] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:37:24.10] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.166 0.066}
+[19:37:25.32] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 10]
+[19:37:25.32] /i de::zoom -window [gi::getWindows 10] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.166 0.066}
+[19:37:25.83] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 10]
+[19:37:25.83] /i de::zoom -window [gi::getWindows 10] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.166 0.066}
+[19:37:26.76] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 10]
+[19:37:26.76] /i de::zoom -window [gi::getWindows 10] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.166 0.066}
+[19:37:33.54] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:37:33.54] /i de::fit -window 10 -fitView true
+[19:37:34.46] /# gi::executeAction {deSelectActive} -in [gi::getWindows 10]
+[19:37:36.32] /# gi::executeAction {deUndo} -in [gi::getWindows 10]
+[19:37:36.32] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 10]]]
+[19:37:36.59] /# gi::executeAction {deUndo} -in [gi::getWindows 10]
+[19:37:36.59] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 10]]]
+[19:37:37.09] /# gi::executeAction {deUndo} -in [gi::getWindows 10]
+[19:37:37.09] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 10]]]
+[19:37:37.46] /# gi::executeAction {deUndo} -in [gi::getWindows 10]
+[19:37:37.46] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 10]]]
+[19:37:38.08] /# gi::executeAction {deUndo} -in [gi::getWindows 10]
+[19:37:38.08] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 10]]]
+[19:37:38.47] /# gi::executeAction {deUndo} -in [gi::getWindows 10]
+[19:37:38.47] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 10]]]
+[19:37:38.77] /# gi::executeAction {deUndo} -in [gi::getWindows 10]
+[19:37:38.77] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 10]]]
+[19:37:39.23] /# gi::executeAction {deUndo} -in [gi::getWindows 10]
+[19:37:39.23] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 10]]]
+[19:37:40.36] /# gi::executeAction {deUndo} -in [gi::getWindows 10]
+[19:37:40.36] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 10]]]
+[19:37:44.06] /# gi::executeAction {deRedo} -in [gi::getWindows 10]
+[19:37:44.06] /i de::redoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 10]]]
+[19:37:44.87] /# gi::executeAction {deSelectActive} -in [gi::getWindows 10]
+[19:37:44.87] /i de::deselectAll [db::getNext [de::getContexts -window 10]]
+[19:37:45.31] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:37:50.38] /# gi::executeAction {xtDRCSetup} -in [gi::getWindows 10]
+[19:37:50.38] /i xt::showDRCSetup -job drc -window 10
+[19:37:51.10] /m Information: No Control Variables file found in pdk.xml, nor Control Variables preference has been set, switching to New Control Variables table format.
+[19:37:51.86] /i db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 10]] -value 665x600+876+367
+[19:37:52.51] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 10]]
+[19:37:52.93] /r giDialog gi::setActiveDialog [gi::getDialogs {xtShowDesignsPrompt}]
+[19:37:52.93] /r giDialog gi::setCurrentIndex {target} -index {0,0} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[19:37:53.09] /r giDialog db::setAttr geometry -of [gi::getDialogs {xtShowDesignsPrompt}] -value 564x289+668+356
+[19:37:54.65] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[19:37:55.09] /# xt::physicalVerification::executePve drc 10 xtDRCExecutePve
+[19:37:56.35] /m Information: Starting 'Stream Export of OA cell 'group8/buffer_highdrive/layout''...
+[19:38:00.54] /m Information: "PVE Stream Export finished successfully with 0 error, 0 warning." (DATA_IO_COMMANDS-002)
+[19:38:00.54] /m Information: Starting IC Validator 'DRC' verification job on Stream cell: buffer_highdrive
+[19:38:15.54] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_162
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[19:40:50.53] /i gi::setActiveWindow 10
+[19:40:50.53] /i gi::setActiveWindow 10 -raise true
+[19:40:53.88] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:40:53.88] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "M0B drawing"} -from [de::getActiveContext] ] -value true
+[19:40:55.09] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:40:55.35] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:40:55.55] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:40:55.76] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:40:55.98] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:40:56.19] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:40:57.40] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:40:57.40] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.1575 0.065}
+[19:40:57.54] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:40:57.54] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.1575 0.0655}
+[19:40:57.79] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:40:57.79] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.1575 0.0655}
+[19:41:03.14] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:41:03.14] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "M0B drawing"} -from [de::getActiveContext] ] -value false
+[19:41:05.19] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:41:05.19] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "M0B drawing"} -from [de::getActiveContext] ] -value true
+[19:41:05.92] /# gi::executeAction {leInstance} -in [gi::getWindows 10]
+[19:41:05.92] /i ile::createInst
+[19:41:12.43] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[19:41:12.43] /i de::addPoint {0.1605 0.07} -context [db::getNext [de::getContexts -window 10]]
+[19:41:15.90] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:41:15.90] /i de::fit -window 10 -fitView true
+[19:41:16.72] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 10]
+[19:41:16.72] /i de::abortCommand -context [db::getNext [de::getContexts -window 10]]
+[19:41:20.60] /# gi::executeAction {xtDRCSetup} -in [gi::getWindows 10]
+[19:41:20.60] /i xt::showDRCSetup -job drc -window 10
+[19:41:21.26] /m Information: No Control Variables file found in pdk.xml, nor Control Variables preference has been set, switching to New Control Variables table format.
+[19:41:21.99] /i db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 10]] -value 665x600+876+367
+[19:41:22.59] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 10]]
+[19:41:22.94] /r giDialog gi::setActiveDialog [gi::getDialogs {xtShowDesignsPrompt}]
+[19:41:22.94] /r giDialog gi::setCurrentIndex {target} -index {0,0} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[19:41:23.13] /r giDialog db::setAttr geometry -of [gi::getDialogs {xtShowDesignsPrompt}] -value 564x289+668+356
+[19:41:23.87] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[19:41:24.22] /# xt::physicalVerification::executePve drc 10 xtDRCExecutePve
+[19:41:26.32] /m Information: Starting 'Stream Export of OA cell 'group8/buffer_highdrive/layout''...
+[19:41:29.93] /m Information: "PVE Stream Export finished successfully with 0 error, 0 warning." (DATA_IO_COMMANDS-002)
+[19:41:29.93] /m Information: Starting IC Validator 'DRC' verification job on Stream cell: buffer_highdrive
+[19:41:42.93] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_163
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[19:42:19.91] /i gi::setActiveWindow 10
+[19:42:19.91] /i gi::setActiveWindow 10 -raise true
+[19:42:21.77] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:42:24.33] /# gi::executeAction {leInstance} -in [gi::getWindows 10]
+[19:42:24.33] /i ile::createInst
+[19:42:27.70] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:42:27.70] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.264 0.1005}
+[19:42:27.78] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:42:27.78] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.264 0.1005}
+[19:42:27.97] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:42:27.97] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.264 0.1005}
+[19:42:41.93] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[19:42:41.93] /i de::addPoint {0.2655 0.0985} -context [db::getNext [de::getContexts -window 10]]
+[19:42:43.04] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:42:43.04] /i de::fit -window 10 -fitView true
+[19:42:44.12] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 10]
+[19:42:44.12] /i de::abortCommand -context [db::getNext [de::getContexts -window 10]]
+[19:42:45.12] /# gi::executeAction {leRuler} -in [gi::getWindows 10]
+[19:42:45.12] /i ile::createRuler
+[19:42:45.99] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:42:45.99] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.263 0.1185}
+[19:42:46.07] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:42:46.07] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.263 0.1185}
+[19:42:46.21] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:42:46.21] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.263 0.1185}
+[19:42:47.25] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:42:47.25] /i de::fit -window 10 -fitView true
+[19:42:48.37] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:42:48.37] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2655 0.106}
+[19:42:48.46] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:42:48.46] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2655 0.106}
+[19:42:48.58] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:42:48.58] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2655 0.106}
+[19:42:52.94] /# gi::setItemSelection {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:42:52.94] /# gi::setCurrentIndex {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:42:53.10] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:42:53.10] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "V0A drawing"} -from [de::getActiveContext] ] -value false
+[19:42:54.40] /# gi::setItemSelection {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:42:54.40] /# gi::setCurrentIndex {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:42:54.55] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:42:54.55] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "M0B drawing"} -from [de::getActiveContext] ] -value false
+[19:42:55.16] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:42:55.16] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "M0B drawing"} -from [de::getActiveContext] ] -value true
+[19:42:56.64] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:42:56.64] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "M0B drawing"} -from [de::getActiveContext] ] -value false
+[19:43:00.39] /# gi::executeAction {leRuler} -in [gi::getWindows 10]
+[19:43:00.39] /i ile::createRuler
+[19:43:01.37] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[19:43:01.37] /i de::addPoint {0.2585 0.106} -context [db::getNext [de::getContexts -window 10]]
+[19:43:02.80] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:43:02.80] /i de::fit -window 10 -fitView true
+[19:43:04.59] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:43:04.59] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2165 0.103}
+[19:43:04.74] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:43:04.74] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2165 0.103}
+[19:43:06.17] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[19:43:06.17] /i de::addPoint {0.216 0.103} -context [db::getNext [de::getContexts -window 10]]
+[19:43:06.98] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:43:06.98] /i de::fit -window 10 -fitView true
+[19:43:08.94] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 10]
+[19:43:08.94] /i de::abortCommand -context [db::getNext [de::getContexts -window 10]]
+[19:43:11.15] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:43:11.15] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.1595 0.073}
+[19:43:11.40] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:43:11.40] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.1595 0.073}
+[19:43:14.36] /# gi::setItemSelection {lpps} -index {M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:43:14.36] /# gi::setCurrentIndex {lpps} -index {M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:43:14.41] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:43:14.41] /i de::setActiveLPP [de::getLPPs {M1 drawing} -from [oa::DesignFind group8 buffer_highdrive layout]]
+[19:43:16.42] /# gi::executeAction {leRectangle} -in [gi::getWindows 10]
+[19:43:18.06] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:43:18.06] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.1535 0.077}
+[19:43:19.24] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[19:43:23.07] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:43:23.07] /i de::fit -window 10 -fitView true
+[19:43:24.96] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:43:24.96] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2315 0.063}
+[19:43:25.22] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:43:25.22] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2315 0.063}
+[19:43:26.51] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:43:26.51] /i de::fit -window 10 -fitView true
+[19:43:28.18] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:43:28.18] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.226 0.061}
+[19:43:29.88] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:43:29.88] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.225 0.063}
+[19:43:30.70] /# gi::executeAction {deCanvasPanWest} -in [gi::getWindows 10]
+[19:43:30.70] /i de::pan -window [gi::getWindows 10] -direction W -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[19:43:36.27] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:43:36.27] /i de::fit -window 10 -fitView true
+[19:43:40.06] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:43:40.06] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2085 0.0645}
+[19:43:40.28] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:43:40.28] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2085 0.0645}
+[19:44:03.16] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[19:44:03.16] /i le::createRectangle {{0.1535 0.0625} {0.231 0.0775}} -design [ed] -lpp {M1 drawing} 
+[19:44:06.32] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[19:44:10.65] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:44:10.65] /i de::fit -window 10 -fitView true
+[19:44:14.63] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:44:14.63] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2295 0.1065}
+[19:44:14.92] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:44:14.92] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2295 0.1065}
+[19:44:16.14] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:44:16.14] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2305 0.1055}
+[19:44:18.51] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[19:44:18.51] /i le::createRectangle {{0.216 0.0625} {0.231 0.106}} -design [ed] -lpp {M1 drawing} 
+[19:44:22.41] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[19:44:23.76] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:44:23.76] /i de::fit -window 10 -fitView true
+[19:44:26.22] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:44:26.22] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.269 0.092}
+[19:44:26.30] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:44:26.30] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.269 0.092}
+[19:44:26.52] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:44:26.52] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.269 0.092}
+[19:44:26.91] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:44:26.91] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.269 0.092}
+[19:44:28.65] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[19:44:28.65] /i le::createRectangle {{0.216 0.091} {0.2725 0.106}} -design [ed] -lpp {M1 drawing} 
+[19:44:29.32] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:44:29.32] /i de::fit -window 10 -fitView true
+[19:44:33.03] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 10]
+[19:44:34.27] /# gi::setItemSelection {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:44:34.27] /# gi::setCurrentIndex {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:44:34.45] /# gi::setItemSelection {lpps} -index {GCON drawing - M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:44:34.45] /# gi::executeAction {leOLPToggleVisible} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:44:34.45] /i db::setAttr visible -of [de::getLPPs -filter {%lpp == "GCON drawing" || %lpp == "M0B drawing"} -from [de::getActiveContext] ] -value true
+[19:44:35.35] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:35.54] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:35.70] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:35.84] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:35.98] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:36.09] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:36.22] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:36.54] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:38.86] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:44:38.86] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2175 0.1045}
+[19:44:38.92] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:44:38.92] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2175 0.1045}
+[19:44:40.37] /# gi::executeAction {deSelectActive} -in [gi::getWindows 10]
+[19:44:40.37] /i de::deselectAll [db::getNext [de::getContexts -window 10]]
+[19:44:40.37] /i de::select [de::getActiveFigure [gi::getWindows 10] -point {0.2225 0.106} -index 0 -intent none]
+[19:44:40.37] /o oa:0x3ea6ff20
+[19:44:41.69] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:44:41.69] /i de::fit -window 10 -fitView true
+[19:44:42.34] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:42.64] /# gi::executeAction {deSelectActive} -in [gi::getWindows 10]
+[19:44:42.64] /i de::deselectAll [db::getNext [de::getContexts -window 10]]
+[19:44:44.24] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:44:44.24] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.239 0.1065}
+[19:44:44.32] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:44:44.32] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.239 0.1065}
+[19:44:44.44] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:44:44.44] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.239 0.1065}
+[19:44:44.57] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:44:44.57] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.239 0.1065}
+[19:44:46.22] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:44:46.22] /i de::fit -window 10 -fitView true
+[19:44:47.33] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:47.59] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:47.66] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:47.80] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:47.93] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:48.05] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:48.19] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:48.32] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:48.43] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:48.56] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:48.67] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:48.80] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:48.92] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:49.06] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:49.18] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:49.31] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:49.44] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 10]
+[19:44:53.10] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:44:53.10] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.0705 0.101}
+[19:44:53.23] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:44:53.23] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.0705 0.101}
+[19:44:53.39] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:44:53.39] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.0705 0.101}
+[19:44:58.25] /# gi::executeAction {lePin} -in [gi::getWindows 10]
+[19:44:58.25] /i ile::createPin
+[19:44:58.64] /i gi::setActiveDialog [gi::getDialogs {leCreatePin} -parent [gi::getWindows 10]]
+[19:44:58.80] /i db::setAttr geometry -of [gi::getDialogs {leCreatePin} -parent [gi::getWindows 10]] -value 554x439+954+148
+[19:45:05.30] /i gi::setField {termName} -value {in\ out} -in [gi::getDialogs {leCreatePin} -parent [gi::getWindows 10]]
+[19:45:06.99] /# gi::setItemSelection {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:45:07.03] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[19:45:07.03] /i de::setActiveLPP [de::getLPPs {M0B drawing} -from [oa::DesignFind group8 buffer_highdrive layout]]
+[19:45:14.11] /# gi::executeAction {deStartDrag} -in [gi::getWindows 10]
+[19:45:14.11] /i de::startDrag {0.073 0.1015} -context [db::getNext [de::getContexts -window 10]]
+[19:45:17.52] /# gi::executeAction {deEndDrag} -in [gi::getWindows 10]
+[19:45:17.52] /i de::endDrag {0.0795 0.0965} -context [db::getNext [de::getContexts -window 10]]
+[19:45:18.82] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:45:18.82] /i de::fit -window 10 -fitView true
+[19:45:20.34] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:45:20.34] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2905 0.073}
+[19:45:20.43] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:45:20.43] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2905 0.073}
+[19:45:20.58] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 10]
+[19:45:20.58] /i de::zoom -window [gi::getWindows 10] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2905 0.073}
+[19:45:26.01] /# gi::executeAction {deStartDrag} -in [gi::getWindows 10]
+[19:45:26.01] /i de::startDrag {0.2835 0.0725} -context [db::getNext [de::getContexts -window 10]]
+[19:45:28.34] /# gi::executeAction {deEndDrag} -in [gi::getWindows 10]
+[19:45:28.34] /i de::endDrag {0.2905 0.066} -context [db::getNext [de::getContexts -window 10]]
+[19:45:29.21] /# gi::executeAction {deFitView} -in [gi::getWindows 10]
+[19:45:29.21] /i de::fit -window 10 -fitView true
+[19:45:30.79] /i gi::pressButton {hide} -in [gi::getDialogs {leCreatePin} -parent [gi::getWindows 10]]
+[19:45:31.53] /# gi::executeAction {deAbortCommand} -in [gi::getWindows 10]
+[19:45:31.53] /i de::abortCommand -context [db::getNext [de::getContexts -window 10]]
+[19:45:34.00] /# gi::executeAction {xtDRCSetup} -in [gi::getWindows 10]
+[19:45:34.00] /i xt::showDRCSetup -job drc -window 10
+[19:45:34.64] /m Information: No Control Variables file found in pdk.xml, nor Control Variables preference has been set, switching to New Control Variables table format.
+[19:45:35.37] /i db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 10]] -value 665x600+876+367
+[19:45:35.78] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 10]]
+[19:45:36.33] /r giDialog gi::setActiveDialog [gi::getDialogs {xtShowDesignsPrompt}]
+[19:45:36.33] /r giDialog gi::setCurrentIndex {target} -index {0,0} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[19:45:36.36] /r giDialog db::setAttr geometry -of [gi::getDialogs {xtShowDesignsPrompt}] -value 564x289+668+356
+[19:45:37.17] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[19:45:37.59] /# xt::physicalVerification::executePve drc 10 xtDRCExecutePve
+[19:45:38.74] /m Information: Starting 'Stream Export of OA cell 'group8/buffer_highdrive/layout''...
+[19:45:42.33] /m Information: "PVE Stream Export finished successfully with 0 error, 1 warning." (DATA_IO_COMMANDS-002)
+[19:45:42.33] /m Information: Starting IC Validator 'DRC' verification job on Stream cell: buffer_highdrive
+[19:45:55.04] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_164
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[19:45:59.05] /i gi::setActiveWindow 10
+[19:45:59.05] /i gi::setActiveWindow 10 -raise true
+[19:46:28.83] /m Information: Connection closed with 'IC Validator VUE' running on 'hydra12.ece.ncsu.edu'.
+[19:46:29.73] /m Information: Connection closed with 'IC Validator VUE' running on 'hydra12.ece.ncsu.edu'.
+[19:47:03.15] /# gi::executeAction {xtLVSSetup} -in [gi::getWindows 10]
+[19:47:03.15] /i xt::showLVSSetup -job lvs -window 10
+[19:47:03.86] /m Information: No Control Variables file found in pdk.xml, nor Control Variables preference has been set, switching to New Control Variables table format.
+[19:47:04.74] /i db::setAttr geometry -of [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 10]] -value 824x486+799+347
+[19:47:05.59] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 10]]
+[19:47:06.15] /# xt::physicalVerification::executePve lvs 10 xtLVSExecutePve
+[19:47:08.27] /m Information: Starting 'Stream Export of OA cell 'group8/buffer_highdrive/layout''...
+[19:47:08.33] /m Information: "Starting netlisting for design "group8/buffer_highdrive/schematic"..." (NETLISTING-010)
+[19:47:08.43] /o No Design Integrity rule violations found in "group8/buffer_highdrive/schematic"
+[19:47:08.87] /m Information: "Netlisting design "group8/buffer_highdrive/schematic" finished successfully." (NETLISTING-012)
+[19:47:12.03] /m Information: "PVE Stream Export finished successfully with 0 error, 1 warning." (DATA_IO_COMMANDS-002)
+[19:47:12.03] /m Information: Starting IC Validator 'LVS' verification job on Stream cell: buffer_highdrive
+[19:47:12.93] /r giWindowId 12
+[19:47:12.95] /r giWindowGeometry 800x600
+[19:47:39.04] /m Information: 
+              /c =============================
+              /c JobID: icv_lvs_15
+              /c --- ERROR SUMMARY -----------
+              /c LVS Device Extraction Error Summary
+              /c 1 total rule was run.
+              /c 0 rules NOT EXECUTED.
+              /c 0 rules have violations.
+              /c There are 0 total violations.
+              /c Refer to buffer_highdrive.LAYOUT_ERRORS
+              /c =============================
+              /c 
+[19:47:44.71] /r giWindowId 13
+[19:47:44.74] /r giWindowGeometry 1632x972
+[21:01:48.77] /m Information: Connection closed with 'IC Validator VUE' running on 'hydra12.ece.ncsu.edu'.
+[21:01:52.58] /i gi::executeAction {giCloseWindow} -in [gi::getWindows 10]
+[21:01:55.40] /i gi::executeAction {giCloseWindow} -in [gi::getWindows 13]
+[21:01:58.46] /i gi::executeAction {giCloseWindow} -in [gi::getWindows 12]
+[21:01:59.36] /i gi::setActiveWindow 11
+[21:01:59.36] /i gi::setActiveWindow 11 -raise true
+[21:02:02.78] /i gi::executeAction {giCloseWindow} -in [gi::getWindows 11]
+[21:02:04.87] /i gi::executeAction {giCloseWindow} -in [gi::getWindows 2]
+[21:02:07.06] /i gi::executeAction {giQuit} -in [gi::getWindows 1]
+[21:02:07.15] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]]
+[21:02:07.41] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]] -value 402x202+749+386
+[21:02:08.28] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]]
+[21:02:12.98] /o Shutdown time: Sat Apr 12 21:02:12 2025
+[21:02:12.98] /o Elapsed session real time: 1 hour 43.03 minutes
+[21:02:12.98] /o Session terminated. Log is at /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/logs/ccompiler.svkolach.2025_4_12_191906_43787.log
+[21:02:12.98] /o Error: X connection is broken. Error code: (APPLICATION_GUI-002)1
+[21:02:12.00] /e Error: The application was unexpectedly terminated.
+              /c See the session log file for recovery details. (SHUT_DOWN-001)

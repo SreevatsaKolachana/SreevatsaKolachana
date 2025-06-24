@@ -1,0 +1,16 @@
+#!/bin/sh
+
+cd /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project
+run_times=0
+until [ $run_times -gt 1 ]
+do
+    ((run_times++))
+    if [ $run_times -gt 1 ]
+    then
+        export SNPS_PW_SIM_SERVER_RERUN=1
+        script_pgid=`ps -o pgid= $$ | grep -o '[0-9]*'`
+        pid_with_same_pgid=`ps -eo pid,pgid | awk '$2 == "'$script_pgid'" { print $1 }'`
+        echo $pid_with_same_pgid | grep -v $$ | xargs kill -9
+    fi
+    primewave -gui 0 -uniqueString 424077b79e1069ee91043358a18402d3fe01eb4215c734e6103ebf0b7deb01df58553f9003208b37 -python 0 -command "source /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/sim_server/custom_compiler.hrajesh/stb.group8.SRAM_8x4_array.schematic.session10/sim_server_init.tcl" -log /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/primewave_session10_sim_server_job1 -libDefFile /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/lib.defs && break
+done

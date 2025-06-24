@@ -1,0 +1,195 @@
+[21:35:32.14] /o 
+              /c                                 Custom Compiler™ 
+              /c 
+              /c               Version W-2024.09-SP1-2 for linux64 - Jan 16, 2025 
+              /c 
+              /c                     Copyright (c) 2004 - 2025 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 11256978 compiled on Thu Jan 16 10:52:27 2025 for AlmaLinux 8.4
+              /c Invocation: /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/platform/bin/custom_compiler
+              /c Execution time: Fri Apr 11 21:35:17 2025
+              /c Host: grendel33.ece.ncsu.edu
+              /c Working directory: /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project
+              /c 
+[21:35:39.22] /m Information: Registering ICV PERC package...
+[21:35:40.46] /r giShowFrameTabs true
+[21:35:40.46] /r giWindowId 1
+[21:35:40.46] /r giWindowGeometry 1040x800
+[21:35:41.31] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x822+247+54
+[21:36:02.71] /i db::setAttr geometry -of [gi::getFrames 1] -value 1536x770+0+46
+[21:36:02.71] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[21:36:04.73] /i gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/deOpengroup8prechargelogiclayout} -in [gi::getWindows 1]
+[21:36:05.19] /m Information: Feature 'CustomInfrastructure' checked out. (LICENSE-003)
+[21:36:05.21] /m Information: Feature 'SynopsysCustomLayout' checked out. (LICENSE-003)
+[21:36:05.40] /o Loading: Callback files...
+[21:36:05.43] /o Loading: scripts/callbacks/callbacks.tcl
+[21:36:05.43] /o 
+              /c [INFO] : Loading display.drf from /mnt/designkits/ncsu/FreePDK3/syncust/NCSU_TechLib_FreePDK3
+              /c 
+              /c  if you wish to Load other display.drf, please set shell environment valiable "iPDK_load_display_NCSU_TechLib_FreePDK3" to value = 0
+[21:36:05.43] /o 
+[21:36:05.51] /w Warning: Preference 'xtStarTcadGrdFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[21:36:05.52] /w Warning: Preference 'xtStarOALayerMappingFile' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Compiler Tcl Reference Manual. (PREFERENCE-058)
+[21:36:05.52] /o 	#######################################
+[21:36:05.52] /o 	CC-PDK Library Name	: FreePDK3
+[21:36:05.52] /o 	#######################################
+[21:36:05.52] /o 
+[21:36:05.70] /r giWindowId 2
+[21:36:05.70] /r giWindowGeometry 1305x777
+[21:36:16.73] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 2]
+[21:36:16.73] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 2]]
+[21:36:17.84] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 2]
+[21:36:17.84] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 2]]
+[21:36:18.86] /# gi::executeAction {leDisplayTopLevel} -in [gi::getWindows 2]
+[21:36:18.86] /i db::setPrefValue leStopLevel -value 0 -scope [db::getNext [de::getContexts -window 2]]; db::setPrefValue leStartLevel -value 0 -scope [db::getNext [de::getContexts -window 2]]; de::redraw -window 2
+[21:36:19.67] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 2]
+[21:36:19.67] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 2]]
+[21:36:21.23] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[21:36:24.56] /# gi::setItemSelection {sets} -index {Drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:36:24.56] /# gi::setCurrentIndex {sets} -index {Drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:36:24.79] /# gi::executeAction {leOLPApplySet} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:36:24.79] /i db::setPrefValue leLPPSet -value "{Drawing}" -scope [de::getContexts -window 2]
+[21:36:24.80] /# gi::setItemSelection {sets} -index {Drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:36:24.80] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:36:24.80] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:36:24.80] /o oa:0x3c15c5a0
+[21:36:25.78] /# gi::setItemSelection {sets} -index {Design} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:36:25.78] /# gi::setCurrentIndex {sets} -index {Design} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:36:26.02] /# gi::executeAction {leOLPApplySet} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:36:26.02] /i db::setPrefValue leLPPSet -value "{Design}" -scope [de::getContexts -window 2]
+[21:36:26.03] /# gi::setItemSelection {sets} -index {Design} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:36:26.03] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:36:26.03] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[21:36:26.03] /o oa:0x3c1a6ee0
+[21:36:49.93] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[21:36:54.03] /# gi::executeAction {deFitView} -in [gi::getWindows 2]
+[21:36:54.03] /i de::fit -window 2 -fitView true
+[21:36:55.89] /# gi::executeAction {deCanvasPanEast} -in [gi::getWindows 2]
+[21:36:55.89] /i de::pan -window [gi::getWindows 2] -direction E -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[21:36:55.97] /# gi::executeAction {deCanvasPanEast} -in [gi::getWindows 2]
+[21:36:55.97] /i de::pan -window [gi::getWindows 2] -direction E -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[21:36:56.02] /# gi::executeAction {deCanvasPanEast} -in [gi::getWindows 2]
+[21:36:56.02] /i de::pan -window [gi::getWindows 2] -direction E -multiplier [db::getPrefValue deCanvasMousePanMultiplier]
+[21:36:57.28] /# gi::executeAction {deFitView} -in [gi::getWindows 2]
+[21:36:57.28] /i de::fit -window 2 -fitView true
+[21:36:58.40] /# gi::executeAction {leInstance} -in [gi::getWindows 2]
+[21:36:58.40] /i ile::createInst
+[21:36:58.77] /i gi::setActiveDialog [gi::getDialogs {leCreateInst} -parent [gi::getWindows 2]]
+[21:36:59.08] /i db::setAttr geometry -of [gi::getDialogs {leCreateInst} -parent [gi::getWindows 2]] -value 612x634+8+31
+[21:37:03.36] /i gi::setCurrentIndex {instLCVLibs} -index {NCSU_TechLib_FreePDK3} -in [gi::getDialogs {leCreateInst} -parent [gi::getWindows 2]]
+[21:37:03.45] /i gi::setItemSelection {instLCVLibs} -index {NCSU_TechLib_FreePDK3} -in [gi::getDialogs {leCreateInst} -parent [gi::getWindows 2]]
+[21:37:05.67] /i gi::setCurrentIndex {instLCVCells} -index {nmos4} -in [gi::getDialogs {leCreateInst} -parent [gi::getWindows 2]]
+[21:37:05.81] /i gi::setItemSelection {instLCVCells} -index {nmos4} -in [gi::getDialogs {leCreateInst} -parent [gi::getWindows 2]]
+[21:37:06.97] /i gi::setCurrentIndex {instLCVCells} -index {nmos} -in [gi::getDialogs {leCreateInst} -parent [gi::getWindows 2]]
+[21:37:07.12] /w Warning: Could not open master design, because 'Open of NCSU_TechLib_FreePDK3/nmos4/layout failed - cellView for the design was not found.'. (LE_CREATE-032)
+[21:37:07.26] /i gi::setItemSelection {instLCVCells} -index {nmos} -in [gi::getDialogs {leCreateInst} -parent [gi::getWindows 2]]
+[21:37:19.12] /i db::setAttr geometry -of [gi::getDialogs {leCreateInst} -parent [gi::getWindows 2]] -value 612x592+8+73
+[21:37:20.98] /i db::setAttr geometry -of [gi::getDialogs {leCreateInst} -parent [gi::getWindows 2]] -value 612x592+1050+34
+[21:37:35.76] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[21:37:35.76] /i de::addPoint {0.0555 0.0665} -context [db::getNext [de::getContexts -window 2]]
+[21:37:46.77] /i db::setAttr geometry -of [gi::getDialogs {leCreateInst} -parent [gi::getWindows 2]] -value 612x592+797+112
+[21:37:47.73] /i gi::closeWindows [gi::getDialogs {leCreateInst}]
+[21:37:48.76] /# gi::executeAction {deUndo} -in [gi::getWindows 2]
+[21:37:48.76] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]
+[21:44:30.67] /# gi::executeAction {leStartStretchDrag} -in [gi::getWindows 2]
+[21:44:30.67] /i layout_editor::directStretch [de::getActiveFigure [gi::getWindows 2] -point {0.0305 0.125} -index 0 -intent none] 2
+[21:44:30.67] /i db::setPrefValue deSelectMode -value Replace -scope [db::getScopes [db::getNext [de::getContexts -window 2]]]; ide::selectByRegion -region rectangle -point {0.0305 0.125} 
+[21:44:31.57] /# gi::executeAction {deEndDrag} -in [gi::getWindows 2]
+[21:44:31.57] /i de::endDrag {0.015 0.116} -context [db::getNext [de::getContexts -window 2]]
+[21:44:32.45] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[21:44:32.45] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[21:44:32.45] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {0.0335 0.13} -index 0 -intent none]
+[21:44:32.45] /o oa:0x3c801130
+[21:44:33.37] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[21:44:33.37] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[21:44:33.37] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {0.0365 0.121} -index 0 -intent none]
+[21:44:33.37] /o oa:0x31616050
+[21:44:34.92] /# gi::executeAction {leStartStretchDrag} -in [gi::getWindows 2]
+[21:44:34.92] /i layout_editor::directStretch [de::getActiveFigure [gi::getWindows 2] -point {0.0365 0.121} -index 0 -intent none] 2
+[21:44:34.92] /i ile::stretch -point {0.0365 0.121}
+[21:44:42.34] /# gi::executeAction {deEndDrag} -in [gi::getWindows 2]
+[21:44:42.34] /i de::endDrag {0.0365 0.121} -context [db::getNext [de::getContexts -window 2]]
+[21:44:50.85] /i gi::setActiveWindow 1
+[21:44:50.85] /i gi::setActiveWindow 1 -raise true
+[21:44:59.18] /i gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[21:44:59.48] /r giWindowId 3
+[21:44:59.49] /r giWindowGeometry 660x600+50+50
+[21:45:02.14] /i gi::setCurrentIndex {libs} -index {basic} -in [gi::getWindows 3]
+[21:45:02.36] /i gi::setItemSelection {libs} -index {basic} -in [gi::getWindows 3]
+[21:45:03.14] /i gi::setCurrentIndex {libs} -index {group8} -in [gi::getWindows 3]
+[21:45:03.34] /i gi::setItemSelection {libs} -index {group8} -in [gi::getWindows 3]
+[21:45:11.98] /i gi::setCurrentIndex {cells} -index {read_circuit_tb} -in [gi::getWindows 3]
+[21:45:12.24] /i gi::setItemSelection {cells} -index {read_circuit_tb} -in [gi::getWindows 3]
+[21:45:13.24] /i gi::setCurrentIndex {cells} -index {sram_6t} -in [gi::getWindows 3]
+[21:45:13.95] /i gi::setItemSelection {cells} -index {sram_6t} -in [gi::getWindows 3]
+[21:45:16.75] /i gi::setCurrentIndex {views} -index {layout_1} -in [gi::getWindows 3]
+[21:45:16.85] /i gi::setItemSelection {views} -index {layout_1} -in [gi::getWindows 3]
+[21:45:18.60] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 3]
+[21:45:18.70] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 3]
+[21:45:20.24] /i gi::setCurrentIndex {views} -index {Layout_lvs} -in [gi::getWindows 3]
+[21:45:20.35] /i gi::setItemSelection {views} -index {Layout_lvs} -in [gi::getWindows 3]
+[21:45:22.13] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 3]
+[21:45:22.21] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 3]
+[21:45:22.38] /i gi::executeAction {dmOpen} -in [gi::getWindows 3]
+[21:45:22.63] /r giWindowId 4
+[21:45:22.64] /r giWindowGeometry 1305x777
+[21:47:51.57] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[23:44:43.35] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
+[23:44:43.48] /r giDialog gi::setActiveDialog [gi::getDialogs {deCloseDesign} -parent [gi::getWindows 2]]
+[23:44:43.72] /r giDialog db::setAttr geometry -of [gi::getDialogs {deCloseDesign} -parent [gi::getWindows 2]] -value 476x83+520+338
+[23:44:47.68] /r giDialog gi::pressButton {discard} -in [gi::getDialogs {deCloseDesign} -parent [gi::getWindows 2]]
+[23:44:51.93] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[23:44:51.93] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[23:44:51.93] /i db::setAttr iconified -of [gi::getFrames 1] -value true
+[23:44:52.20] /i db::setAttr geometry -of [gi::getFrames 1] -value 1536x770+0+23
+[23:52:41.02] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[23:52:41.02] /i db::setAttr iconified -of [gi::getFrames 1] -value false
+[23:52:41.21] /i db::setAttr geometry -of [gi::getFrames 1] -value 1536x770+0+46
+[23:52:42.39] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[23:52:42.39] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[23:52:42.39] /i db::setAttr iconified -of [gi::getFrames 1] -value true
+[23:52:42.48] /i db::setAttr geometry -of [gi::getFrames 1] -value 1536x770+0+23
+[01:15:31.66] /o signal number = 11
+              /c Stack Dump: VERSION W-2024.09-SP1-2 CONFIG 11256978 DATE Fri Apr 11 21:35:17 2025
+              /c Frame 0. /lib64/libpthread.so.0 ::0xe7a64990 + 0x50
+              /c Frame 1. <>0x0x83c00800 + 0x50
+              /c Frame 2. 0x11dd8ea6 SNPSee_4c4bf6226d8704484dc8d3317f095ef9c2d7466659d9e9fc33bb7a8e166c944321219fb24c32350740043d1a5d7f6e1f042e18c93f9f79b016cabd52b615cab55e66b6daa26a1f45c46428117cdda40047d5c94dd53aec43198d946ee4021d17 + 0x76
+              /c Frame 3. 0x16250cc0 SNPSee_1f05ccc245127c05dfc6426534fdbd48d606ffc11a41850aabedb2bedfaa7090d11190e1fc51bf167f9c46c4160deea12ef2ea79b287cf9d20c1bcfecd1ff453cb6b0b05ef5dbdff9ea552b22a24ea73 + 0x90
+              /c Frame 4. 0x1625497d SNPSee_1f05ccc245127c05dfc6426534fdbd48f240392aef683ff9345ea0dd2a4c84e829c9ef3bde7bc712fb15a4ccff4502edd592a118f18627d671dcb2241c9381a009d6ffc003a473f554b5b6166b6e432f1f3afa598b9f23c1 + 0x5d
+              /c Frame 5. postman::postman::_notify(postman::base_event*) + 0x564
+              /c Frame 6. 0x159b8f67 SNPSee_282e1a1e88380441616eb9641b037484b7ff7390f82b17ade49f3dd4b9fd158c + 0x137
+              /c Frame 7. 0x159b9261 SNPSee_282e1a1e88380441616eb9641b037484b7ff7390f82b17add1e9b18300b234708496a5c2c7a2c587303dd8ca75788f08 + 0x11
+              /c Frame 8. 0x130d41a9 SNPSee_538666b72877f9f6102991b63ff3c234659b4a5182c57939dc0948c99dd45c742494afe009d18c1adba1bf9de91be0370bf16bdc91dbf769 + 0x69
+              /c Frame 9. 0x130d4661 SNPSee_538666b72877f9f6102991b63ff3c234659b4a5182c57939dc0948c99dd45c742ccd2d0b4847c432 + 0x21
+              /c Frame 10. 0x1311a3e9 SNPSee_538666b72877f9f6102991b63ff3c234659b4a5182c579395380063d36013ff6910ad1b7ad48d5ab7c25419caf07dae3c8f8a126f5658de2a97ab8c98ffd1888134f967a02768403e04b13756cbc01904098f374e9d61fe87ab2b8af57982cf05ed21f7ad2341f5b5c611917332775fb + 0x109
+              /c Frame 11. 0xf815bce SNPSee_0f277a30d29e156e52427bb1b866a6f751c0a00cc91078b17b9c1c8cecfb18dd05ead8e04e94c12c765a50baee07d32814ede25f82ce7b6e + 0x1e
+              /c Frame 12. 0xf817989 SNPSee_d6fbef91847b154dda2f3d6ce9a56bd7a7abd209806172013ebe9149a7cdc33e841ea71f609a1885398556367ee085e42d84a8dd4861f8035cf44fa64fb6316a060d55353ff209b342b9de448d17e8e30beb25f179c06632c2aa7ccd928cc2fb67b67224284cc290e32f707dc15cb1b9ef8ad57813ba9c0783be306d00866fd520b1b2c81abf5687268a104d19cc1ce8819761dcff90d8837144f6c3690ed89f0c1939aa8ce0f4521eafb1b9327240b98d12d87bd59c8901 + 0x39
+              /c Frame 13. /lib64/libc.so.6 ::0xca54fccc + 0x13c
+              /c Frame 14. libc.so.6: on_exit + 0x20
+              /c Frame 15. /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/lib/libQt5XcbQpa.so.5 ::0xbc081eb0 + 0x5eb0
+              /c Frame 16. /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/lib/libQt5XcbQpa.so.5 ::0xbc0b6fc3 + 0xd43
+              /c Frame 17. libglib-2.0.so.0: g_main_context_dispatch + 0x15d
+              /c Frame 18. /lib64/libglib-2.0.so.0 ::0xce586ea8 + 0x518
+              /c Frame 19. libglib-2.0.so.0: g_main_context_iteration + 0x30
+              /c Frame 20. QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) + 0x6a
+              /c Frame 21. QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) + 0x11b
+              /c Frame 22. QCoreApplication::exec() + 0x7c
+              /c Frame 23. 0x4316bf6 SNPSee_002365a670bbd5d0a7c56191a475a3ee632fcc3a9fd6c1d60707b94db351293835df6d970cefab6fb6155797a49e5eb7 + 0x1056
+              /c Frame 24. custom_compiler: main + 0x6b
+              /c Frame 25. libc.so.6: __libc_start_main + 0xe5
+              /c Frame 26. /mnt/apps/public/COE/synopsys_apps/customcompiler/W-2024.09-SP1-2/linux64/platform/bin/custom_compiler ::0x42f9c54 + 0x29
+              /c Stack Dump: VERSION W-2024.09-SP1-2 CONFIG 11256978 DATE Fri Apr 11 21:35:17 2025

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 2to4_decoder_static schematic vl: auCdl schematic symbol">
+    <scope name="Instance">
+        <forward>
+            <mapping dst="MM80" src="M80"/>
+            <mapping dst="MM79" src="M79"/>
+            <mapping dst="MM78" src="M78"/>
+            <mapping dst="MM83" src="M83"/>
+            <mapping dst="MM84" src="M84"/>
+            <mapping dst="MM85" src="M85"/>
+            <mapping dst="XI61" src="I61"/>
+            <mapping dst="XI60" src="I60"/>
+            <mapping dst="XI55" src="I55"/>
+            <mapping dst="XI69" src="I69"/>
+            <mapping dst="XI67" src="I67"/>
+            <mapping dst="XI57" src="I57"/>
+            <mapping dst="XI64" src="I64"/>
+            <mapping dst="MM82" src="M82"/>
+            <mapping dst="XI65" src="I65"/>
+            <mapping dst="XI63" src="I63"/>
+            <mapping dst="MM75" src="M75"/>
+            <mapping dst="MM81" src="M81"/>
+            <mapping dst="XI56" src="I56"/>
+            <mapping dst="MM74" src="M74"/>
+            <mapping dst="XI68" src="I68"/>
+            <mapping dst="MM76" src="M76"/>
+            <mapping dst="MM73" src="M73"/>
+            <mapping dst="XI62" src="I62"/>
+            <mapping dst="XI58" src="I58"/>
+            <mapping dst="XI59" src="I59"/>
+            <mapping dst="MM71" src="M71"/>
+            <mapping dst="XI54" src="I54"/>
+            <mapping dst="MM70" src="M70"/>
+            <mapping dst="MM72" src="M72"/>
+            <mapping dst="MM77" src="M77"/>
+            <mapping dst="XI66" src="I66"/>
+        </forward>
+        <reverse>
+            <mapping dst="M79" src="MM79"/>
+            <mapping dst="M78" src="MM78"/>
+            <mapping dst="M82" src="MM82"/>
+            <mapping dst="M83" src="MM83"/>
+            <mapping dst="M84" src="MM84"/>
+            <mapping dst="I58" src="XI58"/>
+            <mapping dst="I60" src="XI60"/>
+            <mapping dst="I61" src="XI61"/>
+            <mapping dst="I54" src="XI54"/>
+            <mapping dst="I56" src="XI56"/>
+            <mapping dst="I55" src="XI55"/>
+            <mapping dst="I63" src="XI63"/>
+            <mapping dst="I68" src="XI68"/>
+            <mapping dst="M81" src="MM81"/>
+            <mapping dst="I67" src="XI67"/>
+            <mapping dst="I65" src="XI65"/>
+            <mapping dst="M77" src="MM77"/>
+            <mapping dst="I62" src="XI62"/>
+            <mapping dst="I64" src="XI64"/>
+            <mapping dst="M75" src="MM75"/>
+            <mapping dst="M80" src="MM80"/>
+            <mapping dst="I69" src="XI69"/>
+            <mapping dst="M74" src="MM74"/>
+            <mapping dst="M76" src="MM76"/>
+            <mapping dst="I59" src="XI59"/>
+            <mapping dst="M72" src="MM72"/>
+            <mapping dst="M73" src="MM73"/>
+            <mapping dst="M85" src="MM85"/>
+            <mapping dst="M71" src="MM71"/>
+            <mapping dst="I57" src="XI57"/>
+            <mapping dst="I66" src="XI66"/>
+            <mapping dst="M70" src="MM70"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward>
+            <mapping dst="Op0bar" src="RDB"/>
+            <mapping dst="In0" src="WD"/>
+            <mapping dst="Op0" src="RD"/>
+            <mapping dst="In0bar" src="WDB"/>
+        </forward>
+        <reverse>
+            <mapping dst="RD" src="Op0"/>
+            <mapping dst="WDB" src="In0bar"/>
+            <mapping dst="WD" src="In0"/>
+            <mapping dst="RDB" src="Op0bar"/>
+        </reverse>
+    </scope>
+    <scope name="Terminal">
+        <forward/>
+        <reverse/>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping dst="BL0 BL0_Bar BL1 BL1_Bar BL2 BL2_Bar BL3 BL3_Bar In0 In0bar Op0 Op0bar RS0 RS0Bar RS1 RS1Bar WS0 WS0Bar WS1 WS1Bar" src="&lt;unmappedTermOrder&gt;"/>
+            <mapping dst="BL0 BL0_Bar BL1 BL1_Bar BL2 BL2_Bar BL3 BL3_Bar In0 In0bar Op0 Op0bar RS0 RS0Bar RS1 RS1Bar WS0 WS0Bar WS1 WS1Bar" src="&lt;termOrder&gt;"/>
+        </forward>
+        <reverse>
+            <mapping dst="&lt;unmappedTermOrder&gt;" src="BL0 BL0_Bar BL1 BL1_Bar BL2 BL2_Bar BL3 BL3_Bar In0 In0bar Op0 Op0bar RS0 RS0Bar RS1 RS1Bar WS0 WS0Bar WS1 WS1Bar"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="inv">
+            <instance name="I62"/>
+            <instance name="I63"/>
+            <instance name="I64"/>
+            <instance name="I65"/>
+            <instance name="I66"/>
+            <instance name="I67"/>
+            <instance name="I68"/>
+            <instance name="I69"/>
+        </instance_header>
+        <instance_header master="nand">
+            <instance name="I54"/>
+            <instance name="I55"/>
+            <instance name="I56"/>
+            <instance name="I57"/>
+        </instance_header>
+        <instance_header master="nmos">
+            <instance name="M70"/>
+            <instance name="M71"/>
+            <instance name="M72"/>
+            <instance name="M73"/>
+            <instance name="M74"/>
+            <instance name="M75"/>
+            <instance name="M76"/>
+            <instance name="M77"/>
+        </instance_header>
+        <instance_header master="nor">
+            <instance name="I58"/>
+            <instance name="I59"/>
+            <instance name="I60"/>
+            <instance name="I61"/>
+        </instance_header>
+        <instance_header master="pmos">
+            <instance name="M78"/>
+            <instance name="M79"/>
+            <instance name="M80"/>
+            <instance name="M81"/>
+            <instance name="M82"/>
+            <instance name="M83"/>
+            <instance name="M84"/>
+            <instance name="M85"/>
+        </instance_header>
+    </master_instances>
+</module>

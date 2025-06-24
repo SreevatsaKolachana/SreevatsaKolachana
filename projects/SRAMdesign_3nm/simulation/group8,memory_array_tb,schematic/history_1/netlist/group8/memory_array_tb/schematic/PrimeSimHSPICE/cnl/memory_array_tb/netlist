@@ -1,0 +1,14 @@
+********************************************************************************
+* Library          : group8
+* Cell             : memory_array_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi12 net22 net22 net22 net22 net22 clk net25 net25 net25 net25 q<0> q<1> q<2>
++ q<3> wenb memory_array_static_column_decoder
+v10 vdd! gnd! dc=0.8
+v5 net22 gnd! dc=0.8
+v8 clk gnd! dc=0.8 pulse ( 0 0.8 0 5p 5p 145p 300p )
+v4 wenb gnd! dc=0.8 pulse ( 0.8 0 0 5p 5p 290p 600p )
+v2 net25 gnd! dc=0.8 pulse ( 0 0.8 5p 5p 5p 295p 600p )

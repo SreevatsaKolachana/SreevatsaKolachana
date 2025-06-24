@@ -1,0 +1,31 @@
+read_circuit Level=0 Count=1
+   nand Level=1 Count=1
+   invx4 Level=1 Count=1
+   inv Level=1 Count=1
+
++--------------------------------------------------------------------------+
+|                             CELL STATISTICS                              |
++--------------------------------------------------------------------------+
+
+
+CELL = read_circuit
+	Flat Placements      =	1
+
+CELL = invx4
+	Flat Placements      =	1
+
+CELL = inv
+	Flat Placements      =	1
+
+CELL = nand
+	Flat Placements      =	1
+
+TOP CELL = read_circuit
+	Ports                =	3
+
++--------------------------------------------------------------------------+
+|                            DEVICE STATISTICS                             |
++--------------------------------------------------------------------------+
+
+	NMOS[nmos] = 4
+	PMOS[pmos] = 4

@@ -1,0 +1,57 @@
+********************************************************************************
+* Library          : group8
+* Cell             : SRAM_8x4_array_dummy
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi31 bl<0> blb<0> wl0 sram_6t
+xi30 bl<1> blb<1> wl0 sram_6t
+xi29 bl<2> blb<2> wl0 sram_6t
+xi28 bl<3> blb<3> wl0 sram_6t
+xi27 bl<0> blb<0> wl1 sram_6t
+xi26 bl<1> blb<1> wl1 sram_6t
+xi25 bl<2> blb<2> wl1 sram_6t
+xi24 bl<3> blb<3> wl1 sram_6t
+xi23 bl<0> blb<0> wl2 sram_6t
+xi22 bl<1> blb<1> wl2 sram_6t
+xi21 bl<2> blb<2> wl2 sram_6t
+xi20 bl<3> blb<3> wl2 sram_6t
+xi19 bl<0> blb<0> wl7 sram_6t
+xi18 bl<1> blb<1> wl7 sram_6t
+xi17 bl<2> blb<2> wl7 sram_6t
+xi16 bl<3> blb<3> wl7 sram_6t
+xi15 bl<0> blb<0> wl6 sram_6t
+xi14 bl<1> blb<1> wl6 sram_6t
+xi13 bl<2> blb<2> wl6 sram_6t
+xi12 bl<3> blb<3> wl6 sram_6t
+xi11 bl<0> blb<0> wl5 sram_6t
+xi10 bl<1> blb<1> wl5 sram_6t
+xi9 bl<2> blb<2> wl5 sram_6t
+xi8 bl<3> blb<3> wl5 sram_6t
+xi7 bl<0> blb<0> wl4 sram_6t
+xi6 bl<1> blb<1> wl4 sram_6t
+xi5 bl<2> blb<2> wl4 sram_6t
+xi4 bl<3> blb<3> wl4 sram_6t
+xi3 bl<3> blb<3> wl3 sram_6t
+xi2 bl<2> blb<2> wl3 sram_6t
+xi1 bl<1> blb<1> wl3 sram_6t
+xi0 bl<0> blb<0> wl3 sram_6t
+xi34 a0 a1 a2 net152 wl1 wl2 wl3 wl4 wl5 wl6 wl7 static_row_decoder_3by8
+m193 wdt en bl<3> pfet nfin=20 adeo=5.67e-15 aseo=5.67e-15 pdeo=1.17e-06 pseo=1.17e-06
+m192 wdb en blb<3> pfet nfin=20 adeo=5.67e-15 aseo=5.67e-15 pdeo=1.17e-06 pseo=1.17e-06
+xi38 bl<3> blb<3> pc precharge_logic
+xi37 bl<2> blb<2> pc precharge_logic
+xi36 bl<1> blb<1> pc precharge_logic
+xi35 bl<0> blb<0> pc precharge_logic
+v50 wlref gnd! dc=0 pwl ( 20p 0.0 25p 0.8 80p 0.8 85p 0.0 td=10p )
+v39 pc gnd! dc=0.8 pwl ( 0p 0 5p 0 10p 0.8 )
+v195 wdt gnd! dc=0
+v51 vdd! gnd! dc=0.8
+v191 wdb gnd! dc=0.8
+v43 a2 gnd! dc=0
+v42 a1 gnd! dc=0
+v41 a0 gnd! dc=0
+xi48 wlref net152 net157 nand
+xi49 net157 wl0 inv
+v194 en gnd! dc=0.8 pulse ( 0 0.8 0 1p 1p 15p 200p )

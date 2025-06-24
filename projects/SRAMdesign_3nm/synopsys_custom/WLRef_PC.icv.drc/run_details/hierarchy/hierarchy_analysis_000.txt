@@ -1,0 +1,97 @@
+* Description of frequently used terms in hierarchy_analysis files*
+M indicates that the value of that column is in millions
+Hier Plc Count(Hierarchical Placement Count) : Number of unique instances of the cell in another cell (Parent)
+Flat Plc Count(Flat Placement Count)         : Total number of instances of the cell in the layout
+
+Example : 
+                               A                     
+                              / \                   Cell  Hier Plc Count Flat Plc Count 
+                             /   \                     A               1              1 
+                            B     B                    B               2              2 
+                           / \  /  \                   C               2              4 
+                          C   C C   C                
+------------------------------------------------------------------------------------------------------ 
+
+
+* Cells with flat area > 0.01 of top cell *
+Reports cells with flat area > 0.01 of top cell
+
+Flat A(Flat Area) : Total area covered by this cell in the layout(cell area * flat placement count)
+Cell A(Cell Area) : Area of this cell
+Percent of top    : Percentage of area of this cell w.r.t area of top cell
+This table contains 13 entries
+Original table contains 13 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Flat Plc Count, Hier Plc Count, Percent of top
+-----------------------------------------------
+ WLRef_PC                                      |         0.000,         0.000,              1,              1,       100.00 %
+ inv                                           |         0.000,         0.000,             45,              3,        99.20 %
+ pmos                                          |         0.000,         0.000,            131,             13,        90.91 %
+ nmos                                          |         0.000,         0.000,            130,             12,        90.21 %
+ buffer                                        |         0.000,         0.000,             22,             22,        88.44 %
+ BPR_M0A                                       |         0.000,         0.000,            202,             17,        35.22 %
+ sram_filler                                   |         0.000,         0.000,             20,             20,        31.99 %
+ invx4                                         |         0.000,         0.000,              3,              3,        10.24 %
+ M0B_M1                                        |         0.000,         0.000,            192,             45,         6.19 %
+ nor                                           |         0.000,         0.000,              2,              2,         5.62 %
+ GATE_M0B                                      |         0.000,         0.000,            108,             10,         5.34 %
+ nand                                          |         0.000,         0.000,              1,              1,         2.81 %
+ M0A_M0B                                       |         0.000,         0.000,             61,              9,         1.94 %
+===============================================
+
+* Large-Area cells and child area ratio *
+This table reports cells with large areas and ratio of its area with total area covered by its children
+
+Num Inst(Number of instances) : Total Number of instances of the cell
+Child A(Child Area)           : Total area covered by all the children of the cell
+Pct of parent(Percent of area): Percentage of total area covered by its childern w.r.t area of this cell
+This table contains 13 entries
+Original table contains 13 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Num Inst (M), Child A (mm^2), Pct of parent
+-----------------------------------------------
+ WLRef_PC                                      |         0.000,         0.000,        0.000,         0.000,      142.82 %
+ inv                                           |         0.000,         0.000,        0.000,         0.000,      159.96 %
+ pmos                                          |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ nmos                                          |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ buffer                                        |         0.000,         0.000,        0.000,         0.000,      109.68 %
+ BPR_M0A                                       |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ sram_filler                                   |         0.000,         0.000,        0.000,         0.000,      108.58 %
+ invx4                                         |         0.000,         0.000,        0.000,         0.000,      206.53 %
+ M0B_M1                                        |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ nor                                           |         0.000,         0.000,        0.000,         0.000,      178.29 %
+ GATE_M0B                                      |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ nand                                          |         0.000,         0.000,        0.000,         0.000,      152.48 %
+ M0A_M0B                                       |         0.000,         0.000,        0.000,         0.000,        0.00 %
+===============================================
+
+* Layer Report with Estimated Data *
+Reports information of layers present in the layout
+
+Trap        : Number of hierarchical trapezoids in the layer
+Poly        : Number of hierarchical polygons in the layer
+Text        : Number of hierarchical text primitives in the layer
+Flat Trap   : Number of flat trapezoids 
+Flat Poly   : Number of flat polygons
+Flat Text   : Number of flat text primitives 
+Trap F/H    : Ratio of flat and hierarchical placements of the trapezoids
+Base, Metal, Via, Fill, Colored : Indicates layer intent
+This table contains 12 entries
+Original table contains 12 entries
+
+ Name                                          | Trap (M), Poly (M), Text (M), Flat Trap (M), Flat Poly (M), Flat Text (M), Trap F/H, Base, Metal, Via, Fill, Colored
+-----------------------------------------------
+ aM1                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     6.01,    0,     0,   0,    0,       0
+ aM0B                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,    12.33,    0,     0,   0,    0,       0
+ aGATE                                         |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,    37.58,    0,     0,   0,    0,       0
+ aBPR                                          |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,    21.28,    0,     0,   0,    0,       0
+ aDUMMY                                        |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,    13.50,    0,     0,   0,    0,       0
+ aM2                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.93,    0,     0,   0,    0,       0
+ aGCUT                                         |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,    14.20,    0,     0,   0,    0,       0
+ aPIM                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,    29.00,    0,     0,   0,    0,       0
+ aNW                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,    33.67,    0,     0,   0,    0,       0
+ aACT                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,   130.50,    0,     0,   0,    0,       0
+ aVBPR                                         |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,   202.00,    0,     0,   0,    0,       0
+ aM1_color1                                    |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+===============================================
+

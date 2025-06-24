@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 precharge_logic schematic vl: auCdl schematic symbol">
+    <scope name="Instance">
+        <forward>
+            <mapping dst="MM3" src="M3"/>
+            <mapping dst="MM4" src="M4"/>
+            <mapping dst="MM5" src="M5"/>
+        </forward>
+        <reverse>
+            <mapping dst="M3" src="MM3"/>
+            <mapping dst="M4" src="MM4"/>
+            <mapping dst="M5" src="MM5"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward/>
+        <reverse/>
+    </scope>
+    <scope name="Terminal">
+        <forward/>
+        <reverse/>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping dst="BL BL_bar clk" src="&lt;unmappedTermOrder&gt;"/>
+            <mapping dst="BL BL_bar clk" src="&lt;termOrder&gt;"/>
+        </forward>
+        <reverse>
+            <mapping dst="&lt;unmappedTermOrder&gt;" src="BL BL_bar clk"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="pmos">
+            <instance name="M3"/>
+            <instance name="M4"/>
+            <instance name="M5"/>
+        </instance_header>
+    </master_instances>
+</module>

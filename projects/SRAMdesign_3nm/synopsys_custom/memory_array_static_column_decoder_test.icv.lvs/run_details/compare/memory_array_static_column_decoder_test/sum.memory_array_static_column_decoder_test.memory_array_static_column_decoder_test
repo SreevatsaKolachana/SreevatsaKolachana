@@ -1,0 +1,462 @@
++------------------------------------------------------------------------+
+|                        IC Validator LVS Report                         |
+|                                                                        |
+|                          TOP equivalence point                         |
+|     Schematic cell name = memory_array_static_column_decoder_test      |
+|     Layout cell name    = memory_array_static_column_decoder_test      |
++------------------------------------------------------------------------+
+
+COMPARE (R) Hierarchical Layout Vs. Schematic
+        Version RHEL64 W-2024.09-SP2.11100136 2024/12/03
+Copyright (C) Synopsys, Inc. All rights reserved.
+
+
++------------------------------------------------------------------------+
+|                           Comparison Result                            |
++------------------------------------------------------------------------+
+
+
+                       #####    ##    #####  #####
+                       #    #  #  #  #      #
+                       #####  ######  ####   ####
+                       #      #    #      #      #
+                       #      #    # #####  #####
+
+[memory_array_static_column_decoder_test == memory_array_static_column_decoder_test]
+
+Error summary:
+
+           0 Unmatched schematic instance 
+           0 Unmatched schematic net 
+           0 Unmatched layout instance 
+           0 Unmatched layout net 
+
+         901 Matched instances
+         574 Matched nets
+
+Port summary:
+
+           0 Unmatched schematic port
+           0 Unmatched layout port
+          17 Matched ports
+
+
+Post-compare summary (* = unmatched devices, nets or ports):
+
+        Matched      Unmatched    Unmatched        Instance types
+                     schematic    layout           [schematic, layout]
+        ---------    ---------    ---------        --------------------
+              425            0            0        GATE[_INV(nmos/pmos), _INV(NMOS/PMOS)]
+               50            0            0        GATE[_NAND2(nmos/pmos), _NAND2(NMOS/PMOS)]
+               34            0            0        GATE[_NOR2(nmos/pmos), _NOR2(NMOS/PMOS)]
+                8            0            0        GATE[_S_NMOS2_(nmos), _S_NMOS2_(NMOS)]
+                4            0            0        GATE[_S_PMOS2_(pmos), _S_PMOS2_(PMOS)]
+              292            0            0        NMOS[nmos, NMOS]
+               88            0            0        PMOS[pmos, PMOS]
+        ---------    ---------    ---------        --------------------
+              901            0            0        Total instances
+
+              574            0            0        Total nets
+
+               17            0            0        Total ports
+
+
++------------------------------------------------------------------------+
+|                          Detailed Information                          |
++------------------------------------------------------------------------+
+
++------------------------------------------------------------+
+|                   Comparison Information                   |
++------------------------------------------------------------+
+
+Some devices and nets remain after matching unique elements (86.00%)
+
+                    Schematic    Layout
+                    ---------    ------
+    Total devices         802       802
+    Total nets            468       468
+
+
+Matches were assumed based on symmetry.
+
+
++------------------------------------------------------------+
+|               Cross-Referencing Information                |
++------------------------------------------------------------+
+
+Port cross-reference table:
+    S: Schematic generated port (82 generated)
+    L: Layout generated port (0 generated)
+
+    Generated
+       port       Port class    Schematic port          Layout port
+    ----------    ----------    --------------------    --------------------
+    S             1             PC                      75
+                  2             vdd!                    VDD!
+    S             3             RSNew                   114
+    S             4             CLKi                    107
+    S             5             WLref                   113
+                  6             gnd!                    GND!
+                  7             WENB                    WENB
+    S             8             net770                  102
+                  9             Clk                     CLK
+    S             10            net759                  106
+                  11            A<3>                    A<3>
+                  12            A<2>                    A<4>
+                  13            A<4>                    A<2>
+    S             14            WL<3>                   121
+    S             15            WL<4>                   120
+    S             16            WL<0>                   124
+    S             17            WL<7>                   115
+    S             18            WL<6>                   116
+    S             19            WL<5>                   119
+    S             20            WL<1>                   123
+    S             21            WL<2>                   122
+    S             22            net791                  97
+    S             23            net806                  104
+                  24            A<0>                    A<0>
+    S             25            net625                  WS0BAR
+    S             26            net792                  101
+    S             27            net809                  79
+    S             28            net810                  103
+    S             29            RS0bar                  76
+    S             30            RS0                     117
+    S             31            RS1bar                  90
+    S             32            net808                  77
+                  33            A<1>                    A<1>
+    S             34            net807                  78
+    S             35            RS1                     100
+    S             36            net628                  73
+    S             37            net634                  74
+    S             38            net793                  98
+    S             39            net794                  108
+    S             40            BL11Bar                 38
+    S             41            BL11                    39
+    S             42            net749                  83
+    S             43            net745                  82
+    S             44            BL8Bar                  32
+    S             45            net691                  81
+    S             46            BL9Bar                  34
+    S             47            BL10Bar                 36
+    S             48            net748                  80
+    S             49            BL8                     33
+    S             50            BL10                    37
+    S             51            BL9                     35
+    S             52            Read_Dff2               112
+                  53            D<2>                    D<3>
+                  54            Q<2>                    Q<3>
+    S             55            BL7Bar                  31
+    S             56            BL15Bar                 8
+    S             57            BL3Bar                  23
+    S             58            BL7                     30
+    S             59            net747                  86
+    S             60            net697                  91
+    S             61            BL15                    9
+    S             62            net687                  92
+    S             63            BLbar                   96
+    S             64            BL3                     22
+    S             65            net746                  95
+    S             66            net693                  87
+    S             67            BL12Bar                 14
+    S             68            BL0Bar                  16
+    S             69            net706                  93
+    S             70            BL5Bar                  26
+    S             71            net703                  84
+    S             72            BL1Bar                  19
+    S             73            BL2Bar                  21
+    S             74            BL13Bar                 12
+    S             75            BL                      94
+    S             76            BL4Bar                  28
+    S             77            BL14Bar                 10
+    S             78            BL6Bar                  24
+    S             79            net499                  89
+    S             80            net698                  88
+    S             81            net493                  85
+    S             82            BL0                     17
+    S             83            BL1                     18
+    S             84            BL4                     29
+    S             85            BL13                    13
+    S             86            BL2                     20
+    S             87            BL5                     27
+    S             88            BL12                    15
+    S             89            BL14                    11
+    S             90            BL6                     25
+                  91            D<0>                    D<1>
+    S             92            Read_Dff3               109
+                  93            D<1>                    D<2>
+                  94            D<3>                    D<0>
+    S             95            Read_Dff0               110
+    S             96            Read_Dff1               111
+                  97            Q<3>                    Q<0>
+                  98            Q<1>                    Q<2>
+                  99            Q<0>                    Q<1>
+
+
++------------------------------------------------------------------------+
+|                           Statistics Report                            |
++------------------------------------------------------------------------+
+
+Schematic netlist statistics after filtering and merging
+
+    Initial  PushDown  Filter  Parallel  Path/Ser  RecogGate  Final    Device type
+    -------  --------  ------  --------  --------  ---------  -------  ----------------
+          0         0       0         0         0        425      425  GATE[_INV(nmos/pmos)]
+          0         0       0         0         0         50       50  GATE[_NAND2(nmos/pmos)]
+          0         0       0         0         0         34       34  GATE[_NOR2(nmos/pmos)]
+          0         0       0         0         0          8        8  GATE[_S_NMOS2_(nmos)]
+          0         0       0         0         0          4        4  GATE[_S_PMOS2_(pmos)]
+        901         0       0         0      -116       -493      292  NMOS[nmos]
+        689         0       0         0       -76       -525       88  PMOS[pmos]
+    -------  --------  ------  --------  --------  ---------  -------  ----------------
+       1590         0       0         0      -192       -497      901  Total devices
+
+    Initial  PushDown  Dangle  0 Connect Path/Ser  RecogGate  Shorted  Total nets
+    -------  --------  ------  --------  --------  ---------  -------  ----------------
+        670         0       0         0         0        -96        0      574
+
+    Initial  PushDown  Dangle  0 Connect                               Total ports
+    -------  --------  ------  --------                                ----------------
+         17         0       0         0                                     17
+
+
+Layout netlist statistics after filtering and merging
+
+    Initial  PushDown  Filter  Parallel  Path/Ser  RecogGate  Final    Device type
+    -------  --------  ------  --------  --------  ---------  -------  ----------------
+        946         0       0       -45      -116       -493      292  NMOS[NMOS]
+        944         0       0      -255       -76       -525       88  PMOS[PMOS]
+          0         0       0         0         0        425      425  GATE[_INV(NMOS/PMOS)]
+          0         0       0         0         0         50       50  GATE[_NAND2(NMOS/PMOS)]
+          0         0       0         0         0         34       34  GATE[_NOR2(NMOS/PMOS)]
+          0         0       0         0         0          8        8  GATE[_S_NMOS2_(NMOS)]
+          0         0       0         0         0          4        4  GATE[_S_PMOS2_(PMOS)]
+    -------  --------  ------  --------  --------  ---------  -------  ----------------
+       1890         0       0      -300      -192       -497      901  Total devices
+
+    Initial  PushDown  Dangle  0 Connect Path/Ser  RecogGate  Shorted  Total nets
+    -------  --------  ------  --------  --------  ---------  -------  ----------------
+        670         0       0         0         0        -96        0      574
+
+    Initial  PushDown  Dangle  0 Connect                               Total ports
+    -------  --------  ------  --------                                ----------------
+         99         0       0         0                                     99
+
+
+Post merge netlist statistics: (* = different count)
+
+    Schematic       Layout          Device type [schematic, layout]
+    ---------       ---------       -------------------------------
+          425             425       GATE[_INV(nmos/pmos), _INV(NMOS/PMOS)]
+           50              50       GATE[_NAND2(nmos/pmos), _NAND2(NMOS/PMOS)]
+           34              34       GATE[_NOR2(nmos/pmos), _NOR2(NMOS/PMOS)]
+            8               8       GATE[_S_NMOS2_(nmos), _S_NMOS2_(NMOS)]
+            4               4       GATE[_S_PMOS2_(pmos), _S_PMOS2_(PMOS)]
+          292             292       NMOS[nmos, NMOS]
+           88              88       PMOS[pmos, PMOS]
+    ---------       ---------       -------------------------------
+          901             901       Total devices
+
+          574             574       Total nets
+
+           17              99     * Total ports
+
+
+Device Settings Table
+=====================
+Device       Parallel  Series  Merge      Multiple  Short       Series    Check     Filter
+Type         Merge     Merge   Connected  Paths     Equivalent  Parallel  Property
+                               Gates                Nodes       Stack
+=======================================================================================
+PMOS[PMOS]   +         -       -          -         SAME NAME   -         -         -
+NMOS[NMOS]   +         -       -          -         SAME NAME   -         -         -
+
+Specific Device Settings
+========================
+PMOS[PMOS]
+====================
+Property   Parallel            Parallel     Series              Series       Check               Schematic
+           Exclude             Merge        Exclude             Merge        Property            Optional
+           Tolerance           Property     Tolerance           Property     Tolerance
+                               Function                         Function
+================================================================================================================================
+Length     -                   -            -                   -            -                   -
+Width      -                   -            -                   -            -                   -
+PD         -                   -            -                   -            -                   -
+PS         -                   -            -                   -            -                   -
+AD         -                   -            -                   -            -                   -
+AS         -                   -            -                   -            -                   -
+
+Parallel Merge Property Function : default_par_mos_props 
+
+NMOS[NMOS]
+====================
+Property   Parallel            Parallel     Series              Series       Check               Schematic
+           Exclude             Merge        Exclude             Merge        Property            Optional
+           Tolerance           Property     Tolerance           Property     Tolerance
+                               Function                         Function
+================================================================================================================================
+Length     -                   -            -                   -            -                   -
+Width      -                   -            -                   -            -                   -
+PD         -                   -            -                   -            -                   -
+PS         -                   -            -                   -            -                   -
+AD         -                   -            -                   -            -                   -
+AS         -                   -            -                   -            -                   -
+
+Parallel Merge Property Function : default_par_mos_props 
+
+
++------------------------------------------------------------------------+
+|                            Compare Options                             |
+|                                                                        |
+|       * = Different from IC Validator default setting                  |
+|       @ = Different setting between runset and equivalence point       |
++------------------------------------------------------------------------+
+
+    == Global Settings ==                     
+*   schematic global_nets                     = {gnd! vdd!}
+    power nets                                
+*       schematic                             = {vdd VDD vdd! VDD!}
+*       layout                                = {VDD VDD!}
+    ground nets                               
+*       schematic                             = {vss gnd! VSS GND!}
+*       layout                                = {VSS GND!}
+    join nets                                 
+        schematic                             = {}
+        layout                                = {}
+    == Merge & Filter ==                      
+    filter                                    = 0 device_name
+*   merge_parallel                            = 2 device_names
+        exclude_functions                     = 0 device_name
+*       property_functions                    = 2 device_names
+        xref_parallel_map                     = 0 device_name
+    merge_series                              = 0 device_name
+        exclude_functions                     = 0 device_name
+        property_functions                    = 0 device_name
+        multiple_paths                        = 0 device_name
+        merge_connected_gates                 = 0 device_name
+*   short_equivalent_nodes                    = 2 device_names
+        series_parallel_stack                 = 0 device_name
+    short_equivalent_stack_nodes              = 0 device_name
+        exclude_tolerances                    = 0 device_name
+*   recognize_gate                            = 2 device_names
+        exclude_tolerances                    = 0 device_name
+    == Property ==                            
+    check_property                            = 0 device_name
+        check_function                        = 0 device_name
+    check_property_for_failed_equiv           = false
+    lvs_property_epsilon                      = E6
+    multiply_width                            = true
+    recalculate_property                      = 0 device_name
+    == Hierarchy ==                           
+    memory_array_compare                      = true
+    push_down_devices                         = false
+    push_down_pins                            = true
+    remove_dangling_net                       = LAYOUT_UNTEXTED
+    define_global_nets_as_top_ports           = true
+    == Netlist Definition ==                  
+    delete cells                              
+        schematic                             = {}
+        layout                                = {}
+    pin configuration                         
+*       swappable_pins                        = 2 device_names
+        ignore pins                           = 0 device_name
+    top_cell_ports_static                     = NAME_MATCHED
+    define_empty_cell_as_device               = NONE
+    == Report ==                              
+    print_messages                            
+        equated_nets_list                     = true
+        equivalent_cell_list                  = true
+        invalid_user_equivs                   = true
+        matched_devices_unmatched_nets        = true
+        merged_nets_referenced                = true
+        netlist_stats                         = true
+        nets_promoted_to_pwr_gnd              = true
+        non_equivalent_cell_list              = true
+        port_xref_table                       = true
+        post_compare_stats                    = true
+        referenced_merged_devices             = true
+        swapped_pin_analysis                  = true
+        symmetrical_nodes_found               = true
+        uncompared_cell_list                  = true
+        all_merged_device_list                = false
+        instance_xref_table                   = false
+        filtered_device_list                  = false
+        series_device_list                    = false
+        net_xref_table                        = false
+        parallel_device_list                  = false
+        pre_merge_stats                       = false
+        black_box_signoff                     = true
+        complete_device_setting_table         = false
+    wrap_print_message_text                   = true
+    print_devices_per_net_max                 = 10
+    error_limit_per_check                     = 1000
+    write_equiv_netlists                      = FAILED_REDUCED
+    print_detail                              
+        property                              = COORDINATES_AND_DEVICE_TYPES
+        xref_pin                              = NONE
+        device_pin                            = ALL
+    black_box_file                            = NONE
+    ignore_equiv_file                         = NONE
+    open_net_names_checking                   = USE_ICV_RENAMED
+    == Equiv Control ==                       
+    generate_user_equivs                      = NONE
+    generate_system_equivs                    = false
+*   spice_flow                                = true
+*   user_unit_meter                           = true
+    ignore_equivs_with_devices_leveled_out    = false
+    equivs management                         
+        action_on_error                       = NO_EXPLODE
+        no_explode_condition                  = NONE
+        resolve_duplicate_equivs              = false
+        explode_imbalanced_equivs             = true
+    matching                                  
+        detect_permutable_ports               = false
+        match_by_net_name                     = false
+        texted_zero_connection_ports          = IGNORE
+        black_box_static_ports                = NONE
+        pin_connected_and_dangling_suppress_layers= {}
+    match_condition                           
+        black_box_duplicates_equiv            = WARNING
+        property_mismatch                     = ERROR
+        missing_required_property             = ERROR
+        illegal_multiplier                    = ERROR
+        equate_by_net_name_fails              = WARNING
+        equate_nets_fails                     = WARNING
+        filtered_schematic_devices            = WARNING
+        generate_global_nets                  = WARNING
+        matches_must_be_assumed               = WARNING
+        merging_without_pwr_gnd               = WARNING
+        missing_black_box_cell                = WARNING
+        missing_black_box_port                = WARNING
+        missing_pin_connection                = WARNING
+        new_cell_created                      = WARNING
+        no_global_nets_found                  = WARNING
+        undefined_property_for_merged_device  = WARNING
+        zero_value_property                   = WARNING
+        empty_cell_not_defined_as_device      = NONE
+        layout_ports_without_name             = NONE
+        top_layout_ports_without_name         = NONE
+        nets_matched_with_different_name      = NONE
+        ports_matched_with_different_name     = NONE
+        properties_contradict_connections     = NONE
+        port_net_match_non_port_net           = NONE
+        top_schematic_port_net_match_non_port_net= NONE
+        top_layout_port_net_match_non_port_net= NONE
+        top_ports_matched_with_different_name = NONE
+        top_schematic_ports_matched_with_different_or_missing_name= NONE
+        one_connection_non_port_net           = NONE
+        zero_connection_net                   = NONE
+        child_equiv_unmatched_ports           = NONE
+        pin_connected_and_dangling            = NONE
+        layout_net_without_matching_name      = NONE
+    report_black_box_errors                   
+        extra_layout_ports                    = ERROR_NO_ABORT
+        untexted_layout_ports                 = NONE
+        extra_schematic_ports                 = ERROR_NO_ABORT
+    == Case Sensitivity ==                    
+    netlist case sensitivity                  
+        schematic uppercase                   = false
+*       layout uppercase                      = true
+    LVS case_sensitive                        = {PROPERTY NET_PORT DEVICE_NAME}
+
+

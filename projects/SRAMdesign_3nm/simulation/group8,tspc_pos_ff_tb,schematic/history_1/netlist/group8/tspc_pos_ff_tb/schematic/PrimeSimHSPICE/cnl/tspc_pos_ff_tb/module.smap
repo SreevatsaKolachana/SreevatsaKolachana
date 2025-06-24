@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 tspc_pos_ff_tb schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping src="V5" dst="v5"/>
+            <mapping src="V4" dst="v4"/>
+            <mapping src="V2" dst="v2"/>
+            <mapping src="I0" dst="xi0"/>
+        </forward>
+        <reverse>
+            <mapping src="v4" dst="V4"/>
+            <mapping src="v5" dst="V5"/>
+            <mapping src="v2" dst="V2"/>
+            <mapping src="xi0" dst="I0"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward>
+            <mapping src="D" dst="d"/>
+            <mapping src="Q" dst="q"/>
+        </forward>
+        <reverse>
+            <mapping src="d" dst="D"/>
+            <mapping src="q" dst="Q"/>
+        </reverse>
+    </scope>
+    <scope name="Terminal">
+        <forward>
+            <mapping src="Q" dst="q"/>
+        </forward>
+        <reverse>
+            <mapping src="q" dst="Q"/>
+        </reverse>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping src="&lt;unmappedTermOrder&gt;" dst="Q"/>
+            <mapping src="&lt;termOrder&gt;" dst="q"/>
+        </forward>
+        <reverse>
+            <mapping src="Q" dst="&lt;unmappedTermOrder&gt;"/>
+            <mapping src="q" dst="&lt;termOrder&gt;"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="tspc_pos_ff">
+            <instance name="I0"/>
+        </instance_header>
+        <instance_header master="vdc">
+            <instance name="V2"/>
+        </instance_header>
+        <instance_header master="vpulse">
+            <instance name="V4"/>
+            <instance name="V5"/>
+        </instance_header>
+    </master_instances>
+</module>

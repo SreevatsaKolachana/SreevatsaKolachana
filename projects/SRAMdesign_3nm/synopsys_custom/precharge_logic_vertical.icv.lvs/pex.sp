@@ -1,0 +1,18 @@
+* PEX netlist file	Sat Apr 12 19:45:58 2025	precharge_logic_vertical
+* icv_netlist Version RHEL64 W-2024.09-SP2.11100136 2024/12/03
+*.UNIT=4000
+
+* Hierarchy Level 0
+
+* Top of hierarchy  cell=precharge_logic_vertical
+.subckt precharge_logic_vertical VDD! BL 4 BL_BAR 6 7 8 9
+*.floating_nets _GENERATED_10 _GENERATED_11
+MM1 7 4 6 nmos  W=2.5e-09 L=1.5e-08 NFIN=2 ADEO=2.835e-16 ASEO=2.835e-16 PDEO=4.925e-08
++	 PSEO=4.925e-08 $X=222 $Y=343  $PIN_XY=252,247,222,343,192,247 $DEVICE_ID=1001
+MM2 BL 4 VDD! pmos  W=2.1e-08 L=1.5e-08 NFIN=2 ADEO=2.835e-16 ASEO=5.67e-16 PDEO=5.85e-08
++	 PSEO=1.17e-07 $X=390 $Y=550  $PIN_XY=420,550,390,550,360,550 $DEVICE_ID=1003
+MM3 VDD! 4 BL_BAR pmos  W=2.1e-08 L=1.5e-08 NFIN=2 ADEO=5.67e-16 ASEO=2.835e-16 PDEO=1.17e-07
++	 PSEO=5.85e-08 $X=222 $Y=582  $PIN_XY=252,550,222,582,192,550 $DEVICE_ID=1003
+MM4 BL 4 BL_BAR pmos  W=2.1e-08 L=1.5e-08 NFIN=2 ADEO=2.835e-16 ASEO=2.835e-16 PDEO=5.85e-08
++	 PSEO=5.85e-08 $X=222 $Y=343  $PIN_XY=252,380,222,343,192,380 $DEVICE_ID=1003
+.ends precharge_logic_vertical

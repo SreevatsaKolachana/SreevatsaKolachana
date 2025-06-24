@@ -1,0 +1,342 @@
+  + INFO: Connected to Custom Compiler at 9189.
+
+< LAYOUT: start_vue >
+V SET_COLOR white       white
+V SET_COLOR red         red
+V SET_COLOR darkRed     maroon
+V SET_COLOR green       lime
+V SET_COLOR darkGreen   forest
+V SET_COLOR blue        blue
+V SET_COLOR darkBlue    navy
+V SET_COLOR cyan        cyan
+V SET_COLOR darkCyan    cadetBlue
+V SET_COLOR magenta     magenta
+V SET_COLOR darkMagenta purple
+V SET_COLOR yellow      yellow
+V SET_FILL  blank       blank
+V SET_FILL  solid       solid
+V SET_FILL  backSlash   backSlash
+V SET_FILL  slash       slash
+V SET_FILL  dot         dots
+V SET_FILL  diagCross   X
+V SET_FILL  brick       brick
+V SET_FILL  horizontal  hLine
+V SET_FILL  vertical    vLine
+L startFilter LAY
+L setTopLayLCV  ""
+L setCurLayLCV  ""
+
+< LAYOUT: start_filter >
+L setWorkingDir "[pwd]"
+  + INFO: Timer already set.
+  + INFO: Connected to Custom Compiler at 9189.
+
+< SCHEMATIC: start_vue >
+V SET_COLOR white       white
+V SET_COLOR red         red
+V SET_COLOR darkRed     maroon
+V SET_COLOR green       lime
+V SET_COLOR darkGreen   forest
+V SET_COLOR blue        blue
+V SET_COLOR darkBlue    navy
+V SET_COLOR cyan        cyan
+V SET_COLOR darkCyan    cadetBlue
+V SET_COLOR magenta     magenta
+V SET_COLOR darkMagenta purple
+V SET_COLOR yellow      yellow
+V SET_FILL  blank       blank
+V SET_FILL  solid       solid
+V SET_FILL  backSlash   backSlash
+V SET_FILL  slash       slash
+V SET_FILL  dot         dots
+V SET_FILL  diagCross   X
+V SET_FILL  brick       brick
+V SET_FILL  horizontal  hLine
+V SET_FILL  vertical    vLine
+S startFilter SCH
+S setCurModule ""
+
+< SCHEMATIC: start_filter >
+S setWorkingDir "[pwd]"
+
+< LAYOUT: load_hercules >
+L setWorkingDir /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/2to4_decoder_static.icv.lvs
+L setTopLayLCV /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/2to4_decoder_static.icv.lvs/2to4_decoder_static.custom_compiler.gds/2to4_decoder_static/
+L openLCV /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/2to4_decoder_static.icv.lvs/2to4_decoder_static.custom_compiler.gds/2to4_decoder_static/
+
+< SCHEMATIC: load_hercules >
+S setCurModule 2to4_decoder_static
+S setWorkingDir /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/2to4_decoder_static.icv.lvs
+S openModule
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< LAYOUT: edit_in_place >
+V ZOOM_EXTENTS_RESET
+
+< SCHEMATIC: new_block >
+S clearAllProbes
+L clearAllHighlights
+S setCurModule 2to4_decoder_static
+L setCurLayLCV /2to4_decoder_static/
+S openModule
+L openLCVInstance
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< SCHEMATIC: before_hilite >
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty magenta brick
+S addProbe XI69/MM1 device
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty magenta brick
+S addProbe XI69/MM0 device
+
+< SCHEMATIC: after_hilite >
+S zoomToProbes
+
+< SCHEMATIC: zoom_extents >
+
+< SCHEMATIC: before_hilite >
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty magenta brick
+S addProbe XI67/MM1 device
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty magenta brick
+S addProbe XI67/MM0 device
+
+< SCHEMATIC: after_hilite >
+S zoomToProbes
+
+< SCHEMATIC: zoom_extents >
+
+< SCHEMATIC: before_hilite >
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty magenta brick
+S addProbe XI68/MM1 device
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty magenta brick
+S addProbe XI68/MM0 device
+
+< SCHEMATIC: after_hilite >
+S zoomToProbes
+
+< SCHEMATIC: zoom_extents >
+Member instance '_SP_NMOS#2' has no status
+Member instance '_S_PMOS#2' has no status
+
+< SCHEMATIC: before_hilite >
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty magenta brick
+S addProbe XI59/MM1 device
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty magenta brick
+S addProbe XI59/MM0 device
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty magenta brick
+S addProbe XI59/MM3 device
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty magenta brick
+S addProbe XI59/MM2 device
+
+< SCHEMATIC: after_hilite >
+S zoomToProbes
+
+< SCHEMATIC: zoom_extents >
+Member instance '_SP_NMOS#1' has no status
+Member instance '_S_PMOS#3' has no status
+
+< SCHEMATIC: before_hilite >
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty magenta brick
+S addProbe XI58/MM1 device
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty magenta brick
+S addProbe XI58/MM0 device
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty magenta brick
+S addProbe XI58/MM3 device
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty magenta brick
+S addProbe XI58/MM2 device
+
+< SCHEMATIC: after_hilite >
+S zoomToProbes
+
+< SCHEMATIC: zoom_extents >
+Member instance '_SP_NMOS#3' has no status
+Member instance '_S_PMOS#1' has no status
+
+< SCHEMATIC: before_hilite >
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty magenta brick
+S addProbe XI60/MM1 device
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty magenta brick
+S addProbe XI60/MM0 device
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty magenta brick
+S addProbe XI60/MM3 device
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty magenta brick
+S addProbe XI60/MM2 device
+
+< SCHEMATIC: after_hilite >
+S zoomToProbes
+
+< SCHEMATIC: zoom_extents >
+
+< LAYOUT: before_hilite >
+V ZOOM_EXTENTS_RESET
+L setHiliteId
+
+< LAYOUT: primary_hilite >
+L setHighlightProperty magenta brick
+
+< LAYOUT: poly_set >
+L highlightFromFile /mnt/ncsudrive/h/hrajesh/.synopsys/icv/vue_tmp_000000/highlight_20250417145537_000000.oas /mnt/ncsudrive/h/hrajesh/.synopsys/icv/vue_tmp_000000/highlight_20250417145537_000000.oas
+
+< LAYOUT: after_hilite >
+L drawHighlights
+
+< LAYOUT: zoom_extents >
+L setViewPort 0.545 0.3545 0.616 0.4855
+
+< LAYOUT: before_hilite >
+V ZOOM_EXTENTS_RESET
+L setHiliteId
+
+< LAYOUT: primary_hilite >
+L setHighlightProperty magenta brick
+
+< LAYOUT: poly_set >
+L highlightFromFile /mnt/ncsudrive/h/hrajesh/.synopsys/icv/vue_tmp_000000/highlight_20250417145538_000001.oas /mnt/ncsudrive/h/hrajesh/.synopsys/icv/vue_tmp_000000/highlight_20250417145538_000001.oas
+
+< LAYOUT: after_hilite >
+L drawHighlights
+
+< LAYOUT: zoom_extents >
+L setViewPort 0.041 0.3545 0.112 0.4855
+
+< LAYOUT: before_hilite >
+V ZOOM_EXTENTS_RESET
+L setHiliteId
+
+< LAYOUT: primary_hilite >
+L setHighlightProperty magenta brick
+
+< LAYOUT: poly_set >
+L highlightFromFile /mnt/ncsudrive/h/hrajesh/.synopsys/icv/vue_tmp_000000/highlight_20250417145539_000002.oas /mnt/ncsudrive/h/hrajesh/.synopsys/icv/vue_tmp_000000/highlight_20250417145539_000002.oas
+
+< LAYOUT: after_hilite >
+L drawHighlights
+
+< LAYOUT: zoom_extents >
+L setViewPort 0.209 0.3545 0.28 0.4855
+
+< LAYOUT: before_hilite >
+V ZOOM_EXTENTS_RESET
+L setHiliteId
+
+< LAYOUT: primary_hilite >
+L setHighlightProperty magenta brick
+
+< LAYOUT: poly_set >
+L highlightFromFile /mnt/ncsudrive/h/hrajesh/.synopsys/icv/vue_tmp_000000/highlight_20250417145540_000003.oas /mnt/ncsudrive/h/hrajesh/.synopsys/icv/vue_tmp_000000/highlight_20250417145540_000003.oas
+
+< LAYOUT: after_hilite >
+L drawHighlights
+
+< LAYOUT: zoom_extents >
+L setViewPort 0.545 0.239 0.616 0.37
+
+< LAYOUT: before_hilite >
+V ZOOM_EXTENTS_RESET
+L setHiliteId
+
+< LAYOUT: primary_hilite >
+L setHighlightProperty magenta brick
+
+< LAYOUT: poly_set >
+L highlightFromFile /mnt/ncsudrive/h/hrajesh/.synopsys/icv/vue_tmp_000000/highlight_20250417145541_000004.oas /mnt/ncsudrive/h/hrajesh/.synopsys/icv/vue_tmp_000000/highlight_20250417145541_000004.oas
+
+< LAYOUT: after_hilite >
+L drawHighlights
+
+< LAYOUT: zoom_extents >
+L setViewPort 0.209 0.239 0.28 0.37
+
+< LAYOUT: before_hilite >
+V ZOOM_EXTENTS_RESET
+L setHiliteId
+
+< LAYOUT: primary_hilite >
+L setHighlightProperty magenta brick
+
+< LAYOUT: poly_set >
+L highlightFromFile /mnt/ncsudrive/h/hrajesh/.synopsys/icv/vue_tmp_000000/highlight_20250417145542_000005.oas /mnt/ncsudrive/h/hrajesh/.synopsys/icv/vue_tmp_000000/highlight_20250417145542_000005.oas
+
+< LAYOUT: after_hilite >
+L drawHighlights
+
+< LAYOUT: zoom_extents >
+L setViewPort 0.377 0.239 0.448 0.37
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< SCHEMATIC: before_hilite >
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty magenta brick
+S addProbe XI69/MM1 device
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty magenta brick
+S addProbe XI69/MM0 device
+
+< SCHEMATIC: after_hilite >
+S zoomToProbes
+
+< SCHEMATIC: zoom_extents >

@@ -1,0 +1,64 @@
+*PrimeWave Design Environment Based on Custom Infrastructure
+*Version W-2024.09-SP1-2
+*Thu Apr  3 12:07:20 2025
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : group8
+* Cell             : nand_i3
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt nand_i3 a b c out
+m4 out a net8 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+m3 net8 b net5 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m2 net5 c gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m7 out c vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m6 out b vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m5 out a vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+.ends nand_i3
+
+********************************************************************************
+* Library          : group8
+* Cell             : inv
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt inv in out
+m0 out in vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m1 out in gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+.ends inv
+
+********************************************************************************
+* Library          : group8
+* Cell             : static_row_decoder_3by8
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi52 a2 net66 net67 net61 nand_i3
+xi53 a2 net66 a0 net62 nand_i3
+xi54 a2 a1 net67 net63 nand_i3
+xi55 a2 a1 a0 net64 nand_i3
+xi39 net80 a1 a0 net68 nand_i3
+xi38 a1 a1 net67 net60 nand_i3
+xi37 net80 net66 a0 net59 nand_i3
+xi36 net80 net66 net67 net58 nand_i3
+xi18 a0 net67 inv
+xi17 a1 net66 inv
+xi16 a2 net80 inv
+xi44 net58 y0 inv
+xi45 net59 y1 inv
+xi46 net60 y2 inv
+xi51 net64 y7 inv
+xi50 net63 y6 inv
+xi49 net62 y5 inv
+xi48 net61 y4 inv
+xi47 net68 y3 inv
+v67 a0 gnd! dc=0 pulse ( 0 0 0 0 0 50p 25p )
+v66 a1 gnd! dc=0 pulse ( 0 0 0 0 0 100p 50p )
+v65 a2 gnd! dc=0 pulse ( 0.8 0 0 0 0 100p 200p )
+v72 vdd! gnd! dc=0.8
+

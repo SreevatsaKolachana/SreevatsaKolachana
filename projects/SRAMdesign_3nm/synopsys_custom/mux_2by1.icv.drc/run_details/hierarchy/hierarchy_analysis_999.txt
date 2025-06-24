@@ -1,0 +1,119 @@
+* Description of frequently used terms in hierarchy_analysis files*
+M indicates that the value of that column is in millions
+Hier Plc Count(Hierarchical Placement Count) : Number of unique instances of the cell in another cell (Parent)
+Flat Plc Count(Flat Placement Count)         : Total number of instances of the cell in the layout
+
+Example : 
+                               A                     
+                              / \                   Cell  Hier Plc Count Flat Plc Count 
+                             /   \                     A               1              1 
+                            B     B                    B               2              2 
+                           / \  /  \                   C               2              4 
+                          C   C C   C                
+------------------------------------------------------------------------------------------------------ 
+
+
+* Cells with flat area > 0.01 of top cell *
+Reports cells with flat area > 0.01 of top cell
+
+Flat A(Flat Area) : Total area covered by this cell in the layout(cell area * flat placement count)
+Cell A(Cell Area) : Area of this cell
+Percent of top    : Percentage of area of this cell w.r.t area of top cell
+This table contains 4 entries
+Original table contains 4 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Flat Plc Count, Hier Plc Count, Percent of top
+-----------------------------------------------
+ mux_2by1                                      |         0.000,         0.000,              1,              1,       100.00 %
+ inv                                           |         0.000,         0.000,              4,              4,        52.14 %
+ sram_filler                                   |         0.000,         0.000,              4,              4,        37.83 %
+ nand                                          |         0.000,         0.000,              2,              2,        33.23 %
+===============================================
+
+* Large-Area cells and child area ratio *
+This table reports cells with large areas and ratio of its area with total area covered by its children
+
+Num Inst(Number of instances) : Total Number of instances of the cell
+Child A(Child Area)           : Total area covered by all the children of the cell
+Pct of parent(Percent of area): Percentage of total area covered by its childern w.r.t area of this cell
+This table contains 4 entries
+Original table contains 4 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Num Inst (M), Child A (mm^2), Pct of parent
+-----------------------------------------------
+ mux_2by1                                      |         0.000,         0.000,        0.000,         0.000,      123.20 %
+ inv                                           |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ sram_filler                                   |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ nand                                          |         0.000,         0.000,        0.000,         0.000,        0.00 %
+===============================================
+
+* Exploded Cell Information *
+Displays information of exploded cells
+
+Parent cell           : Name of the parent cell the cell has exploded into
+Exploded Inst Count   : Total number of instances of the cell that has expldoed to the parent cell
+Parent Flat Plc Count : Parent cell flat placement count
+Parent Hier Plc Count : Parent cell hierarchical placement count
+This table contains 23 entries
+Original table contains 23 entries
+
+ Exploded Cell                                 | Parent Cell                                   | Exploded Inst Count, Parent Flat Plc Count, Parent Hier Plc Count
+----------------------------------------------- -----------------------------------------------
+ M0A_M0B                                       | mux_2by1                                      |                   6,                     1,                     1
+ M0B_M1                                        | mux_2by1                                      |                   5,                     1,                     1
+ M1_M2                                         | mux_2by1                                      |                   4,                     1,                     1
+ M0B_M1                                        | nand                                          |                   4,                     2,                     2
+ BPR_M0A                                       | inv                                           |                   3,                     4,                     4
+ M0B_M1                                        | inv                                           |                   3,                     4,                     4
+ BPR_M0A                                       | mux_2by1                                      |                   3,                     1,                     1
+ nmos                                          | mux_2by1                                      |                   3,                     1,                     1
+ pmos                                          | mux_2by1                                      |                   3,                     1,                     1
+ BPR_M0A                                       | nand                                          |                   3,                     2,                     2
+ M0A_M0B                                       | nand                                          |                   3,                     2,                     2
+ pmos                                          | nand                                          |                   3,                     2,                     2
+ GATE_M0B                                      | inv                                           |                   2,                     4,                     4
+ nmos                                          | inv                                           |                   2,                     4,                     4
+ pmos                                          | inv                                           |                   2,                     4,                     4
+ GATE_M0B                                      | mux_2by1                                      |                   2,                     1,                     1
+ GATE_M0B                                      | nand                                          |                   2,                     2,                     2
+ nmos                                          | nand                                          |                   2,                     2,                     2
+ BPR_M0A                                       | sram_filler                                   |                   2,                     4,                     4
+ M0A_M0B                                       | inv                                           |                   1,                     4,                     4
+ nor                                           | mux_2by1                                      |                   1,                     1,                     1
+ nmos                                          | sram_filler                                   |                   1,                     4,                     4
+ pmos                                          | sram_filler                                   |                   1,                     4,                     4
+=============================================== ===============================================
+
+* Layer Report with Estimated Data *
+Reports information of layers present in the layout
+
+Trap        : Number of hierarchical trapezoids in the layer
+Poly        : Number of hierarchical polygons in the layer
+Text        : Number of hierarchical text primitives in the layer
+Flat Trap   : Number of flat trapezoids 
+Flat Poly   : Number of flat polygons
+Flat Text   : Number of flat text primitives 
+Trap F/H    : Ratio of flat and hierarchical placements of the trapezoids
+Base, Metal, Via, Fill, Colored : Indicates layer intent
+This table contains 15 entries
+Original table contains 15 entries
+
+ Name                                          | Trap (M), Poly (M), Text (M), Flat Trap (M), Flat Poly (M), Flat Text (M), Trap F/H, Base, Metal, Via, Fill, Colored
+-----------------------------------------------
+ aGATE                                         |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     2.39,    0,     0,   0,    0,       0
+ aM0A                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     2.34,    0,     0,   0,    0,       0
+ aM1                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.53,    0,     0,   0,    0,       0
+ aM0B                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.97,    0,     0,   0,    0,       0
+ aBPR                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     2.55,    0,     0,   0,    0,       0
+ aACT                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     2.35,    0,     0,   0,    0,       0
+ aNW                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     2.46,    0,     0,   0,    0,       0
+ aNIM                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     2.50,    0,     0,   0,    0,       0
+ aVBPR                                         |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     2.64,    0,     0,   0,    0,       0
+ aV0A                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.60,    0,     0,   0,    0,       0
+ aM2                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.00,    0,     0,   0,    0,       0
+ aGCUT                                         |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     2.75,    0,     0,   0,    0,       0
+ aGCON                                         |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     2.33,    0,     0,   0,    0,       0
+ aV1                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.00,    0,     0,   0,    0,       0
+ aM1_color1                                    |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+===============================================
+

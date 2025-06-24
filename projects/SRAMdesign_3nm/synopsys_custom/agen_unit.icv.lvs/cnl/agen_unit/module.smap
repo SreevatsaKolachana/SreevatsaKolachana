@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 agen_unit schematic vl: auCdl schematic symbol">
+    <scope name="Instance">
+        <forward>
+            <mapping src="I26" dst="XI26"/>
+            <mapping src="I27" dst="XI27"/>
+            <mapping src="I29" dst="XI29"/>
+            <mapping src="I30" dst="XI30"/>
+            <mapping src="I31" dst="XI31"/>
+            <mapping src="I28" dst="XI28"/>
+            <mapping src="I32" dst="XI32"/>
+            <mapping src="I33" dst="XI33"/>
+            <mapping src="I23" dst="XI23"/>
+            <mapping src="I24" dst="XI24"/>
+            <mapping src="I25" dst="XI25"/>
+            <mapping src="I21" dst="XI21"/>
+            <mapping src="I19" dst="XI19"/>
+            <mapping src="I15" dst="XI15"/>
+            <mapping src="I14" dst="XI14"/>
+            <mapping src="I22" dst="XI22"/>
+            <mapping src="I16" dst="XI16"/>
+            <mapping src="I17" dst="XI17"/>
+            <mapping src="I34" dst="XI34"/>
+            <mapping src="I0" dst="XI0"/>
+            <mapping src="I20" dst="XI20"/>
+            <mapping src="I18" dst="XI18"/>
+            <mapping src="I1" dst="XI1"/>
+        </forward>
+        <reverse>
+            <mapping src="XI26" dst="I26"/>
+            <mapping src="XI28" dst="I28"/>
+            <mapping src="XI29" dst="I29"/>
+            <mapping src="XI27" dst="I27"/>
+            <mapping src="XI30" dst="I30"/>
+            <mapping src="XI31" dst="I31"/>
+            <mapping src="XI33" dst="I33"/>
+            <mapping src="XI23" dst="I23"/>
+            <mapping src="XI24" dst="I24"/>
+            <mapping src="XI25" dst="I25"/>
+            <mapping src="XI20" dst="I20"/>
+            <mapping src="XI19" dst="I19"/>
+            <mapping src="XI32" dst="I32"/>
+            <mapping src="XI18" dst="I18"/>
+            <mapping src="XI17" dst="I17"/>
+            <mapping src="XI15" dst="I15"/>
+            <mapping src="XI21" dst="I21"/>
+            <mapping src="XI22" dst="I22"/>
+            <mapping src="XI0" dst="I0"/>
+            <mapping src="XI14" dst="I14"/>
+            <mapping src="XI1" dst="I1"/>
+            <mapping src="XI34" dst="I34"/>
+            <mapping src="XI16" dst="I16"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward/>
+        <reverse/>
+    </scope>
+    <scope name="Terminal">
+        <forward/>
+        <reverse/>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping src="&lt;unmappedTermOrder&gt;" dst="A0 A1 RS0 RS0Bar RS1 RS1Bar WEn WS0 WS0Bar WS1 WS1Bar"/>
+            <mapping src="&lt;termOrder&gt;" dst="A0 A1 RS0 RS0Bar RS1 RS1Bar WEn WS0 WS0Bar WS1 WS1Bar"/>
+        </forward>
+        <reverse>
+            <mapping src="A0 A1 RS0 RS0Bar RS1 RS1Bar WEn WS0 WS0Bar WS1 WS1Bar" dst="&lt;unmappedTermOrder&gt;"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="Demux">
+            <instance name="I0"/>
+            <instance name="I1"/>
+        </instance_header>
+        <instance_header master="inv">
+            <instance name="I14"/>
+            <instance name="I15"/>
+            <instance name="I16"/>
+            <instance name="I17"/>
+            <instance name="I34"/>
+        </instance_header>
+        <instance_header master="invx4">
+            <instance name="I26"/>
+            <instance name="I27"/>
+            <instance name="I28"/>
+            <instance name="I29"/>
+            <instance name="I30"/>
+            <instance name="I31"/>
+            <instance name="I32"/>
+            <instance name="I33"/>
+        </instance_header>
+        <instance_header master="nand">
+            <instance name="I22"/>
+            <instance name="I23"/>
+            <instance name="I24"/>
+            <instance name="I25"/>
+        </instance_header>
+        <instance_header master="nor">
+            <instance name="I18"/>
+            <instance name="I19"/>
+            <instance name="I20"/>
+            <instance name="I21"/>
+        </instance_header>
+    </master_instances>
+</module>

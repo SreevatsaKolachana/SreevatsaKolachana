@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: analogLib res hspice">
+    <scope name="Terminal">
+        <forward>
+            <mapping src="MINUS" dst="(FUNCTION\ minus(root(&quot;PLUS&quot;)))"/>
+            <mapping src="PLUS" dst=""/>
+        </forward>
+        <reverse>
+            <mapping src="(FUNCTION\ minus(root(&quot;PLUS&quot;)))" dst="MINUS"/>
+            <mapping src="" dst="PLUS"/>
+            <mapping src="minus" dst="MINUS"/>
+            <mapping src="plus" dst="PLUS"/>
+        </reverse>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping src="&lt;unmappedTermOrder&gt;" dst="PLUS MINUS"/>
+            <mapping src="&lt;termOrder&gt;" dst="PLUS (FUNCTION\ minus(root(&quot;PLUS&quot;)))"/>
+        </forward>
+        <reverse>
+            <mapping src="PLUS (FUNCTION\ minus(root(&quot;PLUS&quot;)))" dst="&lt;termOrder&gt;"/>
+            <mapping src="PLUS MINUS" dst="&lt;unmappedTermOrder&gt;"/>
+            <mapping src="plus minus" dst="&lt;termOrder&gt;"/>
+        </reverse>
+    </scope>
+    <master_instances/>
+</module>

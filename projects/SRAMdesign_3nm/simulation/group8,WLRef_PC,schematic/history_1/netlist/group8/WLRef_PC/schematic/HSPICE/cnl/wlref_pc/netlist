@@ -1,0 +1,17 @@
+********************************************************************************
+* Library          : group8
+* Cell             : WLRef_PC
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi21 clk_dff net59 buffer
+xi19 net39 net45 buffer
+xi20 net41 net39 buffer
+xi14 net45 net29 buffer
+xi8 net29 clk_dff buffer
+xi0 clk net41 buffer
+xi10 net21 pc invx4
+xi16 net36 wlref invx4
+xi13 net59 clk net21 nor
+xi15 clk clk_dff net36 nand

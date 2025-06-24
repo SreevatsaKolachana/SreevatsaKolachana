@@ -1,0 +1,344 @@
+  + INFO: Connected to Custom Compiler at 42859.
+
+< LAYOUT: start_vue >
+V SET_COLOR white       white
+V SET_COLOR red         red
+V SET_COLOR darkRed     maroon
+V SET_COLOR green       lime
+V SET_COLOR darkGreen   forest
+V SET_COLOR blue        blue
+V SET_COLOR darkBlue    navy
+V SET_COLOR cyan        cyan
+V SET_COLOR darkCyan    cadetBlue
+V SET_COLOR magenta     magenta
+V SET_COLOR darkMagenta purple
+V SET_COLOR yellow      yellow
+V SET_FILL  blank       blank
+V SET_FILL  solid       solid
+V SET_FILL  backSlash   backSlash
+V SET_FILL  slash       slash
+V SET_FILL  dot         dots
+V SET_FILL  diagCross   X
+V SET_FILL  brick       brick
+V SET_FILL  horizontal  hLine
+V SET_FILL  vertical    vLine
+L startFilter LAY
+L setTopLayLCV  ""
+L setCurLayLCV  ""
+
+< LAYOUT: start_filter >
+L setWorkingDir "[pwd]"
+  + INFO: Timer already set.
+  + INFO: Connected to Custom Compiler at 42859.
+
+< SCHEMATIC: start_vue >
+V SET_COLOR white       white
+V SET_COLOR red         red
+V SET_COLOR darkRed     maroon
+V SET_COLOR green       lime
+V SET_COLOR darkGreen   forest
+V SET_COLOR blue        blue
+V SET_COLOR darkBlue    navy
+V SET_COLOR cyan        cyan
+V SET_COLOR darkCyan    cadetBlue
+V SET_COLOR magenta     magenta
+V SET_COLOR darkMagenta purple
+V SET_COLOR yellow      yellow
+V SET_FILL  blank       blank
+V SET_FILL  solid       solid
+V SET_FILL  backSlash   backSlash
+V SET_FILL  slash       slash
+V SET_FILL  dot         dots
+V SET_FILL  diagCross   X
+V SET_FILL  brick       brick
+V SET_FILL  horizontal  hLine
+V SET_FILL  vertical    vLine
+S startFilter SCH
+S setCurModule ""
+
+< SCHEMATIC: start_filter >
+S setWorkingDir "[pwd]"
+
+< LAYOUT: load_hercules >
+L setWorkingDir /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/between_blocks.icv.lvs
+L setTopLayLCV /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/between_blocks.icv.lvs/between_blocks.custom_compiler.gds/between_blocks/
+L openLCV /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/between_blocks.icv.lvs/between_blocks.custom_compiler.gds/between_blocks/
+
+< SCHEMATIC: load_hercules >
+S setCurModule between_blocks
+S setWorkingDir /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/between_blocks.icv.lvs
+S openModule
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< LAYOUT: edit_in_place >
+V ZOOM_EXTENTS_RESET
+L clearAllHighlights
+
+< SCHEMATIC: new_block >
+S clearAllProbes
+L setCurLayLCV /between_blocks/
+L openLCVInstance
+S setCurModule between_blocks
+S openModule
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+Member instance '_SP_NMOS#2' has no status
+Member instance '_S_PMOS#0' has no status
+Member instance '_SP_NMOS#0' has no status
+Member instance '_S_PMOS#1' has no status
+
+< SCHEMATIC: before_hilite >
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty cyan brick
+Member instance 'Parallel#5' has no status
+S addProbe XI230/MM1 device
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty cyan brick
+S addProbe XI230/MM0 device
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty cyan brick
+S addProbe XI230/MM3 device
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty cyan brick
+S addProbe XI230/MM2 device
+
+< SCHEMATIC: after_hilite >
+S zoomToProbes
+
+< SCHEMATIC: before_hilite >
+
+< SCHEMATIC: dev_hilite >
+
+< LAYOUT: before_hilite >
+S setProbeProperty cyan brick
+V ZOOM_EXTENTS_RESET
+L setHiliteId
+S addProbe XI239/MM1 device
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty cyan brick
+
+< LAYOUT: primary_hilite >
+L setHighlightProperty cyan brick
+S addProbe XI239/MM0 device
+
+< SCHEMATIC: after_hilite >
+S zoomToProbes
+
+< LAYOUT: poly_set >
+L highlightFromFile /mnt/ncsudrive/s/svkolach/.synopsys/icv/vue_tmp_000000/highlight_20250416235420_000000.oas /mnt/ncsudrive/s/svkolach/.synopsys/icv/vue_tmp_000000/highlight_20250416235420_000000.oas
+
+< LAYOUT: after_hilite >
+L drawHighlights
+
+< LAYOUT: redraw >
+
+< LAYOUT: _zoom_to_extent_ >
+L setViewPort 0.102 0.2685 0.383 0.3995
+
+< SCHEMATIC: before_hilite >
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty cyan brick
+S addProbe XI230/MM1 device
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty cyan brick
+
+< LAYOUT: before_hilite >
+V ZOOM_EXTENTS_RESET
+L setHiliteId
+S addProbe XI230/MM0 device
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty cyan brick
+S addProbe XI230/MM3 device
+
+< LAYOUT: primary_hilite >
+L setHighlightProperty cyan brick
+
+< SCHEMATIC: dev_hilite >
+S setProbeProperty cyan brick
+S addProbe XI230/MM2 device
+
+< SCHEMATIC: after_hilite >
+S zoomToProbes
+
+< LAYOUT: poly_set >
+L highlightFromFile /mnt/ncsudrive/s/svkolach/.synopsys/icv/vue_tmp_000000/highlight_20250416235426_000001.oas /mnt/ncsudrive/s/svkolach/.synopsys/icv/vue_tmp_000000/highlight_20250416235426_000001.oas
+
+< LAYOUT: after_hilite >
+L drawHighlights
+
+< LAYOUT: redraw >
+
+< LAYOUT: _zoom_to_extent_ >
+L setViewPort 0.123 0.2685 0.194 0.3995
+
+< LAYOUT: before_hilite >
+V ZOOM_EXTENTS_RESET
+L setHiliteId
+
+< LAYOUT: primary_hilite >
+L setHighlightProperty yellow brick
+
+< LAYOUT: poly_set >
+L highlightFromFile /mnt/ncsudrive/s/svkolach/.synopsys/icv/vue_tmp_000000/highlight_20250416235449_000002.oas /mnt/ncsudrive/s/svkolach/.synopsys/icv/vue_tmp_000000/highlight_20250416235449_000002.oas
+
+< LAYOUT: after_hilite >
+L drawHighlights
+
+< LAYOUT: zoom_extents >
+L setViewPort 0.31 0.2885 0.343 0.3795
+
+< SCHEMATIC: before_hilite >
+
+< SCHEMATIC: net_hilite >
+S setProbeProperty yellow brick
+S addProbe RS1 net
+
+< SCHEMATIC: after_hilite >
+S zoomToProbes
+
+< SCHEMATIC: zoom_extents >
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< LAYOUT: load_hercules >
+L setWorkingDir /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/between_blocks.icv.lvs
+L setTopLayLCV /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/between_blocks.icv.lvs/between_blocks.custom_compiler.gds/between_blocks/
+L openLCV /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/between_blocks.icv.lvs/between_blocks.custom_compiler.gds/between_blocks/
+
+< SCHEMATIC: load_hercules >
+S setCurModule between_blocks
+S setWorkingDir /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/between_blocks.icv.lvs
+S openModule
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< LAYOUT: load_hercules >
+L setWorkingDir /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/between_blocks.icv.lvs
+L setTopLayLCV /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/between_blocks.icv.lvs/between_blocks.custom_compiler.gds/between_blocks/
+L openLCV /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/between_blocks.icv.lvs/between_blocks.custom_compiler.gds/between_blocks/
+
+< SCHEMATIC: load_hercules >
+S setCurModule between_blocks
+S setWorkingDir /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/synopsys_custom/between_blocks.icv.lvs
+S openModule
+
+< LAYOUT: remove_hilites >
+L clearAllHighlights
+
+< SCHEMATIC: remove_hilites >
+S clearAllProbes
+
+< LAYOUT: quit_vue >
+
+< SCHEMATIC: quit_vue >
+  + INFO: Close the connection with Custom Compiler.
+  + INFO: Close the connection with Custom Compiler.

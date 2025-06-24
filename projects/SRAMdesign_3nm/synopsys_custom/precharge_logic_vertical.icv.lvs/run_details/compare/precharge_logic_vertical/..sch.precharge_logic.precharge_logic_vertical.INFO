@@ -1,0 +1,34 @@
+$VERSION 1
+
+$INFO_BLOCK precharge_logic
+
+$NMOS nmos 
+$PMOS pmos 
+$NPN  
+$PNP  
+
+$POWER vdd! 
+$GROUND 
+
+$INOUT_PORT
+$CELL nmos
+$TYPE MOS
+$INPUT GATE 
+$OUTPUT DRN SRC 
+$PINCLASS DRN 1 SRC 1 GATE 4 
+$BULKPINS 
+
+$CELL pmos
+$TYPE MOS
+$INPUT GATE 
+$OUTPUT DRN SRC 
+$PINCLASS DRN 1 SRC 1 GATE 4 
+$BULKPINS 
+
+$CELL precharge_logic
+$TYPE CELL
+$INPUT clk 
+$OUTPUT BL_bar BL 
+$PINCLASS BL_bar 3 clk 4 vdd! 1 BL 2 
+
+$TRIMMED_NET

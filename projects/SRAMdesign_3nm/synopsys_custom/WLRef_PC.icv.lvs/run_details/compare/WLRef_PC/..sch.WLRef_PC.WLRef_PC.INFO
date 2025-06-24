@@ -1,0 +1,97 @@
+$VERSION 1
+
+$INFO_BLOCK WLRef_PC
+
+$NMOS nmos 
+$PMOS pmos 
+$NPN  
+$PNP  
+
+$POWER vdd! 
+$GROUND gnd! 
+
+$INOUT_PORT
+$CELL _S_NMOS3_(nmos)
+$TYPE CELL
+$INPUT In3 In2 In1 
+$OUTPUT Out1 Out2 
+$PINCLASS Out1 1 In3 81 In2 81 Out2 1 In1 81 
+$BULKPINS 
+
+$CELL _SP_PMOS_2_(pmos)
+$TYPE CELL
+$INPUT In2 In1 
+$OUTPUT Out1 Out2 
+$PINCLASS Out1 1 In2 81 Out2 1 In1 81 
+$BULKPINS 
+
+$CELL _NAND2(nmos/pmos)
+$TYPE CELL
+$INPUT In2 In1 
+$OUTPUT Out 
+$PINCLASS Gnd 25 Out 23 Pwr 24 In2 81 In1 81 
+$BULKPINS 
+
+$CELL nmos
+$TYPE MOS
+$INPUT GATE 
+$OUTPUT DRN SRC 
+$PINCLASS DRN 1 SRC 1 GATE 4 
+$BULKPINS 
+
+$CELL _S_NMOS2_(nmos)
+$TYPE CELL
+$INPUT In2 In1 
+$OUTPUT Out1 Out2 
+$PINCLASS Out1 1 In2 81 Out2 1 In1 81 
+$BULKPINS 
+
+$CELL _S_PMOS2_(pmos)
+$TYPE CELL
+$INPUT In2 In1 
+$OUTPUT Out1 Out2 
+$PINCLASS Out1 1 In2 81 Out2 1 In1 81 
+$BULKPINS 
+
+$CELL _NOR2(nmos/pmos)
+$TYPE CELL
+$INPUT In2 In1 
+$OUTPUT Out 
+$PINCLASS Gnd 25 Out 23 Pwr 24 In2 81 In1 81 
+$BULKPINS 
+
+$CELL pmos
+$TYPE MOS
+$INPUT GATE 
+$OUTPUT DRN SRC 
+$PINCLASS DRN 1 SRC 1 GATE 4 
+$BULKPINS 
+
+$CELL _SP_NMOS_2_(nmos)
+$TYPE CELL
+$INPUT In2 In1 
+$OUTPUT Out1 Out2 
+$PINCLASS Out1 1 In2 81 Out2 1 In1 81 
+$BULKPINS 
+
+$CELL _INV(nmos/pmos)
+$TYPE CELL
+$INPUT In 
+$OUTPUT Out 
+$PINCLASS Gnd 25 Out 23 Pwr 24 In 81 
+$BULKPINS 
+
+$CELL WLRef_PC
+$TYPE CELL
+$INPUT CLK_inverted_delayed net76 net154 net62 net139 net111 net118 net61 net110 
+	net39 net60 CLK CLK_inverted net59 net144 net137 net116 net123 net143 
+	net115 net122 net114 net121 net21 net141 
+$OUTPUT CLK_inverted_delayed net76 net154 net62 PC net139 net111 net118 clk_dff 
+	net61 net110 net39 RSNew net60 CLK_inverted net59 net144 net137 net116 
+	net123 net143 net115 net122 net114 net121 WLRef net21 net141 
+$PINCLASS CLK_inverted_delayed 2 net76 4 net154 8 net62 23 PC 25 net139 12 net111 13 net118 18 clk_dff 24 
+	net61 27 net110 9 net39 22 RSNew 26 net60 28 CLK 1 CLK_inverted 3 net59 6 net144 7 net137 10 
+	net116 17 net123 21 net143 11 net115 16 net122 20 gnd! 0 vdd! 0 net114 15 net121 19 WLRef 0 
+	net21 5 net141 14 
+
+$TRIMMED_NET

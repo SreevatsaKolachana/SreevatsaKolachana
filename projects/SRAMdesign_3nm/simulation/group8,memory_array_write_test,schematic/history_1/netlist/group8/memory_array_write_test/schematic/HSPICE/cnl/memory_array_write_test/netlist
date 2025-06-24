@@ -1,0 +1,23 @@
+********************************************************************************
+* Library          : group8
+* Cell             : memory_array_write_test
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi8 bl blbar net83 sram_6t
+xi7 bl blbar w1 sram_6t
+xi6 bl blbar w2 sram_6t
+xi5 bl blbar w3 sram_6t
+xi4 bl blbar w4 sram_6t
+xi3 bl blbar w5 sram_6t
+xi2 bl blbar w6 sram_6t
+xi1 bl blbar net78 sram_6t
+xi9 net69 net41 net83 net83 w1 w2 w3 w4 w5 w6 gnd! static_row_decoder_3by8
+v25 vdd! gnd! dc=0.8
+v12 net69 gnd! dc=0.8
+v11 net41 gnd! dc=0.8
+v10 net83 gnd! dc=0.8
+v31 net91 gnd! dc=0 pulse ( 0 0.8 15p 5p 5p 45p 100p )
+v27 net78 gnd! dc=0 pulse ( 0 0.8 20p 5p 5p 45p 100p )
+xi30 bl blbar net91 precharge_logic

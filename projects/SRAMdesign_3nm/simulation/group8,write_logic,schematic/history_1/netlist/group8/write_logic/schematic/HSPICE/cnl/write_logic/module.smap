@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 write_logic schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping src="V8" dst="v8"/>
+            <mapping src="V16" dst="v16"/>
+            <mapping src="V10" dst="v10"/>
+            <mapping src="M7" dst="m7"/>
+            <mapping src="I14" dst="xi14"/>
+            <mapping src="M6" dst="m6"/>
+            <mapping src="I13" dst="xi13"/>
+        </forward>
+        <reverse>
+            <mapping src="v16" dst="V16"/>
+            <mapping src="v8" dst="V8"/>
+            <mapping src="v10" dst="V10"/>
+            <mapping src="m6" dst="M6"/>
+            <mapping src="m7" dst="M7"/>
+            <mapping src="xi14" dst="I14"/>
+            <mapping src="xi13" dst="I13"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward>
+            <mapping src="Write_enable" dst="write_enable"/>
+            <mapping src="BL_bar" dst="bl_bar"/>
+            <mapping src="BL" dst="bl"/>
+        </forward>
+        <reverse>
+            <mapping src="write_enable" dst="Write_enable"/>
+            <mapping src="bl_bar" dst="BL_bar"/>
+            <mapping src="bl" dst="BL"/>
+        </reverse>
+    </scope>
+    <scope name="Terminal">
+        <forward>
+            <mapping src="Write_enable" dst="write_enable"/>
+            <mapping src="BL_bar" dst="bl_bar"/>
+            <mapping src="BL" dst="bl"/>
+        </forward>
+        <reverse>
+            <mapping src="write_enable" dst="Write_enable"/>
+            <mapping src="bl_bar" dst="BL_bar"/>
+            <mapping src="bl" dst="BL"/>
+        </reverse>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping src="&lt;unmappedTermOrder&gt;" dst="BL BL_bar Write_enable write_data"/>
+            <mapping src="&lt;termOrder&gt;" dst="bl bl_bar write_enable write_data"/>
+        </forward>
+        <reverse>
+            <mapping src="BL BL_bar Write_enable write_data" dst="&lt;unmappedTermOrder&gt;"/>
+            <mapping src="bl bl_bar write_enable write_data" dst="&lt;termOrder&gt;"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="inv">
+            <instance name="I13"/>
+            <instance name="I14"/>
+        </instance_header>
+        <instance_header master="pmos">
+            <instance name="M6"/>
+            <instance name="M7"/>
+        </instance_header>
+        <instance_header master="vdc">
+            <instance name="V16"/>
+        </instance_header>
+        <instance_header master="vpulse">
+            <instance name="V10"/>
+            <instance name="V8"/>
+        </instance_header>
+    </master_instances>
+</module>

@@ -1,0 +1,29 @@
+********************************************************************************
+* Library          : group8
+* Cell             : columnDecoderstatic
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt columnDecoderstatic BL0 BL0Bar BL1 BL1Bar BL2 BL2Bar BL3 BL3Bar BL4
++ BL4Bar BL5 BL5Bar BL6 BL6Bar BL7 BL7Bar BL8 BL8Bar BL9 BL9Bar BL10 BL10Bar
++ BL11 BL11Bar BL12 BL12Bar BL13 BL13Bar BL14 BL14Bar BL15 BL15Bar I0 I0Bar I1
++ I1Bar I2 I2Bar I3 I3Bar Q0 Q0Bar Q1 Q1Bar Q2 Q2Bar Q3 Q3Bar RS0 RS0Bar RS1
++ RS1Bar WS0 WS0Bar WS1 WS1Bar
+*.PININFO BL0:B BL0Bar:B BL1:B BL1Bar:B BL2:B BL2Bar:B BL3:B BL3Bar:B BL4:B
+*.PININFO BL4Bar:B BL5:B BL5Bar:B BL6:B BL6Bar:B BL7:B BL7Bar:B BL8:B BL8Bar:B
+*.PININFO BL9:B BL9Bar:B BL10:B BL10Bar:B BL11:B BL11Bar:B BL12:B BL12Bar:B
+*.PININFO BL13:B BL13Bar:B BL14:B BL14Bar:B BL15:B BL15Bar:B I0:I I0Bar:I I1:I
+*.PININFO I1Bar:I I2:I I2Bar:I I3:I I3Bar:I Q0:O Q0Bar:O Q1:O Q1Bar:O Q2:O
+*.PININFO Q2Bar:O Q3:O Q3Bar:O RS0:I RS0Bar:I RS1:I RS1Bar:I WS0:I WS0Bar:I
+*.PININFO WS1:I WS1Bar:I
+XI6 BL0 BL0Bar BL1 BL1Bar BL2 BL2Bar BL3 BL3Bar I0 I0Bar Q0 Q0Bar RS0 RS0Bar RS1
++ RS1Bar WS0 WS0Bar WS1 WS1Bar 2to4_decoder_static
+XI7 BL4 BL4Bar BL5 BL5Bar BL6 BL6Bar BL7 BL7Bar I1 I1Bar Q1 Q1Bar RS0 RS0Bar RS1
++ RS1Bar WS0 WS0Bar WS1 WS1Bar 2to4_decoder_static
+XI8 BL8 BL8Bar BL9 BL9Bar BL10 BL10Bar BL11 BL11Bar I2 I2Bar Q2 Q2Bar RS0 RS0Bar
++ RS1 RS1Bar WS0 WS0Bar WS1 WS1Bar 2to4_decoder_static
+XI9 BL12 BL12Bar BL13 BL13Bar BL14 BL14Bar BL15 BL15Bar I3 I3Bar Q3 Q3Bar RS0
++ RS0Bar RS1 RS1Bar WS0 WS0Bar WS1 WS1Bar 2to4_decoder_static
+.ends columnDecoderstatic
+

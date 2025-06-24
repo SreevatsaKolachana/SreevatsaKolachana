@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 static_row_decoder_3by8 schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping dst="xi47" src="I47"/>
+            <mapping dst="xi48" src="I48"/>
+            <mapping dst="xi18" src="I18"/>
+            <mapping dst="xi49" src="I49"/>
+            <mapping dst="xi51" src="I51"/>
+            <mapping dst="xi16" src="I16"/>
+            <mapping dst="xi17" src="I17"/>
+            <mapping dst="xi37" src="I37"/>
+            <mapping dst="xi38" src="I38"/>
+            <mapping dst="xi36" src="I36"/>
+            <mapping dst="xi39" src="I39"/>
+            <mapping dst="xi50" src="I50"/>
+            <mapping dst="xi46" src="I46"/>
+            <mapping dst="xi55" src="I55"/>
+            <mapping dst="xi45" src="I45"/>
+            <mapping dst="xi54" src="I54"/>
+            <mapping dst="xi44" src="I44"/>
+            <mapping dst="xi53" src="I53"/>
+            <mapping dst="xi52" src="I52"/>
+        </forward>
+        <reverse>
+            <mapping dst="I47" src="xi47"/>
+            <mapping dst="I49" src="xi49"/>
+            <mapping dst="I50" src="xi50"/>
+            <mapping dst="I44" src="xi44"/>
+            <mapping dst="I48" src="xi48"/>
+            <mapping dst="I16" src="xi16"/>
+            <mapping dst="I18" src="xi18"/>
+            <mapping dst="I17" src="xi17"/>
+            <mapping dst="I36" src="xi36"/>
+            <mapping dst="I38" src="xi38"/>
+            <mapping dst="I39" src="xi39"/>
+            <mapping dst="I51" src="xi51"/>
+            <mapping dst="I37" src="xi37"/>
+            <mapping dst="I54" src="xi54"/>
+            <mapping dst="I46" src="xi46"/>
+            <mapping dst="I53" src="xi53"/>
+            <mapping dst="I55" src="xi55"/>
+            <mapping dst="I52" src="xi52"/>
+            <mapping dst="I45" src="xi45"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward>
+            <mapping dst="y6" src="Y6"/>
+            <mapping dst="a1" src="A1"/>
+            <mapping dst="y3" src="Y3"/>
+            <mapping dst="y2" src="Y2"/>
+            <mapping dst="y7" src="Y7"/>
+            <mapping dst="y4" src="Y4"/>
+            <mapping dst="y1" src="Y1"/>
+            <mapping dst="y0" src="Y0"/>
+            <mapping dst="a2" src="A2"/>
+            <mapping dst="a0" src="A0"/>
+            <mapping dst="y5" src="Y5"/>
+        </forward>
+        <reverse>
+            <mapping dst="A2" src="a2"/>
+            <mapping dst="Y7" src="y7"/>
+            <mapping dst="Y1" src="y1"/>
+            <mapping dst="Y2" src="y2"/>
+            <mapping dst="Y5" src="y5"/>
+            <mapping dst="Y4" src="y4"/>
+            <mapping dst="Y0" src="y0"/>
+            <mapping dst="Y6" src="y6"/>
+            <mapping dst="A1" src="a1"/>
+            <mapping dst="Y3" src="y3"/>
+            <mapping dst="A0" src="a0"/>
+        </reverse>
+    </scope>
+    <scope name="Terminal">
+        <forward>
+            <mapping dst="y6" src="Y6"/>
+            <mapping dst="y3" src="Y3"/>
+            <mapping dst="a1" src="A1"/>
+            <mapping dst="y2" src="Y2"/>
+            <mapping dst="y4" src="Y4"/>
+            <mapping dst="y7" src="Y7"/>
+            <mapping dst="y1" src="Y1"/>
+            <mapping dst="a2" src="A2"/>
+            <mapping dst="y0" src="Y0"/>
+            <mapping dst="y5" src="Y5"/>
+            <mapping dst="a0" src="A0"/>
+        </forward>
+        <reverse>
+            <mapping dst="A2" src="a2"/>
+            <mapping dst="Y7" src="y7"/>
+            <mapping dst="Y1" src="y1"/>
+            <mapping dst="Y2" src="y2"/>
+            <mapping dst="Y4" src="y4"/>
+            <mapping dst="Y5" src="y5"/>
+            <mapping dst="Y6" src="y6"/>
+            <mapping dst="Y0" src="y0"/>
+            <mapping dst="A1" src="a1"/>
+            <mapping dst="Y3" src="y3"/>
+            <mapping dst="A0" src="a0"/>
+        </reverse>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping dst="A0 A1 A2 Y0 Y1 Y2 Y3 Y4 Y5 Y6 Y7" src="&lt;unmappedTermOrder&gt;"/>
+            <mapping dst="a0 a1 a2 y0 y1 y2 y3 y4 y5 y6 y7" src="&lt;termOrder&gt;"/>
+        </forward>
+        <reverse>
+            <mapping dst="&lt;unmappedTermOrder&gt;" src="A0 A1 A2 Y0 Y1 Y2 Y3 Y4 Y5 Y6 Y7"/>
+            <mapping dst="&lt;termOrder&gt;" src="a0 a1 a2 y0 y1 y2 y3 y4 y5 y6 y7"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="inv">
+            <instance name="I16"/>
+            <instance name="I17"/>
+            <instance name="I18"/>
+            <instance name="I44"/>
+            <instance name="I45"/>
+            <instance name="I46"/>
+            <instance name="I47"/>
+            <instance name="I48"/>
+            <instance name="I49"/>
+            <instance name="I50"/>
+            <instance name="I51"/>
+        </instance_header>
+        <instance_header master="nand_i3">
+            <instance name="I36"/>
+            <instance name="I37"/>
+            <instance name="I38"/>
+            <instance name="I39"/>
+            <instance name="I52"/>
+            <instance name="I53"/>
+            <instance name="I54"/>
+            <instance name="I55"/>
+        </instance_header>
+    </master_instances>
+</module>

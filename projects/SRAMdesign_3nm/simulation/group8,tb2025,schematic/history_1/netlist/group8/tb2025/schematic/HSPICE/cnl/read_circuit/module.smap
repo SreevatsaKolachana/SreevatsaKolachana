@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 read_circuit schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping src="I2" dst="xi2"/>
+            <mapping src="I1" dst="xi1"/>
+            <mapping src="I0" dst="xi0"/>
+        </forward>
+        <reverse>
+            <mapping src="xi2" dst="I2"/>
+            <mapping src="xi1" dst="I1"/>
+            <mapping src="xi0" dst="I0"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward>
+            <mapping src="BLbar" dst="blbar"/>
+            <mapping src="BL" dst="bl"/>
+        </forward>
+        <reverse>
+            <mapping src="blbar" dst="BLbar"/>
+            <mapping src="bl" dst="BL"/>
+        </reverse>
+    </scope>
+    <scope name="Terminal">
+        <forward>
+            <mapping src="BLbar" dst="blbar"/>
+            <mapping src="BL" dst="bl"/>
+        </forward>
+        <reverse>
+            <mapping src="blbar" dst="BLbar"/>
+            <mapping src="bl" dst="BL"/>
+        </reverse>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping src="&lt;unmappedTermOrder&gt;" dst="BL BLbar out"/>
+            <mapping src="&lt;termOrder&gt;" dst="bl blbar out"/>
+        </forward>
+        <reverse>
+            <mapping src="BL BLbar out" dst="&lt;unmappedTermOrder&gt;"/>
+            <mapping src="bl blbar out" dst="&lt;termOrder&gt;"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="inv">
+            <instance name="I1"/>
+        </instance_header>
+        <instance_header master="invx4">
+            <instance name="I2"/>
+        </instance_header>
+        <instance_header master="nand">
+            <instance name="I0"/>
+        </instance_header>
+    </master_instances>
+</module>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="vsl: group8 WLRef_PC schematic vl: hspice hspiceD schematic spice veriloga">
+    <scope name="Instance">
+        <forward>
+            <mapping src="I13" dst="xi13"/>
+            <mapping src="I24" dst="xi24"/>
+            <mapping src="I23" dst="xi23"/>
+            <mapping src="I25" dst="xi25"/>
+            <mapping src="I26" dst="xi26"/>
+            <mapping src="I30" dst="xi30"/>
+            <mapping src="I31" dst="xi31"/>
+            <mapping src="I32" dst="xi32"/>
+            <mapping src="I33" dst="xi33"/>
+            <mapping src="I38" dst="xi38"/>
+            <mapping src="I36" dst="xi36"/>
+            <mapping src="I16" dst="xi16"/>
+            <mapping src="I40" dst="xi40"/>
+            <mapping src="I15" dst="xi15"/>
+            <mapping src="I10" dst="xi10"/>
+            <mapping src="I37" dst="xi37"/>
+            <mapping src="I8" dst="xi8"/>
+            <mapping src="I34" dst="xi34"/>
+            <mapping src="I47" dst="xi47"/>
+            <mapping src="I48" dst="xi48"/>
+            <mapping src="I35" dst="xi35"/>
+            <mapping src="I46" dst="xi46"/>
+            <mapping src="I39" dst="xi39"/>
+            <mapping src="I50" dst="xi50"/>
+            <mapping src="I14" dst="xi14"/>
+            <mapping src="I51" dst="xi51"/>
+            <mapping src="I29" dst="xi29"/>
+            <mapping src="I21" dst="xi21"/>
+            <mapping src="I42" dst="xi42"/>
+            <mapping src="I52" dst="xi52"/>
+            <mapping src="I54" dst="xi54"/>
+            <mapping src="I56" dst="xi56"/>
+            <mapping src="I27" dst="xi27"/>
+            <mapping src="I53" dst="xi53"/>
+            <mapping src="I28" dst="xi28"/>
+            <mapping src="I57" dst="xi57"/>
+            <mapping src="I58" dst="xi58"/>
+            <mapping src="I59" dst="xi59"/>
+            <mapping src="I0" dst="xi0"/>
+            <mapping src="I49" dst="xi49"/>
+            <mapping src="I20" dst="xi20"/>
+            <mapping src="I60" dst="xi60"/>
+            <mapping src="I19" dst="xi19"/>
+            <mapping src="I55" dst="xi55"/>
+        </forward>
+        <reverse>
+            <mapping src="xi15" dst="I15"/>
+            <mapping src="xi23" dst="I23"/>
+            <mapping src="xi26" dst="I26"/>
+            <mapping src="xi27" dst="I27"/>
+            <mapping src="xi30" dst="I30"/>
+            <mapping src="xi37" dst="I37"/>
+            <mapping src="xi34" dst="I34"/>
+            <mapping src="xi38" dst="I38"/>
+            <mapping src="xi40" dst="I40"/>
+            <mapping src="xi0" dst="I0"/>
+            <mapping src="xi8" dst="I8"/>
+            <mapping src="xi19" dst="I19"/>
+            <mapping src="xi25" dst="I25"/>
+            <mapping src="xi36" dst="I36"/>
+            <mapping src="xi32" dst="I32"/>
+            <mapping src="xi21" dst="I21"/>
+            <mapping src="xi24" dst="I24"/>
+            <mapping src="xi35" dst="I35"/>
+            <mapping src="xi13" dst="I13"/>
+            <mapping src="xi47" dst="I47"/>
+            <mapping src="xi14" dst="I14"/>
+            <mapping src="xi16" dst="I16"/>
+            <mapping src="xi48" dst="I48"/>
+            <mapping src="xi33" dst="I33"/>
+            <mapping src="xi20" dst="I20"/>
+            <mapping src="xi49" dst="I49"/>
+            <mapping src="xi50" dst="I50"/>
+            <mapping src="xi39" dst="I39"/>
+            <mapping src="xi51" dst="I51"/>
+            <mapping src="xi29" dst="I29"/>
+            <mapping src="xi52" dst="I52"/>
+            <mapping src="xi54" dst="I54"/>
+            <mapping src="xi31" dst="I31"/>
+            <mapping src="xi56" dst="I56"/>
+            <mapping src="xi57" dst="I57"/>
+            <mapping src="xi10" dst="I10"/>
+            <mapping src="xi46" dst="I46"/>
+            <mapping src="xi58" dst="I58"/>
+            <mapping src="xi55" dst="I55"/>
+            <mapping src="xi53" dst="I53"/>
+            <mapping src="xi59" dst="I59"/>
+            <mapping src="xi42" dst="I42"/>
+            <mapping src="xi28" dst="I28"/>
+            <mapping src="xi60" dst="I60"/>
+        </reverse>
+    </scope>
+    <scope name="Net">
+        <forward>
+            <mapping src="CLK_inverted" dst="clk_inverted"/>
+            <mapping src="CLK_inverted_delayed" dst="clk_inverted_delayed"/>
+            <mapping src="RSNew" dst="rsnew"/>
+            <mapping src="wl_ref" dst="wlref"/>
+            <mapping src="PC" dst="pc"/>
+        </forward>
+        <reverse>
+            <mapping src="clk_inverted_delayed" dst="CLK_inverted_delayed"/>
+            <mapping src="clk_inverted" dst="CLK_inverted"/>
+            <mapping src="wlref" dst="wl_ref"/>
+            <mapping src="rsnew" dst="RSNew"/>
+            <mapping src="pc" dst="PC"/>
+        </reverse>
+    </scope>
+    <scope name="Terminal">
+        <forward>
+            <mapping src="WLRef" dst="wlref"/>
+            <mapping src="RSNew" dst="rsnew"/>
+            <mapping src="PC" dst="pc"/>
+            <mapping src="CLK" dst="clk"/>
+        </forward>
+        <reverse>
+            <mapping src="wlref" dst="WLRef"/>
+            <mapping src="rsnew" dst="RSNew"/>
+            <mapping src="pc" dst="PC"/>
+            <mapping src="clk" dst="CLK"/>
+        </reverse>
+    </scope>
+    <scope name="simInfo">
+        <forward>
+            <mapping src="&lt;unmappedTermOrder&gt;" dst="CLK PC RSNew WLRef clk_dff"/>
+            <mapping src="&lt;termOrder&gt;" dst="clk pc rsnew wlref clk_dff"/>
+        </forward>
+        <reverse>
+            <mapping src="CLK PC RSNew WLRef clk_dff" dst="&lt;unmappedTermOrder&gt;"/>
+            <mapping src="clk pc rsnew wlref clk_dff" dst="&lt;termOrder&gt;"/>
+        </reverse>
+    </scope>
+    <master_instances>
+        <instance_header master="buffer">
+            <instance name="I0"/>
+            <instance name="I14"/>
+            <instance name="I19"/>
+            <instance name="I20"/>
+            <instance name="I21"/>
+            <instance name="I46"/>
+            <instance name="I47"/>
+            <instance name="I48"/>
+            <instance name="I49"/>
+            <instance name="I50"/>
+            <instance name="I51"/>
+            <instance name="I52"/>
+            <instance name="I53"/>
+            <instance name="I54"/>
+            <instance name="I55"/>
+            <instance name="I56"/>
+            <instance name="I57"/>
+            <instance name="I58"/>
+            <instance name="I59"/>
+            <instance name="I60"/>
+            <instance name="I8"/>
+        </instance_header>
+        <instance_header master="inv">
+            <instance name="I23"/>
+            <instance name="I24"/>
+            <instance name="I25"/>
+            <instance name="I26"/>
+            <instance name="I27"/>
+            <instance name="I30"/>
+            <instance name="I31"/>
+            <instance name="I32"/>
+            <instance name="I33"/>
+            <instance name="I34"/>
+            <instance name="I35"/>
+            <instance name="I36"/>
+            <instance name="I37"/>
+            <instance name="I38"/>
+            <instance name="I39"/>
+            <instance name="I40"/>
+            <instance name="I42"/>
+        </instance_header>
+        <instance_header master="invx4">
+            <instance name="I10"/>
+            <instance name="I16"/>
+            <instance name="I29"/>
+        </instance_header>
+        <instance_header master="nand">
+            <instance name="I15"/>
+        </instance_header>
+        <instance_header master="nor">
+            <instance name="I13"/>
+            <instance name="I28"/>
+        </instance_header>
+    </master_instances>
+</module>

@@ -1,0 +1,130 @@
+* Description of frequently used terms in hierarchy_analysis files*
+M indicates that the value of that column is in millions
+Hier Plc Count(Hierarchical Placement Count) : Number of unique instances of the cell in another cell (Parent)
+Flat Plc Count(Flat Placement Count)         : Total number of instances of the cell in the layout
+
+Example : 
+                               A                     
+                              / \                   Cell  Hier Plc Count Flat Plc Count 
+                             /   \                     A               1              1 
+                            B     B                    B               2              2 
+                           / \  /  \                   C               2              4 
+                          C   C C   C                
+------------------------------------------------------------------------------------------------------ 
+
+
+* Cells with flat area > 0.01 of top cell *
+Reports cells with flat area > 0.01 of top cell
+
+Flat A(Flat Area) : Total area covered by this cell in the layout(cell area * flat placement count)
+Cell A(Cell Area) : Area of this cell
+Percent of top    : Percentage of area of this cell w.r.t area of top cell
+This table contains 4 entries
+Original table contains 4 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Flat Plc Count, Hier Plc Count, Percent of top
+-----------------------------------------------
+ 2to4_decoder_static                           |         0.000,         0.000,              1,              1,       100.00 %
+ inv                                           |         0.000,         0.000,              8,              8,        24.11 %
+ 2to4_decoder_static_filler_17                 |         0.000,         0.000,              8,              8,        17.49 %
+ nor                                           |         0.000,         0.000,              4,              4,        15.36 %
+===============================================
+
+* Large-Area cells and child area ratio *
+This table reports cells with large areas and ratio of its area with total area covered by its children
+
+Num Inst(Number of instances) : Total Number of instances of the cell
+Child A(Child Area)           : Total area covered by all the children of the cell
+Pct of parent(Percent of area): Percentage of total area covered by its childern w.r.t area of this cell
+This table contains 4 entries
+Original table contains 4 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Num Inst (M), Child A (mm^2), Pct of parent
+-----------------------------------------------
+ 2to4_decoder_static                           |         0.000,         0.000,        0.000,         0.000,       72.32 %
+ inv                                           |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ 2to4_decoder_static_filler_17                 |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ nor                                           |         0.000,         0.000,        0.000,         0.000,        0.00 %
+===============================================
+
+* Exploded Cell Information *
+Displays information of exploded cells
+
+Parent cell           : Name of the parent cell the cell has exploded into
+Exploded Inst Count   : Total number of instances of the cell that has expldoed to the parent cell
+Parent Flat Plc Count : Parent cell flat placement count
+Parent Hier Plc Count : Parent cell hierarchical placement count
+This table contains 27 entries
+Original table contains 27 entries
+
+ Exploded Cell                                 | Parent Cell                                   | Exploded Inst Count, Parent Flat Plc Count, Parent Hier Plc Count
+----------------------------------------------- -----------------------------------------------
+ nmos                                          | 2to4_decoder_static                           |                  32,                     1,                     1
+ pmos                                          | 2to4_decoder_static                           |                  32,                     1,                     1
+ M0A_M0B                                       | 2to4_decoder_static                           |                  25,                     1,                     1
+ M0B_M1                                        | 2to4_decoder_static                           |                  21,                     1,                     1
+ GATE_M0B                                      | 2to4_decoder_static                           |                  16,                     1,                     1
+ M1_M2                                         | 2to4_decoder_static                           |                  16,                     1,                     1
+ BPR_M0A                                       | 2to4_decoder_static                           |                   8,                     1,                     1
+ M0B_M1                                        | nand                                          |                   4,                     4,                     4
+ M0A_M0B                                       | nor                                           |                   4,                     4,                     4
+ BPR_M0A                                       | inv                                           |                   3,                     8,                     8
+ M0B_M1                                        | inv                                           |                   3,                     8,                     8
+ BPR_M0A                                       | nand                                          |                   3,                     4,                     4
+ pmos                                          | nand                                          |                   3,                     4,                     4
+ BPR_M0A                                       | nor                                           |                   3,                     4,                     4
+ M0B_M1                                        | nor                                           |                   3,                     4,                     4
+ nmos                                          | nor                                           |                   3,                     4,                     4
+ pmos                                          | nor                                           |                   3,                     4,                     4
+ GATE_M0B                                      | inv                                           |                   2,                     8,                     8
+ nmos                                          | inv                                           |                   2,                     8,                     8
+ pmos                                          | inv                                           |                   2,                     8,                     8
+ GATE_M0B                                      | nand                                          |                   2,                     4,                     4
+ M0A_M0B                                       | nand                                          |                   2,                     4,                     4
+ nmos                                          | nand                                          |                   2,                     4,                     4
+ GATE_M0B                                      | nor                                           |                   2,                     4,                     4
+ nmos                                          | 2to4_decoder_static_filler_17                 |                   1,                     8,                     8
+ pmos                                          | 2to4_decoder_static_filler_17                 |                   1,                     8,                     8
+ M0A_M0B                                       | inv                                           |                   1,                     8,                     8
+=============================================== ===============================================
+
+* Layer Report with Estimated Data *
+Reports information of layers present in the layout
+
+Trap        : Number of hierarchical trapezoids in the layer
+Poly        : Number of hierarchical polygons in the layer
+Text        : Number of hierarchical text primitives in the layer
+Flat Trap   : Number of flat trapezoids 
+Flat Poly   : Number of flat polygons
+Flat Text   : Number of flat text primitives 
+Trap F/H    : Ratio of flat and hierarchical placements of the trapezoids
+Base, Metal, Via, Fill, Colored : Indicates layer intent
+This table contains 22 entries
+Original table contains 22 entries
+
+ Name                                          | Trap (M), Poly (M), Text (M), Flat Trap (M), Flat Poly (M), Flat Text (M), Trap F/H, Base, Metal, Via, Fill, Colored
+-----------------------------------------------
+ aGATE                                         |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,     1.93,    0,     0,   0,    0,       0
+ aM0A                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.88,    0,     0,   0,    0,       0
+ aM0B                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.92,    0,     0,   0,    0,       0
+ aDUMMY                                        |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.52,    0,     0,   0,    0,       0
+ aM1                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.74,    0,     0,   0,    0,       0
+ aACT                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.76,    0,     0,   0,    0,       0
+ aBPR                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     3.16,    0,     0,   0,    0,       0
+ aPIM                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     2.22,    0,     0,   0,    0,       0
+ aNW                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     2.18,    0,     0,   0,    0,       0
+ aNIM                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     2.17,    0,     0,   0,    0,       0
+ aV0A                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.78,    0,     0,   0,    0,       0
+ aV0B                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     2.35,    0,     0,   0,    0,       0
+ aGCON                                         |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     2.18,    0,     0,   0,    0,       0
+ tM1                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+ aVBPR                                         |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     3.29,    0,     0,   0,    0,       0
+ aV1                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.00,    0,     0,   0,    0,       0
+ aGCUT                                         |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     3.67,    0,     0,   0,    0,       0
+ tBPR                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+ tM0B                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+ tM0A                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+ tM2                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+ aV2                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+===============================================
+

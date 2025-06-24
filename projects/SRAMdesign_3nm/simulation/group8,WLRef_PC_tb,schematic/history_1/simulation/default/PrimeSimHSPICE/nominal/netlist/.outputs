@@ -1,0 +1,5 @@
+.option opfile=1 split_dp=1
+.option probe=1
+.probe tran v(*) level=1
+.probe tran v(clk) v(xi30.clk_inverted) v(xi30.clk_inverted_delayed) v(pc)
++ v(rsnew) v(wlref) v(clk_dff)

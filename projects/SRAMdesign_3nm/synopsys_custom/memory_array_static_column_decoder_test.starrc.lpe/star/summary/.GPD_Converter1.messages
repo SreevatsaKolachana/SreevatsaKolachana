@@ -1,0 +1,56 @@
+Parsing option_file: convert_gpd.tech (EX-304)
+Running Amd_64b    
+$LD_LIBRARY_PATH=/mnt/apps/public/COE/synopsys_apps/starrc/W-2024.09-SP2/linux64_starrc/lib:/mnt/apps/public/COE/synopsys_apps/starrc/W-2024.09-SP2/linux64_starrc/lib/std_oa/linux64/lib/opt:/mnt/apps/public/COE/synopsys_apps/starrc/W-2024.09-SP2/linux64_emsolver/lib:/mnt/apps/public/COE/synopsys_apps/starrc/W-2024.09-SP2/linux64_starrc/lib:/mnt/apps/public/COE/synopsys_apps/starrc/W-2024.09-SP2/linux64_starrc/lib/std_oa/linux64/lib/opt:/mnt/apps/public/COE/synopsys_apps/starrc/W-2024.09-SP2/linux64_starrc/etc/auxx/:/mnt/apps/public/COE/synopsys_apps/starrc/W-2024.09-SP2/linux64_starrc/lib:/mnt/apps/public/COE/synopsys_apps/starrc/W-2024.09-SP2/linux64_starrc/lib/std_oa/linux64/lib/opt:/usr/lib:.
+$TCL_LIBRARY=/mnt/apps/public/COE/synopsys_apps/starrc/W-2024.09-SP2/linux64_starrc/etc/auxx/tcllib/lib/tcl8.6
+$OA_STARRC_OA_LIB=/mnt/apps/public/COE/synopsys_apps/starrc/W-2024.09-SP2/linux64_starrc/etc/auxx//starrcLib
+loading /mnt/apps/public/COE/synopsys_apps/starrc/W-2024.09-SP2/linux64_starrc/lib/liboaStar-O.so
+OA lib version: 22.61.006
+OaOpenLibDefListObserver::onPostOpenLibs:
+Got Lib Def: Logical Library Name = starrcLib
+OaOpenLibDefListObserver::onPostOpenLibs:
+Got Lib Def: Logical Library Name = snpsDefTechLib
+Got Lib Def: Logical Library Name = basic
+Got Lib Def: Logical Library Name = snpsDeviceLib
+Got Lib Def: Logical Library Name = analogLib
+Got Lib Def: Logical Library Name = rfLib
+Got Lib Def: Logical Library Name = verilogaLib
+Got Lib Def: Logical Library Name = sheets
+Got Lib Def: Logical Library Name = sample
+Got Lib Def: Logical Library Name = parasitics
+Got Lib Def: Logical Library Name = NCSU_TechLib_FreePDK3
+Got Lib Def: Logical Library Name = group8
+Got Lib Def: Logical Library Name = FreePDK3_examples
+Got Lib Def: Logical Library Name = proj_common
+lib dmSystemName: oaDMFileSys
+lib path: /mnt/coe/workspace/ece/ece546-spr25/group8/group8_project/group8
+Explicitly established the reference to the default tech lib snpsDefTechLib.
+unitStr: micron  m_gpdDbu: 5 techDbu: 2000 makersize: 200
+done init converter design ... init mappers
+OaParasiticViewWriter initMappers
+Parsing Device Cdf for cell nmos in lib NCSU_TechLib_FreePDK3
+Parsing Device Cdf for cell pmos in lib NCSU_TechLib_FreePDK3
+Parsing Device Cdf for cell presistor in lib analogLib
+Parsing Device Cdf for cell pcapacitor in lib analogLib
+Writing tech command to OA view...
+Done writing tech command.
+Parasitic device model pres[starrc] is not defined, the default model pres will be used.
+Parasitic device model pcap[starrc] is not defined, the default model pcap will be used.
+G2OConverter constructor
+Parasitic device model pres[starrc] is not defined, the default model pres will be used.
+Parasitic device model pcap[starrc] is not defined, the default model pcap will be used.
+G2OConverter constructor
+Process ports from input netlist
+Write TotalNetCap value to each net group.
+G2OConverter destructor
+Process ports from input netlist
+Write TotalNetCap value to each net group.
+G2OConverter destructor
+OaParasiticViewWriter destructor
+Merging xin and writting to OA...
+Dumping merged xin to OA
+Done merging xin
+  
+xTractor      Elp=00:00:04 Cpu=00:00:00 Usr=0.1    Sys=0.0    Mem=535.1 
+  
+Done          Elp=00:00:04 Cpu=00:00:00 Usr=0.1    Sys=0.0    Mem=535.1 
+

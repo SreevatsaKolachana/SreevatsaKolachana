@@ -1,0 +1,54 @@
+****** PrimeSim HSPICE -- W-2024.09-SP1 linux64 (Dec 01 2024 9404553) ******
+Input File:
+lic:
+lic: FLEXlm: SDK_14.4
+lic: USER:   svkolach             HOSTNAME: grendel41.ece.ncsu.edu
+lic: HOSTID: e983862              PID:      797092
+lic: Using FLEXlm license file:
+lic: 27000@ece-lic-35.ece.ncsu.edu
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 31-dec-2025/2024.09
+lic: 1(in_use)/60(total) FLOATING license(s) on SERVER 27000@ece-lic-35.ece.ncsu.edu
+lic:
+
+ init: begin read circuit files, cpu clock= 1.33E+00
+       option search = /mnt/apps/public/COE/synopsys_apps/hspice/W-2024.09-SP1/hspice/parts/ad
+       option search = /mnt/designkits/ncsu/FreePDK3/hspice/models
+       option search = /mnt/apps/public/COE/synopsys_apps/hspice/W-2024.09-SP1/hspice/parts/bjt
+       option search = /mnt/apps/public/COE/synopsys_apps/hspice/W-2024.09-SP1/hspice/parts/dio
+       option search = /mnt/apps/public/COE/synopsys_apps/hspice/W-2024.09-SP1/hspice/parts/fet
+       option search = /mnt/apps/public/COE/synopsys_apps/hspice/W-2024.09-SP1/hspice/parts/pci
+       option search = /mnt/apps/public/COE/synopsys_apps/hspice/W-2024.09-SP1/hspice/parts/ti
+       option search = /mnt/apps/public/COE/synopsys_apps/hspice/W-2024.09-SP1/hspice/parts/tline
+       option parhier = local
+       option port_voltage_scale_to_2x =     1.00
+       option s_elem_cache_dir = /mnt/ncsudrive/s/svkolach/.synopsys_custom/sparam_dir
+       option pva_output_dir = /mnt/ncsudrive/s/svkolach/.synopsys_custom/pva_dir
+       option wdf =     1.00
+       option opfile =     1.00
+       option split_dp =     1.00
+       option probe =     1.00
+ init: end read circuit files, cpu clock= 1.33E+00 peak memory=     553 mb
+ init: begin check errors, cpu clock= 1.33E+00
+  **warning**  No DC path to ground from node        0:
+ init: end check errors, cpu clock= 1.34E+00 peak memory=     554 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 1.34E+00
+       establish matrix -- done, cpu clock= 1.34E+00 peak memory=     554 mb
+       re-order matrix -- done, cpu clock= 1.34E+00 peak memory=     554 mb
+ init: end setup matrix, cpu clock= 1.51E+00 peak memory=     554 mb
+ dcop: begin dcop, cpu clock= 1.51E+00
+ dcop: end dcop, cpu clock= 1.73E+00 peak memory=     554 mb tot_iter=       2
+ sweep: tran tran0    begin, stop_t=  2.00E-10 #sweeps=2001 cpu clock= 1.80E+00
+ tran: time= 2.5200E-11 tot_iter=       8 conv_iter=       4 cpu clock= 1.83E+00
+ tran: time= 4.5200E-11 tot_iter=      12 conv_iter=       6 cpu clock= 1.83E+00
+ tran: time= 6.5200E-11 tot_iter=      16 conv_iter=       8 cpu clock= 1.83E+00
+ tran: time= 8.5200E-11 tot_iter=      20 conv_iter=      10 cpu clock= 1.84E+00
+ tran: time= 1.0520E-10 tot_iter=      24 conv_iter=      12 cpu clock= 1.84E+00
+ tran: time= 1.2520E-10 tot_iter=      28 conv_iter=      14 cpu clock= 1.84E+00
+ tran: time= 1.4520E-10 tot_iter=      32 conv_iter=      16 cpu clock= 1.84E+00
+ tran: time= 1.6520E-10 tot_iter=      36 conv_iter=      18 cpu clock= 1.84E+00
+ tran: time= 1.8520E-10 tot_iter=      40 conv_iter=      20 cpu clock= 1.84E+00
+ tran: time= 2.0000E-10 tot_iter=      44 conv_iter=      22 cpu clock= 1.84E+00
+ sweep: tran tran0    end, cpu clock= 1.84E+00 peak memory=     560 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

@@ -1,0 +1,194 @@
+********************************************************************************
+* Library          : group8
+* Cell             : memory_array
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt memory_array a<0> a<1> a<2> a<3> a<4> clk d<0> d<1> d<2> d<3> q<0> q<1>
++ q<2> q<3> wenb
+xi182 net573 net557 pc precharge_logic
+xi147 bl3bar bl3 pc precharge_logic
+xi146 net579 net563 pc precharge_logic
+xi145 net578 net562 pc precharge_logic
+xi144 net577 net561 pc precharge_logic
+xi143 bl2bar bl2 pc precharge_logic
+xi142 net575 net559 pc precharge_logic
+xi141 net588 net572 pc precharge_logic
+xi140 net587 net571 pc precharge_logic
+xi139 bl1bar bl1 pc precharge_logic
+xi138 net585 net569 pc precharge_logic
+xi137 net584 net568 pc precharge_logic
+xi136 net583 net652 pc precharge_logic
+xi135 bl0bar bl0 pc precharge_logic
+xi134 net581 net565 pc precharge_logic
+xi133 net574 net558 pc precharge_logic
+xi199 net557 net573 net546 sram_6t
+xi55 net569 net585 net546 sram_6t
+xi54 net568 net584 net546 sram_6t
+xi53 net652 net583 net546 sram_6t
+xi52 bl0 bl0bar net546 sram_6t
+xi47 bl1 bl1bar net550 sram_6t
+xi51 net565 net581 net546 sram_6t
+xi50 net558 net574 net546 sram_6t
+xi64 net571 net587 net655 sram_6t
+xi65 net572 net588 net655 sram_6t
+xi66 net559 net575 net655 sram_6t
+xi67 bl2 bl2bar net655 sram_6t
+xi68 net561 net577 net655 sram_6t
+xi69 net562 net578 net655 sram_6t
+xi70 net563 net579 net655 sram_6t
+xi71 bl3 bl3bar net655 sram_6t
+xi72 net571 net587 net556 sram_6t
+xi73 net571 net587 net555 sram_6t
+xi74 net572 net588 net555 sram_6t
+xi75 net559 net575 net555 sram_6t
+xi76 bl2 bl2bar net555 sram_6t
+xi77 net561 net577 net555 sram_6t
+xi104 bl3 bl3bar net548 sram_6t
+xi103 net563 net579 net548 sram_6t
+xi102 net562 net578 net548 sram_6t
+xi101 net561 net577 net548 sram_6t
+xi100 bl2 bl2bar net548 sram_6t
+xi99 net559 net575 net548 sram_6t
+xi98 net572 net588 net548 sram_6t
+xi97 net571 net587 net548 sram_6t
+xi95 bl3 bl3bar net551 sram_6t
+xi94 net563 net579 net551 sram_6t
+xi93 net562 net578 net551 sram_6t
+xi92 net561 net577 net551 sram_6t
+xi91 bl2 bl2bar net551 sram_6t
+xi90 net559 net575 net551 sram_6t
+xi89 net572 net588 net551 sram_6t
+xi88 net571 net587 net551 sram_6t
+xi87 bl3 bl3bar net556 sram_6t
+xi86 net563 net579 net556 sram_6t
+xi85 net562 net578 net556 sram_6t
+xi84 net561 net577 net556 sram_6t
+xi83 bl2 bl2bar net556 sram_6t
+xi82 net559 net575 net556 sram_6t
+xi81 net572 net588 net556 sram_6t
+xi80 bl3 bl3bar net555 sram_6t
+xi79 net563 net579 net555 sram_6t
+xi78 net562 net578 net555 sram_6t
+xi117 net561 net577 net546 sram_6t
+xi116 bl2 bl2bar net546 sram_6t
+xi115 net559 net575 net546 sram_6t
+xi114 net572 net588 net546 sram_6t
+xi113 net571 net587 net546 sram_6t
+xi112 net571 net587 net544 sram_6t
+xi111 bl3 bl3bar net550 sram_6t
+xi110 net563 net579 net550 sram_6t
+xi109 net562 net578 net550 sram_6t
+xi108 net561 net577 net550 sram_6t
+xi107 bl2 bl2bar net550 sram_6t
+xi106 net559 net575 net550 sram_6t
+xi105 net572 net588 net550 sram_6t
+xi96 net571 net587 net550 sram_6t
+xi63 bl1 bl1bar net544 sram_6t
+xi62 net569 net585 net544 sram_6t
+xi61 net568 net584 net544 sram_6t
+xi60 net652 net583 net544 sram_6t
+xi59 bl0 bl0bar net544 sram_6t
+xi58 net565 net581 net544 sram_6t
+xi57 net558 net574 net544 sram_6t
+xi56 bl1 bl1bar net546 sram_6t
+xi13 net652 net583 net555 sram_6t
+xi197 net557 net573 net548 sram_6t
+xi192 net557 net573 net551 sram_6t
+xi191 net557 net573 net555 sram_6t
+xi190 net557 net573 net556 sram_6t
+xi189 net557 net573 net655 sram_6t
+xi40 bl1 bl1bar net548 sram_6t
+xi39 net569 net585 net548 sram_6t
+xi38 net568 net584 net548 sram_6t
+xi37 net652 net583 net548 sram_6t
+xi36 bl0 bl0bar net548 sram_6t
+xi35 net565 net581 net548 sram_6t
+xi34 net558 net574 net548 sram_6t
+xi31 bl1 bl1bar net551 sram_6t
+xi30 net569 net585 net551 sram_6t
+xi29 net568 net584 net551 sram_6t
+xi28 net652 net583 net551 sram_6t
+xi27 bl0 bl0bar net551 sram_6t
+xi26 net565 net581 net551 sram_6t
+xi25 net558 net574 net551 sram_6t
+xi23 bl1 bl1bar net556 sram_6t
+xi22 net569 net585 net556 sram_6t
+xi21 net568 net584 net556 sram_6t
+xi20 net652 net583 net556 sram_6t
+xi19 bl0 bl0bar net556 sram_6t
+xi18 net565 net581 net556 sram_6t
+xi17 net558 net574 net556 sram_6t
+xi16 bl1 bl1bar net555 sram_6t
+xi15 net569 net585 net555 sram_6t
+xi14 net568 net584 net555 sram_6t
+xi12 bl0 bl0bar net555 sram_6t
+xi11 net565 net581 net555 sram_6t
+xi118 net562 net578 net546 sram_6t
+xi10 net558 net574 net555 sram_6t
+xi119 net563 net579 net546 sram_6t
+xi120 bl3 bl3bar net546 sram_6t
+xi121 net572 net588 net544 sram_6t
+xi122 net559 net575 net544 sram_6t
+xi123 bl2 bl2bar net544 sram_6t
+xi7 bl1 bl1bar net655 sram_6t
+xi124 net561 net577 net544 sram_6t
+xi125 net562 net578 net544 sram_6t
+xi126 net563 net579 net544 sram_6t
+xi127 bl3 bl3bar net544 sram_6t
+xi6 net569 net585 net655 sram_6t
+xi5 net568 net584 net655 sram_6t
+xi4 net652 net583 net655 sram_6t
+xi193 net557 net573 net550 sram_6t
+xi3 bl0 bl0bar net655 sram_6t
+xi2 net565 net581 net655 sram_6t
+xi1 net558 net574 net655 sram_6t
+xi41 net558 net574 net550 sram_6t
+xi42 net565 net581 net550 sram_6t
+xi43 bl0 bl0bar net550 sram_6t
+xi44 net652 net583 net550 sram_6t
+xi45 net568 net584 net550 sram_6t
+xi46 net569 net585 net550 sram_6t
+xi198 net557 net573 net544 sram_6t
+xi202 a<2> a<3> a<4> wlref net544 net546 net550 net548 net551 net556 net555
++ net655 static_row_decoder_3by8
+xi204 net557 net573 net558 net574 net565 net581 bl0 bl0bar net652 bl0 net568
++ net584 net569 net585 bl1 bl1bar net571 net587 net572 net588 net559 net575 bl2
++ bl2bar net561 net577 net562 net578 net563 net579 bl3 bl3bar net478 net476
++ net481 net479 2_driver 2_driverbar net487 net485 net490 net488 net493 net491
++ net496 net494 net499 net497 rs0 rs0bar rs1 rs1bar ws0 ws0bar ws1 ws1bar
++ columndecoder
+xi206 d<1> net479 net481 write_driver
+xi208 d<3> net485 net487 write_driver
+xi205 d<0> net476 net478 write_driver
+xi207 d<2> 2_driverbar 2_driver write_driver
+xi211 net496 net494 read_dff2 read_circuit
+xi212 net499 net497 read_dff3 read_circuit
+xi209 net490 net488 read_dff0 read_circuit
+xi210 net493 net491 read_dff1 read_circuit
+xi215 read_dff3 q<3> net511 tspc_pos_ff
+xi213 read_dff1 q<1> net511 tspc_pos_ff
+xi214 read_dff2 q<2> net511 tspc_pos_ff
+xi216 read_dff0 q<0> net511 tspc_pos_ff
+xi217 a<0> a<1> net631 net613 net616 net619 wenb net622 net625 net628 net634
++ agen_unit
+xi218 clk pc net659 wlref net511 wlref_pc
+xi232 clk net622 net644 nand
+xi233 clk net625 net646 nand
+xi234 clk net628 net648 nand
+xi236 clk net634 net650 nand
+xi237 net636 rs0 inv_highdrive
+xi238 net638 rs0bar inv_highdrive
+xi239 net640 rs1 inv_highdrive
+xi240 net642 rs1bar inv_highdrive
+xi241 net644 ws0 inv_highdrive
+xi242 net646 ws0bar inv_highdrive
+xi243 net648 ws1 inv_highdrive
+xi244 net650 ws1bar inv_highdrive
+xi229 net659 net613 net638 nor
+xi230 net659 net616 net640 nor
+xi231 net659 net619 net642 nor
+xi235 net659 net631 net636 nor
+.ends memory_array
+

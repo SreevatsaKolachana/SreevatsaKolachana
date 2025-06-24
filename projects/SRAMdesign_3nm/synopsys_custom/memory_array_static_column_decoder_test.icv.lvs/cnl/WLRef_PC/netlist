@@ -1,0 +1,40 @@
+********************************************************************************
+* Library          : group8
+* Cell             : WLRef_PC
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt WLRef_PC CLK PC RSNew WLRef clk_dff
+*.PININFO CLK:I PC:O RSNew:O WLRef:O clk_dff:O
+XI55 net123 clk_dff buffer
+XI54 net122 net123 buffer
+XI53 net121 net122 buffer
+XI52 net118 net121 buffer
+XI51 net116 net118 buffer
+XI50 net115 net116 buffer
+XI49 net114 net115 buffer
+XI46 net59 net110 buffer
+XI48 net111 net114 buffer
+XI47 net110 net111 buffer
+XI67 net137 net139 buffer
+XI68 net139 net141 buffer
+XI69 net141 net143 buffer
+XI70 net143 net144 buffer
+XI71 net144 CLK_inverted_delayed buffer
+XI21 net154 net59 buffer
+XI19 net39 net62 buffer
+XI20 net61 net39 buffer
+XI14 net62 net60 buffer
+XI8 net60 net154 buffer
+XI66 CLK_inverted net137 buffer
+XI0 CLK net61 buffer
+XI29 net76 RSNew invx4
+XI10 net21 PC invx4
+XI16 net36 WLRef invx4
+XI23 CLK CLK_inverted inv
+XI28 CLK_inverted_delayed CLK_inverted net76 nor
+XI13 net59 net61 net21 nor
+XI15 net61 net60 net36 nand
+.ends WLRef_PC
+
