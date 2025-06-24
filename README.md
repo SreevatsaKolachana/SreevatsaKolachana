@@ -18,7 +18,7 @@ I'm passionate about building efficient and scalable hardware systems — from R
 
 ## 📂 Featured Projects
 
-- [**128-bit Synchronous SRAM design at 3nm node**](projects/SRAMdesign-3nm/)  
+- [**128-bit Synchronous SRAM design at 3nm node**](projects/SRAMdesign_3nm/)  
   Ultra-high-speed SRAM design using GAAFET technology with full custom layout and post-layout simulation.
 
 - [**Implementation of Transformer Self-attention mechanism for NLP applications using Verilog HDL**](projects/transformer-accelerator/)  
