@@ -24,13 +24,13 @@ I'm passionate about building efficient and scalable hardware systems — from R
 - [**Implementation of Transformer Self-attention mechanism for NLP applications using Verilog HDL**](projects/transformer-accelerator/)  
   Implemented a Verilog-based accelerator for NLP attention mechanisms using fixed-point computation and matrix multipliers.
 
-- [**Functional Verification of I2C Multi-Bus Controller using System Verilog**](./projects/i2c-verification.md)  
+- [**Functional Verification of I2C Multi-Bus Controller using System Verilog**](projects/i2c-verification.md)  
   Developed a layered SystemVerilog testbench for verifying an I2C master with Wishbone interface.
   
-- [**Cache Hierarchy Simulator**](./projects/cache-sim.md)  
+- [**Cache Hierarchy Simulator**](projects/cache-simulator/)  
   Simulated and optimized a two-level cache system with stream buffers and prefetching, analyzing access time and miss rate.
 
-- [**Branch Predictor Simulator**](./projects/branch-predictor.md)  
+- [**Branch Predictor Simulator**](projects/branch-predictor/)  
   Designed dynamic prediction strategies (bimodal, gshare, hybrid) and evaluated misprediction rates using real benchmarks.
   
 
