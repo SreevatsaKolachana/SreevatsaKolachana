@@ -24,7 +24,7 @@ I'm passionate about building efficient and scalable hardware systems — from R
 - [**Implementation of Transformer Self-attention mechanism for NLP applications using Verilog HDL**](projects/transformer-accelerator/)  
   Implemented a Verilog-based accelerator for NLP attention mechanisms using fixed-point computation and matrix multipliers.
 
-- [**TCL-Driven RTL design and synthesis automation of 4-bit ALU**](projects/alu_rtl_synthesis/)<br>            An end-to-end RTL design project where I implemented a 4-bit ALU with FSM control, automated the synthesis flow using TCL scripting, and integrating SDC_based timing constraints.
+- [**TCL-Driven RTL design and synthesis automation of 4-bit ALU**](projects/alu_tcl_synthesis/)<br>            An end-to-end RTL design project where I implemented a 4-bit ALU with FSM control, automated the synthesis flow using TCL scripting, and integrating SDC_based timing constraints.
   
 - [**Functional Verification of I2C Multi-Bus Controller using System Verilog**](projects/i2c-verification.md)  
   Developed a layered SystemVerilog testbench for verifying an I2C master with Wishbone interface.
