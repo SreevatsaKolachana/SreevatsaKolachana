@@ -34,7 +34,7 @@ This project showcases the RTL design, testbench design, and synthesis of a 4-bi
 - Simulated the design using Icarus Verilog and visualized waveform outputs with GTKWave.
 
 ## 💻 How to run?
-9
+
 1. Clone the repository
 2. The design files can be found at /src folder
    
