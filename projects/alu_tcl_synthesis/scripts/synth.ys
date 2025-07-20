@@ -1,0 +1,21 @@
+# read your RTL
+read_verilog -sv /home/sreev/yosys_project/ALU/src/top.sv
+
+synth -top alu_fsm
+
+# elaborate the top module
+hierarchy -check -top alu_fsm
+
+
+#do some checks
+proc; flatten; opt
+
+# technology mapping
+techmap; opt
+
+# Optional: write synthesized netlist
+write_verilog /home/sreev/yosys_project/ALU/output/synthesized.v
+
+# Write a synthesis report
+stat
+ 
