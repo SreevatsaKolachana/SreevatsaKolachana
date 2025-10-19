@@ -45,7 +45,7 @@ My work spans **post-silicon failure analysis, packaging-level validation, machi
 - Collaborate in building **Python scripts** to link the ML model with design databases, automatically generating refined layouts and triggering incremental DRC/LVS checks.
 
 
-### 🔹 4. Design Validation, Tapeout Support & Packaging-Level Debug
+### 🔹Design Validation, Tapeout Support & Packaging-Level Debug
 - Collaborate with the packaging team to analyze wafer-to-package correlation data, identifying electrical shifts due to bump resistance, underfill dielectric variation, solder voids, and substrate-induced stress gradients.
 - Work with package reliability engineers to review results from thermal cycling, HAST, and drop tests, helping determine failure mechanisms such as delamination, bump cracking, or void formation, and correlating them with post-assembly electrical behavior.
 
