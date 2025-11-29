@@ -61,14 +61,23 @@ My work spans **post-silicon failure analysis, packaging-level validation, machi
 
 ## 📂 Featured Projects
 
+- [**RTL-to-GDSII Physical Design Flow (Sky130)**](projects/RTL-to-GDSII-Sky130nm/)  
+  Completed end-to-end ASIC backend flow using DC + ICC2, achieving timing closure, 0 DRCs, optimized utilization/layers, and generated final GDS, DEF, SPEF, and STA reports.
+
 - [**128-bit Synchronous SRAM design at 3nm node**](projects/SRAMdesign_3nm/)  
   Ultra-high-speed SRAM design using GAAFET technology with full custom layout and post-layout simulation.
 
 - [**Implementation of Transformer Self-attention mechanism for NLP applications using Verilog HDL**](projects/transformer-accelerator/)  
   Implemented a Verilog-based accelerator for NLP attention mechanisms using fixed-point computation and matrix multipliers.
 
+- [**RISC-V RV32I Processor Design**](projects/RISC_V%20Processor/)  
+Implemented a 5-stage pipelined RISC-V processor with hazard detection, forwarding, branch handling, and full ISA functional simulation.
+
 - [**TCL-Driven RTL design and synthesis automation of 4-bit ALU**](projects/alu_tcl_synthesis/)<br>            An end-to-end RTL design project where I implemented a 4-bit ALU with FSM control, automated the synthesis flow using TCL scripting, and integrating SDC_based timing constraints.
-  
+
+- [**RTL Design and UVM verification of Asynchronous FIFO**](projects/FIFO/)  
+  Designed an asynchronous FIFO RTL using gray-coded pointers and dual-clock synchronizers and built a modular UVM environment with write/read agents, sequences, scoreboard, and a reference model to validate CDC behavior, data integrity, and full/empty flags under randomized timing.
+
 - [**Functional Verification of I2C Multi-Bus Controller using System Verilog**](projects/i2c-verification.md)  
   Developed a layered SystemVerilog testbench for verifying an I2C master with Wishbone interface.
   
