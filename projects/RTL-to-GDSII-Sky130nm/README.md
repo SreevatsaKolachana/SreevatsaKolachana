@@ -136,15 +136,13 @@ A fully sign-off-clean layout was achieved.
 
 # 🖼️ Layout & CTS Images
 
-(Add your images in this repo)
-
-```
 Final Layout Image:
+![final_layout](https://github.com/user-attachments/assets/6729ada3-8338-40d3-9cf7-5b173862cb35)
 
 
 Clock Tree Image:
+![clock_tree](https://github.com/user-attachments/assets/7c6f3796-5b8d-4c73-8437-bf2b16bf4f45)
 
-```
 
 ---
 
@@ -161,15 +159,6 @@ The flow produces:
 - 🟦 **Routing utilization & layer usage logs**  
 - 🟦 **Congestion maps**  
 - 🟦 **IR-drop/EM analysis outputs**  
-
----
-
-# 📘 Documentation Included
-
-- 📝 Flow scripts (DC, ICC2, PrimeTime)  
-- 📝 Report automation scripts  
-- 📝 Parameter sweeps for A³·D·L metric  
-- 📝 README + methodology explanation  
 
 ---
 
