@@ -1,8 +1,7 @@
-# 🌀 UVM-Based Asynchronous FIFO Verification Platform  
-### A Complete Constrained-Random UVM Environment  
+# 🌀 RTL Design and UVM verification of Asynchronous FIFO
 
 ## 📌 Overview  
-This repository contains a **SystemVerilog UVM testbench** designed to thoroughly verify an **Asynchronous FIFO** (dual-clock FIFO).  
+This repository contains an RTL design of Asynchronous FIFO and a **SystemVerilog UVM testbench** designed to thoroughly verify the design.  
 The environment validates FIFO correctness under **independent clock domains**, randomized traffic, corner-case timing, and CDC (Clock Domain Crossing) issues.
 
 Key features:
@@ -30,14 +29,15 @@ This verification environment ensures that **all** these cases are validated sys
 
 ## 🏗️ Testbench Architecture  
 This testbench adheres to a **complete and modular UVM structure**:
+```
 env/
-├── agent_write/ # Write-side agent (sequencer/driver/monitor)
-├── agent_read/ # Read-side agent
-├── scoreboard/ # End-to-end data/flag validation
-├── reference_model/ # Behavioral FIFO model
-├── config/ # UVM configuration object
-└── sequences/ # Random + directed sequences
-
+├── agent_write/
+├── agent_read/
+├── scoreboard/
+├── reference_model/
+├── config/
+└── sequences/
+```
 
 ---
 
@@ -139,6 +139,7 @@ Built-in protocol checks:
 ---
 
 📂 Repository Structure
+```
 FIFO/
  ├── RTL_design/                       
  ├── UVM/
@@ -150,5 +151,5 @@ FIFO/
  │   └── tb_top.sv
  ├── Asynchronous_FIFO.pdf
  └── README.md
-
+```
 
