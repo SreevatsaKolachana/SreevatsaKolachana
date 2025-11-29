@@ -26,19 +26,16 @@ To maintain synchronous behavior and ensure precise control over data movement, 
 
 During a read or write cycle, the address is decoded to select the target word and bit lines. In read mode, the activated bit cells drive the bit lines, and the sense circuitry produces a stable 4-bit output. In write mode, new data is driven onto the selected bit lines while the corresponding word line is asserted, effectively overwriting the existing contents in the targeted bit cells. All of these actions are synchronized with the rising or falling edge of the global clock, ensuring consistent and predictable timing behavior in every operation.
 
-## 📂 Cloning the git 
-### The following commands will clone the git repository and direct you to the main folder
-```
-git clone --recurse-submodules https://https://github.com/SreevatsaKolachana/SreevatsaKolachana/new/main/projects/SRAMdesign_3nm
-cd SRAMdesign_3nm
-```
-## Running the software
-### The following commands will run the software. Thre is no need for the module load command since it is already included in the setup.sh file.
-```
-source setup.sh
-custom_compiler&
-```
-### Synopsys Custom Compiler should open for the use.
+🖼️ Layout & Timing Results
+🖥️ Final Layout (GDSII / Custom Compiler Layout)
+⏱️ Timing Waveform
+
+> ⚠️ **Disclaimer:**  
+> This SRAM design was created as part of an NCSU course using restricted tool setups and proprietary library files.  
+> As per university policy, the complete project directory (schematics, layouts, models, and simulation data) cannot be uploaded publicly.  
+> Only a high-level description and allowed documentation are provided here.
+
+
 
 
 
