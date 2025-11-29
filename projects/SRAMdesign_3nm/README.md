@@ -27,8 +27,14 @@ To maintain synchronous behavior and ensure precise control over data movement, 
 During a read or write cycle, the address is decoded to select the target word and bit lines. In read mode, the activated bit cells drive the bit lines, and the sense circuitry produces a stable 4-bit output. In write mode, new data is driven onto the selected bit lines while the corresponding word line is asserted, effectively overwriting the existing contents in the targeted bit cells. All of these actions are synchronized with the rising or falling edge of the global clock, ensuring consistent and predictable timing behavior in every operation.
 
 🖼️ Layout & Timing Results
+---
 🖥️ Final Layout (GDSII / Custom Compiler Layout)
+
+<img width="472" height="616" alt="image" src="https://github.com/user-attachments/assets/288f624d-70fb-4c8b-be29-8ea02b77fe40" />
+
+---
 ⏱️ Timing Waveform
+<img width="979" height="636" alt="image" src="https://github.com/user-attachments/assets/a8091849-4c7b-4bda-84a3-bf06a265bc1b" />
 
 > ⚠️ **Disclaimer:**  
 > This SRAM design was created as part of an NCSU course using restricted tool setups and proprietary library files.  
