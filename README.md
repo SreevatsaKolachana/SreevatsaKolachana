@@ -13,7 +13,7 @@ I'm passionate about building efficient and scalable hardware systems — from R
 - **Physical Design** – Floorplanning, placement & routing, timing closure, and parasitic-aware optimization
 - **Silicon Systems** – Power/performance/area (PPA) trade-offs, signal integrity, and post-layout simulation
 - **Computer Architecture** – Pipelining, multi-core architectures, cache hierarchies, and memory systems
-
+- **Analog/RF design** - Schematic/layout design, Device characterization, parasitic-aware simulation, RF layout practices, S-parameters, Impedance matching, CMOS
 ---
 
 ## 💼 Career experience
