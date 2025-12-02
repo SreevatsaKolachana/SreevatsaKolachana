@@ -50,12 +50,19 @@ My work spans **post-silicon failure analysis, packaging-level validation, machi
 - Work with package reliability engineers to review results from thermal cycling, HAST, and drop tests, helping determine failure mechanisms such as delamination, bump cracking, or void formation, and correlating them with post-assembly electrical behavior.
 
 
-### ⚙️ Technical Environment
-- **EDA Tools:** Cadence Virtuoso, Keysight ADS, SPICE 
-- **Automation & Scripting:** Python (NumPy, Pandas, Scikit-learn, Scipy), Git, Linux, Make  
-- **Lab & Analysis Equipment:** Oscilloscope, VNA, Probe Station, SEM/FIB, IR Thermal Camera, X-Ray Inspection  
-- **Packaging Knowledge Areas:** Wafer-Level Packaging (WLP), QFN, WB/FC
-- **Core Expertise:** Post-Silicon Debug, Layout Design, ESD/EM Validation, ML-Aided Design Optimization, Yield Analysis, Tapeout & Packaging 
+## ⚙️ Technical Environment
+
+### 🛠️ EDA & Design Platforms
+- Cadence Virtuoso, Spectre, Keysight ADS, HSPICE, Synopsys ICC2 & DC-RM, Vivado, Yosys, KLayout, HFSS, VCS/QuestaSim/ModelSim, SPICE/DRC/LVS/PEX flows.
+---
+### 🔧 Automation, Programming & Workflow
+- Python (NumPy, Pandas, SciPy, Scikit-learn), MATLAB, Verilog/SystemVerilog, TCL, C/C++, Linux, Git, Make, SDC development, scripted STA/synthesis/P&R flows, SystemC/TLM, Chisel, MatchLib, Catapult HLS.
+---
+### 🧪 Lab, Test & Failure Analysis
+- Oscilloscopes, VNAs, Spectrum Analyzers, Probe Stations, RF/mmWave test benches, SEM/FIB, X-Ray Inspection, IR thermal imaging, wafer-level test & ATE workflows.
+---
+### 📦 Packaging, Integration & Reliability
+- WLP, QFN, Wire-Bond (WB), Flip-Chip (FC), parasitic extraction, EM/ESD validation, thermal analysis, reliability stress evaluation, die-package-board co-design.
 
 ---
 
