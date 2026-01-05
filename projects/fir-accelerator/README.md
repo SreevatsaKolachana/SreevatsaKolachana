@@ -15,7 +15,7 @@ timing behavior.
 
 ## 🎓 Project Context
 
-This work was completed as part of **ECE 720 (Advanced SoC Design)**  
+This work was completed as part of **ECE 720**  
 at **North Carolina State University (NCSU)**.
 
 The project focuses on:
