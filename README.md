@@ -74,7 +74,7 @@ My work spans **post-silicon failure analysis, packaging-level validation, machi
 - [**128-bit Synchronous SRAM design at 3nm node**](projects/SRAMdesign_3nm/)  
   Ultra-high-speed SRAM design using GAAFET technology with full custom layout and post-layout simulation.
 
-- [**RTL-STA correlation framework for CAD analysis](projects/cad-framework/)
+- [**RTL-STA correlation framework for CAD analysis**](projects/cad-framework/)
   Built a CAD-style automation framework using TCL and Python to correlate RTL register hierarchy, SDC clock constraints, and basic STA reports. It generates structured metrics, identifies clock-domain and register-level issues to mirror CAD workflows
   
 - [**Implementation of Transformer Self-attention mechanism for NLP applications using Verilog HDL**](projects/transformer-accelerator/)  
