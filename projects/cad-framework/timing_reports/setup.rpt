@@ -1,0 +1,13 @@
+Startpoint: u_alu/sum_reg (rising edge)
+Endpoint:   u_alu/diff_reg (rising edge)
+Path Group: CLK_SYS
+Slack (VIOLATED): -0.132
+
+Point                                      Incr        Path
+------------------------------------------------------------
+clock clk (rise edge)                     0.000       0.000
+u_alu/U1 (ADD_X1)                         0.042       0.042
+u_alu/U2 (SUB_X1)                         0.071       0.113
+data arrival time                                      0.113
+
+slack (VIOLATED) = -0.132

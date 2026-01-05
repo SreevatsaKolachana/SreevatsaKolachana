@@ -1,0 +1,134 @@
+{
+  "total_instances": 10,
+  "leaf_registers": 9,
+  "unclocked_registers": 8,
+  "unreset_registers": 9,
+  "top_violations": [
+    {
+      "parent_module": "regfile",
+      "inst_name": "U_RF0",
+      "cell_type": "DFF",
+      "clock_net": null,
+      "reset_net": null,
+      "depth": 2,
+      "issues": [
+        "UNCLOCKED",
+        "UNRESET"
+      ],
+      "severity": 13
+    },
+    {
+      "parent_module": "regfile",
+      "inst_name": "U_RF1",
+      "cell_type": "DFF",
+      "clock_net": null,
+      "reset_net": null,
+      "depth": 2,
+      "issues": [
+        "UNCLOCKED",
+        "UNRESET"
+      ],
+      "severity": 13
+    },
+    {
+      "parent_module": "regfile",
+      "inst_name": "U_RF2",
+      "cell_type": "DFF",
+      "clock_net": null,
+      "reset_net": null,
+      "depth": 2,
+      "issues": [
+        "UNCLOCKED",
+        "UNRESET"
+      ],
+      "severity": 13
+    },
+    {
+      "parent_module": "regfile",
+      "inst_name": "U_RF3",
+      "cell_type": "DFF",
+      "clock_net": null,
+      "reset_net": null,
+      "depth": 2,
+      "issues": [
+        "UNCLOCKED",
+        "UNRESET"
+      ],
+      "severity": 13
+    },
+    {
+      "parent_module": "alu",
+      "inst_name": "U_ALU_REG0",
+      "cell_type": "DFF",
+      "clock_net": null,
+      "reset_net": null,
+      "depth": 2,
+      "issues": [
+        "UNCLOCKED",
+        "UNRESET"
+      ],
+      "severity": 13
+    },
+    {
+      "parent_module": "alu",
+      "inst_name": "U_ALU_REG1",
+      "cell_type": "DFF",
+      "clock_net": null,
+      "reset_net": null,
+      "depth": 2,
+      "issues": [
+        "UNCLOCKED",
+        "UNRESET"
+      ],
+      "severity": 13
+    },
+    {
+      "parent_module": "alu",
+      "inst_name": "U_ALU_REG2",
+      "cell_type": "DFF",
+      "clock_net": null,
+      "reset_net": null,
+      "depth": 2,
+      "issues": [
+        "UNCLOCKED",
+        "UNRESET"
+      ],
+      "severity": 13
+    },
+    {
+      "parent_module": "alu",
+      "inst_name": "U_ALU_REG3",
+      "cell_type": "DFF",
+      "clock_net": null,
+      "reset_net": null,
+      "depth": 2,
+      "issues": [
+        "UNCLOCKED",
+        "UNRESET"
+      ],
+      "severity": 13
+    },
+    {
+      "parent_module": "core",
+      "inst_name": "U_RF",
+      "cell_type": "regfile",
+      "clock_net": "clk",
+      "reset_net": null,
+      "depth": 1,
+      "issues": [
+        "UNRESET"
+      ],
+      "severity": 3
+    },
+    {
+      "parent_module": "controller",
+      "inst_name": "U_CTRL_STATE",
+      "cell_type": "DFF",
+      "clock_net": "clk",
+      "reset_net": "rst_n",
+      "depth": 2,
+      "issues": [],
+      "severity": 0
+    }
+  ]
+}
