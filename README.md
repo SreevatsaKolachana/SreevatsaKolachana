@@ -74,6 +74,9 @@ My work spans **post-silicon failure analysis, packaging-level validation, machi
 - [**128-bit Synchronous SRAM design at 3nm node**](projects/SRAMdesign_3nm/)  
   Ultra-high-speed SRAM design using GAAFET technology with full custom layout and post-layout simulation.
 
+- [**High-Performance FIR Filter Accelerator (SystemC + HLS)**](projects/fir-accelerator/)<br>
+  Designed and evaluated a 16-tap FIR hardware accelerator using SystemC/TLM and Catapult HLS, integrated into a Rocket-chip SoC via DMA.
+
 - [**RTL-STA correlation framework for CAD analysis**](projects/cad-framework/)<br>
   Built a CAD-style automation framework using TCL and Python to correlate RTL register hierarchy, SDC clock constraints, and basic STA reports. It generates structured metrics, identifies clock-domain and register-level issues to mirror CAD workflows
   
