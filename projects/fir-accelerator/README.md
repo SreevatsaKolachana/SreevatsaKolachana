@@ -1,4 +1,4 @@
-# High-Performance FIR Filter Accelerator (SystemC + HLS)
+# 🚀 High-Performance FIR Filter Accelerator (SystemC + HLS)
 
 This project presents the design, implementation, and evaluation of a
 high-performance **16-tap FIR filter accelerator** developed using
@@ -13,20 +13,20 @@ timing behavior.
 
 ---
 
-## Project Context
+## 🎓 Project Context
 
 This work was completed as part of **ECE 720 (Advanced SoC Design)**  
 at **North Carolina State University (NCSU)**.
 
 The project focuses on:
-- Hardware/software co-design
-- Accelerator integration using DMA
-- HLS-based synthesis and RTL evaluation
-- Performance, timing, and area analysis
+- 🧩 Hardware/software co-design
+- 🔌 Accelerator integration using DMA
+- 🛠️ HLS-based synthesis and RTL evaluation
+- 📊 Performance, timing, and area analysis
 
 ---
 
-## What This Project Does
+## 🔍 What This Project Does
 
 - Implements a **16-tap FIR filter accelerator** in SystemC
 - Integrates the accelerator into a Rocket-Chip SoC environment
@@ -40,44 +40,44 @@ The project focuses on:
 
 ---
 
-## System Architecture
+## 🏗️ System Architecture
 
 The system consists of the following major components:
 
 - **RocketTile (CPU)**  
-  Executes the C driver and issues control commands
+  🧠 Executes the C driver and issues control commands
 
 - **DMA Controller**  
-  Transfers coefficient, input, and output data
+  🔄 Transfers coefficient, input, and output data
 
 - **SystemC FIR Accelerator**  
-  Implements the FIR datapath and control FSM
+  ⚙️ Implements the FIR datapath and control FSM
 
 - **FIFO Interfaces**  
-  Stream control and data between DMA and accelerator
+  📥📤 Stream control and data between DMA and accelerator
 
 - **Catapult HLS Hardware Model**  
-  Generates synthesizable RTL and reports area/timing
+  🧬 Generates synthesizable RTL and reports area/timing
 
 ---
 
-## Accelerator Dataflow
+## 🔁 Accelerator Dataflow
 
-1. CPU issues a control command:
+1. 🧠 CPU issues a control command:
    - Reset
    - Load coefficients
    - Compute FIR
-2. DMA transfers packed coefficient data
-3. DMA streams input samples
-4. Accelerator performs FIR computation internally
-5. Results are packed and sent back via DMA
-6. CPU verifies correctness
+2. 🔄 DMA transfers packed coefficient data
+3. 📥 DMA streams input samples
+4. ⚙️ Accelerator performs FIR computation internally
+5. 📤 Results are packed and sent back via DMA
+6. ✅ CPU verifies correctness
 
 ---
 
-## Performance Results
+## 📈 Performance Results
 
-### Latency and Speedup
+### ⏱️ Latency and Speedup
 
 | Mode | Cycles | Speedup |
 |------|--------|---------|
@@ -93,7 +93,7 @@ hardware behavior including FSM sequencing and interface handshakes.
 
 ---
 
-### Timing
+### 🕒 Timing
 
 - **Critical path delay:** 2.841 ns  
 - **Maximum clock frequency:** 351.99 MHz  
@@ -103,7 +103,9 @@ These results demonstrate that the accelerator achieves substantial
 performance gains while maintaining realistic timing closure and
 cycle-accurate behavior.
 
-### Area Overhead (HLS)
+---
+
+### 📐 Area Overhead (HLS)
 
 | Component | Percentage |
 |----------|------------|
@@ -119,37 +121,36 @@ performance gains are achieved with minimal silicon overhead.
 
 ---
 
-## Scaling Behavior
+## 📊 Scaling Behavior
 
 Simulation results show **linear scaling** with loop count for both
 SystemC and RTL simulations. This confirms:
 
-- Stable control sequencing
-- No hidden amortized overheads
-- Predictable datapath utilization
+- 📏 Stable control sequencing
+- 🚫 No hidden amortized overheads
+- 🔍 Predictable datapath utilization
 
 SystemC runs significantly faster due to higher abstraction, while
 VSIM reflects cycle-accurate hardware behavior.
 
 ---
 
-## Key Takeaways
+## ✅ Key Takeaways
 
-- Hardware acceleration provides **order-of-magnitude speedup**
-- RTL implementation remains efficient and practical
-- HLS enables rapid development with strong timing results
-- SystemC is ideal for early exploration; RTL is essential for realism
-- The design balances **performance, area, and predictability**
+- 🚀 Hardware acceleration provides **order-of-magnitude speedup**
+- ⚙️ RTL implementation remains efficient and practical
+- 🛠️ HLS enables rapid development with strong timing results
+- 🧪 SystemC is ideal for early exploration; RTL is essential for realism
+- ⚖️ The design balances **performance, area, and predictability**
 
 ---
 
-## Disclaimer
+## ⚠️ Disclaimer
 
-⚠️ **Academic Project Notice**
+**Academic Project Notice**
 
 This project was developed as part of coursework at  
 **North Carolina State University (NCSU)**.
 
 Only documentation, summaries, and high-level results are included
 here for demonstration and portfolio purposes.
-
