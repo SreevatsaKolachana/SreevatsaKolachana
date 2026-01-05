@@ -35,6 +35,8 @@ This project was built to prototype such CAD-style checks in a clean, script-dri
 ---
 
 ## Repository Layout
+
+```
 .
 ├── docs
 ├── Makefile
@@ -83,7 +85,7 @@ This project was built to prototype such CAD-style checks in a clean, script-dri
 │   └── sdc_parser.tcl
 └── timing_reports
     └── setup.rpt
-
+```
 
 ---
 
