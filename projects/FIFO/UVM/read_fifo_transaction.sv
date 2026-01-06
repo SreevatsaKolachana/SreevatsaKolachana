@@ -1,9 +1,13 @@
 // Defines the transaction item used by the read-side sequencer/driver pair
+
+
 `ifndef READ_FIFO_TRANSACTION__SV
 `define READ_FIFO_TRANSACTION__SV
-class read_fifo_transaction extends uvm_sequence_item;
 
+class read_fifo_transaction extends uvm_sequence_item;
     rand bit rinc;
+
+    constraint c_rinc { rinc == 1'b1; }
 
     // Registration with factory
     `uvm_object_utils_begin(read_fifo_transaction)
@@ -13,6 +17,5 @@ class read_fifo_transaction extends uvm_sequence_item;
     function new(string name = "read_fifo_transaction");
         super.new(name);
     endfunction
-
 endclass
 `endif

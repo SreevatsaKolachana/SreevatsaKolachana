@@ -1,49 +1,90 @@
-// The read monitor is a passive component that observes the DUT's read interface and collects
-// transactions without driving any signals
-// It captures actual read data from the FIFO whenever rinc is asserted
-// Send the captured transaction via its analysis port(ap) to downstream components
-// like the scoreboard or coverage collector
+// Read FIFO monitor
+// Observes FIFO read operations and captures output data
+
 `ifndef READ_FIFO_MONITOR__SV
 `define READ_FIFO_MONITOR__SV
+
 class read_fifo_monitor extends uvm_monitor;
-    virtual rd_if rd_if_h;
-    uvm_analysis_port #(my_transaction) ap_h; // Monitor analysis port
+
+    // Virtual interface for read-side observation
+    virtual rd_if rd_if;
+
+    // Analysis port to send read transactions to scoreboard
+    uvm_analysis_port #(my_transaction) ap;
+
+    // Local transaction ID counter
+    int unsigned next_tx_id;
+
     `uvm_component_utils(read_fifo_monitor)
+
     function new(string name = "read_fifo_monitor", uvm_component parent = null);
         super.new(name, parent);
+        next_tx_id = 0;
     endfunction
-    virtual function void build_phase(uvm_phase phase);
+
+    function void build_phase(uvm_phase phase);
         super.build_phase(phase);
-        if(!uvm_config_db#(virtual rd_if)::get(this, "", "rd_if", rd_if_h))
-            `uvm_fatal("read_fifo_monitor", "virtual interface must be set for rd_if!!!")
-        ap_h = new("ap_h", this);
+
+        if (!uvm_config_db#(virtual rd_if)::get(this, "", "rd_if", rd_if))
+            `uvm_fatal("READ_MON", "rd_if not set")
+
+        ap = new("ap", this);
+
+        `uvm_info("READ_MON",
+                  "Read FIFO monitor build complete",
+                  UVM_LOW)
     endfunction
-    extern task main_phase(uvm_phase phase);
-    extern task collect_one_pkt(my_transaction tr);
+
+    task main_phase(uvm_phase phase);
+        my_transaction tr;
+
+        `uvm_info("READ_MON",
+                  "Read FIFO monitor started",
+                  UVM_LOW)
+
+        while (1) begin
+            tr = new("tr");
+            collect_one_pkt(tr);
+
+            // Assign transaction ID
+            tr.tx_id = next_tx_id;
+            next_tx_id++;
+
+            `uvm_info("READ_MON",
+                      $sformatf("FIFO READ observed: tx_id=%0d data=0x%0h",
+                                tr.tx_id, tr.data),
+                      UVM_MEDIUM)
+
+            ap.write(tr);
+
+            `uvm_info("READ_MON",
+                      "READ transaction sent to analysis port",
+                      UVM_HIGH)
+        end
+    endtask
+
+    // Capture one read event
+    task collect_one_pkt(my_transaction tr);
+        while (1) begin
+            @(posedge rd_if.rclk);
+            if (rd_if.rinc)
+                break;
+        end
+
+        `uvm_info("READ_MON",
+                  "begin to collect one pkt",
+                  UVM_MEDIUM)
+
+        tr.data = rd_if.rdata;
+
+        `uvm_info("READ_MON",
+                  $sformatf("Captured read data from DUT: data=0x%0h", tr.data),
+                  UVM_MEDIUM)
+
+        `uvm_info("READ_MON",
+                  "end collect one pkt",
+                  UVM_MEDIUM)
+    endtask
+
 endclass
-
-task read_fifo_monitor::main_phase(uvm_phase phase);
-    my_transaction tr_h;
-    while(1) begin
-        tr_h = new("tr_h");
-        collect_one_pkt(tr_h);
-        ap_h.write(tr_h);
-    end
-endtask
-
-task read_fifo_monitor::collect_one_pkt(my_transaction tr_h);
-    while(1) begin
-        @(posedge rd_if_h.rclk);
-        if(rd_if_h.rinc) break;
-    end
-    `uvm_info("read_fifo_monitor", "begin to collect one pkt", UVM_MEDIUM);
-    tr_h.data = rd_if_h.rdata;
-    `uvm_info("read_fifo_monitor", "end collect one pkt", UVM_MEDIUM);
-endtask
-
-// read_driver: gets the transaction from sequencer and drives it onto rd_if.rinc
-//  Sends read enable signal to DUT, does not want to capture data from DUT
-// read_monitor: observes DUT signals
-//  Captures the actual data output by the DUT and sends it to analysis port. This is the
-//  observed data
 `endif

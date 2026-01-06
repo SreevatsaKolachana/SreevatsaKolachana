@@ -7,7 +7,8 @@ module sync_w2r #(parameter ADDRSIZE = 4)
     (output reg [ADDRSIZE:0] rq2_wptr,
     input       [ADDRSIZE:0] wptr,
     input                   rclk, rrst_n);
-    reg [ADDRSIZE:0]    wql_rptr;
+
+    reg [ADDRSIZE:0] rq1_wptr;   // ✅ FIXED NAME
 
     // wptr lives in write clock domain
     // Read logic needs to know where the write pointer is(to check empty)
@@ -21,5 +22,6 @@ module sync_w2r #(parameter ADDRSIZE = 4)
     // The read logic comapres its own rptr with synchronized write pointer, to check empty
     always@(posedge rclk or negedge rrst_n)
         if (!rrst_n) {rq2_wptr, rq1_wptr} <= 0;
-        else {rq2_wptr, rql_wptr} <= {rq1_wptr, wptr};
+        else         {rq2_wptr, rq1_wptr} <= {rq1_wptr, wptr};
+
 endmodule

@@ -23,7 +23,7 @@ module rptr_empty # (parameter ADDRSIZE = 4)
 
     // Gray style pointer
     // On rising edge of rclk, Binary and Gray pointers are updated.
-    always@(posedge clk or negedge rrst_n)
+    always@(posedge rclk or negedge rrst_n)
         if (!rrst_n) {rbin, rptr} <= 0;
         else    {rbin, rptr} <= {rbinnext, rgraynext};
 

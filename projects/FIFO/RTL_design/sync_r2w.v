@@ -7,7 +7,7 @@ module sync_r2w #(parameter ADDRSIZE = 4)
     (output reg [ADDRSIZE:0] wq2_rptr,
     input       [ADDRSIZE:0] rptr,
     input                   wclk, wrst_n);
-    reg [ADDRSIZE:0]    wql_rptr;
+    reg [ADDRSIZE:0]    wq1_rptr;
 
     // Write runs on wclk
     // Read runs on rclk

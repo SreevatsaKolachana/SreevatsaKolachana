@@ -1,42 +1,32 @@
 // The sequence generates the stimulus
-// Basically a bunch of my_transaction objects that the driver will eventually use to drive
+// Basically a bunch of my_transaction objects that teh driver will eventually use to drive
 // data into the FIFO
-`ifndef WRITE_FIFO_SEQUENCER_SV
-`define WRITE_FIFO_SEQUENCER_SV
-class write_fifo_seq extends uvm_sequence #(my_transaction);
 
+`ifndef WRITE_FIFO_SEQ_SV
+`define WRITE_FIFO_SEQ_SV
+
+class write_fifo_seq extends uvm_sequence #(my_transaction);
+    //Constructor
     function new(string name = "write_fifo_seq");
         super.new(name);
     endfunction
 
-    extern virtual task body(); 
-    extern virtual task pre_body();
-    extern virtual task post_body();
-
-    // Modular helper tasks
-    extern task create_trans(output my_transaction tr_h);
-    extern task send_trans(my_transaction tr_h);
+    // Various tasks
+    extern virtual task body(); // Main stimulus generation
+    extern virtual task pre_body(); // Before the sequence starts
+    extern virtual task post_body(); // cleanup after the sequence finishes
 
     `uvm_object_utils(write_fifo_seq)
 endclass
 
 task write_fifo_seq::body();
-    my_transaction tr_h;
-    create_trans(tr_h);
-    send_trans(tr_h);
+    my_transaction my_trans;
+    `uvm_do(my_trans)
     // `uvm_do creates 
     // 1. a transaction object (my_transaction::type_id::create("my_trans"))
     // 2. randomizes it
     // 3. sends it to the sequencer, which passes it to the driver via get_next_item()
     // 4. waits for the driver to call item_done() before continuing
-endtask
-
-task write_fifo_seq::create_trans(output my_transaction tr_h);
-    tr_h = my_transaction::type_id::create("tr_h", this);
-endtask
-
-task write_fifo_seq::send_trans(my_transaction tr_h);
-    `uvm_do(tr_h)
 endtask
 
 // The following tasks are used if the sequence runs in a UVM phase(like main_phase)
@@ -52,7 +42,7 @@ task write_fifo_seq::post_body();
 //        starting_phase.drop_objection(this);
 //    end
 endtask
-`endif
+`endif 
 
 // Flow when this sequence runs:
 // 1. run_test("my_case0") → triggers test.

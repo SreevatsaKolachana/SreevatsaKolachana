@@ -1,0 +1,934 @@
+Reading pref.tcl
+
+# 2025.1_1
+
+# vsim -c -sv_seed 12345 -coverage "+UVM_TESTNAME=my_case1" optimized_tb -do "run -all; coverage save my_case1.12345.ucdb; quit -f" 
+# Start time: 15:26:01 on Jan 06,2026
+# //  Questa Sim-64
+# //  Version 2025.1_1 linux_x86_64 Feb 13 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.wr_if(fast)
+# Loading work.rd_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.fifo_uvm_pkg(fast)
+# Loading work.testbench_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.testbench(fast)
+# Loading work.wr_if(fast__2)
+# Loading work.rd_if(fast__2)
+# Loading work.async_fifo(fast)
+# Loading work.sync_r2w(fast)
+# Loading work.sync_w2r(fast)
+# Loading work.fifomem(fast)
+# Loading work.rptr_empty(fast)
+# Loading work.wptr_full(fast)
+# Loading /mnt/apps/public/COE/mg_apps/questa2025.1_1/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# DATA_DEPTH:16
+# UVM_INFO @ 0: reporter [RNTST] Running test my_case1...
+# UVM_INFO UVM/write_fifo_monitor.sv(35) @ 0: uvm_test_top.env.i_agt.mon [WRITE_MON] Write FIFO monitor build complete
+# UVM_INFO UVM/read_fifo_driver.sv(27) @ 0: uvm_test_top.env.o_agt.drv [READ_DRV] Read FIFO driver build complete
+# UVM_INFO UVM/read_fifo_monitor.sv(33) @ 0: uvm_test_top.env.o_agt.mon [READ_MON] Read FIFO monitor build complete
+# UVM_INFO UVM/read_fifo_monitor.sv(41) @ 0: uvm_test_top.env.o_agt.mon [READ_MON] Read FIFO monitor started
+# UVM_INFO UVM/write_fifo_monitor.sv(44) @ 0: uvm_test_top.env.i_agt.mon [WRITE_MON] Write FIFO monitor started
+# UVM_INFO UVM/read_fifo_driver.sv(46) @ 1050000: uvm_test_top.env.o_agt.drv [READ_DRV] Reset released, starting read driver
+# UVM_INFO UVM/write_fifo_driver.sv(49) @ 1100000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Reset released, starting write driver
+# UVM_INFO UVM/write_fifo_driver.sv(66) @ 1100000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Received WRITE transaction: tx_id=0 data=0xef
+# UVM_INFO UVM/write_fifo_driver.sv(101) @ 1100000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Attempting WRITE: tx_id=0 data=0xef
+# UVM_INFO UVM/write_fifo_driver.sv(125) @ 1300000: uvm_test_top.env.i_agt.drv [WRITE_DRV] WRITE accepted by DUT: tx_id=0 data=0xef
+# UVM_INFO UVM/write_fifo_monitor.sv(78) @ 1500000: uvm_test_top.env.i_agt.mon [WRITE_MON] begin to collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(85) @ 1500000: uvm_test_top.env.i_agt.mon [WRITE_MON] Captured write data from DUT: data=0xef
+# UVM_INFO UVM/write_fifo_monitor.sv(89) @ 1500000: uvm_test_top.env.i_agt.mon [WRITE_MON] end collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(56) @ 1500000: uvm_test_top.env.i_agt.mon [WRITE_MON] Observed WRITE transaction: tx_id=0 data=0xef
+# UVM_INFO UVM/write_fifo_driver.sv(75) @ 1500000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Completed WRITE transaction: tx_id=0 data=0xef
+# UVM_INFO UVM/my_model.sv(42) @ 1500000: uvm_test_top.env.mdl [MY_MODEL] Pushed into golden_fifo: data=0xef (depth=1)
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1217
+#   data   integral        8     'hef 
+#   tx_id  integral        32    'h0  
+# ------------------------------------
+# UVM_INFO UVM/my_scoreboard.sv(53) @ 1500000: uvm_test_top.env.scb [my_scoreboard] EXPECTED enqueued: tx_id=0 data=0xef (queue_depth=1)
+# UVM_INFO UVM/write_fifo_driver.sv(66) @ 1500000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Received WRITE transaction: tx_id=1 data=0x1d
+# UVM_INFO UVM/write_fifo_driver.sv(101) @ 1500000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Attempting WRITE: tx_id=1 data=0x1d
+# UVM_INFO UVM/write_fifo_driver.sv(125) @ 1700000: uvm_test_top.env.i_agt.drv [WRITE_DRV] WRITE accepted by DUT: tx_id=1 data=0x1d
+# UVM_INFO UVM/write_fifo_monitor.sv(78) @ 1900000: uvm_test_top.env.i_agt.mon [WRITE_MON] begin to collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(85) @ 1900000: uvm_test_top.env.i_agt.mon [WRITE_MON] Captured write data from DUT: data=0x1d
+# UVM_INFO UVM/write_fifo_monitor.sv(89) @ 1900000: uvm_test_top.env.i_agt.mon [WRITE_MON] end collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(56) @ 1900000: uvm_test_top.env.i_agt.mon [WRITE_MON] Observed WRITE transaction: tx_id=1 data=0x1d
+# UVM_INFO UVM/write_fifo_driver.sv(75) @ 1900000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Completed WRITE transaction: tx_id=1 data=0x1d
+# UVM_INFO UVM/my_model.sv(42) @ 1900000: uvm_test_top.env.mdl [MY_MODEL] Pushed into golden_fifo: data=0x1d (depth=1)
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1234
+#   data   integral        8     'h1d 
+#   tx_id  integral        32    'h1  
+# ------------------------------------
+# UVM_INFO UVM/my_scoreboard.sv(53) @ 1900000: uvm_test_top.env.scb [my_scoreboard] EXPECTED enqueued: tx_id=1 data=0x1d (queue_depth=2)
+# UVM_INFO UVM/write_fifo_driver.sv(66) @ 1900000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Received WRITE transaction: tx_id=2 data=0x51
+# UVM_INFO UVM/write_fifo_driver.sv(101) @ 1900000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Attempting WRITE: tx_id=2 data=0x51
+# UVM_INFO UVM/write_fifo_driver.sv(125) @ 2100000: uvm_test_top.env.i_agt.drv [WRITE_DRV] WRITE accepted by DUT: tx_id=2 data=0x51
+# UVM_INFO UVM/write_fifo_monitor.sv(78) @ 2300000: uvm_test_top.env.i_agt.mon [WRITE_MON] begin to collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(85) @ 2300000: uvm_test_top.env.i_agt.mon [WRITE_MON] Captured write data from DUT: data=0x51
+# UVM_INFO UVM/write_fifo_monitor.sv(89) @ 2300000: uvm_test_top.env.i_agt.mon [WRITE_MON] end collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(56) @ 2300000: uvm_test_top.env.i_agt.mon [WRITE_MON] Observed WRITE transaction: tx_id=2 data=0x51
+# UVM_INFO UVM/write_fifo_driver.sv(75) @ 2300000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Completed WRITE transaction: tx_id=2 data=0x51
+# UVM_INFO UVM/my_model.sv(42) @ 2300000: uvm_test_top.env.mdl [MY_MODEL] Pushed into golden_fifo: data=0x51 (depth=1)
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1250
+#   data   integral        8     'h51 
+#   tx_id  integral        32    'h2  
+# ------------------------------------
+# UVM_INFO UVM/my_scoreboard.sv(53) @ 2300000: uvm_test_top.env.scb [my_scoreboard] EXPECTED enqueued: tx_id=2 data=0x51 (queue_depth=3)
+# UVM_INFO UVM/write_fifo_driver.sv(66) @ 2300000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Received WRITE transaction: tx_id=3 data=0x2e
+# UVM_INFO UVM/write_fifo_driver.sv(101) @ 2300000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Attempting WRITE: tx_id=3 data=0x2e
+# UVM_INFO UVM/write_fifo_driver.sv(125) @ 2500000: uvm_test_top.env.i_agt.drv [WRITE_DRV] WRITE accepted by DUT: tx_id=3 data=0x2e
+# UVM_INFO UVM/write_fifo_monitor.sv(78) @ 2700000: uvm_test_top.env.i_agt.mon [WRITE_MON] begin to collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(85) @ 2700000: uvm_test_top.env.i_agt.mon [WRITE_MON] Captured write data from DUT: data=0x2e
+# UVM_INFO UVM/write_fifo_monitor.sv(89) @ 2700000: uvm_test_top.env.i_agt.mon [WRITE_MON] end collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(56) @ 2700000: uvm_test_top.env.i_agt.mon [WRITE_MON] Observed WRITE transaction: tx_id=3 data=0x2e
+# UVM_INFO UVM/write_fifo_driver.sv(75) @ 2700000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Completed WRITE transaction: tx_id=3 data=0x2e
+# UVM_INFO UVM/my_model.sv(42) @ 2700000: uvm_test_top.env.mdl [MY_MODEL] Pushed into golden_fifo: data=0x2e (depth=1)
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1266
+#   data   integral        8     'h2e 
+#   tx_id  integral        32    'h3  
+# ------------------------------------
+# UVM_INFO UVM/my_scoreboard.sv(53) @ 2700000: uvm_test_top.env.scb [my_scoreboard] EXPECTED enqueued: tx_id=3 data=0x2e (queue_depth=4)
+# UVM_INFO UVM/write_fifo_driver.sv(66) @ 2700000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Received WRITE transaction: tx_id=4 data=0x9
+# UVM_INFO UVM/write_fifo_driver.sv(101) @ 2700000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Attempting WRITE: tx_id=4 data=0x9
+# UVM_INFO UVM/write_fifo_driver.sv(125) @ 2900000: uvm_test_top.env.i_agt.drv [WRITE_DRV] WRITE accepted by DUT: tx_id=4 data=0x9
+# UVM_INFO UVM/write_fifo_monitor.sv(78) @ 3100000: uvm_test_top.env.i_agt.mon [WRITE_MON] begin to collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(85) @ 3100000: uvm_test_top.env.i_agt.mon [WRITE_MON] Captured write data from DUT: data=0x9
+# UVM_INFO UVM/write_fifo_monitor.sv(89) @ 3100000: uvm_test_top.env.i_agt.mon [WRITE_MON] end collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(56) @ 3100000: uvm_test_top.env.i_agt.mon [WRITE_MON] Observed WRITE transaction: tx_id=4 data=0x9
+# UVM_INFO UVM/write_fifo_driver.sv(75) @ 3100000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Completed WRITE transaction: tx_id=4 data=0x9
+# UVM_INFO UVM/my_model.sv(42) @ 3100000: uvm_test_top.env.mdl [MY_MODEL] Pushed into golden_fifo: data=0x9 (depth=1)
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1282
+#   data   integral        8     'h9  
+#   tx_id  integral        32    'h4  
+# ------------------------------------
+# UVM_INFO UVM/my_scoreboard.sv(53) @ 3100000: uvm_test_top.env.scb [my_scoreboard] EXPECTED enqueued: tx_id=4 data=0x9 (queue_depth=5)
+# UVM_INFO UVM/write_fifo_driver.sv(66) @ 3100000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Received WRITE transaction: tx_id=5 data=0xee
+# UVM_INFO UVM/write_fifo_driver.sv(101) @ 3100000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Attempting WRITE: tx_id=5 data=0xee
+# UVM_INFO UVM/write_fifo_driver.sv(125) @ 3300000: uvm_test_top.env.i_agt.drv [WRITE_DRV] WRITE accepted by DUT: tx_id=5 data=0xee
+# UVM_INFO UVM/write_fifo_monitor.sv(78) @ 3500000: uvm_test_top.env.i_agt.mon [WRITE_MON] begin to collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(85) @ 3500000: uvm_test_top.env.i_agt.mon [WRITE_MON] Captured write data from DUT: data=0xee
+# UVM_INFO UVM/write_fifo_monitor.sv(89) @ 3500000: uvm_test_top.env.i_agt.mon [WRITE_MON] end collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(56) @ 3500000: uvm_test_top.env.i_agt.mon [WRITE_MON] Observed WRITE transaction: tx_id=5 data=0xee
+# UVM_INFO UVM/write_fifo_driver.sv(75) @ 3500000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Completed WRITE transaction: tx_id=5 data=0xee
+# UVM_INFO UVM/my_model.sv(42) @ 3500000: uvm_test_top.env.mdl [MY_MODEL] Pushed into golden_fifo: data=0xee (depth=1)
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1298
+#   data   integral        8     'hee 
+#   tx_id  integral        32    'h5  
+# ------------------------------------
+# UVM_INFO UVM/my_scoreboard.sv(53) @ 3500000: uvm_test_top.env.scb [my_scoreboard] EXPECTED enqueued: tx_id=5 data=0xee (queue_depth=6)
+# UVM_INFO UVM/write_fifo_driver.sv(66) @ 3500000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Received WRITE transaction: tx_id=6 data=0x36
+# UVM_INFO UVM/write_fifo_driver.sv(101) @ 3500000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Attempting WRITE: tx_id=6 data=0x36
+# UVM_INFO UVM/write_fifo_driver.sv(125) @ 3700000: uvm_test_top.env.i_agt.drv [WRITE_DRV] WRITE accepted by DUT: tx_id=6 data=0x36
+# UVM_INFO UVM/write_fifo_monitor.sv(78) @ 3900000: uvm_test_top.env.i_agt.mon [WRITE_MON] begin to collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(85) @ 3900000: uvm_test_top.env.i_agt.mon [WRITE_MON] Captured write data from DUT: data=0x36
+# UVM_INFO UVM/write_fifo_monitor.sv(89) @ 3900000: uvm_test_top.env.i_agt.mon [WRITE_MON] end collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(56) @ 3900000: uvm_test_top.env.i_agt.mon [WRITE_MON] Observed WRITE transaction: tx_id=6 data=0x36
+# UVM_INFO UVM/write_fifo_driver.sv(75) @ 3900000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Completed WRITE transaction: tx_id=6 data=0x36
+# UVM_INFO UVM/my_model.sv(42) @ 3900000: uvm_test_top.env.mdl [MY_MODEL] Pushed into golden_fifo: data=0x36 (depth=1)
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1314
+#   data   integral        8     'h36 
+#   tx_id  integral        32    'h6  
+# ------------------------------------
+# UVM_INFO UVM/my_scoreboard.sv(53) @ 3900000: uvm_test_top.env.scb [my_scoreboard] EXPECTED enqueued: tx_id=6 data=0x36 (queue_depth=7)
+# UVM_INFO UVM/write_fifo_driver.sv(66) @ 3900000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Received WRITE transaction: tx_id=7 data=0xeb
+# UVM_INFO UVM/write_fifo_driver.sv(101) @ 3900000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Attempting WRITE: tx_id=7 data=0xeb
+# UVM_INFO UVM/write_fifo_driver.sv(125) @ 4100000: uvm_test_top.env.i_agt.drv [WRITE_DRV] WRITE accepted by DUT: tx_id=7 data=0xeb
+# UVM_INFO UVM/write_fifo_monitor.sv(78) @ 4300000: uvm_test_top.env.i_agt.mon [WRITE_MON] begin to collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(85) @ 4300000: uvm_test_top.env.i_agt.mon [WRITE_MON] Captured write data from DUT: data=0xeb
+# UVM_INFO UVM/write_fifo_monitor.sv(89) @ 4300000: uvm_test_top.env.i_agt.mon [WRITE_MON] end collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(56) @ 4300000: uvm_test_top.env.i_agt.mon [WRITE_MON] Observed WRITE transaction: tx_id=7 data=0xeb
+# UVM_INFO UVM/write_fifo_driver.sv(75) @ 4300000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Completed WRITE transaction: tx_id=7 data=0xeb
+# UVM_INFO UVM/my_model.sv(42) @ 4300000: uvm_test_top.env.mdl [MY_MODEL] Pushed into golden_fifo: data=0xeb (depth=1)
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1330
+#   data   integral        8     'heb 
+#   tx_id  integral        32    'h7  
+# ------------------------------------
+# UVM_INFO UVM/my_scoreboard.sv(53) @ 4300000: uvm_test_top.env.scb [my_scoreboard] EXPECTED enqueued: tx_id=7 data=0xeb (queue_depth=8)
+# UVM_INFO UVM/write_fifo_driver.sv(66) @ 4300000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Received WRITE transaction: tx_id=8 data=0x27
+# UVM_INFO UVM/write_fifo_driver.sv(101) @ 4300000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Attempting WRITE: tx_id=8 data=0x27
+# UVM_INFO UVM/write_fifo_driver.sv(125) @ 4500000: uvm_test_top.env.i_agt.drv [WRITE_DRV] WRITE accepted by DUT: tx_id=8 data=0x27
+# UVM_INFO UVM/write_fifo_monitor.sv(78) @ 4700000: uvm_test_top.env.i_agt.mon [WRITE_MON] begin to collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(85) @ 4700000: uvm_test_top.env.i_agt.mon [WRITE_MON] Captured write data from DUT: data=0x27
+# UVM_INFO UVM/write_fifo_monitor.sv(89) @ 4700000: uvm_test_top.env.i_agt.mon [WRITE_MON] end collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(56) @ 4700000: uvm_test_top.env.i_agt.mon [WRITE_MON] Observed WRITE transaction: tx_id=8 data=0x27
+# UVM_INFO UVM/write_fifo_driver.sv(75) @ 4700000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Completed WRITE transaction: tx_id=8 data=0x27
+# UVM_INFO UVM/my_model.sv(42) @ 4700000: uvm_test_top.env.mdl [MY_MODEL] Pushed into golden_fifo: data=0x27 (depth=1)
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1346
+#   data   integral        8     'h27 
+#   tx_id  integral        32    'h8  
+# ------------------------------------
+# UVM_INFO UVM/my_scoreboard.sv(53) @ 4700000: uvm_test_top.env.scb [my_scoreboard] EXPECTED enqueued: tx_id=8 data=0x27 (queue_depth=9)
+# UVM_INFO UVM/write_fifo_driver.sv(66) @ 4700000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Received WRITE transaction: tx_id=9 data=0x76
+# UVM_INFO UVM/write_fifo_driver.sv(101) @ 4700000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Attempting WRITE: tx_id=9 data=0x76
+# UVM_INFO UVM/write_fifo_driver.sv(125) @ 4900000: uvm_test_top.env.i_agt.drv [WRITE_DRV] WRITE accepted by DUT: tx_id=9 data=0x76
+# UVM_INFO UVM/write_fifo_monitor.sv(78) @ 5100000: uvm_test_top.env.i_agt.mon [WRITE_MON] begin to collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(85) @ 5100000: uvm_test_top.env.i_agt.mon [WRITE_MON] Captured write data from DUT: data=0x76
+# UVM_INFO UVM/write_fifo_monitor.sv(89) @ 5100000: uvm_test_top.env.i_agt.mon [WRITE_MON] end collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(56) @ 5100000: uvm_test_top.env.i_agt.mon [WRITE_MON] Observed WRITE transaction: tx_id=9 data=0x76
+# UVM_INFO UVM/write_fifo_driver.sv(75) @ 5100000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Completed WRITE transaction: tx_id=9 data=0x76
+# UVM_INFO UVM/my_model.sv(42) @ 5100000: uvm_test_top.env.mdl [MY_MODEL] Pushed into golden_fifo: data=0x76 (depth=1)
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1362
+#   data   integral        8     'h76 
+#   tx_id  integral        32    'h9  
+# ------------------------------------
+# UVM_INFO UVM/my_scoreboard.sv(53) @ 5100000: uvm_test_top.env.scb [my_scoreboard] EXPECTED enqueued: tx_id=9 data=0x76 (queue_depth=10)
+# UVM_INFO UVM/write_fifo_driver.sv(66) @ 5100000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Received WRITE transaction: tx_id=10 data=0xa0
+# UVM_INFO UVM/write_fifo_driver.sv(101) @ 5100000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Attempting WRITE: tx_id=10 data=0xa0
+# UVM_INFO UVM/write_fifo_driver.sv(125) @ 5300000: uvm_test_top.env.i_agt.drv [WRITE_DRV] WRITE accepted by DUT: tx_id=10 data=0xa0
+# UVM_INFO UVM/write_fifo_monitor.sv(78) @ 5500000: uvm_test_top.env.i_agt.mon [WRITE_MON] begin to collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(85) @ 5500000: uvm_test_top.env.i_agt.mon [WRITE_MON] Captured write data from DUT: data=0xa0
+# UVM_INFO UVM/write_fifo_monitor.sv(89) @ 5500000: uvm_test_top.env.i_agt.mon [WRITE_MON] end collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(56) @ 5500000: uvm_test_top.env.i_agt.mon [WRITE_MON] Observed WRITE transaction: tx_id=10 data=0xa0
+# UVM_INFO UVM/write_fifo_driver.sv(75) @ 5500000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Completed WRITE transaction: tx_id=10 data=0xa0
+# UVM_INFO UVM/my_model.sv(42) @ 5500000: uvm_test_top.env.mdl [MY_MODEL] Pushed into golden_fifo: data=0xa0 (depth=1)
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1378
+#   data   integral        8     'ha0 
+#   tx_id  integral        32    'ha  
+# ------------------------------------
+# UVM_INFO UVM/my_scoreboard.sv(53) @ 5500000: uvm_test_top.env.scb [my_scoreboard] EXPECTED enqueued: tx_id=10 data=0xa0 (queue_depth=11)
+# UVM_INFO UVM/write_fifo_driver.sv(66) @ 5500000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Received WRITE transaction: tx_id=11 data=0x11
+# UVM_INFO UVM/write_fifo_driver.sv(101) @ 5500000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Attempting WRITE: tx_id=11 data=0x11
+# UVM_INFO UVM/write_fifo_driver.sv(125) @ 5700000: uvm_test_top.env.i_agt.drv [WRITE_DRV] WRITE accepted by DUT: tx_id=11 data=0x11
+# UVM_INFO UVM/write_fifo_monitor.sv(78) @ 5900000: uvm_test_top.env.i_agt.mon [WRITE_MON] begin to collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(85) @ 5900000: uvm_test_top.env.i_agt.mon [WRITE_MON] Captured write data from DUT: data=0x11
+# UVM_INFO UVM/write_fifo_monitor.sv(89) @ 5900000: uvm_test_top.env.i_agt.mon [WRITE_MON] end collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(56) @ 5900000: uvm_test_top.env.i_agt.mon [WRITE_MON] Observed WRITE transaction: tx_id=11 data=0x11
+# UVM_INFO UVM/write_fifo_driver.sv(75) @ 5900000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Completed WRITE transaction: tx_id=11 data=0x11
+# UVM_INFO UVM/my_model.sv(42) @ 5900000: uvm_test_top.env.mdl [MY_MODEL] Pushed into golden_fifo: data=0x11 (depth=1)
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1394
+#   data   integral        8     'h11 
+#   tx_id  integral        32    'hb  
+# ------------------------------------
+# UVM_INFO UVM/my_scoreboard.sv(53) @ 5900000: uvm_test_top.env.scb [my_scoreboard] EXPECTED enqueued: tx_id=11 data=0x11 (queue_depth=12)
+# UVM_INFO UVM/write_fifo_driver.sv(66) @ 5900000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Received WRITE transaction: tx_id=12 data=0x3a
+# UVM_INFO UVM/write_fifo_driver.sv(101) @ 5900000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Attempting WRITE: tx_id=12 data=0x3a
+# UVM_INFO UVM/write_fifo_driver.sv(125) @ 6100000: uvm_test_top.env.i_agt.drv [WRITE_DRV] WRITE accepted by DUT: tx_id=12 data=0x3a
+# UVM_INFO UVM/write_fifo_monitor.sv(78) @ 6300000: uvm_test_top.env.i_agt.mon [WRITE_MON] begin to collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(85) @ 6300000: uvm_test_top.env.i_agt.mon [WRITE_MON] Captured write data from DUT: data=0x3a
+# UVM_INFO UVM/write_fifo_monitor.sv(89) @ 6300000: uvm_test_top.env.i_agt.mon [WRITE_MON] end collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(56) @ 6300000: uvm_test_top.env.i_agt.mon [WRITE_MON] Observed WRITE transaction: tx_id=12 data=0x3a
+# UVM_INFO UVM/write_fifo_driver.sv(75) @ 6300000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Completed WRITE transaction: tx_id=12 data=0x3a
+# UVM_INFO UVM/my_model.sv(42) @ 6300000: uvm_test_top.env.mdl [MY_MODEL] Pushed into golden_fifo: data=0x3a (depth=1)
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1410
+#   data   integral        8     'h3a 
+#   tx_id  integral        32    'hc  
+# ------------------------------------
+# UVM_INFO UVM/my_scoreboard.sv(53) @ 6300000: uvm_test_top.env.scb [my_scoreboard] EXPECTED enqueued: tx_id=12 data=0x3a (queue_depth=13)
+# UVM_INFO UVM/write_fifo_driver.sv(66) @ 6300000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Received WRITE transaction: tx_id=13 data=0xd
+# UVM_INFO UVM/write_fifo_driver.sv(101) @ 6300000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Attempting WRITE: tx_id=13 data=0xd
+# UVM_INFO UVM/write_fifo_driver.sv(125) @ 6500000: uvm_test_top.env.i_agt.drv [WRITE_DRV] WRITE accepted by DUT: tx_id=13 data=0xd
+# UVM_INFO UVM/write_fifo_monitor.sv(78) @ 6700000: uvm_test_top.env.i_agt.mon [WRITE_MON] begin to collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(85) @ 6700000: uvm_test_top.env.i_agt.mon [WRITE_MON] Captured write data from DUT: data=0xd
+# UVM_INFO UVM/write_fifo_monitor.sv(89) @ 6700000: uvm_test_top.env.i_agt.mon [WRITE_MON] end collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(56) @ 6700000: uvm_test_top.env.i_agt.mon [WRITE_MON] Observed WRITE transaction: tx_id=13 data=0xd
+# UVM_INFO UVM/write_fifo_driver.sv(75) @ 6700000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Completed WRITE transaction: tx_id=13 data=0xd
+# UVM_INFO UVM/my_model.sv(42) @ 6700000: uvm_test_top.env.mdl [MY_MODEL] Pushed into golden_fifo: data=0xd (depth=1)
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1426
+#   data   integral        8     'hd  
+#   tx_id  integral        32    'hd  
+# ------------------------------------
+# UVM_INFO UVM/my_scoreboard.sv(53) @ 6700000: uvm_test_top.env.scb [my_scoreboard] EXPECTED enqueued: tx_id=13 data=0xd (queue_depth=14)
+# UVM_INFO UVM/write_fifo_driver.sv(66) @ 6700000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Received WRITE transaction: tx_id=14 data=0x7b
+# UVM_INFO UVM/write_fifo_driver.sv(101) @ 6700000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Attempting WRITE: tx_id=14 data=0x7b
+# UVM_INFO UVM/write_fifo_driver.sv(125) @ 6900000: uvm_test_top.env.i_agt.drv [WRITE_DRV] WRITE accepted by DUT: tx_id=14 data=0x7b
+# UVM_INFO UVM/write_fifo_monitor.sv(78) @ 7100000: uvm_test_top.env.i_agt.mon [WRITE_MON] begin to collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(85) @ 7100000: uvm_test_top.env.i_agt.mon [WRITE_MON] Captured write data from DUT: data=0x7b
+# UVM_INFO UVM/write_fifo_monitor.sv(89) @ 7100000: uvm_test_top.env.i_agt.mon [WRITE_MON] end collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(56) @ 7100000: uvm_test_top.env.i_agt.mon [WRITE_MON] Observed WRITE transaction: tx_id=14 data=0x7b
+# UVM_INFO UVM/write_fifo_driver.sv(75) @ 7100000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Completed WRITE transaction: tx_id=14 data=0x7b
+# UVM_INFO UVM/my_model.sv(42) @ 7100000: uvm_test_top.env.mdl [MY_MODEL] Pushed into golden_fifo: data=0x7b (depth=1)
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1442
+#   data   integral        8     'h7b 
+#   tx_id  integral        32    'he  
+# ------------------------------------
+# UVM_INFO UVM/my_scoreboard.sv(53) @ 7100000: uvm_test_top.env.scb [my_scoreboard] EXPECTED enqueued: tx_id=14 data=0x7b (queue_depth=15)
+# UVM_INFO UVM/write_fifo_driver.sv(66) @ 7100000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Received WRITE transaction: tx_id=15 data=0x41
+# UVM_INFO UVM/write_fifo_driver.sv(101) @ 7100000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Attempting WRITE: tx_id=15 data=0x41
+# UVM_INFO UVM/write_fifo_driver.sv(125) @ 7300000: uvm_test_top.env.i_agt.drv [WRITE_DRV] WRITE accepted by DUT: tx_id=15 data=0x41
+# UVM_INFO UVM/write_fifo_monitor.sv(78) @ 7500000: uvm_test_top.env.i_agt.mon [WRITE_MON] begin to collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(85) @ 7500000: uvm_test_top.env.i_agt.mon [WRITE_MON] Captured write data from DUT: data=0x41
+# UVM_INFO UVM/write_fifo_monitor.sv(89) @ 7500000: uvm_test_top.env.i_agt.mon [WRITE_MON] end collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(56) @ 7500000: uvm_test_top.env.i_agt.mon [WRITE_MON] Observed WRITE transaction: tx_id=15 data=0x41
+# UVM_INFO UVM/write_fifo_driver.sv(75) @ 7500000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Completed WRITE transaction: tx_id=15 data=0x41
+# UVM_INFO UVM/my_model.sv(42) @ 7500000: uvm_test_top.env.mdl [MY_MODEL] Pushed into golden_fifo: data=0x41 (depth=1)
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1458
+#   data   integral        8     'h41 
+#   tx_id  integral        32    'hf  
+# ------------------------------------
+# UVM_INFO UVM/my_scoreboard.sv(53) @ 7500000: uvm_test_top.env.scb [my_scoreboard] EXPECTED enqueued: tx_id=15 data=0x41 (queue_depth=16)
+# UVM_INFO UVM/read_fifo_driver.sv(58) @ 7500000: uvm_test_top.env.o_agt.drv [READ_DRV] Received READ transaction from sequencer
+# UVM_INFO UVM/read_fifo_driver.sv(85) @ 7500000: uvm_test_top.env.o_agt.drv [READ_DRV] Attempting read operation
+# UVM_INFO UVM/write_fifo_driver.sv(66) @ 7500000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Received WRITE transaction: tx_id=16 data=0x4c
+# UVM_INFO UVM/write_fifo_driver.sv(101) @ 7500000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Attempting WRITE: tx_id=16 data=0x4c
+# UVM_INFO UVM/read_fifo_driver.sv(111) @ 7650000: uvm_test_top.env.o_agt.drv [READ_DRV] FIFO not empty, asserting rinc
+# UVM_INFO UVM/read_fifo_monitor.sv(74) @ 7950000: uvm_test_top.env.o_agt.mon [READ_MON] begin to collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(80) @ 7950000: uvm_test_top.env.o_agt.mon [READ_MON] Captured read data from DUT: data=0xef
+# UVM_INFO UVM/read_fifo_monitor.sv(84) @ 7950000: uvm_test_top.env.o_agt.mon [READ_MON] end collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(53) @ 7950000: uvm_test_top.env.o_agt.mon [READ_MON] FIFO READ observed: tx_id=0 data=0xef
+# UVM_INFO UVM/read_fifo_driver.sv(122) @ 7950000: uvm_test_top.env.o_agt.drv [READ_DRV] Read pulse asserted
+# UVM_INFO UVM/read_fifo_driver.sv(66) @ 7950000: uvm_test_top.env.o_agt.drv [READ_DRV] Completed READ transaction
+# UVM_INFO UVM/my_scoreboard.sv(79) @ 7950000: uvm_test_top.env.scb [my_scoreboard] PAIRING: WRITE(tx_id=0 data=0xef) <-> READ(tx_id=0 data=0xef)
+# UVM_INFO UVM/my_scoreboard.sv(93) @ 7950000: uvm_test_top.env.scb [my_scoreboard] SUCCESS: tx_id=0 matched
+# The expected packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1217
+#   data   integral        8     'hef 
+#   tx_id  integral        32    'h0  
+# ------------------------------------
+# The actual packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# tr       my_transaction  -     @1187
+#   data   integral        8     'hef 
+#   tx_id  integral        32    'h0  
+# ------------------------------------
+# UVM_INFO UVM/read_fifo_seq.sv(30) @ 7950000: uvm_test_top.env.o_agt.sqr@@my_case1_sequence.rd_seq [read_fifo_seq] Issued one READ transaction
+# UVM_INFO UVM/read_fifo_driver.sv(58) @ 7950000: uvm_test_top.env.o_agt.drv [READ_DRV] Received READ transaction from sequencer
+# UVM_INFO UVM/read_fifo_driver.sv(85) @ 7950000: uvm_test_top.env.o_agt.drv [READ_DRV] Attempting read operation
+# UVM_INFO UVM/read_fifo_driver.sv(111) @ 8250000: uvm_test_top.env.o_agt.drv [READ_DRV] FIFO not empty, asserting rinc
+# UVM_INFO UVM/read_fifo_monitor.sv(74) @ 8550000: uvm_test_top.env.o_agt.mon [READ_MON] begin to collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(80) @ 8550000: uvm_test_top.env.o_agt.mon [READ_MON] Captured read data from DUT: data=0x1d
+# UVM_INFO UVM/read_fifo_monitor.sv(84) @ 8550000: uvm_test_top.env.o_agt.mon [READ_MON] end collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(53) @ 8550000: uvm_test_top.env.o_agt.mon [READ_MON] FIFO READ observed: tx_id=1 data=0x1d
+# UVM_INFO UVM/read_fifo_driver.sv(122) @ 8550000: uvm_test_top.env.o_agt.drv [READ_DRV] Read pulse asserted
+# UVM_INFO UVM/read_fifo_driver.sv(66) @ 8550000: uvm_test_top.env.o_agt.drv [READ_DRV] Completed READ transaction
+# UVM_INFO UVM/my_scoreboard.sv(79) @ 8550000: uvm_test_top.env.scb [my_scoreboard] PAIRING: WRITE(tx_id=1 data=0x1d) <-> READ(tx_id=1 data=0x1d)
+# UVM_INFO UVM/my_scoreboard.sv(93) @ 8550000: uvm_test_top.env.scb [my_scoreboard] SUCCESS: tx_id=1 matched
+# The expected packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1234
+#   data   integral        8     'h1d 
+#   tx_id  integral        32    'h1  
+# ------------------------------------
+# The actual packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# tr       my_transaction  -     @1479
+#   data   integral        8     'h1d 
+#   tx_id  integral        32    'h1  
+# ------------------------------------
+# UVM_INFO UVM/read_fifo_seq.sv(30) @ 8550000: uvm_test_top.env.o_agt.sqr@@my_case1_sequence.rd_seq [read_fifo_seq] Issued one READ transaction
+# UVM_INFO UVM/read_fifo_driver.sv(58) @ 8550000: uvm_test_top.env.o_agt.drv [READ_DRV] Received READ transaction from sequencer
+# UVM_INFO UVM/read_fifo_driver.sv(85) @ 8550000: uvm_test_top.env.o_agt.drv [READ_DRV] Attempting read operation
+# UVM_INFO UVM/read_fifo_driver.sv(111) @ 8850000: uvm_test_top.env.o_agt.drv [READ_DRV] FIFO not empty, asserting rinc
+# UVM_INFO UVM/write_fifo_driver.sv(125) @ 8900000: uvm_test_top.env.i_agt.drv [WRITE_DRV] WRITE accepted by DUT: tx_id=16 data=0x4c
+# UVM_INFO UVM/write_fifo_monitor.sv(78) @ 9100000: uvm_test_top.env.i_agt.mon [WRITE_MON] begin to collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(85) @ 9100000: uvm_test_top.env.i_agt.mon [WRITE_MON] Captured write data from DUT: data=0x4c
+# UVM_INFO UVM/write_fifo_monitor.sv(89) @ 9100000: uvm_test_top.env.i_agt.mon [WRITE_MON] end collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(56) @ 9100000: uvm_test_top.env.i_agt.mon [WRITE_MON] Observed WRITE transaction: tx_id=16 data=0x4c
+# UVM_INFO UVM/write_fifo_driver.sv(75) @ 9100000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Completed WRITE transaction: tx_id=16 data=0x4c
+# UVM_INFO UVM/my_model.sv(42) @ 9100000: uvm_test_top.env.mdl [MY_MODEL] Pushed into golden_fifo: data=0x4c (depth=1)
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1508
+#   data   integral        8     'h4c 
+#   tx_id  integral        32    'h10 
+# ------------------------------------
+# UVM_INFO UVM/my_scoreboard.sv(53) @ 9100000: uvm_test_top.env.scb [my_scoreboard] EXPECTED enqueued: tx_id=16 data=0x4c (queue_depth=15)
+# UVM_INFO UVM/write_fifo_driver.sv(66) @ 9100000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Received WRITE transaction: tx_id=17 data=0xc9
+# UVM_INFO UVM/write_fifo_driver.sv(101) @ 9100000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Attempting WRITE: tx_id=17 data=0xc9
+# UVM_INFO UVM/read_fifo_monitor.sv(74) @ 9150000: uvm_test_top.env.o_agt.mon [READ_MON] begin to collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(80) @ 9150000: uvm_test_top.env.o_agt.mon [READ_MON] Captured read data from DUT: data=0x51
+# UVM_INFO UVM/read_fifo_monitor.sv(84) @ 9150000: uvm_test_top.env.o_agt.mon [READ_MON] end collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(53) @ 9150000: uvm_test_top.env.o_agt.mon [READ_MON] FIFO READ observed: tx_id=2 data=0x51
+# UVM_INFO UVM/read_fifo_driver.sv(122) @ 9150000: uvm_test_top.env.o_agt.drv [READ_DRV] Read pulse asserted
+# UVM_INFO UVM/read_fifo_driver.sv(66) @ 9150000: uvm_test_top.env.o_agt.drv [READ_DRV] Completed READ transaction
+# UVM_INFO UVM/my_scoreboard.sv(79) @ 9150000: uvm_test_top.env.scb [my_scoreboard] PAIRING: WRITE(tx_id=2 data=0x51) <-> READ(tx_id=2 data=0x51)
+# UVM_INFO UVM/my_scoreboard.sv(93) @ 9150000: uvm_test_top.env.scb [my_scoreboard] SUCCESS: tx_id=2 matched
+# The expected packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1250
+#   data   integral        8     'h51 
+#   tx_id  integral        32    'h2  
+# ------------------------------------
+# The actual packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# tr       my_transaction  -     @1492
+#   data   integral        8     'h51 
+#   tx_id  integral        32    'h2  
+# ------------------------------------
+# UVM_INFO UVM/read_fifo_seq.sv(30) @ 9150000: uvm_test_top.env.o_agt.sqr@@my_case1_sequence.rd_seq [read_fifo_seq] Issued one READ transaction
+# UVM_INFO UVM/read_fifo_driver.sv(58) @ 9150000: uvm_test_top.env.o_agt.drv [READ_DRV] Received READ transaction from sequencer
+# UVM_INFO UVM/read_fifo_driver.sv(85) @ 9150000: uvm_test_top.env.o_agt.drv [READ_DRV] Attempting read operation
+# UVM_INFO UVM/write_fifo_driver.sv(125) @ 9300000: uvm_test_top.env.i_agt.drv [WRITE_DRV] WRITE accepted by DUT: tx_id=17 data=0xc9
+# UVM_INFO UVM/read_fifo_driver.sv(111) @ 9450000: uvm_test_top.env.o_agt.drv [READ_DRV] FIFO not empty, asserting rinc
+# UVM_INFO UVM/write_fifo_monitor.sv(78) @ 9500000: uvm_test_top.env.i_agt.mon [WRITE_MON] begin to collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(85) @ 9500000: uvm_test_top.env.i_agt.mon [WRITE_MON] Captured write data from DUT: data=0xc9
+# UVM_INFO UVM/write_fifo_monitor.sv(89) @ 9500000: uvm_test_top.env.i_agt.mon [WRITE_MON] end collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(56) @ 9500000: uvm_test_top.env.i_agt.mon [WRITE_MON] Observed WRITE transaction: tx_id=17 data=0xc9
+# UVM_INFO UVM/write_fifo_driver.sv(75) @ 9500000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Completed WRITE transaction: tx_id=17 data=0xc9
+# UVM_INFO UVM/my_model.sv(42) @ 9500000: uvm_test_top.env.mdl [MY_MODEL] Pushed into golden_fifo: data=0xc9 (depth=1)
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1536
+#   data   integral        8     'hc9 
+#   tx_id  integral        32    'h11 
+# ------------------------------------
+# UVM_INFO UVM/my_scoreboard.sv(53) @ 9500000: uvm_test_top.env.scb [my_scoreboard] EXPECTED enqueued: tx_id=17 data=0xc9 (queue_depth=15)
+# UVM_INFO UVM/write_fifo_driver.sv(66) @ 9500000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Received WRITE transaction: tx_id=18 data=0x50
+# UVM_INFO UVM/write_fifo_driver.sv(101) @ 9500000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Attempting WRITE: tx_id=18 data=0x50
+# UVM_INFO UVM/read_fifo_monitor.sv(74) @ 9750000: uvm_test_top.env.o_agt.mon [READ_MON] begin to collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(80) @ 9750000: uvm_test_top.env.o_agt.mon [READ_MON] Captured read data from DUT: data=0x2e
+# UVM_INFO UVM/read_fifo_monitor.sv(84) @ 9750000: uvm_test_top.env.o_agt.mon [READ_MON] end collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(53) @ 9750000: uvm_test_top.env.o_agt.mon [READ_MON] FIFO READ observed: tx_id=3 data=0x2e
+# UVM_INFO UVM/read_fifo_driver.sv(122) @ 9750000: uvm_test_top.env.o_agt.drv [READ_DRV] Read pulse asserted
+# UVM_INFO UVM/read_fifo_driver.sv(66) @ 9750000: uvm_test_top.env.o_agt.drv [READ_DRV] Completed READ transaction
+# UVM_INFO UVM/my_scoreboard.sv(79) @ 9750000: uvm_test_top.env.scb [my_scoreboard] PAIRING: WRITE(tx_id=3 data=0x2e) <-> READ(tx_id=3 data=0x2e)
+# UVM_INFO UVM/my_scoreboard.sv(93) @ 9750000: uvm_test_top.env.scb [my_scoreboard] SUCCESS: tx_id=3 matched
+# The expected packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1266
+#   data   integral        8     'h2e 
+#   tx_id  integral        32    'h3  
+# ------------------------------------
+# The actual packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# tr       my_transaction  -     @1520
+#   data   integral        8     'h2e 
+#   tx_id  integral        32    'h3  
+# ------------------------------------
+# UVM_INFO UVM/read_fifo_seq.sv(30) @ 9750000: uvm_test_top.env.o_agt.sqr@@my_case1_sequence.rd_seq [read_fifo_seq] Issued one READ transaction
+# UVM_INFO UVM/read_fifo_driver.sv(58) @ 9750000: uvm_test_top.env.o_agt.drv [READ_DRV] Received READ transaction from sequencer
+# UVM_INFO UVM/read_fifo_driver.sv(85) @ 9750000: uvm_test_top.env.o_agt.drv [READ_DRV] Attempting read operation
+# UVM_INFO UVM/read_fifo_driver.sv(111) @ 10050000: uvm_test_top.env.o_agt.drv [READ_DRV] FIFO not empty, asserting rinc
+# UVM_INFO UVM/write_fifo_driver.sv(125) @ 10100000: uvm_test_top.env.i_agt.drv [WRITE_DRV] WRITE accepted by DUT: tx_id=18 data=0x50
+# UVM_INFO UVM/write_fifo_monitor.sv(78) @ 10300000: uvm_test_top.env.i_agt.mon [WRITE_MON] begin to collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(85) @ 10300000: uvm_test_top.env.i_agt.mon [WRITE_MON] Captured write data from DUT: data=0x50
+# UVM_INFO UVM/write_fifo_monitor.sv(89) @ 10300000: uvm_test_top.env.i_agt.mon [WRITE_MON] end collect one pkt
+# UVM_INFO UVM/write_fifo_monitor.sv(56) @ 10300000: uvm_test_top.env.i_agt.mon [WRITE_MON] Observed WRITE transaction: tx_id=18 data=0x50
+# UVM_INFO UVM/write_fifo_driver.sv(75) @ 10300000: uvm_test_top.env.i_agt.drv [WRITE_DRV] Completed WRITE transaction: tx_id=18 data=0x50
+# UVM_INFO UVM/my_model.sv(42) @ 10300000: uvm_test_top.env.mdl [MY_MODEL] Pushed into golden_fifo: data=0x50 (depth=1)
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1564
+#   data   integral        8     'h50 
+#   tx_id  integral        32    'h12 
+# ------------------------------------
+# UVM_INFO UVM/my_scoreboard.sv(53) @ 10300000: uvm_test_top.env.scb [my_scoreboard] EXPECTED enqueued: tx_id=18 data=0x50 (queue_depth=15)
+# UVM_INFO UVM/read_fifo_monitor.sv(74) @ 10350000: uvm_test_top.env.o_agt.mon [READ_MON] begin to collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(80) @ 10350000: uvm_test_top.env.o_agt.mon [READ_MON] Captured read data from DUT: data=0x9
+# UVM_INFO UVM/read_fifo_monitor.sv(84) @ 10350000: uvm_test_top.env.o_agt.mon [READ_MON] end collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(53) @ 10350000: uvm_test_top.env.o_agt.mon [READ_MON] FIFO READ observed: tx_id=4 data=0x9
+# UVM_INFO UVM/read_fifo_driver.sv(122) @ 10350000: uvm_test_top.env.o_agt.drv [READ_DRV] Read pulse asserted
+# UVM_INFO UVM/read_fifo_driver.sv(66) @ 10350000: uvm_test_top.env.o_agt.drv [READ_DRV] Completed READ transaction
+# UVM_INFO UVM/my_scoreboard.sv(79) @ 10350000: uvm_test_top.env.scb [my_scoreboard] PAIRING: WRITE(tx_id=4 data=0x9) <-> READ(tx_id=4 data=0x9)
+# UVM_INFO UVM/my_scoreboard.sv(93) @ 10350000: uvm_test_top.env.scb [my_scoreboard] SUCCESS: tx_id=4 matched
+# The expected packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1282
+#   data   integral        8     'h9  
+#   tx_id  integral        32    'h4  
+# ------------------------------------
+# The actual packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# tr       my_transaction  -     @1548
+#   data   integral        8     'h9  
+#   tx_id  integral        32    'h4  
+# ------------------------------------
+# UVM_INFO UVM/read_fifo_seq.sv(30) @ 10350000: uvm_test_top.env.o_agt.sqr@@my_case1_sequence.rd_seq [read_fifo_seq] Issued one READ transaction
+# UVM_INFO UVM/read_fifo_driver.sv(58) @ 10350000: uvm_test_top.env.o_agt.drv [READ_DRV] Received READ transaction from sequencer
+# UVM_INFO UVM/read_fifo_driver.sv(85) @ 10350000: uvm_test_top.env.o_agt.drv [READ_DRV] Attempting read operation
+# UVM_INFO UVM/read_fifo_driver.sv(111) @ 10650000: uvm_test_top.env.o_agt.drv [READ_DRV] FIFO not empty, asserting rinc
+# UVM_INFO UVM/read_fifo_monitor.sv(74) @ 10950000: uvm_test_top.env.o_agt.mon [READ_MON] begin to collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(80) @ 10950000: uvm_test_top.env.o_agt.mon [READ_MON] Captured read data from DUT: data=0xee
+# UVM_INFO UVM/read_fifo_monitor.sv(84) @ 10950000: uvm_test_top.env.o_agt.mon [READ_MON] end collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(53) @ 10950000: uvm_test_top.env.o_agt.mon [READ_MON] FIFO READ observed: tx_id=5 data=0xee
+# UVM_INFO UVM/read_fifo_driver.sv(122) @ 10950000: uvm_test_top.env.o_agt.drv [READ_DRV] Read pulse asserted
+# UVM_INFO UVM/read_fifo_driver.sv(66) @ 10950000: uvm_test_top.env.o_agt.drv [READ_DRV] Completed READ transaction
+# UVM_INFO UVM/my_scoreboard.sv(79) @ 10950000: uvm_test_top.env.scb [my_scoreboard] PAIRING: WRITE(tx_id=5 data=0xee) <-> READ(tx_id=5 data=0xee)
+# UVM_INFO UVM/my_scoreboard.sv(93) @ 10950000: uvm_test_top.env.scb [my_scoreboard] SUCCESS: tx_id=5 matched
+# The expected packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1298
+#   data   integral        8     'hee 
+#   tx_id  integral        32    'h5  
+# ------------------------------------
+# The actual packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# tr       my_transaction  -     @1568
+#   data   integral        8     'hee 
+#   tx_id  integral        32    'h5  
+# ------------------------------------
+# UVM_INFO UVM/read_fifo_seq.sv(30) @ 10950000: uvm_test_top.env.o_agt.sqr@@my_case1_sequence.rd_seq [read_fifo_seq] Issued one READ transaction
+# UVM_INFO UVM/read_fifo_driver.sv(58) @ 10950000: uvm_test_top.env.o_agt.drv [READ_DRV] Received READ transaction from sequencer
+# UVM_INFO UVM/read_fifo_driver.sv(85) @ 10950000: uvm_test_top.env.o_agt.drv [READ_DRV] Attempting read operation
+# UVM_INFO UVM/read_fifo_driver.sv(111) @ 11250000: uvm_test_top.env.o_agt.drv [READ_DRV] FIFO not empty, asserting rinc
+# UVM_INFO UVM/read_fifo_monitor.sv(74) @ 11550000: uvm_test_top.env.o_agt.mon [READ_MON] begin to collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(80) @ 11550000: uvm_test_top.env.o_agt.mon [READ_MON] Captured read data from DUT: data=0x36
+# UVM_INFO UVM/read_fifo_monitor.sv(84) @ 11550000: uvm_test_top.env.o_agt.mon [READ_MON] end collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(53) @ 11550000: uvm_test_top.env.o_agt.mon [READ_MON] FIFO READ observed: tx_id=6 data=0x36
+# UVM_INFO UVM/read_fifo_driver.sv(122) @ 11550000: uvm_test_top.env.o_agt.drv [READ_DRV] Read pulse asserted
+# UVM_INFO UVM/read_fifo_driver.sv(66) @ 11550000: uvm_test_top.env.o_agt.drv [READ_DRV] Completed READ transaction
+# UVM_INFO UVM/my_scoreboard.sv(79) @ 11550000: uvm_test_top.env.scb [my_scoreboard] PAIRING: WRITE(tx_id=6 data=0x36) <-> READ(tx_id=6 data=0x36)
+# UVM_INFO UVM/my_scoreboard.sv(93) @ 11550000: uvm_test_top.env.scb [my_scoreboard] SUCCESS: tx_id=6 matched
+# The expected packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1314
+#   data   integral        8     'h36 
+#   tx_id  integral        32    'h6  
+# ------------------------------------
+# The actual packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# tr       my_transaction  -     @1580
+#   data   integral        8     'h36 
+#   tx_id  integral        32    'h6  
+# ------------------------------------
+# UVM_INFO UVM/read_fifo_seq.sv(30) @ 11550000: uvm_test_top.env.o_agt.sqr@@my_case1_sequence.rd_seq [read_fifo_seq] Issued one READ transaction
+# UVM_INFO UVM/read_fifo_driver.sv(58) @ 11550000: uvm_test_top.env.o_agt.drv [READ_DRV] Received READ transaction from sequencer
+# UVM_INFO UVM/read_fifo_driver.sv(85) @ 11550000: uvm_test_top.env.o_agt.drv [READ_DRV] Attempting read operation
+# UVM_INFO UVM/read_fifo_driver.sv(111) @ 11850000: uvm_test_top.env.o_agt.drv [READ_DRV] FIFO not empty, asserting rinc
+# UVM_INFO UVM/read_fifo_monitor.sv(74) @ 12150000: uvm_test_top.env.o_agt.mon [READ_MON] begin to collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(80) @ 12150000: uvm_test_top.env.o_agt.mon [READ_MON] Captured read data from DUT: data=0xeb
+# UVM_INFO UVM/read_fifo_monitor.sv(84) @ 12150000: uvm_test_top.env.o_agt.mon [READ_MON] end collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(53) @ 12150000: uvm_test_top.env.o_agt.mon [READ_MON] FIFO READ observed: tx_id=7 data=0xeb
+# UVM_INFO UVM/read_fifo_driver.sv(122) @ 12150000: uvm_test_top.env.o_agt.drv [READ_DRV] Read pulse asserted
+# UVM_INFO UVM/read_fifo_driver.sv(66) @ 12150000: uvm_test_top.env.o_agt.drv [READ_DRV] Completed READ transaction
+# UVM_INFO UVM/my_scoreboard.sv(79) @ 12150000: uvm_test_top.env.scb [my_scoreboard] PAIRING: WRITE(tx_id=7 data=0xeb) <-> READ(tx_id=7 data=0xeb)
+# UVM_INFO UVM/my_scoreboard.sv(93) @ 12150000: uvm_test_top.env.scb [my_scoreboard] SUCCESS: tx_id=7 matched
+# The expected packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1330
+#   data   integral        8     'heb 
+#   tx_id  integral        32    'h7  
+# ------------------------------------
+# The actual packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# tr       my_transaction  -     @1592
+#   data   integral        8     'heb 
+#   tx_id  integral        32    'h7  
+# ------------------------------------
+# UVM_INFO UVM/read_fifo_seq.sv(30) @ 12150000: uvm_test_top.env.o_agt.sqr@@my_case1_sequence.rd_seq [read_fifo_seq] Issued one READ transaction
+# UVM_INFO UVM/read_fifo_driver.sv(58) @ 12150000: uvm_test_top.env.o_agt.drv [READ_DRV] Received READ transaction from sequencer
+# UVM_INFO UVM/read_fifo_driver.sv(85) @ 12150000: uvm_test_top.env.o_agt.drv [READ_DRV] Attempting read operation
+# UVM_INFO UVM/read_fifo_driver.sv(111) @ 12450000: uvm_test_top.env.o_agt.drv [READ_DRV] FIFO not empty, asserting rinc
+# UVM_INFO UVM/read_fifo_monitor.sv(74) @ 12750000: uvm_test_top.env.o_agt.mon [READ_MON] begin to collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(80) @ 12750000: uvm_test_top.env.o_agt.mon [READ_MON] Captured read data from DUT: data=0x27
+# UVM_INFO UVM/read_fifo_monitor.sv(84) @ 12750000: uvm_test_top.env.o_agt.mon [READ_MON] end collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(53) @ 12750000: uvm_test_top.env.o_agt.mon [READ_MON] FIFO READ observed: tx_id=8 data=0x27
+# UVM_INFO UVM/read_fifo_driver.sv(122) @ 12750000: uvm_test_top.env.o_agt.drv [READ_DRV] Read pulse asserted
+# UVM_INFO UVM/read_fifo_driver.sv(66) @ 12750000: uvm_test_top.env.o_agt.drv [READ_DRV] Completed READ transaction
+# UVM_INFO UVM/my_scoreboard.sv(79) @ 12750000: uvm_test_top.env.scb [my_scoreboard] PAIRING: WRITE(tx_id=8 data=0x27) <-> READ(tx_id=8 data=0x27)
+# UVM_INFO UVM/my_scoreboard.sv(93) @ 12750000: uvm_test_top.env.scb [my_scoreboard] SUCCESS: tx_id=8 matched
+# The expected packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1346
+#   data   integral        8     'h27 
+#   tx_id  integral        32    'h8  
+# ------------------------------------
+# The actual packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# tr       my_transaction  -     @1604
+#   data   integral        8     'h27 
+#   tx_id  integral        32    'h8  
+# ------------------------------------
+# UVM_INFO UVM/read_fifo_seq.sv(30) @ 12750000: uvm_test_top.env.o_agt.sqr@@my_case1_sequence.rd_seq [read_fifo_seq] Issued one READ transaction
+# UVM_INFO UVM/read_fifo_driver.sv(58) @ 12750000: uvm_test_top.env.o_agt.drv [READ_DRV] Received READ transaction from sequencer
+# UVM_INFO UVM/read_fifo_driver.sv(85) @ 12750000: uvm_test_top.env.o_agt.drv [READ_DRV] Attempting read operation
+# UVM_INFO UVM/read_fifo_driver.sv(111) @ 13050000: uvm_test_top.env.o_agt.drv [READ_DRV] FIFO not empty, asserting rinc
+# UVM_INFO UVM/read_fifo_monitor.sv(74) @ 13350000: uvm_test_top.env.o_agt.mon [READ_MON] begin to collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(80) @ 13350000: uvm_test_top.env.o_agt.mon [READ_MON] Captured read data from DUT: data=0x76
+# UVM_INFO UVM/read_fifo_monitor.sv(84) @ 13350000: uvm_test_top.env.o_agt.mon [READ_MON] end collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(53) @ 13350000: uvm_test_top.env.o_agt.mon [READ_MON] FIFO READ observed: tx_id=9 data=0x76
+# UVM_INFO UVM/read_fifo_driver.sv(122) @ 13350000: uvm_test_top.env.o_agt.drv [READ_DRV] Read pulse asserted
+# UVM_INFO UVM/read_fifo_driver.sv(66) @ 13350000: uvm_test_top.env.o_agt.drv [READ_DRV] Completed READ transaction
+# UVM_INFO UVM/my_scoreboard.sv(79) @ 13350000: uvm_test_top.env.scb [my_scoreboard] PAIRING: WRITE(tx_id=9 data=0x76) <-> READ(tx_id=9 data=0x76)
+# UVM_INFO UVM/my_scoreboard.sv(93) @ 13350000: uvm_test_top.env.scb [my_scoreboard] SUCCESS: tx_id=9 matched
+# The expected packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1362
+#   data   integral        8     'h76 
+#   tx_id  integral        32    'h9  
+# ------------------------------------
+# The actual packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# tr       my_transaction  -     @1616
+#   data   integral        8     'h76 
+#   tx_id  integral        32    'h9  
+# ------------------------------------
+# UVM_INFO UVM/read_fifo_seq.sv(30) @ 13350000: uvm_test_top.env.o_agt.sqr@@my_case1_sequence.rd_seq [read_fifo_seq] Issued one READ transaction
+# UVM_INFO UVM/read_fifo_driver.sv(58) @ 13350000: uvm_test_top.env.o_agt.drv [READ_DRV] Received READ transaction from sequencer
+# UVM_INFO UVM/read_fifo_driver.sv(85) @ 13350000: uvm_test_top.env.o_agt.drv [READ_DRV] Attempting read operation
+# UVM_INFO UVM/read_fifo_driver.sv(111) @ 13650000: uvm_test_top.env.o_agt.drv [READ_DRV] FIFO not empty, asserting rinc
+# UVM_INFO UVM/read_fifo_monitor.sv(74) @ 13950000: uvm_test_top.env.o_agt.mon [READ_MON] begin to collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(80) @ 13950000: uvm_test_top.env.o_agt.mon [READ_MON] Captured read data from DUT: data=0xa0
+# UVM_INFO UVM/read_fifo_monitor.sv(84) @ 13950000: uvm_test_top.env.o_agt.mon [READ_MON] end collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(53) @ 13950000: uvm_test_top.env.o_agt.mon [READ_MON] FIFO READ observed: tx_id=10 data=0xa0
+# UVM_INFO UVM/read_fifo_driver.sv(122) @ 13950000: uvm_test_top.env.o_agt.drv [READ_DRV] Read pulse asserted
+# UVM_INFO UVM/read_fifo_driver.sv(66) @ 13950000: uvm_test_top.env.o_agt.drv [READ_DRV] Completed READ transaction
+# UVM_INFO UVM/my_scoreboard.sv(79) @ 13950000: uvm_test_top.env.scb [my_scoreboard] PAIRING: WRITE(tx_id=10 data=0xa0) <-> READ(tx_id=10 data=0xa0)
+# UVM_INFO UVM/my_scoreboard.sv(93) @ 13950000: uvm_test_top.env.scb [my_scoreboard] SUCCESS: tx_id=10 matched
+# The expected packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1378
+#   data   integral        8     'ha0 
+#   tx_id  integral        32    'ha  
+# ------------------------------------
+# The actual packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# tr       my_transaction  -     @1628
+#   data   integral        8     'ha0 
+#   tx_id  integral        32    'ha  
+# ------------------------------------
+# UVM_INFO UVM/read_fifo_seq.sv(30) @ 13950000: uvm_test_top.env.o_agt.sqr@@my_case1_sequence.rd_seq [read_fifo_seq] Issued one READ transaction
+# UVM_INFO UVM/read_fifo_driver.sv(58) @ 13950000: uvm_test_top.env.o_agt.drv [READ_DRV] Received READ transaction from sequencer
+# UVM_INFO UVM/read_fifo_driver.sv(85) @ 13950000: uvm_test_top.env.o_agt.drv [READ_DRV] Attempting read operation
+# UVM_INFO UVM/read_fifo_driver.sv(111) @ 14250000: uvm_test_top.env.o_agt.drv [READ_DRV] FIFO not empty, asserting rinc
+# UVM_INFO UVM/read_fifo_monitor.sv(74) @ 14550000: uvm_test_top.env.o_agt.mon [READ_MON] begin to collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(80) @ 14550000: uvm_test_top.env.o_agt.mon [READ_MON] Captured read data from DUT: data=0x11
+# UVM_INFO UVM/read_fifo_monitor.sv(84) @ 14550000: uvm_test_top.env.o_agt.mon [READ_MON] end collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(53) @ 14550000: uvm_test_top.env.o_agt.mon [READ_MON] FIFO READ observed: tx_id=11 data=0x11
+# UVM_INFO UVM/read_fifo_driver.sv(122) @ 14550000: uvm_test_top.env.o_agt.drv [READ_DRV] Read pulse asserted
+# UVM_INFO UVM/read_fifo_driver.sv(66) @ 14550000: uvm_test_top.env.o_agt.drv [READ_DRV] Completed READ transaction
+# UVM_INFO UVM/my_scoreboard.sv(79) @ 14550000: uvm_test_top.env.scb [my_scoreboard] PAIRING: WRITE(tx_id=11 data=0x11) <-> READ(tx_id=11 data=0x11)
+# UVM_INFO UVM/my_scoreboard.sv(93) @ 14550000: uvm_test_top.env.scb [my_scoreboard] SUCCESS: tx_id=11 matched
+# The expected packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1394
+#   data   integral        8     'h11 
+#   tx_id  integral        32    'hb  
+# ------------------------------------
+# The actual packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# tr       my_transaction  -     @1640
+#   data   integral        8     'h11 
+#   tx_id  integral        32    'hb  
+# ------------------------------------
+# UVM_INFO UVM/read_fifo_seq.sv(30) @ 14550000: uvm_test_top.env.o_agt.sqr@@my_case1_sequence.rd_seq [read_fifo_seq] Issued one READ transaction
+# UVM_INFO UVM/read_fifo_driver.sv(58) @ 14550000: uvm_test_top.env.o_agt.drv [READ_DRV] Received READ transaction from sequencer
+# UVM_INFO UVM/read_fifo_driver.sv(85) @ 14550000: uvm_test_top.env.o_agt.drv [READ_DRV] Attempting read operation
+# UVM_INFO UVM/read_fifo_driver.sv(111) @ 14850000: uvm_test_top.env.o_agt.drv [READ_DRV] FIFO not empty, asserting rinc
+# UVM_INFO UVM/read_fifo_monitor.sv(74) @ 15150000: uvm_test_top.env.o_agt.mon [READ_MON] begin to collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(80) @ 15150000: uvm_test_top.env.o_agt.mon [READ_MON] Captured read data from DUT: data=0x3a
+# UVM_INFO UVM/read_fifo_monitor.sv(84) @ 15150000: uvm_test_top.env.o_agt.mon [READ_MON] end collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(53) @ 15150000: uvm_test_top.env.o_agt.mon [READ_MON] FIFO READ observed: tx_id=12 data=0x3a
+# UVM_INFO UVM/read_fifo_driver.sv(122) @ 15150000: uvm_test_top.env.o_agt.drv [READ_DRV] Read pulse asserted
+# UVM_INFO UVM/read_fifo_driver.sv(66) @ 15150000: uvm_test_top.env.o_agt.drv [READ_DRV] Completed READ transaction
+# UVM_INFO UVM/my_scoreboard.sv(79) @ 15150000: uvm_test_top.env.scb [my_scoreboard] PAIRING: WRITE(tx_id=12 data=0x3a) <-> READ(tx_id=12 data=0x3a)
+# UVM_INFO UVM/my_scoreboard.sv(93) @ 15150000: uvm_test_top.env.scb [my_scoreboard] SUCCESS: tx_id=12 matched
+# The expected packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1410
+#   data   integral        8     'h3a 
+#   tx_id  integral        32    'hc  
+# ------------------------------------
+# The actual packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# tr       my_transaction  -     @1652
+#   data   integral        8     'h3a 
+#   tx_id  integral        32    'hc  
+# ------------------------------------
+# UVM_INFO UVM/read_fifo_seq.sv(30) @ 15150000: uvm_test_top.env.o_agt.sqr@@my_case1_sequence.rd_seq [read_fifo_seq] Issued one READ transaction
+# UVM_INFO UVM/read_fifo_driver.sv(58) @ 15150000: uvm_test_top.env.o_agt.drv [READ_DRV] Received READ transaction from sequencer
+# UVM_INFO UVM/read_fifo_driver.sv(85) @ 15150000: uvm_test_top.env.o_agt.drv [READ_DRV] Attempting read operation
+# UVM_INFO UVM/read_fifo_driver.sv(111) @ 15450000: uvm_test_top.env.o_agt.drv [READ_DRV] FIFO not empty, asserting rinc
+# UVM_INFO UVM/read_fifo_monitor.sv(74) @ 15750000: uvm_test_top.env.o_agt.mon [READ_MON] begin to collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(80) @ 15750000: uvm_test_top.env.o_agt.mon [READ_MON] Captured read data from DUT: data=0xd
+# UVM_INFO UVM/read_fifo_monitor.sv(84) @ 15750000: uvm_test_top.env.o_agt.mon [READ_MON] end collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(53) @ 15750000: uvm_test_top.env.o_agt.mon [READ_MON] FIFO READ observed: tx_id=13 data=0xd
+# UVM_INFO UVM/read_fifo_driver.sv(122) @ 15750000: uvm_test_top.env.o_agt.drv [READ_DRV] Read pulse asserted
+# UVM_INFO UVM/read_fifo_driver.sv(66) @ 15750000: uvm_test_top.env.o_agt.drv [READ_DRV] Completed READ transaction
+# UVM_INFO UVM/my_scoreboard.sv(79) @ 15750000: uvm_test_top.env.scb [my_scoreboard] PAIRING: WRITE(tx_id=13 data=0xd) <-> READ(tx_id=13 data=0xd)
+# UVM_INFO UVM/my_scoreboard.sv(93) @ 15750000: uvm_test_top.env.scb [my_scoreboard] SUCCESS: tx_id=13 matched
+# The expected packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1426
+#   data   integral        8     'hd  
+#   tx_id  integral        32    'hd  
+# ------------------------------------
+# The actual packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# tr       my_transaction  -     @1664
+#   data   integral        8     'hd  
+#   tx_id  integral        32    'hd  
+# ------------------------------------
+# UVM_INFO UVM/read_fifo_seq.sv(30) @ 15750000: uvm_test_top.env.o_agt.sqr@@my_case1_sequence.rd_seq [read_fifo_seq] Issued one READ transaction
+# UVM_INFO UVM/read_fifo_driver.sv(58) @ 15750000: uvm_test_top.env.o_agt.drv [READ_DRV] Received READ transaction from sequencer
+# UVM_INFO UVM/read_fifo_driver.sv(85) @ 15750000: uvm_test_top.env.o_agt.drv [READ_DRV] Attempting read operation
+# UVM_INFO UVM/read_fifo_driver.sv(111) @ 16050000: uvm_test_top.env.o_agt.drv [READ_DRV] FIFO not empty, asserting rinc
+# UVM_INFO UVM/read_fifo_monitor.sv(74) @ 16350000: uvm_test_top.env.o_agt.mon [READ_MON] begin to collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(80) @ 16350000: uvm_test_top.env.o_agt.mon [READ_MON] Captured read data from DUT: data=0x7b
+# UVM_INFO UVM/read_fifo_monitor.sv(84) @ 16350000: uvm_test_top.env.o_agt.mon [READ_MON] end collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(53) @ 16350000: uvm_test_top.env.o_agt.mon [READ_MON] FIFO READ observed: tx_id=14 data=0x7b
+# UVM_INFO UVM/read_fifo_driver.sv(122) @ 16350000: uvm_test_top.env.o_agt.drv [READ_DRV] Read pulse asserted
+# UVM_INFO UVM/read_fifo_driver.sv(66) @ 16350000: uvm_test_top.env.o_agt.drv [READ_DRV] Completed READ transaction
+# UVM_INFO UVM/my_scoreboard.sv(79) @ 16350000: uvm_test_top.env.scb [my_scoreboard] PAIRING: WRITE(tx_id=14 data=0x7b) <-> READ(tx_id=14 data=0x7b)
+# UVM_INFO UVM/my_scoreboard.sv(93) @ 16350000: uvm_test_top.env.scb [my_scoreboard] SUCCESS: tx_id=14 matched
+# The expected packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1442
+#   data   integral        8     'h7b 
+#   tx_id  integral        32    'he  
+# ------------------------------------
+# The actual packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# tr       my_transaction  -     @1676
+#   data   integral        8     'h7b 
+#   tx_id  integral        32    'he  
+# ------------------------------------
+# UVM_INFO UVM/read_fifo_seq.sv(30) @ 16350000: uvm_test_top.env.o_agt.sqr@@my_case1_sequence.rd_seq [read_fifo_seq] Issued one READ transaction
+# UVM_INFO UVM/read_fifo_driver.sv(58) @ 16350000: uvm_test_top.env.o_agt.drv [READ_DRV] Received READ transaction from sequencer
+# UVM_INFO UVM/read_fifo_driver.sv(85) @ 16350000: uvm_test_top.env.o_agt.drv [READ_DRV] Attempting read operation
+# UVM_INFO UVM/read_fifo_driver.sv(111) @ 16650000: uvm_test_top.env.o_agt.drv [READ_DRV] FIFO not empty, asserting rinc
+# UVM_INFO UVM/read_fifo_monitor.sv(74) @ 16950000: uvm_test_top.env.o_agt.mon [READ_MON] begin to collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(80) @ 16950000: uvm_test_top.env.o_agt.mon [READ_MON] Captured read data from DUT: data=0x41
+# UVM_INFO UVM/read_fifo_monitor.sv(84) @ 16950000: uvm_test_top.env.o_agt.mon [READ_MON] end collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(53) @ 16950000: uvm_test_top.env.o_agt.mon [READ_MON] FIFO READ observed: tx_id=15 data=0x41
+# UVM_INFO UVM/read_fifo_driver.sv(122) @ 16950000: uvm_test_top.env.o_agt.drv [READ_DRV] Read pulse asserted
+# UVM_INFO UVM/read_fifo_driver.sv(66) @ 16950000: uvm_test_top.env.o_agt.drv [READ_DRV] Completed READ transaction
+# UVM_INFO UVM/my_scoreboard.sv(79) @ 16950000: uvm_test_top.env.scb [my_scoreboard] PAIRING: WRITE(tx_id=15 data=0x41) <-> READ(tx_id=15 data=0x41)
+# UVM_INFO UVM/my_scoreboard.sv(93) @ 16950000: uvm_test_top.env.scb [my_scoreboard] SUCCESS: tx_id=15 matched
+# The expected packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1458
+#   data   integral        8     'h41 
+#   tx_id  integral        32    'hf  
+# ------------------------------------
+# The actual packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# tr       my_transaction  -     @1688
+#   data   integral        8     'h41 
+#   tx_id  integral        32    'hf  
+# ------------------------------------
+# UVM_INFO UVM/read_fifo_seq.sv(30) @ 16950000: uvm_test_top.env.o_agt.sqr@@my_case1_sequence.rd_seq [read_fifo_seq] Issued one READ transaction
+# UVM_INFO UVM/read_fifo_driver.sv(58) @ 16950000: uvm_test_top.env.o_agt.drv [READ_DRV] Received READ transaction from sequencer
+# UVM_INFO UVM/read_fifo_driver.sv(85) @ 16950000: uvm_test_top.env.o_agt.drv [READ_DRV] Attempting read operation
+# UVM_INFO UVM/read_fifo_driver.sv(111) @ 17250000: uvm_test_top.env.o_agt.drv [READ_DRV] FIFO not empty, asserting rinc
+# UVM_INFO UVM/read_fifo_monitor.sv(74) @ 17550000: uvm_test_top.env.o_agt.mon [READ_MON] begin to collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(80) @ 17550000: uvm_test_top.env.o_agt.mon [READ_MON] Captured read data from DUT: data=0x4c
+# UVM_INFO UVM/read_fifo_monitor.sv(84) @ 17550000: uvm_test_top.env.o_agt.mon [READ_MON] end collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(53) @ 17550000: uvm_test_top.env.o_agt.mon [READ_MON] FIFO READ observed: tx_id=16 data=0x4c
+# UVM_INFO UVM/read_fifo_driver.sv(122) @ 17550000: uvm_test_top.env.o_agt.drv [READ_DRV] Read pulse asserted
+# UVM_INFO UVM/read_fifo_driver.sv(66) @ 17550000: uvm_test_top.env.o_agt.drv [READ_DRV] Completed READ transaction
+# UVM_INFO UVM/my_scoreboard.sv(79) @ 17550000: uvm_test_top.env.scb [my_scoreboard] PAIRING: WRITE(tx_id=16 data=0x4c) <-> READ(tx_id=16 data=0x4c)
+# UVM_INFO UVM/my_scoreboard.sv(93) @ 17550000: uvm_test_top.env.scb [my_scoreboard] SUCCESS: tx_id=16 matched
+# The expected packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1508
+#   data   integral        8     'h4c 
+#   tx_id  integral        32    'h10 
+# ------------------------------------
+# The actual packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# tr       my_transaction  -     @1700
+#   data   integral        8     'h4c 
+#   tx_id  integral        32    'h10 
+# ------------------------------------
+# UVM_INFO UVM/read_fifo_seq.sv(30) @ 17550000: uvm_test_top.env.o_agt.sqr@@my_case1_sequence.rd_seq [read_fifo_seq] Issued one READ transaction
+# UVM_INFO UVM/read_fifo_driver.sv(58) @ 17550000: uvm_test_top.env.o_agt.drv [READ_DRV] Received READ transaction from sequencer
+# UVM_INFO UVM/read_fifo_driver.sv(85) @ 17550000: uvm_test_top.env.o_agt.drv [READ_DRV] Attempting read operation
+# UVM_INFO UVM/read_fifo_driver.sv(111) @ 17850000: uvm_test_top.env.o_agt.drv [READ_DRV] FIFO not empty, asserting rinc
+# UVM_INFO UVM/read_fifo_monitor.sv(74) @ 18150000: uvm_test_top.env.o_agt.mon [READ_MON] begin to collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(80) @ 18150000: uvm_test_top.env.o_agt.mon [READ_MON] Captured read data from DUT: data=0xc9
+# UVM_INFO UVM/read_fifo_monitor.sv(84) @ 18150000: uvm_test_top.env.o_agt.mon [READ_MON] end collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(53) @ 18150000: uvm_test_top.env.o_agt.mon [READ_MON] FIFO READ observed: tx_id=17 data=0xc9
+# UVM_INFO UVM/read_fifo_driver.sv(122) @ 18150000: uvm_test_top.env.o_agt.drv [READ_DRV] Read pulse asserted
+# UVM_INFO UVM/read_fifo_driver.sv(66) @ 18150000: uvm_test_top.env.o_agt.drv [READ_DRV] Completed READ transaction
+# UVM_INFO UVM/my_scoreboard.sv(79) @ 18150000: uvm_test_top.env.scb [my_scoreboard] PAIRING: WRITE(tx_id=17 data=0xc9) <-> READ(tx_id=17 data=0xc9)
+# UVM_INFO UVM/my_scoreboard.sv(93) @ 18150000: uvm_test_top.env.scb [my_scoreboard] SUCCESS: tx_id=17 matched
+# The expected packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1536
+#   data   integral        8     'hc9 
+#   tx_id  integral        32    'h11 
+# ------------------------------------
+# The actual packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# tr       my_transaction  -     @1712
+#   data   integral        8     'hc9 
+#   tx_id  integral        32    'h11 
+# ------------------------------------
+# UVM_INFO UVM/read_fifo_seq.sv(30) @ 18150000: uvm_test_top.env.o_agt.sqr@@my_case1_sequence.rd_seq [read_fifo_seq] Issued one READ transaction
+# UVM_INFO UVM/read_fifo_driver.sv(58) @ 18150000: uvm_test_top.env.o_agt.drv [READ_DRV] Received READ transaction from sequencer
+# UVM_INFO UVM/read_fifo_driver.sv(85) @ 18150000: uvm_test_top.env.o_agt.drv [READ_DRV] Attempting read operation
+# UVM_INFO UVM/read_fifo_driver.sv(111) @ 18450000: uvm_test_top.env.o_agt.drv [READ_DRV] FIFO not empty, asserting rinc
+# UVM_INFO UVM/read_fifo_monitor.sv(74) @ 18750000: uvm_test_top.env.o_agt.mon [READ_MON] begin to collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(80) @ 18750000: uvm_test_top.env.o_agt.mon [READ_MON] Captured read data from DUT: data=0x50
+# UVM_INFO UVM/read_fifo_monitor.sv(84) @ 18750000: uvm_test_top.env.o_agt.mon [READ_MON] end collect one pkt
+# UVM_INFO UVM/read_fifo_monitor.sv(53) @ 18750000: uvm_test_top.env.o_agt.mon [READ_MON] FIFO READ observed: tx_id=18 data=0x50
+# UVM_INFO UVM/read_fifo_driver.sv(122) @ 18750000: uvm_test_top.env.o_agt.drv [READ_DRV] Read pulse asserted
+# UVM_INFO UVM/read_fifo_driver.sv(66) @ 18750000: uvm_test_top.env.o_agt.drv [READ_DRV] Completed READ transaction
+# UVM_INFO UVM/my_scoreboard.sv(79) @ 18750000: uvm_test_top.env.scb [my_scoreboard] PAIRING: WRITE(tx_id=18 data=0x50) <-> READ(tx_id=18 data=0x50)
+# UVM_INFO UVM/my_scoreboard.sv(93) @ 18750000: uvm_test_top.env.scb [my_scoreboard] SUCCESS: tx_id=18 matched
+# The expected packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# exp_tr   my_transaction  -     @1564
+#   data   integral        8     'h50 
+#   tx_id  integral        32    'h12 
+# ------------------------------------
+# The actual packet is:
+# ------------------------------------
+# Name     Type            Size  Value
+# ------------------------------------
+# tr       my_transaction  -     @1724
+#   data   integral        8     'h50 
+#   tx_id  integral        32    'h12 
+# ------------------------------------
+# UVM_INFO UVM/read_fifo_seq.sv(30) @ 18750000: uvm_test_top.env.o_agt.sqr@@my_case1_sequence.rd_seq [read_fifo_seq] Issued one READ transaction
+# UVM_INFO UVM/my_case1.sv(53) @ 19050000: uvm_test_top.env.m_vseqr@@my_case1_sequence [my_case1] body finished
+# UVM_INFO UVM/my_case1.sv(63) @ 19050000: uvm_test_top.env.m_vseqr@@my_case1_sequence [my_case1] Entering post_body
+# UVM_INFO UVM/my_case1.sv(65) @ 19050000: uvm_test_top.env.m_vseqr@@my_case1_sequence [my_case1] starting_pase is drop
+# --------------------------------------------------
+# â TESTCASE PASSED
+# --------------------------------------------------
+# ** Note: $finish    : UVM/base_test.sv(51)
+#    Time: 19050 ns  Iteration: 86  Region: /uvm_pkg::uvm_phase::m_run_phases
+# End time: 15:26:03 on Jan 06,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
