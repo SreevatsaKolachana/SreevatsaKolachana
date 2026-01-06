@@ -91,7 +91,7 @@ Implemented a 5-stage pipelined RISC-V processor with hazard detection, forwardi
 - [**RTL Design and UVM verification of Asynchronous FIFO**](projects/FIFO/)  
   Designed an asynchronous FIFO RTL using gray-coded pointers and dual-clock synchronizers and built a modular UVM environment with write/read agents, sequences, scoreboard, and a reference model to validate CDC behavior, data integrity, and full/empty flags under randomized timing.
 
-- [**Functional Verification of I2C Multi-Bus Controller using System Verilog**](projects/i2c-controller-verification/)  
+- [**Functional Verification of I2C Multi-Bus Controller using System Verilog**](projects/I2C-controller-verification/)  
   Developed a layered SystemVerilog testbench for verifying an I2C master with Wishbone interface.
   
 - [**Cache Hierarchy Simulator**](projects/cache-simulator/)  
