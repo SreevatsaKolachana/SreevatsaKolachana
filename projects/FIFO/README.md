@@ -1,155 +1,162 @@
-# 🌀 RTL Design and UVM verification of Asynchronous FIFO
+# 🌀 RTL Design and UVM Verification of Asynchronous FIFO
 
-## 📌 Overview  
-This repository contains an RTL design of Asynchronous FIFO and a **SystemVerilog UVM testbench** designed to thoroughly verify the design.  
-The environment validates FIFO correctness under **independent clock domains**, randomized traffic, corner-case timing, and CDC (Clock Domain Crossing) issues.
+## 📌 Overview
+This repository contains an RTL implementation of an **Asynchronous FIFO** along with a **SystemVerilog UVM-based verification environment**.  
+The testbench validates correct FIFO behavior across **independent write and read clock domains**, ensuring data integrity, ordering, and protocol correctness.
 
-Key features:
-- Full UVM agent–env–scoreboard architecture  
-- Random + directed stimulus  
-- Full/empty flag checking  
-- Data integrity & ordering verification  
-- CDC behavior validation (Gray code pointers, synchronizers)  
-- Reference FIFO model for end-to-end correctness  
+Key highlights:
+- Complete UVM environment (agents, model, scoreboard, virtual sequencer)
+- Directed testcases covering FIFO corner cases
+- Independent read/write clock domains
+- Transaction ID (`tx_id`)–based write/read pairing
+- Golden reference FIFO model
+- Per-test logging and coverage generation
 
----
-
-## 🧠 What Is an Asynchronous FIFO?  
-An *asynchronous FIFO* allows writing data in one clock domain and reading it in another **independently clocked** domain. Because the domains are unrelated, the design must handle:
-
-- Pointer synchronization  
-- Metastability  
-- Gray-code encoding for safe CDC  
-- Full/empty detection  
-- Reset synchronization  
-
-This verification environment ensures that **all** these cases are validated systematically.
+All simulation outputs and logs are automatically stored in the `logs/` directory.
 
 ---
 
-## 🏗️ Testbench Architecture  
-This testbench adheres to a **complete and modular UVM structure**:
-```
-env/
-├── agent_write/
-├── agent_read/
-├── scoreboard/
-├── reference_model/
-├── config/
-└── sequences/
-```
+## 🧠 What Is an Asynchronous FIFO?
+An **asynchronous FIFO** enables data transfer between two independent clock domains.  
+Because the write and read clocks are unrelated, the design must correctly handle:
+
+- Pointer synchronization across clock domains  
+- Full and empty detection  
+- Safe data transfer ordering  
+- Reset behavior across domains  
+
+This verification environment ensures the FIFO operates correctly under these conditions.
 
 ---
 
-## 🧩 Core Components  
+## 🧩 Core Components
 
-### ✏️ 1. Write Agent  
-Responsible for generating write traffic:
-- Random data generation  
-- Randomized write enable  
-- Burst writes and idle cycles  
-- Clock-independent behavior  
+### ✏️ Write Agent
+- Generates write transactions  
+- Drives write interface signals  
+- Prevents writes when FIFO is full  
+- Assigns and propagates unique `tx_id` values  
 
-### 📥 2. Read Agent  
-Models data consumption:
-- Randomized read enable  
-- Burst reads  
-- Throttling behavior  
-- Independent read-clock domain  
+### 📥 Read Agent
+- Generates read transactions  
+- Drives read enable safely  
+- Waits when FIFO is empty  
+- Observes read data via monitor  
 
-### 🧮 3. Reference Model  
-A simple behavioral FIFO model used as the **golden reference**:
+### 🧮 Reference Model (Golden FIFO)
+- Behavioral FIFO model  
+- Receives write transactions from the write monitor  
 - Maintains an internal queue  
-- Pushes on write, pops on read  
-- Mirrors FIFO full/empty conditions  
-- Perfect comparator for scoreboard checking  
+- Sends expected transactions (with `tx_id`) to the scoreboard  
 
-### 📊 4. Scoreboard  
-Performs end-to-end validation:
-- Checks DUT output vs. model  
-- Detects ordering issues  
-- Validates full/empty correctness  
-- Flags protocol violations  
+### 📊 Scoreboard
+- Matches expected vs. actual transactions  
+- Uses `tx_id` to explicitly pair writes and reads  
+- Reports:
+  - Successful matches  
+  - Data mismatches  
+  - Unexpected reads  
+  - Remaining expected data at end of test  
 
-### 👁️ 5. Monitors  
-Passively observe FIFO interface signals:
-- Convert signals → transactions  
-- Send to scoreboard via analysis ports  
+Example pairing log:
+PAIRING: WRITE(tx_id=5 data=0x7A) <-> READ(tx_id=5 data=0x7A)
+SUCCESS: tx_id=5 matched
 
-### ⚙️ 6. Configuration Object  
-Central UVM config controlling:
-- FIFO depth  
-- Data width  
-- Clock periods  
-- Agent enabling/disabling  
-- Sequence behavior  
+### 👁️ Monitors
+- Passively observe DUT interfaces  
+- Convert signal activity into transactions  
+- Forward transactions through analysis ports  
 
 ---
 
-## 🧪 Stimulus & Test Scenarios  
+## 🧪 Stimulus & Test Scenarios
 
-### 🔀 Constrained-Random Tests  
-Exercise FIFO under unpredictable conditions:
-- Random write/read request patterns  
-- Random data values  
-- Random delays between operations  
-- Timing stress across asynchronous domains  
+### 🎯 Directed Tests
+The environment uses **directed virtual sequences** to validate FIFO behavior deterministically:
 
-### 🎯 Directed Tests  
-Includes classic FIFO corner cases:
-- Overflow attempt (write when full)  
-- Underflow attempt (read when empty)  
-- Fill → drain cycle  
-- Single-step reads/writes  
-- Reset recovery tests  
-- Frequency variations for read/write clocks  
+- FIFO fill to full depth  
+- FIFO drain to empty  
+- Back-to-back writes  
+- Back-to-back reads  
+- Interleaved read/write operations  
+- Fill → drain cycles  
+- Reset followed by normal operation  
 
-### 🚦 Coverage  
-- Functional coverage of:
-  - Pointer wrap-around  
-  - Full/empty transitions  
-  - Data ordering  
-  - R/W ratio variations  
-- Code coverage:  
-  - Line, toggle, branch  
+Each testcase is implemented as a separate UVM test.
 
 ---
 
-## ⏱️ Clocking & CDC Validation  
-The testbench creates **independent clock generators**:
-- Arbitrary frequency ratios (e.g., write 5ns, read 13ns)  
-- Random phase offsets  
-- Stress tests for CDC logic  
+## ⏱️ Clocking and Asynchronous Operation
 
-The environment checks:
-- Pointer synchronization correctness  
-- No metastability-like behavior in functional model  
-- Gray-code safety (only 1 bit changes on increment)  
+- Independent write and read clocks  
+- Fixed but different clock periods  
+- Verifies FIFO correctness under asynchronous timing  
 
 ---
 
-## 🛡️ Assertions (SVA)  
-Built-in protocol checks:
-- No write allowed when FIFO is full  
-- No read allowed when FIFO is empty  
-- One-bit Gray pointer change property  
-- Reset stability checks  
-- Address boundary checks  
+## 🛡️ Protocol Enforcement
+
+Protocol correctness is enforced **procedurally in drivers**:
+- Write driver stalls when FIFO is full  
+- Read driver stalls when FIFO is empty  
+
+This guarantees:
+- No illegal writes  
+- No illegal reads  
+- Clean, valid stimulus to the DUT  
 
 ---
 
-📂 Repository Structure
+## 📂 Logs and Simulation Outputs
+
+All simulation outputs are organized under the `logs/` directory.
+
+
+Each log contains:
+- Full UVM transcript  
+- Transaction-level debug messages  
+- Write/read pairing with `tx_id`  
+- Scoreboard results  
+
+---
+
+## ▶️ How to Run
+
+### Compile and Run All Testcases
 ```
-FIFO/
- ├── RTL_design/                       
- ├── UVM/
- │   ├── agents/
- │   ├── env/
- │   ├── sequences/
- │   ├── scoreboard/
- │   ├── config/
- │   └── tb_top.sv
- ├── Asynchronous_FIFO.pdf
- └── README.md
+make run_all_cli
 ```
 
+This will:
+- Compile RTL and UVM  
+- Optimize the design  
+- Run all testcases sequentially  
+- Store logs and coverage in `logs/`  
+
+### Run a Single Testcase
+```
+make clean
+make compile
+make optimize
+make run_cli TEST=my_case0 (choose your respective test)
+```
+
+---
+
+## ✅ Verification Status
+
+- All directed testcases pass  
+- No data mismatches  
+- Correct FIFO ordering preserved  
+- No underflow or overflow violations  
+
+---
+
+## 🚀 Future Extensions
+(Optional enhancements not yet implemented)
+- Constrained-random traffic generation  
+- Functional coverage collection  
+- SVA-based protocol and CDC assertions  
+- Randomized clock frequency ratios  
+
+---
