@@ -35,7 +35,6 @@ This project was built to prototype such CAD-style checks in a clean, script-dri
 ---
 
 ## 🗃️ Repository Layout
-## 🗃️ Repository Layout
 
 ```text
 .
