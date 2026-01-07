@@ -32,11 +32,12 @@ My work spans **post-silicon failure analysis, packaging-level validation, machi
 - Perform **nanoprobing, FIB cross-sectioning, and IR thermal imaging** as part of detailed failure localization and validation workflows within the FA and reliability teams.
 
 
-### 🔹RF Design & Layout Implementation
-- Design and optimize **RF switch cells** for multi-band front-end modules ensuring **low insertion loss**, **high isolation**, and **package-aware parasitic minimization**.
-- Support **PA (Power Amplifier)** and **LNA (Low Noise Amplifier)** layout design by tuning metal interconnects, bias routing, and symmetry constraints to minimize mismatch and improve gain/linearity.
+### 🔹Design & Layout Implementation
+- Develop and optimize **digital control logic for RF switches**, reducing **logic depth and gate count** to minimize the number of required **level shifters across voltage domains**, improving **area efficiency, power, and reliability**.
+- Define and refine **digital timing sequences** governing **RF switch and LNA state transitions**, ensuring safe enable/disable windows that prevent **over-voltage exposure, transient stress, and signal integrity degradation** during mode switching.
 - Perform **DRC/LVS closure, parasitic extraction, and EM/IR analysis**, verifying that designs meet both **electrical and packaging parasitic constraints**.
 - Collaborate with RFIC and packaging engineers to address **bond-wire parasitics**, **substrate coupling**, and **thermal dissipation paths** in **QFN/BGA and wafer-level chip-scale packages (WLCSP)**.
+
 
 
 ### 🔹ML-Aided Tapeout Automation & Design Optimization
