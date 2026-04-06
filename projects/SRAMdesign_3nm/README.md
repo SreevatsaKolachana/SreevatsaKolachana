@@ -37,7 +37,7 @@ During a read or write cycle, the address is decoded to select the target word a
 <img width="979" height="636" alt="image" src="https://github.com/user-attachments/assets/a8091849-4c7b-4bda-84a3-bf06a265bc1b" />
 
 > ⚠️ **Disclaimer:**  
-> This SRAM design was created as part of an NCSU course using restricted tool setups and proprietary library files.  
+> This SRAM design was created using restricted tool setups and proprietary library files.  
 > As per university policy, the complete project directory (schematics, layouts, models, and simulation data) cannot be uploaded publicly.  
 > Only a high-level description and allowed documentation are provided here.
 
